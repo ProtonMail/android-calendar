@@ -103,7 +103,6 @@
         <activity
             android:name=".presentation.main.MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
             android:theme="@style/ProtonTheme.Splash.Calendar.V5"
             android:exported="true"
             android:launchMode="singleTask">
