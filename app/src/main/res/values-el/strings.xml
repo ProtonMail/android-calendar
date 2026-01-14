@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(χωρίς τίτλο)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">(χωρίς ηλ. διεύθυνση)</string>
+    <string name="default_user_display_name">(χωρίς όνομα)</string>
+    <string name="toast_copied_to_clipboard">Αντιγράφηκε στο πρόχειρο</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">Διαγραφή γεγονότος</string>
+    <string name="dialog_title_delete_recurring_event">Διαγραφή επαναλαμβανόμενου γεγονότους</string>
+    <string name="dialog_description_delete_event">Θα θέλατε να διαγράψετε αυτό το γεγονός;</string>
+    <string name="dialog_description_delete_recurring_event">Θέλετε να διαγράψετε όλα τα γεγονότα σε αυτή τη σειρά;</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">Αυτό το γεγονός έχει ενημερωθεί από τον διοργανωτή. Θα θέλατε να διαγράψετε αυτό το γεγονός;</string>
+    <string name="dialog_button_delete">Διαγραφή</string>
+    <string name="dialog_button_cancel">Ακύρωση</string>
+    <string name="dialog_button_continue">Συνέχεια</string>
+    <string name="dialog_button_close">Κλείσιμο</string>
+    <string name="dialog_button_remove">Αφαίρεση</string>
+    <string name="dialog_button_download">Λήψη</string>
+    <string name="dialog_button_update">Ενημέρωση</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">Ένα email ακύρωσης θα σταλεί στους συμμετέχοντες του γεγονότος. Θα θέλατε να διαγράψετε αυτό το γεγονός;</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">Η διεύθυνση σας είναι απενεργοποιημένη. Δεν μπορείτε να στείλετε email ακύρωσης στους συμμετέχοντες του γεγονότος. Θα θέλατε να διαγράψετε αυτό το γεγονός ούτως ή άλλως;</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">Ένα email ακύρωσης θα σταλεί στους συμμετέχοντες του γεγονότος. Θα θέλατε να διαγράψετε όλα τα γεγονότα σε αυτή τη σειρά;</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">Η διεύθυνση σας είναι απενεργοποιημένη. Δεν μπορείτε να στείλετε email ακύρωσης στους συμμετέχοντες του γεγονότος. Θα θέλατε να διαγράψετε όλα τα γεγονότα σε αυτή τη σειρά ούτως ή άλλως;</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">Ο διοργανωτής αυτού του γεγονότος θα ειδοποιηθεί ότι απορρίπτετε την πρόσκληση. Θα θέλατε να διαγράψετε αυτό το γεγονός;</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">Ο διοργανωτής αυτού του γεγονότος δεν θα ειδοποιηθεί ότι απορρίπτετε την πρόσκληση, καθώς δεν μπορείτε να στείλετε email από τη διεύθυνση που έχετε προσκαλέσει. Θέλετε να διαγράψετε αυτό το γεγονός ούτως ή άλλως;</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">Ο διοργανωτής αυτής της σειράς γεγονότων θα ειδοποιηθεί ότι θα απορρίψετε την πρόσκληση. Θα θέλατε να διαγράψετε όλα τα γεγονότα σε αυτή τη σειρά;</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">Ο διοργανωτής αυτής της σειράς συμβάντων δεν θα ειδοποιηθεί ότι απορρίπτετε την πρόσκληση, καθώς δεν μπορείτε να στείλετε email από τη διεύθυνση που έχετε προσκαλέσει. Θα θέλατε να διαγράψετε ούτως ή άλλως όλα τα συμβάντα αυτής της σειράς;</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">Αυτό το γεγονός έχει ενημερωθεί. Ο διοργανωτής θα ειδοποιηθεί ότι θα αρνηθείτε την πρόσκληση. Θα θέλατε να διαγράψετε αυτό το γεγονός;</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">Η εκδήλωση έχει ενημερωθεί. Ο διοργανωτής δε θα ειδοποιηθεί ότι απορρίψατε την πρόσκληση, καθώς δεν μπορείτε να στείλετε μηνύματα ηλεκτρονικού ταχυδρομείου από τη διεύθυνση στην οποία λάβατε την πρόσκληση. Θέλετε να διαγράψετε αυτό το συμβάν;</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">Οι εμφανίσεις που ενημερώθηκαν προηγουμένως από τον διοργανωτή θα διατηρηθούν, αλλά οι απαντήσεις σας θα χαθούν</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">Τα συμβάντα που είχαν ενημερωθεί προηγουμένως από τον διοργανωτή θα διατηρηθούν</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">Δεν είναι δυνατή η ειδοποίηση του διοργανωτή ότι απορρίπτετε την πρόσκληση:\n\n• %1$s\n\nΘέλετε να διαγράψετε το γεγονός ούτως ή άλλως;</string>
+    <string name="dialog_button_set">Ορισμός</string>
+    <string name="dialog_button_ok">ΟΚ</string>
+    <string name="action_save">Αποθήκευση</string>
+    <string name="action_done">Ολοκληρώθηκε</string>
+    <string name="action_edit">Επεξεργασία</string>
+    <string name="action_delete">Διαγραφή</string>
+    <string name="action_add">Προσθήκη</string>
+    <string name="action_remove">Αφαίρεση</string>
+    <string name="action_leave">Αποχώρηση</string>
+    <string name="action_recreate">Εκκαθάριση</string>
+    <string name="action_today">Σήμερα</string>
+    <string name="action_create_event">Δημιουργία εκδήλωσης</string>
+    <string name="action_mark_default">Ορισμός ως προεπιλογή</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">Δεν υπάρχουν γεγονότα</string>
+    <string name="agenda_loading_events">Γίνεται φόρτωση εκδηλώσεων…</string>
+    <string name="agenda_loading_events_error">Σφάλμα κατά τη φόρτωση γεγονότων</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+ %1$d παραπάνω</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">Όλη την Ημέρα</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">Την ώρα της εκδήλωσης</string>
+    <string name="event_alarm_label_at_event_time_by_email">Κατά τη στιγμή του γεγονότος μέσω ηλεκτρονικού ταχυδρομείου</string>
+    <string name="event_alarm_label_on_the_same_day">Την ίδια ημέρα</string>
+    <string name="event_alarm_label_before">%1$s πριν</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s πριν μέσω ηλεκτρονικού ταχυδρομείου</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s στο %2$s</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s στο %2$s μέσω ηλεκτρονικού ταχυδρομείου</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s πριν τις %2$s</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s πριν τις %2$s μέσω ηλεκτρονικού ταχυδρομείου</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s στο %2$s</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s την ημέρα %2$d</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s στο %2$s</string>
+    <string name="event_recurrence_none">Δεν επαναλαμβάνεται</string>
+    <string name="event_recurrence_daily">Καθημερινά</string>
+    <string name="event_recurrence_weekly">Εβδομαδιαία</string>
+    <string name="event_recurrence_monthly">Μηνιαία</string>
+    <string name="event_recurrence_yearly">Ετησίως</string>
+    <string name="event_recurrence_weekly_on_all_days">όλες τις ημέρες</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">μέχρι %1$s</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">μέχρι %1$s (%2$s)</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">Ακυρωμένες</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(Απενεργοποιημένο)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(Προεπιλογή)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d ναί</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d ίσως</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d όχι</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d σε εκκρεμότητα</string>
+    <string name="event_attendee_is_organizer">Είστε ο/η διοργανωτής</string>
+    <string name="event_attendee_organizer">Διοργανωτής</string>
+    <string name="event_attendee_optional">Προαιρετικό</string>
+    <string name="event_attendee_is_current_user">Εσείς</string>
+    <string name="event_answer_attending">Συμμετέχετε;</string>
+    <string name="event_answer_yes">Ναι</string>
+    <string name="event_answer_no">Όχι</string>
+    <string name="event_answer_maybe">Ίσως</string>
+    <string name="event_decryption_error_dialog_title">Το γεγονός απέτυχε να αποκρυπτογραφηθεί</string>
+    <string name="event_decryption_error_dialog_message">Η αποκρυπτογράφηση αυτού του περιεχομένου του γεγονότος απέτυχε.</string>
+    <string name="event_decryption_error_dialog_confirmation">Διαγραφή γεγονότος</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">Διαγραφή γεγονότων</string>
+    <string name="event_decryption_error_dialog_close">Κλείσιμο</string>
+    <string name="event_signature_verification_failure">Η επαλήθευση της υπογραφής της εκδήλωσης απέτυχε. <a href="https://proton.me/support/what-is-a-digital-signature">Μάθετε περισσότερα</a></string>
+    <string name="event_signature_verification_in_progress">Η επαλήθευση της υπογραφής της εκδήλωσης είναι σε εξέλιξη.</string>
+    <string name="event_signature_verification_network_error">Η επαλήθευση της υπογραφής της εκδήλωσης διακόπηκε λόγω σφάλματος. <a href="">Προσπαθήστε ξανά</a></string>
+    <string name="event_change_answer_recurring_title">Ενημέρωση επαναλαμβανόμενης εκδήλωσης</string>
+    <string name="event_change_answer_recurring_description">Θα θέλατε να αλλάξετε την απάντησή σας για όλες τις εκδηλώσεις αυτής της σειράς;</string>
+    <string name="event_change_answer_recurring_overwrite_description">Θα θέλατε να αλλάξετε την απάντησή σας για όλες τις εκδηλώσεις αυτής της σειράς;\nΜερικές από τις απαντήσεις σας σε συμβάντα που ενημερώθηκαν προηγουμένως από τον διοργανωτή θα χαθούν.</string>
+    <string name="event_change_answer_recurring_single_edit_description">Αυτή η εκδήλωση έχει ενημερωθεί από τον διοργανωτή. Θα θέλατε να αλλάξετε την απάντησή σας μόνο για αυτό το συμβάν σε αυτή τη σειρά;</string>
+    <string name="event_change_answer_recurring_cancel">Ακύρωση</string>
+    <string name="event_change_answer_recurring_confirm">Ενημέρωση</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s αποδέχθηκε την πρόσκλησή σας στο %2$s</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s απέρριψε την πρόσκλησή σας στο %2$s</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">Ο/Η %1$s έχει αποδεχθεί με επιφύλαξη την πρόσκλησή σας στο %2$s</string>
+    <string name="event_organizer_send_prefs_error_title">Ο διοργανωτής δεν μπορεί να ειδοποιηθεί</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">Ο διοργανωτής δεν μπορεί να ειδοποιηθεί ότι αποδεχτήκατε την πρόσκληση</string>
+    <string name="event_organizer_send_prefs_message_declined_title">Ο διοργανωτής δεν μπορεί να ειδοποιηθεί ότι απορρίπτετε την πρόσκληση</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">Ο διοργανωτής δεν μπορεί να ειδοποιηθεί ότι αποδεχτήκατε προσωρινά την πρόσκληση</string>
+    <string name="event_organizer_send_prefs_message_default_title">Ο διοργανωτής δεν μπορεί να ειδοποιηθεί ότι απαντήσατε στην πρόσκληση</string>
+    <string name="event_organizer_send_prefs_button_title">ΟΚ</string>
+    <string name="event_attendees_send_prefs_error_title">Οι συμμετέχοντες δεν μπορούν να ειδοποιηθούν</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">Κανένας από τους συμμετέχοντες δεν μπορεί να ειδοποιηθεί για τις αλλαγές σας:\n\n• %1$s\n\nΘέλετε να συνεχίσετε ούτως ή άλλως;</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">Δεν είναι δυνατή η ειδοποίηση των ακόλουθων συμμετεχόντων σχετικά με τις αλλαγές σας:\n\n• %1$s\n\nΘέλετε να συνεχίσετε ούτως ή άλλως;</string>
+    <string name="event_attendees_send_prefs_error_confirm">Συνέχεια</string>
+    <string name="event_attendees_send_prefs_error_cancel">Ακύρωση</string>
+    <string name="event_send_prefs_error_address_disabled">αυτή η διεύθυνση δεν υπάρχει</string>
+    <string name="event_send_prefs_error_getting_contact">δεν ήταν δυνατή η λήψη δεδομένων επαφής</string>
+    <string name="event_send_prefs_error_network">σφάλμα δικτύου</string>
+    <string name="event_send_prefs_trusted_keys_invalid">τα αξιόπιστα κλειδιά δεν είναι έγκυρα</string>
+    <string name="event_send_prefs_public_keys_invalid">τα δημόσια κλειδιά είναι μη έγκυρα</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">η υπογραφή επαφής είναι άκυρη</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">Συνδεθείτε στη σύσκεψη Zoom</string>
+    <string name="zoom_meeting_title">Σύσκεψη Zoom</string>
+    <string name="generic_meeting_id">Αναγνωριστικό: %1$s</string>
+    <string name="generic_meeting_password">Κωδικός πρόσβασης: %1$s</string>
+    <string name="generic_meeting_more_details">Περισσότερες λεπτομέρειες</string>
+    <string name="generic_meeting_less_details">Λιγότερες λεπτομέρειες</string>
+    <string name="generic_meeting_host">Διοργανωτής συνάντησης</string>
+    <string name="generic_meeting_link">Σύνδεσμος συνάντησης</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Οδηγίες συμμετοχής</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">Νέο γεγονός</string>
+    <string name="event_text_edit_event">Επεξεργασία γεγονότος</string>
+    <string name="event_hint_title">Προσθέστε τίτλο</string>
+    <string name="event_hint_location">Προσθήκη τοποθεσίας</string>
+    <string name="event_text_add_participants">Προσθήκη συμμετεχόντων</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">Συμμετέχοντες (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">Εσείς</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ %1$d παραπάνω</string>
+    <string name="event_text_switch_all_day">Όλη την ημέρα</string>
+    <string name="event_text_date_start">Έναρξη</string>
+    <string name="event_text_date_end">Λήξη</string>
+    <string name="event_text_date_repeat">Επανάληψη</string>
+    <string name="event_text_date_repeat_never">Δεν επαναλαμβάνεται</string>
+    <string name="event_text_attendees">Συμμετέχοντες</string>
+    <string name="event_text_attendees_none">Κανένα</string>
+    <string name="event_text_calendar">Ημερολόγιο</string>
+    <string name="event_text_timezone_start">Ζώνη ώρας</string>
+    <string name="invite_in_shared_calendar_disclaimer">Η αποστολή προσκλήσεων είναι διαθέσιμη μόνο στα προσωπικά ημερολόγια.</string>
+    <string name="invite_change_calendar_disclaimer">Δεν είναι δυνατή η τροποποίηση του ημερολογίου που σχετίζεται με τις προσκλήσεις.</string>
+    <string name="invite_change_attendees_disclaimer">Δεν είναι ακόμη δυνατή η τροποποίηση των συμμετεχόντων που σχετίζονται με προσκλήσεις.</string>
+    <string name="change_calendar_recurring_disclaimer">Η αλλαγή ημερολογίου για επαναλαμβανόμενη εκδήλωση δεν είναι ακόμη δυνατή.</string>
+    <string name="update_event">Ενημέρωση εκδήλωσης</string>
+    <string name="update_invite_send_email">Μια ενημέρωση πρόσκλησης θα σταλεί στους συμμετέχοντες στην εκδήλωση.</string>
+    <string name="update_recurring_event">Ενημέρωση επαναλαμβανόμενης εκδήλωσης</string>
+    <string name="update_recurring_all_events">Θα θέλατε να ενημερώσετε όλες τις εκδηλώσεις σε αυτή τη σειρά;</string>
+    <string name="update_recurring_invite_send_email">Θα ενημερώσετε όλες τις εκδηλώσεις σε αυτή τη σειρά. Μια ενημέρωση πρόσκλησης θα σταλεί στους συμμετέχοντες της εκδήλωσης.</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">Τι ψάχνετε;</string>
+    <string name="search_empty_results_title">Δεν βρέθηκαν αποτελέσματα</string>
+    <string name="search_empty_results_subtitle">Δοκιμάστε έναν άλλο όρο, π.χ. Μαρία, γενέθλια, διαδικτυακό σεμινάριο, λέσχη βιβλίων.</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">Λήψη ημερολογίων (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">Χρόνος που απομένει: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">Εκτίμηση χρόνου που απομένει…</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">σχεδόν έτοιμο</string>
+    <string name="search_downloading_pause">Παύση λήψης</string>
+    <string name="search_settings_dialog_toggle_off_title">Αφαίρεση όλων των ληφθέντων ημερολογίων;</string>
+    <string name="search_settings_dialog_toggle_off_text">Θα πρέπει να κατεβάσετε τα ημερολόγιά σας ξανά εάν θέλετε να κάνετε αναζήτηση.</string>
+    <string name="search_settings_dialog_toggle_on_title">Να γίνει λήψη ημερολογίων σε αυτήν τη συσκευή;</string>
+    <string name="search_settings_dialog_toggle_on_text">Αυτό απαιτείται για να μπορείτε να κάνετε αναζήτηση.</string>
+    <string name="search_onboarding_header">Θέλετε να κάνετε αναζήτηση στο ημερολόγιό σας;</string>
+    <string name="search_onboarding_text">Πρώτα πρέπει να κατεβάσετε ένα κρυπτογραφημένο αντίγραφο των ημερολογίων σας. Αυτό θα διαρκέσει ελάχιστα και μπορείτε να συνεχίσετε να χρησιμοποιείτε την εφαρμογή. <a href="https://proton.me/support/calendar-search">Μάθετε περισσότερα</a></string>
+    <string name="search_onboarding_action_download_calendars">Λήψη ημερολογίων</string>
+    <string name="search_onboarding_action_pause">Παύση</string>
+    <string name="search_onboarding_action_resume">Συνέχεια</string>
+    <string name="search_onboarding_action_retry">Επανάληψη</string>
+    <string name="search_onboarding_progress_header_ongoing">Γίνεται λήψη ημερολογίων…</string>
+    <string name="search_onboarding_progress_header_completed">Η λήψη ολοκληρώθηκε</string>
+    <string name="search_onboarding_progress_header_paused">Παύση λήψης ημερολογίων</string>
+    <string name="search_onboarding_progress_header_error">Σφάλμα κατά τη λήψη ημερολογίων</string>
+    <string name="search_spotlight_activation_snack">Η αναζήτηση ημερολογίου ενεργοποιήθηκε</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">Προσθήκη ειδοποίησης</string>
+    <string name="event_text_description">Περιγραφή</string>
+    <string name="event_hint_description">Προσθήκη περιγραφής</string>
+    <string name="event_text_custom">προσαρμοσμένο</string>
+    <string name="event_alert_invalid_start_end_date">Η ημερομηνία έναρξης της εκδήλωσης δεν μπορεί να είναι μετά την ημερομηνία λήξης της</string>
+    <string name="event_alarms_title">Ειδοποιήσεις</string>
+    <string name="event_custom_alarms_field">Ειδοποίηση</string>
+    <string name="event_custom_alarms_title">Προσαρμοσμένες ειδοποιήσεις</string>
+    <string name="event_alarm_partial_day_1">την ώρα της εκδήλωσης</string>
+    <string name="event_alarm_partial_day_2">10 λεπτά</string>
+    <string name="event_alarm_partial_day_3">30 λεπτά</string>
+    <string name="event_alarm_partial_day_4">1 ώρα</string>
+    <string name="event_alarm_partial_day_5">1 εβδομάδα</string>
+    <string name="event_alarm_all_day_1">την ίδια ημέρα στις %1$s</string>
+    <string name="event_alarm_all_day_2">1 ημέρα πριν στις %1$s</string>
+    <string name="event_alarm_all_day_3">1 εβδομάδα πριν, στις %1$s</string>
+    <string name="event_alarm_all_day_4">3 εβδομάδες πριν, στις %1$s</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">στο %1$s</string>
+    <string name="event_alarm_action">Αποστολή από</string>
+    <string name="event_alarm_action_notification">ειδοποίηση</string>
+    <string name="event_alarm_action_email">e-mail</string>
+    <string name="event_alarm_same_day">την ίδια ημέρα</string>
+    <string name="event_recurrence_1">να μην επαναληφθεί</string>
+    <string name="event_recurrence_2">κάθε μέρα</string>
+    <string name="event_recurrence_3">κάθε εβδομάδα</string>
+    <string name="event_recurrence_4">κάθε μήνα</string>
+    <string name="event_recurrence_5">κάθε χρόνο</string>
+    <string name="event_recurrence_title">Συχνότητα</string>
+    <string name="event_recurrence_custom_title">Προσαρμοσμένη συχνότητα</string>
+    <string name="event_recurrence_occurs_every">Επαναλαμβάνεται κάθε</string>
+    <string name="event_recurrence_occurs_on">Επαναλαμβάνεται στις</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">την %1$dη ημέρα</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">στις %1$s</string>
+    <string name="event_recurrence_ends_on">Λήξη</string>
+    <string name="event_recurrence_ends_never">ποτέ</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">την ημέρα</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">στις %1$s</string>
+    <string name="event_recurrence_ends_after_count_prefix">μετά</string>
+    <string name="event_recurring_edit_this">Αυτή η εκδήλωση</string>
+    <string name="event_recurring_edit_this_and_future">Αυτή και οι μελλοντικές εκδηλώσεις</string>
+    <string name="event_recurring_edit_all_events">Όλες οι εκδηλώσεις</string>
+    <string name="event_discard_changes_title">Απόρριψη αλλαγών;</string>
+    <string name="event_discard_changes_description">Θα χάσετε όλες τις μη αποθηκευμένες αλλαγές.</string>
+    <string name="event_discard_changes_cancel">Συνέχεια επεξεργασίας</string>
+    <string name="event_discard_changes_confirm">Απόρριψη</string>
+    <string name="event_recurring_update_this_title">Ενημέρωση επαναλαμβανόμενης εκδήλωσης</string>
+    <string name="event_recurring_update_this_description">Οι τροποποιήσεις συχνότητας θα χαθούν</string>
+    <string name="event_recurring_update_all_description">Οι προηγούμενες τροποποιήσεις αυτής της σειράς θα χαθούν</string>
+    <string name="event_recurring_update_this_cancel">Ακύρωση</string>
+    <string name="event_recurring_update_this_confirm">Ενημέρωση</string>
+    <string name="event_allow_contacts_title">Να επιτρέπεται στο Proton Calendar η πρόσβαση στις επαφές σας;</string>
+    <string name="event_allow_contacts_description">Το Proton Calendar χρειάζεται πρόσβαση στις επαφές σας για να σας παρέχει αυτόματη συμπλήρωση</string>
+    <string name="event_allow_contacts_cancel">Άρνηση</string>
+    <string name="event_allow_contacts_confirm">Να επιτραπεί</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Re: Πρόσκληση για μία εκδήλωση που ξεκινά την %1$s στις %2$s %3$s</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">Re: Πρόσκληση για μια εκδήλωση την %1$s</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">Re: Πρόσκληση για μια εκδήλωση που ξεκινά από %1$s</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Πρόσκληση για μία εκδήλωση που ξεκινά από %1$s στις %2$s %3$s</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">Πρόσκληση για μια εκδήλωση στις %1$s</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">Πρόσκληση για μια εκδήλωση που αρχίζει την %1$s</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Ενημέρωση για μία εκδήλωση που ξεκινά την %1$s στις %2$s %3$s</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">Ενημέρωση για μια εκδήλωση που πραγματοποιείται την %1$s</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">Ενημέρωση για μία εκδήλωση που αρχίζει την %1$s</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Ακύρωση μιας εκδήλωσης που ξεκινά από %1$s στις %2$s %3$s</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">Ακύρωση μιας εκδήλωσης στις %1$s</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">Ακύρωση μιας εκδήλωσης που ξεκινά την %1$s</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">Είστε προσκεκλημένοι στο %1$s\nΠότε: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s έχει ενημερωθεί\nΠότε: %2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (όλη την ημέρα)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s στις %2$s %3$s - %4$s στις %5$s %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nΠου: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nΠεριγραφή: %1$s</string>
+    <string name="event_send_invite_dialog_title">Αποστολή πρόσκλησης</string>
+    <string name="event_send_invite_dialog_description">Μια πρόσκληση θα σταλεί στους πρόσθετους συμμετέχοντες.</string>
+    <string name="event_send_invite_dialog_confirm">Αποστολή</string>
+    <string name="event_send_invite_dialog_cancel">Ακύρωση</string>
+    <string name="event_add_participants_dialog_title">Προσθήκη συμμετεχόντων</string>
+    <string name="event_add_participants_dialog_description">Μια πρόσκληση θα σταλεί στους πρόσθετους συμμετέχοντες.</string>
+    <string name="recurring_event_add_participants_dialog_description">Θα σταλεί πρόσκληση στους συμμετέχοντες που προστέθηκαν, για όλες τις εκδηλώσεις αυτής της σειράς.</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">Θα σταλεί πρόσκληση στους πρόσθετους συμμετέχοντες για όλες τις εκδηλώσεις αυτής της σειράς.\nΠροηγούμενες τροποποιήσεις σε αυτήν τη σειρά θα χαθούν.</string>
+    <string name="event_add_participants_dialog_confirm">Αποστολή</string>
+    <string name="event_add_participants_dialog_cancel">Ακύρωση</string>
+    <string name="event_remove_participants_dialog_title">Κατάργηση συμμετεχόντων</string>
+    <string name="event_remove_participants_dialog_description">Ένα email ακύρωσης θα σταλεί στους συμμετέχοντες που αφαιρέσατε.</string>
+    <string name="recurring_event_remove_participants_dialog_description">Ένα email ακύρωσης θα σταλεί στους καταργημένους συμμετέχοντες για όλες τις εκδηλώσεις αυτής της σειράς.</string>
+    <string name="event_add_and_remove_participants_dialog_description">Οι συμμετέχοντες που έχουν προστεθεί και αφαιρεθεί θα ειδοποιηθούν.</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">Οι συμμετέχοντες που έχουν προστεθεί και αφαιρεθεί θα ειδοποιηθούν για όλες τις εκδηλώσεις αυτής της σειράς.</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s έχει ακυρωθεί.</string>
+    <string name="event_save_changes">Αποθήκευση αλλαγών</string>
+    <string name="event_update_add_participants_dialog_description">Θα ειδοποιηθούν οι υπάρχοντες και οι πρόσθετοι συμμετέχοντες.</string>
+    <string name="recurring_event_update_add_participants_dialog_description">Θα ενημερώσετε όλες τις εκδηλώσεις αυτής της σειράς. Θα ειδοποιηθούν οι υπάρχοντες και πρόσθετοι συμμετέχοντες.</string>
+    <string name="event_update_remove_participants_dialog_description">Θα ειδοποιηθούν οι υπάρχοντες και αφαιρεθέντες συμμετέχοντες.</string>
+    <string name="event_update_remove_all_participants_dialog_description">Οι συμμετέχοντες που αφαιρέθηκαν θα ειδοποιηθούν.</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">Θα ενημερώσετε όλες τις εκδηλώσεις αυτής της σειράς. Θα ειδοποιηθούν οι υπάρχοντες και οι αφαιρεθέντες συμμετέχοντες.</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">Θα ενημερώσετε όλες τις εκδηλώσεις σε αυτή τη σειρά. Θα ειδοποιηθούν οι αφαιρεθέντες συμμετέχοντες.</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">Θα ειδοποιηθούν οι συμμετέχοντες, οι οποίοι έχουν προστεθεί και αφαιρεθεί.</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">Θα ενημερώσετε όλες τις εκδηλώσεις σε αυτήν τη σειρά. Θα ειδοποιηθούν οι συμμετέχοντες, καθώς και όσοι θα προστεθούν και θα αφαιρεθούν.</string>
+    <string name="success_snack_email_update_recurring">Οι συμμετέχοντες ειδοποιήθηκαν και όλες οι εκδηλώσεις ενημερώθηκαν</string>
+    <string name="success_snack_email_update">Οι συμμετέχοντες ειδοποιήθηκαν και η εκδήλωση ενημερώθηκε</string>
+    <string name="success_snack_add_attendees_recurring">Η πρόσκληση εστάλη και οι συμμετέχοντες προστέθηκαν σε όλες τις εκδηλώσεις</string>
+    <string name="success_snack_add_attendees">Η πρόσκληση εστάλη και οι συμμετέχοντες προστέθηκαν</string>
+    <string name="success_snack_remove_attendees_recurring">Η ακύρωση εστάλη και οι συμμετέχοντες αφαιρέθηκαν από όλες τις εκδηλώσεις</string>
+    <string name="success_snack_remove_attendees">Η ακύρωση στάλθηκε και οι συμμετέχοντες αφαιρέθηκαν</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">Τα ημερολόγιά μου</string>
+    <string name="nav_view_subscribed_calendars">Εγγεγραμμένα ημερολόγια</string>
+    <string name="nav_view_other_calendars">Άλλα ημερολόγια</string>
+    <string name="nav_view_disabled_calendars">%1$s (Απενεργοποιημένο)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (Δε συγχρονίστηκαν)</string>
+    <string name="nav_view_syncing_calendars">%1$s (Συγχρονίζεται)</string>
+    <string name="nav_view_more">Περισσότερα</string>
+    <string name="nav_view_switcher">Προβολή</string>
+    <string name="nav_view_switcher_day">Ημέρα</string>
+    <string name="nav_view_switcher_three_day">3 Ημέρες</string>
+    <string name="nav_view_switcher_week">Εβδομάδα</string>
+    <string name="nav_view_switcher_agenda">Ατζέντα</string>
+    <string name="nav_view_switcher_month">Μήνας</string>
+    <string name="nav_view_timezone">Ζώνη ώρας</string>
+    <string name="nav_view_settings">Ρυθμίσεις</string>
+    <string name="nav_view_feedback">Αφήστε την κριτική σας</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">Γενικά</string>
+    <string name="nav_view_more_bug">Αναφορά προβλήματος</string>
+    <string name="nav_view_more_subscription">Συνδρομή</string>
+    <string name="nav_view_more_logout">Αποσύνδεση</string>
+    <string name="nav_view_more_login">Είσοδος</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">Αυτή η δυνατότητα θα είναι διαθέσιμη σύντομα</string>
+    <string name="snack_event_deleted">Η εκδήλωση διαγράφηκε</string>
+    <string name="snack_event_deleted_as_organizer">Η ακύρωση στάλθηκε και η εκδήλωση διαγράφηκε</string>
+    <string name="snack_event_deleted_as_attendee">Η απάντηση στάλθηκε και η εκδήλωση διαγράφηκε</string>
+    <string name="snack_event_deleted_error">Σφάλμα κατά τη διαγραφή της εκδήλωσης</string>
+    <string name="snack_event_deleted_as_organizer_error">Δεν είναι δυνατή η αποστολή μηνύματος ηλ. ταχυδρομείου για ακύρωση, παρακαλούμε δοκιμάστε ξανά</string>
+    <string name="snack_event_opening_error">Σφάλμα κατά το άνοιγμα της εκδήλωσης</string>
+    <string name="snack_event_saving">Αποθήκευση εκδήλωσης</string>
+    <string name="snack_event_deleting">Διαγραφή εκδήλωσης</string>
+    <string name="snack_event_changing_answer">Ενημέρωση απάντησης</string>
+    <string name="snack_event_part_stat_updated">Η κατάσταση συμμετοχής ενημερώθηκε.</string>
+    <string name="snack_event_updated">Η εκδήλωση ενημερώθηκε</string>
+    <string name="snack_event_updated_recurring">Όλες οι εκδηλώσεις ενημερώθηκαν</string>
+    <string name="snack_event_updated_error_failed_mail">Η πρόσκληση απέτυχε να σταλεί</string>
+    <string name="snack_update_event_error_failed_mail">Η ενημέρωση απέτυχε</string>
+    <string name="snack_lost_zoom_access">Συνδεθείτε στο Zoom για να τροποποιήσετε αυτή την εκδήλωση</string>
+    <string name="snack_lost_zoom_access_acion">Σύνδεση</string>
+    <string name="snack_zoom_meeting_does_not_exist">Αυτή η σύσκεψη Zoom έχει ακυρωθεί. Αφαιρέστε τον σύνδεσμο για να τροποποιήσετε αυτή την εκδήλωση.</string>
+    <string name="snack_event_updated_error">Σφάλμα κατά την ενημέρωση της εκδήλωσης</string>
+    <string name="snack_event_created">Η εκδήλωση δημιουργήθηκε</string>
+    <string name="snack_event_created_failed_mail">Η εκδήλωση δημιουργήθηκε, αλλά η πρόσκληση απέτυχε να σταλεί</string>
+    <string name="snack_event_created_error">Σφάλμα κατά τη δημιουργία της εκδήλωσης</string>
+    <string name="snack_event_opening_edit_error">Σφάλμα στο άνοιγμα εκδήλωσης για επεξεργασία</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">Αυτό το επαναλαμβανόμενο συμβάν μπορεί να διαγραφεί μόνο στην εφαρμογή ιστού Calendar.</string>
+    <string name="snack_event_edit_with_attendees_error">Η επεξεργασία εκδηλώσεων με συμμετέχοντες δεν υποστηρίζεται προς το παρόν</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">Δεν είναι δυνατή η προσθήκη συμμετεχόντων και η αλλαγή ημερολογίου ταυτόχρονα</string>
+    <string name="snack_event_init_error">Σφάλμα κατά την προετοιμασία νέας εκδήλωσης</string>
+    <string name="snack_event_calendar_error">Σφάλμα εναλλαγής ημερολογίου</string>
+    <string name="snack_event_maximum_alarm_reached_error">Ο μέγιστος αριθμός κοινοποιήσεων έχει επιτευχθεί</string>
+    <string name="snack_send_bug_report_success">Η αναφορά έχει σταλεί, σας ευχαριστούμε για τα σχόλιά σας</string>
+    <string name="snack_send_bug_report_error">Σφάλμα αποστολής αναφοράς, παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="snack_send_bug_report_description_empty">Παρακαλούμε παραθέστε μια περιγραφή της αναφοράς σας</string>
+    <string name="snack_create_event_no_active_personal_calendar">Χρειάζεστε ένα προσωπικό ενεργό ημερολόγιο για να δημιουργήσετε εκδηλώσεις</string>
+    <string name="snack_create_event_no_active_calendar">Πρέπει να έχετε ένα ενεργό ημερολόγιο για να δημιουργήσετε εκδηλώσεις</string>
+    <string name="snack_add_self_as_participant">Δεν επιτρέπεται να προσκαλέσετε τον εαυτό σας</string>
+    <string name="snack_maximum_participants_reached">Ο μέγιστος αριθμός συμμετεχόντων έχει επιτευχθεί.</string>
+    <string name="snack_add_participant_error">Σφάλμα κατά την προσθήκη του συμμετέχοντα</string>
+    <string name="snack_add_participant_invalid_email">Μη έγκυρο email</string>
+    <string name="snack_change_attendee_answer_error">Σφάλμα αποστολής απάντησης, παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="snack_network_error">Σφάλμα δικτύου, παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="snack_import_event_signed_out">Πρέπει να συνδεθείτε για να εισάγετε εκδηλώσεις</string>
+    <string name="snack_app_link_signed_out">Πρέπει να συνδεθείτε για να δείτε την εκδήλωσή σας</string>
+    <string name="snack_update_default_calendar">Το προεπιλεγμένο ημερολόγιο ενημερώθηκε</string>
+    <string name="snack_update_default_calendar_error">Σφάλμα κατά την ενημέρωση του προεπιλεγμένου ημερολογίου, παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="snack_calendar_init_error">Σφάλμα λήψης πληροφοριών ημερολογίου</string>
+    <string name="snack_holiday_calendar_init_error">Σφάλμα κατά τη φόρτωση πληροφοριών ημερολογίου αργιών</string>
+    <string name="snack_update_calendar_error">Σφάλμα ενημέρωσης πληροφοριών ημερολογίου, παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="snack_update_calendar_settings_error">Σφάλμα ενημέρωσης ορισμένων πληροφοριών ημερολογίου, παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="snack_update_calendar_success">Το ημερολόγιο ενημερώθηκε</string>
+    <string name="snack_create_calendar_success">Το ημερολόγιο δημιουργήθηκε</string>
+    <string name="snack_add_calendar_success">Το ημερολόγιο προστέθηκε</string>
+    <string name="snack_calendar_saving">Γίνεται αποθήκευση ημερολογίου</string>
+    <string name="snack_create_calendar_error">Σφάλμα κατά τη δημιουργία ημερολογίου, παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="snack_add_calendar_error">Σφάλμα κατά την προσθήκη ημερολογίου, παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="snack_create_calendar_settings_error">Το ημερολόγιο δημιουργήθηκε, αλλά κάποιες πληροφορίες δεν ενημερώθηκαν. Παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="snack_ics_default_error">Σφάλμα κατά το άνοιγμα του ημερολογίου</string>
+    <string name="snack_ics_event_not_found_error">Η εκδήλωση δεν βρέθηκε</string>
+    <string name="snack_ics_file_not_found_error">Το αρχείο δεν βρέθηκε</string>
+    <string name="snack_ics_create_error">Σφάλμα κατά τη δημιουργία της εκδήλωσης</string>
+    <string name="snack_ics_parsing_error">Σφάλμα κατά την ανάγνωση του ημερολογίου</string>
+    <string name="snack_ics_unsupported_method_error">Αυτός ο τύπος εκδήλωσης δεν υποστηρίζεται ακόμα</string>
+    <string name="snack_ics_unsupported_add_error">Προς το παρόν, δεν υποστηρίζεται η προσθήκη γεγονότων σε μια εκδήλωση</string>
+    <string name="snack_ics_unsupported_counter_error">Ο επαναπρογραμματισμός εκδηλώσεων δεν υποστηρίζεται, προς το παρόν</string>
+    <string name="snack_ics_unsupported_refresh_error">Η ανανέωση της εκδήλωσης δεν υποστηρίζεται, προς το παρόν</string>
+    <string name="snack_ics_unsupported_publish_error">Η εισαγωγή εκδηλώσεων δεν υποστηρίζεται, προς το παρόν</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">Προς το παρόν, υποστηρίζουμε απαντήσεις μόνο στο σύνολο των εκδηλώσεων μιας σειράς</string>
+    <string name="snack_ics_party_crasher_error">Η διεύθυνση email σας δεν βρίσκεται στη λίστα συμμετεχόντων</string>
+    <string name="snack_ics_reply_party_crasher_error">Οι συμμετέχοντες που δεν προσκλήθηκαν από τον διοργανωτή δεν μπορούν να προστεθούν</string>
+    <string name="snack_ics_missing_uid_error">Η εκδήλωση στερείται UID</string>
+    <string name="snack_ics_no_active_personal_calendar_error">Δεν υπάρχει ενεργό προσωπικό ημερολόγιο που να σχετίζεται με αυτόν τον λογαριασμό</string>
+    <string name="snack_ics_no_active_calendar_error">Δεν υπάρχει ενεργό ημερολόγιο που να σχετίζεται με αυτόν τον λογαριασμό</string>
+    <string name="snack_ics_unsupported_duration_error">Η διάρκεια δεν υποστηρίζεται</string>
+    <string name="snack_ics_too_many_events_error">Πολλαπλές εκδηλώσεις δεν υποστηρίζονται, προς το παρόν</string>
+    <string name="snack_ics_no_events_error">Αυτό το ημερολόγιο δεν περιέχει καμιά εκδήλωση</string>
+    <string name="snack_ics_invalid_error">Αυτή η πρόσκληση είναι μη έγκυρη</string>
+    <string name="snack_ics_disabled_calendar_error">Ενεργοποιήστε ξανά τη διεύθυνση που συνδέεται με αυτό το ημερολόγιο για να ενημερώσετε αυτή την εκδήλωση</string>
+    <string name="snack_ics_event_deleted_error">Η εκδήλωση δεν υπάρχει πλέον στο ημερολόγιό σας</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">Ο/Η %1$s αποδέχθηκε την πρόσκλησή σας</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">Ο/Η %1$s αποδέχθηκε με επιφύλαξη την πρόσκλησή σας</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">Ο/Η %1$s απέρριψε την πρόσκλησή σας</string>
+    <string name="snack_app_link_invalid">Μη έγκυρος σύνδεσμος για την εκδήλωση</string>
+    <string name="snack_app_link_error">Σφάλμα κατά το άνοιγμα της εκδήλωσης</string>
+    <string name="snack_app_link_import_error">Η ταυτοποίηση ακυρώθηκε</string>
+    <string name="snack_notification_already_added">Η ειδοποίηση έχει ήδη προστεθεί</string>
+    <string name="snack_opening_ics">Άνοιγμα εκδήλωσης…</string>
+    <string name="snack_invite_in_shared_calendar_error">Δεν επιτρέπεται η δημιουργία προσκλήσεων σε κοινόχρηστο ημερολόγιο</string>
+    <string name="snack_down_banner">Οι διακομιστές Proton είναι εκτός λειτουργίας. Για λεπτομέρειες, επισκεφθείτε τη σελίδα κατάστασης.</string>
+    <string name="snack_down_banner_action">Άνοιγμα σελίδας κατάστασης</string>
+    <string name="snack_color_per_event_paid_feature">Αναβαθμίστε για προσαρμογή χρωμάτων εκδηλώσεων</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">Η εκδήλωση δεν υπάρχει</string>
+    <string name="error_occurrence_does_not_exist">Το γεγονός δεν υπάρχει</string>
+    <string name="update_timezone_dialog_title">Η ζώνη ώρας άλλαξε</string>
+    <string name="update_timezone_dialog_message">Η ζώνη ώρας του συστήματός σας φαίνεται ότι έχει αλλάξει σε %1$s. Θέλετε να ενημερώσετε τις προτιμήσεις για τη ζώνη ώρας σας;</string>
+    <string name="update_timezone_dialog_confirmation">Ενημέρωση</string>
+    <string name="update_timezone_dialog_cancel">Ακύρωση</string>
+    <string name="contacts_permission_dialog_title">Να επιτρέπεται στο Proton Calendar η πρόσβαση στις επαφές σας;</string>
+    <string name="contacts_permission_dialog_message">Το Proton Calendar χρειάζεται πρόσβαση στις επαφές του τηλεφώνου σας για να σας βοηθήσει να τις προσθέσετε εύκολα στις εκδηλώσεις σας.</string>
+    <string name="contacts_permission_dialog_allow">Επιτρέπεται</string>
+    <string name="contacts_permission_dialog_open_settings">Άνοιγμα Ρυθμίσεων</string>
+    <string name="contacts_permission_dialog_cancel">Απαγορεύεται</string>
+    <string name="dialog_title_calendar_picker">Ημερολόγιο</string>
+    <string name="dialog_title_calendar_color_picker">Χρώμα ημερολογίου</string>
+    <string name="dialog_title_event_color_picker">Χρώμα εκδήλωσης</string>
+    <string name="import_from_google_title">Εισαγωγή από Google</string>
+    <string name="notifications_permission_dialog_title">Να επιτραπεί το Ημερολόγιο Proton να εμφανίζει ειδοποιήσεις;</string>
+    <string name="notifications_permission_dialog_message">Το Ημερολόγιο Proton χρειάζεται άδεια για να σας εμφανίζει τις ειδοποιήσεις επερχόμενων εκδηλώσεων.</string>
+    <string name="notifications_permission_dialog_open_settings">Άνοιγμα Ρυθμίσεων</string>
+    <string name="notifications_permission_dialog_cancel">Άρνηση</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">Ειδοποιήσεις Εκδηλώσεων</string>
+    <string name="notification_channel_sync">Συγχρονισμός Ημερολογίου</string>
+    <string name="notification_channel_calendar_fetch">Λήψη Ημερολογίων</string>
+    <string name="notification_sync">Γίνεται Συγχρονισμός Ημερολογίων…</string>
+    <string name="notification_text_today">Σήμερα</string>
+    <string name="notification_text_today_part_time">Σήμερα στις %1$s</string>
+    <string name="notification_text_tomorrow">Αύριο</string>
+    <string name="notification_text_tomorrow_part_time">Αύριο στις %1$s</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s στο %2$s</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">Θέμα</string>
+    <string name="bug_report_hint_description">Παρακαλούμε περιγράψτε το πρόβλημα και συμπεριλάβετε τυχόν μηνύματα σφάλματος.</string>
+    <string name="bug_report_discard_changes_title">Μη Αποθηκευμένες Αλλαγές</string>
+    <string name="bug_report_discard_changes_description">Υπάρχουν μη αποθηκευμένες καταχωρήσεις στη φόρμα. Θέλετε σίγουρα να τις απορρίψετε;</string>
+    <string name="bug_report_discard_changes_cancel">Συνέχεια σύνταξης</string>
+    <string name="bug_report_discard_changes_confirm">Απόρριψη</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">Ρυθμίσεις εφαρμογής</string>
+    <string name="settings_theme_title">Θέμα</string>
+    <string name="settings_theme_info">Αυτή η ρύθμιση επηρεάζει μόνο την εμφάνιση της εφαρμογής Proton Calendar σε αυτή τη συσκευή. Η εφαρμογή θα επανεκκινηθεί μετά την αλλαγή του θέματος.</string>
+    <string name="settings_timezone_title">Ζώνη ώρας</string>
+    <string name="settings_language_title">Γλώσσα εφαρμογής</string>
+    <string name="settings_language_default">Αυτόματος εντοπισμός</string>
+    <string name="settings_default_view_title">Προεπιλεγμένη προβολή</string>
+    <string name="settings_default_view_default">Τελευταία προβολή</string>
+    <string name="settings_update_timezone_title">Ζητήστε να ενημερώσετε τη ρύθμιση ζώνης ώρας</string>
+    <string name="settings_update_timezone_subtitle">Εάν η ζώνη ώρας του συστήματος δεν ταιριάζει με την τρέχουσα ρύθμιση ζώνης ώρας, θα σας ζητηθεί να την ενημερώσετε.</string>
+    <string name="settings_update_timezone_checkbox">Να μην ερωτηθώ ξανά</string>
+    <string name="settings_week_start_title">Αρχή εβδομάδας</string>
+    <string name="settings_time_format_title">Μορφή ώρας</string>
+    <string name="settings_week_numbers_title">Εμφάνιση αριθμών εβδομάδων</string>
+    <string name="settings_auto_invites_title">Προσθήκη προσκλήσεων στο ημερολόγιο και σήμανση σε εκκρεμότητα</string>
+    <string name="settings_search_title">Αναζήτηση στα ημερολόγια</string>
+    <string name="settings_search_subtitle">Κατεβάζει και αποθηκεύει περιεχόμενο ημερολογίου στη συσκευή σας για αναζήτηση. Η απενεργοποίηση αυτής της επιλογής θα καταργήσει το ληφθέν περιεχόμενο.\n\nΗ εύρεση είναι μια πειραματική λειτουργία beta. Η ενεργοποίησή της μπορεί να κάνει την εφαρμογή ασταθή.</string>
+    <string name="settings_alternative_routing_title">Να επιτρέπεται εναλλακτική δρομολόγηση</string>
+    <string name="settings_alternative_routing_subtitle">Σε περίπτωση φραγής των ιστοσελίδων της Proton, αυτή η ρύθμιση επιτρέπει στην εφαρμογή να επιχειρήσει εναλλακτική δρομολόγηση δικτύου προκειμένου να φτάσει στην Proton, κάτι που μπορεί να φανεί χρήσιμο στην παράκαμψη τοίχων προστασίας ή προβλημάτων του δικτύου. Συνιστούμε τη διατήρηση αυτής της ρύθμισης για μεγαλύτερη αξιοπιστία.</string>
+    <string name="settings_value_placeholder">Πατήστε για να επιλέξετε</string>
+    <string name="settings_general_title">Γενικά</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s κλπ.</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">θέμα</string>
+    <string name="settings_general_info_language">γλώσσα</string>
+    <string name="settings_general_info_time_zone">ζώνη ώρας</string>
+    <string name="settings_general_info_calendar_layout">διάταξη ημερολογίου</string>
+    <string name="settings_calendars">Τα ημερολόγιά μου</string>
+    <string name="settings_calendars_empty">Δεν βρέθηκαν ημερολόγια</string>
+    <string name="settings_subscribed_calendars">Εγγεγραμμένα ημερολόγια</string>
+    <string name="settings_other_calendars">Άλλα ημερολόγια</string>
+    <string name="settings_calendar_default" comment="Default calendar">Προεπιλογή</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">Απενεργοποιημένο</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">Μη συγχρονισμένο</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">Συγχρονισμός</string>
+    <string name="settings_calendar_subscribed_invalid_ics">Μη υποστηριζόμενη μορφή ημερολογίου</string>
+    <string name="settings_calendar_subscribed_too_big">Υπερβολικά μεγάλο ημερολόγιο</string>
+    <string name="settings_calendar_subscribed_not_accessible">Μη προσβάσιμος σύνδεσμος ημερολογίου</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">Ο σύνδεσμος του ημερολογίου είναι προσωρινά μη προσβάσιμος</string>
+    <string name="settings_calendar_subscribed_last_sync_old">Πέρασαν πάνω από 12 ώρες από την τελευταία ανανέωση</string>
+    <string name="settings_calendar_subscribed_not_decrypted">Αδυναμία αποκρυπτογράφησης ημερολογίου</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">Μόνο για ανάγνωση</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">από %1$s</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">Δημιουργία ημερολογίου</string>
+    <string name="calendar_form_update_title">Επεξεργασία ημερολογίου</string>
+    <string name="calendar_form_save">Αποθήκευση</string>
+    <string name="calendar_form_name">Όνομα</string>
+    <string name="calendar_form_description">Περιγραφή</string>
+    <string name="calendar_form_color">Χρώμα ημερολογίου</string>
+    <string name="calendar_form_language">Γλώσσα</string>
+    <string name="calendar_form_default_event_duration">Διάρκεια εκδήλωσης</string>
+    <string name="calendar_form_default_event_notifications">Ειδοποιήσεις εκδήλωσης</string>
+    <string name="calendar_form_default_all_day_event_notifications">Ειδοποιήσεις ολοήμερων εκδηλώσεων</string>
+    <string name="calendar_form_add_notification">Προσθήκη ειδοποίησης</string>
+    <string name="calendar_form_default_email">Διεύθυνση email</string>
+    <string name="calendar_form_default_email_value_error">Σφάλμα φόρτωσης του προεπιλεγμένου email</string>
+    <string name="calendar_form_name_hint">Προσθέστε ένα όνομα ημερολογίου</string>
+    <string name="calendar_form_name_required_error">Απαιτείται όνομα</string>
+    <string name="calendar_form_description_hint">Προσθέστε μια περιγραφή ημερολογίου</string>
+    <string name="add_calendar_text">Προσθήκη ημερολογίου</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">Προσθήκη</string>
+    <string name="create_calendar_limit_reached">Έχετε φτάσει τον μέγιστο αριθμό ημερολογίων.</string>
+    <string name="create_calendar_limit_reached_title">Αδυναμία προσθήκης περισσότερων ημερολογίων</string>
+    <string name="create_calendar_limit_reached_paid_description">Έχετε συμπληρώσει τον μέγιστο αριθμό των 25 ημερολογίων που είναι διαθέσιμα στο πρόγραμμά σας.\n\nΓια να προσθέσετε ένα νέο ημερολόγιο, καταργήστε ένα υπάρχον.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">Πρέπει να έχετε τουλάχιστον ένα προσωπικό ημερολόγιο πριν φτάσετε το όριο των 25 ημερολογίων του πλάνου σας.</string>
+    <string name="create_calendar_limit_reached_manage">Διαχείριση ημερολογίων</string>
+    <string name="create_calendar_limit_reached_free_description">Έχετε συμπληρώσει τον μέγιστο αριθμό των 3 ημερολογίων που είναι διαθέσιμα στο πλάνο σας.\n\nΓια να προσθέσετε ένα νέο ημερολόγιο, καταργήστε ένα υπάρχον.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">Πρέπει να έχετε τουλάχιστον ένα προσωπικό ημερολόγιο πριν φτάσετε το όριο των 3 ημερολογίων του πλάνου σας.</string>
+    <string name="create_calendar_limit_reached_error">Σφάλμα</string>
+    <string name="delete_calendar_dialog_title">Διαγραφή ημερολογίου</string>
+    <string name="delete_calendar_dialog_message">Θέλετε σίγουρα να διαγράψετε αυτό το ημερολόγιο;</string>
+    <string name="remove_calendar_dialog_title">Αφαίρεση ημερολογίου</string>
+    <string name="remove_calendar_dialog_message">Θέλετε σίγουρα να αφαιρέσετε αυτό το ημερολόγιο;</string>
+    <string name="leave_calendar_dialog_title">Αποχώρηση από ημερολόγιο</string>
+    <string name="leave_calendar_dialog_message">Αν αποχωρήσετε από αυτό το ημερολόγιο, για να συμμετάσχετε ξανά θα πρέπει να το ζητήσετε από τον κάτοχο.</string>
+    <string name="delete_default_calendar_dialog_message">Θέλετε σίγουρα να διαγράψετε αυτό το ημερολόγιο; Το \"%1$s\" θα οριστεί ως προεπιλεγμένο ημερολόγιο.</string>
+    <string name="delete_calendar_snack_deleted">Το ημερολόγιο διαγράφηκε</string>
+    <string name="remove_calendar_snack_removed">Το ημερολόγιο αφαιρέθηκε</string>
+    <string name="delete_calendar_snack_error">Σφάλμα κατά τη διαγραφή του ημερολογίου</string>
+    <string name="remove_calendar_snack_error">Σφάλμα κατά την αφαίρεση του ημερολογίου</string>
+    <string name="leave_calendar_snack_error">Σφάλμα αποχώρησης από ημερολόγιο</string>
+    <string name="delete_calendar_snack_error_password_confirmation">Αποτυχία επιβεβαίωσης κωδικού πρόσβασης</string>
+    <string name="recreate_calendar_dialog_title">Εκκαθάριση ημερολογίου</string>
+    <string name="recreate_calendar_dialog_message">Αυτή η ενέργεια θα καταργήσει όλες τις εκδηλώσεις και τους προσκεκλημένους χρήστες.\n\nΘέλετε σίγουρα να εκκαθαρίσετε αυτό το ημερολόγιο;</string>
+    <string name="recreate_calendar_snack_error">Σφάλμα εκκαθάρισης ημερολογίου</string>
+    <string name="recreate_calendar_snack_deleted">Το ημερολόγιο εκκαθαρίστηκε</string>
+    <string name="recreate_calendar_snack_clearing">Εκκαθάριση ημερολογίου…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">Προσθήκη εορτολογίου</string>
+    <string name="holiday_calendar_title">Εορτολόγιο</string>
+    <string name="add_holiday_calendar_country_search_hint">Αναζήτηση χώρας</string>
+    <string name="holiday_calendar_form_picker_title">Χώρα</string>
+    <string name="holiday_calendar_time_zone_based">Βάσει της ζώνης ώρας σας</string>
+    <string name="holiday_calendar_already_exists">Αυτό το εορτολόγιο έχει ήδη προστεθεί</string>
+    <string name="holiday_calendar_value_placeholder">Επιλογή χώρας</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">ΟΚ</string>
+    <string name="bootstrap_error_no_calendar_title">Δεν υπάρχουν ημερολόγια που να σχετίζονται με αυτόν τον λογαριασμό.</string>
+    <string name="bootstrap_error_no_calendar_message">Για να ορίσετε ένα τώρα, επισκεφθείτε το <a href="https://calendar.proton.me">calendar.proton.me</a></string>
+    <string name="bootstrap_error_some_calendars_failed_title">Σφάλμα κατά την προετοιμασία των ημερολογίων</string>
+    <string name="bootstrap_error_some_calendars_failed_message">Δεν ήταν δυνατόν να στηθούν τα εξής ημερολόγια</string>
+    <string name="bootstrap_error_no_active_calendar_title">Δεν υπάρχει ενεργό προσωπικό ημερολόγιο που να σχετίζεται με αυτόν τον λογαριασμό.</string>
+    <string name="bootstrap_error_no_active_calendar_message">Για να μάθετε πώς να ενεργοποιήσετε ένα ημερολόγιο, επισκεφθείτε τη <a href="https://proton.me/support">γνωσιακή βάση</a> μας</string>
+    <string name="bootstrap_error_store_quota_reached_message">Δεν υπάρχει πλέον διαθέσιμος χώρος αποθήκευσης.</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">Μάθετε περισσότερα</string>
+    <string name="bootstrap_error_reset_needed_title">Επαναφορά κλειδιών ημερολογίου</string>
+    <string name="bootstrap_error_reset_needed_message">Έχετε επαναφέρει τον κωδικό πρόσβασης σας και σαν αποτέλεσμα οι εκδηλώσεις συνδεδεμένες με τα ακόλουθα ημερολόγια, δεν μπόρεσαν να αποκρυπτογραφηθούν. Οποιαδήποτε ενεργά εγγεγραμμένα ημερολόγια θα συγχρονιστούν ξανά μετά από λίγα λεπτά.</string>
+    <string name="bootstrap_error_update_passphrase_title">Επανενεργοποιήστε τα κλειδιά ημερολογίου</string>
+    <string name="bootstrap_error_update_passphrase_message">Έχετε επανενεργοποιήσει τα κλειδιά και οι εκδηλώσεις που συνδέονται με τα ακόλουθα ημερολόγια μπορούν τώρα να αποκρυπτογραφηθούν.</string>
+    <string name="bootstrap_error_continue_button">Συνέχεια</string>
+    <string name="splash_after_login_init">Ετοιμασία ημερολόγιων</string>
+    <string name="splash_init">Αποκρυπτογράφηση εκδηλώσεων</string>
+    <string name="default_calendar_name">Το ημερολόγιο μου</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">Αφήστε την κριτική σας</string>
+    <string name="dialog_feedback_text">Πώς θα περιγράφατε την εμπειρία σας στο Proton Calendar;</string>
+    <string name="dialog_feedback_rating_worst">Απαίσια</string>
+    <string name="dialog_feedback_rating_best">Θαυμάσια</string>
+    <string name="dialog_feedback_hint">Πείτε μας για την εμπειρία σας. (Προαιρετικό)</string>
+    <string name="dialog_feedback_submit">Υποβολή</string>
+    <string name="dialog_feedback_submit_thank_you">Σας ευχαριστούμε! Τα σχόλιά σας μας βοηθούν να βελτιώσουμε το Proton.</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Γραφικό στοιχείο του Proton Calendar</string>
+    <string name="calendar_widget_no_upcoming_events_today">Δεν υπάρχουν επερχόμενες εκδηλώσεις σήμερα</string>
+    <string name="calendar_widget_loading_events">Γίνεται φόρτωση εκδηλώσεων…</string>
+    <string name="calendar_widget_loading_events_error">Αδυναμία φόρτωσης εκδηλώσεων</string>
+    <string name="calendar_widget_no_upcoming_events">Δεν υπάρχουν επερχόμενες εκδηλώσεις</string>
+    <string name="calendar_widget_please_log_in">Συνδεθείτε για να δείτε τα γεγονότα σας</string>
+    <string name="calendar_widget_part_day_event_starts_at">Έναρξη στις %1$s</string>
+    <string name="calendar_widget_part_day_event_ends_at">Λήξη στις %1$s</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">Τι νέο υπάρχει</string>
+    <string name="spotlight_dialog_beta_header">Ημερολόγιο Beta</string>
+    <string name="spotlight_dialog_skip">Παράλειψη</string>
+    <string name="spotlight_dialog_confirmation_button">ΟΚ</string>
+    <string name="spotlight_dialog_month_view_title">Προβολή μήνα</string>
+    <string name="spotlight_dialog_month_view_description">Δείτε μια επισκόπηση των εκδηλώσεών σας με τη νέα μας προβολή μήνα. Αλλάξτε προβολές χρησιμοποιώντας το μενού.</string>
+    <string name="spotlight_dialog_easy_switch_description">Η εισαγωγή εκδηλώσεων και άλλων δεδομένων από το Ημερολόγιο Google στο Ημερολόγιο Proton είναι ευκολότερη από ποτέ. Ο εισαγωγέας Easy Switch θα σας καθοδηγήσει σε κάθε βήμα.</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">Έναρξη εισαγωγής</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">Όχι τώρα</string>
+    <string name="spotlight_dialog_auto_invites_title">Εύκολη αποδοχή προσκλήσεων</string>
+    <string name="spotlight_dialog_auto_invites_description">Οι προσκλήσεις τώρα εμφανίζονται στο ημερολόγιό σας ως εκκρεμείς εκδηλώσεις. Απλά ανοίξτε μια εκδήλωση για να απαντήσετε στην πρόσκληση.\n\nΓια διαχείριση, μεταβείτε στις ρυθμίσεις.</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">Επόμενο</string>
+    <string name="spotlight_v5_dialog_got_it_button">Το κατάλαβα</string>
+    <string name="spotlight_v5_dialog_learn_more_button">Μάθετε περισσότερα</string>
+    <string name="spotlight_v5_dialog_rebranding_title">Ενημερωμένο Proton, ενοποιημένη προστασία</string>
+    <string name="spotlight_v5_dialog_rebranding_description">Παρουσίαση ανανεωμένης όψης του Proton. Πολλές υπηρεσίες, μία αποστολή. Καλώς ήρθατε σε ένα διαδίκτυο όπου η ιδιωτικότητα είναι η προεπιλογή. <a href="https://proton.me/news/updated-proton">Μάθετε περισσότερα</a></string>
+    <string name="spotlight_dialog_week_view_title">Περισσότερες επιλογές προβολής</string>
+    <string name="spotlight_dialog_week_view_description">• Παρουσιάζουμε τις προβολές ημερολογίου <b>3 ημερών</b> και <b>Εβδομάδας</b>. Επιλέξτε την προβολή που προτιμάτε στο <b>μενού</b>.\n\n• Προσαρμόστε το ύψος των γραμμών στο πλέγμα ημέρας τσιμπώντας με δύο δάχτυλα για μεγέθυνση ή σμίκρυνση.</string>
+    <string name="spotlight_dialog_search_title">Αναζήτηση για εκδηλώσεις</string>
+    <string name="spotlight_dialog_search_description">Βρείτε εύκολα την εκδήλωση που αναζητάτε με τη νέα λειτουργία αναζήτησης. <a href="https://proton.me/support/calendar-search">Μάθετε περισσότερα</a></string>
+    <string name="spotlight_dialog_search_positive">Ενεργοποίηση</string>
+    <string name="spotlight_dialog_search_negative">Παράλειψη</string>
+    <string name="spotlight_dialog_import_title">Περισσότεροι τρόποι προσθήκης εκδηλώσεων</string>
+    <string name="spotlight_dialog_import_description">Εισαγωγή εκδηλώσεων στο ημερολόγιό σας από αρχεία στο τηλέφωνό σας.\n \n• Προσθέστε κρατήσεις ταξιδιού απευθείας από το ProtonMail.</string>
+    <string name="spotlight_dialog_calendar_provider_title">Χαρακτηριστικά ημερολογίου</string>
+    <string name="spotlight_dialog_calendar_provider_description">• Προσθέστε εκδηλώσεις απευθείας στο Ημερολόγιο Proton από άλλες εφαρμογές.\n\n• Δημιουργήστε και διαχειριστείτε εκδηλώσεις σε ημερολόγια που έχουν τεθεί σε κοινή χρήση με εσάς.\n\n• Ορίστε την προεπιλεγμένη προβολή που θέλετε να βλέπετε κατά το άνοιγμα της εφαρμογής.\n\n• 13 νέες διαθέσιμες γλώσσες.</string>
+    <string name="spotlight_dialog_wipe_search_title">Η αναζήτηση καταργήθηκε για να βελτιωθεί</string>
+    <string name="spotlight_dialog_wipe_search_description">Καταργούμε την πειραματική δυνατότητα αναζήτησης από το Proton Calendar Beta, καθώς θέλουμε να την κάνουμε πιο χρήσιμη και αξιόπιστη για εσάς. Αυτό μπορεί να διαρκέσει μερικά δευτερόλεπτα.</string>
+    <string name="spotlight_dialog_holiday_calendar_title">Οι επίσημες αργίες είναι εδώ!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">Τέρμα πια οι προγραμματισμένες συναντήσεις χωρίς διαθέσιμους συμμετέχοντες ή οι φορές που ξεχάσατε να προγραμματίσετε μια μεγάλη απόδραση το Σαββατοκύριακο.\n\nΠροσθέστε τις επίσημες αργίες οποιασδήποτε χώρας στο ημερολόγιό σας.</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">Τέρμα πια οι προγραμματισμένες συναντήσεις χωρίς διαθέσιμους συμμετέχοντες ή οι φορές που ξεχάσατε να προγραμματίσετε μια μεγάλη απόδραση το Σαββατοκύριακο.\n\nΕφόσον έχετε φτάσει το όριο αριθμού ημερολογίων, για να προσθέσετε ένα ημερολόγιο αργιών, θα πρέπει πρώτα να καταργήσετε ένα υπάρχον ημερολόγιο.</string>
+    <string name="spotlight_dialog_color_per_event_title">Προσαρμοσμένα χρώματα εκδηλώσεων</string>
+    <string name="spotlight_dialog_color_per_event_description">Προσαρμόστε το χρώμα μεμονωμένων εκδηλώσεων για:\n\n• Χρωματική κωδικοποίηση του ημερολογίου σας\n\n• Οργανώστε καλύτερα την ημέρα σας και παρακολουθήστε το χρόνο σας\n\n• Ορίστε προτεραιότητες και ενισχύστε την αποτελεσματικότητα</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">Να επιτρέπεται η πρόσβαση</string>
+    <string name="dialog_google_auth_description">Για να ξεκινήσετε την εισαγωγή, συνδεθείτε στο Ημερολόγιο Google και επιτρέψτε στο Proton την πρόσβαση στα δεδομένα σας.</string>
+    <string name="import_assistant_prepare_import_error">Σφάλμα προετοιμασίας εισαγωγής, παρακαλούμε δοκιμάστε ξανά αργότερα</string>
+    <string name="import_assistant_prepare_import">Προετοιμασία εισαγωγής</string>
+    <string name="import_assistant_gathering_data_loader_title">Συγκεντρώνουμε τα δεδομένα σας</string>
+    <string name="import_assistant_summary_title">Σύνοψη εισαγωγής</string>
+    <string name="import_assistant_summary_customize_import">Προσαρμοσμένη εισαγωγή</string>
+    <string name="import_assistant_error">Σφάλμα κατά τη λήψη δεδομένων</string>
+    <string name="import_assistant_data_gathering_error">Αποτυχία συλλογής δεδομένων</string>
+    <string name="import_assistant_update_import_error">Αποτυχία ενημέρωσης εισαγωγής, παρακαλούμε δοκιμάστε ξανά αργότερα.</string>
+    <string name="import_assistant_update_import_wrong_account_error">Λανθασμένος λογαριασμός. Παρακαλούμε εισέλθετε στον λογαριασμό από τον οποίο εισάγατε το ημερολόγιο.</string>
+    <string name="import_assistant_start_import_error">Αποτυχία έναρξης εισαγωγής, παρακαλούμε δοκιμάστε ξανά αργότερα.</string>
+    <string name="import_assistant_delete_import_success">Η καταχώρηση εισαγωγής διαγράφηκε</string>
+    <string name="import_assistant_delete_import_error">Αποτυχία διαγραφής εισαγωγής, παρακαλούμε δοκιμάστε ξανά αργότερα.</string>
+    <string name="import_assistant_cancel_import_error">Αποτυχία ακύρωσης εισαγωγής, παρακαλούμε δοκιμάστε ξανά αργότερα.</string>
+    <string name="import_assistant_resume_import_error">Αποτυχία συνέχισης εισαγωγής, παρακαλούμε δοκιμάστε ξανά αργότερα.</string>
+    <string name="import_assistant_create_calendar_error">Αποτυχία δημιουργίας ενός ή περισσότερων ημερολογίων</string>
+    <string name="import_assistant_start_import_empty_error">Αποτυχία έναρξης εισαγωγής, δεν υπάρχουν ημερολόγια για εισαγωγή</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">Εισαγωγή ως</string>
+    <string name="import_assistant_new_calendar_badge">Νέο</string>
+    <string name="import_assistant_merge_calendar_badge">Συγχωνευμένα</string>
+    <string name="import_assistant_creating_calendars">Γίνεται δημιουργία νέων ημερολόγιων</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">Σχεδόν τελειώσαμε…</string>
+    <string name="import_assistant_new_calendar_header">Δημιουργία νέου</string>
+    <string name="import_assistant_merge_calendar_header">Συγχώνευση με υπάρχον</string>
+    <string name="import_assistant_in_progress_title">Εισαγωγή σε εξέλιξη</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">Εισαγωγή δεδομένων από %1s σε %2s.</string>
+    <string name="import_assistant_in_progress_redirect">Προβολή της προόδου</string>
+    <string name="import_assistant_in_progress_sub_description">Οι μεγάλες εισαγωγές μπορεί να διαρκέσουν αρκετές ημέρες. Θα σας ενημερώσουμε όταν ολοκληρωθεί η εισαγωγή. Μπορείτε να κλείσετε αυτήν την οθόνη.</string>
+    <string name="import_assistant_guide_subtitle">Μεταβείτε στο απόρρητο. Εύκολα και με ασφάλεια.</string>
+    <string name="import_assistant_guide_description">Μετακινήστε τις εκδηλώσεις και άλλα δεδομένα σας από το Google στο Proton. Η εισαγωγή του Easy Switch σας καθοδηγεί σε κάθε βήμα και κρυπτογραφεί τα δεδομένα σας καθώς μετακινούνται.</string>
+    <string name="import_assistant_new_import">Νέα εισαγωγή</string>
+    <string name="import_assistant_previous_import">Προηγούμενες εισαγωγές</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">Ξεκίνησε</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">Σε εξέλιξη</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">Ολοκληρώθηκε</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">Ακυρωμένες</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">Γίνεται Ακύρωση</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">Σε παύση</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">Απέτυχε</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Η σύνδεση με το Google έχει διακοπεί</string>
+    <string name="import_assistant_status_paused_lost_connection_description">Για να συνεχίσετε την εισαγωγή, πατήστε Επανασύνδεση, συνδεθείτε στο Google και παραχωρήστε ξανά στο Proton πρόσβαση στα Google δεδομένα σας.</string>
+    <string name="import_assistant_status_paused_lost_connection_button">Επανασύνδεση</string>
+    <string name="import_assistant_status_paused_storage_full_title">Ο αποθηκευτικός σας χώρος είναι γεμάτος</string>
+    <string name="import_assistant_status_paused_storage_full_description">Ο Proton λογαριασμός σας δεν διαθέτει αρκετό χώρο αποθήκευσης για να ολοκληρωθεί αυτή η εισαγωγή ημερολογίου. Ελευθερώστε χώρο ή προσθέστε περισσότερο χώρο αποθήκευσης και, στη συνέχεια, επιστρέψτε εδώ για να συνεχίσετε.</string>
+    <string name="import_assistant_status_paused_storage_full_button">Συνέχεια</string>
+    <string name="import_assistant_delete_report_title">Κατάργηση από τη λίστα;</string>
+    <string name="import_assistant_delete_report_message">Δεν θα βλέπετε πλέον αυτό το στοιχείο στο ιστορικό εισαγωγής.</string>
+    <string name="import_assistant_delete_report_positive_button">Αφαίρεση</string>
+    <string name="import_assistant_delete_report_negative_button">Διατήρηση</string>
+    <string name="import_assistant_cancel_import_title">Ατελής εισαγωγή!</string>
+    <string name="import_assistant_cancel_import_message">Εάν ακυρώσετε αυτήν την εισαγωγή, δεν θα μπορέσετε να τη συνεχίσετε. Το Proton αποθήκευσε όλη την πρόοδο στον λογαριασμό σας. Ακύρωση οπωσδήποτε;</string>
+    <string name="import_assistant_cancel_import_positive_button">Ακύρωση εισαγωγής</string>
+    <string name="import_assistant_cancel_import_negative_button">Συνέχιση εισαγωγής</string>
+    <string name="import_assistant_in_progress_snack">Εισαγωγή σε εξέλιξη</string>
+    <string name="import_assistant_discard_import_title">Ακύρωση εισαγωγής;</string>
+    <string name="import_assistant_discard_import_message">Η εισαγωγή είναι ελλιπής και αν την ακυρώσετε δεν θα μπορεί να συνεχιστεί.</string>
+    <string name="import_assistant_discard_import_positive">Ακύρωση εισαγωγής</string>
+    <string name="import_assistant_discard_import_negative">Συνέχιση εισαγωγής</string>
+    <string name="import_assistant_authentication_canceled">Η ταυτοποίηση ακυρώθηκε</string>
+    <string name="import_assistant_sign_in_in_progress">Μια διαδικασία σύνδεσης είναι ήδη σε εξέλιξη</string>
+    <string name="import_assistant_in_progress_error_snack">Υπάρχει ακόμη εισαγωγή σε εξέλιξη</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">Να εισαχθεί ως απλή εκδήλωση;</string>
+    <string name="import_event_disclaimer_dialog_description">\nΟι εισαγόμενες προσκλήσεις εμφανίζονται στο Ημερολόγιο Proton ως απλές εκδηλώσεις <b>χωρίς στοιχεία διοργανωτή</b> και <b>συμμετεχόντων</b>.\n\nΓια να λαμβάνετε ενημερώσεις εκδηλώσεων και να βλέπετε συμμετέχοντες, ζητήστε από τους διοργανωτές να σας προσκαλέσουν χρησιμοποιώντας τη διεύθυνση ηλεκτρονικού ταχυδρομείου σας Proton.</string>
+    <string name="import_event_disclaimer_dialog_positive">Εισαγωγή</string>
+    <string name="undefined_color">Απροσδιόριστο</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">ημερολόγιο</item>
+        <item quantity="other">{count, plural, one {ημερολόγιο} other {ημερολόγια}}</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">Εισαγωγή %1$d ημερολογίου</item>
+        <item quantity="other">Εισαγωγή %1$d ημερολογίων</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">%1$d συνεχιζόμενη εισαγωγή</item>
+        <item quantity="other">%1$d συνεχιζόμενες εισαγωγές</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">%1$d από %2$d δημιουργήθηκαν σε %3$s</item>
+        <item quantity="other">%1$d από %2$d δημιουργήθηκαν σε %3$s</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">Δημιουργήστε %1$d νέο ημερολόγιο στο Proton Calendar.</item>
+        <item quantity="other">Δημιουργήστε %1$d νέα ημερολόγια στο Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">Εισαγωγή %1$d από %2$d ημερολόγιο από</item>
+        <item quantity="other">Εισαγωγή %1$d από %2$d ημερολόγια από</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">Συγχώνευση ημερολογίου %1$d στο Ημερολόγιο Proton.</item>
+        <item quantity="other">Συγχώνευση ημερολογίων %1$d στο Ημερολόγιο Proton.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">Δεν είναι δυνατή η δημιουργία νέων ημερολογίων για όλα τα εισαγόμενα ημερολόγια λόγω του προσωπικού ορίου συνολικών ημερολογίων.\n • Αποεπιλέξτε τουλάχιστον %1$d ημερολόγιο</item>
+        <item quantity="other">Δεν είναι δυνατή η δημιουργία νέων ημερολογίων για όλα τα εισαγόμενα ημερολόγια λόγω του προσωπικού ορίου συνολικών ημερολογίων.\n • Αποεπιλέξτε τουλάχιστον %1$d ημερολόγια</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020ή\n • Συγχώνευση τουλάχιστον %1$d ημερολογίου με υπάρχοντα ημερολόγια Proton.</item>
+        <item quantity="other">\u0020ή\n • Συγχώνευση τουλάχιστον %1$d ημερολογίων με υπάρχοντα ημερολόγια Proton.</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">δευτερόλεπτο</item>
+        <item quantity="other">δευτερόλεπτα</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">λεπτό</item>
+        <item quantity="other">λεπτά</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">ώρα</item>
+        <item quantity="other">ώρες</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">ημέρα</item>
+        <item quantity="other">{count, plural, one {ημέρα} other {ημέρες}}</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">εβδομάδα</item>
+        <item quantity="other">εβδομάδες</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">μήνας</item>
+        <item quantity="other">μήνες</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">έτος</item>
+        <item quantity="other">έτη</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">μία φορά</item>
+        <item quantity="other">φορές</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">περιστατικό</item>
+        <item quantity="other">περιστατικά</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">φορά</item>
+        <item quantity="other">φορές</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">συμμετέχων</item>
+        <item quantity="other">συμμετέχοντες</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">Κάθε %1$d %2$s</item>
+        <item quantity="other">Κάθε %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">Κάθε %1$d %2$s</item>
+        <item quantity="other">Κάθε %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">Κάθε %1$d %2$s</item>
+        <item quantity="other">Κάθε %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">Κάθε %1$d %2$s</item>
+        <item quantity="other">Κάθε %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s λεπτό</item>
+        <item quantity="other">%1$s λεπτά</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d/%2$d χαρακτήρες</item>
+        <item quantity="other">%1$d/%2$d χαρακτήρες</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d/%2$d χαρακτήρες</item>
+        <item quantity="other">%1$d/%2$d χαρακτήρες</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>πρώτο</item>
+        <item>δεύτερο</item>
+        <item>τρίτο</item>
+        <item>τέταρτο</item>
+        <item>πέμπτο</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>τελευταίο</item>
+        <item>προτελευταίο</item>
+        <item>τρίτο από το τέλος</item>
+        <item>τέταρτο από το τέλος</item>
+        <item>πέμπτο από το τέλος</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>Φωτεινό</item>
+        <item>Σκοτεινό</item>
+        <item>Προεπιλογή συστήματος</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>Προεπιλογή συστήματος</item>
+        <item>13:00</item>
+        <item>1:00μμ</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>Προεπιλογή συστήματος</item>
+        <item>Δευτέρα</item>
+        <item>Σάββατο</item>
+        <item>Κυριακή</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>Μοβ|#8080FF</item>
+        <item>Φραουλί|#EC3E7C</item>
+        <item>Ροζ|#DB60D6</item>
+        <item>Καροτί|#F78400</item>
+        <item>Σαχάρα|#936D58</item>
+        <item>Ενζιάν|#5252CC</item>
+        <item>Δαμασκηνί|#A839A4</item>
+        <item>Κερίζ|#BA1E55</item>
+        <item>Χαλκί|#C44800</item>
+        <item>Χώμα|#54473F</item>
+        <item>Σχιστόλιθος Μπλε|#415DF0</item>
+        <item>Ειρηνικού|#179FD9</item>
+        <item>Σκόπελος|#1DA583</item>
+        <item>Φτέρη|#3CBB3A</item>
+        <item>Λαδί|#B4A40E</item>
+        <item>Κοβάλτιο|#273EB2</item>
+        <item>Ωκεανί|#0A77A6</item>
+        <item>Πευκί|#0F735A</item>
+        <item>Δάσος|#258723</item>
+        <item>Τουρσί|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>Μωβ</item>
+        <item>Φραουλί</item>
+        <item>Ροζ</item>
+        <item>Καροτί</item>
+        <item>Σαχάρα</item>
+        <item>Ενζιάν</item>
+        <item>Δαμασκηνί</item>
+        <item>Κερίζ</item>
+        <item>Χαλκός</item>
+        <item>Χώμα</item>
+        <item>Βιολετί</item>
+        <item>Ειρηνικός</item>
+        <item>Ύφαλος</item>
+        <item>Φτέρη</item>
+        <item>Λαδί</item>
+        <item>Κοβάλτιο</item>
+        <item>Ωκεανός</item>
+        <item>Πεύκο</item>
+        <item>Δάσος</item>
+        <item>Τουρσί</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

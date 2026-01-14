@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(ingen titel)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">(ingen e-mailadresse)</string>
+    <string name="default_user_display_name">(intet navn)</string>
+    <string name="toast_copied_to_clipboard">Kopieret til udklipsholder</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">Slet begivenhed</string>
+    <string name="dialog_title_delete_recurring_event">Slet tilbagevendende begivenhed</string>
+    <string name="dialog_description_delete_event">Vil du slette denne begivenhed?</string>
+    <string name="dialog_description_delete_recurring_event">Vil du slette alle begivenheder i denne serie?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">Denne begivenhed er blevet opdateret af arrangøren. Vil du slette denne begivenhed?</string>
+    <string name="dialog_button_delete">Slet</string>
+    <string name="dialog_button_cancel">Annullér</string>
+    <string name="dialog_button_continue">Fortsæt</string>
+    <string name="dialog_button_close">Luk</string>
+    <string name="dialog_button_remove">Fjern</string>
+    <string name="dialog_button_download">Download</string>
+    <string name="dialog_button_update">Opdatér</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">En aflysningsmail vil blive sendt til begivenhedens deltagere. Vil du slette denne begivenhed?</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">Din adresse er deaktiveret. En aflysningsmail kan ikke blive sendt til begivenhedens deltagere. Vil du alligevel slette denne begivenhed?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">En aflysningsmail vil blive sendt til begivenhedens deltagere. Vil du slette alle begivenheder i denne serie?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">Din adresse er deaktiveret. En aflysningsmail kan ikke blive sendt til begivenhedens deltagere. Vil du alligevel slette alle begivenheder i denne serie?</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">Arrangøren af denne begivenhed vil blive underrettet om at du afslår invitationen. Vil du slette denne begivenhed?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">Arrangøren af denne begivenhed vil ikke blive informeret om, at du afviser invitationen, da du ikke kan sende e-mails fra den inviterede adresse. Vil du alligevel slette denne begivenhed?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">Arrangøren af denne serie begivenheder vil blive underrettet om at du afslår invitationen. Vil du slette alle begivenhed i denne serie?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">Arrangøren af denne serie af begivenheder vil ikke blive informeret om, at du afviser invitationen, da du ikke kan sende e-mails fra den inviterede adresse. Vil du alligevel slette alle begivenheder i denne serie?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">Denne begivenhed er blevet opdateret. Arrangøren vil blive informeret om at du afslår invitationen. Vil du slette denne begivenhed?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">Denne begivenhed er blevet opdateret. Arrangøren vil ikke blive underrettet om at du afslår invitationen, da du ikke kan sende e-mails fra den inviterede adresse. Vil du slette denne begivenhed?</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">Forekomster som arrangøren tidligere har opdateret beholdes, men dine svar vil gå tabt</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">Forekomster som arrangøren tidligere har opdateret vil blive bevaret</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">Arrangøren kan ikke få besked om, at du afviser invitationen:\n\n• %1$s\n\nØnsker du alligevel at slette begivenheden?</string>
+    <string name="dialog_button_set">Indstil</string>
+    <string name="dialog_button_ok">Ok</string>
+    <string name="action_save">Gem</string>
+    <string name="action_done">Færdig</string>
+    <string name="action_edit">Redigér</string>
+    <string name="action_delete">Slet</string>
+    <string name="action_add">Tilføj</string>
+    <string name="action_remove">Fjern</string>
+    <string name="action_leave">Forlad</string>
+    <string name="action_recreate">Ryd</string>
+    <string name="action_today">I dag</string>
+    <string name="action_create_event">Opret begivenhed</string>
+    <string name="action_mark_default">Markér som standard</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">Ingen begivenheder</string>
+    <string name="agenda_loading_events">Indlæser begivenheder…</string>
+    <string name="agenda_loading_events_error">Fejl ved indlæsning af begivenheder</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+%1$d mere</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">Hele dagen</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">På tidspunktet for begivenheden</string>
+    <string name="event_alarm_label_at_event_time_by_email">På tidspunkt for begivenheden via e-mail</string>
+    <string name="event_alarm_label_on_the_same_day">Samme dag</string>
+    <string name="event_alarm_label_before">%1$s før</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s før via e-mail</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s kl. %2$s</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s kl. %2$s via e-mail</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s før kl. %2$s</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s før kl. %2$s via e-mail</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s på %2$s</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s på dag %2$d</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s på %2$s</string>
+    <string name="event_recurrence_none">Gentages ikke</string>
+    <string name="event_recurrence_daily">Daglig</string>
+    <string name="event_recurrence_weekly">Ugentlig</string>
+    <string name="event_recurrence_monthly">Månedlig</string>
+    <string name="event_recurrence_yearly">Årlig</string>
+    <string name="event_recurrence_weekly_on_all_days">alle dage</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">indtil %1$s</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">indtil %1$s (%2$s)</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">Annulleret</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(deaktiveret)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(Standard)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d ja</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d måske</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d nej</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d afventer</string>
+    <string name="event_attendee_is_organizer">Du er arrangøren</string>
+    <string name="event_attendee_organizer">Arrangør</string>
+    <string name="event_attendee_optional">Valgfrit</string>
+    <string name="event_attendee_is_current_user">Dig</string>
+    <string name="event_answer_attending">Deltager?</string>
+    <string name="event_answer_yes">Ja</string>
+    <string name="event_answer_no">Nej</string>
+    <string name="event_answer_maybe">Måske</string>
+    <string name="event_decryption_error_dialog_title">Begivenhed kunne ikke dekrypteres</string>
+    <string name="event_decryption_error_dialog_message">Dekryptering af denne begivenheds indhold mislykkedes.</string>
+    <string name="event_decryption_error_dialog_confirmation">Slet begivenhed</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">Slet begivenheder</string>
+    <string name="event_decryption_error_dialog_close">Luk</string>
+    <string name="event_signature_verification_failure">Verifikationen af begivenhedssignaturen mislykkedes. <a href="https://proton.me/support/what-is-a-digital-signature">Få mere at vide</a></string>
+    <string name="event_signature_verification_in_progress">Verifikation af begivenhedssignaturen er i gang.</string>
+    <string name="event_signature_verification_network_error">Verifikation af begivenhedssignaturen blev afbrudt af en fejl. <a href="">Prøv igen</a></string>
+    <string name="event_change_answer_recurring_title">Opdatér tilbagevendende begivenhed</string>
+    <string name="event_change_answer_recurring_description">Vil du ændre dit svar for alle begivenhederne i denne serie?</string>
+    <string name="event_change_answer_recurring_overwrite_description">Vil du ændre dit svar for alle begivenhederne i denne serie?\nNogle af dine svar på tidligere opdaterede hændelser fra arrangøren vil gå tabt.</string>
+    <string name="event_change_answer_recurring_single_edit_description">Denne begivenhed er blevet opdateret af arrangøren. Vil du kun ændre dit svar for denne hændelse i denne serie?</string>
+    <string name="event_change_answer_recurring_cancel">Annuller</string>
+    <string name="event_change_answer_recurring_confirm">Opdatér</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s har accepteret din invitation til %2$s</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s har afslået din invitation til %2$s</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">%1$s har foreløbigt accepteret din invitation til %2$s</string>
+    <string name="event_organizer_send_prefs_error_title">Arrangøren kan ikke få besked</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">Arrangøren kan ikke få besked om, at du accepterede invitationen</string>
+    <string name="event_organizer_send_prefs_message_declined_title">Arrangøren kan ikke få besked om, at du afslog invitationen</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">Arrangøren kan ikke få besked om, at du foreløbigt accepterede invitationen</string>
+    <string name="event_organizer_send_prefs_message_default_title">Arrangøren kan ikke få besked om, at du svarede på invitationen</string>
+    <string name="event_organizer_send_prefs_button_title">Ok</string>
+    <string name="event_attendees_send_prefs_error_title">Deltagere kan ikke underrettes</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">Ingen af deltagerne kan få besked om dine ændringer:\n\n• %1$s\n\nVil du fortsætte alligevel?</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">De følgende deltagere kan ikke få besked om dine ændringer:\n\n• %1$s\n\nVil du fortsætte alligevel?</string>
+    <string name="event_attendees_send_prefs_error_confirm">Fortsæt</string>
+    <string name="event_attendees_send_prefs_error_cancel">Annullér</string>
+    <string name="event_send_prefs_error_address_disabled">denne adresse findes ikke</string>
+    <string name="event_send_prefs_error_getting_contact">kunne ikke hente kontaktdata</string>
+    <string name="event_send_prefs_error_network">netværksfejl</string>
+    <string name="event_send_prefs_trusted_keys_invalid">betroede nøgler er ugyldige</string>
+    <string name="event_send_prefs_public_keys_invalid">offentlige nøgler er ugyldige</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">kontaktsignatur ugyldig</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">Deltag i Zoom-møde</string>
+    <string name="zoom_meeting_title">Zoom-møde</string>
+    <string name="generic_meeting_id">ID: %1$s</string>
+    <string name="generic_meeting_password">Adgangskode: %1$s</string>
+    <string name="generic_meeting_more_details">Flere detaljer</string>
+    <string name="generic_meeting_less_details">Færre detaljer</string>
+    <string name="generic_meeting_host">Mødevært</string>
+    <string name="generic_meeting_link">Mødelink</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Vejledning til deltagelse</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">Ny begivenhed</string>
+    <string name="event_text_edit_event">Redigér begivenhed</string>
+    <string name="event_hint_title">Tilføj titel</string>
+    <string name="event_hint_location">Tilføj placering</string>
+    <string name="event_text_add_participants">Tilføj deltagere</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">Deltagere (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">Dig</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+%1$d mere</string>
+    <string name="event_text_switch_all_day">Hele dagen</string>
+    <string name="event_text_date_start">Start</string>
+    <string name="event_text_date_end">Slut</string>
+    <string name="event_text_date_repeat">Gentag</string>
+    <string name="event_text_date_repeat_never">Gentages ikke</string>
+    <string name="event_text_attendees">Deltagere</string>
+    <string name="event_text_attendees_none">Ingen</string>
+    <string name="event_text_calendar">Kalender</string>
+    <string name="event_text_timezone_start">Tidszone</string>
+    <string name="invite_in_shared_calendar_disclaimer">Invitationer kan kun sendes mellem personlige kalendere.</string>
+    <string name="invite_change_calendar_disclaimer">Det er ikke muligt at ændre kalenderen, der er knyttet til invitationer.</string>
+    <string name="invite_change_attendees_disclaimer">Det er endnu ikke muligt at ændre deltagere der er knyttet til invitationer.</string>
+    <string name="change_calendar_recurring_disclaimer">Ændring af kalender for tilbagevendende begivenheder er endnu ikke muligt.</string>
+    <string name="update_event">Opdater begivenhed</string>
+    <string name="update_invite_send_email">En invitationsopdatering vil blive sendt til begivenhedens deltagere.</string>
+    <string name="update_recurring_event">Opdatér tilbagevendende begivenhed</string>
+    <string name="update_recurring_all_events">Vil du opdatere alle begivenheder i denne serie?</string>
+    <string name="update_recurring_invite_send_email">Alle begivenheder i denne serie vil blive opdateret. En invitationsopdatering vil blive sendt til begivenhedens deltagere.</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">Hvad leder du efter?</string>
+    <string name="search_empty_results_title">Ingen resultater fundet</string>
+    <string name="search_empty_results_subtitle">Prøv et andet udtryk, f.eks. Erik, fødselsdag, webinar, bogklub.</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">Kalendere hentes (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">Resterende tid: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">Beregner resterende tid…</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">næsten færdig</string>
+    <string name="search_downloading_pause">Sæt download på pause</string>
+    <string name="search_settings_dialog_toggle_off_title">Fjern alle de hentede kalendere?</string>
+    <string name="search_settings_dialog_toggle_off_text">Du bliver nødt til at hente dine kalendere igen, hvis du vil søge.</string>
+    <string name="search_settings_dialog_toggle_on_title">Hent kalendere til denne enhed?</string>
+    <string name="search_settings_dialog_toggle_on_text">Dette er påkrævet for at kunne søge.</string>
+    <string name="search_onboarding_header">Vil du søge i din kalender?</string>
+    <string name="search_onboarding_text">Du skal først hente en krypteret kopi af dine kalendere. Det tager kun et øjeblik, og du kan fortsætte med at bruge appen. <a href="https://proton.me/support/calendar-search">Lær mere</a></string>
+    <string name="search_onboarding_action_download_calendars">Hent kalendere</string>
+    <string name="search_onboarding_action_pause">Sæt på pause</string>
+    <string name="search_onboarding_action_resume">Genoptag</string>
+    <string name="search_onboarding_action_retry">Forsøg igen</string>
+    <string name="search_onboarding_progress_header_ongoing">Henter kalendere…</string>
+    <string name="search_onboarding_progress_header_completed">Download fuldført</string>
+    <string name="search_onboarding_progress_header_paused">Download af kalendere sat på pause</string>
+    <string name="search_onboarding_progress_header_error">Fejl ved download af kalendere</string>
+    <string name="search_spotlight_activation_snack">Søgning i kalender aktiveret</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">Tilføj meddelelse</string>
+    <string name="event_text_description">Beskrivelse</string>
+    <string name="event_hint_description">Tilføj beskrivelse</string>
+    <string name="event_text_custom">brugerdefineret</string>
+    <string name="event_alert_invalid_start_end_date">Begivenhedens startdato kan ikke være efter slutdato</string>
+    <string name="event_alarms_title">Meddelelser</string>
+    <string name="event_custom_alarms_field">Påmind</string>
+    <string name="event_custom_alarms_title">Brugerdefinerede notifikationer</string>
+    <string name="event_alarm_partial_day_1">på tidspunktet for begivenheden</string>
+    <string name="event_alarm_partial_day_2">10 minutter</string>
+    <string name="event_alarm_partial_day_3">30 minutter</string>
+    <string name="event_alarm_partial_day_4">1 time</string>
+    <string name="event_alarm_partial_day_5">1 uge</string>
+    <string name="event_alarm_all_day_1">på samme dag kl. %1$s</string>
+    <string name="event_alarm_all_day_2">1 dag før kl. %1$s</string>
+    <string name="event_alarm_all_day_3">1 uge før kl. %1$s</string>
+    <string name="event_alarm_all_day_4">3 uger før kl. %1$s</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">kl. %1$s</string>
+    <string name="event_alarm_action">Send via</string>
+    <string name="event_alarm_action_notification">notifikation</string>
+    <string name="event_alarm_action_email">e-mail</string>
+    <string name="event_alarm_same_day">på dagen</string>
+    <string name="event_recurrence_1">gentag ikke</string>
+    <string name="event_recurrence_2">hver dag</string>
+    <string name="event_recurrence_3">hver uge</string>
+    <string name="event_recurrence_4">hver måned</string>
+    <string name="event_recurrence_5">hvert år</string>
+    <string name="event_recurrence_title">Frekvens</string>
+    <string name="event_recurrence_custom_title">Brugerdefineret frekvens</string>
+    <string name="event_recurrence_occurs_every">Gentages hver</string>
+    <string name="event_recurrence_occurs_on">Gentages på</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">på dag %1$d</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">på den %1$s</string>
+    <string name="event_recurrence_ends_on">Slutter</string>
+    <string name="event_recurrence_ends_never">aldrig</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">på dag</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">den %1$s</string>
+    <string name="event_recurrence_ends_after_count_prefix">efter</string>
+    <string name="event_recurring_edit_this">Denne begivenhed</string>
+    <string name="event_recurring_edit_this_and_future">Denne og fremtidige begivenheder</string>
+    <string name="event_recurring_edit_all_events">Alle begivenheder</string>
+    <string name="event_discard_changes_title">Kassér ændringer?</string>
+    <string name="event_discard_changes_description">Du vil miste alle ikke-gemte ændringer.</string>
+    <string name="event_discard_changes_cancel">Fortsæt redigering</string>
+    <string name="event_discard_changes_confirm">Kassér</string>
+    <string name="event_recurring_update_this_title">Opdatér tilbagevendende begivenhed</string>
+    <string name="event_recurring_update_this_description">Hyppighedsændringer vil gå tabt</string>
+    <string name="event_recurring_update_all_description">Tidligere ændringer på denne serie vil gå tabt</string>
+    <string name="event_recurring_update_this_cancel">Annullér</string>
+    <string name="event_recurring_update_this_confirm">Opdatér</string>
+    <string name="event_allow_contacts_title">Tillad Proton Calendar at tilgå dine kontakter?</string>
+    <string name="event_allow_contacts_description">Proton Calendar skal have adgang til dine kontakter i forbindelse med autoudfyldning.</string>
+    <string name="event_allow_contacts_cancel">Afvis</string>
+    <string name="event_allow_contacts_confirm">Tillad</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Sv: Invitation til en begivenhed med start %1$s kl. %2$s %3$s</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">Re: Invitation til et event på %1$s</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">Re: Invitation til en event, der starter den %1$s</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Invitation til en begivenhed med start den %1$s kl. %2$s %3$s</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">Invitation til en begivenhed %1$s</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">Invitation til en begivenhed med start %1$s</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Opdatering til en begivenhed med start den %1$s kl. %2$s %3$s</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">Opdatering til en event den %1$s.</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">Opdatering til en event, der begynder den %1$s.</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Annullering af en begivenhed med start %1$s kl. %2$s %3$s</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">Annullering af en begivenhed %1$s</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">Annullering af en begivenhed med start %1$s</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">Du er inviteret til %1$s\nHvornår: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s er blevet opdateret.\nHvornår: %2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (hele dagen)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s kl. %2$s %3$s - %4$s kl. %5$s %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nHvor: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nBeskrivelse: %1$s</string>
+    <string name="event_send_invite_dialog_title">Send invitation</string>
+    <string name="event_send_invite_dialog_description">En invitation vil blive sendt til tilføjede deltagere.</string>
+    <string name="event_send_invite_dialog_confirm">Send</string>
+    <string name="event_send_invite_dialog_cancel">Annullér</string>
+    <string name="event_add_participants_dialog_title">Tilføj deltagere</string>
+    <string name="event_add_participants_dialog_description">En invitation vil blive sendt til tilføjede deltagere.</string>
+    <string name="recurring_event_add_participants_dialog_description">Der sendes en invitation til tilføjede deltagere til alle arrangementer i denne serie.</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">Der sendes en invitation til tilføjede deltagere til alle arrangementer i denne serie.\nTidligere ændringer i denne serie vil gå tabt.</string>
+    <string name="event_add_participants_dialog_confirm">Send</string>
+    <string name="event_add_participants_dialog_cancel">Annullér</string>
+    <string name="event_remove_participants_dialog_title">Afvis deltagere</string>
+    <string name="event_remove_participants_dialog_description">Afviste deltagere vil få tilsendt en aflysningsmail.</string>
+    <string name="recurring_event_remove_participants_dialog_description">En aflysningsmail vil blive sendt til fjernede deltagere for alle begivenheder i denne serie.</string>
+    <string name="event_add_and_remove_participants_dialog_description">Tilføjet og afviste deltagere vil blive underrettet.</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">Tilføjet og fjernet deltagere vil få besked om alle arrangementer i denne serie.</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s er blevet aflyst.</string>
+    <string name="event_save_changes">Gem ændringer</string>
+    <string name="event_update_add_participants_dialog_description">Eksisterende og nye deltagere vil få besked.</string>
+    <string name="recurring_event_update_add_participants_dialog_description">Du vil opdatere alle arrangementer i denne serie. Eksisterende og nye deltagere vil få besked.</string>
+    <string name="event_update_remove_participants_dialog_description">Eksisterende og afviste deltagere vil få besked.</string>
+    <string name="event_update_remove_all_participants_dialog_description">Afviste deltagere vil få besked</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">Du vil opdatere alle arrangementer i denne serie. Eksisterende og afviste deltagere vil få besked.</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">Du vil opdatere alle arrangementer i denne serie. Afviste deltagere vil få besked.</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">Eksisterende, tilføjet og afviste deltagere vil få besked.</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">Du vil opdatere alle arrangementer i denne serie. Eksisterende, tilføjet og afviste deltagere vil få besked.</string>
+    <string name="success_snack_email_update_recurring">Deltagere underrettet, og alle arrangementer opdateret</string>
+    <string name="success_snack_email_update">Deltagere underrettet og arrangement opdateret</string>
+    <string name="success_snack_add_attendees_recurring">Invitation er sendt og deltagere tilføjet til alle arrangementer</string>
+    <string name="success_snack_add_attendees">Invitation er sendt og deltagere tilføjet</string>
+    <string name="success_snack_remove_attendees_recurring">Aflysning sendt og deltagere afvist fra alle arrangementer</string>
+    <string name="success_snack_remove_attendees">Aflysning sendt og deltagere afvist</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">Mine kalendere</string>
+    <string name="nav_view_subscribed_calendars">Kalenderabonnementer</string>
+    <string name="nav_view_other_calendars">Andre kalendere</string>
+    <string name="nav_view_disabled_calendars">%1$s (deaktiveret)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (ikke synkroniseret)</string>
+    <string name="nav_view_syncing_calendars">%1$s (synkroniserer)</string>
+    <string name="nav_view_more">Mere</string>
+    <string name="nav_view_switcher">Vis</string>
+    <string name="nav_view_switcher_day">Dag</string>
+    <string name="nav_view_switcher_three_day">3 dage</string>
+    <string name="nav_view_switcher_week">Uge</string>
+    <string name="nav_view_switcher_agenda">Dagsplan</string>
+    <string name="nav_view_switcher_month">Måned</string>
+    <string name="nav_view_timezone">Tidszone</string>
+    <string name="nav_view_settings">Indstillinger</string>
+    <string name="nav_view_feedback">Giv os feedback</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">Generelt</string>
+    <string name="nav_view_more_bug">Anmeld et problem</string>
+    <string name="nav_view_more_subscription">Abonnement</string>
+    <string name="nav_view_more_logout">Log ud</string>
+    <string name="nav_view_more_login">Log ind</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">Denne feature kommer snart</string>
+    <string name="snack_event_deleted">Begivenhed slettet</string>
+    <string name="snack_event_deleted_as_organizer">Aflysning sendt og begivenhed slettet</string>
+    <string name="snack_event_deleted_as_attendee">Svar sendt og begivenhed slettet</string>
+    <string name="snack_event_deleted_error">Fejl under sletning af begivenhed</string>
+    <string name="snack_event_deleted_as_organizer_error">Aflysningsmail kan ikke sendes, prøv venligst igen</string>
+    <string name="snack_event_opening_error">Fejl ved åbning af begivenhed</string>
+    <string name="snack_event_saving">Gemmer begivenhed</string>
+    <string name="snack_event_deleting">Sletter begivenhed</string>
+    <string name="snack_event_changing_answer">Opdaterer svar</string>
+    <string name="snack_event_part_stat_updated">Deltagelsesstatus opdateret.</string>
+    <string name="snack_event_updated">Begivenhed opdateret</string>
+    <string name="snack_event_updated_recurring">Alle arrangementer opdateret</string>
+    <string name="snack_event_updated_error_failed_mail">Invitation kunne ikke sendes</string>
+    <string name="snack_update_event_error_failed_mail">Opdatering mislykkedes</string>
+    <string name="snack_lost_zoom_access">Opret forbindelse til Zoom for at redigere denne begivenhed.</string>
+    <string name="snack_lost_zoom_access_acion">Forbind</string>
+    <string name="snack_zoom_meeting_does_not_exist">Denne Zoom-session er blevet aflyst. Fjern linket til at redigere denne begivenhed.</string>
+    <string name="snack_event_updated_error">Fejl ved opdatering af begivenhed</string>
+    <string name="snack_event_created">Begivenhed oprettet</string>
+    <string name="snack_event_created_failed_mail">Begivenhed oprettet, men invitation blev ikke sendt</string>
+    <string name="snack_event_created_error">Fejl ved opretning af begivenhed</string>
+    <string name="snack_event_opening_edit_error">Fejl under åbning af begivenhed for redigering</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">Denne tilbagevendende begivenhed kan kun slettes i Calendar-webappen.</string>
+    <string name="snack_event_edit_with_attendees_error">Redigering af begivenheder med deltagere understøttes endnu ikke</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">Du kan ikke tilføje deltagere og ændre kalenderen samtidig</string>
+    <string name="snack_event_init_error">Fejl under igangsætning af ny begivenhed</string>
+    <string name="snack_event_calendar_error">Fejl ved kalenderskift</string>
+    <string name="snack_event_maximum_alarm_reached_error">Det maksimale antal notifikationer er nået</string>
+    <string name="snack_send_bug_report_success">Rapporten er sendt, tak for din feedback</string>
+    <string name="snack_send_bug_report_error">Fejl ved afsendelse af rapport, prøv igen senere</string>
+    <string name="snack_send_bug_report_description_empty">Beskriv venligst din rapport</string>
+    <string name="snack_create_event_no_active_personal_calendar">Du skal have en personlig, aktiv kalender for at oprette begivenheder</string>
+    <string name="snack_create_event_no_active_calendar">Du skal have en aktiv kalender for at oprette begivenheder</string>
+    <string name="snack_add_self_as_participant">Selvinvitation er ikke tilladt</string>
+    <string name="snack_maximum_participants_reached">Det maksimale antal deltagere er nået.</string>
+    <string name="snack_add_participant_error">Fejl under tilføjelse af deltager</string>
+    <string name="snack_add_participant_invalid_email">Ugyldig e-mail</string>
+    <string name="snack_change_attendee_answer_error">Fejl ved afsendelse af svar, prøv igen senere</string>
+    <string name="snack_network_error">Netværksfejl, forsøg igen senere</string>
+    <string name="snack_import_event_signed_out">Du skal logge ind for at importere begivenheder</string>
+    <string name="snack_app_link_signed_out">Du skal logge ind for at se din begivenhed</string>
+    <string name="snack_update_default_calendar">Standardkalender opdateret</string>
+    <string name="snack_update_default_calendar_error">Fejl ved opdatering af standardkalender, prøv igen senere</string>
+    <string name="snack_calendar_init_error">Fejl ved indlæsning af kalenderoplysninger</string>
+    <string name="snack_holiday_calendar_init_error">Fejl ved indlæsning af oplysninger om helligdagskalender</string>
+    <string name="snack_update_calendar_error">Fejl ved opdatering af kalenderoplysninger, prøv venligst igen senere</string>
+    <string name="snack_update_calendar_settings_error">Fejl ved opdatering af nogle kalenderoplysninger, prøv igen senere</string>
+    <string name="snack_update_calendar_success">Kalender opdateret</string>
+    <string name="snack_create_calendar_success">Kalender oprettet</string>
+    <string name="snack_add_calendar_success">Kalender tilføjet</string>
+    <string name="snack_calendar_saving">Gemmer kalender</string>
+    <string name="snack_create_calendar_error">Fejl ved oprettelse af kalender, prøv igen senere</string>
+    <string name="snack_add_calendar_error">Fejl ved tilføjelse af kalender, prøv igen senere</string>
+    <string name="snack_create_calendar_settings_error">Kalenderen blev oprettet, men nogle oplysninger blev ikke opdateret, prøv igen senere</string>
+    <string name="snack_ics_default_error">Fejl ved åbning af kalender</string>
+    <string name="snack_ics_event_not_found_error">Begivenhed ikke fundet</string>
+    <string name="snack_ics_file_not_found_error">Fil ikke fundet</string>
+    <string name="snack_ics_create_error">Fejl ved oprettelse af begivenhed</string>
+    <string name="snack_ics_parsing_error">Fejl ved læsning af kalender</string>
+    <string name="snack_ics_unsupported_method_error">Denne begivenhedstype understøttes endnu ikke</string>
+    <string name="snack_ics_unsupported_add_error">Tilføjelse af forekomster til en begivenhed understøttes ikke i øjeblikket</string>
+    <string name="snack_ics_unsupported_counter_error">Flytning af begivenheder understøttes ikke i øjeblikket</string>
+    <string name="snack_ics_unsupported_refresh_error">Opfriskning af begivenheder understøttes ikke i øjeblikket</string>
+    <string name="snack_ics_unsupported_publish_error">Import af begivenheder understøttes ikke i øjeblikket</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">Vi understøtter for øjeblikket kun svar på alle begivenheder i en serie</string>
+    <string name="snack_ics_party_crasher_error">Din e-mail er ikke på deltagerlisten</string>
+    <string name="snack_ics_reply_party_crasher_error">Deltagere, der ikke er inviteret af arrangøren, kan ikke tilføjes</string>
+    <string name="snack_ics_missing_uid_error">Begivenheden mangler UID</string>
+    <string name="snack_ics_no_active_personal_calendar_error">Der er ingen aktiv personlig kalender tilknyttet denne konto</string>
+    <string name="snack_ics_no_active_calendar_error">Der er ingen aktiv kalender tilknyttet denne konto.</string>
+    <string name="snack_ics_unsupported_duration_error">Tidsvarighed understøttes ikke</string>
+    <string name="snack_ics_too_many_events_error">Fler-begivenheder er endnu ikke understøttet</string>
+    <string name="snack_ics_no_events_error">Denne kalender indeholder ikke nogen begivenhed</string>
+    <string name="snack_ics_invalid_error">Denne invitation er ugyldig</string>
+    <string name="snack_ics_disabled_calendar_error">Tilknyt adressen til denne kalender igen for at opdatere begivenheden</string>
+    <string name="snack_ics_event_deleted_error">Begivenheden findes ikke længere i din kalender</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s accepterede din invitation</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s accepterede foreløbigt din invitation</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s afslog din invitation</string>
+    <string name="snack_app_link_invalid">Ugyldigt link til begivenheden</string>
+    <string name="snack_app_link_error">Fejl ved åbning af begivenhed</string>
+    <string name="snack_app_link_import_error">Autentificering annulleret</string>
+    <string name="snack_notification_already_added">Påmindelsen er allerede blevet tilføjet</string>
+    <string name="snack_opening_ics">Åbner begivenhed…</string>
+    <string name="snack_invite_in_shared_calendar_error">Det er ikke tilladt at oprette invitationer i en delt kalender</string>
+    <string name="snack_down_banner">Proton-serverne er nede. Besøg vores statusside for detaljer.</string>
+    <string name="snack_down_banner_action">Åbn statusside</string>
+    <string name="snack_color_per_event_paid_feature">Opgrader for at tilpasse eventfarver</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">Begivenheden findes ikke</string>
+    <string name="error_occurrence_does_not_exist">Forekomsten findes ikke</string>
+    <string name="update_timezone_dialog_title">Tidszone ændret</string>
+    <string name="update_timezone_dialog_message">Dit systems tidszone ser ud til at være ændret til %1$s. Ønsker du at opdatere din tidszone-indstilling?</string>
+    <string name="update_timezone_dialog_confirmation">Opdatér</string>
+    <string name="update_timezone_dialog_cancel">Annullér</string>
+    <string name="contacts_permission_dialog_title">Giv Proton Calendar adgang til dine kontakter?</string>
+    <string name="contacts_permission_dialog_message">Proton Calendar skal have adgang til dine telefonkontakter for at kunne hjælpe dig med nemt at føje dem til dine begivenheder.</string>
+    <string name="contacts_permission_dialog_allow">Tillad</string>
+    <string name="contacts_permission_dialog_open_settings">Åbn Indstillinger</string>
+    <string name="contacts_permission_dialog_cancel">Afvis</string>
+    <string name="dialog_title_calendar_picker">Kalender</string>
+    <string name="dialog_title_calendar_color_picker">Kalenderfarve</string>
+    <string name="dialog_title_event_color_picker">Begivenhedsfarve</string>
+    <string name="import_from_google_title">Importér fra Google</string>
+    <string name="notifications_permission_dialog_title">Tillad Proton Calendar at vise notifikationer?</string>
+    <string name="notifications_permission_dialog_message">Proton Calendar har brug for tilladelse til at vise dig notifikationer om kommende begivenheder.</string>
+    <string name="notifications_permission_dialog_open_settings">Åbn Indstillinger</string>
+    <string name="notifications_permission_dialog_cancel">Afvis</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">Begivenhedsnotifikationer</string>
+    <string name="notification_channel_sync">Synkronisering af kalender</string>
+    <string name="notification_channel_calendar_fetch">Henter kalendere</string>
+    <string name="notification_sync">Synkroniserer kalendere…</string>
+    <string name="notification_text_today">I dag</string>
+    <string name="notification_text_today_part_time">I dag kl. %1$s</string>
+    <string name="notification_text_tomorrow">I morgen</string>
+    <string name="notification_text_tomorrow_part_time">I morgen kl. %1$s</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s kl. %2$s</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">Emne</string>
+    <string name="bug_report_hint_description">Beskriv problemet og medtag evt. fejlmeddelelser.</string>
+    <string name="bug_report_discard_changes_title">Ikke-gemte ændringer</string>
+    <string name="bug_report_discard_changes_description">Der er ikke-gemte poster i formularen. Er du sikker på, at du vil kassere dem?</string>
+    <string name="bug_report_discard_changes_cancel">Fortsæt skrivning</string>
+    <string name="bug_report_discard_changes_confirm">Kassér</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">App-indstillinger</string>
+    <string name="settings_theme_title">Tema</string>
+    <string name="settings_theme_info">Denne indstilling påvirker kun udseendet af Proton Calendar-appen på denne enhed. Appen genstartes efter ændring af temaet.</string>
+    <string name="settings_timezone_title">Tidszone</string>
+    <string name="settings_language_title">App-sprog</string>
+    <string name="settings_language_default">Autoregistrér</string>
+    <string name="settings_default_view_title">Standardvisning</string>
+    <string name="settings_default_view_default">Seneste visning</string>
+    <string name="settings_update_timezone_title">Bed om at opdatere tidszoneindstilling</string>
+    <string name="settings_update_timezone_subtitle">Hvis systemets tidszone ikke matcher den aktuelle indstilling af tidszone, vil du blive bedt om at opdatere den.</string>
+    <string name="settings_update_timezone_checkbox">Spørg mig ikke igen</string>
+    <string name="settings_week_start_title">Ugestart</string>
+    <string name="settings_time_format_title">Tidsformat</string>
+    <string name="settings_week_numbers_title">Vis ugenumre</string>
+    <string name="settings_auto_invites_title">Tilføj invitationer til kalender og markér som afventende</string>
+    <string name="settings_search_title">Søg i kalendere</string>
+    <string name="settings_search_subtitle">Downloader og gemmer kalenderindhold på din enhed, så du kan søge i det. Hvis du slår dette fra, fjernes det downloadede indhold.\n\nSøgning er en eksperimentel beta-funktion. Hvis du aktiverer den, kan appen blive ustabil.</string>
+    <string name="settings_alternative_routing_title">Tillad alternativ routing</string>
+    <string name="settings_alternative_routing_subtitle">Hvis Proton-websteder er blokeret giver denne indstilling appen mulighed for at prøve alternativ netværksrouting for at nå Proton, hvilket kan være nyttigt til at omgå firewalls eller ved netværksproblemer. Vi anbefaler at holde denne indstilling slået til for større pålidelighed.</string>
+    <string name="settings_value_placeholder">Tryk for at vælge</string>
+    <string name="settings_general_title">Generelt</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s etc.</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">tema</string>
+    <string name="settings_general_info_language">sprog</string>
+    <string name="settings_general_info_time_zone">tidszone</string>
+    <string name="settings_general_info_calendar_layout">kalenderlayout</string>
+    <string name="settings_calendars">Mine kalendere</string>
+    <string name="settings_calendars_empty">Ingen kalendere fundet</string>
+    <string name="settings_subscribed_calendars">Kalenderabonnementer</string>
+    <string name="settings_other_calendars">Andre kalendere</string>
+    <string name="settings_calendar_default" comment="Default calendar">Standard</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">Deaktiveret</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">Ikke synkroniseret</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">Synkronisering</string>
+    <string name="settings_calendar_subscribed_invalid_ics">Kalenderformat understøttes ikke</string>
+    <string name="settings_calendar_subscribed_too_big">Kalender er for stor</string>
+    <string name="settings_calendar_subscribed_not_accessible">Kalenderlink er ikke tilgængeligt</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">Kalenderlink er midlertidig ikke tilgængeligt</string>
+    <string name="settings_calendar_subscribed_last_sync_old">Der er gået mere end 12 timer siden seneste opdatering</string>
+    <string name="settings_calendar_subscribed_not_decrypted">Kalender kunne ikke dekrypteres</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">Kun visning</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">fra %1$s</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">Opret kalender</string>
+    <string name="calendar_form_update_title">Rediger kalender</string>
+    <string name="calendar_form_save">Gem</string>
+    <string name="calendar_form_name">Navn</string>
+    <string name="calendar_form_description">Beskrivelse</string>
+    <string name="calendar_form_color">Kalenderfarve</string>
+    <string name="calendar_form_language">Sprog</string>
+    <string name="calendar_form_default_event_duration">Begivenhedsvarighed</string>
+    <string name="calendar_form_default_event_notifications">Begivenhedsnotifikationer</string>
+    <string name="calendar_form_default_all_day_event_notifications">Notifikationer for heldagsbegivenheder</string>
+    <string name="calendar_form_add_notification">Tilføj meddelelse</string>
+    <string name="calendar_form_default_email">E-mailadresse</string>
+    <string name="calendar_form_default_email_value_error">Standard e-mail kunne ikke indlæses</string>
+    <string name="calendar_form_name_hint">Tilføj et kalendernavn</string>
+    <string name="calendar_form_name_required_error">Navn påkrævet</string>
+    <string name="calendar_form_description_hint">Tilføj en kalenderbeskrivelse</string>
+    <string name="add_calendar_text">Tilføj kalender</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">Tilføj</string>
+    <string name="create_calendar_limit_reached">Du har nået det maksimale antal kalendere.</string>
+    <string name="create_calendar_limit_reached_title">Kan ikke tilføje flere kalendere</string>
+    <string name="create_calendar_limit_reached_paid_description">Du har nået det maksimale antal på 25 kalendere i dit abonnement. \n\nFor at tilføje en ny kalender skal du fjerne en eksisterende.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">Du skal have mindst én personlig kalender, inden du når dit abonnements loft på 25 kalendere.</string>
+    <string name="create_calendar_limit_reached_manage">Administrer kalendere</string>
+    <string name="create_calendar_limit_reached_free_description">Du har nået det maksimale antal på 3 kalendere i dit abonnement. \n\nFor at tilføje en ny kalender skal du fjerne en eksisterende.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">Du skal have mindst én personlig kalender, inden du når dit abonnements loft på 3 kalendere.</string>
+    <string name="create_calendar_limit_reached_error">Fejl</string>
+    <string name="delete_calendar_dialog_title">Slet kalender</string>
+    <string name="delete_calendar_dialog_message">Er du sikker på, at du vil slette denne kalender?</string>
+    <string name="remove_calendar_dialog_title">Fjern kalender</string>
+    <string name="remove_calendar_dialog_message">Er du sikker på, at du vil fjerne denne kalender?</string>
+    <string name="leave_calendar_dialog_title">Forlad kalender</string>
+    <string name="leave_calendar_dialog_message">Hvis du forlader denne kalender, skal du bede ejeren om at blive medlem igen.</string>
+    <string name="delete_default_calendar_dialog_message">Er du sikker på, at du vil slette denne kalender? \"%1$s\" vil blive indstillet som standardkalender.</string>
+    <string name="delete_calendar_snack_deleted">Kalender slettet</string>
+    <string name="remove_calendar_snack_removed">Kalender fjernet</string>
+    <string name="delete_calendar_snack_error">Fejl ved sletning af kalender</string>
+    <string name="remove_calendar_snack_error">Fejl ved fjernelse af kalender</string>
+    <string name="leave_calendar_snack_error">Fejl ved afmeldelse af kalender</string>
+    <string name="delete_calendar_snack_error_password_confirmation">Adgangskodebekræftelse mislykkedes</string>
+    <string name="recreate_calendar_dialog_title">Ryd kalender</string>
+    <string name="recreate_calendar_dialog_message">Denne handling vil fjerne alle begivenheder og inviterede brugere.\n\nEr du sikker på, at du vil rydde denne kalender?</string>
+    <string name="recreate_calendar_snack_error">Fejl ved rydning af kalender</string>
+    <string name="recreate_calendar_snack_deleted">Kalender ryddet</string>
+    <string name="recreate_calendar_snack_clearing">Rydder kalender…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">Tilføj helligdagskalender</string>
+    <string name="holiday_calendar_title">Helligdagskalender</string>
+    <string name="add_holiday_calendar_country_search_hint">Søg efter land</string>
+    <string name="holiday_calendar_form_picker_title">Land</string>
+    <string name="holiday_calendar_time_zone_based">Baseret på din tidszone</string>
+    <string name="holiday_calendar_already_exists">Helligdagskalenderen er allerede tilføjet.</string>
+    <string name="holiday_calendar_value_placeholder">Vælg land</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">Ok</string>
+    <string name="bootstrap_error_no_calendar_title">Der er ingen tilknyttede kalendere til denne konto.</string>
+    <string name="bootstrap_error_no_calendar_message">Indstil en nu ved at besøge <a href="https://calendar.proton.me">calendar.proton.me</a></string>
+    <string name="bootstrap_error_some_calendars_failed_title">Fejl ved forberedelse af kalendere</string>
+    <string name="bootstrap_error_some_calendars_failed_message">Følgende kalendere kunne ikke konfigureres</string>
+    <string name="bootstrap_error_no_active_calendar_title">Der er ingen aktiv personlig kalender tilknyttet denne konto.</string>
+    <string name="bootstrap_error_no_active_calendar_message">Lær hvordan en kalender aktiveres ved at besøge vores <a href="https://proton.me/support">vidensbase</a></string>
+    <string name="bootstrap_error_store_quota_reached_message">Der er ikke mere lagerplads.</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">Få mere at vide</string>
+    <string name="bootstrap_error_reset_needed_title">Nulstil kalendernøgler</string>
+    <string name="bootstrap_error_reset_needed_message">Du har nulstillet din adgangskode, og begivenheder tilknyttet følgende kalendere kunne ikke dekrypteres. Alle aktive, kalenderabonnementer vil blive synkroniseret igen efter nogle få minutter.</string>
+    <string name="bootstrap_error_update_passphrase_title">Genaktivér kalendernøgler</string>
+    <string name="bootstrap_error_update_passphrase_message">Du har genaktiveret dine nøgler, og begivenheder tilknyttet følgende kalendere kan nu dekrypteres.</string>
+    <string name="bootstrap_error_continue_button">Fortsæt</string>
+    <string name="splash_after_login_init">Forbereder kalendere</string>
+    <string name="splash_init">Dekrypterer begivenheder</string>
+    <string name="default_calendar_name">Min kalender</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">Giv os feedback</string>
+    <string name="dialog_feedback_text">Hvordan vil du beskrive din oplevelse med den nye Proton Calendar?</string>
+    <string name="dialog_feedback_rating_worst">Forfærdelig</string>
+    <string name="dialog_feedback_rating_best">Vidunderlig</string>
+    <string name="dialog_feedback_hint">Fortæl os om dine indtryk. (Valgfrit)</string>
+    <string name="dialog_feedback_submit">Indsend</string>
+    <string name="dialog_feedback_submit_thank_you">Tak! Din feedback hjælper os med at forbedre Proton.</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Proton Calendar widget</string>
+    <string name="calendar_widget_no_upcoming_events_today">Ingen planlagte begivenheder i dag</string>
+    <string name="calendar_widget_loading_events">Indlæser begivenheder…</string>
+    <string name="calendar_widget_loading_events_error">Kunne ikke indlæse begivenheder</string>
+    <string name="calendar_widget_no_upcoming_events">Ingen planlagte begivenheder</string>
+    <string name="calendar_widget_please_log_in">Log ind for at se dine begivenheder</string>
+    <string name="calendar_widget_part_day_event_starts_at">Starter %1$s</string>
+    <string name="calendar_widget_part_day_event_ends_at">Slutter %1$s</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">Nyheder</string>
+    <string name="spotlight_dialog_beta_header">Calendar Beta</string>
+    <string name="spotlight_dialog_skip">Spring over</string>
+    <string name="spotlight_dialog_confirmation_button">Ok</string>
+    <string name="spotlight_dialog_month_view_title">Månedsvisning</string>
+    <string name="spotlight_dialog_month_view_description">Få en oversigt over dine begivenheder med vores nye månedsvisning. Skift mellem visninger ved hjælp af menuen.</string>
+    <string name="spotlight_dialog_easy_switch_description">Det er nemmere end nogensinde før at importere begivenheder og andre data fra Google Kalender til Proton Calendar. Vores Easy Switch-importør viser dig hvert skridt af vejen.</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">Start importering</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">Ikke nu</string>
+    <string name="spotlight_dialog_auto_invites_title">Let at acceptere invitationer</string>
+    <string name="spotlight_dialog_auto_invites_description">Nu vises invitationer i din kalender som afventende begivenheder. Du skal blot åbne en begivenhed for at svare.\n\nDu kan administrere dette ved at gå til indstillinger.</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">Næste</string>
+    <string name="spotlight_v5_dialog_got_it_button">Forstået</string>
+    <string name="spotlight_v5_dialog_learn_more_button">Få mere at vide</string>
+    <string name="spotlight_v5_dialog_rebranding_title">Opdateret Proton, forenet beskyttelse</string>
+    <string name="spotlight_v5_dialog_rebranding_description">Vi præsenterer Protons nye udseende. Mange tjenester, én mission. Velkommen til et internet, hvor privatlivsbeskyttelse er standard. <a href="https://proton.me/news/updated-proton">Få mere at vide</a></string>
+    <string name="spotlight_dialog_week_view_title">Flere visningsmuligheder</string>
+    <string name="spotlight_dialog_week_view_description">• Nu kan du vælge kalendervisninger med <b>3 dage</b> og en <b>uge</b>. Vælg din foretrukne visning i <b>menuen</b>.\n\n• Juster højden af rækkerne i dagsgitteret ved at knibe med to fingre for at zoome ind eller ud.</string>
+    <string name="spotlight_dialog_search_title">Søg efter begivenheder</string>
+    <string name="spotlight_dialog_search_description">Find nemt de begivenheder du leder efter, med vores nye søgefunktion. <a href="https://proton.me/support/calendar-search">Læs mere</a></string>
+    <string name="spotlight_dialog_search_positive">Aktiver</string>
+    <string name="spotlight_dialog_search_negative">Spring over</string>
+    <string name="spotlight_dialog_import_title">Flere måder at tilføje begivenheder</string>
+    <string name="spotlight_dialog_import_description">• Importer begivenheder til din kalender fra filer på din telefon.\n\n• Tilføj rejsebookinger direkte fra Proton Mail.</string>
+    <string name="spotlight_dialog_calendar_provider_title">Kalenderfunktioner</string>
+    <string name="spotlight_dialog_calendar_provider_description">• Tilføj begivenheder direkte til Proton Calendar fra andre apps.\n\n• Opret og administrer begivenheder i kalendere der er blevet delt med dig.\n\n• Indstil den standardvisning, du vil se, når du åbner appen.\n\n• 13 nye sprog tilgængelige.</string>
+    <string name="spotlight_dialog_wipe_search_title">Søgning fjernet for at gøre den bedre</string>
+    <string name="spotlight_dialog_wipe_search_description">Vi fjerner den eksperimentelle søgefunktion fra Proton Calendar Beta, da vi ønsker at gøre den mere nyttig og pålidelig for dig. Dette kan tage nogle sekunder.</string>
+    <string name="spotlight_dialog_holiday_calendar_title">Så er helligdagene her!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">Det er slut med at planlægge møder, når alle har fri, eller glemme at planlægge en forlænget weekendtur.\n\nTilføj et hvilket som helst lands helligdage til din kalender.</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">Det er slut med at planlægge møder, når alle har fri, eller glemme at planlægge en forlænget weekendtur.\n\nEftersom du i øjeblikket er på grænsen for antal kalendere, skal du først fjerne en eksisterende kalender for at tilføje en feriekalender.</string>
+    <string name="spotlight_dialog_color_per_event_title">Tilpas event-farver</string>
+    <string name="spotlight_dialog_color_per_event_description">Juster farven på de enkelte events for at:\n\n• Farvekode din kalender\n\n• Bedre organisere din dag og holde styr på din tid\n\n• Sætte prioriteter og øge effektiviteten</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">Tillad adgang</string>
+    <string name="dialog_google_auth_description">For at starte importen skal du logge ind på Google Kalender og give Proton adgang til dine data.</string>
+    <string name="import_assistant_prepare_import_error">Fejl ved forberedelse af import, prøv igen senere</string>
+    <string name="import_assistant_prepare_import">Forbereder import</string>
+    <string name="import_assistant_gathering_data_loader_title">Indsamler dine data</string>
+    <string name="import_assistant_summary_title">Resumé af import</string>
+    <string name="import_assistant_summary_customize_import">Tilpas import</string>
+    <string name="import_assistant_error">Fejl ved hentning af data</string>
+    <string name="import_assistant_data_gathering_error">Indsamling af data mislykkedes</string>
+    <string name="import_assistant_update_import_error">Det lykkedes ikke at opdatere importen, prøv igen senere.</string>
+    <string name="import_assistant_update_import_wrong_account_error">Forkert konto. Log på med den konto, du brugte til kalenderimporten.</string>
+    <string name="import_assistant_start_import_error">Det lykkedes ikke at starte importen, prøv igen senere.</string>
+    <string name="import_assistant_delete_import_success">Importpost slettet</string>
+    <string name="import_assistant_delete_import_error">Det lykkedes ikke at slette importen, prøv igen senere.</string>
+    <string name="import_assistant_cancel_import_error">Det lykkedes ikke at annullere importen, prøv igen senere.</string>
+    <string name="import_assistant_resume_import_error">Det lykkedes ikke at genoptage importen, prøv igen senere.</string>
+    <string name="import_assistant_create_calendar_error">En eller flere kalendere blev ikke oprettet</string>
+    <string name="import_assistant_start_import_empty_error">Importen kunne ikke startes, der er ingen kalendere at importere</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">Importer som</string>
+    <string name="import_assistant_new_calendar_badge">Ny</string>
+    <string name="import_assistant_merge_calendar_badge">Flettet</string>
+    <string name="import_assistant_creating_calendars">Opretter nye kalendere</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">Næsten færdig…</string>
+    <string name="import_assistant_new_calendar_header">Opret ny</string>
+    <string name="import_assistant_merge_calendar_header">Flet med eksisterende</string>
+    <string name="import_assistant_in_progress_title">Import i gang</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">Importerer data fra %1s til %2s.</string>
+    <string name="import_assistant_in_progress_redirect">Tjek status</string>
+    <string name="import_assistant_in_progress_sub_description">Større importer kan tage flere dage. Vi giver dig besked, når importen er færdig. Du kan lukke denne skærm.</string>
+    <string name="import_assistant_guide_subtitle">Skift til en privatlivsvenlig løsning. Nemt og sikkert.</string>
+    <string name="import_assistant_guide_description">Flyt dine begivenheder og andre data fra Google til Proton. Easy Switch-importøren guider dig hele vejen igennem og krypterer dine data, mens de flyttes.</string>
+    <string name="import_assistant_new_import">Ny import</string>
+    <string name="import_assistant_previous_import">Tidligere importer</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">Startet</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">Er i gang</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">Fuldført</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">Annulleret</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">Annullerer</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">Sat på pause</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">Mislykkedes</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Forbindelse til Google tabt</string>
+    <string name="import_assistant_status_paused_lost_connection_description">Hvis du vil fortsætte importen, skal du trykke på Tilslut igen, logge ind på Google og give Proton adgang til dine Google-data igen.</string>
+    <string name="import_assistant_status_paused_lost_connection_button">Tilslut igen</string>
+    <string name="import_assistant_status_paused_storage_full_title">Lagerpladsen er fuld</string>
+    <string name="import_assistant_status_paused_storage_full_description">Din Proton-konto har ikke nok lagerplads til at afslutte denne kalenderimport. Frigør plads eller tilføj mere, og kom så tilbage her for at fortsætte.</string>
+    <string name="import_assistant_status_paused_storage_full_button">Genoptag</string>
+    <string name="import_assistant_delete_report_title">Fjern fra listen?</string>
+    <string name="import_assistant_delete_report_message">Du vil ikke længere se denne importoptegnelse på listen.</string>
+    <string name="import_assistant_delete_report_positive_button">Fjern</string>
+    <string name="import_assistant_delete_report_negative_button">Behold</string>
+    <string name="import_assistant_cancel_import_title">Import er ufuldstændig!</string>
+    <string name="import_assistant_cancel_import_message">Hvis du annullerer denne import, vil du ikke kunne genoptage den. Proton gemte alle fremskridt på din konto. Annuller alligevel?</string>
+    <string name="import_assistant_cancel_import_positive_button">Annuller import</string>
+    <string name="import_assistant_cancel_import_negative_button">Genoptag import</string>
+    <string name="import_assistant_in_progress_snack">Import i gang</string>
+    <string name="import_assistant_discard_import_title">Annuller import?</string>
+    <string name="import_assistant_discard_import_message">Importen er ufuldstændig og kan ikke genoptages, hvis du afbryder den.</string>
+    <string name="import_assistant_discard_import_positive">Annuller import</string>
+    <string name="import_assistant_discard_import_negative">Genoptag import</string>
+    <string name="import_assistant_authentication_canceled">Autentificering annulleret</string>
+    <string name="import_assistant_sign_in_in_progress">Der er allerede en indskrivningsproces i gang</string>
+    <string name="import_assistant_in_progress_error_snack">Der er stadig en import i gang</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">Importér som simpel begivenhed?</string>
+    <string name="import_event_disclaimer_dialog_description">\nImporterede invitationer vises i Proton Calendar som simple begivenheder uden oplysninger om <b>arrangør</b> og <b>deltagere</b>.\n\nHvis du vil have opdateringer om begivenhederne og se deltagerne, skal du bede arrangørerne om at invitere dig med din Proton-e-mailadresse.</string>
+    <string name="import_event_disclaimer_dialog_positive">Importér</string>
+    <string name="undefined_color">Udefineret</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">kalender</item>
+        <item quantity="other">kalendere</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">Importer %1$d kalender</item>
+        <item quantity="other">Importer %1$d kalendere</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">%1$d igangværende import</item>
+        <item quantity="other">%1$d igangværende importer</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">%1$d af %2$d oprettet i %3$s</item>
+        <item quantity="other">%1$d af %2$d oprettet i %3$s</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">Opret %1$d kalender i Proton Calendar.</item>
+        <item quantity="other">Opret %1$d kalendere i Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">Importer %1$d ud af %2$d kalender fra</item>
+        <item quantity="other">Importer %1$d ud af %2$d kalendere fra</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">Flet %1$d kalender i Proton Calendar.</item>
+        <item quantity="other">Flet %1$d kalendere i Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">Kan ikke oprette nye kalendere for alle importerede kalendere på grund af begrænsningen for kalendere.\n • Fravælg mindst %1$d kalender</item>
+        <item quantity="other">Kan ikke oprette nye kalendere for alle importerede kalendere på grund af begrænsningen for kalendere.\n • Fravælg mindst %1$d kalendere</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020eller\n • Flet mindst %1$d kalender med eksisterende Proton-kalendere.</item>
+        <item quantity="other">\u0020eller\n • Flet mindst %1$d kalendere med eksisterende Proton-kalendere.</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">anden</item>
+        <item quantity="other">sekunder</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">minut</item>
+        <item quantity="other">minutter</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">time</item>
+        <item quantity="other">timer</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">dag</item>
+        <item quantity="other">dage</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">uge</item>
+        <item quantity="other">uger</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">måned</item>
+        <item quantity="other">måneder</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">år</item>
+        <item quantity="other">år</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">én gang</item>
+        <item quantity="other">gange</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">forekomst</item>
+        <item quantity="other">forekomster</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">gang</item>
+        <item quantity="other">gange</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">deltager</item>
+        <item quantity="other">deltagere</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">Hver %1$d %2$s</item>
+        <item quantity="other">Hver %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">Hver %1$d %2$s</item>
+        <item quantity="other">Hver %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">Hver %1$d %2$s</item>
+        <item quantity="other">Hver %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">Hver %1$d %2$s</item>
+        <item quantity="other">Hver %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s minut</item>
+        <item quantity="other">%1$s minutter</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d/%2$d tegn</item>
+        <item quantity="other">%1$d/%2$d tegn</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d/%2$d tegn</item>
+        <item quantity="other">%1$d/%2$d tegn</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>første</item>
+        <item>anden</item>
+        <item>tredje</item>
+        <item>fjerde</item>
+        <item>femte</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>sidste</item>
+        <item>næstsidste</item>
+        <item>tredjesidste</item>
+        <item>fjerdesidste</item>
+        <item>femtesidste</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>Lys</item>
+        <item>Mørk</item>
+        <item>Systemstandard</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>Systemstandard</item>
+        <item>13:00</item>
+        <item>13:00</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>Systemstandard</item>
+        <item>Mandag</item>
+        <item>Lørdag</item>
+        <item>Søndag</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>Lilla|#8080FF</item>
+        <item>Jordbær|#EC3E7C</item>
+        <item>Pink|#DB60D6</item>
+        <item>Gulerod|#F78400</item>
+        <item>Sahara|#936D58</item>
+        <item>Enzian|#5252CC</item>
+        <item>Blomme|#A839A4</item>
+        <item>Cerise|#BA1E55</item>
+        <item>Kobber|#C44800</item>
+        <item>Jord|#54473F</item>
+        <item>Blågrå|#415DF0</item>
+        <item>Stillehavet|#179FD9</item>
+        <item>Rev|#1DA583</item>
+        <item>Bregne|#3CBB3A</item>
+        <item>Oliven|#B4A40E</item>
+        <item>Kobolt|#273EB2</item>
+        <item>Ocean|#0A77A6</item>
+        <item>Fyrretræ|#0F735A</item>
+        <item>Skov|#258723</item>
+        <item>Syltet agurk|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>Lilla</item>
+        <item>Jordbær</item>
+        <item>Pink</item>
+        <item>Gulerod</item>
+        <item>Sahara</item>
+        <item>Ensian</item>
+        <item>Blomme</item>
+        <item>Kirsebærrød</item>
+        <item>Kobber</item>
+        <item>Jord</item>
+        <item>Skiferblå</item>
+        <item>Stillehavet</item>
+        <item>Rev</item>
+        <item>Bregne</item>
+        <item>Oliven</item>
+        <item>Kobolt</item>
+        <item>Hav</item>
+        <item>Fyr</item>
+        <item>Skov</item>
+        <item>Agurk</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

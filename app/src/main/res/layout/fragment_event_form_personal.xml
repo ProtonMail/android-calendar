@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_form_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:paddingBottom="@dimen/spacing_large">
+
+        <TextView
+            android:id="@+id/event_form_personal_title"
+            style="@style/Text.Headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginStart="@dimen/default_margin_text_start"
+            android:layout_marginEnd="@dimen/default_margin_text_end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Business lunch with very long title because we need to check how it looks like" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/event_form_personal_color_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@+id/event_form_personal_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <include
+                android:id="@+id/event_form_personal_color_press"
+                layout="@layout/view_press_overlay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/event_form_personal_color_separator"/>
+
+            <ImageView
+                android:id="@+id/event_form_personal_color_icon"
+                style="@style/ColoredDot"
+                app:srcCompat="@drawable/ic_dot"
+                android:layout_marginStart="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/event_form_personal_color"
+                app:layout_constraintTop_toTopOf="@+id/event_form_personal_color"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/event_form_personal_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Default"
+                android:gravity="start"
+                android:textAlignment="gravity"
+                tools:text="Pacific"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/event_form_personal_color_icon"/>
+
+            <TextView
+                android:id="@+id/event_form_personal_color_default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/Text.Default.Weak"
+                android:text="@string/event_default_color"
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:paddingStart="8dp"
+                android:paddingEnd="@dimen/default_inner_padding_end"
+                app:layout_constraintTop_toTopOf="@+id/event_form_personal_color"
+                app:layout_constraintBottom_toBottomOf="@+id/event_form_personal_color"
+                app:layout_constraintStart_toEndOf="@+id/event_form_personal_color"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                android:id="@+id/event_form_personal_color_separator"
+                style="@style/Separator"
+                android:layout_marginTop="@dimen/default_separator_margin_top"
+                app:layout_constraintTop_toBottomOf="@+id/event_form_personal_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/event_form_personal_alarm_list"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/event_form_personal_color_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/event_form_personal_alarm_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/event_form_personal_alarm_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <include
+                android:id="@+id/event_form_personal_alarm_press"
+                layout="@layout/view_press_overlay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/event_form_personal_alarm_separator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/event_form_personal_alarm_icon"
+                style="@style/Icon.Form"
+                app:tint="@color/icon_hint"
+                app:srcCompat="@drawable/ic_proton_bell"
+                app:layout_constraintBottom_toBottomOf="@+id/event_form_personal_alarm"
+                app:layout_constraintTop_toTopOf="@+id/event_form_personal_alarm"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/event_form_personal_alarm"
+                style="@style/Text.Default.Form"
+                android:textColor="@color/text_hint"
+                android:text="@string/event_text_add_alarm"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                android:id="@+id/event_form_personal_alarm_separator"
+                style="@style/Separator"
+                android:layout_marginTop="@dimen/default_separator_margin_top"
+                app:layout_constraintTop_toBottomOf="@+id/event_form_personal_alarm"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

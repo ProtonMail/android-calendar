@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_element_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_theme_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/settings_theme_info"/>
+
+        <TextView
+            android:id="@+id/settings_theme_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_theme_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_theme_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Light"
+            android:text="@string/settings_value_placeholder"
+            style="@style/Text.DefaultSmall.Weak"
+            android:layout_marginBottom="@dimen/default_margin_text_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/settings_theme_title"
+            app:layout_constraintBottom_toTopOf="@+id/settings_theme_info"
+            app:layout_constraintStart_toStartOf="@+id/settings_theme_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_theme_title"/>
+
+        <TextView
+            android:id="@+id/settings_theme_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_theme_info"
+            style="@style/Text.Caption.Weak"
+            android:layout_marginBottom="@dimen/spacing_page"
+            app:layout_constraintTop_toBottomOf="@+id/settings_theme_value"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_theme_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_theme_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_theme_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_theme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_default_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_theme_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_default_view_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_default_view_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_default_view_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_default_view_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Last view"
+            android:text="@string/settings_value_placeholder"
+            style="@style/Text.DefaultSmall.Weak"
+            android:layout_marginBottom="@dimen/default_margin_text_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/settings_default_view_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_default_view_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_default_view_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_default_view_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_default_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_default_view_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_language_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_language_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_language_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_language_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="English"
+            android:text="@string/settings_value_placeholder"
+            style="@style/Text.DefaultSmall.Weak"
+            android:layout_marginBottom="@dimen/default_margin_text_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/settings_language_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_language_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_language_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_language_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_timezone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_language_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_timezone_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_timezone_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_timezone_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_timezone_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Europe/Zurich (GMT+1)"
+            android:text="@string/settings_value_placeholder"
+            style="@style/Text.DefaultSmall.Weak"
+            android:layout_marginBottom="@dimen/default_margin_text_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/settings_timezone_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_timezone_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_timezone_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_update_timezone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_timezone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_update_timezone_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/settings_update_timezone_info"/>
+
+        <TextView
+            android:id="@+id/settings_update_timezone_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_update_timezone_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_update_timezone_switch"/>
+
+        <Switch
+            android:id="@+id/settings_update_timezone_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_icon_size"
+            android:layout_marginEnd="@dimen/default_inner_padding_end"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_update_timezone_title"
+            app:layout_constraintTop_toTopOf="@+id/settings_update_timezone_title"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/settings_update_timezone_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_update_timezone_subtitle"
+            style="@style/Text.Caption.Weak"
+            android:layout_marginTop="@dimen/spacing_page"
+            android:layout_marginBottom="@dimen/spacing_page"
+            app:layout_constraintTop_toBottomOf="@+id/settings_update_timezone_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_update_timezone_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_update_timezone_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_timezone_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_update_timezone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_week_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_timezone_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_week_start_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_week_start_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_week_start_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_week_start_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Monday"
+            android:text="@string/settings_value_placeholder"
+            style="@style/Text.DefaultSmall.Weak"
+            android:layout_marginBottom="@dimen/default_margin_text_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/settings_week_start_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_week_start_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_week_start_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_week_start_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_week_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_time_format"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_week_start_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_time_format_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_time_format_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_time_format_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_time_format_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="13:00"
+            android:text="@string/settings_value_placeholder"
+            style="@style/Text.DefaultSmall.Weak"
+            android:layout_marginBottom="@dimen/default_margin_text_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/settings_time_format_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_time_format_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_time_format_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_time_format_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_time_format"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_week_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_time_format_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_week_numbers_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_week_numbers_title"
+            style="@style/Text.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginTop="@dimen/default_separator_margin_top"
+            android:layout_marginBottom="@dimen/default_separator_margin_top"
+            android:layout_marginEnd="@dimen/spacing_page"
+            android:text="@string/settings_week_numbers_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_week_numbers_switch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/settings_week_numbers_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_icon_size"
+            android:layout_marginEnd="@dimen/default_inner_padding_end"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_week_numbers_title"
+            app:layout_constraintTop_toTopOf="@+id/settings_week_numbers_title"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_week_numbers_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_week_numbers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/settings_auto_invites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_week_numbers_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_auto_invites_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_auto_invites_title"
+            style="@style/Text.Default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginTop="@dimen/default_separator_margin_top"
+            android:layout_marginBottom="@dimen/default_separator_margin_top"
+            android:layout_marginEnd="@dimen/spacing_page"
+            android:text="@string/settings_auto_invites_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_auto_invites_switch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/settings_auto_invites_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_icon_size"
+            android:layout_marginEnd="@dimen/default_inner_padding_end"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_auto_invites_title"
+            app:layout_constraintTop_toTopOf="@+id/settings_auto_invites_title"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:id="@+id/settings_auto_invites_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_auto_invites"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_auto_invites_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_search_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/settings_search_info"/>
+
+        <TextView
+            android:id="@+id/settings_search_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_search_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_search_switch"/>
+
+        <Switch
+            android:id="@+id/settings_search_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_icon_size"
+            android:layout_marginEnd="@dimen/default_inner_padding_end"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_search_title"
+            app:layout_constraintTop_toTopOf="@+id/settings_search_title"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/settings_search_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_search_subtitle"
+            style="@style/Text.Caption.Weak"
+            android:layout_marginTop="@dimen/spacing_page"
+            android:layout_marginBottom="@dimen/spacing_page"
+            app:layout_constraintTop_toBottomOf="@+id/settings_search_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_search_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_search_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_search_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_alternative_routing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_search_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_alternative_routing_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/settings_alternative_routing_info"/>
+
+        <TextView
+            android:id="@+id/settings_alternative_routing_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_alternative_routing_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_alternative_routing_switch"/>
+
+        <Switch
+            android:id="@+id/settings_alternative_routing_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_icon_size"
+            android:layout_marginEnd="@dimen/default_inner_padding_end"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_alternative_routing_title"
+            app:layout_constraintTop_toTopOf="@+id/settings_alternative_routing_title"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/settings_alternative_routing_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_alternative_routing_subtitle"
+            style="@style/Text.Caption.Weak"
+            android:layout_marginTop="@dimen/spacing_page"
+            android:layout_marginBottom="@dimen/spacing_page"
+            app:layout_constraintTop_toBottomOf="@+id/settings_alternative_routing_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_alternative_routing_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_alternative_routing_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_alternative_routing_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_alternative_routing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

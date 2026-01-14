@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/item_color_picker_dot"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/ic_selected_color_dot"
+        app:tint="@color/purple_base"/>
+
+    <TextView
+        android:id="@+id/item_color_picker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Pacific"
+        android:paddingStart="20dp"
+        android:paddingEnd="8dp"
+        style="@style/Text.Default"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_color_picker_dot"/>
+
+    <TextView
+        android:id="@+id/item_color_picker_name_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_default_color"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:paddingEnd="8dp"
+        style="@style/Text.Default.Weak"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_color_picker_name"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

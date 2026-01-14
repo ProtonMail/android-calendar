@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/spacing_element">
+
+    <include
+        android:id="@+id/event_attendees_press"
+        layout="@layout/view_press_overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/event_attendees_separator"/>
+
+    <ImageView
+        android:id="@+id/event_attendees_icon"
+        style="@style/Icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/event_attendees_title"
+        app:layout_constraintTop_toTopOf="@id/event_attendees_title"
+        app:srcCompat="@drawable/ic_proton_users" />
+
+    <TextView
+        android:id="@+id/event_attendees_title"
+        style="@style/Text.Default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_element"
+        android:layout_marginStart="@dimen/default_margin_text_start"
+        app:layout_constraintEnd_toStartOf="@+id/event_attendees_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="8 participants" />
+
+    <TextView
+        android:id="@+id/event_attendees_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Text.DefaultSmall.Weak"
+        app:layout_constraintStart_toStartOf="@+id/event_attendees_title"
+        app:layout_constraintEnd_toEndOf="@+id/event_attendees_title"
+        app:layout_constraintTop_toBottomOf="@+id/event_attendees_title"
+        tools:text="4 yes, 3 maybe, 1 no" />
+
+    <ImageView
+        android:id="@+id/event_attendees_button"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        app:tint="@color/icon_norm"
+        android:layout_marginEnd="@dimen/spacing_page"
+        android:layout_marginStart="@dimen/spacing_element_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/event_attendees_title"
+        app:layout_constraintTop_toTopOf="@id/event_attendees_title"
+        app:layout_constraintBottom_toBottomOf="@+id/event_attendees_title"
+        app:srcCompat="@drawable/ic_proton_chevron_down_filled" />
+
+    <View
+        android:id="@+id/event_attendees_separator"
+        style="@style/Separator"
+        android:background="@color/sidebar_separator"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/spacing_element"
+        app:layout_constraintTop_toBottomOf="@+id/event_attendees_description"
+        app:layout_constraintStart_toStartOf="@+id/event_attendees_description"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/event_attendee_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@+id/event_attendees_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_marginStart="@dimen/spacing_page"
+        android:layout_marginEnd="@dimen/spacing_page"
+        tools:listitem="@layout/item_attendee"
+        tools:itemCount="4" />
+
+    <include
+        android:id="@+id/event_attendee_organizer_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_page"
+        android:layout_marginEnd="@dimen/spacing_page"
+        app:layout_constraintTop_toBottomOf="@+id/event_attendee_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        layout="@layout/item_attendee" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

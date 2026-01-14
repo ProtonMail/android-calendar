@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="9dp"
+    tools:context=".presentation.calendar.fragment.MonthFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_weeknumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/calendar_week_number_spacing_start"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/ll_weekdays"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/rv_mini_calendar"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:layout_marginStart="@dimen/calendar_week_number_spacing_start"-->
+<!--        android:visibility="gone"-->
+<!--        tools:visibility="visible"/>-->
+
+    <GridLayout
+        android:id="@+id/gl_mini_calendar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:columnCount="7"
+        android:layout_marginStart="@dimen/calendar_week_number_spacing_start"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ll_weeknumbers"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

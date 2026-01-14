@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_mini_calendar_layout"
+    android:layout_width="0dp"
+    tools:layout_width="38dp"
+    android:layout_height="@dimen/calendar_item_height"
+    android:layout_columnWeight="1"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/ripple_mini_calendar_day" >
+
+    <TextView
+        android:id="@+id/itemMiniCalendarText"
+        style="@style/Text.DefaultSmall.Strong"
+        android:layout_marginTop="2dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/ripple_mini_calendar_day_selected"
+        android:gravity="center"
+        tools:text="13" />
+
+    <LinearLayout
+        android:id="@+id/ll_calendar_dots"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:showDividers="middle"
+        android:divider="@drawable/divider_item_calendar_dots"
+        />
+
+</LinearLayout>

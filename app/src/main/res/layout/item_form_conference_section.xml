@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/spacing_element"
+    android:paddingBottom="@dimen/spacing_element">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_icon"
+        style="@style/Icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/join_meeting_button"
+        app:layout_constraintTop_toTopOf="@+id/join_meeting_button"
+        app:layout_constraintBottom_toBottomOf="@+id/join_meeting_button"
+        app:srcCompat="@drawable/ic_video_camera"
+        app:tint="@color/icon_norm"
+        />
+
+    <TextView
+        android:id="@+id/join_meeting_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Join with []"
+        style="@style/Text.Default"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ripple_background_button_interaction_norm"
+        android:layout_marginStart="@dimen/default_margin_text_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_conference_id"
+        style="@style/Text.Default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin_text_start"
+        android:layout_marginTop="@dimen/spacing_element_small"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toStartOf="@+id/image_button_action"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/join_meeting_button"
+        tools:text="ID: 78454040404" />
+
+    <TextView
+        android:id="@+id/text_conference_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Text.Default"
+        android:visibility="gone"
+        android:textIsSelectable="true"
+        app:layout_constraintStart_toStartOf="@+id/text_conference_id"
+        app:layout_constraintEnd_toEndOf="@+id/text_conference_id"
+        app:layout_constraintTop_toBottomOf="@+id/text_conference_id"
+        tools:text="Password: BvBmT8Uo9i"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/image_button_action"
+        android:layout_width="@dimen/default_icon_size"
+        android:layout_height="@dimen/default_icon_size"
+        android:layout_marginStart="@dimen/spacing_element_small"
+        android:layout_marginEnd="@dimen/spacing_page"
+        android:background="?android:selectableItemBackgroundBorderless"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_conference_id"
+        app:layout_constraintTop_toTopOf="@+id/join_meeting_button"
+        app:layout_constraintBottom_toBottomOf="@+id/join_meeting_button"
+        app:srcCompat="@drawable/ic_proton_squares"
+        app:tint="@color/icon_norm" />
+
+    <LinearLayout
+        android:id="@+id/conference_more_details_title_layout"
+        android:clickable="?selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/spacing_element_small"
+        android:paddingBottom="@dimen/spacing_element_small"
+        app:layout_constraintStart_toStartOf="@+id/text_conference_password"
+        app:layout_constraintTop_toBottomOf="@+id/text_conference_password">
+
+        <TextView
+            android:id="@+id/text_conference_more_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Text.Default"
+            android:layout_marginStart="@dimen/default_margin_text_start"
+            android:text="@string/generic_meeting_more_details" />
+
+        <ImageView
+            android:id="@+id/text_conference_more_details_button"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            app:tint="@color/icon_norm"
+            android:layout_marginEnd="@dimen/spacing_page"
+            android:layout_marginStart="@dimen/spacing_element_small"
+            app:srcCompat="@drawable/ic_proton_chevron_down_filled" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conference_more_details_content_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:animateLayoutChanges="true"
+        app:layout_constraintStart_toStartOf="@+id/text_conference_id"
+        app:layout_constraintEnd_toEndOf="@+id/text_conference_id"
+        app:layout_constraintTop_toBottomOf="@+id/conference_more_details_title_layout">
+
+        <TextView
+            android:id="@+id/text_conference_meeting_host"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Text.Default"
+            android:textIsSelectable="true"
+            android:layout_marginTop="@dimen/spacing_element_small"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/generic_meeting_host" />
+
+        <TextView
+            android:id="@+id/text_conference_meeting_host_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Text.Default"
+            android:textIsSelectable="true"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/text_conference_meeting_host"
+            app:layout_constraintEnd_toEndOf="@+id/text_conference_meeting_host"
+            app:layout_constraintTop_toBottomOf="@+id/text_conference_meeting_host"
+            tools:text="john.doe@proton.me" />
+
+        <TextView
+            android:id="@+id/text_conference_meeting_link"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Text.Default"
+            android:textIsSelectable="true"
+            android:layout_marginTop="@dimen/spacing_element_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_conference_meeting_host_value"
+            android:text="@string/generic_meeting_link" />
+
+        <TextView
+            android:id="@+id/text_conference_meeting_link_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Text.Default"
+            android:textIsSelectable="true"
+            app:layout_constraintStart_toStartOf="@+id/text_conference_meeting_link"
+            app:layout_constraintEnd_toEndOf="@+id/text_conference_meeting_link"
+            app:layout_constraintTop_toBottomOf="@+id/text_conference_meeting_link"
+            tools:text="https://us05web.zoom.us/j/XXX" />
+
+        <TextView
+            android:id="@+id/text_conference_joining_instructions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/Text.Default"
+            android:textIsSelectable="true"
+            android:layout_marginTop="@dimen/spacing_element_small"
+            app:layout_constraintStart_toStartOf="@+id/text_conference_meeting_link_value"
+            app:layout_constraintEnd_toEndOf="@+id/text_conference_meeting_link_value"
+            app:layout_constraintTop_toBottomOf="@+id/text_conference_meeting_link_value"
+            android:text="@string/generic_meeting_joining_instructions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

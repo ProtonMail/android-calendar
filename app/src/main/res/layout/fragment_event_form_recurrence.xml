@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="false">
+
+        <RadioGroup
+            android:id="@+id/event_form_recurrence_radio_group"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:paddingStart="@dimen/radio_group_inner_padding"
+            android:paddingEnd="@dimen/radio_group_inner_padding"
+            tools:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/event_form_recurrence_custom_edit"
+                style="@style/Text.Default.RadioButton"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Weekly on Wednesday, until 21 Aug 2020" />
+
+            <RadioButton
+                android:id="@+id/event_form_recurrence_1"
+                style="@style/Text.Default.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_recurrence_1" />
+
+            <RadioButton
+                android:id="@+id/event_form_recurrence_2"
+                style="@style/Text.Default.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_recurrence_2" />
+
+            <RadioButton
+                android:id="@+id/event_form_recurrence_3"
+                style="@style/Text.Default.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_recurrence_3" />
+
+            <RadioButton
+                android:id="@+id/event_form_recurrence_4"
+                style="@style/Text.Default.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_recurrence_4" />
+
+            <RadioButton
+                android:id="@+id/event_form_recurrence_5"
+                style="@style/Text.Default.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_recurrence_5" />
+
+            <RadioButton
+                android:id="@+id/event_form_recurrence_custom"
+                style="@style/Text.Default.RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_text_custom" />
+        </RadioGroup>
+
+        <include
+            android:id="@+id/event_form_recurrence_custom_layout"
+            layout="@layout/event_form_custom_recurrence_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(無標題)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">(無電郵位址)</string>
+    <string name="default_user_display_name">(未命名)</string>
+    <string name="toast_copied_to_clipboard">已複製到剪貼簿</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">刪除活動</string>
+    <string name="dialog_title_delete_recurring_event">删除周期性活動</string>
+    <string name="dialog_description_delete_event">您確定要刪除此活動嗎?</string>
+    <string name="dialog_description_delete_recurring_event">您確定要刪除此一系列中所有活動嗎?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">此行程已由召集人更新。您確定要刪除此活動嗎？</string>
+    <string name="dialog_button_delete">刪除</string>
+    <string name="dialog_button_cancel">取消</string>
+    <string name="dialog_button_continue">繼續</string>
+    <string name="dialog_button_close">關閉</string>
+    <string name="dialog_button_remove">移除</string>
+    <string name="dialog_button_download">下載</string>
+    <string name="dialog_button_update">更新</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">取消函將傳送給所有活動參與者。您確定要刪除此活動嗎？</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">您的電郵位址已停用。取消函無法傳送給所有活動參與者。您仍然要刪除此活動嗎?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">取消函將傳送給所有活動參與者。您確定要刪除此系列中全部活動嗎？</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">您的電郵位址已停用。取消函無法傳送給所有活動參與者。您仍然要刪除此系列中全部活動嗎？</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">此行程的召集人將收到您婉拒邀請的通知。您確定要刪除此活動嗎?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">此活動的召集人將不會收到您婉拒邀請的通知，因為您獲邀的電郵位址無法傳送電郵。您仍然要刪除此活動嗎？</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">此一系列活動的召集人將收到您婉拒邀請的通知。您要刪除此系列的全部活動嗎？</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">此一系列活動的召集人將不會收到您婉拒邀請的通知，因為您獲邀的電郵位址無法傳送電郵。您仍然要刪除此系列的全部活動嗎？</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">此活動已更新。此行程的召集人將收到您婉拒邀請的通知。您確定要刪除此活動嗎?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">此行程已更新。此活動的召集人將不會收到您婉拒邀請的通知，因為您獲邀的電郵位址無法傳送電郵。您仍然要刪除此活動嗎？</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">召集人先前更新的行程將被保留，但您的回覆將會遺失</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">召集人先前更新的行程將被保留</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">召集人無法收到您婉拒邀請的通知：\n\n• %1$s\n\n您仍要刪除此活動嗎？</string>
+    <string name="dialog_button_set">設置</string>
+    <string name="dialog_button_ok">確定</string>
+    <string name="action_save">儲存</string>
+    <string name="action_done">完成</string>
+    <string name="action_edit">編輯</string>
+    <string name="action_delete">刪除</string>
+    <string name="action_add">新增</string>
+    <string name="action_remove">移除</string>
+    <string name="action_leave">離開</string>
+    <string name="action_recreate">清除</string>
+    <string name="action_today">今天</string>
+    <string name="action_create_event">創建活動</string>
+    <string name="action_mark_default">標記為預設值</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">無活動</string>
+    <string name="agenda_loading_events">正在載入活動…</string>
+    <string name="agenda_loading_events_error">載入活動時發生錯誤</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+ 另 %1$d 人</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">全日</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">屆時</string>
+    <string name="event_alarm_label_at_event_time_by_email">活動開始時通過電郵</string>
+    <string name="event_alarm_label_on_the_same_day">當天</string>
+    <string name="event_alarm_label_before">%1$s前</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s前傳送電郵</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s，於 %2$s</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s，於 %2$s 傳送電郵</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s前，於 %2$s</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s前，於 %2$s 傳送電郵</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s的%2$s</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s的 %2$d 日</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s的%2$s</string>
+    <string name="event_recurrence_none">不重複</string>
+    <string name="event_recurrence_daily">每日</string>
+    <string name="event_recurrence_weekly">每週</string>
+    <string name="event_recurrence_monthly">每月</string>
+    <string name="event_recurrence_yearly">每年</string>
+    <string name="event_recurrence_weekly_on_all_days">全日</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">直到 %1$s 為止</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">直到 %1$s (%2$s) 為止</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">已取消</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(已停用)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(預設)</string>
+    <string name="event_attendee_status_separator">%1$s、%2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d 人會出席</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d 人或會出席</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d 人不會出席</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d 擱置中</string>
+    <string name="event_attendee_is_organizer">您是召集人</string>
+    <string name="event_attendee_organizer">召集人</string>
+    <string name="event_attendee_optional">自由列席</string>
+    <string name="event_attendee_is_current_user">您</string>
+    <string name="event_answer_attending">會否出席？</string>
+    <string name="event_answer_yes">是</string>
+    <string name="event_answer_no">否</string>
+    <string name="event_answer_maybe">可能</string>
+    <string name="event_decryption_error_dialog_title">無法解密活動</string>
+    <string name="event_decryption_error_dialog_message">無法解密此活動的內容。</string>
+    <string name="event_decryption_error_dialog_confirmation">刪除活動</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">刪除多個活動</string>
+    <string name="event_decryption_error_dialog_close">關閉</string>
+    <string name="event_signature_verification_failure">行程簽章驗證失敗。<a href="https://proton.me/support/what-is-a-digital-signature">取得更多資訊</a></string>
+    <string name="event_signature_verification_in_progress">正在驗證行程簽章。</string>
+    <string name="event_signature_verification_network_error">行程簽章的驗證因錯誤而中斷。<a href="">再試一次</a></string>
+    <string name="event_change_answer_recurring_title">更新週期性活動</string>
+    <string name="event_change_answer_recurring_description">您要變更您就此系列中全部活動的回答嗎？</string>
+    <string name="event_change_answer_recurring_overwrite_description">您要變更您就此系列中全部活動的回答嗎？\n您就召集人先前更新的行程所作的回答將會消失。</string>
+    <string name="event_change_answer_recurring_single_edit_description">此活動已由召集人更新。您想要僅為本次活動更改回答嗎？</string>
+    <string name="event_change_answer_recurring_cancel">取消</string>
+    <string name="event_change_answer_recurring_confirm">更新</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s 已接受您的邀請出席 %2$s</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s 已婉拒您的邀請出席 %2$s</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">%1$s 已暫訂接受您的邀請出席 %2$s</string>
+    <string name="event_organizer_send_prefs_error_title">無法通知召集人</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">無法通知召集人您接受了此邀請</string>
+    <string name="event_organizer_send_prefs_message_declined_title">無法通知召集人您婉拒了此邀請</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">無法通知召集人您暫訂接受了此邀請</string>
+    <string name="event_organizer_send_prefs_message_default_title">無法通知召集人您已回應此邀請</string>
+    <string name="event_organizer_send_prefs_button_title">確定</string>
+    <string name="event_attendees_send_prefs_error_title">無法通知參與者</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">無法通知任何參與者有關您的變更：\n\n• %1$s\n\n您仍要繼續嗎？</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">無法通知下列參與者有關您的變更：\n\n• %1$s\n\n您仍要繼續嗎？</string>
+    <string name="event_attendees_send_prefs_error_confirm">繼續</string>
+    <string name="event_attendees_send_prefs_error_cancel">取消</string>
+    <string name="event_send_prefs_error_address_disabled">此電郵位址不存在</string>
+    <string name="event_send_prefs_error_getting_contact">無法取得聯絡人資料</string>
+    <string name="event_send_prefs_error_network">網路錯誤</string>
+    <string name="event_send_prefs_trusted_keys_invalid">無效的信任金鑰</string>
+    <string name="event_send_prefs_public_keys_invalid">公開金鑰無效</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">聯絡人簽章無效</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">加入 Zoom 會議</string>
+    <string name="zoom_meeting_title">Zoom 會議</string>
+    <string name="generic_meeting_id">ID: %1$s</string>
+    <string name="generic_meeting_password">密碼: %1$s</string>
+    <string name="generic_meeting_more_details">更多詳細資料</string>
+    <string name="generic_meeting_less_details">較少詳細資料</string>
+    <string name="generic_meeting_host">會議主持人</string>
+    <string name="generic_meeting_link">會議連結</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">如何加入會議</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">加入活動</string>
+    <string name="event_text_edit_event">編輯活動</string>
+    <string name="event_hint_title">加入標題</string>
+    <string name="event_hint_location">加入位置</string>
+    <string name="event_text_add_participants">加入參與者</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">參與者 (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">您</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ 另 %1$d 人</string>
+    <string name="event_text_switch_all_day">全日</string>
+    <string name="event_text_date_start">開始</string>
+    <string name="event_text_date_end">結束</string>
+    <string name="event_text_date_repeat">重複</string>
+    <string name="event_text_date_repeat_never">不重複</string>
+    <string name="event_text_attendees">活動參與者</string>
+    <string name="event_text_attendees_none">無</string>
+    <string name="event_text_calendar">行事曆</string>
+    <string name="event_text_timezone_start">時區</string>
+    <string name="invite_in_shared_calendar_disclaimer">傳送邀請函僅適用於個人行事曆。</string>
+    <string name="invite_change_calendar_disclaimer">無法修改與邀請函相關的行事曆。</string>
+    <string name="invite_change_attendees_disclaimer">無法變動邀請函相關的參與人員</string>
+    <string name="change_calendar_recurring_disclaimer">尚無法變更定期行程的行事曆。</string>
+    <string name="update_event">更新行程</string>
+    <string name="update_invite_send_email">邀請更新將發送給各事件參與者。</string>
+    <string name="update_recurring_event">更新定期行程</string>
+    <string name="update_recurring_all_events">請問您是否要更新這一系列的所有行程？</string>
+    <string name="update_recurring_invite_send_email">您即將更新此一系列中全部事件。邀請更新將發送給各事件參與者。</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">您正在找什麼呢？</string>
+    <string name="search_empty_results_title">查無結果</string>
+    <string name="search_empty_results_subtitle">嘗試換用其它字詞，例如：Eric、網路研討會、讀書會... 等</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">正在下載行事曆 (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">尚待時間：%1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">正在估算仍須等待時間……</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">即將完成</string>
+    <string name="search_downloading_pause">暫停下載</string>
+    <string name="search_settings_dialog_toggle_off_title">移除所有已下載的行事曆？</string>
+    <string name="search_settings_dialog_toggle_off_text">若需進行搜尋，您必須再次下載所有行事曆。</string>
+    <string name="search_settings_dialog_toggle_on_title">下載行事曆至此裝置？</string>
+    <string name="search_settings_dialog_toggle_on_text">若您要搜尋，這是必要的。</string>
+    <string name="search_onboarding_header">想要搜尋您的行事曆？</string>
+    <string name="search_onboarding_text">首先，您需要下載行事曆的加密副本。這僅需耗時一點時間，您可持續免中斷使用應用程式。<a href="https://proton.me/support/calendar-search">了解更多</a></string>
+    <string name="search_onboarding_action_download_calendars">下載行事曆</string>
+    <string name="search_onboarding_action_pause">暫停</string>
+    <string name="search_onboarding_action_resume">繼續</string>
+    <string name="search_onboarding_action_retry">重試</string>
+    <string name="search_onboarding_progress_header_ongoing">正在下載行事曆…</string>
+    <string name="search_onboarding_progress_header_completed">下載完成</string>
+    <string name="search_onboarding_progress_header_paused">已暫停下載行事曆</string>
+    <string name="search_onboarding_progress_header_error">下載行事曆發生錯誤</string>
+    <string name="search_spotlight_activation_snack">已啟用行事曆搜尋</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">加入通知</string>
+    <string name="event_text_description">說明</string>
+    <string name="event_hint_description">加入描述</string>
+    <string name="event_text_custom">自訂</string>
+    <string name="event_alert_invalid_start_end_date">活動開始日期不能晚於結束日期</string>
+    <string name="event_alarms_title">通知</string>
+    <string name="event_custom_alarms_field">通知</string>
+    <string name="event_custom_alarms_title">自訂通知</string>
+    <string name="event_alarm_partial_day_1">屆時</string>
+    <string name="event_alarm_partial_day_2">10 分鐘</string>
+    <string name="event_alarm_partial_day_3">30 分鐘</string>
+    <string name="event_alarm_partial_day_4">1 小時</string>
+    <string name="event_alarm_partial_day_5">1 週</string>
+    <string name="event_alarm_all_day_1">同日，於 %1$s</string>
+    <string name="event_alarm_all_day_2">1 天前，於 %1$s</string>
+    <string name="event_alarm_all_day_3">1 週前，於 %1$s</string>
+    <string name="event_alarm_all_day_4">3 週前，於 %1$s</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">於 %1$s</string>
+    <string name="event_alarm_action">傳送方式</string>
+    <string name="event_alarm_action_notification">通知</string>
+    <string name="event_alarm_action_email">電郵</string>
+    <string name="event_alarm_same_day">同日</string>
+    <string name="event_recurrence_1">不重複</string>
+    <string name="event_recurrence_2">每天</string>
+    <string name="event_recurrence_3">每週</string>
+    <string name="event_recurrence_4">每月</string>
+    <string name="event_recurrence_5">每年</string>
+    <string name="event_recurrence_title">重複頻率</string>
+    <string name="event_recurrence_custom_title">自訂頻率</string>
+    <string name="event_recurrence_occurs_every">重複間隔</string>
+    <string name="event_recurrence_occurs_on">重複於</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">於 %1$d 日</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">在%1$s</string>
+    <string name="event_recurrence_ends_on">結束</string>
+    <string name="event_recurrence_ends_never">永不</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">於日子</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">於 %1$s</string>
+    <string name="event_recurrence_ends_after_count_prefix">經過</string>
+    <string name="event_recurring_edit_this">此活動</string>
+    <string name="event_recurring_edit_this_and_future">目前及未來活動</string>
+    <string name="event_recurring_edit_all_events">全部行程</string>
+    <string name="event_discard_changes_title">要捨棄變更嗎？</string>
+    <string name="event_discard_changes_description">您所有未儲存的變更將會消失。</string>
+    <string name="event_discard_changes_cancel">繼續編輯</string>
+    <string name="event_discard_changes_confirm">捨棄</string>
+    <string name="event_recurring_update_this_title">更新週期性活動</string>
+    <string name="event_recurring_update_this_description">頻率修改將會消失</string>
+    <string name="event_recurring_update_all_description">此系列中先前所作的修改將會消失</string>
+    <string name="event_recurring_update_this_cancel">取消</string>
+    <string name="event_recurring_update_this_confirm">更新</string>
+    <string name="event_allow_contacts_title">允許 Proton Calendar 存取您的聯絡人嗎？</string>
+    <string name="event_allow_contacts_description">Proton Calendar 需要存取您的聯絡人以便為您提供自動完成</string>
+    <string name="event_allow_contacts_cancel">婉拒</string>
+    <string name="event_allow_contacts_confirm">允許</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">回覆：誠摯邀請您參與 %1$s 在 %2$s %3$s 開展的活動</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">回覆：誠摯邀請您參與訂於 %1$s 的活動</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">回覆：誠摯邀請您參與 %1$s 開展的活動</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">誠摯邀請您參與 %1$s 在 %2$s %3$s 開展的活動</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">誠摯邀請您參與訂於 %1$s 的活動</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">誠摯邀請您參與 %1$s 開展的活動</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">更新開始於 %2$s %1$s %3$s 的行程</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">更新於 %1$s 的行程</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">更新開始於 %1$s 的行程</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">行程取消致歉函：原 %1$s 在 %2$s %3$s 開展的活動已取消</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">行程取消致歉函：原訂 %1$s 的活動已取消</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">行程取消致歉函：原 %1$s 開展的活動已取消</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">謹邀請閣下出席 %1$s，詳情如下：\n時間：%2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s 已更新\n時間：%2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (全日）</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s 於 %2$s %3$s - %4$s 於 %5$s %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\n地點：%1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\n說明：%1$s</string>
+    <string name="event_send_invite_dialog_title">傳送邀請</string>
+    <string name="event_send_invite_dialog_description">邀請將傳送給已加入參與者。</string>
+    <string name="event_send_invite_dialog_confirm">傳送</string>
+    <string name="event_send_invite_dialog_cancel">取消</string>
+    <string name="event_add_participants_dialog_title">加入參與者</string>
+    <string name="event_add_participants_dialog_description">邀請將傳送給已加入參與者。</string>
+    <string name="recurring_event_add_participants_dialog_description">邀請將傳給此系列中全部活動的參與者。</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">邀請將傳給此系列中全部活動的參與者。\n此系列中先前所作的修改將會消失。</string>
+    <string name="event_add_participants_dialog_confirm">傳送</string>
+    <string name="event_add_participants_dialog_cancel">取消</string>
+    <string name="event_remove_participants_dialog_title">移除參與者</string>
+    <string name="event_remove_participants_dialog_description">取消函將發送給已移除的參與者。</string>
+    <string name="recurring_event_remove_participants_dialog_description">取消電子郵件將傳送給此一系列中全部事件的已移除參與者。</string>
+    <string name="event_add_and_remove_participants_dialog_description">已加入及已移除的參與者將獲通知。</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">已加入及已移除的參與者將獲通知此一系列中的全部事件。</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s 已取消。</string>
+    <string name="event_save_changes">儲存變更</string>
+    <string name="event_update_add_participants_dialog_description">現有及已加入的參與者將獲通知。</string>
+    <string name="recurring_event_update_add_participants_dialog_description">您即將更新此一系列中全部事件。現有及已加入的參與者將獲通知。</string>
+    <string name="event_update_remove_participants_dialog_description">現有及已移除的參與者將獲通知。</string>
+    <string name="event_update_remove_all_participants_dialog_description">已移除的參與者將獲通知。</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">您即將更新此一系列中全部事件。現有及已移除的參與者將獲通知。</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">您即將更新此一系列中全部事件。已移除的參與者將獲通知。</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">現有、已加入及已移除的參與者將獲通知。</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">您即將更新此一系列中全部事件。現有、已加入及已移除的參與者將獲通知。</string>
+    <string name="success_snack_email_update_recurring">參與者已通知，並且已更新全部事件</string>
+    <string name="success_snack_email_update">參與者已通知，並且已更新事件</string>
+    <string name="success_snack_add_attendees_recurring">邀請已送出，並且已加入參與者到全部事件</string>
+    <string name="success_snack_add_attendees">邀請已送出，並且已加入參與者</string>
+    <string name="success_snack_remove_attendees_recurring">取消已送出，並且已從全部事件中移除參與者</string>
+    <string name="success_snack_remove_attendees">取消已送出，並且已移除參與者</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">我的行事曆</string>
+    <string name="nav_view_subscribed_calendars">已訂購授權的行事曆</string>
+    <string name="nav_view_other_calendars">其它行事曆</string>
+    <string name="nav_view_disabled_calendars">%1$s (已停用)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (未同步)</string>
+    <string name="nav_view_syncing_calendars">%1$s (同步中)</string>
+    <string name="nav_view_more">更多</string>
+    <string name="nav_view_switcher">檢視</string>
+    <string name="nav_view_switcher_day">日</string>
+    <string name="nav_view_switcher_three_day">3 天</string>
+    <string name="nav_view_switcher_week">週</string>
+    <string name="nav_view_switcher_agenda">議程</string>
+    <string name="nav_view_switcher_month">月</string>
+    <string name="nav_view_timezone">時區</string>
+    <string name="nav_view_settings">設定</string>
+    <string name="nav_view_feedback">提供意見回饋給我們</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">一般</string>
+    <string name="nav_view_more_bug">回報問題</string>
+    <string name="nav_view_more_subscription">訂購授權</string>
+    <string name="nav_view_more_logout">登出</string>
+    <string name="nav_view_more_login">登入</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">此功能即將推出</string>
+    <string name="snack_event_deleted">活動已刪除</string>
+    <string name="snack_event_deleted_as_organizer">取消已送出，並且已刪除活動</string>
+    <string name="snack_event_deleted_as_attendee">答覆已送出，並且已刪除活動</string>
+    <string name="snack_event_deleted_error">刪除活動時發生錯誤</string>
+    <string name="snack_event_deleted_as_organizer_error">無法傳送取消電郵，請再試一次</string>
+    <string name="snack_event_opening_error">開啟活動時發生錯誤</string>
+    <string name="snack_event_saving">正在儲存活動</string>
+    <string name="snack_event_deleting">正在刪除活動</string>
+    <string name="snack_event_changing_answer">正在更新回答</string>
+    <string name="snack_event_part_stat_updated">已更新出席狀態。</string>
+    <string name="snack_event_updated">活動已更新</string>
+    <string name="snack_event_updated_recurring">所有活動已更新</string>
+    <string name="snack_event_updated_error_failed_mail">邀請傳送失敗</string>
+    <string name="snack_update_event_error_failed_mail">更新失敗</string>
+    <string name="snack_lost_zoom_access">連接Zoom以編輯此行程。</string>
+    <string name="snack_lost_zoom_access_acion">連接</string>
+    <string name="snack_zoom_meeting_does_not_exist">此Zoom作業階段已被取消。移除此編輯以編輯事件。</string>
+    <string name="snack_event_updated_error">更新活動時發生錯誤</string>
+    <string name="snack_event_created">活動已創建</string>
+    <string name="snack_event_created_failed_mail">活動已創建，但邀請傳送失敗</string>
+    <string name="snack_event_created_error">創建活動時發生錯誤</string>
+    <string name="snack_event_opening_edit_error">開啟活動以作編輯時發生錯誤</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">此定期行程可於Calendar網頁應用程式中刪除</string>
+    <string name="snack_event_edit_with_attendees_error">暫未支援編輯帶有參與者的活動</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">無法同時加入參與者及變更行事曆</string>
+    <string name="snack_event_init_error">初始化新活動時發生錯誤</string>
+    <string name="snack_event_calendar_error">切換行事曆時發生錯誤</string>
+    <string name="snack_event_maximum_alarm_reached_error">已達到通知的數量上限</string>
+    <string name="snack_send_bug_report_success">問題通報完成，謝謝您的意見反饋</string>
+    <string name="snack_send_bug_report_error">問題通報時發生錯誤，請稍後再試</string>
+    <string name="snack_send_bug_report_description_empty">請盡可能詳細描述您要通報的問題</string>
+    <string name="snack_create_event_no_active_personal_calendar">您需要一個使用中的個人行事曆來創建活動</string>
+    <string name="snack_create_event_no_active_calendar">您需要有使用中的行事曆方可創建的各項行程</string>
+    <string name="snack_add_self_as_participant">不允許自我邀請</string>
+    <string name="snack_maximum_participants_reached">已達到參與者人數上限。</string>
+    <string name="snack_add_participant_error">加入參與者時發生錯誤</string>
+    <string name="snack_add_participant_invalid_email">電郵無效</string>
+    <string name="snack_change_attendee_answer_error">傳送回答時發生錯誤，請稍後再試</string>
+    <string name="snack_network_error">網路錯誤，請稍後再試</string>
+    <string name="snack_import_event_signed_out">您需要登入以匯入活動</string>
+    <string name="snack_app_link_signed_out">您需要登入以檢視您的活動</string>
+    <string name="snack_update_default_calendar">預設行事曆已更新</string>
+    <string name="snack_update_default_calendar_error">更新預設行事曆時發生錯誤，請稍後再試</string>
+    <string name="snack_calendar_init_error">載入行事曆資訊時發生錯誤</string>
+    <string name="snack_holiday_calendar_init_error">載入節日行事曆資訊時發生錯誤</string>
+    <string name="snack_update_calendar_error">更新行事曆資訊時發生錯誤，請稍後再試</string>
+    <string name="snack_update_calendar_settings_error">更新部分行事曆資訊時發生錯誤，請稍後再試</string>
+    <string name="snack_update_calendar_success">行事曆已更新</string>
+    <string name="snack_create_calendar_success">行事曆已創建</string>
+    <string name="snack_add_calendar_success">已加入行事曆</string>
+    <string name="snack_calendar_saving">正在儲存行事曆</string>
+    <string name="snack_create_calendar_error">創建行事曆時發生錯誤，請稍後再試</string>
+    <string name="snack_add_calendar_error">加入行事曆時發生錯誤，請稍後再試</string>
+    <string name="snack_create_calendar_settings_error">行事曆已創建，惟部分資訊未更新，請稍後再試</string>
+    <string name="snack_ics_default_error">開啟行事曆時發生錯誤</string>
+    <string name="snack_ics_event_not_found_error">找不到活動</string>
+    <string name="snack_ics_file_not_found_error">找不到此檔案。</string>
+    <string name="snack_ics_create_error">創建活動時發生錯誤</string>
+    <string name="snack_ics_parsing_error">讀取行事曆時發生錯誤</string>
+    <string name="snack_ics_unsupported_method_error">尚未支援此活動類型</string>
+    <string name="snack_ics_unsupported_add_error">暫未支援加入重複次數到一個行程</string>
+    <string name="snack_ics_unsupported_counter_error">暫未支援活動重新排程</string>
+    <string name="snack_ics_unsupported_refresh_error">暫未支援活動重新整理</string>
+    <string name="snack_ics_unsupported_publish_error">暫未支援活動匯入</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">目前僅支援回答一系列中的全部活動</string>
+    <string name="snack_ics_party_crasher_error">您的電郵不在參與者清單中</string>
+    <string name="snack_ics_reply_party_crasher_error">無法加入召集人未有邀請的參與者</string>
+    <string name="snack_ics_missing_uid_error">此活動遺失 UID</string>
+    <string name="snack_ics_no_active_personal_calendar_error">現在未有與此帳號關聯且仍使用中的個人行事曆</string>
+    <string name="snack_ics_no_active_calendar_error">現在未有與此帳號關聯且仍使用中的行事曆</string>
+    <string name="snack_ics_unsupported_duration_error">不支援持續時間屬性</string>
+    <string name="snack_ics_too_many_events_error">尚未支援多重活動</string>
+    <string name="snack_ics_no_events_error">此行事曆不包含任何活動</string>
+    <string name="snack_ics_invalid_error">此邀請無效</string>
+    <string name="snack_ics_disabled_calendar_error">重新啟用連結至此行事曆的電郵位址以更新此活動</string>
+    <string name="snack_ics_event_deleted_error">此活動不再存在於您的行事曆中</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s 已接受您的邀請</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s 已暫訂接受您的邀請</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s 已婉拒您的邀請</string>
+    <string name="snack_app_link_invalid">活動的連結無效</string>
+    <string name="snack_app_link_error">開啟活動時發生錯誤</string>
+    <string name="snack_app_link_import_error">驗證已取消</string>
+    <string name="snack_notification_already_added">通知已加入</string>
+    <string name="snack_opening_ics">開啟行程…</string>
+    <string name="snack_invite_in_shared_calendar_error">無法在共享行事曆中創建邀請函</string>
+    <string name="snack_down_banner">Proton伺服器目前關閉。請參考狀態頁面獲得詳細資料。</string>
+    <string name="snack_down_banner_action">開啟狀態頁面。</string>
+    <string name="snack_color_per_event_paid_feature">升級後就可自選不同色彩的行程</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">此活動不存在</string>
+    <string name="error_occurrence_does_not_exist">行程不存在</string>
+    <string name="update_timezone_dialog_title">時區已變更</string>
+    <string name="update_timezone_dialog_message">您的系統時區似乎已更改為 %1$s。您要更新您的時區偏好設定嗎？</string>
+    <string name="update_timezone_dialog_confirmation">更新</string>
+    <string name="update_timezone_dialog_cancel">取消</string>
+    <string name="contacts_permission_dialog_title">允許 Proton Calendar 存取您的聯絡人嗎？</string>
+    <string name="contacts_permission_dialog_message">Proton Calendar 需要存取您的電話聯絡人，以便快速加入至活動中。</string>
+    <string name="contacts_permission_dialog_allow">允許</string>
+    <string name="contacts_permission_dialog_open_settings">開啟設定</string>
+    <string name="contacts_permission_dialog_cancel">婉拒</string>
+    <string name="dialog_title_calendar_picker">行事曆</string>
+    <string name="dialog_title_calendar_color_picker">行事曆顏色</string>
+    <string name="dialog_title_event_color_picker">行程顏色</string>
+    <string name="import_from_google_title">從 Google 匯入</string>
+    <string name="notifications_permission_dialog_title">要允許 Proton 行事曆顯示通知？</string>
+    <string name="notifications_permission_dialog_message">Proton 行事曆需有授權才可讓您看見下個行程的通知。</string>
+    <string name="notifications_permission_dialog_open_settings">打開設定</string>
+    <string name="notifications_permission_dialog_cancel">婉拒</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">活動通知</string>
+    <string name="notification_channel_sync">行事曆同步</string>
+    <string name="notification_channel_calendar_fetch">正在提取行事曆</string>
+    <string name="notification_sync">正在同步行事曆…</string>
+    <string name="notification_text_today">今天</string>
+    <string name="notification_text_today_part_time">今天，於 %1$s</string>
+    <string name="notification_text_tomorrow">明天</string>
+    <string name="notification_text_tomorrow_part_time">明天，於 %1$s</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s，於 %2$s</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">主旨</string>
+    <string name="bug_report_hint_description">請詳細描述發現的問題，若有出現任何錯誤訊息，還請您一併附上進行通報。</string>
+    <string name="bug_report_discard_changes_title">未儲存的變更</string>
+    <string name="bug_report_discard_changes_description">表單中有未儲存的項目。您確定要放棄變更嗎？</string>
+    <string name="bug_report_discard_changes_cancel">繼續撰寫</string>
+    <string name="bug_report_discard_changes_confirm">捨棄</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">應用程式設定</string>
+    <string name="settings_theme_title">佈景主題</string>
+    <string name="settings_theme_info">此設定僅影響在此裝置上的 Proton Calendar 應用程式。變更布景主題後，應用程式將會重新啟動。</string>
+    <string name="settings_timezone_title">時區</string>
+    <string name="settings_language_title">應用程式語言</string>
+    <string name="settings_language_default">自動偵測</string>
+    <string name="settings_default_view_title">預設的檢視樣板</string>
+    <string name="settings_default_view_default">上次的檢視樣板</string>
+    <string name="settings_update_timezone_title">詢問是否更新時區設定</string>
+    <string name="settings_update_timezone_subtitle">若系統時區與目前時區設定不符，將詢問您是否更新。</string>
+    <string name="settings_update_timezone_checkbox">下次無需再詢問</string>
+    <string name="settings_week_start_title">一週的起始日</string>
+    <string name="settings_time_format_title">時間格式</string>
+    <string name="settings_week_numbers_title">顯示週次</string>
+    <string name="settings_auto_invites_title">加入邀請函至行事曆，同時標記為待辦事項。</string>
+    <string name="settings_search_title">搜尋行事曆</string>
+    <string name="settings_search_subtitle">下載並將行事曆儲存在您的裝置上以供搜尋。關閉此功能會移除下載的內容。\n\n搜尋是實驗性的體驗版功能。啟用後有可能會導致應用程式不穩定。</string>
+    <string name="settings_alternative_routing_title">允許替代路由</string>
+    <string name="settings_alternative_routing_subtitle">萬一 Proton 網站遭到封鎖，此設定允許此應用程式嘗試以替代網路路由連接 Proton，這或有助繞過防火牆或網路問題。建議保持此設定開啟，有備無患。</string>
+    <string name="settings_value_placeholder">輕觸以選取</string>
+    <string name="settings_general_title">一般</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s 等。</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s、%2$s</string>
+    <string name="settings_general_info_theme">布景主題</string>
+    <string name="settings_general_info_language">語言</string>
+    <string name="settings_general_info_time_zone">時區</string>
+    <string name="settings_general_info_calendar_layout">行事曆配置</string>
+    <string name="settings_calendars">我的行事曆</string>
+    <string name="settings_calendars_empty">找不到任何行事曆</string>
+    <string name="settings_subscribed_calendars">已訂購授權的行事曆</string>
+    <string name="settings_other_calendars">其它行事曆</string>
+    <string name="settings_calendar_default" comment="Default calendar">預設值</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">已停用</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">未同步</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">正在同步</string>
+    <string name="settings_calendar_subscribed_invalid_ics">不支援的行事曆格式</string>
+    <string name="settings_calendar_subscribed_too_big">行事曆太大</string>
+    <string name="settings_calendar_subscribed_not_accessible">行事曆連結無法存取</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">行事曆連結暫時無法存取</string>
+    <string name="settings_calendar_subscribed_last_sync_old">距離上次更新已超過了12小時以上</string>
+    <string name="settings_calendar_subscribed_not_decrypted">行事曆無法解密</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">僅供檢視</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">所有人 %1$s</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">創建行事曆</string>
+    <string name="calendar_form_update_title">編輯行事曆</string>
+    <string name="calendar_form_save">儲存</string>
+    <string name="calendar_form_name">名稱</string>
+    <string name="calendar_form_description">描述說明</string>
+    <string name="calendar_form_color">行事曆色彩</string>
+    <string name="calendar_form_language">語言</string>
+    <string name="calendar_form_default_event_duration">活動持續時間</string>
+    <string name="calendar_form_default_event_notifications">活動通知</string>
+    <string name="calendar_form_default_all_day_event_notifications">全日行程的通知</string>
+    <string name="calendar_form_add_notification">加入通知</string>
+    <string name="calendar_form_default_email">電郵位址</string>
+    <string name="calendar_form_default_email_value_error">無法載入預設電郵</string>
+    <string name="calendar_form_name_hint">加入行事曆名稱</string>
+    <string name="calendar_form_name_required_error">必須填寫名稱</string>
+    <string name="calendar_form_description_hint">加入行事曆的描述說明</string>
+    <string name="add_calendar_text">加入行事曆</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">加入</string>
+    <string name="create_calendar_limit_reached">您已用鑿行事曆組的上限。</string>
+    <string name="create_calendar_limit_reached_title">無法再加入任一組行事曆</string>
+    <string name="create_calendar_limit_reached_paid_description">您已用鑿方案中包含的 25 個行事曆。\n\n若需加入新的行事曆，請先移除既有的行事曆。</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">您必須先有個人行事曆，接續才會使用方案中包含的 25 組行事曆</string>
+    <string name="create_calendar_limit_reached_manage">管理行事曆</string>
+    <string name="create_calendar_limit_reached_free_description">您已用鑿方案中包含的 3 個行事曆。\n\n請先行移除既存的行事曆後，才可加入新的。</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">您必須先有個人行事曆，接續才會使用方案中包含的 3 組行事曆</string>
+    <string name="create_calendar_limit_reached_error">錯誤</string>
+    <string name="delete_calendar_dialog_title">刪除行事曆</string>
+    <string name="delete_calendar_dialog_message">您確定要刪除此日曆？</string>
+    <string name="remove_calendar_dialog_title">移除行事曆</string>
+    <string name="remove_calendar_dialog_message">請問您確定要移除此行事曆？</string>
+    <string name="leave_calendar_dialog_title">退出行事曆</string>
+    <string name="leave_calendar_dialog_message">如果您退出此行事曆，爾後需再請擁有者協助才能加入。</string>
+    <string name="delete_default_calendar_dialog_message">您確定要刪除此行事曆嗎？「%1$s」將會被設定為預設的行事曆。</string>
+    <string name="delete_calendar_snack_deleted">行事曆已刪除</string>
+    <string name="remove_calendar_snack_removed">已移除行事曆</string>
+    <string name="delete_calendar_snack_error">刪除行事曆時發生錯誤</string>
+    <string name="remove_calendar_snack_error">移除行事曆時發生錯誤</string>
+    <string name="leave_calendar_snack_error">退出行事曆時發生錯誤</string>
+    <string name="delete_calendar_snack_error_password_confirmation">密碼驗證失敗</string>
+    <string name="recreate_calendar_dialog_title">清除行事曆</string>
+    <string name="recreate_calendar_dialog_message">此操作會移除所有行程與已邀請的使用者。\n\n您確定您想要清除此行事曆嗎？</string>
+    <string name="recreate_calendar_snack_error">清除行事曆時發生錯誤</string>
+    <string name="recreate_calendar_snack_deleted">已清除行事曆</string>
+    <string name="recreate_calendar_snack_clearing">正在清除行事曆…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">加入節日行事曆</string>
+    <string name="holiday_calendar_title">節日行事曆</string>
+    <string name="add_holiday_calendar_country_search_hint">以國家名稱搜尋</string>
+    <string name="holiday_calendar_form_picker_title">國家</string>
+    <string name="holiday_calendar_time_zone_based">依據您現在的時區</string>
+    <string name="holiday_calendar_already_exists">已新增此節日行事曆</string>
+    <string name="holiday_calendar_value_placeholder">選擇國家</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">確定</string>
+    <string name="bootstrap_error_no_calendar_title">無任何與此帳號關聯的行事曆。</string>
+    <string name="bootstrap_error_no_calendar_message">設定您專屬的新行事曆，請造訪<a href="https://calendar.proton.me">calendar.proton.me</a></string>
+    <string name="bootstrap_error_some_calendars_failed_title">準備行事曆時發生錯誤</string>
+    <string name="bootstrap_error_some_calendars_failed_message">無法設立以下行事曆</string>
+    <string name="bootstrap_error_no_active_calendar_title">現在未有與此帳號關聯且仍使用中的個人行事曆.</string>
+    <string name="bootstrap_error_no_active_calendar_message">要了解如何啟用行事曆，請造訪我們的<a href="https://proton.me/support">知識庫</a></string>
+    <string name="bootstrap_error_store_quota_reached_message">儲存空間不足。</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">了解更多</string>
+    <string name="bootstrap_error_reset_needed_title">重設行事曆金鑰</string>
+    <string name="bootstrap_error_reset_needed_message">您已重設您的密碼，因此與下列行事曆連結的活動無法解密。任何使用中已訂購授權的行事曆將於數分鐘後再次同步。</string>
+    <string name="bootstrap_error_update_passphrase_title">重新啟用行事曆金鑰</string>
+    <string name="bootstrap_error_update_passphrase_message">您已重新啟用您的金鑰，因此連結到下列行事曆中的活動現已能解密。</string>
+    <string name="bootstrap_error_continue_button">繼續</string>
+    <string name="splash_after_login_init">正在準備行事曆</string>
+    <string name="splash_init">正在解密活動</string>
+    <string name="default_calendar_name">我的行事曆</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">提供意見回饋給我們</string>
+    <string name="dialog_feedback_text">您會如何描述您使用 Proton 行事曆的體驗？</string>
+    <string name="dialog_feedback_rating_worst">糟透了</string>
+    <string name="dialog_feedback_rating_best">太棒了</string>
+    <string name="dialog_feedback_hint">與我們分享您的使用體驗。（選填）</string>
+    <string name="dialog_feedback_submit">送出</string>
+    <string name="dialog_feedback_submit_thank_you">感謝您！您的回饋有助我們改善 Proton。</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Proton Calendar 小工具</string>
+    <string name="calendar_widget_no_upcoming_events_today">今天沒有即將到來的活動</string>
+    <string name="calendar_widget_loading_events">正在載入活動…</string>
+    <string name="calendar_widget_loading_events_error">無法加載行程</string>
+    <string name="calendar_widget_no_upcoming_events">沒有即將到來的活動</string>
+    <string name="calendar_widget_please_log_in">登入以查看您的活動</string>
+    <string name="calendar_widget_part_day_event_starts_at">由 %1$s 開始</string>
+    <string name="calendar_widget_part_day_event_ends_at">到 %1$s 結束</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">最新消息</string>
+    <string name="spotlight_dialog_beta_header">Calendar測驗版</string>
+    <string name="spotlight_dialog_skip">略過</string>
+    <string name="spotlight_dialog_confirmation_button">確定</string>
+    <string name="spotlight_dialog_month_view_title">月份檢視</string>
+    <string name="spotlight_dialog_month_view_description">在我們新的月份檢視取得您活動的概覽。使用選單在檢視模式間切換。</string>
+    <string name="spotlight_dialog_easy_switch_description">將活動與其他資料從 Google 行事曆匯入 Proton Calendar 比以往更簡單了。我們的 Easy Switch 匯入程式將指導您完成每一步。</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">開始匯入</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">稍後再說</string>
+    <string name="spotlight_dialog_auto_invites_title">輕鬆容易地接受邀請函</string>
+    <string name="spotlight_dialog_auto_invites_description">現在，邀請會在您的行事曆中以擱置中行程的方式顯示。只要開啟行程回應就可以了。\n\n若要管理此操作，請前往設定。</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">下一步</string>
+    <string name="spotlight_v5_dialog_got_it_button">了解</string>
+    <string name="spotlight_v5_dialog_learn_more_button">了解更多</string>
+    <string name="spotlight_v5_dialog_rebranding_title">更新後的 Proton 將所有保護合而為一</string>
+    <string name="spotlight_v5_dialog_rebranding_description">介紹 Proton 煥然一新的視覺外觀。多種服務，同一使命。歡迎來到一個隱私不間斷的網際網路。<a href="https://proton.me/news/updated-proton">取得更多資訊</a></string>
+    <string name="spotlight_dialog_week_view_title">更多檢視選項</string>
+    <string name="spotlight_dialog_week_view_description">• 引入<b>三天</b>與<b>週</b>行事曆檢視。在<b>選單</b>中選取您的偏好檢視方式。\n\n• 使用兩根手指合攏來放大或縮小以調整日期網格中的列高度。</string>
+    <string name="spotlight_dialog_search_title">搜尋行程</string>
+    <string name="spotlight_dialog_search_description">使用我們的新搜尋功能輕鬆找到您正在尋找的行程。<a href="https://proton.me/support/calendar-search">取得更多資訊</a></string>
+    <string name="spotlight_dialog_search_positive">啟用</string>
+    <string name="spotlight_dialog_search_negative">略過</string>
+    <string name="spotlight_dialog_import_title">更多其它加入行程的方法</string>
+    <string name="spotlight_dialog_import_description">• 從您手機上的檔案匯入事件至您的行事曆。\n\n• 直接從 Proton Mail 新增旅程預訂。</string>
+    <string name="spotlight_dialog_calendar_provider_title">行事曆功能</string>
+    <string name="spotlight_dialog_calendar_provider_description">• 從其他應用程式直接在 Proton 行事曆新增活動\n\n• 創建並管理行事曆上共享的活動\n\n• 設定開啟此應用程式想要的預設畫面\n\n• 新增 13 種語言.</string>
+    <string name="spotlight_dialog_wipe_search_title">已移除試驗性搜索功能以提升服務品質</string>
+    <string name="spotlight_dialog_wipe_search_description">Proton 致力於帶給您更好用更可靠的行事曆，因此我們會將體驗版的內容移除。此操作可能會佔用數秒鐘。</string>
+    <string name="spotlight_dialog_holiday_calendar_title">公定假日在這兒</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">從此不再確認是否於假日開會。\n\n及添加其他國家假期至行事曆。</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">不再需要在所有人都休息時安排會議或忘記計劃長週末度假。\n\n由於您目前已達到日曆限制，因此要新增假日行事曆，您需要先刪除現有行事曆。</string>
+    <string name="spotlight_dialog_color_per_event_title">自訂行程顯示色彩</string>
+    <string name="spotlight_dialog_color_per_event_description">為您的行程自訂顏色：\n\n• 用顏色將行事曆分類\n\n• 管理您一整天的時間\n\n• 設定優先順序提升效率</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">允許存取</string>
+    <string name="dialog_google_auth_description">要開始匯入，請登入 Google 日曆並允許 Proton 存取您的資料。</string>
+    <string name="import_assistant_prepare_import_error">準備匯入時發生錯誤，請再試一次</string>
+    <string name="import_assistant_prepare_import">正在準備匯入</string>
+    <string name="import_assistant_gathering_data_loader_title">正在蒐集您的資料</string>
+    <string name="import_assistant_summary_title">匯入摘要</string>
+    <string name="import_assistant_summary_customize_import">自訂匯入項目</string>
+    <string name="import_assistant_error">收取資料時發生錯誤</string>
+    <string name="import_assistant_data_gathering_error">資料蒐集失敗</string>
+    <string name="import_assistant_update_import_error">更新匯入失敗，請稍後再試。</string>
+    <string name="import_assistant_update_import_wrong_account_error">錯誤的帳號。請使用您用於匯入日曆的帳號登入。</string>
+    <string name="import_assistant_start_import_error">無法啟動匯入，請稍後再試。</string>
+    <string name="import_assistant_delete_import_success">匯入記錄已刪除</string>
+    <string name="import_assistant_delete_import_error">刪除匯入失敗，請稍後再試。</string>
+    <string name="import_assistant_cancel_import_error">無法取消匯入，請稍後再試。</string>
+    <string name="import_assistant_resume_import_error">無法繼續匯入，請稍後再試。</string>
+    <string name="import_assistant_create_calendar_error">未能創建一個或多個行事曆</string>
+    <string name="import_assistant_start_import_empty_error">開始匯入失敗，因無可匯入的行事曆</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">匯入為</string>
+    <string name="import_assistant_new_calendar_badge">新增</string>
+    <string name="import_assistant_merge_calendar_badge">已合併</string>
+    <string name="import_assistant_creating_calendars">創建新行事曆</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">即將完成...</string>
+    <string name="import_assistant_new_calendar_header">創建新行事曆</string>
+    <string name="import_assistant_merge_calendar_header">與既有的合併</string>
+    <string name="import_assistant_in_progress_title">匯入進行中</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">正在將資料從 %1s 匯入至 %2s。</string>
+    <string name="import_assistant_in_progress_redirect">查看進度</string>
+    <string name="import_assistant_in_progress_sub_description">大量匯入可能要數天的時間。匯入完成後，我們將會通知您。您可以關閉此畫面了。</string>
+    <string name="import_assistant_guide_subtitle">轉向隱私。輕鬆且安全。</string>
+    <string name="import_assistant_guide_description">將您的活動與其他資料從 Google 移動至 Proton。Easy Switch 匯入程式將會指導您完成所有步驟，並在您的資料移動時對其進行加密。</string>
+    <string name="import_assistant_new_import">新增匯入</string>
+    <string name="import_assistant_previous_import">先前的匯入</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">已開始</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">進行中</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">已完成</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">已取消</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">正在取消</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">已暫停</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">失敗</string>
+    <string name="import_assistant_status_paused_lost_connection_title">與 Google 的連線中斷</string>
+    <string name="import_assistant_status_paused_lost_connection_description">要繼續匯入，請點擊「重新連線」，登入 Google，然後再次授予 Proton 存取您 Google 資料的權限。</string>
+    <string name="import_assistant_status_paused_lost_connection_button">重新連線</string>
+    <string name="import_assistant_status_paused_storage_full_title">您的儲存空間已滿</string>
+    <string name="import_assistant_status_paused_storage_full_description">您的 Proton 帳號並無足夠空間來完成此日曆匯入。釋放空間或新增更多儲存空間，然後回來此處繼續。</string>
+    <string name="import_assistant_status_paused_storage_full_button">繼續</string>
+    <string name="import_assistant_delete_report_title">要從清單中移除嗎？</string>
+    <string name="import_assistant_delete_report_message">您在清單中將再也看不見此匯入記錄。</string>
+    <string name="import_assistant_delete_report_positive_button">移除</string>
+    <string name="import_assistant_delete_report_negative_button">保留</string>
+    <string name="import_assistant_cancel_import_title">匯入仍未完成！</string>
+    <string name="import_assistant_cancel_import_message">如果您現在取消匯入，爾後將無法繼續進行。 Proton 已儲存您帳號所有的進度，仍繼續取消嗎？</string>
+    <string name="import_assistant_cancel_import_positive_button">取消匯入</string>
+    <string name="import_assistant_cancel_import_negative_button">繼續匯入</string>
+    <string name="import_assistant_in_progress_snack">匯入進行中</string>
+    <string name="import_assistant_discard_import_title">取消匯入？</string>
+    <string name="import_assistant_discard_import_message">匯入仍未完成，若您取消後則無法繼續。</string>
+    <string name="import_assistant_discard_import_positive">取消匯入</string>
+    <string name="import_assistant_discard_import_negative">繼續匯入</string>
+    <string name="import_assistant_authentication_canceled">驗證已取消</string>
+    <string name="import_assistant_sign_in_in_progress">登入流程已在進行中</string>
+    <string name="import_assistant_in_progress_error_snack">還有一個匯入進行中</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">要匯入為簡單事件嗎？</string>
+    <string name="import_event_disclaimer_dialog_description">\n已匯入的邀請會在 Proton Calendar 中顯示為<b>沒有舉辦人</b>與<b>參與者</b>詳細資訊的簡單事件。\n\n要取得事件更新並檢視參與者，請要求舉辦人以您的 Proton 電子郵件位址向您傳送邀請。</string>
+    <string name="import_event_disclaimer_dialog_positive">匯入</string>
+    <string name="undefined_color">未定義</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="other">行事曆</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="other">匯入 %1$d 個行事曆</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="other">%1$d 個進行中的匯入</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="other">%2$d 中的 %1$d 創建於 %3$s</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="other">在 Proton Calendar 中創建 %1$d 個新的行事曆。</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="other">匯入 %2$d 個行事曆中的 %1$d 個，來自</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="other">在 Proton Calendar 中合併 %1$d 個日曆。</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="other">因為行事曆限制，無法為所有已匯入的行事曆創建新的行事曆。\n • 取消選取至少 %1$d 個行事曆</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="other">\u0020或是\n • 將至少 %1$d 個行事曆與既有的 Proton 行事曆合併。</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="other">秒</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="other">分鐘</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="other">小時</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="other">日</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="other">週</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="other">月</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="other">年</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="other">次</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="other">發生</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="other">次</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="other">位參與者</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="other">每 %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="other">每 %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="other">每 %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="other">每 %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="other">%1$s分鐘</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="other">%1$d/%2$d 個字元</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="other">%1$d/%2$d 個字元</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>第一</item>
+        <item>第二</item>
+        <item>第三</item>
+        <item>第四</item>
+        <item>第五</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>最後</item>
+        <item>第二到最後</item>
+        <item>第三到最後</item>
+        <item>第四到最後</item>
+        <item>第五到最後</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>淺色</item>
+        <item>深色</item>
+        <item>系統預設</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>系統預設</item>
+        <item>13:00</item>
+        <item>下午1點</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>系統預設</item>
+        <item>週一</item>
+        <item>週六</item>
+        <item>週日</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>紫色|#8080FF</item>
+        <item>草莓|#EC3E7C</item>
+        <item>粉紅色|#DB60D6</item>
+        <item>蘿蔔|#F78400</item>
+        <item>薩哈拉|#936D58</item>
+        <item>暗岩藍|#5252CC</item>
+        <item>梅|#A839A4</item>
+        <item>櫻桃紅|#BA1E55</item>
+        <item>銅|#C44800</item>
+        <item>土壤|#54473F</item>
+        <item>板岩藍|#415DF0</item>
+        <item>太平洋藍|#179FD9</item>
+        <item>珊瑚綠|#1DA583</item>
+        <item>淺蕨綠|#3CBB3A</item>
+        <item>橄欖|#B4A40E</item>
+        <item>鈷藍|#273EB2</item>
+        <item>海洋|#0A77A6</item>
+        <item>松木|#0F735A</item>
+        <item>森林|#258723</item>
+        <item>醬瓜黃|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>紫色</item>
+        <item>草莓紅</item>
+        <item>粉紅</item>
+        <item>胡蘿蔔橘</item>
+        <item>黃土色</item>
+        <item>龍膽紫</item>
+        <item>梅紅色</item>
+        <item>櫻桃紅</item>
+        <item>銅色</item>
+        <item>泥土色</item>
+        <item>板岩藍</item>
+        <item>太平洋藍</item>
+        <item>珊瑚綠</item>
+        <item>淺蕨綠</item>
+        <item>橄欖綠</item>
+        <item>鈷藍</item>
+        <item>海洋藍</item>
+        <item>墨松青</item>
+        <item>森林綠</item>
+        <item>醬瓜黃</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

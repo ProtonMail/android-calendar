@@ -1,0 +1,16 @@
+{
+    "Code": 1000,
+    "CalendarUserSettings": {
+        "WeekStart": 1,
+        "WeekLength": 0,
+        "DisplayWeekNumber": 1,
+        "DateFormat": 0,
+        "TimeFormat": 0,
+        "AutoDetectPrimaryTimezone": 1,
+        "PrimaryTimezone": "Europe/Budapest",
+        "DisplaySecondaryTimezone": 0,
+        "SecondaryTimezone": null,
+        "ViewPreference": 1,
+        "DefaultCalendarID": null
+    }
+}

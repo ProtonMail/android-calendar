@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/sidebar_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/spacing_element"
+    android:orientation="vertical">
+
+    <me.proton.core.accountmanager.presentation.view.AccountPrimaryView
+        android:id="@+id/nav_view_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_element_small"
+        android:layout_marginEnd="@dimen/spacing_element_small"
+        android:layout_marginBottom="@dimen/spacing_element_small"
+        app:isDialogEnabled="false"
+        tools:email="superuser@protonmail.com"
+        tools:initials="SU"
+        tools:name="Super User" />
+
+    <androidx.core.widget.NestedScrollView
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_view_switcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_switcher_agenda_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <View
+                        android:id="@+id/nav_view_switcher_agenda_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_switcher_agenda_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_switcher_agenda_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_calendar_agenda"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_switcher_agenda_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_switcher_agenda_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_switcher_agenda_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_switcher_agenda"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_switcher_agenda_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_switcher_agenda_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_switcher_agenda_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_switcher_agenda_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_switcher_day_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_switcher_agenda_layout">
+
+                    <View
+                        android:id="@+id/nav_view_switcher_day_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_switcher_day_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_switcher_day_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_calendar_day"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_switcher_day_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_switcher_day_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_switcher_day_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_switcher_day"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_switcher_day_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_switcher_day_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_switcher_day_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_switcher_day_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_switcher_three_day_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_switcher_day_layout">
+
+                    <View
+                        android:id="@+id/nav_view_switcher_three_day_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_switcher_three_day_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_switcher_three_day_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_calendar_3day"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_switcher_three_day_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_switcher_three_day_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_switcher_three_day_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_switcher_three_day"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_switcher_three_day_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_switcher_three_day_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_switcher_three_day_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_switcher_three_day_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_switcher_week_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_switcher_three_day_layout">
+
+                    <View
+                        android:id="@+id/nav_view_switcher_week_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_switcher_week_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_switcher_week_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_calendar_week"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_switcher_week_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_switcher_week_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_switcher_week_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_switcher_week"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_switcher_week_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_switcher_week_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_switcher_week_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_switcher_week_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_switcher_month_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_switcher_week_layout">
+
+                    <View
+                        android:id="@+id/nav_view_switcher_month_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_switcher_month_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_switcher_month_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_calendar_month"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_switcher_month_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_switcher_month_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_switcher_month_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_switcher_month"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_switcher_month_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_switcher_month_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_switcher_month_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_switcher_month_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_view_calendars"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/nav_view_calendars_divider_top"
+                    style="@style/Separator"
+                    android:background="@color/sidebar_separator"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/nav_view_calendars_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nav_view_calendars"
+                    style="@style/Text.DefaultSmall.Weak"
+                    android:textColor="@color/sidebar_text_weak"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/nav_view_calendars_create"
+                    android:layout_width="40dp"
+                    android:layout_height="0dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_proton_plus"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    style="@style/Icon"
+                    app:tint="@color/sidebar_icon_weak"
+                    android:layout_marginEnd="@dimen/spacing_element_small"
+                    android:background="@drawable/ripple_nav_items"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_calendars_divider_top"
+                    app:layout_constraintBottom_toTopOf="@+id/nav_view_calendars_separator"/>
+
+                <View
+                    android:id="@+id/nav_view_calendars_separator"
+                    style="@style/Separator"
+                    android:background="@color/sidebar_separator"
+                    android:visibility="invisible"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_calendars_title"
+                    app:layout_constraintStart_toStartOf="@+id/nav_view_calendars_title"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/nav_view_calendars_list"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_drawer_calendar"
+                    tools:itemCount="3"
+                    android:overScrollMode="never"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_calendars_separator"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_calendars_list_add_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_calendars_list"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <View
+                        android:id="@+id/nav_view_calendars_list_add_layout_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_calendars_list_add_layout_separator"/>
+
+                    <ImageView
+                        android:id="@+id/nav_view_calendars_list_add_layout_icon"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        app:srcCompat="@drawable/ic_proton_plus"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_calendars_list_add_layout_title"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_calendars_list_add_layout_title"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/nav_view_calendars_list_add_layout_title"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/add_calendar_text"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_calendars_list_add_layout_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_calendars_list_add_layout_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_calendars_list_add_layout_title"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_view_other_calendars"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/nav_view_other_calendars_divider_top"
+                    style="@style/Separator"
+                    android:background="@color/sidebar_separator"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/nav_view_other_calendars_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nav_view_other_calendars"
+                    style="@style/Text.DefaultSmall.Weak"
+                    android:textColor="@color/sidebar_text_weak"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/nav_view_other_calendars_create"
+                    android:layout_width="40dp"
+                    android:layout_height="0dp"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_proton_plus"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    style="@style/Icon"
+                    app:tint="@color/sidebar_icon_weak"
+                    android:layout_marginEnd="@dimen/spacing_element_small"
+                    android:background="@drawable/ripple_nav_items"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_other_calendars_divider_top"
+                    app:layout_constraintBottom_toTopOf="@+id/nav_view_other_calendars_separator"/>
+
+                <View
+                    android:id="@+id/nav_view_other_calendars_separator"
+                    style="@style/Separator"
+                    android:background="@color/sidebar_separator"
+                    android:visibility="invisible"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_other_calendars_title"
+                    app:layout_constraintStart_toStartOf="@+id/nav_view_other_calendars_title"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/nav_view_other_calendars_list"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_drawer_calendar"
+                    tools:itemCount="1"
+                    android:overScrollMode="never"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_other_calendars_separator"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_view_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/nav_view_more_divider_top"
+                    style="@style/Separator"
+                    android:background="@color/sidebar_separator"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/nav_view_more_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nav_view_more"
+                    style="@style/Text.DefaultSmall.Weak"
+                    android:textColor="@color/sidebar_text_weak"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:id="@+id/nav_view_more_separator"
+                    style="@style/Separator"
+                    android:background="@color/sidebar_separator"
+                    android:visibility="invisible"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_more_title"
+                    app:layout_constraintStart_toStartOf="@+id/nav_view_more_title"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_more_settings_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_more_separator">
+
+                    <View
+                        android:id="@+id/nav_view_more_settings_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_more_settings_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_more_settings_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_proton_cog_wheel"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_more_settings_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_more_settings_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_more_settings_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_settings"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_more_settings_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_more_settings_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_more_settings_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_more_settings_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_refresh_button_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_more_settings_layout">
+
+                    <View
+                        android:id="@+id/nav_refresh_button_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_refresh_button_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_refresh_button_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_refresh"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_refresh_button_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_refresh_button_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_refresh_button_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_refresh"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_refresh_button_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_refresh_button_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_refresh_button_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_refresh_button_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_more_feedback_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_refresh_button_layout">
+
+                    <View
+                        android:id="@+id/nav_view_more_feedback_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_more_feedback_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_more_feedback_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_proton_speech_bubble"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_more_feedback_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_more_feedback_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_more_feedback_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_feedback"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_more_feedback_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_more_feedback_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_more_feedback_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_more_feedback_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_more_subscription_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_more_feedback_layout">
+
+                    <View
+                        android:id="@+id/nav_view_more_subscription_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_more_subscription_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_more_subscription_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_proton_pencil"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_more_subscription_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_more_subscription_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_more_subscription_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_more_subscription"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_more_subscription_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_more_subscription_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_more_subscription_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_more_subscription_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_more_bug_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_more_subscription_layout">
+
+                    <View
+                        android:id="@+id/nav_view_more_bug_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_more_bug_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_more_bug_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_proton_bug"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_more_bug_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_more_bug_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_more_bug_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_more_bug"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_more_bug_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_more_bug_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_more_bug_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_more_bug_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_more_logout_layout"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_more_bug_layout">
+
+                    <View
+                        android:id="@+id/nav_view_more_logout_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_more_logout_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_more_logout_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow_out_from_rectangle"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_more_logout_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_more_logout_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_more_logout_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_more_logout"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_more_logout_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_more_logout_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_more_logout_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_more_logout_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_more_login_layout"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_more_logout_layout">
+
+                    <View
+                        android:id="@+id/nav_view_more_login_press"
+                        android:background="@drawable/ripple_nav_items"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/nav_view_more_login_separator"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/nav_view_more_login_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_arrow_out_from_rectangle"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:rotation="180"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_more_login_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_more_login_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_more_login_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nav_view_more_login"
+                        style="@style/Text.DefaultSmall"
+                        android:textColor="@color/sidebar_text_norm"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_more_login_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_more_login_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_more_login_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_more_login_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/nav_view_timezone"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/nav_view_timezone_divider_top"
+                    style="@style/Separator"
+                    android:background="@color/sidebar_separator"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/nav_view_timezone_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nav_view_timezone"
+                    style="@style/Text.DefaultSmall.Weak"
+                    android:textColor="@color/sidebar_text_weak"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <View
+                    android:id="@+id/nav_view_timezone_separator"
+                    style="@style/Separator"
+                    android:background="@color/sidebar_separator"
+                    android:visibility="invisible"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_timezone_title"
+                    app:layout_constraintStart_toStartOf="@+id/nav_view_timezone_title"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/nav_view_timezone_login_layout"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/nav_view_timezone_separator">
+
+                    <ImageView
+                        android:id="@+id/nav_view_timezone_login_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_proton_earth"
+                        style="@style/Icon"
+                        app:tint="@color/sidebar_icon_weak"
+                        android:layout_marginStart="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/nav_view_timezone_login_title"
+                        app:layout_constraintBottom_toBottomOf="@+id/nav_view_timezone_login_title"/>
+
+                    <TextView
+                        android:id="@+id/nav_view_timezone_login_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        tools:text="Europe/Zurich (GMT+1)"
+                        style="@style/Text.DefaultSmall.Weak"
+                        android:textColor="@color/sidebar_text_weak"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="14dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/nav_view_timezone_login_icon"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/nav_view_timezone_login_separator"
+                        style="@style/Separator"
+                        android:background="@color/sidebar_separator"
+                        android:visibility="invisible"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/nav_view_timezone_login_title"
+                        app:layout_constraintStart_toStartOf="@+id/nav_view_timezone_login_title"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/nav_view_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.Caption.Weak"
+                android:textColor="@color/storm_gray"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="@dimen/spacing_element"
+                android:layout_gravity="center_horizontal"
+                tools:text="ProtonCalendar 2.0.0"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

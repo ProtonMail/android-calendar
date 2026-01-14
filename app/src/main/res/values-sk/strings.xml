@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(bez názvu)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">(žiadna emailová adresa)</string>
+    <string name="default_user_display_name">(bez mena)</string>
+    <string name="toast_copied_to_clipboard">Skopírované do schránky</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">Vymazať udalosť</string>
+    <string name="dialog_title_delete_recurring_event">Vymazať opakujúcu sa udalosť</string>
+    <string name="dialog_description_delete_event">Chcete vymazať túto udalosť?</string>
+    <string name="dialog_description_delete_recurring_event">Chcete vymazať všetky udalosti v sérii?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">Táto udalosť bola aktualizovaná organizátorom. Chcete túto udalosť vymazať?</string>
+    <string name="dialog_button_delete">Vymazať</string>
+    <string name="dialog_button_cancel">Zrušiť</string>
+    <string name="dialog_button_continue">Pokračovať</string>
+    <string name="dialog_button_close">Zavrieť</string>
+    <string name="dialog_button_remove">Odstrániť</string>
+    <string name="dialog_button_download">Stiahnuť</string>
+    <string name="dialog_button_update">Aktualizovať</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">Účastníkom udalosti bude zaslaný email o zrušení. Naozaj chcete túto udalosť vymazať?</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">Vaša adresa je deaktivovaná. Účastníkom udalosti nemožno zaslať email o zrušení. Chcete túto udalosť napriek tomu vymazať?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">Účastníkom udalosti bude zaslaný email o zrušení. Chcete vymazať všetky udalosti v tejto sérii?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">Vaša adresa je deaktivovaná. Účastníkom udalosti nie je možné zaslať email o zrušení. Chcete všetky udalosti v tejto sérii napriek tomu vymazať?</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">Organizátor tejto udalosti bude informovaný, že ste pozvánku odmietli. Chcete túto udalosť vymazať?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">Organizátor tejto udalosti nebude upozornený, že ste pozvánku odmietli, pretože z pozvanej adresy nie je možné odosielať emaily. Chcete napriek tomu vymazať túto udalosť?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">Organizátor tejto série udalostí bude informovaný, že ste pozvánku odmietli. Chcete vymazať všetky udalosti v tejto sérii?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">Organizátor tejto série udalostí nebude upozornený, že ste pozvánku odmietli, pretože z pozvanej adresy nie je možné odosielať emaily. Chcete napriek tomu vymazať všetky udalosti v tejto sérii?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">Táto udalosť bola aktualizovaná. Organizátor bude informovaný, že ste pozvánku odmietli. Chcete túto udalosť vymazať?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">Táto udalosť bola aktualizovaná. Organizátor nebude upozornený, že ste pozvánku odmietli, pretože z pozvanej adresy nie je možné odosielať emaily. Chcete túto udalosť vymazať?</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">Opakovania v minulosti aktualizované organizátorom budú zachované, ale vaše odpovede budú stratené</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">Opakovania v minulosti aktualizované organizátorom budú zachované</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">Organizátor nemôže byť informovaný, že ste pozvánku odmietli:\n\n• %1$s\n\nChcete podujatie napriek tomu vymazať?</string>
+    <string name="dialog_button_set">Nastaviť</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="action_save">Uložiť</string>
+    <string name="action_done">Hotovo</string>
+    <string name="action_edit">Upraviť</string>
+    <string name="action_delete">Vymazať</string>
+    <string name="action_add">Pridať</string>
+    <string name="action_remove">Odstrániť</string>
+    <string name="action_leave">Opustiť</string>
+    <string name="action_recreate">Vyčistiť</string>
+    <string name="action_today">Dnes</string>
+    <string name="action_create_event">Vytvoriť udalosť</string>
+    <string name="action_mark_default">Označiť ako predvolené</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">Žiadne udalosti</string>
+    <string name="agenda_loading_events">Načítanie udalostí…</string>
+    <string name="agenda_loading_events_error">Chyba pri načítaní udalostí</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+ %1$d ďalších</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">Celý deň</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">V čase udalosti</string>
+    <string name="event_alarm_label_at_event_time_by_email">V čase udalosti emailom</string>
+    <string name="event_alarm_label_on_the_same_day">V ten istý deň</string>
+    <string name="event_alarm_label_before">%1$s vopred</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s vopred emailom</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s o %2$s</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s o %2$s emailom</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s vopred o %2$s</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s vopred o %2$s emailom</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s v %2$s</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s v %2$d. deň</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s v %2$s</string>
+    <string name="event_recurrence_none">Neopakuje sa</string>
+    <string name="event_recurrence_daily">Denne</string>
+    <string name="event_recurrence_weekly">Týždenne</string>
+    <string name="event_recurrence_monthly">Mesačne</string>
+    <string name="event_recurrence_yearly">Ročne</string>
+    <string name="event_recurrence_weekly_on_all_days">všetky dni</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">do %1$s</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">do %1$s (%2$s)</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">Zrušené</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(vypnuté)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(Predvolené)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d áno</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d možno</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d nie</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d čaká na odpoveď</string>
+    <string name="event_attendee_is_organizer">Ste organizátor</string>
+    <string name="event_attendee_organizer">Organizátor</string>
+    <string name="event_attendee_optional">Voliteľné</string>
+    <string name="event_attendee_is_current_user">Vy</string>
+    <string name="event_answer_attending">Zúčastníte sa?</string>
+    <string name="event_answer_yes">Áno</string>
+    <string name="event_answer_no">Nie</string>
+    <string name="event_answer_maybe">Možno</string>
+    <string name="event_decryption_error_dialog_title">Dešifrovanie udalosti zlyhalo</string>
+    <string name="event_decryption_error_dialog_message">Dešifrovanie obsahu tejto udalosti zlyhalo.</string>
+    <string name="event_decryption_error_dialog_confirmation">Vymazať udalosť</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">Vymazať udalosti</string>
+    <string name="event_decryption_error_dialog_close">Zavrieť</string>
+    <string name="event_signature_verification_failure">Overenie podpisu udalosti zlyhalo. <a href="https://proton.me/support/what-is-a-digital-signature">Zistiť viac</a></string>
+    <string name="event_signature_verification_in_progress">Prebieha overovanie podpisu udalosti.</string>
+    <string name="event_signature_verification_network_error">Overovanie podpisu udalosti bolo prerušené chybou. <a href="">Skúste to znova</a></string>
+    <string name="event_change_answer_recurring_title">Aktualizovať opakujúcu sa udalosť</string>
+    <string name="event_change_answer_recurring_description">Chcete zmeniť odpoveď na všetky udalosti v tejto sérii?</string>
+    <string name="event_change_answer_recurring_overwrite_description">Chcete zmeniť odpoveď na všetky udalosti v tejto sérii?\nNiektoré z vašich odpovedí na opakovania predtým aktualizované organizátorom budú stratené.</string>
+    <string name="event_change_answer_recurring_single_edit_description">Táto udalosť bola aktualizovaná organizátorom. Chcete zmeniť svoju odpoveď iba pre toto opakovanie v tejto sérii?</string>
+    <string name="event_change_answer_recurring_cancel">Zrušiť</string>
+    <string name="event_change_answer_recurring_confirm">Aktualizovať</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">Vaša pozvánka na udalosť %2$s bola prijatá účastníkom %1$s</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">Vaša pozvánka na udalosť %2$s bola odmietnutá účastníkom %1$s</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">Vaša pozvánka na udalosť %2$s bola účastníkom %1$s predbežne prijatá</string>
+    <string name="event_organizer_send_prefs_error_title">Organizátor nemôže byť upozornený</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">Organizátor nemôže byť upozornený, že ste pozvánku prijali</string>
+    <string name="event_organizer_send_prefs_message_declined_title">Organizátor nemôže byť upozornený, že ste pozvánku odmietli</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">Organizátor nemôže byť upozornený, že ste pozvánku predbežne prijali</string>
+    <string name="event_organizer_send_prefs_message_default_title">Organizátor nemôže byť upozornený, že ste na pozvánku odpovedali</string>
+    <string name="event_organizer_send_prefs_button_title">OK</string>
+    <string name="event_attendees_send_prefs_error_title">Účastníci nemôžu byť informovaní</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">Žiadny z účastníkov nemôže byť informovaný o vašich zmenách:\n\n• %1$s\n\nChcete napriek tomu pokračovať?</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">Žiadny z účastníkov nemôže byť informovaný o vašich zmenách:\n\n• %1$s\n\nChcete napriek tomu pokračovať?</string>
+    <string name="event_attendees_send_prefs_error_confirm">Pokračovať</string>
+    <string name="event_attendees_send_prefs_error_cancel">Zrušiť</string>
+    <string name="event_send_prefs_error_address_disabled">táto adresa neexistuje</string>
+    <string name="event_send_prefs_error_getting_contact">nemožno získať kontaktné údaje</string>
+    <string name="event_send_prefs_error_network">chyba siete</string>
+    <string name="event_send_prefs_trusted_keys_invalid">dôveryhodné kľúče sú neplatné</string>
+    <string name="event_send_prefs_public_keys_invalid">verejné kľúče sú neplatné</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">neplatný podpis kontaktu</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">Pripojte sa k stretnutiu na Zoome</string>
+    <string name="zoom_meeting_title">Zoom stretnutie</string>
+    <string name="generic_meeting_id">ID: %1$s</string>
+    <string name="generic_meeting_password">Heslo: %1$s</string>
+    <string name="generic_meeting_more_details">Ďalšie podrobnosti</string>
+    <string name="generic_meeting_less_details">Menej podrobností</string>
+    <string name="generic_meeting_host">Poskytovateľ schôdzky</string>
+    <string name="generic_meeting_link">Odkaz na schôdzku</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Pokyny na pripojenie</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">Nová udalosť</string>
+    <string name="event_text_edit_event">Upraviť udalosť</string>
+    <string name="event_hint_title">Pridať názov</string>
+    <string name="event_hint_location">Pridať polohu</string>
+    <string name="event_text_add_participants">Pridať účastníkov</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">Účastníci (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">Vy</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ %1$d ďalších</string>
+    <string name="event_text_switch_all_day">Celý deň</string>
+    <string name="event_text_date_start">Začiatok</string>
+    <string name="event_text_date_end">Koniec</string>
+    <string name="event_text_date_repeat">Opakuje sa</string>
+    <string name="event_text_date_repeat_never">Neopakuje sa</string>
+    <string name="event_text_attendees">Účastníci</string>
+    <string name="event_text_attendees_none">Žiadni</string>
+    <string name="event_text_calendar">Kalendár</string>
+    <string name="event_text_timezone_start">Časové pásmo</string>
+    <string name="invite_in_shared_calendar_disclaimer">Odosielanie pozvánok je možné iba v osobných kalendároch.</string>
+    <string name="invite_change_calendar_disclaimer">Nie je možné upravovať kalendár spojený s pozvánkami.</string>
+    <string name="invite_change_attendees_disclaimer">Upravovať účastníkov spojených s pozvánkami zatiaľ nie je možné.</string>
+    <string name="change_calendar_recurring_disclaimer">Zmena kalendára pre opakujúcu sa udalosť zatiaľ nie je možná.</string>
+    <string name="update_event">Aktualizovať udalosť</string>
+    <string name="update_invite_send_email">Účastníkom udalosti bude odoslaná aktualizácia pozvánky.</string>
+    <string name="update_recurring_event">Aktualizovať opakujúcu sa udalosť</string>
+    <string name="update_recurring_all_events">Prajete si aktualizovať všetky udalosti v tejto sérii?</string>
+    <string name="update_recurring_invite_send_email">Aktualizujete všetky udalosti v tejto sérii. Účastníkom udalosti bude odoslaná aktualizácia pozvánky.</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">Čo hľadáte?</string>
+    <string name="search_empty_results_title">Nenašli sa žiadne výsledky</string>
+    <string name="search_empty_results_subtitle">Skúste iný výraz, napr. Erik, narodeniny, webinár, knižný klub.</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">Sťahujú sa kalendáre (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">Zostávajúci čas: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">Výpočet zostávajúceho času…</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">takmer hotovo</string>
+    <string name="search_downloading_pause">Pozastaviť sťahovanie</string>
+    <string name="search_settings_dialog_toggle_off_title">Odstrániť všetky stiahnuté kalendáre?</string>
+    <string name="search_settings_dialog_toggle_off_text">Ak chcete vyhľadávať, budete si musieť znova stiahnuť svoje kalendáre.</string>
+    <string name="search_settings_dialog_toggle_on_title">Stiahnuť kalendáre do tohto zariadenia?</string>
+    <string name="search_settings_dialog_toggle_on_text">Toto je potrebné, aby ste mohli vyhľadávať.</string>
+    <string name="search_onboarding_header">Chcete vyhľadávať v kalendári?</string>
+    <string name="search_onboarding_text">Najskôr si musíte stiahnuť šifrovanú kópiu vašich kalendárov. Zaberie to iba chvíľu a aplikáciu môžete ďalej používať. <a href="https://proton.me/support/calendar-search">Zistiť viac</a></string>
+    <string name="search_onboarding_action_download_calendars">Stiahnuť kalendáre</string>
+    <string name="search_onboarding_action_pause">Pozastaviť</string>
+    <string name="search_onboarding_action_resume">Pokračovať</string>
+    <string name="search_onboarding_action_retry">Skúsiť znova</string>
+    <string name="search_onboarding_progress_header_ongoing">Sťahujú sa kalendáre…</string>
+    <string name="search_onboarding_progress_header_completed">Sťahovanie dokončené</string>
+    <string name="search_onboarding_progress_header_paused">Sťahovanie kalendárov pozastavené</string>
+    <string name="search_onboarding_progress_header_error">Chyba pri sťahovaní kalendárov</string>
+    <string name="search_spotlight_activation_snack">Vyhľadávanie v kalendári je aktivované</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">Pridať notifikáciu</string>
+    <string name="event_text_description">Popis</string>
+    <string name="event_hint_description">Pridať popis</string>
+    <string name="event_text_custom">vlastné</string>
+    <string name="event_alert_invalid_start_end_date">Dátum začatia udalosti nemôže byť po dátume ukončenia</string>
+    <string name="event_alarms_title">Notifikácie</string>
+    <string name="event_custom_alarms_field">Upozorniť</string>
+    <string name="event_custom_alarms_title">Vlastné notifikácie</string>
+    <string name="event_alarm_partial_day_1">v čase udalosti</string>
+    <string name="event_alarm_partial_day_2">10 minút</string>
+    <string name="event_alarm_partial_day_3">30 minút</string>
+    <string name="event_alarm_partial_day_4">1 hodina</string>
+    <string name="event_alarm_partial_day_5">1 týždeň</string>
+    <string name="event_alarm_all_day_1">v ten istý deň o %1$s</string>
+    <string name="event_alarm_all_day_2">1 deň vopred o %1$s</string>
+    <string name="event_alarm_all_day_3">1 týždeň vopred o %1$s</string>
+    <string name="event_alarm_all_day_4">3 týždne vopred o %1$s</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">o %1$s</string>
+    <string name="event_alarm_action">Poslať ako</string>
+    <string name="event_alarm_action_notification">notifikáciu</string>
+    <string name="event_alarm_action_email">email</string>
+    <string name="event_alarm_same_day">v daný deň</string>
+    <string name="event_recurrence_1">neopakovať</string>
+    <string name="event_recurrence_2">každý deň</string>
+    <string name="event_recurrence_3">každý týždeň</string>
+    <string name="event_recurrence_4">každý mesiac</string>
+    <string name="event_recurrence_5">každý rok</string>
+    <string name="event_recurrence_title">Frekvencia</string>
+    <string name="event_recurrence_custom_title">Vlastná frekvencia</string>
+    <string name="event_recurrence_occurs_every">Opakuje sa každý</string>
+    <string name="event_recurrence_occurs_on">Opakuje sa v</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">v %1$d. deň</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">%1$s</string>
+    <string name="event_recurrence_ends_on">Končí</string>
+    <string name="event_recurrence_ends_never">nikdy</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">dňa</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">v %1$s</string>
+    <string name="event_recurrence_ends_after_count_prefix">po</string>
+    <string name="event_recurring_edit_this">Táto udalosť</string>
+    <string name="event_recurring_edit_this_and_future">Táto a budúce udalosti</string>
+    <string name="event_recurring_edit_all_events">Všetky udalosti</string>
+    <string name="event_discard_changes_title">Zahodiť zmeny?</string>
+    <string name="event_discard_changes_description">Stratíte všetky neuložené zmeny.</string>
+    <string name="event_discard_changes_cancel">Pokračovať v úpravách</string>
+    <string name="event_discard_changes_confirm">Zahodiť</string>
+    <string name="event_recurring_update_this_title">Aktualizovať opakujúcu sa udalosť</string>
+    <string name="event_recurring_update_this_description">Zmeny frekvencie budú stratené</string>
+    <string name="event_recurring_update_all_description">Predchádzajúce úpravy tejto série budú stratené</string>
+    <string name="event_recurring_update_this_cancel">Zrušiť</string>
+    <string name="event_recurring_update_this_confirm">Aktualizovať</string>
+    <string name="event_allow_contacts_title">Povoliť aplikácii Proton Calendar prístup k vašim kontaktom?</string>
+    <string name="event_allow_contacts_description">Proton Calendar potrebuje prístup k vašim kontaktom pre automatické dokončenie</string>
+    <string name="event_allow_contacts_cancel">Zamietnuť</string>
+    <string name="event_allow_contacts_confirm">Povoliť</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Re: Pozvanie na udalosť začínajúcu v %1$s o %2$s %3$s</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">Odp.: Pozvánka na udalosť dňa %1$s</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">Odp.: Pozvánka na udalosť, ktorá sa začína %1$s</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Pozvanie na udalosť začínajúcu v %1$s o %2$s %3$s</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">Pozvánka na udalosť dňa %1$s</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">Pozvánka na udalosť, ktorá sa začína %1$s</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Aktualizácia udalosti začínajúcej v %1$s o %2$s %3$s</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">Aktualizácia udalosti v %1$s</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">Aktualizácia udalosti začínajúcej v %1$s</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Zrušenie udalosti začínajúcej v %1$s o %2$s %3$s</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">Zrušenie udalosti na %1$s</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">Zrušenie udalosti začínajúcej v %1$s</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">Ste pozvaní na %1$s\nKedy: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">Udalosť %1$s bola aktualizovaná\nKedy: %2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (celý deň)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">v %1$s %2$s o %3$s - v %4$s %5$s o %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nKde: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nPopis: %1$s</string>
+    <string name="event_send_invite_dialog_title">Odoslať pozvánku</string>
+    <string name="event_send_invite_dialog_description">Pozvánka bude odoslaná pridaným účastníkom.</string>
+    <string name="event_send_invite_dialog_confirm">Odoslať</string>
+    <string name="event_send_invite_dialog_cancel">Zrušiť</string>
+    <string name="event_add_participants_dialog_title">Pridať účastníkov</string>
+    <string name="event_add_participants_dialog_description">Pridaným účastníkom bude odoslaná pozvánka.</string>
+    <string name="recurring_event_add_participants_dialog_description">Pridaným účastníkom bude odoslaná pozvánka pre všetky udalosti v tejto sérii.</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">Pozvánka bude odoslaná pridaným účastníkom pre všetky udalosti v tejto sérii.\nPredošlé úpravy tejto série budú stratené.</string>
+    <string name="event_add_participants_dialog_confirm">Odoslať</string>
+    <string name="event_add_participants_dialog_cancel">Zrušiť</string>
+    <string name="event_remove_participants_dialog_title">Odstrániť účastníkov</string>
+    <string name="event_remove_participants_dialog_description">Odobraným účastníkom bude zaslaný email o zrušení.</string>
+    <string name="recurring_event_remove_participants_dialog_description">Odobraným účastníkom bude zaslaný email o zrušení pre všetky udalosti v tejto sérii.</string>
+    <string name="event_add_and_remove_participants_dialog_description">Pridaní a odobraní účastníci budú oboznámení.</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">Pridaní a odobraní účastníci budú oboznámení o všetkých udalostiach v tejto sérii.</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">Udalosť %1$s bola zrušená.</string>
+    <string name="event_save_changes">Uložiť zmeny</string>
+    <string name="event_update_add_participants_dialog_description">Existujúci a pridaní účastníci budú oboznámení.</string>
+    <string name="recurring_event_update_add_participants_dialog_description">Aktualizujete všetky udalosti v tejto sérii. Existujúci a pridaní účastníci budú oboznámení.</string>
+    <string name="event_update_remove_participants_dialog_description">Existujúci a odobraní účastníci budú oboznámení.</string>
+    <string name="event_update_remove_all_participants_dialog_description">Odobraní účastníci budú oboznámení.</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">Aktualizujete všetky udalosti v tejto sérii. Existujúci a odobraní účastníci budú oboznámení.</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">Aktualizujete všetky udalosti v tejto sérii. Odobraní účastníci budú oboznámení.</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">Existujúci, pridaní a odobraní účastníci budú oboznámení.</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">Aktualizujete všetky udalosti v tejto sérii. Existujúci, pridaní a odobraní účastníci budú oboznámení.</string>
+    <string name="success_snack_email_update_recurring">Účastníci boli upozornení a všetky udalosti boli aktualizované</string>
+    <string name="success_snack_email_update">Účastníci boli upozornení a udalosť bola aktualizovaná</string>
+    <string name="success_snack_add_attendees_recurring">Pozvánka bola odoslaná a účastníci boli pridaní do všetkých udalostí</string>
+    <string name="success_snack_add_attendees">Pozvánka bola odoslaná a účastníci boli pridaní</string>
+    <string name="success_snack_remove_attendees_recurring">Zrušenie bolo odoslané a účastníci boli odobratí zo všetkých udalostí</string>
+    <string name="success_snack_remove_attendees">Zrušenie bolo odoslané a účastníci boli odstránení</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">Moje kalendáre</string>
+    <string name="nav_view_subscribed_calendars">Odoberané kalendáre</string>
+    <string name="nav_view_other_calendars">Iné kalendáre</string>
+    <string name="nav_view_disabled_calendars">%1$s (Vypnuté)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (Nesynchronizované)</string>
+    <string name="nav_view_syncing_calendars">%1$s (Synchronizuje sa)</string>
+    <string name="nav_view_more">Viac</string>
+    <string name="nav_view_switcher">Zobraziť</string>
+    <string name="nav_view_switcher_day">Deň</string>
+    <string name="nav_view_switcher_three_day">3 dni</string>
+    <string name="nav_view_switcher_week">Týždeň</string>
+    <string name="nav_view_switcher_agenda">Agenda</string>
+    <string name="nav_view_switcher_month">Mesiac</string>
+    <string name="nav_view_timezone">Časové pásmo</string>
+    <string name="nav_view_settings">Nastavenia</string>
+    <string name="nav_view_feedback">Dajte nám spätnú väzbu</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">Všeobecné</string>
+    <string name="nav_view_more_bug">Nahlásiť problém</string>
+    <string name="nav_view_more_subscription">Predplatné</string>
+    <string name="nav_view_more_logout">Odhlásiť sa</string>
+    <string name="nav_view_more_login">Prihlásiť sa</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">Táto funkcia bude dostupná už čoskoro</string>
+    <string name="snack_event_deleted">Udalosť bola vymazaná</string>
+    <string name="snack_event_deleted_as_organizer">Oznámenie o zrušení bolo odoslané a udalosť bola vymazaná</string>
+    <string name="snack_event_deleted_as_attendee">Odpoveď bola odoslaná a udalosť bola vymazaná</string>
+    <string name="snack_event_deleted_error">Chyba pri mazaní udalosti</string>
+    <string name="snack_event_deleted_as_organizer_error">Email o zrušení udalosti nie je možné odoslať. Skúste to znova, prosím</string>
+    <string name="snack_event_opening_error">Chyba pri otváraní udalosti</string>
+    <string name="snack_event_saving">Prebieha ukladanie udalosti</string>
+    <string name="snack_event_deleting">Prebieha mazanie udalosti</string>
+    <string name="snack_event_changing_answer">Prebieha aktualizácia odpovede</string>
+    <string name="snack_event_part_stat_updated">Stav účasti bol aktualizovaný.</string>
+    <string name="snack_event_updated">Udalosť bola aktualizovaná</string>
+    <string name="snack_event_updated_recurring">Všetky udalosti boli aktualizované</string>
+    <string name="snack_event_updated_error_failed_mail">Pozvánku sa nepodarilo odoslať</string>
+    <string name="snack_update_event_error_failed_mail">Aktualizácia zlyhala</string>
+    <string name="snack_lost_zoom_access">Pre úpravu tohto stretnutia sa pripojte k službe Zoom.</string>
+    <string name="snack_lost_zoom_access_acion">Pripojiť</string>
+    <string name="snack_zoom_meeting_does_not_exist">Táto relácia Zoom bola zrušená. Odstráňte prepojenie pre úpravu tohto stretnutia.</string>
+    <string name="snack_event_updated_error">Chyba pri aktualizácii udalosti</string>
+    <string name="snack_event_created">Udalosť bola vytvorená</string>
+    <string name="snack_event_created_failed_mail">Udalosť bola vytvorená, ale pozvánku sa nepodarilo odoslať</string>
+    <string name="snack_event_created_error">Chyba pri vytváraní udalosti</string>
+    <string name="snack_event_opening_edit_error">Chyba pri otváraní udalosti na úpravu</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">Túto opakujúcu sa udalosť možno odstrániť len vo webovej aplikácii Kalendár.</string>
+    <string name="snack_event_edit_with_attendees_error">Úprava udalostí s účastníkmi zatiaľ nie je podporovaná</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">Nie je možné zároveň pridávať účastníkov a meniť kalendár</string>
+    <string name="snack_event_init_error">Chyba pri inicializácii novej udalosti</string>
+    <string name="snack_event_calendar_error">Chyba pri prepnutí kalendára</string>
+    <string name="snack_event_maximum_alarm_reached_error">Bolo dosiahnuté maximálne množstvo notifikácií</string>
+    <string name="snack_send_bug_report_success">Hlásenie odoslané, ďakujeme za vašu spätnú väzbu</string>
+    <string name="snack_send_bug_report_error">Chyba pri odosielaní hlásenia, skúste neskôr, prosím</string>
+    <string name="snack_send_bug_report_description_empty">Popíšte vaše hlásenie, prosím</string>
+    <string name="snack_create_event_no_active_personal_calendar">Na vytvorenie udalostí potrebujete aktívny osobný kalendár</string>
+    <string name="snack_create_event_no_active_calendar">Na vytvorenie udalostí potrebujete aktívny kalendár</string>
+    <string name="snack_add_self_as_participant">Nie je možné pozvať seba</string>
+    <string name="snack_maximum_participants_reached">Bolo dosiahnutý maximálny počet účastníkov.</string>
+    <string name="snack_add_participant_error">Chyba pri pridávaní účastníka</string>
+    <string name="snack_add_participant_invalid_email">Neplatný email</string>
+    <string name="snack_change_attendee_answer_error">Chyba pri odosielaní odpovede, skúste neskôr, prosím</string>
+    <string name="snack_network_error">Chyba siete, skúste neskôr, prosím</string>
+    <string name="snack_import_event_signed_out">Na import udalostí sa musíte prihlásiť</string>
+    <string name="snack_app_link_signed_out">Na zobrazenie vašej udalosti sa musíte prihlásiť</string>
+    <string name="snack_update_default_calendar">Predvolený kalendár bol aktualizovaný</string>
+    <string name="snack_update_default_calendar_error">Chyba pri aktualizácii predvoleného kalendára, skúste neskôr, prosím</string>
+    <string name="snack_calendar_init_error">Chyba pri načítaní informácií v kalendári</string>
+    <string name="snack_holiday_calendar_init_error">Chyba pri načítaní informácií kalendára sviatkov</string>
+    <string name="snack_update_calendar_error">Chyba pri aktualizácii informácií v kalendári, skúste neskôr, prosím</string>
+    <string name="snack_update_calendar_settings_error">Chyba pri aktualizácií niektorých informácií v kalendári, skúste neskôr, prosím</string>
+    <string name="snack_update_calendar_success">Kalendár aktualizovaný</string>
+    <string name="snack_create_calendar_success">Kalendár vytvorený</string>
+    <string name="snack_add_calendar_success">Kalendár bol pridaný</string>
+    <string name="snack_calendar_saving">Prebieha ukladanie kalendára</string>
+    <string name="snack_create_calendar_error">Chyba pri vytváraní kalendára, skúste neskôr, prosím</string>
+    <string name="snack_add_calendar_error">Chyba pri pridávaní kalendára, skúste znovu neskôr, prosím</string>
+    <string name="snack_create_calendar_settings_error">Kalendár bol vytvorený, ale niektoré informácie neboli aktualizované, skúste neskôr, prosím</string>
+    <string name="snack_ics_default_error">Chyba pri otváraní kalendára</string>
+    <string name="snack_ics_event_not_found_error">Udalosť nenájdená</string>
+    <string name="snack_ics_file_not_found_error">Súbor nebol nájdený</string>
+    <string name="snack_ics_create_error">Chyba pri vytváraní udalosti</string>
+    <string name="snack_ics_parsing_error">Chyba pri čítaní kalendára</string>
+    <string name="snack_ics_unsupported_method_error">Tento typ udalosti zatiaľ nie je podporovaný</string>
+    <string name="snack_ics_unsupported_add_error">Pridávanie výskytov udalosti v tejto chvíli nie je podporované</string>
+    <string name="snack_ics_unsupported_counter_error">Preplánovanie udalosti momentálne nie je podporované</string>
+    <string name="snack_ics_unsupported_refresh_error">Obnovenie udalosti momentálne nie je podporované</string>
+    <string name="snack_ics_unsupported_publish_error">Import udalosti nie je momentálne podporovaný</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">V tejto chvíli podporujeme iba odpovede na všetky udalosti série</string>
+    <string name="snack_ics_party_crasher_error">Váš email nie je na zozname účastníkov</string>
+    <string name="snack_ics_reply_party_crasher_error">Účastníci, ktorí neboli pozvaní organizátorom, nemôžu byť pridaní</string>
+    <string name="snack_ics_missing_uid_error">Udalosti chýba UID</string>
+    <string name="snack_ics_no_active_personal_calendar_error">K tomuto účtu nie je pripojený žiadny osobný kalendár</string>
+    <string name="snack_ics_no_active_calendar_error">K tomuto účtu nie je pripojený žiadny aktívny kalendár</string>
+    <string name="snack_ics_unsupported_duration_error">Trvanie nie je podporované</string>
+    <string name="snack_ics_too_many_events_error">Viacnásobné udalosti zatiaľ nie sú podporované</string>
+    <string name="snack_ics_no_events_error">Tento kalendár neobsahuje žiadnu udalosť</string>
+    <string name="snack_ics_invalid_error">Táto pozvánka je neplatná</string>
+    <string name="snack_ics_disabled_calendar_error">Znovu povoľte adresu spojenú s týmto kalendárom, aby ste mohli aktualizovať túto udalosť</string>
+    <string name="snack_ics_event_deleted_error">Udalosť už vo vašom kalendári neexistuje</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s prijal(-a) vašu pozvánku</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s predbežne prijal(-a) vašu pozvánku</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s odmietol(-a) vašu pozvánku</string>
+    <string name="snack_app_link_invalid">Neplatný odkaz na udalosť</string>
+    <string name="snack_app_link_error">Chyba pri otváraní udalosti</string>
+    <string name="snack_app_link_import_error">Overovanie zrušené</string>
+    <string name="snack_notification_already_added">Notifikácia už bola pridaná</string>
+    <string name="snack_opening_ics">Otvára sa udalosť…</string>
+    <string name="snack_invite_in_shared_calendar_error">Vytváranie pozvánok v zdieľanom kalendári nie je povolené</string>
+    <string name="snack_down_banner">Proton servery sú mimo prevádzky. Podrobnosti nájdete na našej stránke o stave.</string>
+    <string name="snack_down_banner_action">Otvoriť stránku statusu</string>
+    <string name="snack_color_per_event_paid_feature">Ak chcete prispôsobiť farby udalostí, prejdite na vyššie predplatné</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">Udalosť neexistuje</string>
+    <string name="error_occurrence_does_not_exist">Opakovanie neexistuje</string>
+    <string name="update_timezone_dialog_title">Časové pásmo zmenené</string>
+    <string name="update_timezone_dialog_message">Zdá sa, že vaše systémové časové pásmo sa zmenilo na %1$s. Chcete aktualizovať nastavenie časového pásma?</string>
+    <string name="update_timezone_dialog_confirmation">Aktualizovať</string>
+    <string name="update_timezone_dialog_cancel">Zrušiť</string>
+    <string name="contacts_permission_dialog_title">Povoliť aplikácii Proton Calendar prístup k vašim kontaktom?</string>
+    <string name="contacts_permission_dialog_message">Proton Calendar potrebuje prístup k vašim kontaktom v telefóne, aby vám zjednodušil ich pridávanie do udalostí.</string>
+    <string name="contacts_permission_dialog_allow">Povoliť</string>
+    <string name="contacts_permission_dialog_open_settings">Otvoriť nastavenia</string>
+    <string name="contacts_permission_dialog_cancel">Zamietnuť</string>
+    <string name="dialog_title_calendar_picker">Kalendár</string>
+    <string name="dialog_title_calendar_color_picker">Farba kalendára</string>
+    <string name="dialog_title_event_color_picker">Farba udalosti</string>
+    <string name="import_from_google_title">Importovať z Google</string>
+    <string name="notifications_permission_dialog_title">Povoliť aplikácii Proton Calendar zobrazovať notifikácie?</string>
+    <string name="notifications_permission_dialog_message">Proton Calendar potrebuje povolenie na zobrazovanie notifikácií o nadchádzajúcich udalostiach.</string>
+    <string name="notifications_permission_dialog_open_settings">Otvoriť nastavenia</string>
+    <string name="notifications_permission_dialog_cancel">Zamietnuť</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">Notifikácie udalosti</string>
+    <string name="notification_channel_sync">Synchronizácia kalendára</string>
+    <string name="notification_channel_calendar_fetch">Načítavanie kalendárov</string>
+    <string name="notification_sync">Synchronizácia kalendárov…</string>
+    <string name="notification_text_today">Dnes</string>
+    <string name="notification_text_today_part_time">Dnes o %1$s</string>
+    <string name="notification_text_tomorrow">Zajtra</string>
+    <string name="notification_text_tomorrow_part_time">Zajtra o %1$s</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s o %2$s</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">Predmet</string>
+    <string name="bug_report_hint_description">Popíšte problém, prosím, a priložte všetky chybové správy.</string>
+    <string name="bug_report_discard_changes_title">Neuložené zmeny</string>
+    <string name="bug_report_discard_changes_description">Vo formulári sú neuložené údaje. Naozaj ich chcete zahodiť?</string>
+    <string name="bug_report_discard_changes_cancel">Pokračovať v písaní</string>
+    <string name="bug_report_discard_changes_confirm">Zahodiť</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">Nastavenia aplikácie</string>
+    <string name="settings_theme_title">Motív</string>
+    <string name="settings_theme_info">Toto nastavenie vplýva iba na vzhľad aplikácie Proton Calendar na tomto zariadení. Po zmene vzhľadu sa aplikácia reštartuje.</string>
+    <string name="settings_timezone_title">Časové pásmo</string>
+    <string name="settings_language_title">Jazyk aplikácie</string>
+    <string name="settings_language_default">Automatická detekcia</string>
+    <string name="settings_default_view_title">Predvolené zobrazenie</string>
+    <string name="settings_default_view_default">Posledné zobrazenie</string>
+    <string name="settings_update_timezone_title">Požiadať o aktualizáciu nastavenia časového pásma</string>
+    <string name="settings_update_timezone_subtitle">Ak systémové časové pásmo nezodpovedá aktuálnemu nastaveniu časového pásma, budete vyzvaní ho aktualizovať.</string>
+    <string name="settings_update_timezone_checkbox">Viac sa nepýtať</string>
+    <string name="settings_week_start_title">Začiatok týždňa</string>
+    <string name="settings_time_format_title">Formát času</string>
+    <string name="settings_week_numbers_title">Zobraziť číslo týždňa</string>
+    <string name="settings_auto_invites_title">Pridať pozvánky do kalendára a označiť ako čakajúce na odpoveď</string>
+    <string name="settings_search_title">Hľadať v kalendároch</string>
+    <string name="settings_search_subtitle">Preberá a ukladá obsah kalendára do zariadenia na vyhľadávanie. Vypnutím tejto funkcie sa stiahnutý obsah odstráni.\n\nVyhľadávanie je experimentálna beta funkcia. Jej zapnutie môže spôsobiť nestabilitu aplikácie.</string>
+    <string name="settings_alternative_routing_title">Povoliť alternatívne smerovanie</string>
+    <string name="settings_alternative_routing_subtitle">V prípade, že sú stránky Proton blokované, toto nastavenie umožňuje aplikácii vyskúšať alternatívne smerovanie siete na prístup k Protonu, čo môže byť užitočné pri obchádzaní brán firewall alebo problémov so sieťou. Pre vyššiu spoľahlivosť odporúčame ponechať toto nastavenie zapnuté.</string>
+    <string name="settings_value_placeholder">Ťuknutím vyberte</string>
+    <string name="settings_general_title">Všeobecné</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s atď.</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">motív</string>
+    <string name="settings_general_info_language">jazyk</string>
+    <string name="settings_general_info_time_zone">časové pásmo</string>
+    <string name="settings_general_info_calendar_layout">rozloženie kalendára</string>
+    <string name="settings_calendars">Moje kalendáre</string>
+    <string name="settings_calendars_empty">Nenašli sa žiadne kalendáre</string>
+    <string name="settings_subscribed_calendars">Odoberané kalendáre</string>
+    <string name="settings_other_calendars">Iné kalendáre</string>
+    <string name="settings_calendar_default" comment="Default calendar">Predvolené</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">Zablokované</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">Nesynchronizované</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">Synchronizácia</string>
+    <string name="settings_calendar_subscribed_invalid_ics">Nepodporovaný formát kalendára</string>
+    <string name="settings_calendar_subscribed_too_big">Kalendár je príliš veľký</string>
+    <string name="settings_calendar_subscribed_not_accessible">Odkaz na kalendár nie je prístupný</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">Odkaz na kalendár je dočasne nedostupný</string>
+    <string name="settings_calendar_subscribed_last_sync_old">Od poslednej aktualizácie uplynulo viac ako 12 hodín</string>
+    <string name="settings_calendar_subscribed_not_decrypted">Kalendár nebolo možné dešifrovať</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">Iba zobrazenie</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">od %1$s</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">Vytvoriť kalendár</string>
+    <string name="calendar_form_update_title">Upraviť kalendár</string>
+    <string name="calendar_form_save">Uložiť</string>
+    <string name="calendar_form_name">Názov</string>
+    <string name="calendar_form_description">Popis</string>
+    <string name="calendar_form_color">Farba kalendára</string>
+    <string name="calendar_form_language">Jazyk</string>
+    <string name="calendar_form_default_event_duration">Dĺžka udalosti</string>
+    <string name="calendar_form_default_event_notifications">Notifikácie udalosti</string>
+    <string name="calendar_form_default_all_day_event_notifications">Notifikácie celodenných udalostí</string>
+    <string name="calendar_form_add_notification">Pridať notifikáciu</string>
+    <string name="calendar_form_default_email">Emailová adresa</string>
+    <string name="calendar_form_default_email_value_error">Nepodarilo sa načítať predvolený email</string>
+    <string name="calendar_form_name_hint">Pridať názov kalendára</string>
+    <string name="calendar_form_name_required_error">Názov je povinný</string>
+    <string name="calendar_form_description_hint">Pridať popis kalendára</string>
+    <string name="add_calendar_text">Pridať kalendár</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">Pridať</string>
+    <string name="create_calendar_limit_reached">Dosiahli ste maximálny počet kalendárov.</string>
+    <string name="create_calendar_limit_reached_title">Nie je možné pridať viac kalendárov</string>
+    <string name="create_calendar_limit_reached_paid_description">Dosiahli ste maximálny dostupný počet 25 kalendárov vo vašom pláne.\n\nAby ste mohli pridať nový kalendár, odstráňte jeden z existujúcich.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">Musíte mať aspoň jeden osobný kalendár, kým dosiahnete limit vášho plánu 25 kalendárov.</string>
+    <string name="create_calendar_limit_reached_manage">Spravovať kalendáre</string>
+    <string name="create_calendar_limit_reached_free_description">Dosiahli ste maximálny dostupný počet 3 kalendárov vo vašom pláne.\n\nAby ste mohli pridať nový kalendár, odstráňte jeden z existujúcich.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">Musíte mať aspoň jeden osobný kalendár, kým dosiahnete limit vášho plánu 3 kalendáre.</string>
+    <string name="create_calendar_limit_reached_error">Chyba</string>
+    <string name="delete_calendar_dialog_title">Vymazať kalendár</string>
+    <string name="delete_calendar_dialog_message">Naozaj chcete vymazať tento kalendár?</string>
+    <string name="remove_calendar_dialog_title">Odstrániť kalendár</string>
+    <string name="remove_calendar_dialog_message">Naozaj chcete odstrániť tento kalendár?</string>
+    <string name="leave_calendar_dialog_title">Opustiť kalendár</string>
+    <string name="leave_calendar_dialog_message">Ak opustíte tento kalendár, budete musieť vlastníka požiadať o opätovné pripojenie.</string>
+    <string name="delete_default_calendar_dialog_message">Naozaj chcete vymazať tento kalendár? „%1$s“ bude nastavený ako predvolený kalendár.</string>
+    <string name="delete_calendar_snack_deleted">Kalendár vymazaný</string>
+    <string name="remove_calendar_snack_removed">Kalendár odstránený</string>
+    <string name="delete_calendar_snack_error">Chyba pri mazaní kalendára</string>
+    <string name="remove_calendar_snack_error">Chyba pri odstraňovaní kalendára</string>
+    <string name="leave_calendar_snack_error">Chyba pri opúšťaní kalendára</string>
+    <string name="delete_calendar_snack_error_password_confirmation">Potvrdenie hesla zlyhalo</string>
+    <string name="recreate_calendar_dialog_title">Vyčistiť kalendár</string>
+    <string name="recreate_calendar_dialog_message">Táto akcia odstráni všetky udalosti a pozvaných užívateľov.\n\nNaozaj chcete tento kalendár vyčistiť?</string>
+    <string name="recreate_calendar_snack_error">Chyba pri čistení kalendára</string>
+    <string name="recreate_calendar_snack_deleted">Kalendár vyčistený</string>
+    <string name="recreate_calendar_snack_clearing">Čistenie kalendára…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">Pridať kalendár sviatkov</string>
+    <string name="holiday_calendar_title">Kalendár sviatkov</string>
+    <string name="add_holiday_calendar_country_search_hint">Vyhľadať krajinu</string>
+    <string name="holiday_calendar_form_picker_title">Krajina</string>
+    <string name="holiday_calendar_time_zone_based">Podľa vášho časového pásma</string>
+    <string name="holiday_calendar_already_exists">Tento kalendár sviatkov už je pridaný.</string>
+    <string name="holiday_calendar_value_placeholder">Vyberte krajinu</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">OK</string>
+    <string name="bootstrap_error_no_calendar_title">S týmto účtom nie sú spojené žiadne kalendáre.</string>
+    <string name="bootstrap_error_no_calendar_message">Na vytvorenie kalendára navštívte <a href="https://calendar.proton.me">calendar.proton.me</a></string>
+    <string name="bootstrap_error_some_calendars_failed_title">Chyba pri pripravovaní kalendára</string>
+    <string name="bootstrap_error_some_calendars_failed_message">Nalsedujúce kalendáre sa nepodarilo nastaviť</string>
+    <string name="bootstrap_error_no_active_calendar_title">S týmto účtom nie sú spojené žiadne aktívne osobné kalendáre.</string>
+    <string name="bootstrap_error_no_active_calendar_message">Zistite ako aktivovať kalendár v našej <a href="https://proton.me/support">znalostnej databáze</a></string>
+    <string name="bootstrap_error_store_quota_reached_message">Na úložisku nie je viac voľného miesta.</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">Zistiť viac</string>
+    <string name="bootstrap_error_reset_needed_title">Resetovať kľúč kalendára</string>
+    <string name="bootstrap_error_reset_needed_message">Zresetovali ste svoje heslo a udalosti spojené s nasledovnými kalendármi nemohli byť dešifrované. Všetky aktívne odoberané kalendáre budú opätovne zosynchronyzované o niekoľko minút.</string>
+    <string name="bootstrap_error_update_passphrase_title">Znovu aktivovať kľúč kalendára</string>
+    <string name="bootstrap_error_update_passphrase_message">Znovu ste aktivovali svoje kľúče a udalosti spojené s nasledovnými kalendármi môžu byť teraz dešifrované.</string>
+    <string name="bootstrap_error_continue_button">Pokračovať</string>
+    <string name="splash_after_login_init">Príprava kalendárov</string>
+    <string name="splash_init">Dešifrovanie udalostí</string>
+    <string name="default_calendar_name">Môj kalendár</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">Dajte nám spätnú väzbu</string>
+    <string name="dialog_feedback_text">Ako by ste opísali svoje skúsenosti s Proton Calendar?</string>
+    <string name="dialog_feedback_rating_worst">Hrozné</string>
+    <string name="dialog_feedback_rating_best">Skvelé</string>
+    <string name="dialog_feedback_hint">Povedzte nám o vašich skúsenostiach. (Nepovinné)</string>
+    <string name="dialog_feedback_submit">Odoslať</string>
+    <string name="dialog_feedback_submit_thank_you">Ďakujeme! Vaša spätná väzba nám pomáha zlepšovať Proton.</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Proton Calendar widget</string>
+    <string name="calendar_widget_no_upcoming_events_today">Žiadne nadchádzajúce udalosti na dnešný deň</string>
+    <string name="calendar_widget_loading_events">Načítanie udalostí…</string>
+    <string name="calendar_widget_loading_events_error">Nepodarilo sa načítať udalosti</string>
+    <string name="calendar_widget_no_upcoming_events">Žiadne nadchádzajúce udalosti</string>
+    <string name="calendar_widget_please_log_in">Prihláste sa pre zobrazenie vašich udalostí</string>
+    <string name="calendar_widget_part_day_event_starts_at">Začína o %1$s</string>
+    <string name="calendar_widget_part_day_event_ends_at">Končí o %1$s</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">Čo je nové</string>
+    <string name="spotlight_dialog_beta_header">Calendar Beta</string>
+    <string name="spotlight_dialog_skip">Preskočiť</string>
+    <string name="spotlight_dialog_confirmation_button">OK</string>
+    <string name="spotlight_dialog_month_view_title">Mesačné zobrazenie</string>
+    <string name="spotlight_dialog_month_view_description">Získajte prehľad vašich udalosti s naším novým mesačným zobrazením. Prepínajte medzi zobrazeniami v menu.</string>
+    <string name="spotlight_dialog_easy_switch_description">Import udalostí a iných dát z Kalendára Google do Proton Calendar nikdy nebol jednoduchší. Náš Easy Switch importér vás ním prevedie krok za krokom.</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">Spustiť import</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">Teraz nie</string>
+    <string name="spotlight_dialog_auto_invites_title">Jednoduché prijímanie pozvánok</string>
+    <string name="spotlight_dialog_auto_invites_description">Pozvánky sa teraz zobrazujú vo vašom kalendári ako udalosti čakajúce na odpoveď. Stačí otvoriť udalosti a odpovedať na ňu.\n\nNa správu tohoto zobrazenia prejdite do nastavení.</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">Ďalej</string>
+    <string name="spotlight_v5_dialog_got_it_button">Rozumiem</string>
+    <string name="spotlight_v5_dialog_learn_more_button">Zistiť viac</string>
+    <string name="spotlight_v5_dialog_rebranding_title">Aktualizovaný Proton, jednotná ochrana</string>
+    <string name="spotlight_v5_dialog_rebranding_description">Predstavujeme nový vzhľad Protonu. Mnoho služieb, jedno poslanie. Vitajte na internete, kde je súkromie samozrejmosťou. <a href="https://proton.me/news/updated-proton">Zistiť viac</a></string>
+    <string name="spotlight_dialog_week_view_title">Viac možností zobrazenia</string>
+    <string name="spotlight_dialog_week_view_description">• Predstavujeme <b>3-dňové</b> a <b>týždenné</b> zobrazenie kalendára. Preferované zobrazenie si vyberte v <b>menu</b>.\n\n• Výšku riadku v dennej mriežke upravíte stiahnutím alebo roztiahnutím dvoch prstov na obrazovke.</string>
+    <string name="spotlight_dialog_search_title">Vyhľadať udalosti</string>
+    <string name="spotlight_dialog_search_description">Jednoducho vyhľadajte hľadanú udalosť pomocou novej vyhľadávacej funkcie. <a href="https://proton.me/support/calendar-search">Zistiť viac</a></string>
+    <string name="spotlight_dialog_search_positive">Zapnúť</string>
+    <string name="spotlight_dialog_search_negative">Preskočiť</string>
+    <string name="spotlight_dialog_import_title">Viac spôsobov pridávania udalostí</string>
+    <string name="spotlight_dialog_import_description">• Importujte udalosti do svojho kalendára zo súborov v telefóne.\n\n• Pridávajte rezervácie výletov priamo z Proton Mail.</string>
+    <string name="spotlight_dialog_calendar_provider_title">Funkcie kalendára</string>
+    <string name="spotlight_dialog_calendar_provider_description">• Pridávajte udalosti priamo do Proton Calendar z iných aplikácií.\n\n• Vytvárajte a spravujte udalosti v kalendároch, ktoré s vami boli zdieľané.\n\n• Nastavte si predvolené zobrazenie, ktoré chcete vidieť pri otvorení aplikácie.\n\n• K dispozícii je 13 nových jazykov.</string>
+    <string name="spotlight_dialog_wipe_search_title">Odstránili sme vyhľadávanie, aby sme priniesli lepšie</string>
+    <string name="spotlight_dialog_wipe_search_description">Odstraňujeme možnosť experimentálneho vyhľadávania z Proton Calendar Beta, pretože ho chceme pre vás spraviť užitočnejší a spoľahlivejší. Môže to trvať niekoľko sekúnd.</string>
+    <string name="spotlight_dialog_holiday_calendar_title">Štátne sviatky sú tu!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">Už žiadne plánovanie schôdzí, keď majú všetci voľno, alebo zabúdanie na plánovanie predĺženého víkendu.\n\nPridajte si do kalendára štátne sviatky akejkoľvek krajiny.</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">Už žiadne plánovanie schôdzí, keď majú všetci voľno, alebo zabúdanie na plánovanie predĺženého víkendu.\n\nKeďže ste momentálne na limite kalendárov, na pridanie kalendára sviatkov budete musieť najprv odstrániť existujúci kalendár.</string>
+    <string name="spotlight_dialog_color_per_event_title">Vlastné farby udalostí</string>
+    <string name="spotlight_dialog_color_per_event_description">Prispôsobte si farbu jednotlivých udalostí, aby ste:\n\n- farebne rozlíšili svoj kalendár\n\n- lepšie zorganizovali svoj deň a sledovali svoj čas\n\n- stanovili priority a zvýšili efektivitu</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">Povoliť prístup</string>
+    <string name="dialog_google_auth_description">Na spustenie importu sa prihláste do Kalendára Google a povoľte Protonu prístup k vašim dátam.</string>
+    <string name="import_assistant_prepare_import_error">Chyba pri príprave importu, skúste to znova neskôr, prosím</string>
+    <string name="import_assistant_prepare_import">Príprava importu</string>
+    <string name="import_assistant_gathering_data_loader_title">Zhromažďovanie vašich dát</string>
+    <string name="import_assistant_summary_title">Prehľad importu</string>
+    <string name="import_assistant_summary_customize_import">Prispôsobiť import</string>
+    <string name="import_assistant_error">Chyba pri získavaní dát</string>
+    <string name="import_assistant_data_gathering_error">Zhromažďovanie dát zlyhalo</string>
+    <string name="import_assistant_update_import_error">Aktualizácia importu zlyhala, skúste to znova neskôr, prosím.</string>
+    <string name="import_assistant_update_import_wrong_account_error">Nesprávny účet. Prihláste sa do účtu, ktorý ste použili na import kalendára, prosím.</string>
+    <string name="import_assistant_start_import_error">Spustenie importu zlyhalo, skúste to znova neskôr, prosím.</string>
+    <string name="import_assistant_delete_import_success">Záznam o importe vymazaný</string>
+    <string name="import_assistant_delete_import_error">Vymazanie importu zlyhalo, skúste to znova neskôr, prosím.</string>
+    <string name="import_assistant_cancel_import_error">Zrušenie importu zlyhalo, skúste to znova neskôr, prosím.</string>
+    <string name="import_assistant_resume_import_error">Obnovenie importu zlyhalo, skúste to znova neskôr, prosím.</string>
+    <string name="import_assistant_create_calendar_error">Vytvorenie jedného alebo viacerých kalendárov zlyhalo</string>
+    <string name="import_assistant_start_import_empty_error">Spustenie importu zlyhalo, neexistujú žiadne kalendáre na import</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">Importovať ako</string>
+    <string name="import_assistant_new_calendar_badge">Nový</string>
+    <string name="import_assistant_merge_calendar_badge">Zlúčený</string>
+    <string name="import_assistant_creating_calendars">Vytváranie nových kalendárov</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">Takmer hotovo…</string>
+    <string name="import_assistant_new_calendar_header">Vytvoriť nový</string>
+    <string name="import_assistant_merge_calendar_header">Zlúčiť s existujúcim</string>
+    <string name="import_assistant_in_progress_title">Prebieha import</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">Import dát z %1s do %2s.</string>
+    <string name="import_assistant_in_progress_redirect">Skontrolovať stav</string>
+    <string name="import_assistant_in_progress_sub_description">Veľké importy môžu trvať niekoľko dní. Dáme vám vedieť hneď ako bude import dokončený. Môžete zavrieť túto obrazovku.</string>
+    <string name="import_assistant_guide_subtitle">Prepnite na súkromie. Jednoducho a bezpečne.</string>
+    <string name="import_assistant_guide_description">Presuňte svoje udalosti a iné dáta z Google do Protonu. Easy Switch importér vás týmto procesom prevedie krok za krokom a vaše dáta počas presunu zašifruje.</string>
+    <string name="import_assistant_new_import">Nový import</string>
+    <string name="import_assistant_previous_import">Predchádzajúce importy</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">Začíname</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">Prebieha</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">Dokončené</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">Zrušené</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">Ruší sa</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">Pozastavené</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">Zlyhalo</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Pripojenie ku Google stratené</string>
+    <string name="import_assistant_status_paused_lost_connection_description">Pre pokračovanie importu ťuknite na Obnoviť pripojenie, prihláste sa do Google a opätovne povoľte Protonu prístup k vašim Google dátam.</string>
+    <string name="import_assistant_status_paused_lost_connection_button">Obnoviť pripojenie</string>
+    <string name="import_assistant_status_paused_storage_full_title">Vaše úložisko je plné</string>
+    <string name="import_assistant_status_paused_storage_full_description">Váš Proton účet nemá dostatok voľného priestoru na dokončenie importu kalendára. Uvoľnite priestor alebo si ho navýšte, potom sa sem vráťte pre Pokračovanie.</string>
+    <string name="import_assistant_status_paused_storage_full_button">Pokračovať</string>
+    <string name="import_assistant_delete_report_title">Odstrániť zo zoznamu?</string>
+    <string name="import_assistant_delete_report_message">Tento záznam o importe už v zozname neuvidíte.</string>
+    <string name="import_assistant_delete_report_positive_button">Odstrániť</string>
+    <string name="import_assistant_delete_report_negative_button">Zachovať</string>
+    <string name="import_assistant_cancel_import_title">Import je nekompletný!</string>
+    <string name="import_assistant_cancel_import_message">Ak tento import zrušíte, nebudete ho môcť obnoviť. Proton uložil celý priebeh na váš účet. Napriek tomu zrušiť?</string>
+    <string name="import_assistant_cancel_import_positive_button">Zrušiť import</string>
+    <string name="import_assistant_cancel_import_negative_button">Obnoviť import</string>
+    <string name="import_assistant_in_progress_snack">Prebieha import</string>
+    <string name="import_assistant_discard_import_title">Zrušiť import?</string>
+    <string name="import_assistant_discard_import_message">Import nie je kompletný a nebude môcť pokračovať, pokiaľ ho zrušíte.</string>
+    <string name="import_assistant_discard_import_positive">Zrušiť import</string>
+    <string name="import_assistant_discard_import_negative">Obnoviť import</string>
+    <string name="import_assistant_authentication_canceled">Overovanie zrušené</string>
+    <string name="import_assistant_sign_in_in_progress">Proces prihlasovania už prebieha</string>
+    <string name="import_assistant_in_progress_error_snack">Stále prebieha import</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">Importovať ako jednoduchú udalosť?</string>
+    <string name="import_event_disclaimer_dialog_description">\nImportované pozvánky sa v Proton Calendar zobrazujú ako jednoduché udalosti <b>bez podrobností o organizátorovi</b> a <b>účastníkoch</b>.\n\nAk chcete dostávať aktuálne informácie o udalosti a vidieť účastníkov, požiadajte organizátorov, aby vás pozvali cez vašu Proton emailovú adresu.</string>
+    <string name="import_event_disclaimer_dialog_positive">Importovať</string>
+    <string name="undefined_color">Nedefinovaná</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">kalendár</item>
+        <item quantity="few">kalendáre</item>
+        <item quantity="many">kalendárov</item>
+        <item quantity="other">kalendárov</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">Importovať %1$d kalendár</item>
+        <item quantity="few">Importovať %1$d kalendáre</item>
+        <item quantity="many">Importovať %1$d kalendárov</item>
+        <item quantity="other">Importovať %1$d kalendárov</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">%1$d prebiehajúci import</item>
+        <item quantity="few">%1$d prebiehajúce importy</item>
+        <item quantity="many">%1$d prebiehajúcich importov</item>
+        <item quantity="other">%1$d prebiehajúcich importov</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">%1$d z %2$d vytvorené v %3$s</item>
+        <item quantity="few">%1$d z %2$d vytvorené v %3$s</item>
+        <item quantity="many">%1$d z %2$d vytvorených v %3$s</item>
+        <item quantity="other">%1$d z %2$d vytvorených v %3$s</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">Vytvoriť %1$d nový kalendár v Proton Calendar.</item>
+        <item quantity="few">Vytvoriť %1$d nové kalendáre v Proton Calendar.</item>
+        <item quantity="many">Vytvoriť %1$d nových kalendárov v Proton Calendar.</item>
+        <item quantity="other">Vytvoriť %1$d nových kalendárov v Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">Importovať %1$d z %2$d kalendára z</item>
+        <item quantity="few">Importovať %1$d z %2$d kalendárov z</item>
+        <item quantity="many">Importovať %1$d z %2$d kalendárov z</item>
+        <item quantity="other">Importovať %1$d z %2$d kalendárov z</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">Zlúčiť %1$d kalendár v Proton Calendar.</item>
+        <item quantity="few">Zlúčiť %1$d kalendáre v Proton Calendar.</item>
+        <item quantity="many">Zlúčiť %1$d kalendárov v Proton Calendar.</item>
+        <item quantity="other">Zlúčiť %1$d kalendárov v Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">Nie je možné vytvoriť nové kalendáre pre všetky importované kalendáre kvôli limitu kalendárov.\n • Zrušte výber najmenej %1$d kalendár</item>
+        <item quantity="few">Nie je možné vytvoriť nové kalendáre pre všetky importované kalendáre kvôli limitu kalendárov.\n • Zrušte výber najmenej %1$d kalendáre</item>
+        <item quantity="many">Nie je možné vytvoriť nové kalendáre pre všetky importované kalendáre kvôli limitu kalendárov.\n • Zrušte výber najmenej %1$d kalendárov</item>
+        <item quantity="other">Nie je možné vytvoriť nové kalendáre pre všetky importované kalendáre kvôli limitu kalendárov.\n • Zrušte výber najmenej %1$d kalendárov</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020alebo\n • Zlúčte aspoň %1$d kalendár s existujúcimi Proton kalendármi.</item>
+        <item quantity="few">\u0020alebo\n • Zlúčte aspoň %1$d kalendáre s existujúcimi Proton kalendármi.</item>
+        <item quantity="many">\u0020alebo\n • Zlúčte aspoň %1$d kalendárov s existujúcimi Proton kalendármi.</item>
+        <item quantity="other">\u0020alebo\n • Zlúčte aspoň %1$d kalendárov s existujúcimi Proton kalendármi.</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">sekunda</item>
+        <item quantity="few">sekundy</item>
+        <item quantity="many">sekúnd</item>
+        <item quantity="other">sekúnd</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">minúta</item>
+        <item quantity="few">minúty</item>
+        <item quantity="many">minút</item>
+        <item quantity="other">minút</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">hodina</item>
+        <item quantity="few">hodiny</item>
+        <item quantity="many">hodín</item>
+        <item quantity="other">hodín</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">deň</item>
+        <item quantity="few">dni</item>
+        <item quantity="many">dní</item>
+        <item quantity="other">dní</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">týždeň</item>
+        <item quantity="few">týždne</item>
+        <item quantity="many">týždňov</item>
+        <item quantity="other">týždňov</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">mesiac</item>
+        <item quantity="few">mesiace</item>
+        <item quantity="many">mesiacov</item>
+        <item quantity="other">mesiacov</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">rok</item>
+        <item quantity="few">roky</item>
+        <item quantity="many">rokov</item>
+        <item quantity="other">roka</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">jedenkrát</item>
+        <item quantity="few">krát</item>
+        <item quantity="many">krát</item>
+        <item quantity="other">krát</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">výskyt</item>
+        <item quantity="few">výskyty</item>
+        <item quantity="many">výskytov</item>
+        <item quantity="other">výskytov</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">raze</item>
+        <item quantity="few">razoch</item>
+        <item quantity="many">razoch</item>
+        <item quantity="other">razoch</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">účastník</item>
+        <item quantity="few">účastníci</item>
+        <item quantity="many">účastníkov</item>
+        <item quantity="other">účastníkov</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">Každý %1$d %2$s</item>
+        <item quantity="few">Každé %1$d %2$s</item>
+        <item quantity="many">Každých %1$d %2$s</item>
+        <item quantity="other">Každých %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">Každý %1$d %2$s</item>
+        <item quantity="few">Každé %1$d %2$s</item>
+        <item quantity="many">Každých %1$d %2$s</item>
+        <item quantity="other">Každých %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">Každý %1$d %2$s</item>
+        <item quantity="few">Každé %1$d %2$s</item>
+        <item quantity="many">Každých %1$d %2$s</item>
+        <item quantity="other">Každých %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">Každý %1$d %2$s</item>
+        <item quantity="few">Každé %1$d %2$s</item>
+        <item quantity="many">Každých %1$d %2$s</item>
+        <item quantity="other">Každých %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s minúta</item>
+        <item quantity="few">%1$s minúty</item>
+        <item quantity="many">%1$s minút</item>
+        <item quantity="other">%1$s minút</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d/%2$d znak</item>
+        <item quantity="few">%1$d/%2$d znaky</item>
+        <item quantity="many">%1$d/%2$d znakov</item>
+        <item quantity="other">%1$d/%2$d znakov</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d/%2$d znak</item>
+        <item quantity="few">%1$d/%2$d znaky</item>
+        <item quantity="many">%1$d/%2$d znakov</item>
+        <item quantity="other">%1$d/%2$d znakov</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>prvý(-á)</item>
+        <item>druhý(-á)</item>
+        <item>tretí(-ia)</item>
+        <item>štvrtý(-á)</item>
+        <item>piaty</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>posledný(-á)</item>
+        <item>predposledný(-á)</item>
+        <item>tretí(-ia) od konca</item>
+        <item>štvrtý(-á) od konca</item>
+        <item>piaty(-a) od konca</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>Svetlý</item>
+        <item>Tmavý</item>
+        <item>Podľa systému</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>Podľa systému</item>
+        <item>13:00</item>
+        <item>1:00pm</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>Podľa systému</item>
+        <item>Pondelok</item>
+        <item>Sobota</item>
+        <item>Nedeľa</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>Fialová|#8080FF</item>
+        <item>Jahoda|#EC3E7C</item>
+        <item>Ružová|#DB60D6</item>
+        <item>Mrkva|#F78400</item>
+        <item>Sahara|#936D58</item>
+        <item>Encián|#5252CC</item>
+        <item>Slivka|#A839A4</item>
+        <item>Ruža|#BA1E55</item>
+        <item>Meď|#C44800</item>
+        <item>Hlina|#54473F</item>
+        <item>Bridlicová modrá|#415DF0</item>
+        <item>Pacifik|#179FD9</item>
+        <item>Útes|#1DA583</item>
+        <item>Papraď|#3CBB3A</item>
+        <item>Oliva|#B4A40E</item>
+        <item>Kobalt|#273EB2</item>
+        <item>Oceán|#0A77A6</item>
+        <item>Borovica|#0F735A</item>
+        <item>Les|#258723</item>
+        <item>Uhorka|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>Fialová</item>
+        <item>Jahoda</item>
+        <item>Ružová</item>
+        <item>Mrkva</item>
+        <item>Sahara</item>
+        <item>Horec</item>
+        <item>Slivka</item>
+        <item>Čerešňa</item>
+        <item>Meď</item>
+        <item>Pôda</item>
+        <item>Bridlicovo modrá</item>
+        <item>Pacifik</item>
+        <item>Útes</item>
+        <item>Papraď</item>
+        <item>Oliva</item>
+        <item>Kobalt</item>
+        <item>Oceán</item>
+        <item>Borovica</item>
+        <item>Les</item>
+        <item>Uhorka</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

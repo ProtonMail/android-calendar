@@ -1,0 +1,120 @@
+{
+    "Code": 1000,
+    "EventID": "OYludcH6yhRe9X4Hgsxa9yeEOD-yMAsQVzehHyOxOgEf2owoLdVmWD1v_yzq_WuPWf3CX0fqpmIpqg-7PYxhIg==",
+    "Refresh": 0,
+    "More": 1,
+    "Calendars": [
+        {
+            "ID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg==",
+            "Action": 1,
+            "Calendar": {
+                "ID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg==",
+                "Name": "Second Calendar",
+                "Description": "Description of second calendar",
+                "Color": "#C3D261",
+                "Display": 1,
+                "Flags": 0
+            }
+        },
+        {
+            "ID": "m-dPNuHcP8N4xfv6iapVg2wHifktAD1A1pFDU95qo5f14Vaw8I9gEHq-3GACk6ef3O12C3piRviy_D43Wh7xxQ==",
+            "Action": 2,
+            "Calendar": {
+                "ID": "m-dPNuHcP8N4xfv6iapVg2wHifktAD1A1pFDU95qo5f14Vaw8I9gEHq-3GACk6ef3O12C3piRviy_D43Wh7xxQ==",
+                "Name": "My calendar (edited)",
+                "Description": "Description edited",
+                "Color": "#CF5858",
+                "Display": 1,
+                "Flags": 0
+            }
+        }
+    ],
+    "CalendarKeys": [
+        {
+            "ID": "-tERCJ15hVftXEHOJTibcfh7-WIlaNAQTKgBCMQDJqarnomC7qfMiYbn5AjaVEqEl5KW_XYf68cZoyPQQHq1dg==",
+            "Action": 1,
+            "Key": {
+                "ID": "-tERCJ15hVftXEHOJTibcfh7-WIlaNAQTKgBCMQDJqarnomC7qfMiYbn5AjaVEqEl5KW_XYf68cZoyPQQHq1dg==",
+                "PrivateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----\nVersion: ProtonMail\n\nxYYEXmJS3xYJKwYBBAHaRw8BAQdA0/uzBPKD0Mi7oAJnotHWcu6G6RpaW1oz\nJMKE1cFAz07+CQMI5bDC16KvAQdgw6CZ5snnoZo7mygXcRa5TbXRVN2ckcfL\nktn5vcKyfjMSaah+8y6wRb3XybqLAaf6FACqYckwEVW1Utn2hbp0EFcZrwxK\nWs0MQ2FsZW5kYXIga2V5wngEEBYKACAFAl5iUt8GCwkHCAMCBBUICgIEFgIB\nAAIZAQIbAwIeAQAKCRBSITaeWFvfrXeBAQDghpLB5UTH3UncMgGSzcdHcAuw\nV2gKoJTwL2FA1dO7iQEAqt0LjUn89vXzDN/54Ae+mczTq1Mk0U6NVfsKG86b\nUgLHiwReYlLfEgorBgEEAZdVAQUBAQdAGf7HMzTZ2eKD4nCfiKcQ6hD8YDjA\nyNQFBiwPSHnDBBwDAQgH/gkDCDuFKdOB3xd6YDNCq78QvF1T+ZXTyqQJpPVj\nZFjbj5oJR5leIXuaefsF1WIhMnlgwKSdF+p6YYwt8pO+YTfrWsbUn7JIjB4z\nu7G0sdBkBx7CYQQYFggACQUCXmJS3wIbDAAKCRBSITaeWFvfreEUAQDuWkZf\n6QxJ7KhHJZsd5vtnuT8dYE1RBEpLh/KxFW2C2AEAu9tWqb1bvKU2zAzClsXX\nET2V6XeJvqemv6VsWdpIfwg=\n=GP7S\n-----END PGP PRIVATE KEY BLOCK-----\n",
+                "PassphraseID": "-tERCJ15hVftXEHOJTibcfh7-WIlaNAQTKgBCMQDJqarnomC7qfMiYbn5AjaVEqEl5KW_XYf68cZoyPQQHq1dg==",
+                "Flags": 3,
+                "CalendarID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg=="
+            }
+        }
+    ],
+    "CalendarMembers": [
+        {
+            "ID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg==",
+            "Action": 1,
+            "Member": {
+                "ID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg==",
+                "Permissions": 127,
+                "Email": "adamtst@protonmail.blue",
+                "CalendarID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg=="
+            }
+        }
+    ],
+    "CalendarPassphrases": [
+        {
+            "ID": "-tERCJ15hVftXEHOJTibcfh7-WIlaNAQTKgBCMQDJqarnomC7qfMiYbn5AjaVEqEl5KW_XYf68cZoyPQQHq1dg==",
+            "Action": 1,
+            "Passphrase": {
+                "Flags": 1,
+                "ID": "-tERCJ15hVftXEHOJTibcfh7-WIlaNAQTKgBCMQDJqarnomC7qfMiYbn5AjaVEqEl5KW_XYf68cZoyPQQHq1dg==",
+                "MemberPassphrases": [
+                    {
+                        "MemberID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg==",
+                        "Passphrase": "-----BEGIN PGP MESSAGE-----\nVersion: ProtonMail\n\nwcBMA5kajsUECZmgAQf/a6tz6yvC+D5UtpBntvhRD14zhEGb39XTybvnheFa\nLVgKdKVlet/NA4wBsm0jXvc8eS/HJnhWKt86zqONhTrgg8qNAZH8hf5y5DyU\n570GMQnw6uTXMAhxKyDtyTPmFJSxQT8/KH0nJZgXSRhYbGfHh0K/nCi0kR2w\nCii9hpmvfs/d6Nk8jmh/JftIx6fs5s4iNGc2VoprupVC0yUPHnxuQyoAm2Vt\nm5XrphDrLzWrEv4pQYdcpRq4DU/MDLLEH5PgG87oD8LJ0bPFBlzh6cFchaCQ\nZC3uhwU6j3uv+aFvKjRQl+yIHCbPwgtAYMBh1nvpPsKj1IlNut1UaMCie5Mb\n0NJkAUeWQlqcnamiGkMNnHG1LRenE3jwx6dSZrAropJhgBMFkBQBgniUOlxp\n3hCpjDVmtK6r72qlJaJBC/6Fdn3IUGDusTCRpakjGnkpQeMYFJ4Cy5tn5Q6B\ni8tf1n+aadlw8WXhHw==\n=KZxz\n-----END PGP MESSAGE-----\n",
+                        "Signature": "-----BEGIN PGP SIGNATURE-----\nVersion: ProtonMail\n\nwsBcBAEBCAAGBQJeYlLfAAoJEBHDHo5eB/TQmAsH/2iZIjlJnseaKjqQ9lbo\nIpQBYX5eskW4GYeyhKzRW7U21byQfHx3sx0hxPth4fQ4ErktUtZ3BOLTKGt0\nh1x9uq0oYha8kfkv+NN4UwrYDD/BF5l8Z53jJs4CMNov/RxB4iPFMcqZ29rQ\n47SLyoNLKeaiQw8Ho1csA/XeTrjdesEabh+qrRhXAnCpIXT/MXtEEVy/GPla\ntqyQMAZWFbGIRUHQKfRBfynbDwtlSOd42mx6sykBG63UFeNHw4emlUafBhsT\nNRxC7Mu5yZfZpyemAOMITni+KqC9T/K+34lkWNBrtW97gkL3zXrlwQuMyngD\nxEzOoWs4S1K5Tbusfb//isE=\n=Aeaq\n-----END PGP SIGNATURE-----\n"
+                    }
+                ],
+                "CalendarID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg=="
+            }
+        }
+    ],
+    "CalendarEvents": [
+        {"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","Action":1,"Event":{"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","CalendarID":"VX8u-IWOgMWQkLGkmYQUwHo-ef8iOiMwF5QEgiQq9lvSRhsFam4J1vRpUQR3qyWianfyPk-JkUo85EtyQgPC3w==","SharedEventID":"086ENk2jUDwGC1eHdDqvG2kRdjggn1UXQ6J6wGFkb9_VQ_XjUuq7rITHPBze37Pz509qh4gwbJPUGrEdyapYIxPFw9g67hf4-fr0HR8fs7c=","StartTime":1604052000,"StartTimezone":"Europe/Zurich","EndTime":1604053800,"EndTimezone":"Europe/Zurich","FullDay":0,"UID":"f2dO_CLd0ySzf_JhqvDoppe2TQQ_@proton.me","RecurrenceID":null,"Exdates":[],"RRule":null,"CreateTime":1604051860,"ModifyTime":1604051860,"IsOrganizer":1}},
+        {"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","Action":1,"Event":{"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","CalendarID":"VX8u-IWOgMWQkLGkmYQUwHo-ef8iOiMwF5QEgiQq9lvSRhsFam4J1vRpUQR3qyWianfyPk-JkUo85EtyQgPC3w==","SharedEventID":"086ENk2jUDwGC1eHdDqvG2kRdjggn1UXQ6J6wGFkb9_VQ_XjUuq7rITHPBze37Pz509qh4gwbJPUGrEdyapYIxPFw9g67hf4-fr0HR8fs7c=","StartTime":1604052000,"StartTimezone":"Europe/Zurich","EndTime":1604053800,"EndTimezone":"Europe/Zurich","FullDay":0,"UID":"f2dO_CLd0ySzf_JhqvDoppe2TQQ_@proton.me","RecurrenceID":null,"Exdates":[],"RRule":null,"CreateTime":1604051860,"ModifyTime":1604051860,"IsOrganizer":1}},
+        {"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","Action":1,"Event":{"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","CalendarID":"VX8u-IWOgMWQkLGkmYQUwHo-ef8iOiMwF5QEgiQq9lvSRhsFam4J1vRpUQR3qyWianfyPk-JkUo85EtyQgPC3w==","SharedEventID":"086ENk2jUDwGC1eHdDqvG2kRdjggn1UXQ6J6wGFkb9_VQ_XjUuq7rITHPBze37Pz509qh4gwbJPUGrEdyapYIxPFw9g67hf4-fr0HR8fs7c=","StartTime":1604052000,"StartTimezone":"Europe/Zurich","EndTime":1604053800,"EndTimezone":"Europe/Zurich","FullDay":0,"UID":"f2dO_CLd0ySzf_JhqvDoppe2TQQ_@proton.me","RecurrenceID":null,"Exdates":[],"RRule":null,"CreateTime":1604051860,"ModifyTime":1604051860,"IsOrganizer":1}}
+    ],
+    "CalendarSettings": [
+        {
+            "ID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg==",
+            "Action": 1,
+            "CalendarSettings": {
+                "ID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg==",
+                "CalendarID": "rmnLoH671QYema5ZRQxpa6dB-jl6xHj9Fw-dXXRBGvnc0qmuO9FqE_1_nwH3bw2RfIk5XRGQnSk_81d3K21slg==",
+                "DefaultEventDuration": 30,
+                "DefaultPartDayNotifications": [
+                    {
+                        "Type": 1,
+                        "Trigger": "-PT15M"
+                    }
+                ],
+                "DefaultFullDayNotifications": [
+                    {
+                        "Type": 1,
+                        "Trigger": "-PT15H"
+                    }
+                ]
+            }
+        }
+    ],
+    "CalendarAlarms": [
+        {
+            "ID": "ymHQ5vTyT2Xq_moP6uXQ9R2SenuqtH457s82WNFs44Njjq3b6UNMzBZ6NMRQTyFs73J5NgfTPgWVmrdKc8DdVw==",
+            "Action": 1,
+            "Alarm": {
+                "Occurrence": 1583648100,
+                "Trigger": "-PT15M",
+                "Action": 2,
+                "ID": "ymHQ5vTyT2Xq_moP6uXQ9R2SenuqtH457s82WNFs44Njjq3b6UNMzBZ6NMRQTyFs73J5NgfTPgWVmrdKc8DdVw==",
+                "EventID": "P75T2IwiYBkr_tf1VggIp69_vC0LWMM8yWQmz72EWsg5C54Y7FmV0gmpxOw8jiFRaFmX1Ylm1IFqSXNoJubBng==",
+                "MemberID": "m-dPNuHcP8N4xfv6iapVg2wHifktAD1A1pFDU95qo5f14Vaw8I9gEHq-3GACk6ef3O12C3piRviy_D43Wh7xxQ==",
+                "CalendarID": "m-dPNuHcP8N4xfv6iapVg2wHifktAD1A1pFDU95qo5f14Vaw8I9gEHq-3GACk6ef3O12C3piRviy_D43Wh7xxQ=="
+            }
+        }
+    ],
+    "UsedSpace": 3346854,
+    "Notices": []
+}

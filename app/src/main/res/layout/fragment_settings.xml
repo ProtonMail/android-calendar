@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="12dp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_general"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_element_small"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/settings_account_settings_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/account_settings_header"
+            style="@style/Text.DefaultSmall.Strong.Brand"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/settings_account_item"/>
+
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/settings_account_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settings_account_settings_title"
+            app:layout_constraintBottom_toTopOf="@id/settings_account_settings_separator"
+            tools:composableName="me.proton.core.accountmanager.presentation.compose.AccountSettingsItemKt.PreviewAccountPrimarySettingsItem" />
+
+        <View
+            android:id="@+id/settings_account_settings_separator"
+            style="@style/Separator"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/settings_account_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/settings_app_settings_title"/>
+
+        <TextView
+            android:id="@+id/settings_app_settings_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_app_settings_title"
+            style="@style/Text.DefaultSmall.Strong.Brand"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toBottomOf="@id/settings_account_settings_separator"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/settings_general_press"/>
+
+        <include
+            android:id="@+id/settings_general_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/settings_app_settings_title"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_general_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_general_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            app:layout_constraintTop_toBottomOf="@id/settings_app_settings_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_general_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_general_info"
+            style="@style/Text.Caption.Weak"
+            android:layout_marginBottom="@dimen/spacing_page"
+            app:layout_constraintTop_toBottomOf="@+id/settings_general_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/settings_general_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_general_title"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_general_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/settings_general"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_import"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/settings_general_separator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/settings_import_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_import_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/import_from_google_title"
+            style="@style/Text.Default"
+            android:layout_marginTop="@dimen/default_margin_text_vertical"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            android:layout_marginBottom="@dimen/spacing_page"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/settings_import_separator"
+        style="@style/Separator"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/settings_import"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_calendars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_import_separator">
+
+        <TextView
+            android:id="@+id/settings_calendars_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_calendars"
+            style="@style/Text.DefaultSmall.Strong.Brand"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/settings_calendars_title_add"/>
+
+        <TextView
+            android:id="@+id/settings_calendars_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:text="@string/settings_calendars_empty"
+            style="@style/Text.Caption.Weak"
+            app:layout_constraintTop_toBottomOf="@+id/settings_calendars_title"
+            app:layout_constraintStart_toStartOf="@+id/settings_calendars_title"
+            app:layout_constraintEnd_toEndOf="@+id/settings_calendars_title"/>
+
+        <TextView
+            android:id="@+id/settings_calendars_title_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_calendar_button"
+            style="@style/Text.Caption"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ripple_background_add_calendar"
+            app:layout_constraintTop_toTopOf="@+id/settings_calendars_title"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_calendars_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/settings_calendars_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="8dp"
+            tools:listitem="@layout/item_settings_calendar"
+            tools:itemCount="3"
+            android:overScrollMode="never"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_calendars_subtitle"/>
+
+        <View
+            android:id="@+id/settings_calendars_separator"
+            style="@style/Separator"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/settings_calendars_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/settings_other_calendars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/settings_calendars">
+
+        <TextView
+            android:id="@+id/settings_other_calendars_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_other_calendars"
+            style="@style/Text.DefaultSmall.Strong.Brand"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/settings_other_calendars_title_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_calendar_button"
+            android:visibility="gone"
+            tools:visibility="visible"
+            style="@style/Text.Caption"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ripple_background_add_calendar"
+            app:layout_constraintTop_toTopOf="@+id/settings_other_calendars_title"
+            app:layout_constraintBottom_toBottomOf="@+id/settings_other_calendars_title"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/settings_other_calendars_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settings_other_calendars_title"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_settings_calendar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

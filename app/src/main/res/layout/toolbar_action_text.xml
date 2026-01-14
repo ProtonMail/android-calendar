@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/toolbar_action_text"
+        style="@style/Text.Default.Strong"
+        android:textColor="?attr/proton_text_accent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/spacing_page"
+        android:paddingEnd="@dimen/spacing_page"
+        tools:text="Done"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:clickable="false"
+        android:focusable="false"/>
+
+</FrameLayout>

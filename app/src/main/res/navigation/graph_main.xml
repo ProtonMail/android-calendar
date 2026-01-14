@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/rootFragment">
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="me.proton.android.calendar.presentation.calendar.fragment.MonthFragment"
+        android:label=""
+        tools:layout="@layout/fragment_month">
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_event_details"
+            app:destination="@id/nav_event_details" />
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_event_form"
+            app:destination="@id/nav_event_form" />
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_bug_report"
+            app:destination="@id/nav_bug_report" />
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_settings"
+            app:destination="@id/nav_settings" />
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_calendar_form"
+            app:destination="@id/nav_calendar_form" />
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_holiday_calendar_form"
+            app:destination="@id/nav_holiday_calendar_form" />
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_import_assistant"
+            app:destination="@id/nav_import_assistant" />
+        <action
+            android:id="@+id/action_nav_calendar_to_nav_import_assistant_guide"
+            app:destination="@id/nav_import_assistant_guide" />
+        <deepLink
+            android:id="@+id/deepLink4"
+            app:uri="proton-calendar://protonmail.com/month" />
+        <argument
+            android:name="date"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <deepLink
+            android:id="@+id/deepLink7"
+            app:uri="proton-calendar://protonmail.com/month/details?date={date}" />
+        <action
+            android:id="@+id/action_nav_calendar_to_searchFragment"
+            app:destination="@id/nav_search" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/nav_settings"
+        android:name="me.proton.android.calendar.presentation.settings.fragment.SettingsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_nav_settings_to_nav_account_settings"
+            app:destination="@id/nav_account_settings" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_general_settings"
+            app:destination="@id/nav_general_settings" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_calendar_form"
+            app:destination="@id/nav_calendar_form" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_holiday_calendar_form"
+            app:destination="@id/nav_holiday_calendar_form" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_import_assistant_guide"
+            app:destination="@id/nav_import_assistant_guide" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_import_assistant"
+        android:name="me.proton.android.calendar.presentation.importAssistant.fragment.ImportAssistantFragment"
+        android:label=""
+        tools:layout="@layout/fragment_import_assistant">
+        <deepLink
+            android:id="@+id/deepLinkImportAssistant"
+            android:autoVerify="true"
+            app:uri="proton-calendar://protonmail.com/import?code={code}" />
+        <argument
+            android:name="code"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_import_assistant_to_nav_import_assistant_status"
+            app:destination="@id/nav_import_assistant_status" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_import_assistant_guide"
+        android:name="me.proton.android.calendar.presentation.importAssistant.fragment.ImportAssistantGuideFragment"
+        android:label=""
+        tools:layout="@layout/fragment_import_assistant_guide">
+        <deepLink
+            android:id="@+id/deepLinkImportAssistantGuide"
+            android:autoVerify="true"
+            app:uri="proton-calendar://protonmail.com/importGuide" />
+        <action
+            android:id="@+id/action_nav_import_assistant_guide_to_nav_import_assistant_status"
+            app:destination="@id/nav_import_assistant_status" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_import_assistant_status"
+        android:name="me.proton.android.calendar.presentation.importAssistant.fragment.ImportAssistantStatusFragment"
+        android:label=""
+        tools:layout="@layout/fragment_import_assistant_status">
+        <deepLink
+            android:id="@+id/deepLinkImportAssistantStatus"
+            android:autoVerify="true"
+            app:uri="proton-calendar://protonmail.com/importStatus" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_account_settings"
+        android:name="me.proton.android.calendar.presentation.settings.fragment.AccountSettingsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_account_settings">
+        <action
+            android:id="@+id/action_nav_general_settings_to_nav_settings"
+            app:destination="@id/nav_settings" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_general_settings"
+        android:name="me.proton.android.calendar.presentation.settings.fragment.GeneralSettingsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_general_settings">
+        <action
+            android:id="@+id/action_nav_general_settings_to_nav_settings"
+            app:destination="@id/nav_settings" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_calendar_form"
+        android:name="me.proton.android.calendar.presentation.settings.fragment.CalendarFormFragment"
+        android:label=""
+        tools:layout="@layout/fragment_calendar_form">
+        <argument
+            android:name="calendarId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_nav_calendar_form_to_nav_settings"
+            app:destination="@id/nav_settings" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_holiday_calendar_search"
+        android:name="me.proton.android.calendar.presentation.holidayCalendar.fragment.HolidayCalendarSearchFragment"
+        android:label=""
+        tools:layout="@layout/fragment_holiday_calendar_search">
+        <action
+            android:id="@+id/action_nav_holiday_calendar_search_to_nav_holiday_calendar_form"
+            app:destination="@id/nav_holiday_calendar_form" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_holiday_calendar_form"
+        android:name="me.proton.android.calendar.presentation.holidayCalendar.fragment.HolidayCalendarFormFragment"
+        android:label=""
+        tools:layout="@layout/fragment_holiday_calendar_form">
+        <argument
+            android:name="calendarId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_nav_holiday_calendar_form_to_nav_settings"
+            app:destination="@id/nav_settings" />
+        <action
+            android:id="@+id/action_nav_holiday_calendar_form_to_nav_holiday_calendar_search"
+            app:destination="@id/nav_holiday_calendar_search" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_bug_report"
+        android:name="me.proton.android.calendar.presentation.bugReport.BugReportFragment"
+        android:label=""
+        tools:layout="@layout/fragment_bug_report">
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_event_details"
+        android:name="me.proton.android.calendar.presentation.calendar.fragment.EventDetailsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_event_details">
+        <action
+            android:id="@+id/action_nav_event_details_to_nav_event_form"
+            app:destination="@id/nav_event_form" />
+        <action
+            android:id="@+id/action_nav_event_details_to_nav_event_form_personal"
+            app:destination="@id/nav_event_form_personal" />
+        <deepLink
+            android:id="@+id/deepLink"
+            android:autoVerify="true"
+            app:uri="proton-calendar://protonmail.com/event/details?eventId={eventId}&amp;occurrenceNumber={occurrenceNumber}" />
+        <argument
+            android:name="eventId"
+            app:argType="string" />
+        <argument
+            android:name="occurrenceNumber"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </dialog>
+
+    <dialog
+        android:id="@+id/nav_event_form"
+        android:name="me.proton.android.calendar.presentation.calendar.fragment.EventFormFragment"
+        android:label="EventFormFragment">
+        <deepLink
+            android:id="@+id/deepLink2"
+            android:autoVerify="true"
+            app:uri="proton-calendar://protonmail.com/event/edit?eventId={eventId}&amp;initStartDate={initStartDate}&amp;initStartTime={initStartTime}&amp;occurrenceNumber={occurrenceNumber}" />
+        <deepLink
+            android:id="@+id/deepLink3"
+            android:autoVerify="true"
+            app:uri="proton-calendar://protonmail.com/event/create?eventId={eventId}&amp;initStartDate={initStartDate}&amp;initStartTime={initStartTime}&amp;occurrenceNumber={occurrenceNumber}" />
+        <deepLink
+            android:id="@+id/deepLink4"
+            android:autoVerify="true"
+            app:uri="proton-calendar://protonmail.com/event/create?prefill={prefill}&amp;startMillis={startMillis}&amp;endMillis={endMillis}&amp;timeZoneId={timeZoneId}&amp;allDay={allDay}&amp;title={title}&amp;description={description}&amp;location={location}&amp;rRule={rRule}" />
+        <argument
+            android:name="eventId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="initStartDate"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="initStartTime"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="occurrenceNumber"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="prefill"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="startMillis"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="endMillis"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="timeZoneId"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="allDay"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="location"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="rRule"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/action_nav_event_form_to_nav_event_form_attendees"
+            app:destination="@id/nav_event_form_attendees" />
+        <action
+            android:id="@+id/action_nav_event_form_to_nav_event_form_recurrence"
+            app:destination="@id/nav_event_form_recurrence" />
+        <action
+            android:id="@+id/action_nav_event_form_to_nav_event_form_alarm"
+            app:destination="@id/nav_event_form_alarm" />
+    </dialog>
+    <dialog
+        android:id="@+id/nav_event_form_personal"
+        android:name="me.proton.android.calendar.presentation.calendar.fragment.EventFormPersonalFragment"
+        android:label="EventFormPersonalFragment">
+        <deepLink
+            android:id="@+id/deepLinkEditPersonal"
+            android:autoVerify="true"
+            app:uri="proton-calendar://protonmail.com/event/editPersonal?eventId={eventId}&amp;occurrenceNumber={occurrenceNumber}" />
+        <argument
+            android:name="eventId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="occurrenceNumber"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_nav_event_form_to_nav_event_form_alarm"
+            app:destination="@id/nav_event_form_alarm" />
+    </dialog>
+    <dialog
+        android:id="@+id/nav_event_form_attendees"
+        android:name="me.proton.android.calendar.presentation.calendar.fragment.EventFormAttendeesFragment"
+        android:label="EventFormAttendeesFragment">
+        <argument
+            android:name="readOnly"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </dialog>
+    <dialog
+        android:id="@+id/nav_event_form_alarm"
+        android:name="me.proton.android.calendar.presentation.calendar.fragment.EventFormAlarmFragment"
+        android:label="EventFormAlarmFragment">
+        <argument
+            android:name="isAllDay"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <argument
+            android:name="defaultNotificationsType"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </dialog>
+    <dialog
+        android:id="@+id/nav_event_form_recurrence"
+        android:name="me.proton.android.calendar.presentation.calendar.fragment.EventFormRecurrenceFragment"
+        android:label="EventFormEditRecurrenceFragment" />
+    <fragment
+        android:id="@+id/rootFragment"
+        android:name="me.proton.android.calendar.presentation.calendar.fragment.RootFragment"
+        android:label="RootFragment" >
+        <deepLink
+            android:id="@+id/deepLink5"
+            app:uri="proton-calendar://protonmail.com/root" />
+        <action
+            android:id="@+id/action_rootFragment_to_nav_calendar"
+            app:destination="@id/nav_calendar" />
+    </fragment>
+    <dialog
+        android:id="@+id/nav_search"
+        android:name="me.proton.android.calendar.presentation.calendar.fragment.SearchFragment">
+        <action
+            android:id="@+id/action_searchFragment_to_nav_event_details"
+            app:destination="@id/nav_event_details" />
+        <deepLink
+            android:id="@+id/deepLink6"
+            android:autoVerify="true"
+            app:uri="proton-calendar://protonmail.com/search" />
+    </dialog>
+
+</navigation>

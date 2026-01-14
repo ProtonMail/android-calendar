@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(शीर्षक नहीं है)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">(ईमेल पता नहीं है)</string>
+    <string name="default_user_display_name">(बेनाम)</string>
+    <string name="toast_copied_to_clipboard">क्लिपबोर्ड पर कॉपी किया गया</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">कार्यक्रम मिटाएँ</string>
+    <string name="dialog_title_delete_recurring_event">दोहराया जाने वाला कार्यक्रम मिटाएँ</string>
+    <string name="dialog_description_delete_event">क्या आप इस कार्यक्रम को मिटाना चाहेंगे?</string>
+    <string name="dialog_description_delete_recurring_event">क्या आप इस श्रृंखला के सारे कार्यक्रमों को मिटाना चाहेंगे?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">इस कार्यक्रम को आयोजक द्वारा अपडेट कर दिया गया है। क्या आप इस कार्यक्रम को मिटाना चाहेंगे?</string>
+    <string name="dialog_button_delete">मिटाएँ</string>
+    <string name="dialog_button_cancel">रद्द करें</string>
+    <string name="dialog_button_continue">जारी रखें</string>
+    <string name="dialog_button_close">बंद करें</string>
+    <string name="dialog_button_remove">हटाएँ</string>
+    <string name="dialog_button_download">डाउनलोड करें</string>
+    <string name="dialog_button_update">अपडेट करें</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">कार्यक्रम के प्रतिभागियों को एक रद्दीकरण ईमेल भेजा जाएगा। क्या आप इस कार्यक्रम को मिटाना चाहेंगे?</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">आपका पता निष्क्रिय है। कार्यक्रम के प्रतिभागियों को रद्दीकरण ईमेल नहीं भेजा जा सकता है। क्या आप फ़िर भी इस कार्यक्रम को मिटाना चाहेंगे?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">कार्यक्रम के प्रतिभागियों को एक रद्दीकरण ईमेल भेजा जाएगा। क्या आप इस श्रृंखला के सारे कार्यक्रमों को मिटाना चाहेंगे?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">आपका पता निष्क्रिय है। कार्यक्रम के प्रतिभागियों को रद्दीकरण ईमेल नहीं भेजा जा सकता है। क्या आप फ़िर भी इस श्रृंखला के सारे कार्यक्रमों को मिटाना चाहेंगे?</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">इस कार्यक्रम के आयोजक को सूचित कर दिया जाएगा कि आपने उनका निमंत्रण अस्वीकार कर दिया है। क्या आप इस कार्यक्रम को मिटाना चाहेंगे?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">इस कार्यक्रम के आयोजक को सूचित नहीं किया जाएगा कि आप आमंत्रण को अस्वीकार करते हैं क्योंकि आप आमंत्रित पते से ईमेल नहीं भेज सकते हैं। क्या आप इस कार्यक्रम को मिटाना चाहेंगे?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">इस कार्यक्रम श्रृंखला के आयोजक को सूचित किया जाएगा कि आपने आमंत्रण अस्वीकार कर दिया है। क्या आप इस श्रृंखला के सभी कार्यक्रमों को मिटाना चाहेंगे?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">इस कार्यक्रम श्रृंखला के आयोजक को सूचित नहीं किया जाएगा कि आपने आमंत्रण को अस्वीकार कर दिया है क्योंकि आप आमंत्रित पते से ईमेल नहीं भेज सकते। क्या आप फिर भी इस श्रृंखला के सभी कार्यक्रमों को मिटाना चाहते हैं?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">इस कार्यक्रम को अपडेट कर दिया गया है। इस कार्यक्रम के आयोजक को सूचित किया जाएगा कि आप आमंत्रण को अस्वीकार करते हैं। क्या आप इस कार्यक्रम को मिटाना चाहेंगे?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">इस कार्यक्रम को अपडेट कर दिया गया है। इस कार्यक्रम के आयोजक को सूचित नहीं किया जाएगा कि आप आमंत्रण को अस्वीकार करते हैं क्योंकि आप आमंत्रित पते से ईमेल नहीं भेज सकते हैं। क्या आप इस कार्यक्रम को मिटाना चाहेंगे?</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">जो घटनाएं आयोजक द्वारा पहले अपडेट की गई थीं, वे रखी जाएंगी, लेकिन आपके उत्तर नष्ट हो जाएँगे</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">जो घटनाएं आयोजक द्वारा पहले अपडेट की गई थीं, वे रखी जाएंगी</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">आयोजक को सूचित नहीं किया जा सकता कि आपने आमंत्रण अस्वीकार कर दिया है:\n\n• %1$s\n\n क्या आप फिर भी इस कार्यक्रम को मिटाना चाहेंगे?</string>
+    <string name="dialog_button_set">सेट करें</string>
+    <string name="dialog_button_ok">ठीक</string>
+    <string name="action_save">सहेजें</string>
+    <string name="action_done">पूरा हुआ</string>
+    <string name="action_edit">संपादित करें</string>
+    <string name="action_delete">मिटाएँ</string>
+    <string name="action_add">जोड़ें</string>
+    <string name="action_remove">हटाएँ</string>
+    <string name="action_leave">छोड़ें</string>
+    <string name="action_recreate">साफ़ करें</string>
+    <string name="action_today">आज</string>
+    <string name="action_create_event">कार्यक्रम बनाएँ</string>
+    <string name="action_mark_default">डिफ़ॉल्ट रूप से चिह्नित करें</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">कोई कार्यक्रम नहीं है</string>
+    <string name="agenda_loading_events">कार्यक्रम लोड हो रहे हैं…</string>
+    <string name="agenda_loading_events_error">कार्यक्रमों को लोड करते समय त्रुटि हुई</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+ %1$d और</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">पूरे दिन</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s\u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">कार्यक्रम के वक़्त</string>
+    <string name="event_alarm_label_at_event_time_by_email">कार्यक्रम के वक़्त ईमेल द्वारा</string>
+    <string name="event_alarm_label_on_the_same_day">उसी दिन</string>
+    <string name="event_alarm_label_before">%1$s पहले</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s पहले ईमेल द्वारा</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s %2$s बजे</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s %2$s बजे ईमेल द्वारा</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s पहले %2$s बजे</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s पहले %2$s बजे ईमेल द्वारा</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s %2$s को</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s %2$d तारीख़ को</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s %2$s को</string>
+    <string name="event_recurrence_none">दोहराया नहीं जाता</string>
+    <string name="event_recurrence_daily">हर दिन</string>
+    <string name="event_recurrence_weekly">हर हफ़्ते</string>
+    <string name="event_recurrence_monthly">हर महीने</string>
+    <string name="event_recurrence_yearly">हर साल</string>
+    <string name="event_recurrence_weekly_on_all_days">सभी दिन</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">%1$s तक</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">%1$s तक (%2$s)</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">रद्द किया गया</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(अक्षम)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(डिफ़ॉल्ट)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d हाँ</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d शायद</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d नहीं</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d ने उत्तर नहीं दिया है</string>
+    <string name="event_attendee_is_organizer">आप आयोजक है</string>
+    <string name="event_attendee_organizer">आयोजक</string>
+    <string name="event_attendee_optional">वैकल्पिक</string>
+    <string name="event_attendee_is_current_user">आप</string>
+    <string name="event_answer_attending">शामिल होंगे?</string>
+    <string name="event_answer_yes">हाँ</string>
+    <string name="event_answer_no">नहीं</string>
+    <string name="event_answer_maybe">शायद</string>
+    <string name="event_decryption_error_dialog_title">कार्यक्रम डिक्रिप्ट करने में असफल</string>
+    <string name="event_decryption_error_dialog_message">इस कार्यक्रम के कंटेंट का डिक्रिप्शन असफल रहा।</string>
+    <string name="event_decryption_error_dialog_confirmation">कार्यक्रम मिटाएँ</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">कार्यक्रम मिटाएँ</string>
+    <string name="event_decryption_error_dialog_close">बंद करें</string>
+    <string name="event_signature_verification_failure">इस कार्यक्रम का हस्ताक्षर सत्यापन असफल रहा। <a href="https://proton.me/support/what-is-a-digital-signature">ज़्यादा जानें</a></string>
+    <string name="event_signature_verification_in_progress">कार्यक्रम के हस्ताक्षर का सत्यापन जारी है।</string>
+    <string name="event_signature_verification_network_error">कार्यक्रम के हस्ताक्षर का सत्यापन एक गड़बड़ी की वजह से रुक गया। <a href="">फिर से प्रयास करें</a></string>
+    <string name="event_change_answer_recurring_title">दोहराया जाने वाला कार्यक्रम अपडेट करें</string>
+    <string name="event_change_answer_recurring_description">क्या आप इस श्रृंखला के सभी कार्यक्रमों के लिए अपना उत्तर बदलना चाहेंगे?</string>
+    <string name="event_change_answer_recurring_overwrite_description">क्या आप इस श्रृंखला के सभी कार्यक्रमों के लिए अपना उत्तर बदलना चाहेंगे?\nआयोजक द्वारा पहले अपडेट की गई कुछ घटनाओं के लिए दिए गए आपके उत्तर नष्ट हो जाएँगे।</string>
+    <string name="event_change_answer_recurring_single_edit_description">इस कार्यक्रम को आयोजक द्वारा अपडेट किया गया है। क्या आप इस श्रृंखला की केवल इस घटना के लिए अपना उत्तर बदलना चाहेंगे?</string>
+    <string name="event_change_answer_recurring_cancel">रद्द करें</string>
+    <string name="event_change_answer_recurring_confirm">अपडेट करें</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s ने %2$s के लिए आपका निमंत्रण स्वीकार कर लिया है</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s ने %2$s के लिए आपका निमंत्रण अस्वीकार कर दिया है</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">%1$s ने %2$s के लिए आपका निमंत्रण अस्थायी रूप से स्वीकार किया है</string>
+    <string name="event_organizer_send_prefs_error_title">आयोजक को सूचित नहीं किया जा सकता है</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">आयोजक को यह सूचित नहीं किया जा सकता कि आपने निमंत्रण स्वीकार कर लिया है</string>
+    <string name="event_organizer_send_prefs_message_declined_title">आयोजक को यह सूचित नहीं किया जा सकता कि आपने निमंत्रण अस्वीकार कर दिया है</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">आयोजक को यह सूचित नहीं किया जा सकता कि आपने निमंत्रण अस्थायी रूप से स्वीकार किया है</string>
+    <string name="event_organizer_send_prefs_message_default_title">आयोजक को यह सूचित नहीं किया जा सकता कि आपने निमंत्रण का उत्तर दिया है</string>
+    <string name="event_organizer_send_prefs_button_title">ठीक</string>
+    <string name="event_attendees_send_prefs_error_title">प्रतिभागियों को सूचित नहीं किया जा सकता है</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">आपके बदलाव के बारे में किसी भी प्रतिभागियों को सूचित नहीं किया जा सकता:\n\n• %1$s\n\nफिर भी जारी रखें?</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">निम्नलिखित प्रतिभागियों को आपके बदलाव के बारे में सूचित नहीं किया जा सकता:\n\n• %1$s\n\nफिर भी जारी रखें?</string>
+    <string name="event_attendees_send_prefs_error_confirm">जारी रखें</string>
+    <string name="event_attendees_send_prefs_error_cancel">रद्द करें</string>
+    <string name="event_send_prefs_error_address_disabled">यह पता मौजूद नहीं है</string>
+    <string name="event_send_prefs_error_getting_contact">संपर्क डेटा प्राप्त नहीं किया जा सका</string>
+    <string name="event_send_prefs_error_network">नेटवर्क त्रुटि</string>
+    <string name="event_send_prefs_trusted_keys_invalid">विश्वसनीय कुंजियाँ अमान्य हैं</string>
+    <string name="event_send_prefs_public_keys_invalid">सार्वजनिक कुंजियाँ अमान्य हैं</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">संपर्क हस्ताक्षर अमान्य है</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">ज़ूम मीटिंग में शामिल हों</string>
+    <string name="zoom_meeting_title">ज़ूम मीटिंग</string>
+    <string name="generic_meeting_id">ID: %1$s</string>
+    <string name="generic_meeting_password">Password: %1$s</string>
+    <string name="generic_meeting_more_details">More details</string>
+    <string name="generic_meeting_less_details">Less details</string>
+    <string name="generic_meeting_host">Meeting host</string>
+    <string name="generic_meeting_link">Meeting link</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Joining instructions</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">नया कार्यक्रम</string>
+    <string name="event_text_edit_event">कार्यक्रम संपादित करें</string>
+    <string name="event_hint_title">शीर्षक जोड़ें</string>
+    <string name="event_hint_location">स्थान जोड़ें</string>
+    <string name="event_text_add_participants">प्रतिभागी जोड़ें</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">प्रतिभागी (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">आप</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ %1$d और</string>
+    <string name="event_text_switch_all_day">पूरे दिन</string>
+    <string name="event_text_date_start">शुरूआत</string>
+    <string name="event_text_date_end">समाप्त</string>
+    <string name="event_text_date_repeat">दोहराएँ</string>
+    <string name="event_text_date_repeat_never">दोहराएं नहीं</string>
+    <string name="event_text_attendees">प्रतिभागी</string>
+    <string name="event_text_attendees_none">कोई नहीं</string>
+    <string name="event_text_calendar">कैलेंडर</string>
+    <string name="event_text_timezone_start">समय क्षेत्र</string>
+    <string name="invite_in_shared_calendar_disclaimer">निमंत्रण भेजना केवल व्यक्तिगत कैलेंडर के भीतर उपलब्ध है।</string>
+    <string name="invite_change_calendar_disclaimer">निमंत्रण से जुड़े कैलेंडर को संशोधित करना संभव नहीं है।</string>
+    <string name="invite_change_attendees_disclaimer">निमंत्रण से जुड़े प्रतिभागियों को संशोधित करना अभी संभव नहीं है।</string>
+    <string name="change_calendar_recurring_disclaimer">दोहराए जाने वाले कार्यक्रम के लिए कैलेंडर बदलना अभी संभव नहीं है।</string>
+    <string name="update_event">कार्यक्रम अपडेट करें</string>
+    <string name="update_invite_send_email">कार्यक्रम के प्रतिभागियों को निमंत्रण अपडेट भेजा जाएगा।</string>
+    <string name="update_recurring_event">दोहराया जाने वाला कार्यक्रम अपडेट करें</string>
+    <string name="update_recurring_all_events">क्या आप इस श्रृंखला के सभी कार्यक्रम अपडेट करना चाहेंगे?</string>
+    <string name="update_recurring_invite_send_email">आप इस श्रृंखला के सभी कार्यक्रम अपडेट करेंगे। कार्यक्रम के प्रतिभागियों को निमंत्रण अपडेट भेजा जाएगा।</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">आप क्या ढूंढ़ रहें हैं?</string>
+    <string name="search_empty_results_title">कोई परिणाम नहीं मिला</string>
+    <string name="search_empty_results_subtitle">कोई और शब्द आज़माएँ, जैसे: रिया, जन्मदिन, वेबिनार, बुक क्लब।</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">कैलेंडर डाउनलोड हो रहा है (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">शेष समय: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">शेष समय की गणना की जा रही है…</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">लगभग हो गया</string>
+    <string name="search_downloading_pause">डाउनलोड रोकें</string>
+    <string name="search_settings_dialog_toggle_off_title">सभी डाउनलोड किए गए कैलेंडर हटाएँ?</string>
+    <string name="search_settings_dialog_toggle_off_text">यदि आप खोजना चाहते हैं, तो आपको अपने कैलेंडर दोबारा डाउनलोड करने होंगे।</string>
+    <string name="search_settings_dialog_toggle_on_title">इस डिवाइस पे कैलेंडर डाउनलोड करें?</string>
+    <string name="search_settings_dialog_toggle_on_text">यह आवश्यक है ताकि आप खोज सकें।</string>
+    <string name="search_onboarding_header">आप अपना कैलेंडर खोजना चाहते हैं?</string>
+    <string name="search_onboarding_text">सबसे पहले आपको अपने कैलेंडर की एक एन्क्रिप्टेड कॉपी डाउनलोड करने की आवश्यकता है। इसमें केवल कुछ पल लगेगा, और आप ऐप का उपयोग जारी रख सकते हैं। <a href="https://proton.me/support/calendar-search">ज़्यादा जानें</a></string>
+    <string name="search_onboarding_action_download_calendars">कैलेंडर डाउनलोड करें</string>
+    <string name="search_onboarding_action_pause">रोके</string>
+    <string name="search_onboarding_action_resume">जारी रखें</string>
+    <string name="search_onboarding_action_retry">फिर प्रयास करें</string>
+    <string name="search_onboarding_progress_header_ongoing">कैलेंडर डाउनलोड हो रहा है…</string>
+    <string name="search_onboarding_progress_header_completed">डाउनलोड हो गया</string>
+    <string name="search_onboarding_progress_header_paused">कैलेंडर डाउनलोड रोका गया</string>
+    <string name="search_onboarding_progress_header_error">कैलेंडर डाउनलोड करने में त्रुटि हुई</string>
+    <string name="search_spotlight_activation_snack">कैलेंडर खोज सक्रिय की गई</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">सूचना जोड़ें</string>
+    <string name="event_text_description">विवरण</string>
+    <string name="event_hint_description">विवरण जोड़ें</string>
+    <string name="event_text_custom">अनुकूलित</string>
+    <string name="event_alert_invalid_start_end_date">कार्यक्रम की शुरूआत की तारीख़, समाप्ति की तारीख़ से पहले होनी चाहिए</string>
+    <string name="event_alarms_title">सूचनाएँ</string>
+    <string name="event_custom_alarms_field">सूचित करें</string>
+    <string name="event_custom_alarms_title">अनुकूलित सूचनाएँ</string>
+    <string name="event_alarm_partial_day_1">कार्यक्रम के वक़्त</string>
+    <string name="event_alarm_partial_day_2">10 मिनट</string>
+    <string name="event_alarm_partial_day_3">30 मिनट</string>
+    <string name="event_alarm_partial_day_4">1 घंटा</string>
+    <string name="event_alarm_partial_day_5">1 हफ़्ता</string>
+    <string name="event_alarm_all_day_1">उसी दिन %1$s बजे</string>
+    <string name="event_alarm_all_day_2">1 दिन पहले %1$s बजे</string>
+    <string name="event_alarm_all_day_3">1 सप्ताह पहले %1$s बजे</string>
+    <string name="event_alarm_all_day_4">3 सप्ताह पहले %1$s बजे</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">%1$s बजे</string>
+    <string name="event_alarm_action">के माध्यम से भेजें</string>
+    <string name="event_alarm_action_notification">सूचना</string>
+    <string name="event_alarm_action_email">ईमेल</string>
+    <string name="event_alarm_same_day">उसी दिन</string>
+    <string name="event_recurrence_1">दोहराएं नहीं</string>
+    <string name="event_recurrence_2">हर दिन</string>
+    <string name="event_recurrence_3">हर हफ़्ते</string>
+    <string name="event_recurrence_4">हर महीने</string>
+    <string name="event_recurrence_5">हर साल</string>
+    <string name="event_recurrence_title">कितनी बार</string>
+    <string name="event_recurrence_custom_title">अनुकूलित दोहराव</string>
+    <string name="event_recurrence_occurs_every">दोहराएँ हर</string>
+    <string name="event_recurrence_occurs_on">को दोहराएं</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">%1$d तारीख़ को</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">%1$s को</string>
+    <string name="event_recurrence_ends_on">समाप्त होगा</string>
+    <string name="event_recurrence_ends_never">कभी नहीं</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">दिन</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">%1$s को</string>
+    <string name="event_recurrence_ends_after_count_prefix">के बाद</string>
+    <string name="event_recurring_edit_this">यह कार्यक्रम</string>
+    <string name="event_recurring_edit_this_and_future">यह और भविष्य के कार्यक्रम</string>
+    <string name="event_recurring_edit_all_events">सभी कार्यक्रम</string>
+    <string name="event_discard_changes_title">बदलाव ख़ारिज करें?</string>
+    <string name="event_discard_changes_description">आपके सभी असहेजित परिवर्तन खो जाएँगे।</string>
+    <string name="event_discard_changes_cancel">संपादन जारी रखें</string>
+    <string name="event_discard_changes_confirm">ख़ारिज करें</string>
+    <string name="event_recurring_update_this_title">दोहराए जाने वाले कार्यक्रम को अपडेट करें</string>
+    <string name="event_recurring_update_this_description">दोहराव में किए गए बदलाव हटा दिए जाएँगे</string>
+    <string name="event_recurring_update_all_description">इस श्रृंखला में किए गए पहले के संशोधन नष्ट हो जाएँगे</string>
+    <string name="event_recurring_update_this_cancel">रद्द करें</string>
+    <string name="event_recurring_update_this_confirm">अपडेट करें</string>
+    <string name="event_allow_contacts_title">Proton Calendar को आपके संपर्क एक्सेस करने की अनुमति दें?</string>
+    <string name="event_allow_contacts_description">अपनेआप भरने के लिए Proton Calendar को आपके संपर्क का एक्सेस चाहिए</string>
+    <string name="event_allow_contacts_cancel">नकारें</string>
+    <string name="event_allow_contacts_confirm">अनुमति दें</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">उत्तर: %1$s को %2$s बजे %3$s शुरू होने वाले कार्यक्रम के लिए निमंत्रण</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">उत्तर: %1$s को होने वाले कार्यक्रम के लिए निमंत्रण</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">उत्तर: %1$s से शुरू होने वाले कार्यक्रम के लिए निमंत्रण</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">%1$s को %2$s बजे %3$s शुरू होने वाले कार्यक्रम के लिए निमंत्रण</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">%1$s को होने वाले कार्यक्रम के लिए निमंत्रण</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">%1$s से शुरू होने वाले कार्यक्रम के लिए निमंत्रण</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">%1$s को %2$s बजे %3$s शुरू होने वाले कार्यक्रम के लिए अपडेट</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">%1$s को होने वाले कार्यक्रम के लिए अपडेट</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">%1$s से शुरू होने वाले कार्यक्रम के लिए अपडेट</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">%1$s को %2$s बजे %3$s शुरू होने वाले कार्यक्रम को रद्द किया गया</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">%1$s को होने वाले कार्यक्रम को रद्द किया गया</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">%1$s से शुरू होने वाले कार्यक्रम को रद्द किया गया</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">आपको %1$s के लिए निमंत्रित किया गया है\nतारीख़: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s को अपडेट किया गया है\nतारीख़: %2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (पूरे-दिन)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s को %2$s बजे %3$s - %4$s को %5$s बजे %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nस्थान: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nविवरण: %1$s</string>
+    <string name="event_send_invite_dialog_title">निमंत्रण भेजें</string>
+    <string name="event_send_invite_dialog_description">जो प्रतिभागी जोड़े गए हैं, उन्हें निमंत्रण भेजा जाएगा।</string>
+    <string name="event_send_invite_dialog_confirm">भेजें</string>
+    <string name="event_send_invite_dialog_cancel">रद्द करें</string>
+    <string name="event_add_participants_dialog_title">प्रतिभागी जोड़ें</string>
+    <string name="event_add_participants_dialog_description">जो प्रतिभागी जोड़े गए हैं, उन्हें निमंत्रण भेजा जाएगा।</string>
+    <string name="recurring_event_add_participants_dialog_description">इस श्रंखला के सभी कार्यक्रमों के लिए जोड़े गए प्रतिभागियों को निमंत्रण भेजा जाएगा।</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">इस श्रंखला के सभी कार्यक्रमों के लिए जोड़े गए प्रतिभागियों को निमंत्रण भेजा जाएगा।\nइस श्रंखला में पहले किए गए संशोधन नष्ट हो जाएँगे।</string>
+    <string name="event_add_participants_dialog_confirm">भेजें</string>
+    <string name="event_add_participants_dialog_cancel">रद्द करें</string>
+    <string name="event_remove_participants_dialog_title">प्रतिभागी हटाएँ</string>
+    <string name="event_remove_participants_dialog_description">हटाए गए प्रतिभागियों को रद्दीकरण ईमेल भेजा जाएगा।</string>
+    <string name="recurring_event_remove_participants_dialog_description">इस श्रंखला के सभी कार्यक्रमों के लिए हटाए गए प्रतिभागियों को रद्दीकरण ईमेल भेजा जाएगा।</string>
+    <string name="event_add_and_remove_participants_dialog_description">जोड़े और हटाए गए प्रतिभागियों को सूचित किया जाएगा।</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">जोड़े और हटाए गए प्रतिभागियों को इस श्रंखला के सभी कार्यक्रमों के बारे में सूचित किया जाएगा।</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s रद्द कर दिया गया है।</string>
+    <string name="event_save_changes">बदलाव सहेजें</string>
+    <string name="event_update_add_participants_dialog_description">मौजूदा और जोड़े गए प्रतिभागियों को सूचित किया जाएगा।</string>
+    <string name="recurring_event_update_add_participants_dialog_description">आप इस श्रंखला के सभी कार्यक्रमों को अपडेट करेंगे। मौजूदा और जोड़े गए प्रतिभागियों को सूचित किया जाएगा।</string>
+    <string name="event_update_remove_participants_dialog_description">मौजूदा और हटाए गए प्रतिभागियों को सूचित किया जाएगा।</string>
+    <string name="event_update_remove_all_participants_dialog_description">हटाए गए प्रतिभागियों को सूचित किया जाएगा।</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">आप इस श्रंखला के सभी कार्यक्रमों को अपडेट करेंगे। मौजूदा और हटाए गए प्रतिभागियों को सूचित किया जाएगा।</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">आप इस श्रंखला के सभी कार्यक्रमों को अपडेट करेंगे। हटाए गए प्रतिभागियों को सूचित किया जाएगा।</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">मौजूदा, जोड़े और हटाए गए प्रतिभागियों को सूचित किया जाएगा।</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">आप इस श्रंखला के सभी कार्यक्रमों को अपडेट करेंगे। मौजूदा, जोड़े और हटाए गए प्रतिभागियों को सूचित किया जाएगा।</string>
+    <string name="success_snack_email_update_recurring">प्रतिभागियों को सूचित किया गया और सभी कार्यक्रम अपडेट किए गए।</string>
+    <string name="success_snack_email_update">प्रतिभागियों को सूचित किया गया और कार्यक्रम अपडेट किया गया।</string>
+    <string name="success_snack_add_attendees_recurring">निमंत्रण भेजा गया और प्रतिभागियों को सभी कार्यक्रमों में जोड़ा गया।</string>
+    <string name="success_snack_add_attendees">निमंत्रण भेजा गया और प्रतिभागियों को जोड़ा गया</string>
+    <string name="success_snack_remove_attendees_recurring">रद्दीकरण भेजा गया और प्रतिभागियों को सभी कार्यक्रमों से हटाया गया</string>
+    <string name="success_snack_remove_attendees">रद्दीकरण भेजा गया और प्रतिभागियों को हटाया गया</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">मेरे कैलेंडर</string>
+    <string name="nav_view_subscribed_calendars">सदस्यता कैलेंडर</string>
+    <string name="nav_view_other_calendars">अन्य कैलेंडर</string>
+    <string name="nav_view_disabled_calendars">%1$s (अक्षम)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (सिंक नहीं हुआ है)</string>
+    <string name="nav_view_syncing_calendars">%1$s (सिंक हो रहा है)</string>
+    <string name="nav_view_more">और</string>
+    <string name="nav_view_switcher">दृश्य</string>
+    <string name="nav_view_switcher_day">दिन</string>
+    <string name="nav_view_switcher_three_day">3 दिन</string>
+    <string name="nav_view_switcher_week">हफ़्ता</string>
+    <string name="nav_view_switcher_agenda">कार्यसूची</string>
+    <string name="nav_view_switcher_month">महीना</string>
+    <string name="nav_view_timezone">समय क्षेत्र</string>
+    <string name="nav_view_settings">सेटिंग्स</string>
+    <string name="nav_view_feedback">हमें प्रतिक्रिया दें</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">सामान्य</string>
+    <string name="nav_view_more_bug">समस्या रिपोर्ट करें</string>
+    <string name="nav_view_more_subscription">सदस्यता</string>
+    <string name="nav_view_more_logout">साइन आउट</string>
+    <string name="nav_view_more_login">साइन इन</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">यह सुविधा जल्द ही आ रही है</string>
+    <string name="snack_event_deleted">कार्यक्रम मिटाया गया</string>
+    <string name="snack_event_deleted_as_organizer">रद्दीकरण भेजा गया और कार्यक्रम मिटाया गया</string>
+    <string name="snack_event_deleted_as_attendee">प्रतिक्रिया भेजी गई और कार्यक्रम मिटाया गया</string>
+    <string name="snack_event_deleted_error">कार्यक्रम मिटाने में त्रुटि</string>
+    <string name="snack_event_deleted_as_organizer_error">रद्दीकरण ईमेल नहीं भेजा जा सका, कृपया फिर से प्रयास करें</string>
+    <string name="snack_event_opening_error">कार्यक्रम खोलने में त्रुटि</string>
+    <string name="snack_event_saving">कार्यक्रम सहेज रहें है</string>
+    <string name="snack_event_deleting">कार्यक्रम मिटा रहें है</string>
+    <string name="snack_event_changing_answer">उत्तर अपडेट हो रहा है</string>
+    <string name="snack_event_part_stat_updated">भागीदारी की स्थिति अपडेट की गई।</string>
+    <string name="snack_event_updated">कार्यक्रम अपडेट किया गया</string>
+    <string name="snack_event_updated_recurring">सभी कार्यक्रम अपडेट किए गए</string>
+    <string name="snack_event_updated_error_failed_mail">निमंत्रण भेजने में असफल</string>
+    <string name="snack_update_event_error_failed_mail">अपडेट असफल हुआ</string>
+    <string name="snack_lost_zoom_access">इस कार्यक्रम को संपादित करने के लिए ज़ूम से जुड़ें।</string>
+    <string name="snack_lost_zoom_access_acion">जुड़ें</string>
+    <string name="snack_zoom_meeting_does_not_exist">यह ज़ूम सत्र रद्द कर दिया गया है। इस कार्यक्रम को संपादित करने के लिए लिंक हटाएं।</string>
+    <string name="snack_event_updated_error">कार्यक्रम अपडेट करने में त्रुटि</string>
+    <string name="snack_event_created">कार्यक्रम बनाया गया</string>
+    <string name="snack_event_created_failed_mail">कार्यक्रम बनाया गया लेकिन निमंत्रण भेजने में असफल</string>
+    <string name="snack_event_created_error">कार्यक्रम बनाने में त्रुटि</string>
+    <string name="snack_event_opening_edit_error">कार्यक्रम को संपादित करने के लिए खोलने में त्रुटि</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">इस दोहराए जाने वाले कार्यक्रम को केवल Calendar वेब ऐप में ही मिटाया जा सकता है।</string>
+    <string name="snack_event_edit_with_attendees_error">प्रतिभागियों वाले कार्यक्रमों को संपादित करना अभी समर्थित नहीं है</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">प्रतिभागियों को जोड़ना और कैलेंडर बदलना एक साथ संभव नहीं है</string>
+    <string name="snack_event_init_error">नए कार्यक्रम को प्रारंभ करने में त्रुटि</string>
+    <string name="snack_event_calendar_error">कैलेंडर बदलने में त्रुटि</string>
+    <string name="snack_event_maximum_alarm_reached_error">सूचनाओं की अधिकतम सीमा पहुँच चुकी है</string>
+    <string name="snack_send_bug_report_success">रिपोर्ट भेज दी गई है, आपकी प्रतिक्रिया के लिए धन्यवाद</string>
+    <string name="snack_send_bug_report_error">रिपोर्ट भेजने में त्रुटि हुई, कृपया बाद में वापस कोशिश करें</string>
+    <string name="snack_send_bug_report_description_empty">कृपया अपनी रिपोर्ट का विवरण दें</string>
+    <string name="snack_create_event_no_active_personal_calendar">कार्यक्रम बनाने के लिए आपके पास एक सक्रिय व्यक्तिगत कैलेंडर होना चाहिए</string>
+    <string name="snack_create_event_no_active_calendar">कार्यक्रम बनाने के लिए एक सक्रिय कैलेंडर आवश्यक है</string>
+    <string name="snack_add_self_as_participant">खुद को निमंत्रण भेजने की अनुमति नहीं है</string>
+    <string name="snack_maximum_participants_reached">प्रतिभागियों की अधिकतम सीमा पूरी हो चुकी है।</string>
+    <string name="snack_add_participant_error">प्रतिभागी को जोड़ते समय त्रुटि हुई</string>
+    <string name="snack_add_participant_invalid_email">अमान्य ईमेल</string>
+    <string name="snack_change_attendee_answer_error">उत्तर भेजने में त्रुटि हुई, कृपया बाद में वापस कोशिश करें</string>
+    <string name="snack_network_error">नेटवर्क त्रुटि, कृपया बाद में वापस कोशिश करें</string>
+    <string name="snack_import_event_signed_out">कार्यक्रम आयात करने के लिए साइन इन करें</string>
+    <string name="snack_app_link_signed_out">अपने कार्यक्रम देखने के लिए आपको साइन इन करना होगा</string>
+    <string name="snack_update_default_calendar">डिफ़ॉल्ट कैलेंडर अपडेट कर दिया गया है</string>
+    <string name="snack_update_default_calendar_error">डिफ़ॉल्ट कैलेंडर को अपडेट करने में त्रुटि हुई, कृपया बाद में वापस कोशिश करें</string>
+    <string name="snack_calendar_init_error">कैलेंडर की जानकारी लोड करने में त्रुटि हुई</string>
+    <string name="snack_holiday_calendar_init_error">अवकाश कैलेंडर की जानकारी लोड करने में त्रुटि हुई</string>
+    <string name="snack_update_calendar_error">कैलेंडर की जानकारी अपडेट करने में त्रुटि हुई, कृपया बाद में वापस कोशिश करें</string>
+    <string name="snack_update_calendar_settings_error">कुछ कैलेंडर जानकारी को अपडेट करने में त्रुटि हुई, कृपया बाद में वापस कोशिश करें</string>
+    <string name="snack_update_calendar_success">कैलेंडर अपडेट किया गया</string>
+    <string name="snack_create_calendar_success">कैलेंडर बनाया गया</string>
+    <string name="snack_add_calendar_success">कैलेंडर जोड़ा गया</string>
+    <string name="snack_calendar_saving">कैलेंडर सहेजा जा रहा है</string>
+    <string name="snack_create_calendar_error">कैलेंडर बनाने में त्रुटि हुई, कृपया बाद में वापस कोशिश करें</string>
+    <string name="snack_add_calendar_error">कैलेंडर जोड़ने में त्रुटि हुई, कृपया बाद में वापस कोशिश करें</string>
+    <string name="snack_create_calendar_settings_error">कैलेंडर बना दिया गया है, लेकिन कुछ जानकारी अपडेट नहीं हो सकी। कृपया बाद में वापस कोशिश करें</string>
+    <string name="snack_ics_default_error">कैलेंडर खोलने में त्रुटि हुई</string>
+    <string name="snack_ics_event_not_found_error">कार्यक्रम नहीं मिला</string>
+    <string name="snack_ics_file_not_found_error">फ़ाइल नहीं मिली</string>
+    <string name="snack_ics_create_error">कार्यक्रम बनाने में त्रुटि हुई</string>
+    <string name="snack_ics_parsing_error">कैलेंडर पढ़ने में त्रुटि हुई</string>
+    <string name="snack_ics_unsupported_method_error">फिलहाल इस प्रकार का कार्यक्रम समर्थित नहीं है</string>
+    <string name="snack_ics_unsupported_add_error">फिलहाल किसी कार्यक्रम में बारंबारता जोड़ने की सुविधा नहीं है</string>
+    <string name="snack_ics_unsupported_counter_error">फिलहाल कार्यक्रम का पुनर्निर्धारण समर्थित नहीं है</string>
+    <string name="snack_ics_unsupported_refresh_error">फिलहाल कार्यक्रम को रीफ़्रेश करने की सुविधा उपलब्ध नहीं है</string>
+    <string name="snack_ics_unsupported_publish_error">फिलहाल कार्यक्रम आयात करने की सुविधा उपलब्ध नहीं है</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">फिलहाल श्रृंखला के सभी कार्यक्रमों के लिए उत्तर देना ही उपलब्ध है</string>
+    <string name="snack_ics_party_crasher_error">आपका ईमेल प्रतिभागियों की सूची में नहीं है</string>
+    <string name="snack_ics_reply_party_crasher_error">जिन प्रतिभागियों को आयोजक द्वारा निमंत्रित नहीं किया गया है, उन्हें जोड़ा नहीं जा सकता</string>
+    <string name="snack_ics_missing_uid_error">कार्यक्रम में यूआईडी नहीं है</string>
+    <string name="snack_ics_no_active_personal_calendar_error">इस खाते से कोई सक्रिय व्यक्तिगत कैलेंडर जुड़ा नहीं है</string>
+    <string name="snack_ics_no_active_calendar_error">इस खाते से कोई सक्रिय कैलेंडर जुड़ा नहीं है</string>
+    <string name="snack_ics_unsupported_duration_error">अवधि प्रॉपर्टी समर्थित नहीं है</string>
+    <string name="snack_ics_too_many_events_error">एक से अधिक कार्यक्रम अभी समर्थित नहीं हैं</string>
+    <string name="snack_ics_no_events_error">इस कैलेंडर में कोई भी कार्यक्रम नहीं है</string>
+    <string name="snack_ics_invalid_error">यह निमंत्रण अमान्य है</string>
+    <string name="snack_ics_disabled_calendar_error">इस कार्यक्रम को अपडेट करने के लिए इस कैलेंडर से जुड़े पते को दोबारा सक्रिय करें</string>
+    <string name="snack_ics_event_deleted_error">यह कार्यक्रम अब आपके कैलेंडर में मौजूद नहीं है</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s ने आपका निमंत्रण स्वीकार कर लिया है</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s ने आपका निमंत्रण अस्थायी रूप से स्वीकार किया है</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s ने आपका निमंत्रण अस्वीकार कर दिया है</string>
+    <string name="snack_app_link_invalid">कार्यक्रम की लिंक अमान्य है</string>
+    <string name="snack_app_link_error">कार्यक्रम खोलने में त्रुटि हुई</string>
+    <string name="snack_app_link_import_error">प्रमाणीकरण रद्द कर दिया गया</string>
+    <string name="snack_notification_already_added">सूचना पहले से ही जोड़ी जा चुकी है</string>
+    <string name="snack_opening_ics">कार्यक्रम खोला जा रहा है…</string>
+    <string name="snack_invite_in_shared_calendar_error">साझा किए गए कैलेंडर में निमंत्रण बनाने की अनुमति नहीं है</string>
+    <string name="snack_down_banner">प्रोटॉन सर्वर डाउन हैं। अधिक जानकारी के लिए हमारे स्थिति पृष्ठ पर जाएं।</string>
+    <string name="snack_down_banner_action">स्थिति पृष्ठ खोलें</string>
+    <string name="snack_color_per_event_paid_feature">कार्यक्रम रंग अनुकूलित करने के लिए अपग्रेड करें</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">यह कार्यक्रम मौजूद नहीं है</string>
+    <string name="error_occurrence_does_not_exist">यह घटना मौजूद नहीं है</string>
+    <string name="update_timezone_dialog_title">समय क्षेत्र बदल दिया गया है</string>
+    <string name="update_timezone_dialog_message">लगता है कि आपके सिस्टम का समय क्षेत्र %1$s में बदल गया है। क्या आप अपनी समय क्षेत्र की पसंद को अपडेट करना चाहते हैं?</string>
+    <string name="update_timezone_dialog_confirmation">अपडेट करें</string>
+    <string name="update_timezone_dialog_cancel">रद्द करें</string>
+    <string name="contacts_permission_dialog_title">क्या Proton Calendar को आपके संपर्कों तक पहुंच की अनुमति देना चाहते हैं?</string>
+    <string name="contacts_permission_dialog_message">Proton Calendar को आपके फ़ोन संपर्कों तक पहुंच की ज़रूरत है ताकि आप उन्हें आसानी से अपने कार्यक्रमों में जोड़ सकें।</string>
+    <string name="contacts_permission_dialog_allow">अनुमति दें</string>
+    <string name="contacts_permission_dialog_open_settings">सेटिंग खोलें</string>
+    <string name="contacts_permission_dialog_cancel">नकारें</string>
+    <string name="dialog_title_calendar_picker">कैलेंडर</string>
+    <string name="dialog_title_calendar_color_picker">कैलेंडर का रंग</string>
+    <string name="dialog_title_event_color_picker">कार्यक्रम का रंग</string>
+    <string name="import_from_google_title">Google से आयात करें</string>
+    <string name="notifications_permission_dialog_title">Proton Calendar को सूचना दिखाने दें?</string>
+    <string name="notifications_permission_dialog_message">आगामी कार्यक्रम सूचनाएं दिखाने के लिए Proton Calendar को अनुमति चाहिए।</string>
+    <string name="notifications_permission_dialog_open_settings">सेटिंग खोलें</string>
+    <string name="notifications_permission_dialog_cancel">नकारें</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">कार्यक्रम सूचनाएँ</string>
+    <string name="notification_channel_sync">कैलेंडर समकालिकरण</string>
+    <string name="notification_channel_calendar_fetch">कैलेंडर लाए जा रहे हैं</string>
+    <string name="notification_sync">कैलेंडरों को समकालिक किया जा रहा है…</string>
+    <string name="notification_text_today">आज</string>
+    <string name="notification_text_today_part_time">आज %1$s बजे</string>
+    <string name="notification_text_tomorrow">कल</string>
+    <string name="notification_text_tomorrow_part_time">कल %1$s बजे</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s %2$s बजे</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">विषय</string>
+    <string name="bug_report_hint_description">कृपया समस्या का विवरण दें और यदि कोई त्रुटि संदेश हो तो उसे शामिल करें।</string>
+    <string name="bug_report_discard_changes_title">असहेजे गए बदलाव</string>
+    <string name="bug_report_discard_changes_description">फ़ॉर्म में कुछ असहेजे गए विवरण हैं। क्या आप वाक़ई उन्हें ख़ारिज करना चाहते हैं?</string>
+    <string name="bug_report_discard_changes_cancel">लिखना जारी रखें</string>
+    <string name="bug_report_discard_changes_confirm">ख़ारिज करें</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">ऐप सेटिंग</string>
+    <string name="settings_theme_title">थीम</string>
+    <string name="settings_theme_info">यह सेटिंग केवल इस डिवाइस पर Proton Calendar ऐप की दिखावट को प्रभावित करती है। थीम बदलने के बाद ऐप पुनः शुरू होगा।</string>
+    <string name="settings_timezone_title">समय क्षेत्र</string>
+    <string name="settings_language_title">ऐप की भाषा</string>
+    <string name="settings_language_default">स्वतः पता लगाएं</string>
+    <string name="settings_default_view_title">डिफ़ॉल्ट दृश्य</string>
+    <string name="settings_default_view_default">आखिरी दृश्य</string>
+    <string name="settings_update_timezone_title">समय क्षेत्र सेटिंग अपडेट करने के लिए पूछें</string>
+    <string name="settings_update_timezone_subtitle">यदि सिस्टम समय क्षेत्र वर्तमान समय क्षेत्र सेटिंग से मेल नहीं खाता है, तो आपको इसे अपडेट करने के लिए कहा जाएगा।</string>
+    <string name="settings_update_timezone_checkbox">दोबारा मत पूछना</string>
+    <string name="settings_week_start_title">हफ़्ते की शुरुआत</string>
+    <string name="settings_time_format_title">समय स्वरूप</string>
+    <string name="settings_week_numbers_title">हफ़्ता संख्या दिखाएं</string>
+    <string name="settings_auto_invites_title">कैलेंडर में निमंत्रण जोड़ें और लंबित रूप में चिह्नित करें</string>
+    <string name="settings_search_title">कैलेंडर खोजें</string>
+    <string name="settings_search_subtitle">खोज के लिए कैलेंडर कंटेंट को आपके डिवाइस पर डाउनलोड और संग्रहित किया जाता है। इसे बंद करने पर, डाउनलोड किया गया कंटेंट हटा दिया जाएगा। \n\nखोज एक प्रायोगिक बीटा सुविधा है। इसे सक्षम करने से ऐप अस्थिर हो सकता है।</string>
+    <string name="settings_alternative_routing_title">वैकल्पिक रूटिंग की अनुमति दें</string>
+    <string name="settings_alternative_routing_subtitle">यदि Proton साइटों को ब्लॉक किया जाता है, तो यह सेटिंग ऐप को Proton तक पहुँचने के लिए वैकल्पिक नेटवर्क रूटिंग की कोशिश करने की अनुमति देती है, जो फ़ायरवॉल या नेटवर्क समस्याओं को अनदेखा करने के लिए उपयोगी हो सकती है। हम इस सेटिंग को बंद न करने की सलाह देते हैं ताकि अधिक विश्वसनीयता हो।</string>
+    <string name="settings_value_placeholder">चुनने के लिए टैप करें</string>
+    <string name="settings_general_title">सामान्य</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s आदि।</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">थीम</string>
+    <string name="settings_general_info_language">भाषा</string>
+    <string name="settings_general_info_time_zone">समय क्षेत्र</string>
+    <string name="settings_general_info_calendar_layout">कैलेंडर ‎खाका</string>
+    <string name="settings_calendars">मेरे कैलेंडर</string>
+    <string name="settings_calendars_empty">कोई कैलेंडर नहीं मिला</string>
+    <string name="settings_subscribed_calendars">सदस्यता लिए कैलेंडर</string>
+    <string name="settings_other_calendars">अन्य कैलेंडर</string>
+    <string name="settings_calendar_default" comment="Default calendar">डिफ़ॉल्ट</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">अक्षम</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">सिंक नहीं हुआ</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">सिंक हो रहा है</string>
+    <string name="settings_calendar_subscribed_invalid_ics">असमर्थित कैलेंडर प्रारूप</string>
+    <string name="settings_calendar_subscribed_too_big">कैलेंडर बहुत बड़ा है</string>
+    <string name="settings_calendar_subscribed_not_accessible">कैलेंडर लिंक अनुपलब्ध है</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">कैलेंडर लिंक अस्थायी रूप से उपलब्ध नहीं है</string>
+    <string name="settings_calendar_subscribed_last_sync_old">पिछले अपडेट के बाद 12 घंटे से ज़्यादा समय बीत चुका है</string>
+    <string name="settings_calendar_subscribed_not_decrypted">कैलेंडर को डिक्रिप्ट नहीं किया जा सका</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">सिर्फ देख सकते हैं</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">%1$s से</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">कैलेंडर बनाएँ</string>
+    <string name="calendar_form_update_title">कैलेंडर संपादित करें</string>
+    <string name="calendar_form_save">सहेजें</string>
+    <string name="calendar_form_name">नाम</string>
+    <string name="calendar_form_description">विवरण</string>
+    <string name="calendar_form_color">कैलेंडर का रंग</string>
+    <string name="calendar_form_language">भाषा</string>
+    <string name="calendar_form_default_event_duration">कार्यक्रम अवधि</string>
+    <string name="calendar_form_default_event_notifications">कार्यक्रम सूचनाएँ</string>
+    <string name="calendar_form_default_all_day_event_notifications">पूरे दिन के कार्यक्रम की सूचनाएँ</string>
+    <string name="calendar_form_add_notification">सूचना जोड़ें</string>
+    <string name="calendar_form_default_email">ई-मेल पता</string>
+    <string name="calendar_form_default_email_value_error">डिफ़ॉल्ट ईमेल लोड करने में असफल</string>
+    <string name="calendar_form_name_hint">कैलेंडर नाम जोड़ें</string>
+    <string name="calendar_form_name_required_error">नाम ज़रूरी है</string>
+    <string name="calendar_form_description_hint">कैलेंडर विवरण जोड़ें</string>
+    <string name="add_calendar_text">कैलेंडर जोड़ें</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">जोड़ें</string>
+    <string name="create_calendar_limit_reached">आप अधिकतम कैलेंडर की सीमा तक पहुँच चुके हैं</string>
+    <string name="create_calendar_limit_reached_title">और कैलेंडर नहीं जोड़े जा सकते हैं</string>
+    <string name="create_calendar_limit_reached_paid_description">आप अपनी योजना में उपलब्ध अधिकतम 25 कैलेंडर तक पहुँच चुके हैं।\n\nनया कैलेंडर जोड़ने के लिए, किसी मौजूदा कैलेंडर को हटाएँ।</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">25 कैलेंडर की योजना सीमा तक पहुँचने से पहले आपके पास कम से कम एक व्यक्तिगत कैलेंडर होना ज़रूरी है।</string>
+    <string name="create_calendar_limit_reached_manage">कैलेंडर प्रबंधित करें</string>
+    <string name="create_calendar_limit_reached_free_description">आप अपनी योजना में उपलब्ध अधिकतम 3 कैलेंडरों की सीमा तक पहुँच चुके हैं।\n\nनया कैलेंडर जोड़ने के लिए किसी मौजूदा कैलेंडर को हटाएँ।</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">अपनी 3 कैलेंडर की योजना सीमा तक पहुंचने से पहले आपके पास कम से कम एक व्यक्तिगत कैलेंडर होना चाहिए।</string>
+    <string name="create_calendar_limit_reached_error">त्रुटि</string>
+    <string name="delete_calendar_dialog_title">कैलेंडर मिटाएँ</string>
+    <string name="delete_calendar_dialog_message">क्या आप वाक़ई इस कैलेंडर को मिटाना चाहते हैं?</string>
+    <string name="remove_calendar_dialog_title">कैलेंडर हटाएँ</string>
+    <string name="remove_calendar_dialog_message">क्या आप वाक़ई इस कैलेंडर को हटाना चाहते हैं?</string>
+    <string name="leave_calendar_dialog_title">कैलेंडर छोड़ें</string>
+    <string name="leave_calendar_dialog_message">अगर आप इस कैलेंडर को छोड़ते हैं, तो आपको वापस जुड़ने के लिए मालिक से पूछना होगा।</string>
+    <string name="delete_default_calendar_dialog_message">क्या आप वाक़ई इस कैलेंडर को मिटाना चाहते हैं? \"%1$s\" को डिफ़ॉल्ट कैलेंडर के रूप में सेट कर दिया जाएगा।</string>
+    <string name="delete_calendar_snack_deleted">कैलेंडर मिटाया गया</string>
+    <string name="remove_calendar_snack_removed">कैलेंडर हटाया गया</string>
+    <string name="delete_calendar_snack_error">कैलेंडर मिटाने में त्रुटि हुई</string>
+    <string name="remove_calendar_snack_error">कैलेंडर हटाने में त्रुटि हुई</string>
+    <string name="leave_calendar_snack_error">कैलेंडर छोड़ने में त्रुटि हुई</string>
+    <string name="delete_calendar_snack_error_password_confirmation">पासवर्ड की पुष्टि असफल हुई</string>
+    <string name="recreate_calendar_dialog_title">कैलेंडर साफ़ करें</string>
+    <string name="recreate_calendar_dialog_message">इस क्रिया से सभी कार्यक्रम और निमंत्रित उपयोगकर्ता हटा दिए जाएंगे।\n\nक्या आप वाक़ई इस कैलेंडर को साफ़ करना चाहते हैं?</string>
+    <string name="recreate_calendar_snack_error">कैलेंडर साफ़ करने में त्रुटि हुई</string>
+    <string name="recreate_calendar_snack_deleted">कैलेंडर साफ़ किया गया</string>
+    <string name="recreate_calendar_snack_clearing">कैलेंडर साफ़ किया जा रहा है…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">छुट्टियों का कैलेंडर जोड़ें</string>
+    <string name="holiday_calendar_title">छुट्टियों का कैलेंडर</string>
+    <string name="add_holiday_calendar_country_search_hint">देश खोजें</string>
+    <string name="holiday_calendar_form_picker_title">देश</string>
+    <string name="holiday_calendar_time_zone_based">आपके समय क्षेत्र के आधार पर</string>
+    <string name="holiday_calendar_already_exists">यह छुट्टियों का कैलेंडर पहले से ही जोड़ा जा चुका है।</string>
+    <string name="holiday_calendar_value_placeholder">देश चुनें</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">ठीक</string>
+    <string name="bootstrap_error_no_calendar_title">इस खाते से कोई कैलेंडर संबद्ध नहीं है।</string>
+    <string name="bootstrap_error_no_calendar_message">इसे अभी सेट अप करने के लिए <a href="https://calendar.proton.me">calendar.proton.me</a> पर जाएँ।</string>
+    <string name="bootstrap_error_some_calendars_failed_title">कैलेंडर तैयार करने में त्रुटि हुई</string>
+    <string name="bootstrap_error_some_calendars_failed_message">निम्नलिखित कैलेंडरों को सेट अप नहीं किया जा सका</string>
+    <string name="bootstrap_error_no_active_calendar_title">इस खाते से कोई सक्रिय व्यक्तिगत कैलेंडर संबद्ध नहीं है।</string>
+    <string name="bootstrap_error_no_active_calendar_message">कैलेंडर को सक्रिय करना कैसे है, यह जानने के लिए हमारे <a href="https://proton.me/support">ज्ञानसंग्रह</a> पर जाएँ।</string>
+    <string name="bootstrap_error_store_quota_reached_message">और स्टोरेज स्पेस उपलब्ध नहीं है।</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">और जानें</string>
+    <string name="bootstrap_error_reset_needed_title">कैलेंडर कुंजियाँ रीसेट करें</string>
+    <string name="bootstrap_error_reset_needed_message">आपने अपना पासवर्ड रीसेट कर लिया है और निम्नलिखित कैलेंडरों से जुड़े कार्यक्रमों को डिक्रिप्ट नहीं किया जा सका। सभी सक्रिय सब्स्क्राइब्ड कैलेंडर कुछ ही मिनटों में फिर से सिंक हो जाएँगे।</string>
+    <string name="bootstrap_error_update_passphrase_title">कैलेंडर कुंजियाँ दोबारा सक्रिय करें</string>
+    <string name="bootstrap_error_update_passphrase_message">आपने अपनी कुंजियाँ दोबारा सक्रिय कर ली हैं, और निम्नलिखित कैलेंडरों से जुड़ी कार्यक्रमों को अब डिक्रिप्ट किया जा सकता है।</string>
+    <string name="bootstrap_error_continue_button">जारी रखें</string>
+    <string name="splash_after_login_init">कैलेंडर तैयार कर रहे हैं</string>
+    <string name="splash_init">कार्यक्रम डिक्रिप्ट किए जा रहे हैं</string>
+    <string name="default_calendar_name">मेरा कैलेंडर</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">हमें प्रतिक्रिया दें</string>
+    <string name="dialog_feedback_text">Proton Calendar के साथ आपका अनुभव कैसा रहा?</string>
+    <string name="dialog_feedback_rating_worst">बेहद ख़राब</string>
+    <string name="dialog_feedback_rating_best">शानदार</string>
+    <string name="dialog_feedback_hint">अपने अनुभव के बारे में हमें बताएँ। (वैकल्पिक)</string>
+    <string name="dialog_feedback_submit">जमा करें</string>
+    <string name="dialog_feedback_submit_thank_you">धन्यवाद! आपकी प्रतिक्रिया हमें Proton को बेहतर बनाने में मदद करती है।</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Proton Calendar विजेट</string>
+    <string name="calendar_widget_no_upcoming_events_today">आज के लिए कोई आगामी कार्यक्रम नहीं है</string>
+    <string name="calendar_widget_loading_events">कार्यक्रम लोड हो रहा है…</string>
+    <string name="calendar_widget_loading_events_error">कार्यक्रम लोड नहीं किए जा सके</string>
+    <string name="calendar_widget_no_upcoming_events">कोई आगामी कार्यक्रम नहीं है</string>
+    <string name="calendar_widget_please_log_in">अपने कार्यक्रम देखने के लिए साइनइन करें</string>
+    <string name="calendar_widget_part_day_event_starts_at">शुरुआत %1$s बजे से होगा</string>
+    <string name="calendar_widget_part_day_event_ends_at">%1$s बजे खत्म होगा</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">नया क्या है</string>
+    <string name="spotlight_dialog_beta_header">कैलेंडर बीटा</string>
+    <string name="spotlight_dialog_skip">छोड़ें</string>
+    <string name="spotlight_dialog_confirmation_button">ठीक</string>
+    <string name="spotlight_dialog_month_view_title">माह-दृश्य</string>
+    <string name="spotlight_dialog_month_view_description">हमारे नए माह-दृश्य के साथ अपने कार्यक्रमों का अवलोकन प्राप्त करें। दृश्य बदलने के लिए मेनू का उपयोग करें।</string>
+    <string name="spotlight_dialog_easy_switch_description">Google Calendar से Proton Calendar में कार्यक्रमों और अन्य डेटा को आयात करना अब और भी आसान हो गया है। हमारा Easy Switch आयातक इस प्रक्रिया के हर चरण में आपकी मदद करेगा।</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">आयात शुरू करें</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">अभी नहीं</string>
+    <string name="spotlight_dialog_auto_invites_title">निमंत्रण आसानी से स्वीकार करें</string>
+    <string name="spotlight_dialog_auto_invites_description">अब निमंत्रण आपके कैलेंडर में लंबित कार्यक्रम के रूप में दिखाई देते हैं। उत्तर देने के लिए बस किसी कार्यक्रम को खोलें।\n\nइसे प्रबंधित करने के लिए सेटिंग्स में जाएँ।</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">आगे</string>
+    <string name="spotlight_v5_dialog_got_it_button">समझ गया</string>
+    <string name="spotlight_v5_dialog_learn_more_button">और जानें</string>
+    <string name="spotlight_v5_dialog_rebranding_title">नया Proton, एकीकृत सुरक्षा</string>
+    <string name="spotlight_v5_dialog_rebranding_description">Proton के नए रूप से मिलिए। सेवाएँ कई, लक्ष्य एक। आपका स्वागत है उस इंटरनेट में जहाँ निजता ही मूलभूत है। <a href="https://proton.me/news/updated-proton">और जानें</a></string>
+    <string name="spotlight_dialog_week_view_title">दृश्य के अधिक विकल्प</string>
+    <string name="spotlight_dialog_week_view_description">• <b>3 दिन</b> और <b>सप्ताह</b> कैलेंडर दृश्य अब उपलब्ध हैं। अपनी पसंद का दृश्य <b>मेनू</b> से चुनें।\n\n• दिन ग्रिड में पंक्तियों की ऊँचाई समायोजित करने के लिए दो उंगलियों से ज़ूम इन या आउट करें।</string>
+    <string name="spotlight_dialog_search_title">कार्यक्रम खोजें</string>
+    <string name="spotlight_dialog_search_description">हमारी नई खोज सुविधा के साथ वह कार्यक्रम आसानी से पाएँ जिसे आप ढूँढ रहे हैं। <a href="https://proton.me/support/calendar-search">और जानें</a></string>
+    <string name="spotlight_dialog_search_positive">सक्षम करें</string>
+    <string name="spotlight_dialog_search_negative">छोड़ें</string>
+    <string name="spotlight_dialog_import_title">कार्यक्रम जोड़ने के और तरीके</string>
+    <string name="spotlight_dialog_import_description">• अपने फ़ोन में मौजूद फ़ाइलों से अपने कैलेंडर में कार्यक्रम आयात करें।\n\n• यात्रा बुकिंग्स को सीधे Proton Mail से जोड़ें।</string>
+    <string name="spotlight_dialog_calendar_provider_title">कैलेंडर की विशेषताएँ</string>
+    <string name="spotlight_dialog_calendar_provider_description">• अन्य ऐप्स से सीधे Proton Calendar में कार्यक्रम जोड़ें।\n\n• आपके साथ साझा किए गए कैलेंडरों में कार्यक्रम बनाएँ और उनका प्रबंधन करें।\n\n• ऐप खोलने पर सबसे पहले कौन-सा दृश्य दिखे, इसे पहले से निर्धारित करें।\n\n• 13 नई भाषाएँ अब उपलब्ध हैं।</string>
+    <string name="spotlight_dialog_wipe_search_title">बेहतर बनाने के लिए खोज सुविधा हटाई गई है</string>
+    <string name="spotlight_dialog_wipe_search_description">हम Proton Calendar बीटा से परीक्षणात्मक खोज सुविधा को हटा रहे हैं, क्योंकि हम इसे आपके लिए अधिक उपयोगी और विश्वसनीय बनाना चाहते हैं। इसमें कुछ सेकंड लग सकते हैं।</string>
+    <string name="spotlight_dialog_holiday_calendar_title">सार्वजनिक छुट्टियाँ आ गई हैं!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">अब छुट्टियों के बीच गलती से मीटिंग नहीं होगी, न ही लंबा वीकेंड मनाने की प्लानिंग छूटेगी।\n\nकिसी भी देश की सार्वजनिक छुट्टियाँ अपने कैलेंडर में जोड़ें।</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">अब छुट्टियों के बीच गलती से मीटिंग नहीं होगी, न ही लंबा वीकेंड मनाने की प्लानिंग छूटेगी।\n\nचूंकि आप पहले से अधिकतम कैलेंडर सीमा पर हैं, इसलिए छुट्टियों का कैलेंडर जोड़ने के लिए आपको पहले कोई मौजूदा कैलेंडर हटाना होगा।</string>
+    <string name="spotlight_dialog_color_per_event_title">अनुकूलित कार्यक्रम रंग</string>
+    <string name="spotlight_dialog_color_per_event_description">हर कार्यक्रम के रंग को अपने अनुसार चुनें, ताकि आप:\n\n• अपने कैलेंडर को रंगों से व्यवस्थित कर सकें\n\n• अपने दिन की बेहतर योजना बना सकें और समय का हिसाब रख सकें\n\n• प्राथमिकताएँ तय कर सकें और कार्यक्षमता बढ़ा सकें</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">पहुँच की अनुमति दें</string>
+    <string name="dialog_google_auth_description">आयात शुरू करने के लिए, Google Calendar में साइन इन करें और Proton को अपने डेटा तक पहुँचने की अनुमति दें।</string>
+    <string name="import_assistant_prepare_import_error">आयात की तैयारी में त्रुटि हुई, कृपया बाद में वापस कोशिश करें</string>
+    <string name="import_assistant_prepare_import">आयात तैयार कर रहे हैं</string>
+    <string name="import_assistant_gathering_data_loader_title">आपका डेटा इकट्ठा कर रहे हैं</string>
+    <string name="import_assistant_summary_title">आयात सारांश</string>
+    <string name="import_assistant_summary_customize_import">आयात अनुकूलित करें</string>
+    <string name="import_assistant_error">डेटा प्राप्त करने में त्रुटि हुई</string>
+    <string name="import_assistant_data_gathering_error">डेटा एकत्र करना असफल रहा</string>
+    <string name="import_assistant_update_import_error">आयात अपडेट करने में असफल, कृपया बाद में वापस कोशिश करें।</string>
+    <string name="import_assistant_update_import_wrong_account_error">गलत खाता। कृपया उसी खाते से साइन इन करें जिसका उपयोग आपने कैलेंडर आयात के लिए किया था।</string>
+    <string name="import_assistant_start_import_error">आयात शुरू करने में असफल, कृपया बाद में वापिस कोशिश करें।</string>
+    <string name="import_assistant_delete_import_success">आयात रिकॉर्ड मिटाया गया</string>
+    <string name="import_assistant_delete_import_error">आयात मिटाने में असफल, कृपया बाद में वापस कोशिश करें।</string>
+    <string name="import_assistant_cancel_import_error">आयात रद्द करने में असफल, कृपया फिर से प्रयास करें।</string>
+    <string name="import_assistant_resume_import_error">आयात जारी रखने में असफल, कृपया बाद में वापस कोशिश करें।</string>
+    <string name="import_assistant_create_calendar_error">एक या एक से अधिक कैलेंडर बनाए नहीं जा सके</string>
+    <string name="import_assistant_start_import_empty_error">आयात शुरू करने में असफल, कोई कैलेंडर आयात के लिए उपलब्ध नहीं है</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">इस रूप में आयात करें</string>
+    <string name="import_assistant_new_calendar_badge">नया</string>
+    <string name="import_assistant_merge_calendar_badge">मिलाया गया</string>
+    <string name="import_assistant_creating_calendars">नए कैलेंडर बनाए जा रहे हैं</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">लगभग हो गया…</string>
+    <string name="import_assistant_new_calendar_header">नया बनाएं</string>
+    <string name="import_assistant_merge_calendar_header">मौजूदा के साथ मिलाएं</string>
+    <string name="import_assistant_in_progress_title">आयात जारी है</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">डेटा %1s से %2s पर आयात किया जा रहा है।</string>
+    <string name="import_assistant_in_progress_redirect">प्रगति देखें</string>
+    <string name="import_assistant_in_progress_sub_description">बड़े आयात में कई दिन लग सकते हैं। आयात पूरा होने पर हम आपको सूचित करेंगे। आप इस स्क्रीन को बंद कर सकते हैं।</string>
+    <string name="import_assistant_guide_subtitle">ज़िंदगी करो निजी। आसान और सुरक्षित तरीके से।</string>
+    <string name="import_assistant_guide_description">Google से Proton पर अपने कार्यक्रम और अन्य डेटा स्थानांतरित करें। Easy Switch आयातक हर चरण में आपकी मदद करता है और स्थानांतरण के दौरान आपके डेटा को एन्क्रिप्ट करता है।</string>
+    <string name="import_assistant_new_import">नया आयात</string>
+    <string name="import_assistant_previous_import">पिछले आयात</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">शुरू हो गया</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">चालू है</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">पूरा हो गया</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">रद्द किया गया</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">रद्द किया जा रहा है</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">रोक दिया गया</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">असफल</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Google से कनेक्शन टूट गया</string>
+    <string name="import_assistant_status_paused_lost_connection_description">आयात जारी रखने के लिए \'वापिस जोड़ें\' पर दबाएं, Google में साइन इन करें और Proton को आपके Google डेटा तक दोबारा पहुँच की अनुमति दें।</string>
+    <string name="import_assistant_status_paused_lost_connection_button">वापिस जोड़ें</string>
+    <string name="import_assistant_status_paused_storage_full_title">आपका स्टोरेज भर चुका है</string>
+    <string name="import_assistant_status_paused_storage_full_description">इस कैलेंडर आयात को पूरा करने के लिए आपके Proton खाते में पर्याप्त स्टोरेज नहीं है। जगह खाली करें या अतिरिक्त स्टोरेज जोड़ें, फिर यहां लौटकर पुनः शुरू करें।</string>
+    <string name="import_assistant_status_paused_storage_full_button">जारी रखें</string>
+    <string name="import_assistant_delete_report_title">सूची से हटाना है?</string>
+    <string name="import_assistant_delete_report_message">आपको यह आयात रिकॉर्ड अब सूची में नहीं दिखाई देगा।</string>
+    <string name="import_assistant_delete_report_positive_button">हटाएँ</string>
+    <string name="import_assistant_delete_report_negative_button">रखें</string>
+    <string name="import_assistant_cancel_import_title">आयात अधूरा है!</string>
+    <string name="import_assistant_cancel_import_message">यदि आप इस आयात को रद्द करते हैं, तो आप इसे दोबारा शुरू नहीं कर पाएंगे। Proton ने अब तक की प्रगति आपके खाते में सहेज ली है। फिर भी रद्द करना चाहते हैं?</string>
+    <string name="import_assistant_cancel_import_positive_button">आयात रद्द करें</string>
+    <string name="import_assistant_cancel_import_negative_button">आयात जारी रखें</string>
+    <string name="import_assistant_in_progress_snack">आयात जारी है</string>
+    <string name="import_assistant_discard_import_title">आयात रद्द करें?</string>
+    <string name="import_assistant_discard_import_message">आयात अधूरा है और यदि आप इसे रद्द करते हैं तो इसे पुनः शुरू नहीं किया जा सकता।</string>
+    <string name="import_assistant_discard_import_positive">आयात रद्द करें</string>
+    <string name="import_assistant_discard_import_negative">आयात जारी रखें</string>
+    <string name="import_assistant_authentication_canceled">प्रमाणीकरण रद्द किया गया</string>
+    <string name="import_assistant_sign_in_in_progress">साइन-इन प्रक्रिया पहले से ही चल रही है</string>
+    <string name="import_assistant_in_progress_error_snack">एक आयात अभी भी जारी है</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">इसे साधारण कार्यक्रम के रूप में आयात करें?</string>
+    <string name="import_event_disclaimer_dialog_description">\nआयात किए गए निमंत्रण Proton Calendar में साधारण कार्यक्रम के रूप में दिखते हैं, जिनमें <b>आयोजक</b> और <b>प्रतिभागी</b> विवरण शामिल नहीं होते।\'\n\n\'कार्यक्रम अपडेट पाने और प्रतिभागियों को देखने के लिए, आयोजकों से अनुरोध करें कि वे आपको आपके Proton ईमेल पते का उपयोग करके निमंत्रित करें।</string>
+    <string name="import_event_disclaimer_dialog_positive">आयात</string>
+    <string name="undefined_color">अपरिभाषित</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">कैलेंडर</item>
+        <item quantity="other">कैलेंडर</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">%1$d कैलेंडर आयात करें</item>
+        <item quantity="other">%1$d कैलेंडर आयात करें</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">%1$d आयात चल रहा है</item>
+        <item quantity="other">%1$d आयात चल रहे हैं</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">%3$s में %2$d में से %1$d बनाया गया</item>
+        <item quantity="other">%3$s में %2$d में से %1$d बनाए गए</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">Proton Calendar में %1$d नया कैलेंडर बनाएँ।</item>
+        <item quantity="other">Proton Calendar में %1$d नए कैलेंडर बनाएँ।</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">से %2$d में से %1$d कैलेंडर आयात करें</item>
+        <item quantity="other">से %2$d में से %1$d कैलेंडर आयात करें</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">Proton Calendar में %1$d कैलेंडर विलय करें।</item>
+        <item quantity="other">Proton Calendar में %1$d कैलेंडर विलय करें।</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">कैलेंडर सीमा के कारण सभी आयात किए गए कैलेंडर के लिए नए कैलेंडर नहीं बनाए जा सकते।\n• कम से कम %1$d कैलेंडर का चयन हटाएं</item>
+        <item quantity="other">कैलेंडर सीमा के कारण सभी आयात किए गए कैलेंडर के लिए नए कैलेंडर नहीं बनाए जा सकते।\n• कम से कम %1$d कैलेंडर का चयन हटाएं</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020या\n • कम से कम %1$d कैलेंडर को मौजूदा Proton कैलेंडर के साथ विलय करें।</item>
+        <item quantity="other">\u0020या\n • कम से कम %1$d कैलेंडर को मौजूदा Proton कैलेंडर के साथ विलय करें।</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">सेकंड</item>
+        <item quantity="other">सेकंड</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">मिनट</item>
+        <item quantity="other">मिनट</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">घंटा</item>
+        <item quantity="other">घंटे</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">दिन</item>
+        <item quantity="other">दिन</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">हफ़्ता</item>
+        <item quantity="other">हफ़्ते</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">महीना</item>
+        <item quantity="other">महीने</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">साल</item>
+        <item quantity="other">साल</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">एक बार</item>
+        <item quantity="other">बार</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">घटना</item>
+        <item quantity="other">घटनाएँ</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">बार</item>
+        <item quantity="other">बार</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">प्रतिभागी</item>
+        <item quantity="other">प्रतिभागी</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">हर %1$d %2$s</item>
+        <item quantity="other">हर %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">हर %1$d %2$s</item>
+        <item quantity="other">हर %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">हर %1$d %2$s</item>
+        <item quantity="other">हर %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">हर %1$d %2$s</item>
+        <item quantity="other">हर %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s मिनट</item>
+        <item quantity="other">%1$s मिनट</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d/%2$d अक्षर</item>
+        <item quantity="other">%1$d/%2$d अक्षर</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d/%2$d अक्षर</item>
+        <item quantity="other">%1$d/%2$d अक्षर</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>पहला</item>
+        <item>दूसरा</item>
+        <item>तीसरा</item>
+        <item>चौथा</item>
+        <item>पाँचवा</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>आख़िरी</item>
+        <item>अंतिम से दूसरा</item>
+        <item>अंतिम से तीसरा</item>
+        <item>अंतिम से चौथा</item>
+        <item>अंतिम से पाँचवा</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>हल्का</item>
+        <item>गहरा</item>
+        <item>सिस्टम डिफ़ॉल्ट</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>सिस्टम डिफ़ॉल्ट</item>
+        <item>13:00</item>
+        <item>1:00pm</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>सिस्टम डिफ़ॉल्ट</item>
+        <item>सोमवार</item>
+        <item>शनिवार</item>
+        <item>रविवार</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>बैंगनी|#8080FF</item>
+        <item>स्ट्रॉबेरी|#EC3E7C</item>
+        <item>गुलाबी|#DB60D6</item>
+        <item>गाजर|#F78400</item>
+        <item>सहारा|#936D58</item>
+        <item>एन्ज़ियन|#5252CC</item>
+        <item>प्लम|#A839A4</item>
+        <item>सेरीस|#BA1E55</item>
+        <item>तांबा|#C44800</item>
+        <item>मिट्टी|#54473F</item>
+        <item>स्लेट नीला|#415DF0</item>
+        <item>प्रशांत|#179FD9</item>
+        <item>रीफ़|#1DA583</item>
+        <item>फ़र्न|#3CBB3A</item>
+        <item>जैतून|#B4A40E</item>
+        <item>कोबाल्ट|#273EB2</item>
+        <item>महासागर|#0A77A6</item>
+        <item>पाइन|#0F735A</item>
+        <item>वन|#258723</item>
+        <item>अचार|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>बैंगनी</item>
+        <item>स्ट्रॉबेरी</item>
+        <item>गुलाबी</item>
+        <item>गाजर</item>
+        <item>सहारा</item>
+        <item>एनज़िअन</item>
+        <item>प्लम</item>
+        <item>सेरीस</item>
+        <item>तांबा</item>
+        <item>मिट्टी</item>
+        <item>स्लेट नीला</item>
+        <item>प्रशांत</item>
+        <item>रीफ़</item>
+        <item>फ़र्न</item>
+        <item>जैतुन</item>
+        <item>कोबाल्ट</item>
+        <item>महासागर</item>
+        <item>पाइन</item>
+        <item>वन</item>
+        <item>आचार</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view_calendar_bar"
+        android:layout_width="8dp"
+        android:layout_height="0dp"
+        android:background="@drawable/shape_calendar_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/default_margin_text_start" />
+
+    <TextView
+        android:id="@+id/text_status"
+        style="@style/Text.Caption.Strong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Cancelled"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/text_summary"
+        style="@style/Text.Headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/text_status"
+        tools:text="Business lunch with very long title because we need to check how it looks like" />
+
+    <TextView
+        android:id="@+id/text_date_time"
+        style="@style/Text.Default"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/text_summary"
+        tools:text="Wednesday, 12. Feb. 2020\n08:00 - 13:00" />
+
+    <TextView
+        android:id="@+id/text_recurrence"
+        style="@style/Text.DefaultSmall.Weak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/text_date_time"
+        tools:text="Weekly on Friday"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

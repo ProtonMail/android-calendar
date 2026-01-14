@@ -1,0 +1,20 @@
+{
+  "Code": 1000,
+  "AccessToken": "1999df52074e6a920b141836224cfaab764061e5",
+  "ExpiresIn": 864000,
+  "TokenType": "Bearer",
+  "Scope": "full self organization payments keys paid nondelinquent mail calendar",
+  "Uid": "8f18ca50bc64eef59991cc655a323835dedfe4c1",
+  "UID": "8f18ca50bc64eef59991cc655a323835dedfe4c1",
+  "UserID": "IXFh2TE4LI11sd0GYf94r7fddHNMdZvicfoWMACCjPTS-oNjpBjeclhKlIs6N48-GB5w-zM6uqX_9HFgEnzhYQ==",
+  "RefreshToken": "81ae3b232e2cb8663bbf80629be6f524fd9bc3f3",
+  "EventID": "x7rVTLJ7CAMKkfwvAS2FmaVsZ2Bm0F1OlOjSO2lwSTdFBySRDMmxNOJMfRYGr1z4nFidAuWJV8ZwB78cy5QTAw==",
+  "PasswordMode": 1,
+  "ServerProof": "ctIOtnwVpSPCVaD1e+UG8tm6s1S6mZ8IR8yImQz46VJhhLqHt5lEAiBH4Iqqbv0S3Nt68bl60o74DH0TW23y2nk0fV4oDqeD33zV3sZ+/rr4RglwGIWZyzsET4jJgNpUCRacbxH+R1AYItsWhJ7Rz8fRKbodKDjeekfNK2bXVvLPjTLwFurPOV7cbVfB3+EeR3kfvlxK3tDNX1iEPC7mBoefyXDkDYBJAwVN5mkZm8bLQJVC0iY4M6z/NAdESorg6vzSENMSGOJs03SKtKBR0sKqgHsQUEXWnWVIYl55+KvD11fvhi0QtEfUNwQ09uYnmcpFNV9zOJD/lDTF+jO+4Q==",
+  "TwoFactor": 0,
+  "2FA": {
+    "Enabled": 0,
+    "U2F": null,
+    "TOTP": 0
+  }
+}

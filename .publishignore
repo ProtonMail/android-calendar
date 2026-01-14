@@ -1,0 +1,9 @@
+.idea
+.gitlab-ci.yml
+CODEOWNERS
+renovate.json
+
+app/src/uiTest/assets
+docs/
+scripts/
+keystore/

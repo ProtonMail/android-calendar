@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_calendar_import_mapping_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <ImageView
+        android:id="@+id/item_calendar_import_mapping_icon"
+        app:srcCompat="@drawable/ic_dot"
+        tools:tint="@color/purple_base"
+        android:layout_marginStart="19dp"
+        android:layout_gravity="center"
+        style="@style/ColoredDot"/>
+
+    <TextView
+        android:id="@+id/item_calendar_import_mapping_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="General"
+        style="@style/Text.Default"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="@dimen/spacing_page"/>
+
+</LinearLayout>

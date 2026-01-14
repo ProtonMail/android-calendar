@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(без загалоўка)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">(няма адраса электроннай пошты)</string>
+    <string name="default_user_display_name">(няма назвы)</string>
+    <string name="toast_copied_to_clipboard">Скапіявана ў буфер абмену</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">Выдаліць падзею</string>
+    <string name="dialog_title_delete_recurring_event">Выдаліць перыядычную падзею</string>
+    <string name="dialog_description_delete_event">Ці хочаце вы выдаліць гэту падзею?</string>
+    <string name="dialog_description_delete_recurring_event">Ці хочаце вы выдаліць усе падзеі ў серыі?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">Гэта падзея была абноўлена арганізатарам. Ці хочаце вы выдаліць гэту падзею?</string>
+    <string name="dialog_button_delete">Выдаліць</string>
+    <string name="dialog_button_cancel">Скасаваць</string>
+    <string name="dialog_button_continue">Працягнуць</string>
+    <string name="dialog_button_close">Закрыць</string>
+    <string name="dialog_button_remove">Выдаліць</string>
+    <string name="dialog_button_download">Спампаваць</string>
+    <string name="dialog_button_update">Абнавіць</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">Ліст пра скасаванне будзе адпраўлены ўдзельнікам падзеі. Ці хочаце вы выдаліць гэту падзею?</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">Ваш адрас адключаны. Немагчыма адправіць ліст са скасаваннем удзельнікам падзеі. Ці хочаце вы ўсё роўна выдаліць гэту падзею?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">Ліст пра скасаванне будзе адпраўлены ўдзельнікам падзеі. Ці хочаце вы выдаліць усе падзеі ў гэтай серыі?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">Ваш адрас адключаны. Немагчыма адправіць ліст са скасаваннем удзельнікам падзеі. Ці хочаце вы ўсё роўна выдаліць усе падзеі ў гэтай серыі?</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">Арганізатар гэтай падзеі атрымае апавяшчэнне, што вы адхілілі запрашэнне. Ці хочаце вы выдаліць гэту падзею?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">Арганізатар гэтай падзеі не атрымае апавяшчэнне, што вы адхілілі запрашэнне, паколькі вы не можаце адпраўляць лісты з запрошанага адраса. Ці хочаце вы ўсё роўна выдаліць гэту падзею?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">Арганізатар гэтай серыі падзей будзе апавешчаны, што вы адхілілі запрашэнне. Ці хочаце вы выдаліць усе падзеі ў гэтай серыі?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">Арганізатар гэтай серыі падзей не атрымае апавяшчэнне, што вы адхілілі запрашэнне, паколькі вы не можаце адпраўляць лісты з запрошанага адраса. Ці хочаце вы ўсё роўна выдаліць усе падзеі ў гэтай серыі?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">Гэта падзея была абноўлена. Арганізатар атрымае апавяшчэнне, што вы адхілілі запрашэнне. Ці хочаце вы выдаліць гэту падзею?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">Гэта падзея была абноўлена. Арганізатар не атрымае апавяшчэнне, што вы адхілілі запрашэнне, паколькі вы не можаце адпраўляць лісты з запрошанага адраса. Ці хочаце вы выдаліць гэту падзею?</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">Паўтарэнні, якія былі раней абноўлены арганізатарам будуць захаваны, але вашы адказы будуць страчаны</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">Паўтарэнні, якія былі раней абноўлены арганізатарам, будуць захаваны</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">Немагчыма апавясціць арганізатара, што вы адхілілі запрашэнне:\n\n• %1$s\n\nЦі хочаце вы ўсё роўна выдаліць падзею?</string>
+    <string name="dialog_button_set">Задаць</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="action_save">Захаваць</string>
+    <string name="action_done">Гатова</string>
+    <string name="action_edit">Рэдагаваць</string>
+    <string name="action_delete">Выдаліць</string>
+    <string name="action_add">Дадаць</string>
+    <string name="action_remove">Выдаліць</string>
+    <string name="action_leave">Выйсці</string>
+    <string name="action_recreate">Ачысціць</string>
+    <string name="action_today">Сёння</string>
+    <string name="action_create_event">Стварыць падзею</string>
+    <string name="action_mark_default">Пазначыць як прадвызначаны</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">Няма падзей</string>
+    <string name="agenda_loading_events">Загрузка падзей…</string>
+    <string name="agenda_loading_events_error">Памылка загрузкі падзей</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+ яшчэ %1$d</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">Увесь дзень</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">Падчас падзеі</string>
+    <string name="event_alarm_label_at_event_time_by_email">Падчас падзеі па электроннай пошце</string>
+    <string name="event_alarm_label_on_the_same_day">У той жа дзень</string>
+    <string name="event_alarm_label_before">%1$s да падзеі</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s да падзеі па электроннай пошце</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s у %2$s</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s у %2$s па электроннай пошце</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s да падзеі у %2$s</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s да падзеі у %2$s па электроннай пошце</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s у %2$s</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s на %2$d чысло</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s у %2$s</string>
+    <string name="event_recurrence_none">Не паўтараецца</string>
+    <string name="event_recurrence_daily">Штодзень</string>
+    <string name="event_recurrence_weekly">Штотыдзень</string>
+    <string name="event_recurrence_monthly">Штомесяц</string>
+    <string name="event_recurrence_yearly">Штогод</string>
+    <string name="event_recurrence_weekly_on_all_days">усе дні</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">да %1$s</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">да %1$s (%2$s)</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">Скасавана</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(адключана)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(Прадвызначаны)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d так</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d магчыма</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d не</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d у чаканні</string>
+    <string name="event_attendee_is_organizer">Вы арганізатар</string>
+    <string name="event_attendee_organizer">Арганізатар</string>
+    <string name="event_attendee_optional">Неабавязкова</string>
+    <string name="event_attendee_is_current_user">Вы</string>
+    <string name="event_answer_attending">Пойдзеце?</string>
+    <string name="event_answer_yes">Так</string>
+    <string name="event_answer_no">Не</string>
+    <string name="event_answer_maybe">Магчыма</string>
+    <string name="event_decryption_error_dialog_title">Не ўдалося расшыфраваць падзею</string>
+    <string name="event_decryption_error_dialog_message">Не ўдалося расшыфраваць змесціва падзеі.</string>
+    <string name="event_decryption_error_dialog_confirmation">Выдаліць падзею</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">Выдаліць падзеі</string>
+    <string name="event_decryption_error_dialog_close">Закрыць</string>
+    <string name="event_signature_verification_failure">Не ўдалося праверыць подпіс падзеі. <a href="https://proton.me/support/what-is-a-digital-signature">Даведацца больш</a></string>
+    <string name="event_signature_verification_in_progress">Выконваецца праверка подпісу падзеі.</string>
+    <string name="event_signature_verification_network_error">Праверка подпісу падзеі была перарвана памылкай. <a href="">Паспрабуйце яшчэ раз</a></string>
+    <string name="event_change_answer_recurring_title">Абнавіць перыядычную падзею</string>
+    <string name="event_change_answer_recurring_description">Ці хочаце вы змяніць свой адказ для ўсіх падзей у гэтай серыі?</string>
+    <string name="event_change_answer_recurring_overwrite_description">Ці хочаце вы змяніць свой адказ для ўсіх падзей у гэтай серыі?\nНекаторыя з вашых адказаў на падзеі, раней абноўленыя арганізатарам, будуць страчаны.</string>
+    <string name="event_change_answer_recurring_single_edit_description">Гэта падзея была абноўлена арганізатарам. Ці хочаце вы змяніць свой адказ толькі для гэтага паўтарэння ў гэтай серыі?</string>
+    <string name="event_change_answer_recurring_cancel">Скасаваць</string>
+    <string name="event_change_answer_recurring_confirm">Абнавіць</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s прыняў(-ла) ваша запрашэнне на %2$s</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s адхіліў(-ла) ваша запрашэнне на %2$s</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">%1$s умоўна прыняў(-ла) ваша запрашэнне на $%2$s</string>
+    <string name="event_organizer_send_prefs_error_title">Немагчыма апавясціць арганізатара</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">Немагчыма апавясціць арганізатара, што вы прынялі запрашэнне</string>
+    <string name="event_organizer_send_prefs_message_declined_title">Немагчыма апавясціць арганізатара, што вы адхілілі запрашэнне</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">Немагчыма апавясціць арганізатара, што вы ўмоўна прынялі запрашэнне</string>
+    <string name="event_organizer_send_prefs_message_default_title">Немагчыма апавясціць арганізатара, што вы адказалі на запрашэнне</string>
+    <string name="event_organizer_send_prefs_button_title">OK</string>
+    <string name="event_attendees_send_prefs_error_title">Немагчыма апавясціць удзельнікаў</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">Ніводны з удзельнікаў не атрымаў апавяшчэнне, што вы рабілі змены:\n\n• %1$s\n\nЦі хочаце вы ўсё роўна працягнуць?</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">Наступныя ўдзельнікі не могуць атрымаць апавяшчэнне, што вы рабілі змены:\n\n• %1$s\n\nЦі хочаце вы ўсё роўна працягнуць?</string>
+    <string name="event_attendees_send_prefs_error_confirm">Працягнуць</string>
+    <string name="event_attendees_send_prefs_error_cancel">Скасаваць</string>
+    <string name="event_send_prefs_error_address_disabled">гэты адрас не існуе</string>
+    <string name="event_send_prefs_error_getting_contact">немагчыма атрымаць даныя кантакту</string>
+    <string name="event_send_prefs_error_network">памылка сеткі</string>
+    <string name="event_send_prefs_trusted_keys_invalid">памылковыя давераныя ключы</string>
+    <string name="event_send_prefs_public_keys_invalid">памылковыя публічныя ключы</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">памылковы подпіс кантакту</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">Далучыцца да сустрэчы ў Zoom</string>
+    <string name="zoom_meeting_title">Сустрэча па Zoom</string>
+    <string name="generic_meeting_id">Ідэнт.: %1$s</string>
+    <string name="generic_meeting_password">Пароль: %1$s</string>
+    <string name="generic_meeting_more_details">Больш падрабязна</string>
+    <string name="generic_meeting_less_details">Менш падрабязна</string>
+    <string name="generic_meeting_host">Арганізатар сустрэчы</string>
+    <string name="generic_meeting_link">Спасылка на сустрэчу</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Інструкцыі па далучэнні</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">Новая падзея</string>
+    <string name="event_text_edit_event">Рэдагаваць падзею</string>
+    <string name="event_hint_title">Дадаць загаловак</string>
+    <string name="event_hint_location">Дадаць размяшчэнне</string>
+    <string name="event_text_add_participants">Дадаць удзельнікаў</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">Удзельнікі (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">Вы</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ яшчэ %1$d</string>
+    <string name="event_text_switch_all_day">Увесь дзень</string>
+    <string name="event_text_date_start">Пачатак</string>
+    <string name="event_text_date_end">Завяршэнне</string>
+    <string name="event_text_date_repeat">Паўтараецца</string>
+    <string name="event_text_date_repeat_never">Не паўтараецца</string>
+    <string name="event_text_attendees">Удзельнікі</string>
+    <string name="event_text_attendees_none">Няма</string>
+    <string name="event_text_calendar">Каляндар</string>
+    <string name="event_text_timezone_start">Часавы пояс</string>
+    <string name="invite_in_shared_calendar_disclaimer">Адпраўка запрашэнняў даступна толькі ў асабістых календарах.</string>
+    <string name="invite_change_calendar_disclaimer">Немагчыма змяніць каляндар, які звязаны з запрашэннямі.</string>
+    <string name="invite_change_attendees_disclaimer">Немагчыма змяніць удзельнікаў, якія звязаны з запрашэннямі.</string>
+    <string name="change_calendar_recurring_disclaimer">Змяненне календара для перыядычных падзей пакуль немагчыма.</string>
+    <string name="update_event">Абнавіць падзею</string>
+    <string name="update_invite_send_email">Удзельнікам мерапрыемства будзе адпраўлена абнаўленне запрашэння.</string>
+    <string name="update_recurring_event">Абнавіць перыядычную падзею</string>
+    <string name="update_recurring_all_events">Ці хочаце вы абнавіць усе падзеі ў гэтай серыі?</string>
+    <string name="update_recurring_invite_send_email">Вы абновіце ўсе падзеі ў гэтай серыі. Удзельнікам падзеі будзе адпраўлена абноўленае запрашэнне.</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">Што вы шукаеце?</string>
+    <string name="search_empty_results_title">Нічога не знойдзена</string>
+    <string name="search_empty_results_subtitle">Паспрабуйце іншы тэрмін (напрыклад, Эдуард, вебінар, кніжны клуб).</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">Спампоўванне календароў (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">Засталося часу: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">Падлік часу, які застаўся…</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">амаль гатова</string>
+    <string name="search_downloading_pause">Прыпыніць спампоўванне</string>
+    <string name="search_settings_dialog_toggle_off_title">Выдаліць усе спампаваныя календары?</string>
+    <string name="search_settings_dialog_toggle_off_text">Вам неабходна спампаваць вашы календары яшчэ раз, калі вы хочаце шукаць у іх.</string>
+    <string name="search_settings_dialog_toggle_on_title">Спампаваць календары на гэту прыладу?</string>
+    <string name="search_settings_dialog_toggle_on_text">Гэта патрабуецца для пошуку.</string>
+    <string name="search_onboarding_header">Хочаце пашукаць у календары?</string>
+    <string name="search_onboarding_text">Па-першае, неабходна спампаваць зашыфраваную копію вашага календара. Гэта зойме ўсяго некалькі хвілін, а вы зможаце працягваць карыстацца праграмай.<a href="https://proton.me/support/calendar-search">Даведацца больш</a></string>
+    <string name="search_onboarding_action_download_calendars">Спампаваць календары</string>
+    <string name="search_onboarding_action_pause">Прыпыніць</string>
+    <string name="search_onboarding_action_resume">Узнавіць</string>
+    <string name="search_onboarding_action_retry">Паўтарыць</string>
+    <string name="search_onboarding_progress_header_ongoing">Спампоўванне календароў…</string>
+    <string name="search_onboarding_progress_header_completed">Спампоўванне завершана</string>
+    <string name="search_onboarding_progress_header_paused">Спампоўванне календароў прыпынена</string>
+    <string name="search_onboarding_progress_header_error">Памылка спампоўвання календароў</string>
+    <string name="search_spotlight_activation_snack">Пошук у календары актываваны</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">Дадаць апавяшчэнне</string>
+    <string name="event_text_description">Апісанне</string>
+    <string name="event_hint_description">Дадаць апісанне</string>
+    <string name="event_text_custom">карыстальніцкі</string>
+    <string name="event_alert_invalid_start_end_date">Дата пачатку падзеі не можа быць пасля даты яе завяршэння</string>
+    <string name="event_alarms_title">Апавяшчэнні</string>
+    <string name="event_custom_alarms_field">Апавяшчаць</string>
+    <string name="event_custom_alarms_title">Карыстальніцкія апавяшчэнні</string>
+    <string name="event_alarm_partial_day_1">падчас падзеі</string>
+    <string name="event_alarm_partial_day_2">10 хвілін</string>
+    <string name="event_alarm_partial_day_3">30 хвілін</string>
+    <string name="event_alarm_partial_day_4">1 гадзіна</string>
+    <string name="event_alarm_partial_day_5">1 тыдзень</string>
+    <string name="event_alarm_all_day_1">у той самы дзень а %1$s</string>
+    <string name="event_alarm_all_day_2">За 1 дзень да %1$s</string>
+    <string name="event_alarm_all_day_3">За 1 тыдзень да падзеі ў %1$s</string>
+    <string name="event_alarm_all_day_4">За 3 тыдні да падзеі ў %1$s</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">а %1$s</string>
+    <string name="event_alarm_action">Адправіць з дапамогай</string>
+    <string name="event_alarm_action_notification">апавяшчэнне</string>
+    <string name="event_alarm_action_email">электронная пошта</string>
+    <string name="event_alarm_same_day">у той жа дзень</string>
+    <string name="event_recurrence_1">не паўтараць</string>
+    <string name="event_recurrence_2">кожны дзень</string>
+    <string name="event_recurrence_3">кожны тыдзень</string>
+    <string name="event_recurrence_4">кожны месяц</string>
+    <string name="event_recurrence_5">кожны год</string>
+    <string name="event_recurrence_title">Перыядычнасць</string>
+    <string name="event_recurrence_custom_title">Карыстальніцкая перыядычнасць</string>
+    <string name="event_recurrence_occurs_every">Паўтараецца кожны</string>
+    <string name="event_recurrence_occurs_on">Паўтараць</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">%1$d чысла</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">у %1$s</string>
+    <string name="event_recurrence_ends_on">Завяршаецца</string>
+    <string name="event_recurrence_ends_never">ніколі</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">у</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">%1$s</string>
+    <string name="event_recurrence_ends_after_count_prefix">пасля</string>
+    <string name="event_recurring_edit_this">Гэта падзея</string>
+    <string name="event_recurring_edit_this_and_future">Гэта і будучыя падзеі</string>
+    <string name="event_recurring_edit_all_events">Усе падзеі</string>
+    <string name="event_discard_changes_title">Адхіліць змены?</string>
+    <string name="event_discard_changes_description">Вы страціце ўсе незахаваныя змены.</string>
+    <string name="event_discard_changes_cancel">Працягнуць рэдагаванне</string>
+    <string name="event_discard_changes_confirm">Адхіліць</string>
+    <string name="event_recurring_update_this_title">Абнавіць перыядычную падзею</string>
+    <string name="event_recurring_update_this_description">Змяненні перыядычнасці будуць страчаны</string>
+    <string name="event_recurring_update_all_description">Папярэднія змяненні ў гэтай серыі будуць страчаны.</string>
+    <string name="event_recurring_update_this_cancel">Скасаваць</string>
+    <string name="event_recurring_update_this_confirm">Абнавіць</string>
+    <string name="event_allow_contacts_title">Дазволіць Proton Calendar доступ да вашых кантактаў?</string>
+    <string name="event_allow_contacts_description">Proton Calendar неабходны доступ да вашых кантактаў для забеспячэння аўтаматычнага запаўнення</string>
+    <string name="event_allow_contacts_cancel">Забараніць</string>
+    <string name="event_allow_contacts_confirm">Дазволіць</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Re: Запрашэнне на падзею, якая пачынаецца ў %1$s а %2$s %3$s</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">Re: Запрашэнне на падзею ў %1$s</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">Re: Запрашэнне на падзею, якая пачынаецца ў %1$s</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Запрашэнне на падзею, якая пачынаецца ў %1$s а %2$s %3$s</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">Запрашэнне на падзею ў %1$s</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">Запрашэнне на падзею, якая пачынаецца ў %1$s</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Абнаўленне для падзеі, якая пачынаецца ў %1$s а %2$s %3$s</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">Абнаўленне для падзеі ў %1$s</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">Абнаўленне для падзеі, якая пачнецца ў %1$s</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Скасаванне падзеі, якая пачынаецца ў %1$s а %2$s%3$s</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">Скасаванне падзеі ў %1$s</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">Скасаванне падзеі, якая пачынаецца ў %1$s</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">Вас запрасілі на %1$s\nКалі: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s было абноўлена.\nКалі:%2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (увесь дзень)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s у %2$s%3$s — %4$s у %5$s %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nДзе: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nАпісанне: %1$s</string>
+    <string name="event_send_invite_dialog_title">Адправіць запрашэнне</string>
+    <string name="event_send_invite_dialog_description">Дададзеным удзельнікам будзе адпраўлена запрашэнне.</string>
+    <string name="event_send_invite_dialog_confirm">Адправіць</string>
+    <string name="event_send_invite_dialog_cancel">Скасаваць</string>
+    <string name="event_add_participants_dialog_title">Дадаць удзельнікаў</string>
+    <string name="event_add_participants_dialog_description">Дададзеным удзельнікам будзе адпраўлена запрашэнне.</string>
+    <string name="recurring_event_add_participants_dialog_description">Дададзеным удзельнікам будзе адпраўлена запрашэнне на ўсе падзеі ў гэтай серыі.</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">Дададзеным удзельнікам будзе адпраўлена запрашэнне на ўсе падзеі ў гэтай серыі.\nПапярэднія змяненні ў гэтай серыі будуць страчаны.</string>
+    <string name="event_add_participants_dialog_confirm">Адправіць</string>
+    <string name="event_add_participants_dialog_cancel">Скасаваць</string>
+    <string name="event_remove_participants_dialog_title">Выдаліць удзельнікаў</string>
+    <string name="event_remove_participants_dialog_description">Ліст пра скасаванне будзе адпраўлены выдаленым удзельнікам.</string>
+    <string name="recurring_event_remove_participants_dialog_description">Ліст пра скасаванне будзе адпраўлены выдаленым удзельнікам для ўсіх падзей у гэтай серыі.</string>
+    <string name="event_add_and_remove_participants_dialog_description">Дададзеныя і выдаленыя ўдзельнікі атрымаюць апавяшчэнне.</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">Дададзеныя і выдаленыя ўдзельнікі атрымаюць апавяшчэнне аб усіх падзеях у гэтай серыі.</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s было скасавана.</string>
+    <string name="event_save_changes">Захаваць змены</string>
+    <string name="event_update_add_participants_dialog_description">Існуючыя і дададзеныя ўдзельнікі атрымаюць апавяшчэнне.</string>
+    <string name="recurring_event_update_add_participants_dialog_description">Вы абновіце ўсе падзеі ў гэтай серыі. Існуючыя і дададзеныя ўдзельнікі атрымаюць апавяшчэнне.</string>
+    <string name="event_update_remove_participants_dialog_description">Існуючыя і выдаленыя ўдзельнікі атрымаюць апавяшчэнне.</string>
+    <string name="event_update_remove_all_participants_dialog_description">Выдаленыя ўдзельнікі атрымаюць апавяшчэнне.</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">Вы абновіце ўсе падзеі ў гэтай серыі. Існуючыя і выдаленыя ўдзельнікі атрымаюць апавяшчэнне.</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">Вы абновіце ўсе падзеі ў гэтай серыі. Выдаленыя ўдзельнікі атрымаюць апавяшчэнне.</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">Існуючыя, дададзеныя і выдаленыя ўдзельнікі атрымаюць апавяшчэнні.</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">Вы абновіце ўсе падзеі ў гэтай серыі. Існуючыя, дададзеныя і выдаленыя ўдзельнікі атрымаюць апавяшчэнне.</string>
+    <string name="success_snack_email_update_recurring">Удзельнікі атрымалі апавяшчэнне і ўсе падзеі абноўлены</string>
+    <string name="success_snack_email_update">Удзельнікі атрымалі апавяшчэнне і падзея абноўлена</string>
+    <string name="success_snack_add_attendees_recurring">Запрашэнне адпраўлена і ўдзельнікі дададзены да ўсіх падзей</string>
+    <string name="success_snack_add_attendees">Запрашэнне адпраўлена і ўдзельнікі дададзены</string>
+    <string name="success_snack_remove_attendees_recurring">Скасаванне адпраўлена і ўдзельнікі выдалены з усіх падзей</string>
+    <string name="success_snack_remove_attendees">Скасаванне адпраўлена і ўдзельнікі выдалены</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">Мае календары</string>
+    <string name="nav_view_subscribed_calendars">Падпісаныя календары</string>
+    <string name="nav_view_other_calendars">Іншыя календары</string>
+    <string name="nav_view_disabled_calendars">%1$s (адключаны)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (не сінхранізаваны)</string>
+    <string name="nav_view_syncing_calendars">%1$s (сінхранізацыя)</string>
+    <string name="nav_view_more">Больш</string>
+    <string name="nav_view_switcher">Выгляд</string>
+    <string name="nav_view_switcher_day">Дзень</string>
+    <string name="nav_view_switcher_three_day">3 дні</string>
+    <string name="nav_view_switcher_week">Тыдзень</string>
+    <string name="nav_view_switcher_agenda">Распарадак дня</string>
+    <string name="nav_view_switcher_month">Месяц</string>
+    <string name="nav_view_timezone">Часавы пояс</string>
+    <string name="nav_view_settings">Налады</string>
+    <string name="nav_view_feedback">Пакінуць водгук для нас</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">Агульныя</string>
+    <string name="nav_view_more_bug">Паведаміць аб праблеме</string>
+    <string name="nav_view_more_subscription">Падпіска</string>
+    <string name="nav_view_more_logout">Выйсці</string>
+    <string name="nav_view_more_login">Увайсці</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">Гэта функцыя неўзабаве з\'явіцца</string>
+    <string name="snack_event_deleted">Падзея выдалена</string>
+    <string name="snack_event_deleted_as_organizer">Адпраўка скасавана і падзея выдалена</string>
+    <string name="snack_event_deleted_as_attendee">Адказ адпраўлены і падзея выдалена</string>
+    <string name="snack_event_deleted_error">Памылка выдалення падзеі</string>
+    <string name="snack_event_deleted_as_organizer_error">Не атрымалася адправіць ліст пра скасаванне. Паспрабуйце яшчэ раз</string>
+    <string name="snack_event_opening_error">Памылка адкрыцця падзеі</string>
+    <string name="snack_event_saving">Захаванне падзеі</string>
+    <string name="snack_event_deleting">Выдаленне падзеі</string>
+    <string name="snack_event_changing_answer">Абнаўленне адказу</string>
+    <string name="snack_event_part_stat_updated">Статус удзелу абноўлены.</string>
+    <string name="snack_event_updated">Падзея абноўлена</string>
+    <string name="snack_event_updated_recurring">Усе падзеі абноўлены</string>
+    <string name="snack_event_updated_error_failed_mail">Не ўдалося адправіць запрашэнне</string>
+    <string name="snack_update_event_error_failed_mail">Збой абнаўлення</string>
+    <string name="snack_lost_zoom_access">Падключыцца да Zoom для рэдагавання гэтай падзеі.</string>
+    <string name="snack_lost_zoom_access_acion">Падключыцца</string>
+    <string name="snack_zoom_meeting_does_not_exist">Гэты сеанс Zoom быў скасаваны. Выдаліце спасылку для рэдагавання гэтай падзеі.</string>
+    <string name="snack_event_updated_error">Памылка абнаўлення падзеі</string>
+    <string name="snack_event_created">Падзея створана</string>
+    <string name="snack_event_created_failed_mail">Падзея створана, але не ўдалося адправіць запрашэнне</string>
+    <string name="snack_event_created_error">Памылка стварэння падзеі</string>
+    <string name="snack_event_opening_edit_error">Памылка адкрыцця падзеі для змянення</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">Гэта перыядычная падзея можа быць выдалена толькі ў вэб-праграме календара.</string>
+    <string name="snack_event_edit_with_attendees_error">Змяненне падзей з удзельнікамі пакуль не падтрымліваецца</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">Немагчыма дадаваць удзельнікаў і змяняць каляндар адначасова</string>
+    <string name="snack_event_init_error">Памылка ініцыялізацыі новай падзеі</string>
+    <string name="snack_event_calendar_error">Памылка пераключэння календара</string>
+    <string name="snack_event_maximum_alarm_reached_error">Дасягнута максімальная колькасць апавяшчэнняў</string>
+    <string name="snack_send_bug_report_success">Справаздача адпраўлена, дзякуй за водгук</string>
+    <string name="snack_send_bug_report_error">Памылка адпраўкі справаздачы. Паспрабуйце яшчэ раз пазней</string>
+    <string name="snack_send_bug_report_description_empty">Апішыце праблему з якой вы сутыкнуліся</string>
+    <string name="snack_create_event_no_active_personal_calendar">Вам неабходны асабісты актыўны каляндар для стварэння падзей</string>
+    <string name="snack_create_event_no_active_calendar">Каб ствараць падзеі, вам неабходна мець актыўны каляндар</string>
+    <string name="snack_add_self_as_participant">Забаронена запрашаць самога сябе</string>
+    <string name="snack_maximum_participants_reached">Дасягнута максімальная колькасць удзельнікаў.</string>
+    <string name="snack_add_participant_error">Падчас дадавання ўдзельніка адбылася памылка</string>
+    <string name="snack_add_participant_invalid_email">Памылковая электронная пошта</string>
+    <string name="snack_change_attendee_answer_error">Памылка адпраўкі адказу. Паспрабуйце яшчэ раз пазней</string>
+    <string name="snack_network_error">Памылка сеткі. Паспрабуйце яшчэ раз пазней</string>
+    <string name="snack_import_event_signed_out">Вам неабходна ўвайсці, каб імпартаваць падзеі</string>
+    <string name="snack_app_link_signed_out">Вам неабходна ўвайсці, каб убачыць сваю падзею</string>
+    <string name="snack_update_default_calendar">Прадвызначаны каляндар абноўлены</string>
+    <string name="snack_update_default_calendar_error">Памылка абнаўлення прадвызначанага календара. Паспрабуйце яшчэ раз пазней</string>
+    <string name="snack_calendar_init_error">Памылка загрузкі інфармацыі календара</string>
+    <string name="snack_holiday_calendar_init_error">Памылка загрузкі інфармацыі аб календары са святамі</string>
+    <string name="snack_update_calendar_error">Памылка абнаўлення інфармацыі календара. Паспрабуйце яшчэ раз пазней</string>
+    <string name="snack_update_calendar_settings_error">Памылка абнаўлення некаторай інфармацыі календара. Паспрабуйце яшчэ раз пазней</string>
+    <string name="snack_update_calendar_success">Каляндар абноўлены</string>
+    <string name="snack_create_calendar_success">Каляндар створаны</string>
+    <string name="snack_add_calendar_success">Каляндар дададзены</string>
+    <string name="snack_calendar_saving">Захаванне календара</string>
+    <string name="snack_create_calendar_error">Памылка стварэння календара. Паспрабуйце яшчэ раз пазней</string>
+    <string name="snack_add_calendar_error">Памылка дадавання календара. Паспрабуйце яшчэ раз пазней</string>
+    <string name="snack_create_calendar_settings_error">Каляндар створаны, але некаторая інфармацыя не была абноўлена. Паспрабуйце яшчэ раз пазней</string>
+    <string name="snack_ics_default_error">Памылка адкрыцця календара</string>
+    <string name="snack_ics_event_not_found_error">Падзея не знойдзена</string>
+    <string name="snack_ics_file_not_found_error">Файл не знойдзены</string>
+    <string name="snack_ics_create_error">Памылка стварэння падзеі</string>
+    <string name="snack_ics_parsing_error">Памылка чытання календара</string>
+    <string name="snack_ics_unsupported_method_error">Такі тып падзеі яшчэ не падтрымліваецца</string>
+    <string name="snack_ics_unsupported_add_error">На дадзены момант дадаванне паўтарэнняў да падзеі не падтрымліваецца</string>
+    <string name="snack_ics_unsupported_counter_error">На дадзены момант паўторнае планаванне падзеі не падтрымліваецца</string>
+    <string name="snack_ics_unsupported_refresh_error">На дадзены момант абнаўленне падзеі не падтрымліваецца</string>
+    <string name="snack_ics_unsupported_publish_error">На дадзены момант імпартаванне падзеі не падтрымліваецца</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">На дадзены момант мы падтрымліваем адказы толькі на ўсе падзеі серыі</string>
+    <string name="snack_ics_party_crasher_error">Ваша электронная пошта адсутнічае ў спісе ўдзельнікаў</string>
+    <string name="snack_ics_reply_party_crasher_error">Немагчыма дадаць удзельнікаў, якіх не запрасіў арганізатар</string>
+    <string name="snack_ics_missing_uid_error">У гэтай падзеі адсутнічае UID</string>
+    <string name="snack_ics_no_active_personal_calendar_error">У гэтага ўліковага запісу адсутнічае звязаны актыўны асабісты каляндар</string>
+    <string name="snack_ics_no_active_calendar_error">У гэтага ўліковага запісу адсутнічае звязаны актыўны каляндар</string>
+    <string name="snack_ics_unsupported_duration_error">Уласцівасць працягласці пакуль не падтрымліваецца</string>
+    <string name="snack_ics_too_many_events_error">Некалькі падзей пакуль не падтрымліваюцца</string>
+    <string name="snack_ics_no_events_error">Гэты каляндар не змяшчае ніводнай падзеі</string>
+    <string name="snack_ics_invalid_error">Гэта запрашэнне з\'яўляецца памылковым</string>
+    <string name="snack_ics_disabled_calendar_error">Для абнаўлення гэтай падзеі неабходна паўторна ўключыць адрас, які звязаны з гэтым календаром</string>
+    <string name="snack_ics_event_deleted_error">Гэтай падзеі больш не існуе ў вашым календары</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s прыняў(-ла) ваша запрашэнне</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s умоўна прыняў(-ла) ваша запрашэнне</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s адхіліў(-ла) ваша запрашэнне</string>
+    <string name="snack_app_link_invalid">Памылковая спасылка на падзею</string>
+    <string name="snack_app_link_error">Памылка адкрыцця падзеі</string>
+    <string name="snack_app_link_import_error">Аўтэнтыфікацыя скасавана</string>
+    <string name="snack_notification_already_added">Апавяшчэнне ўжо было дададзена</string>
+    <string name="snack_opening_ics">Адкрыццё падзеі…</string>
+    <string name="snack_invite_in_shared_calendar_error">Стварэнне запрашэнняў у абагуленым календары забаронена</string>
+    <string name="snack_down_banner">Серверы Proton недаступны. Наведайце нашу старонку статусу для падрабязнасцяў.</string>
+    <string name="snack_down_banner_action">Адкрыць старонку статусу</string>
+    <string name="snack_color_per_event_paid_feature">Палепшыце, каб наладжваць колеры падзей</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">Падзея не існуе</string>
+    <string name="error_occurrence_does_not_exist">Паўтарэння не існуе</string>
+    <string name="update_timezone_dialog_title">Часавы пояс зменены</string>
+    <string name="update_timezone_dialog_message">Падобна, што ваш часавы пояс змяніўся на %1$s. Вы сапраўды хочаце абнавіць налады вашага часавога пояса?</string>
+    <string name="update_timezone_dialog_confirmation">Абнавіць</string>
+    <string name="update_timezone_dialog_cancel">Скасаваць</string>
+    <string name="contacts_permission_dialog_title">Дазволіць Proton Calendar доступ да вашых кантактаў?</string>
+    <string name="contacts_permission_dialog_message">Proton Calendar неабходны доступ да кантактаў на вашым тэлефоне, каб лёгка дадаваць іх у вашы падзеі.</string>
+    <string name="contacts_permission_dialog_allow">Дазволіць</string>
+    <string name="contacts_permission_dialog_open_settings">Адкрыць налады</string>
+    <string name="contacts_permission_dialog_cancel">Забараніць</string>
+    <string name="dialog_title_calendar_picker">Каляндар</string>
+    <string name="dialog_title_calendar_color_picker">Колер календара</string>
+    <string name="dialog_title_event_color_picker">Колер падзеі</string>
+    <string name="import_from_google_title">Імпартаваць з Google</string>
+    <string name="notifications_permission_dialog_title">Дазволіць Proton Calendar паказваць апавяшчэнні?</string>
+    <string name="notifications_permission_dialog_message">Proton Calendar патрабуецца дазвол, каб паказваць вам апавяшчэнні пра надыходзячыя падзеі.</string>
+    <string name="notifications_permission_dialog_open_settings">Адкрыць налады</string>
+    <string name="notifications_permission_dialog_cancel">Забараніць</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">Апавяшчэнні пра падзею</string>
+    <string name="notification_channel_sync">Сінхранізацыя з календаром</string>
+    <string name="notification_channel_calendar_fetch">Атрыманне календароў</string>
+    <string name="notification_sync">Сінхранізацыя з календарамі…</string>
+    <string name="notification_text_today">Сёння</string>
+    <string name="notification_text_today_part_time">Сёння ў %1$s</string>
+    <string name="notification_text_tomorrow">Заўтра</string>
+    <string name="notification_text_tomorrow_part_time">Заўтра а %1$s</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s у %2$s</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">Тэма</string>
+    <string name="bug_report_hint_description">Апішыце праблему і далучыце ўсе паведамленні з памылкамі.</string>
+    <string name="bug_report_discard_changes_title">Незахаваныя змены</string>
+    <string name="bug_report_discard_changes_description">У форме прысутнічаюць незахаваныя запісы. Вы сапраўды хочаце адхіліць іх?</string>
+    <string name="bug_report_discard_changes_cancel">Працягнуць пісаць</string>
+    <string name="bug_report_discard_changes_confirm">Адхіліць</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">Налады праграмы</string>
+    <string name="settings_theme_title">Тэма</string>
+    <string name="settings_theme_info">Гэты параметр уплывае толькі на вонкавы выгляд праграмы Proton Calendar на гэтай прыладзе. Праграма перазапусціцца пасля змянення тэмы.</string>
+    <string name="settings_timezone_title">Часавы пояс</string>
+    <string name="settings_language_title">Мова праграмы</string>
+    <string name="settings_language_default">Аўтаматычнае вызначэнне</string>
+    <string name="settings_default_view_title">Прадвызначаны выгляд</string>
+    <string name="settings_default_view_default">Апошні выгляд</string>
+    <string name="settings_update_timezone_title">Пытацца пра змену часавага пояса</string>
+    <string name="settings_update_timezone_subtitle">Калі часавы пояс сістэмы не супадае з наладамі бягучага часавага пояса, вам будзе прапанавана абнавіць яго.</string>
+    <string name="settings_update_timezone_checkbox">Больш не пытаць</string>
+    <string name="settings_week_start_title">Пачатак тыдня</string>
+    <string name="settings_time_format_title">Фармат часу</string>
+    <string name="settings_week_numbers_title">Паказваць нумары тыдняў</string>
+    <string name="settings_auto_invites_title">Дадаваць запрашэнні ў каляндар і пазначаць іх як запрашэнні, якія чакаюць разгляду</string>
+    <string name="settings_search_title">Пошук календароў</string>
+    <string name="settings_search_subtitle">Спампоўвае і захоўвае змест календара на вашу прыладу для пошуку. Выключэнне гэтай функцыі прывядзе да выдалення спампаванага змесціва.\n\nФункцыя пошуку ў цяперашні момант знаходзіцца ў стадыі эксперыментальнага бэта-тэсціравання. Яе ўключэнне можа стаць прычынай нестабільнай працы праграмы.</string>
+    <string name="settings_alternative_routing_title">Дазволіць альтэрнатыўную маршрутызацыю</string>
+    <string name="settings_alternative_routing_subtitle">У выпадку блакіроўкі сайтаў Proton гэта налада дазваляе праграме скарыстацца альтэрнатыўнай сеткавай маршрутызацыяй, каб атрымаць доступ да Proton, што можа быць карысным для абыходу міжсеткавых экранаў або праблем з сеткай. Для большай надзейнасці мы рэкамендуем пакінуць гэту наладу актыўнай.</string>
+    <string name="settings_value_placeholder">Націсніце, каб выбраць</string>
+    <string name="settings_general_title">Агульныя</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s і г.д.</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">тэма</string>
+    <string name="settings_general_info_language">мова</string>
+    <string name="settings_general_info_time_zone">часавы пояс</string>
+    <string name="settings_general_info_calendar_layout">выгляд календара</string>
+    <string name="settings_calendars">Мае календары</string>
+    <string name="settings_calendars_empty">Календары не знойдзены</string>
+    <string name="settings_subscribed_calendars">Падпісаныя календары</string>
+    <string name="settings_other_calendars">Іншыя календары</string>
+    <string name="settings_calendar_default" comment="Default calendar">Прадвызначаны</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">Адключана</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">Не сінхранізавана</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">Сінхранізацыя</string>
+    <string name="settings_calendar_subscribed_invalid_ics">Фармат календара не падтрымліваецца</string>
+    <string name="settings_calendar_subscribed_too_big">Занадта вялікі каляндар</string>
+    <string name="settings_calendar_subscribed_not_accessible">Спасылка на каляндар недаступна</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">Спасылка на каляндар часова недаступна</string>
+    <string name="settings_calendar_subscribed_last_sync_old">Ад моманту апошняга абнаўлення мінула больш за 12 гадзін</string>
+    <string name="settings_calendar_subscribed_not_decrypted">Не атрымалася расшыфраваць каляндар</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">Толькі прагляд</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">ад %1$s</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">Стварыць каляндар</string>
+    <string name="calendar_form_update_title">Рэдагаваць каляндар</string>
+    <string name="calendar_form_save">Захаваць</string>
+    <string name="calendar_form_name">Назва</string>
+    <string name="calendar_form_description">Апісанне</string>
+    <string name="calendar_form_color">Колер календара</string>
+    <string name="calendar_form_language">Мова</string>
+    <string name="calendar_form_default_event_duration">Працягласць падзеі</string>
+    <string name="calendar_form_default_event_notifications">Апавяшчэнні пра падзею</string>
+    <string name="calendar_form_default_all_day_event_notifications">Апавяшчэнні пра падзеі на ўвесь дзень</string>
+    <string name="calendar_form_add_notification">Дадаць апавяшчэнне</string>
+    <string name="calendar_form_default_email">Адрас электроннай пошты</string>
+    <string name="calendar_form_default_email_value_error">Не ўдалося загрузіць прадвызначаную электронную пошту</string>
+    <string name="calendar_form_name_hint">Дадаць назву календара</string>
+    <string name="calendar_form_name_required_error">Патрабуецца назва</string>
+    <string name="calendar_form_description_hint">Дадаць апісанне календара</string>
+    <string name="add_calendar_text">Дадаць каляндар</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">Дадаць</string>
+    <string name="create_calendar_limit_reached">Вы дасягнулі максімальнай колькасці календароў.</string>
+    <string name="create_calendar_limit_reached_title">Немагчыма дадаць больш календароў</string>
+    <string name="create_calendar_limit_reached_paid_description">Вы дасягнулі максімальнай колькасці з 25 календароў, якія даступны на вашым тарыфным плане.\n\nВыдаліце адзін з існуючых календароў, каб дадаць новы.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">У вас павінен быць прынамсі адзін асабісты каляндар перад тым, як абмежаванне ў 25 календароў будзе дасягнута на вашым тарыфным плане.</string>
+    <string name="create_calendar_limit_reached_manage">Кіраванне календарамі</string>
+    <string name="create_calendar_limit_reached_free_description">Вы дасягнулі максімальнай колькасці з 3 календароў, якія даступны на вашым тарыфным плане.\n\nВыдаліце адзін з існуючых календароў, каб дадаць новы.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">У вас павінен быць прынамсі адзін асабісты каляндар перад тым, як абмежаванне ў 3 календары будзе дасягнута на вашым тарыфным плане.</string>
+    <string name="create_calendar_limit_reached_error">Памылка</string>
+    <string name="delete_calendar_dialog_title">Выдаліць каляндар</string>
+    <string name="delete_calendar_dialog_message">Вы сапраўды хочаце выдаліць гэты каляндар?</string>
+    <string name="remove_calendar_dialog_title">Выдаліць каляндар</string>
+    <string name="remove_calendar_dialog_message">Вы сапраўды хочаце выдаліць гэты каляндар?</string>
+    <string name="leave_calendar_dialog_title">Выйсці з календара</string>
+    <string name="leave_calendar_dialog_message">Калі вы выйдзіце з гэтага календара, вам давядзецца адпраўляць запыт на далучэнне ўладальніку яшчэ раз.</string>
+    <string name="delete_default_calendar_dialog_message">Вы сапраўды хочаце выдаліць гэты каляндар? \"%1$s\" будзе зададзены прадвызначаным календаром.</string>
+    <string name="delete_calendar_snack_deleted">Каляндар выдалены</string>
+    <string name="remove_calendar_snack_removed">Каляндар выдалены</string>
+    <string name="delete_calendar_snack_error">Памылка выдалення календара</string>
+    <string name="remove_calendar_snack_error">Памылка выдалення календара</string>
+    <string name="leave_calendar_snack_error">Памылка выхаду з календара</string>
+    <string name="delete_calendar_snack_error_password_confirmation">Не ўдалося пацвердзіць пароль</string>
+    <string name="recreate_calendar_dialog_title">Ачысціць каляндар</string>
+    <string name="recreate_calendar_dialog_message">Гэта дзеянне выдаліць усе падзеі і запрошаных карыстальнікаў.\n\nВы сапраўды хочаце ачысціць гэты каляндар?</string>
+    <string name="recreate_calendar_snack_error">Памылка ачысткі календара</string>
+    <string name="recreate_calendar_snack_deleted">Каляндар ачышчаны</string>
+    <string name="recreate_calendar_snack_clearing">Ачыстка календара…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">Дадаць каляндар са святамі</string>
+    <string name="holiday_calendar_title">Каляндар са святамі</string>
+    <string name="add_holiday_calendar_country_search_hint">Пошук краіны</string>
+    <string name="holiday_calendar_form_picker_title">Краіна</string>
+    <string name="holiday_calendar_time_zone_based">На падставе вашага часавага пояса</string>
+    <string name="holiday_calendar_already_exists">Каляндар са святамі ўжо дадзены.</string>
+    <string name="holiday_calendar_value_placeholder">Выберыце краіну</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">OK</string>
+    <string name="bootstrap_error_no_calendar_title">Адсутнічаюць календары, якія звязаны з гэтым уліковым запісам.</string>
+    <string name="bootstrap_error_no_calendar_message">Для таго, каб наладзіць яго цяпер, наведайце <a href="https://calendar.proton.me">calendar.proton.me</a></string>
+    <string name="bootstrap_error_some_calendars_failed_title">Памылка падрыхтоўкі календароў</string>
+    <string name="bootstrap_error_some_calendars_failed_message">Не атрымалася наладзіць наступныя календары</string>
+    <string name="bootstrap_error_no_active_calendar_title">У гэтага ўліковага запісу адсутнічае звязаны актыўны асабісты каляндар.</string>
+    <string name="bootstrap_error_no_active_calendar_message">Каб даведацца, як актываваць каляндар, наведайце нашу <a href="https://proton.me/support">базу ведаў</a></string>
+    <string name="bootstrap_error_store_quota_reached_message">У сховішчы больш няма месца.</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">Даведацца больш</string>
+    <string name="bootstrap_error_reset_needed_title">Скінуць ключы календара</string>
+    <string name="bootstrap_error_reset_needed_message">Вы скінулі пароль і падзеі, якія звязаны з наступнымі календарамі немагчыма расшыфраваць. Любыя актыўныя календары, на якія вы былі падпісаны раней, зноў сінхранізуюцца на працягу некалькіх хвілін.</string>
+    <string name="bootstrap_error_update_passphrase_title">Паўторна актываваць ключы календара</string>
+    <string name="bootstrap_error_update_passphrase_message">Вы паўторна актывавалі свае ключы і цяпер можаце расшыфраваць падзеі, якія былі звязаны з наступнымі календарамі.</string>
+    <string name="bootstrap_error_continue_button">Працягнуць</string>
+    <string name="splash_after_login_init">Падрыхтоўка календароў</string>
+    <string name="splash_init">Расшыфроўка падзей</string>
+    <string name="default_calendar_name">Мой каляндар</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">Пакінуць водгук для нас</string>
+    <string name="dialog_feedback_text">Якія ў вас уражанні ад новай версіі Proton Calendar?</string>
+    <string name="dialog_feedback_rating_worst">Жахліва</string>
+    <string name="dialog_feedback_rating_best">Цудоўна</string>
+    <string name="dialog_feedback_hint">Падзяліцеся з намі сваімі ўражаннямі (неабавязкова).</string>
+    <string name="dialog_feedback_submit">Адправіць</string>
+    <string name="dialog_feedback_submit_thank_you">Дзякуй! Ваш водгук дапаможа нам удасканаліць Proton.</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Віджэт Proton Calendar</string>
+    <string name="calendar_widget_no_upcoming_events_today">На сёння падзей няма</string>
+    <string name="calendar_widget_loading_events">Загрузка падзей…</string>
+    <string name="calendar_widget_loading_events_error">Немагчыма загрузіць падзеі</string>
+    <string name="calendar_widget_no_upcoming_events">Няма надыходзячых падзей</string>
+    <string name="calendar_widget_please_log_in">Увайсці, каб убачыць свае падзеі</string>
+    <string name="calendar_widget_part_day_event_starts_at">Пачынаецца %1$s</string>
+    <string name="calendar_widget_part_day_event_ends_at">Завяршаецца %1$s</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">Што новага</string>
+    <string name="spotlight_dialog_beta_header">Каляндар бэта</string>
+    <string name="spotlight_dialog_skip">Прапусціць</string>
+    <string name="spotlight_dialog_confirmation_button">OK</string>
+    <string name="spotlight_dialog_month_view_title">Прагляд месяца</string>
+    <string name="spotlight_dialog_month_view_description">Атрымайце агляд падзей с дапамогай нашага новага прагляду месяца. Пераключайцеся паміж праглядамі выкарыстоўваючы меню.</string>
+    <string name="spotlight_dialog_easy_switch_description">Імпартаванне падзей і іншых даных з Google Calendar у Proton Calendar стала простым як ніколі. Памочнік імпартавання Easy Switch будзе накіроўваць вас на кожным кроку.</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">Пачаць імпартаванне</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">Не зараз</string>
+    <string name="spotlight_dialog_auto_invites_title">Лёгка прымайце запрашэнні</string>
+    <string name="spotlight_dialog_auto_invites_description">Цяпер запрашэнні з\'яўляюцца ў вашым календары ў якасці незавершаных падзей. Проста адкрыйце іх, каб адказаць.\n\nПерайдзіце ў налады для таго, каб кіраваць імі.</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">Далей</string>
+    <string name="spotlight_v5_dialog_got_it_button">Зразумела</string>
+    <string name="spotlight_v5_dialog_learn_more_button">Даведацца больш</string>
+    <string name="spotlight_v5_dialog_rebranding_title">Абноўлены Proton, уніфікаваная абарона</string>
+    <string name="spotlight_v5_dialog_rebranding_description">Уводзіны ў абноўлены выгляд Proton. Шмат сэрвісаў, адна місія. Вітаем у інтэрнэце, дзе прыватнасць з\'яўляецца паўсядзённасцю. <a href="https://proton.me/news/updated-proton">Даведацца больш</a></string>
+    <string name="spotlight_dialog_week_view_title">Больш параметраў прагляду</string>
+    <string name="spotlight_dialog_week_view_description">• Уводзіны ў прагляд календара на <b>тры дні</b> і на <b>тыдзень</b>. Выберыце пажаданы спосаб прагляду ў <b>меню</b>.\n\n• Адрэгулюйце вышыню радкоў у сетцы з днямі пры дапамозе двух пальцаў, павялічваючы або памяншаючы маштаб.</string>
+    <string name="spotlight_dialog_search_title">Пошук падзей</string>
+    <string name="spotlight_dialog_search_description">Лёгка знаходзьце падзеі, якія вы шукаеце з нашай новай функцыяй пошуку. <a href="https://proton.me/support/calendar-search">Даведацца больш</a></string>
+    <string name="spotlight_dialog_search_positive">Уключыць</string>
+    <string name="spotlight_dialog_search_negative">Прапусціць</string>
+    <string name="spotlight_dialog_import_title">Больш спосабаў дадаць падзеі</string>
+    <string name="spotlight_dialog_import_description">• Імпартуйце падзеі ў ваш каляндар з файлаў на тэлефоне.\n\n• Дадавайце браніраванне падарожжаў непасрэдна з Proton Mail.</string>
+    <string name="spotlight_dialog_calendar_provider_title">Функцыі календара</string>
+    <string name="spotlight_dialog_calendar_provider_description">• Дадавайце падзеі непасрэдна ў Proton Calendar з іншых праграм.\n\n• Стварайце і кіруйце падзеямі ў календарах, якія абагулілі з вамі.\n\n• Задавайце менавіта той прадвызначаны выгляд, які вы хочаце бачыць пры адкрыцці праграмы.\n\n• Даступна 13 новых моў.</string>
+    <string name="spotlight_dialog_wipe_search_title">Пошук выдалены, каб зрабіць яго лепш</string>
+    <string name="spotlight_dialog_wipe_search_description">Адбываецца выдаленне эксперыментальнага пошуку з Proton Calendar Beta па прычыне таго, што мы хочам зрабіць яго больш карысным і надзейным для вас. Гэта можа заняць некалькі секунд.</string>
+    <string name="spotlight_dialog_holiday_calendar_title">Дзяржаўныя святы знаходзяцца тут!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">Больш не трэба прызначаць сустрэчы, калі ўсе адпачываюць або забываць планаваць адпачынак на доўгія выхадныя.\n\nДадайце дзяржаўныя святы любой краіны ў свой каляндар.</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">Больш не трэба прызначаць сустрэчы, калі ўсе адпачываюць або забываць планаваць адпачынак на доўгія выхадныя.\n\nПаколькі вы амаль дасягнулі абмежавання па календары, каб дадаць святы, вам неабходна спачатку выдаліць наяўны каляндар.</string>
+    <string name="spotlight_dialog_color_per_event_title">Карыстальніцкія колеры падзей</string>
+    <string name="spotlight_dialog_color_per_event_description">Наладжвайце колеры індывідуальных падзей, каб:\n\n• Маркіраваць свой каляндар\n\n• Лепш арганізоўваць свой дзень і сачыць за часам\n\n• Вызначаць прыярытэты і павышаць эфектыўнасць</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">Дазволіць доступ</string>
+    <string name="dialog_google_auth_description">Для пачатку імпартавання, увайдзіце ў Google Calendar і дазвольце Proton атрымаць доступ да вашых даных.</string>
+    <string name="import_assistant_prepare_import_error">Памылка падрыхтоўкі імпартавання. Паспрабуйце яшчэ раз пазней</string>
+    <string name="import_assistant_prepare_import">Падрыхтоўка імпартавання</string>
+    <string name="import_assistant_gathering_data_loader_title">Збор вашых даных</string>
+    <string name="import_assistant_summary_title">Вынікі імпартавання</string>
+    <string name="import_assistant_summary_customize_import">Наладзіць імпартаванне</string>
+    <string name="import_assistant_error">Памылка атрымання даных</string>
+    <string name="import_assistant_data_gathering_error">Не ўдалося сабраць даныя</string>
+    <string name="import_assistant_update_import_error">Не ўдалося абнавіць імпартаванне. Паспрабуйце яшчэ раз пазней.</string>
+    <string name="import_assistant_update_import_wrong_account_error">Няправільны ўліковы запіс. Увайдзіце ва ўліковых запіс для імпартавання календара.</string>
+    <string name="import_assistant_start_import_error">Не ўдалося пачаць імпартаванне. Паспрабуйце яшчэ раз пазней.</string>
+    <string name="import_assistant_delete_import_success">Запіс імпартавання выдалены</string>
+    <string name="import_assistant_delete_import_error">Не ўдалося выдаліць імпартаванне. Паспрабуйце яшчэ раз пазней.</string>
+    <string name="import_assistant_cancel_import_error">Не ўдалося скасаваць імпартаванне. Паспрабуйце яшчэ раз пазней.</string>
+    <string name="import_assistant_resume_import_error">Не ўдалося ўзнавіць імпартаванне. Паспрабуйце яшчэ раз пазней.</string>
+    <string name="import_assistant_create_calendar_error">Не ўдалося стварыць адзін або некалькі календароў</string>
+    <string name="import_assistant_start_import_empty_error">Не ўдалося пачаць імпартаванне, календары для імпартавання адсутнічаюць</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">Імпартаваць як</string>
+    <string name="import_assistant_new_calendar_badge">Новы</string>
+    <string name="import_assistant_merge_calendar_badge">Аб\'яднаны</string>
+    <string name="import_assistant_creating_calendars">Стварэнне новых календароў</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">Амаль гатова…</string>
+    <string name="import_assistant_new_calendar_header">Стварыць новы</string>
+    <string name="import_assistant_merge_calendar_header">Аб\'яднаць з існуючым</string>
+    <string name="import_assistant_in_progress_title">Выконваецца імпартаванне</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">Імпартаванне даных з %1s у %2s.</string>
+    <string name="import_assistant_in_progress_redirect">Праверыць ход выканання</string>
+    <string name="import_assistant_in_progress_sub_description">Вялікае імпартаванне можа заняць некалькі дзён. Мы паведамім вам, калі імпартаванне завяршыцца. Вы можаце закрыць гэта акно.</string>
+    <string name="import_assistant_guide_subtitle">Пераходзьце на бок прыватнасці. Лёгка і бяспечна.</string>
+    <string name="import_assistant_guide_description">Перамясціце свае падзеі і іншыя даныя з Google у Proton. Памочнік імпартавання Easy Switch будзе накіроўваць вас на кожным кроку і шыфраваць вашы даныя падчас іх перамяшчэння.</string>
+    <string name="import_assistant_new_import">Новае імпартаванне</string>
+    <string name="import_assistant_previous_import">Папярэднія імпартаванні</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">Пачата</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">Выконваецца</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">Завершана</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">Скасавана</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">Скасаванне</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">Прыпынена</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">Збой</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Падключэнне да Google страчана</string>
+    <string name="import_assistant_status_paused_lost_connection_description">Для працягу імпартавання, націсніце кнопку \"Перападключыцца\", увайдзіце ў Google і зноў дайце Proton доступ да вашых даных Google.</string>
+    <string name="import_assistant_status_paused_lost_connection_button">Перападключыцца</string>
+    <string name="import_assistant_status_paused_storage_full_title">Ваша сховішча запоўнена</string>
+    <string name="import_assistant_status_paused_storage_full_description">У вашага ўліковага запісу Proton недастаткова сховішча для завяршэння імпартавання календара. Вызваліце месца або дадайце больш сховішча, а потым вярніцеся сюды і ўзнавіце аперацыю.</string>
+    <string name="import_assistant_status_paused_storage_full_button">Узнавіць</string>
+    <string name="import_assistant_delete_report_title">Выдаліць са спіса?</string>
+    <string name="import_assistant_delete_report_message">Вы больш не ўбачыце ў спісе гэты запіс імпартавання.</string>
+    <string name="import_assistant_delete_report_positive_button">Выдаліць</string>
+    <string name="import_assistant_delete_report_negative_button">Пакінуць</string>
+    <string name="import_assistant_cancel_import_title">Імпартаванне незавершана!</string>
+    <string name="import_assistant_cancel_import_message">Калі вы скасуеце гэта імпартаванне, вы не зможаце яго ўзнавіць. Proton захаваў увесь ход выканання ў вашым уліковым запісе. Усё роўна скасаваць?</string>
+    <string name="import_assistant_cancel_import_positive_button">Скасаваць імпартаванне</string>
+    <string name="import_assistant_cancel_import_negative_button">Узнавіць імпартаванне</string>
+    <string name="import_assistant_in_progress_snack">Выконваецца імпартаванне</string>
+    <string name="import_assistant_discard_import_title">Скасаваць імпартаванне?</string>
+    <string name="import_assistant_discard_import_message">Імпартаванне незавершана і не можа быць узноўлена, калі вы яго скасуеце.</string>
+    <string name="import_assistant_discard_import_positive">Скасаваць імпартаванне</string>
+    <string name="import_assistant_discard_import_negative">Узнавіць імпартаванне</string>
+    <string name="import_assistant_authentication_canceled">Аўтэнтыфікацыя скасавана</string>
+    <string name="import_assistant_sign_in_in_progress">Працэс уваходу ўжо выконваецца</string>
+    <string name="import_assistant_in_progress_error_snack">Працягваецца выкананне працэсу імпартавання</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">Імпартаваць як простую падзею?</string>
+    <string name="import_event_disclaimer_dialog_description">\nІмпартаваныя запрашэнні з\'явяцца ў Proton Calendar як простыя падзеі без падрабязнасцяў аб <b>арганізатары</b> і <b>ўдзельніку</b>.\n\nДля таго, каб атрымліваць абнаўленні падзей і бачыць удзельнікаў, папрасіце арганізатараў запрасіць вас пры дапамозе вашага адраса электроннай пошты Proton.</string>
+    <string name="import_event_disclaimer_dialog_positive">Імпартаванне</string>
+    <string name="undefined_color">Не вызначана</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">каляндар</item>
+        <item quantity="few">календары</item>
+        <item quantity="many">календароў</item>
+        <item quantity="other">календары</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">Імпартаванне %1$d календара</item>
+        <item quantity="few">Імпартаванне %1$d календароў</item>
+        <item quantity="many">Імпартаванне %1$d календароў</item>
+        <item quantity="other">Імпартаванне %1$d календароў</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">%1$d бягучае імпартаванне</item>
+        <item quantity="few">%1$d бягучыя імпартаванні</item>
+        <item quantity="many">%1$d бягучых імпартаванняў</item>
+        <item quantity="other">%1$d бягучых імпартаванняў</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">%1$d з %2$d створаны ў %3$s</item>
+        <item quantity="few">%1$d з %2$d створаны ў %3$s</item>
+        <item quantity="many">%1$d з %2$d створаны ў %3$s</item>
+        <item quantity="other">%1$d з %2$d створаны ў %3$s</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">Стварыце %1$d новы каляндар у Proton Calendar.</item>
+        <item quantity="few">Стварыце %1$d новыя календары ў Proton Calendar.</item>
+        <item quantity="many">Стварыце %1$d новых календароў у Proton Calendar.</item>
+        <item quantity="other">Стварыце %1$d новыя календары ў Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">Імпартаванне %1$d календара з %2$d з</item>
+        <item quantity="few">Імпартаванне %1$d календароў з %2$d з</item>
+        <item quantity="many">Імпартаванне %1$d календароў з %2$d з</item>
+        <item quantity="other">Імпартаванне %1$d календароў з %2$d з</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">Аб\'яднаць %1$d каляндар у Proton Calendar.</item>
+        <item quantity="few">Аб\'яднаць %1$d календары ў Proton Calendar.</item>
+        <item quantity="many">Аб\'яднаць %1$d календароў у Proton Calendar.</item>
+        <item quantity="other">Аб\'яднаць %1$d календароў у Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">Немагчыма стварыць новыя календары для ўсіх імпартаваных календароў па прычыне абмежавання календара.\n • Зніміце выбар прынамсі з %1$d календара</item>
+        <item quantity="few">Немагчыма стварыць новыя календары для ўсіх імпартаваных календароў па прычыне абмежавання календара.\n • Зніміце выбар прынамсі з %1$d календароў</item>
+        <item quantity="many">Немагчыма стварыць новыя календары для ўсіх імпартаваных календароў па прычыне абмежавання календара.\n • Зніміце выбар прынамсі з %1$d календароў</item>
+        <item quantity="other">Немагчыма стварыць новыя календары для ўсіх імпартаваных календароў па прычыне абмежавання календара.\n • Зніміце выбар прынамсі з %1$d календароў</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020або\n • Аб\'яднайце прынамсі %1$d каляндар з існуючымі календарамі Proton.</item>
+        <item quantity="few">\u0020або\n • Аб\'яднайце прынамсі %1$d календары з існуючымі календарамі Proton.</item>
+        <item quantity="many">\u0020або\n • Аб\'яднайце прынамсі %1$d календароў з існуючымі календарамі Proton.</item>
+        <item quantity="other">\u0020або\n • Аб\'яднайце прынамсі %1$d календароў з існуючымі календарамі Proton.</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">секунда</item>
+        <item quantity="few">секунды</item>
+        <item quantity="many">секунд</item>
+        <item quantity="other">секунды</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">хвіліна</item>
+        <item quantity="few">хвіліны</item>
+        <item quantity="many">хвілін</item>
+        <item quantity="other">хвіліны</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">гадзіна</item>
+        <item quantity="few">гадзіны</item>
+        <item quantity="many">гадзін</item>
+        <item quantity="other">гадзіны</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">дзень</item>
+        <item quantity="few">дні</item>
+        <item quantity="many">дзён</item>
+        <item quantity="other">дні</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">тыдзень</item>
+        <item quantity="few">тыдні</item>
+        <item quantity="many">тыдняў</item>
+        <item quantity="other">тыдні</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">месяц</item>
+        <item quantity="few">месяцы</item>
+        <item quantity="many">месяцаў</item>
+        <item quantity="other">месяцы</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">год</item>
+        <item quantity="few">гады</item>
+        <item quantity="many">гадоў</item>
+        <item quantity="other">гады</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">адзін раз</item>
+        <item quantity="few">разы</item>
+        <item quantity="many">разоў</item>
+        <item quantity="other">разы</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">паўтарэнне</item>
+        <item quantity="few">паўтарэнні</item>
+        <item quantity="many">паўтарэнняў</item>
+        <item quantity="other">паўтарэнні</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">раз</item>
+        <item quantity="few">разы</item>
+        <item quantity="many">разоў</item>
+        <item quantity="other">разоў</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">удзельнік</item>
+        <item quantity="few">удзельнікі</item>
+        <item quantity="many">удзельнікаў</item>
+        <item quantity="other">удзельнікі</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">Кожны %1$d %2$s</item>
+        <item quantity="few">Кожныя %1$d %2$s</item>
+        <item quantity="many">Кожных %1$d %2$s</item>
+        <item quantity="other">Кожныя %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">Кожны %1$d %2$s</item>
+        <item quantity="few">Кожныя %1$d %2$s</item>
+        <item quantity="many">Кожных %1$d %2$s</item>
+        <item quantity="other">Кожныя %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">Кожны %1$d %2$s</item>
+        <item quantity="few">Кожныя %1$d %2$s</item>
+        <item quantity="many">Кожных %1$d %2$s</item>
+        <item quantity="other">Кожныя %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">Кожны %1$d %2$s</item>
+        <item quantity="few">Кожныя %1$d %2$s</item>
+        <item quantity="many">Кожных %1$d %2$s</item>
+        <item quantity="other">Кожныя %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s хвіліна</item>
+        <item quantity="few">%1$s хвіліны</item>
+        <item quantity="many">%1$s хвілін</item>
+        <item quantity="other">%1$s хвілін</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d сімвал з %2$d</item>
+        <item quantity="few">%1$d сімвалы з %2$d</item>
+        <item quantity="many">%1$d сімвалаў з %2$d</item>
+        <item quantity="other">%1$d сімвалаў з %2$d</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d сімвал з %2$d</item>
+        <item quantity="few">%1$d сімвалы з %2$d</item>
+        <item quantity="many">%1$d сімвалаў з %2$d</item>
+        <item quantity="other">%1$d сімвалаў з %2$d</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>першы</item>
+        <item>другі</item>
+        <item>трэці</item>
+        <item>чацвёрты</item>
+        <item>пяты</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>апошні</item>
+        <item>перадапошні</item>
+        <item>трэці з канца</item>
+        <item>чацвёрты з канца</item>
+        <item>пяты з канца</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>Светлая</item>
+        <item>Цёмная</item>
+        <item>Адпаведна сістэме</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>Адпаведна сістэме</item>
+        <item>13:00</item>
+        <item>13:00</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>Адпаведна сістэме</item>
+        <item>Панядзелак</item>
+        <item>Субота</item>
+        <item>Нядзеля</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>Фіялетавы|#8080FF</item>
+        <item>Клубнічны|#EC3E7C</item>
+        <item>Ружовы|#DB60D6</item>
+        <item>Маркоўны|#F78400</item>
+        <item>Сахара|#936D58</item>
+        <item>Чарнільны|#5252CC</item>
+        <item>Слівавы|#A839A4</item>
+        <item>Вішнёвы|#BA1E55</item>
+        <item>Медны|#C44800</item>
+        <item>Зямлісты|#54473F</item>
+        <item>Сланцава-блакітны|#415DF0</item>
+        <item>Ціхаакіянскі|#179FD9</item>
+        <item>Рыфавы|#1DA583</item>
+        <item>Папаратнікавы|#3CBB3A</item>
+        <item>Аліўкавы|#B4A40E</item>
+        <item>Кобальтавы|#273EB2</item>
+        <item>Акіянічны|#0A77A6</item>
+        <item>Сасновы|#0F735A</item>
+        <item>Лясны|#258723</item>
+        <item>Агурочны|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>Фіялетавы</item>
+        <item>Клубнічны</item>
+        <item>Ружовы</item>
+        <item>Маркоўны</item>
+        <item>Сахара</item>
+        <item>Чарнільны</item>
+        <item>Слівавы</item>
+        <item>Вішнёвы</item>
+        <item>Медны</item>
+        <item>Зямлісты</item>
+        <item>Сланцава-блакітны</item>
+        <item>Ціхаакіянскі</item>
+        <item>Рыфавы</item>
+        <item>Папаратнікавы</item>
+        <item>Аліўкавы</item>
+        <item>Кобальтавы</item>
+        <item>Акіянічны</item>
+        <item>Сасновы</item>
+        <item>Лясны</item>
+        <item>Агурочны</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/event_form_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp">
+
+        <me.proton.core.presentation.ui.view.ProtonInput
+            android:id="@+id/calendar_form_name_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="@dimen/spacing_page"
+            android:hint="@string/calendar_form_name_hint"
+            android:inputType="textCapSentences"
+            android:maxLength="100"
+            android:theme="@style/ProtonTheme.Calendar"
+            app:actionMode="clear_text"
+            app:help="0/100 characters"
+            app:label="@string/calendar_form_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/calendar_form_name_separator"
+            style="@style/Separator"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_name_value" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calendar_form_color_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_name_separator">
+
+            <include
+                android:id="@+id/calendar_form_color_press"
+                layout="@layout/view_press_overlay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/calendar_form_color_separator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/calendar_form_color_icon"
+                style="@style/ColoredDot"
+                android:layout_marginStart="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/calendar_form_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/calendar_form_color"
+                app:srcCompat="@drawable/ic_dot"
+                app:tint="@color/background_norm" />
+
+            <TextView
+                android:id="@+id/calendar_form_color"
+                style="@style/Text.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_text_start"
+                android:layout_marginTop="@dimen/spacing_page"
+                android:layout_marginEnd="@dimen/spacing_page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/calendar_form_color" />
+
+            <View
+                android:id="@+id/calendar_form_color_separator"
+                style="@style/Separator"
+                android:layout_marginTop="@dimen/spacing_page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_form_color" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calendar_form_default_email_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_color_layout">
+
+            <include
+                android:id="@+id/calendar_form_default_email_press"
+                layout="@layout/view_press_overlay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/calendar_form_default_email_separator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/calendar_form_default_email_icon"
+                style="@style/Icon.Form"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/calendar_form_default_email"
+                app:srcCompat="@drawable/ic_proton_at" />
+
+            <TextView
+                android:id="@+id/calendar_form_default_email"
+                style="@style/Text.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_text_start"
+                android:layout_marginTop="@dimen/spacing_page"
+                android:layout_marginEnd="@dimen/spacing_page"
+                android:text="@string/calendar_form_default_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/calendar_form_default_email_value"
+                style="@style/Text.DefaultSmall.Weak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_text_vertical"
+                app:layout_constraintEnd_toEndOf="@+id/calendar_form_default_email"
+                app:layout_constraintStart_toStartOf="@+id/calendar_form_default_email"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_email"
+                tools:text="user@pm.me" />
+
+            <View
+                android:id="@+id/calendar_form_default_email_separator"
+                style="@style/Separator"
+                android:layout_marginTop="@dimen/spacing_page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_email_value" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calendar_form_default_event_duration_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_email_layout">
+
+            <include
+                android:id="@+id/calendar_form_default_event_duration_press"
+                layout="@layout/view_press_overlay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/calendar_form_default_event_duration_separator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/calendar_form_default_event_duration_icon"
+                style="@style/Icon.Form"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/calendar_form_default_event_duration"
+                app:srcCompat="@drawable/ic_proton_clock" />
+
+            <TextView
+                android:id="@+id/calendar_form_default_event_duration"
+                style="@style/Text.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_text_start"
+                android:layout_marginTop="@dimen/spacing_page"
+                android:layout_marginEnd="@dimen/spacing_page"
+                android:text="@string/calendar_form_default_event_duration"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/calendar_form_default_event_duration_value"
+                style="@style/Text.DefaultSmall.Weak"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin_text_vertical"
+                app:layout_constraintEnd_toEndOf="@+id/calendar_form_default_event_duration"
+                app:layout_constraintStart_toStartOf="@+id/calendar_form_default_event_duration"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_event_duration"
+                tools:text="30 minutes" />
+
+            <View
+                android:id="@+id/calendar_form_default_event_duration_separator"
+                style="@style/Separator"
+                android:layout_marginTop="@dimen/spacing_page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_event_duration_value" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <me.proton.core.presentation.ui.view.ProtonInput
+            android:id="@+id/calendar_form_description_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_page"
+            android:layout_marginTop="@dimen/spacing_page"
+            android:layout_marginEnd="@dimen/spacing_page"
+            android:hint="@string/calendar_form_description_hint"
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLength="255"
+            app:actionMode="clear_text"
+            app:help="0/255 characters"
+            app:label="@string/calendar_form_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_event_duration_layout" />
+
+        <View
+            android:id="@+id/calendar_form_description_separator"
+            style="@style/Separator"
+            android:layout_marginTop="@dimen/spacing_page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_description_value" />
+
+        <TextView
+            android:id="@+id/calendar_form_default_event_notifications_title"
+            style="@style/Text.DefaultSmall.Strong.Brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/calendar_form_default_event_notifications"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_description_separator" />
+
+        <LinearLayout
+            android:id="@+id/calendar_form_default_event_notifications_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_element_small"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_event_notifications_title" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calendar_form_default_event_notifications_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_event_notifications_list">
+
+            <include
+                android:id="@+id/calendar_form_default_event_notifications_press"
+                layout="@layout/view_press_overlay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/calendar_form_default_event_notifications_separator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/calendar_form_default_event_notifications_icon"
+                style="@style/Icon.Form"
+                app:layout_constraintBottom_toBottomOf="@+id/calendar_form_default_event_notifications"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/calendar_form_default_event_notifications"
+                app:srcCompat="@drawable/ic_proton_bell"
+                app:tint="@color/icon_hint" />
+
+            <TextView
+                android:id="@+id/calendar_form_default_event_notifications"
+                style="@style/Text.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_text_start"
+                android:layout_marginTop="@dimen/spacing_page"
+                android:layout_marginEnd="@dimen/spacing_page"
+                android:text="@string/event_text_add_alarm"
+                android:textColor="@color/text_hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/calendar_form_default_event_notifications_separator"
+                style="@style/Separator"
+                android:layout_marginTop="@dimen/spacing_page"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_event_notifications" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/calendar_form_default_all_day_event_notifications_title"
+            style="@style/Text.DefaultSmall.Strong.Brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/calendar_form_default_all_day_event_notifications"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_event_notifications_layout" />
+
+        <LinearLayout
+            android:id="@+id/calendar_form_default_all_day_event_notifications_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_element_small"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_all_day_event_notifications_title" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/calendar_form_default_all_day_event_notifications_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_all_day_event_notifications_list">
+
+            <include
+                android:id="@+id/calendar_form_default_all_day_event_notifications_press"
+                layout="@layout/view_press_overlay"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/calendar_form_default_all_day_event_notifications_separator"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/calendar_form_default_all_day_event_notifications_icon"
+                style="@style/Icon.Form"
+                app:layout_constraintBottom_toBottomOf="@+id/calendar_form_default_all_day_event_notifications"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/calendar_form_default_all_day_event_notifications"
+                app:srcCompat="@drawable/ic_proton_bell"
+                app:tint="@color/icon_hint" />
+
+            <TextView
+                android:id="@+id/calendar_form_default_all_day_event_notifications"
+                style="@style/Text.Default"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/default_margin_text_start"
+                android:layout_marginTop="@dimen/spacing_page"
+                android:layout_marginEnd="@dimen/spacing_page"
+                android:text="@string/event_text_add_alarm"
+                android:textColor="@color/text_hint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/calendar_form_default_all_day_event_notifications_separator"
+                style="@style/Separator"
+                android:layout_marginTop="@dimen/spacing_page"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calendar_form_default_all_day_event_notifications" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_widget_event"
+    style="@style/Widget.ProtonCalendar.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="@drawable/ripple_mini_calendar_day"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_event_day_container"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widget_calendar_item_interaction_margin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/ripple_mini_calendar_day"
+        android:clickable="true"
+        android:focusable="true">
+
+        <TextView
+            android:id="@+id/tv_event_day_of_week"
+            style="@style/Text.Caption.Strong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/text_weak"
+            tools:text="Friday" />
+
+        <TextView
+            android:id="@+id/tv_event_day_of_month"
+            style="@style/Text.Subheadline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingTop="14sp"
+            tools:text="13" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_calendar_bar"
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rl_event_container"
+        android:layout_alignBottom="@+id/rl_event_container"
+        android:layout_marginTop="@dimen/widget_calendar_item_interaction_margin"
+        android:layout_marginBottom="@dimen/widget_calendar_item_interaction_margin"
+        android:layout_toEndOf="@id/rl_event_day_container"
+        app:srcCompat="@drawable/shape_calendar_bar"
+        app:tint="?attr/brand_norm" />
+
+    <RelativeLayout
+        android:id="@+id/rl_event_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rl_event_day_container"
+        android:layout_marginStart="@dimen/widget_padding"
+        android:layout_marginEnd="@dimen/widget_padding"
+        android:layout_toEndOf="@id/iv_calendar_bar"
+        android:background="@drawable/ripple_mini_calendar_day"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/widget_calendar_item_interaction_margin">
+
+        <TextView
+            android:id="@+id/tv_event_header"
+            style="@style/Text.DefaultSmall.Strong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/tv_event_header_day_indicator"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Android planning" />
+
+        <TextView
+            android:id="@+id/tv_event_header_day_indicator"
+            style="@style/Text.DefaultSmall.Strong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            tools:text="(1/2)" />
+
+        <TextView
+            android:id="@+id/tv_event_subheader"
+            style="@style/Text.DefaultSmall.Weak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_event_header"
+            android:layout_alignParentStart="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="11:00 - 13:00" />
+
+        <ImageView
+            android:id="@+id/decryption_error_icon"
+            style="@style/Icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_lock_exclamation_filled_android_six_compat" />
+
+        <FrameLayout
+            android:id="@+id/decryption_error_view"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/decryption_error_icon"
+            android:layout_toStartOf="@id/tv_event_header_day_indicator"
+            android:alpha="0.1"
+            android:background="@drawable/shape_background_decryption_error"
+            android:backgroundTint="@color/text_norm" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_event_no_events_today"
+        style="@style/Text.DefaultSmall.Weak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/rl_event_container"
+        android:layout_alignTop="@id/rl_event_container"
+        android:layout_alignEnd="@id/rl_event_container"
+        android:ellipsize="end"
+        android:gravity="center|start"
+        android:maxLines="1"
+        android:text="@string/calendar_widget_no_upcoming_events_today"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/v_event_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/rl_event_day_container"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>

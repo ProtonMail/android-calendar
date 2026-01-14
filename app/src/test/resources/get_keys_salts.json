@@ -1,0 +1,25 @@
+{
+    "Code": 1000,
+    "KeySalts": [
+        {
+            "ID": "ScOOyl7_x7HXDuIUGUzWaIz83IFQJKWHi85smpaV-QH-4gVnDBwnWBtDixsVMfehF-ZGOjxrbUfUsmm7cO4R5Q==",
+            "KeySalt": "QDaXk39fSJY9ZHJQKrj8yA=="
+        },
+        {
+            "ID": "DvRZxrFRFUnjsL6MCOdGjyMZ9AoECd7kNXX9uKxmV-75K4iArEHijRPvd7Dhw43yBlCDxIsbNSW7cg2Uu5FUFg==",
+            "KeySalt": "QDaXk39fSJY9ZHJQKrj8yA=="
+        },
+        {
+            "ID": "dsMbxz08hpPyG9n7mTaEcADytAkB0YaVb9IKUtLvHc4FJUOkTMMYFytALTIopLTWp3KLuM86tEs3ItRRNsstMg==",
+            "KeySalt": "QDaXk39fSJY9ZHJQKrj8yA=="
+        },
+        {
+            "ID": "mWMfjWnrwT5hAvbG_6A3-fauNn_oyXNSYsmRgwtqkb7perMxF1EfzkMEhni7HEQUhoFQc3H_xWdSXbJP91ZWAA==",
+            "KeySalt": "QDaXk39fSJY9ZHJQKrj8yA=="
+        },
+        {
+            "ID": "U4Okji3zfS8GOjNmbR8entBqChyHtzcuWZpeA-Dp1yCuJaS7oLQfBml7ia5ixSfCoAGp5YuK-3eYvci7_eZZsQ==",
+            "KeySalt": "QDaXk39fSJY9ZHJQKrj8yA=="
+        }
+    ]
+}

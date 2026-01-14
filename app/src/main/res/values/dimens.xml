@@ -1,0 +1,147 @@
+<resources>
+    <dimen name="spacing_page">16dp</dimen>
+    <dimen name="spacing_element">12dp</dimen>
+    <dimen name="spacing_element_small">8dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+
+    <dimen name="spacing_toolbar_horizontal">16dp</dimen>
+
+    <dimen name="action_clickable_size">48dp</dimen>
+    <dimen name="action_background_size">40dp</dimen>
+    <dimen name="action_icon_size">24dp</dimen>
+
+    <dimen name="clickable_size">48dp</dimen>
+
+    <dimen name="calendar_bottom_spacing">4dp</dimen>
+    <dimen name="calendar_elevation">4dp</dimen>
+    <dimen name="mini_calendar_margin">16dp</dimen>
+    <dimen name="calendar_item_day_vertical_spacing">8dp</dimen>
+    <dimen name="calendar_item_day_spacing">1dp</dimen>
+    <dimen name="calendar_item_header_height">24dp</dimen>
+    <dimen name="calendar_item_height">38dp</dimen>
+    <dimen name="calendar_week_number_width">24dp</dimen>
+    <dimen name="calendar_week_number_height">24dp</dimen>
+    <dimen name="calendar_week_number_spacing_top_first">6dp</dimen>
+    <dimen name="calendar_week_number_spacing_start">6dp</dimen>
+    <dimen name="calendar_week_number_spacing_top">13dp</dimen>
+    <dimen name="calendar_week_number_spacing_bottom">9dp</dimen>
+    <dimen name="calendar_slider_height">1dp</dimen>
+
+    <dimen name="nav_view_user_margin_top">48dp</dimen>
+    <dimen name="nav_view_user_initials_box_size">28dp</dimen>
+    <dimen name="nav_view_view_selected_check_size">20dp</dimen>
+
+    <dimen name="default_inner_padding_start">16dp</dimen>
+    <dimen name="default_inner_padding_end">12dp</dimen>
+
+    <dimen name="radio_group_inner_padding">12dp</dimen>
+    <dimen name="radio_button_inner_padding">8dp</dimen>
+
+    <dimen name="default_margin_text_vertical">12dp</dimen>
+    <dimen name="default_margin_text_vertical_large">20dp</dimen>
+    <dimen name="default_margin_text_start">60dp</dimen>
+    <dimen name="default_margin_text_end">64dp</dimen>
+
+    <dimen name="default_icon_size">24dp</dimen>
+    <dimen name="small_icon_size">16dp</dimen>
+    <dimen name="badge_icon_size">20dp</dimen>
+    <dimen name="dot_icon_size">18dp</dimen>
+
+    <dimen name="default_separator_margin_top">20dp</dimen>
+
+    <dimen name="attendee_avatar_size">32dp</dimen>
+    <dimen name="attendee_status_size">16dp</dimen>
+    <dimen name="attendee_single_title_bottom_margin">22dp</dimen>
+
+    <dimen name="attendee_item_vertical_margin">14dp</dimen>
+    <dimen name="attendee_item_vertical_margin_large">18dp</dimen>
+
+    <dimen name="attendee_comment_icon_margin_end">3dp</dimen>
+
+    <dimen name="settings_calendar_badges_margin">6dp</dimen>
+
+    <dimen name="material_dialog_inset_start">24dp</dimen>
+    <dimen name="material_dialog_inset_end">24dp</dimen>
+
+    <dimen name="week_day_chip_max_size">50dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--  DAY VIEW  -->
+    <dimen name="small_padding">1dp</dimen>
+    <dimen name="medium_padding">5dp</dimen>
+    <dimen name="large_padding">10dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="half_hour_height">30dp</dimen>
+    <dimen name="hour_label_width">56dp</dimen>
+    <dimen name="add_event_button_foreground_size">52dp</dimen>
+    <dimen name="add_event_button_background_size">85dp</dimen>
+    <dimen name="add_event_button_background_bottom_margin">4dp</dimen>
+
+    <dimen name="all_day_item_height">28dp</dimen>
+    <dimen name="all_day_item_margin_bottom">2dp</dimen>
+    <dimen name="all_day_item_margin_end">11dp</dimen>
+
+    <dimen name="current_time_indicator_dot_size">7dp</dimen>
+
+    <!-- WIDGET -->
+    <dimen name="widget_background_corner_radius">16dp</dimen>
+    <dimen name="widget_padding">8dp</dimen>
+    <dimen name="widget_padding_event_normal">4dp</dimen>
+    <dimen name="widget_padding_event_separator">24dp</dimen>
+    <dimen name="widget_calendar_item_height">40dp</dimen>
+    <dimen name="widget_calendar_item_height_with_interaction_margin">44dp</dimen>
+    <dimen name="widget_calendar_item_interaction_margin">2dp</dimen>
+
+    <!-- MONTH VIEW -->
+
+    <!--  Grid  -->
+    <dimen name="month_view_grid_separator_width">1dp</dimen>
+    <dimen name="month_view_grid_item_top_margin">1dp</dimen>
+    <dimen name="month_view_grid_item_bottom_margin">1dp</dimen>
+
+    <!--  Day  -->
+    <dimen name="month_view_day_number_text_size">12sp</dimen>
+    <dimen name="month_view_day_number_text_baseline_margin_top">18dp</dimen>
+    <dimen name="month_view_day_header_height">26dp</dimen>
+    <dimen name="month_view_event_title_highlight_top_margin">4dp</dimen>
+    <dimen name="month_view_event_title_highlight_radius">5dp</dimen>
+    <dimen name="month_view_event_title_highlight_width">21dp</dimen>
+    <dimen name="month_view_event_title_highlight_height">20dp</dimen>
+    <dimen name="month_view_event_title_highlight_stroke">1dp</dimen>
+
+    <!--  Event  -->
+    <dimen name="month_view_event_title_text_size">10sp</dimen>
+    <dimen name="month_view_event_title_start_margin">2dp</dimen>
+    <dimen name="month_view_event_title_end_margin">2dp</dimen>
+    <dimen name="month_view_event_corner_radius">4dp</dimen>
+    <dimen name="month_view_event_height">16dp</dimen>
+    <dimen name="month_view_event_top_margin">1dp</dimen>
+    <dimen name="month_view_event_start_margin">1dp</dimen>
+    <dimen name="month_view_event_end_margin">2dp</dimen>
+    <dimen name="month_view_event_adjustment_end_margin">1dp</dimen>
+    <dimen name="month_view_event_side_strip_width">3dp</dimen>
+    <dimen name="month_view_event_decryption_failed_margin">5dp</dimen>
+    <dimen name="month_view_event_unanswered_stripes_width">0.5dp</dimen>
+    <dimen name="month_view_event_unanswered_stripes_gap">4dp</dimen>
+
+    <!--  Mini Event  -->
+    <dimen name="month_view_mini_event_height">6dp</dimen>
+    <dimen name="month_view_mini_event_top_margin">2dp</dimen>
+    <dimen name="month_view_mini_event_end_margin">2dp</dimen>
+
+    <!--  Plus icon  -->
+    <dimen name="month_view_plus_icon_width">6dp</dimen>
+    <dimen name="month_view_plus_icon_line_width">0.7dp</dimen>
+    <dimen name="month_view_plus_icon_end_margin">5dp</dimen>
+
+    <!--  Week view  -->
+    <dimen name="week_view_no_border_width">0dp</dimen>
+    <dimen name="week_view_border_width">1dp</dimen>
+    <dimen name="default_week_view_hour_height">60dp</dimen>
+
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_attendee_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_attendee_photo"
+        android:layout_width="@dimen/attendee_avatar_size"
+        android:layout_height="@dimen/attendee_avatar_size"
+        android:layout_marginStart="46dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/item_attendee_text_layout"
+        app:layout_constraintEnd_toStartOf="@+id/item_attendee_text_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_attendee_text_layout" />
+
+    <TextView
+        android:id="@+id/item_attendee_initials"
+        style="@style/Text.Default"
+        android:layout_width="@dimen/attendee_avatar_size"
+        android:layout_height="@dimen/attendee_avatar_size"
+        android:background="@drawable/shape_background_square_rounded_avatar"
+        android:gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/item_attendee_photo"
+        app:layout_constraintEnd_toEndOf="@+id/item_attendee_photo"
+        app:layout_constraintStart_toStartOf="@+id/item_attendee_photo"
+        app:layout_constraintTop_toTopOf="@+id/item_attendee_photo"
+        tools:text="JD" />
+
+    <ImageView
+        android:id="@+id/item_attendee_status"
+        android:layout_width="@dimen/badge_icon_size"
+        android:layout_height="@dimen/badge_icon_size"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/item_attendee_photo"
+        app:layout_constraintEnd_toEndOf="@+id/item_attendee_photo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/item_attendee_photo"
+        app:layout_constraintTop_toBottomOf="@+id/item_attendee_photo"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/ic_check_circle_filled" />
+
+    <LinearLayout
+        android:id="@+id/item_attendee_text_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="@dimen/spacing_element"
+        android:layout_marginEnd="@dimen/spacing_element_small"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/item_attendee_barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_attendee_photo"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/item_attendee_title"
+            style="@style/Text.Default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:breakStrategy="simple"
+            android:textIsSelectable="true"
+            tools:text="John Doe" />
+
+        <TextView
+            android:id="@+id/item_attendee_description"
+            style="@style/Text.DefaultSmall.Weak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:breakStrategy="simple"
+            android:textIsSelectable="true"
+            android:visibility="gone"
+            tools:text="johndoe@pm.me"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_attendee_optional"
+        style="@style/Text.DefaultSmall.Weak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/event_attendee_optional"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/item_attendee_text_layout"
+        app:layout_constraintStart_toStartOf="@id/item_attendee_text_layout"
+        app:layout_constraintTop_toBottomOf="@id/item_attendee_text_layout"
+        app:layout_constraintBottom_toTopOf="@+id/item_attendee_barrier"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/item_attendee_barrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:barrierAllowsGoneWidgets="false"
+        app:constraint_referenced_ids="item_attendee_status, item_attendee_optional, item_attendee_text_layout" />
+
+    <ImageView
+        android:id="@+id/item_attendee_comment_icon"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:layout_marginTop="@dimen/spacing_element_small"
+        android:layout_marginEnd="@dimen/attendee_comment_icon_margin_end"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/item_attendee_status"
+        app:layout_constraintTop_toBottomOf="@+id/item_attendee_barrier"
+        app:srcCompat="@drawable/ic_hug"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/item_attendee_comment"
+        style="@style/Text.DefaultSmall.Weak"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="@dimen/spacing_element_small"
+        android:layout_marginEnd="@dimen/spacing_element_small"
+        app:layout_constraintEnd_toStartOf="@+id/item_attendee_failed_verification_icon"
+        app:layout_constraintStart_toEndOf="@+id/item_attendee_photo"
+        app:layout_constraintTop_toBottomOf="@+id/item_attendee_barrier"
+        tools:text="Can't attend due to a meeting conflict, will attend the next meeting on Tuesday." />
+
+    <ImageView
+        android:id="@+id/item_attendee_failed_verification_icon"
+        android:layout_width="@dimen/small_icon_size"
+        android:layout_height="@dimen/small_icon_size"
+        android:layout_marginTop="@dimen/spacing_element_small"
+        android:layout_marginEnd="@dimen/spacing_element_small"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_attendee_comment"
+        app:layout_constraintTop_toBottomOf="@+id/item_attendee_barrier"
+        app:srcCompat="@drawable/ic_exclamation_circle"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

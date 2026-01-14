@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/fragment_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:indeterminateOnly="true"
+        android:indeterminateTint="?attr/proton_icon_accent"
+        android:indeterminateTintMode="src_in"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-4dp"
+        app:layout_constraintBottom_toBottomOf="@id/search_input" />
+
+    <EditText
+        android:id="@+id/search_input"
+        style="@style/Text.Default"
+        android:textColorHint="@color/text_hint"
+        android:paddingStart="@dimen/default_margin_text_start"
+        android:paddingTop="@dimen/spacing_page"
+        android:paddingBottom="@dimen/spacing_page"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/search_hint_input_field"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:scrollHorizontally="false"
+        android:maxLength="255"
+        android:singleLine="false"
+        android:maxLines="1"
+        android:background="@android:color/transparent"
+        tools:visibility="visible"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/search_clear"/>
+
+    <include
+        layout="@layout/toolbar_action_button"
+        android:layout_width="@dimen/action_clickable_size"
+        android:layout_height="@dimen/action_clickable_size"
+        android:layout_marginStart="@dimen/default_inner_padding_start"
+        android:id="@+id/search_icon_back"
+        app:layout_constraintTop_toTopOf="@id/search_input"
+        app:layout_constraintBottom_toBottomOf="@id/search_input"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        layout="@layout/toolbar_action_button"
+        android:layout_width="@dimen/action_clickable_size"
+        android:layout_height="@dimen/action_clickable_size"
+        android:layout_marginStart="@dimen/default_inner_padding_start"
+        android:id="@+id/search_clear"
+        android:layout_marginEnd="@dimen/spacing_page"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toTopOf="@id/search_input"
+        app:layout_constraintBottom_toBottomOf="@id/search_input"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/search_separator"
+        style="@style/Separator"
+        tools:visibility="visible"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/search_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_result_list"
+        android:animateLayoutChanges="false"
+        android:overScrollMode="never"
+        tools:listitem="@layout/item_add_attendee"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_separator"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <include
+        android:id="@+id/include_search_onboarding"
+        layout="@layout/layout_search_onboarding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_separator"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ll_search_no_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_separator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_no_results_illustration"
+            android:paddingBottom="8dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/search_empty_results_title"
+            style="@style/Text.Headline"
+            android:paddingBottom="8dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/search_empty_results_subtitle"
+            style="@style/Text.Default.Weak"
+            />
+
+    </LinearLayout>
+
+    <me.proton.core.presentation.ui.view.ProtonButton
+        android:id="@+id/pb_search_onboarding_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ProtonButton"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/search_onboarding_action_download_calendars"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+{
+  "Code": 1000,
+  "CalendarModelEventID": "yZvpJj3vgcog2h4hMy73NPlMTJJq_wdiiAqxa31sF3UxBUSpM4qMtVDZU6WDFskEVUh2eUlMNJLO6Oqb1wVMSg==",
+  "Refresh": 0,
+  "More": 1,
+  "CalendarEvents": [
+    {
+      "ID": "zhcfa9p3xUcoTmTt2nqYF5nW7BtS93OgtDKkBk9erBfrZXrOmfn-AGcS4p8iu1xcJVrh7_6AVssvpWtFe8VcQw==",
+      "Action": 2,
+      "Event": {
+        "ID": "zhcfa9p3xUcoTmTt2nqYF5nW7BtS93OgtDKkBk9erBfrZXrOmfn-AGcS4p8iu1xcJVrh7_6AVssvpWtFe8VcQw==",
+        "CalendarID": "ZusVacxuoQZqP-z0j3eiNZsilZrVLZ7HNOBSJCFEQi6lONDqiCvi0QdF6eOk5HOWVE2esdadMUe1M4569ZNLzA==",
+        "SharedEventID": "OU7iC0FtwxRKH7Czlj7DJrnFZR-n1YCqms9SqwGRZSBA5gW031VPTwuah8DnC6VuPdz1CGh6cu99rAUBGrL63rOr8IaZ6AnclEuBFcCFpiA=",
+        "StartTime": 1613347200,
+        "StartTimezone": "UTC",
+        "EndTime": 1613433600,
+        "EndTimezone": "UTC",
+        "FullDay": 1,
+        "UID": "AxM0GTFIKOo18wkvN2rVPqPAsEkb@proton.me",
+        "RecurrenceID": null,
+        "Exdates": [],
+        "RRule": null,
+        "CreateTime": 1613383660,
+        "ModifyTime": 1613403267,
+        "IsOrganizer": 1
+      }
+    },
+    {
+      "ID": "pvYtLklzBSvcD1WxF7V0jquFuUazAKFIJMqc9WQhIkrHiAVlWCvn4BHvKRNWfD1mWDD9l4YQE5RvfGXVVUhj7g==",
+      "Action": 0
+    },
+    {
+      "ID": "KEZDgiuT4MIsCMCH9aPPXJ9NpDNnKRr3-fY1dh8shzeAri-GLWVjb0sexZAc6hpRJUDTV2ljNfapsxEy-47WBQ==",
+      "Action": 1,
+      "Event": {
+        "ID": "KEZDgiuT4MIsCMCH9aPPXJ9NpDNnKRr3-fY1dh8shzeAri-GLWVjb0sexZAc6hpRJUDTV2ljNfapsxEy-47WBQ==",
+        "CalendarID": "ZusVacxuoQZqP-z0j3eiNZsilZrVLZ7HNOBSJCFEQi6lONDqiCvi0QdF6eOk5HOWVE2esdadMUe1M4569ZNLzA==",
+        "SharedEventID": "8Je26yNAuKDFFI_K3plv5D6HjjHOIFdvDwCM_h6V6m8bv38SZQvBof901Oj_J-1Y7eG7mtWRhEDpJ5PwPjpR9DD8kjJ4p-FGcS4_VLYmaKE=",
+        "StartTime": 1613577600,
+        "StartTimezone": "America/Bahia_Banderas",
+        "EndTime": 1613579400,
+        "EndTimezone": "America/Bahia_Banderas",
+        "FullDay": 0,
+        "UID": "HAzBbelqbWmzGHaACaJmRqz-d40n@proton.me",
+        "RecurrenceID": null,
+        "Exdates": [],
+        "RRule": null,
+        "CreateTime": 1613403276,
+        "ModifyTime": 1613403276,
+        "IsOrganizer": 1
+      }
+    }
+  ],
+  "CalendarSettings": [
+    {
+      "ID": "ZusVacxuoQZqP-z0j3eiNZsilZrVLZ7HNOBSJCFEQi6lONDqiCvi0QdF6eOk5HOWVE2esdadMUe1M4569ZNLzA==",
+      "Action": 2,
+      "CalendarSettings": {
+        "ID": "ZusVacxuoQZqP-z0j3eiNZsilZrVLZ7HNOBSJCFEQi6lONDqiCvi0QdF6eOk5HOWVE2esdadMUe1M4569ZNLzA==",
+        "CalendarID": "ZusVacxuoQZqP-z0j3eiNZsilZrVLZ7HNOBSJCFEQi6lONDqiCvi0QdF6eOk5HOWVE2esdadMUe1M4569ZNLzA==",
+        "DefaultEventDuration": 30,
+        "DefaultPartDayNotifications": [
+          {
+            "Type": 1,
+            "Trigger": "-PT25M"
+          }
+        ],
+        "DefaultFullDayNotifications": [
+          {
+            "Type": 1,
+            "Trigger": "-PT15H"
+          }
+        ]
+      }
+    }
+  ],
+  "CalendarAlarms": [
+    {
+      "ID": "kjN6b_wT9UHetuKaiYurG3UCKJkG3z-Ls7aDF9-xp2ykqBiu0yD9nb1bSpGOJ6O2wX5CXrx7fstUKv9ll-QRug==",
+      "Action": 1,
+      "Alarm": {
+        "ID": "kjN6b_wT9UHetuKaiYurG3UCKJkG3z-Ls7aDF9-xp2ykqBiu0yD9nb1bSpGOJ6O2wX5CXrx7fstUKv9ll-QRug==",
+        "EventID": "KEZDgiuT4MIsCMCH9aPPXJ9NpDNnKRr3-fY1dh8shzeAri-GLWVjb0sexZAc6hpRJUDTV2ljNfapsxEy-47WBQ==",
+        "CalendarID": "ZusVacxuoQZqP-z0j3eiNZsilZrVLZ7HNOBSJCFEQi6lONDqiCvi0QdF6eOk5HOWVE2esdadMUe1M4569ZNLzA==",
+        "MemberID": "ZusVacxuoQZqP-z0j3eiNZsilZrVLZ7HNOBSJCFEQi6lONDqiCvi0QdF6eOk5HOWVE2esdadMUe1M4569ZNLzA==",
+        "Occurrence": 1613576100,
+        "Trigger": "-PT25M",
+        "Action": 2
+      }
+    }
+  ],
+  "Notices": []
+}

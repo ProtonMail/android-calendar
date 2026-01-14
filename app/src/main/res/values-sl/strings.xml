@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(brez naslova)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">E-poštni naslov</string>
+    <string name="default_user_display_name">(brez imena)</string>
+    <string name="toast_copied_to_clipboard">Kopirano v odložišče</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">Izbriši dogodek</string>
+    <string name="dialog_title_delete_recurring_event">Izbriši ponavljajoči dogodek</string>
+    <string name="dialog_description_delete_event">Ali želite izbrisati ta dogodek?</string>
+    <string name="dialog_description_delete_recurring_event">Ali želite izbrisati vse dogodke v seriji?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">Organizator je posodobil dogodek. Ali želite izbrisati ta dogodek?</string>
+    <string name="dialog_button_delete">Izbriši</string>
+    <string name="dialog_button_cancel">Prekliči</string>
+    <string name="dialog_button_continue">Nadaljuj</string>
+    <string name="dialog_button_close">Zapri</string>
+    <string name="dialog_button_remove">Odstrani</string>
+    <string name="dialog_button_download">Prenesi</string>
+    <string name="dialog_button_update">Posodobitev</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">Udeležencem dogodka bo poslano e-poštno sporočilo o preklicu. Ali želite izbrisati ta dogodek?</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">Vaš naslov je onemogočen. Udeležencem dogodka ni mogoče poslati e-poštnega sporočila o preklicu. Ali želite vseeno izbrisati ta dogodek?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">Udeležencem dogodka bo poslano e-poštno sporočilo o preklicu. Ali želite izbrisati vse dogodke v tej seriji?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">Vaš naslov je onemogočen. Udeležencem dogodka ni mogoče poslati e-poštnega sporočila o preklicu. Ali želite vseeno izbrisati vse dogodke v tej seriji?</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">Organizator tega dogodka bo obveščen, da zavračate povabilo. Ali želite izbrisati ta dogodek?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">Organizator tega dogodka ne bo obveščen, da zavračate povabilo, saj s povabljenega naslova ne morete pošiljati e-poštnih sporočil. Ali želite vseeno izbrisati ta dogodek?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">Organizator te serije dogodkov bo obveščen, da zavračate povabilo. Ali želite izbrisati vse dogodke v tej seriji?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">Organizator te serije dogodkov ne bo obveščen, da zavračate povabilo, saj ne morete pošiljati e-poštnih sporočil s povabljenega naslova. Ali želite vseeno izbrisati vse dogodke v tej seriji?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">Ta dogodek je bil posodobljen. Organizator bo obveščen, da zavračate povabilo. Ali želite izbrisati ta dogodek?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">Ta dogodek je bil posodobljen. Organizator ne bo obveščen, da zavračate povabilo, saj ne morete pošiljati e-poštnih sporočil s povabljenega naslova. Ali želite izbrisati ta dogodek?</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">Dogodki, ki jih je organizator predhodno posodobil bodo ohranjeni, a vaši odgovori bodo izgubljeni</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">Dogodki, ki jih je organizator predhodno posodobil bodo ohranjeni</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">Organizatorja ni mogoče obvestiti, da zavračate povabilo:\n\n• %1$s\n\nAli želite vseeno izbrisati dogodek?</string>
+    <string name="dialog_button_set">Nastavi</string>
+    <string name="dialog_button_ok">V redu</string>
+    <string name="action_save">Shrani</string>
+    <string name="action_done">Končano</string>
+    <string name="action_edit">Uredi</string>
+    <string name="action_delete">Izbriši</string>
+    <string name="action_add">Dodaj</string>
+    <string name="action_remove">Odstrani</string>
+    <string name="action_leave">Zapusti</string>
+    <string name="action_recreate">Počisti</string>
+    <string name="action_today">Danes</string>
+    <string name="action_create_event">Ustvari dogodek</string>
+    <string name="action_mark_default">Označi kot privzeto</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">Ni dogodkov</string>
+    <string name="agenda_loading_events">Nalaganje dogodkov …</string>
+    <string name="agenda_loading_events_error">Napaka pri nalaganju dogodkov</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+ %1$d</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">Cel dan</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">Ob času dogodka</string>
+    <string name="event_alarm_label_at_event_time_by_email">V času dogodka po e-pošti</string>
+    <string name="event_alarm_label_on_the_same_day">Na isti dan</string>
+    <string name="event_alarm_label_before">%1$s prej</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s prej po e-pošti</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s ob %2$s</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s ob %2$s po e-pošti</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s prej ob %2$s</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s prej ob %2$s po e-pošti</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s v %2$s</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s na %2$d dan</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s v %2$s</string>
+    <string name="event_recurrence_none">Se ne ponavlja</string>
+    <string name="event_recurrence_daily">Dnevno</string>
+    <string name="event_recurrence_weekly">Tedensko</string>
+    <string name="event_recurrence_monthly">Mesečno</string>
+    <string name="event_recurrence_yearly">Letno</string>
+    <string name="event_recurrence_weekly_on_all_days">vse dni</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">do %1$s</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">do %1$s (%2$s)</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">Preklicano</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s<i>(Onemogočen)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(Privzeto)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d da</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d morda</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d ne</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d v obravnavi</string>
+    <string name="event_attendee_is_organizer">Vi ste organizator</string>
+    <string name="event_attendee_organizer">Organizator</string>
+    <string name="event_attendee_optional">Neobvezno</string>
+    <string name="event_attendee_is_current_user">Vi</string>
+    <string name="event_answer_attending">Udeležba?</string>
+    <string name="event_answer_yes">Da</string>
+    <string name="event_answer_no">Ne</string>
+    <string name="event_answer_maybe">Mogoče</string>
+    <string name="event_decryption_error_dialog_title">Dogodka ni uspelo dešifrirati</string>
+    <string name="event_decryption_error_dialog_message">Dešifriranje vsebine tega dogodka ni bilo uspešno.</string>
+    <string name="event_decryption_error_dialog_confirmation">Izbriši dogodek</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">Izbriši dogodke</string>
+    <string name="event_decryption_error_dialog_close">Zapri</string>
+    <string name="event_signature_verification_failure">Preverjanje podpisa dogodka ni uspelo. <a href="https://proton.me/support/what-is-a-digital-signature">Več informacij</a></string>
+    <string name="event_signature_verification_in_progress">Preverjanje podpisa dogodka je v teku.</string>
+    <string name="event_signature_verification_network_error">Preverjanje podpisa dogodka je bilo zaradi napake prekinjeno. <a href="">Poskusite znova</a></string>
+    <string name="event_change_answer_recurring_title">Posodobitev ponavljajočega se dogodka</string>
+    <string name="event_change_answer_recurring_description">Ali želite spremeniti odgovor za vse dogodke v tej seriji?</string>
+    <string name="event_change_answer_recurring_overwrite_description">Ali želite spremeniti odgovor za vse dogodke v tej seriji?\nNekaj odgovorov na dogodke, ki jih je organizator predhodno posodobil, bo izgubljenih.</string>
+    <string name="event_change_answer_recurring_single_edit_description">Organizator je ta dogodek posodobil. Želite spremeniti svoj odgovor samo za ta dogodek v tej seriji?</string>
+    <string name="event_change_answer_recurring_cancel">Prekliči</string>
+    <string name="event_change_answer_recurring_confirm">Posodobi</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s je sprejel vaše povabilo na %2$s</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s je zavrnil povabilo na %2$s</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">%1$s je pogojno sprejel vaše povabilo na %2$s</string>
+    <string name="event_organizer_send_prefs_error_title">Organizatorja ni mogoče obvestiti</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">Organizatorja ni mogoče obvestiti, da ste povabilo sprejeli</string>
+    <string name="event_organizer_send_prefs_message_declined_title">Organizatorja ni mogoče obvestiti, da ste zavrnili povabilo</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">Organizatorja ni mogoče obvestiti, da ste povabilo pogojno sprejeli</string>
+    <string name="event_organizer_send_prefs_message_default_title">Organizatorja ni mogoče obvestiti, da ste se odzvali povabilu</string>
+    <string name="event_organizer_send_prefs_button_title">V redu</string>
+    <string name="event_attendees_send_prefs_error_title">Udeležencev ni mogoče obvestiti</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">Nobenega od udeležencev ni mogoče obvestiti o vaših spremembah:\n\n• %1$s\n\n Bi vseeno radi nadaljevali?</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">Teh udeležencev ni mogoče obvestiti o vaših spremembah:\n\n• %1$s\n\n Bi vseeno radi nadaljevali?</string>
+    <string name="event_attendees_send_prefs_error_confirm">Nadaljuj</string>
+    <string name="event_attendees_send_prefs_error_cancel">Prekliči</string>
+    <string name="event_send_prefs_error_address_disabled">ta naslov ne obstaja</string>
+    <string name="event_send_prefs_error_getting_contact">ni bilo mogoče pridobiti kontaktnih podatkov</string>
+    <string name="event_send_prefs_error_network">omrežna napaka</string>
+    <string name="event_send_prefs_trusted_keys_invalid">zaupanja vredni ključi so neveljavni</string>
+    <string name="event_send_prefs_public_keys_invalid">javni ključi so neveljavni</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">podpis stika ni veljaven</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">Pridružite se sestanku Zoom</string>
+    <string name="zoom_meeting_title">Sestanek prek Zooma</string>
+    <string name="generic_meeting_id">ID: %1$s</string>
+    <string name="generic_meeting_password">Geslo: %1$s</string>
+    <string name="generic_meeting_more_details">Več podrobnosti</string>
+    <string name="generic_meeting_less_details">Manj podrobnosti</string>
+    <string name="generic_meeting_host">Gostitelj sestanka</string>
+    <string name="generic_meeting_link">Povezava do sestanka</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Navodila za pridružitev</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">Nov dogodek</string>
+    <string name="event_text_edit_event">Uredi dogodek</string>
+    <string name="event_hint_title">Dodaj naslov</string>
+    <string name="event_hint_location">Dodaj lokacijo</string>
+    <string name="event_text_add_participants">Dodaj udeležence</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">Udeleženci (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">Vi</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ %1$d</string>
+    <string name="event_text_switch_all_day">Ves dan</string>
+    <string name="event_text_date_start">Začetek</string>
+    <string name="event_text_date_end">Konec</string>
+    <string name="event_text_date_repeat">Ponovi</string>
+    <string name="event_text_date_repeat_never">Se ne ponavlja</string>
+    <string name="event_text_attendees">Udeleženci</string>
+    <string name="event_text_attendees_none">Brez</string>
+    <string name="event_text_calendar">Koledar</string>
+    <string name="event_text_timezone_start">Časovni pas</string>
+    <string name="invite_in_shared_calendar_disclaimer">Pošiljanje vabil je na voljo le v osebnih koledarjih.</string>
+    <string name="invite_change_calendar_disclaimer">Koledarja, povezanega z vabili, ni mogoče spreminjati.</string>
+    <string name="invite_change_attendees_disclaimer">Udeležencev, povezanih s povabili ni mogoče spreminjati.</string>
+    <string name="change_calendar_recurring_disclaimer">Spreminjanje koledarja za ponavljajoči se dogodek še ni mogoče.</string>
+    <string name="update_event">Posodobi dogodek</string>
+    <string name="update_invite_send_email">Posodobljeno vabilo bo poslano udeležencem dogodka.</string>
+    <string name="update_recurring_event">Posodobi ponavljajoči dogodek</string>
+    <string name="update_recurring_all_events">Želite posodobiti vse dogodke v tej seriji?</string>
+    <string name="update_recurring_invite_send_email">Vsi dogodki v seriji bodo posodobljeni. Vabilo bo poslano vsem sodelujočim.</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">Kaj iščete?</string>
+    <string name="search_empty_results_title">Ni najdenih rezultatov</string>
+    <string name="search_empty_results_subtitle">Poskusite z drugim izrazom, na primer Erik, rojstni dan, spletni seminar, knjižni klub.</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">Prenašanje koledarjev (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">Preostali čas: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">Izračun preostalega časa …</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">skoraj končano</string>
+    <string name="search_downloading_pause">Začasno prekini prenašanje</string>
+    <string name="search_settings_dialog_toggle_off_title">Odstrani vse prenesene koledarje?</string>
+    <string name="search_settings_dialog_toggle_off_text">Če želite iskati, je treba vse koledarje znova prenesti.</string>
+    <string name="search_settings_dialog_toggle_on_title">Prenos koledarjev v to napravo?</string>
+    <string name="search_settings_dialog_toggle_on_text">To je zahtevano za potrebe iskanja.</string>
+    <string name="search_onboarding_header">Želite iskati v svojem koledarju?</string>
+    <string name="search_onboarding_text">Najprej morate prenesti šifrirano kopijo svojih koledarjev. To vam bo vzelo le trenutek in aplikacijo lahko med tem še naprej uporabljate. <a href="https://proton.me/support/calendar-search">Več informacij</a></string>
+    <string name="search_onboarding_action_download_calendars">Prenesite koledarje</string>
+    <string name="search_onboarding_action_pause">Premor</string>
+    <string name="search_onboarding_action_resume">Nadaljuj</string>
+    <string name="search_onboarding_action_retry">Poskusi znova</string>
+    <string name="search_onboarding_progress_header_ongoing">Prenašanje koledarjev …</string>
+    <string name="search_onboarding_progress_header_completed">Prenos je končan</string>
+    <string name="search_onboarding_progress_header_paused">Prenašanje koledarjev je začasno prekinjeno</string>
+    <string name="search_onboarding_progress_header_error">Napaka pri prenašanju koledarjev</string>
+    <string name="search_spotlight_activation_snack">Iskanje v koledarjih je aktivirano</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">Dodaj obvestilo</string>
+    <string name="event_text_description">Opis</string>
+    <string name="event_hint_description">Dodaj opis</string>
+    <string name="event_text_custom">po meri</string>
+    <string name="event_alert_invalid_start_end_date">Začetni datum dogodka ne sme biti po končnem datumu</string>
+    <string name="event_alarms_title">Obvestila</string>
+    <string name="event_custom_alarms_field">Obvesti</string>
+    <string name="event_custom_alarms_title">Obvestila po meri</string>
+    <string name="event_alarm_partial_day_1">ob času dogodka</string>
+    <string name="event_alarm_partial_day_2">10 minut</string>
+    <string name="event_alarm_partial_day_3">30 minut</string>
+    <string name="event_alarm_partial_day_4">1 ura</string>
+    <string name="event_alarm_partial_day_5">1 teden</string>
+    <string name="event_alarm_all_day_1">na isti dan ob %1$s</string>
+    <string name="event_alarm_all_day_2">1 dan prej ob %1$s</string>
+    <string name="event_alarm_all_day_3">1 teden prej ob %1$s</string>
+    <string name="event_alarm_all_day_4">3 tedne prej ob %1$s</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">ob %1$s</string>
+    <string name="event_alarm_action">Pošlji z</string>
+    <string name="event_alarm_action_notification">obvestilo</string>
+    <string name="event_alarm_action_email">e-pošta</string>
+    <string name="event_alarm_same_day">na dan</string>
+    <string name="event_recurrence_1">ne ponavljaj</string>
+    <string name="event_recurrence_2">vsak dan</string>
+    <string name="event_recurrence_3">vsak teden</string>
+    <string name="event_recurrence_4">vsak mesec</string>
+    <string name="event_recurrence_5">vsako leto</string>
+    <string name="event_recurrence_title">Pogostost</string>
+    <string name="event_recurrence_custom_title">Pogostost po meri</string>
+    <string name="event_recurrence_occurs_every">Ponovi se vsak</string>
+    <string name="event_recurrence_occurs_on">Ponovi se na</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">na dan %1$d</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">na %1$s</string>
+    <string name="event_recurrence_ends_on">Konec</string>
+    <string name="event_recurrence_ends_never">nikoli</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">na dan</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">na %1$s</string>
+    <string name="event_recurrence_ends_after_count_prefix">po</string>
+    <string name="event_recurring_edit_this">Ta dogodek</string>
+    <string name="event_recurring_edit_this_and_future">Ta in prihodnji dogodki</string>
+    <string name="event_recurring_edit_all_events">Vsi dogodki</string>
+    <string name="event_discard_changes_title">Zavržem spremembe?</string>
+    <string name="event_discard_changes_description">Izgubili boste vse neshranjene spremembe.</string>
+    <string name="event_discard_changes_cancel">Nadaljuj z urejanjem</string>
+    <string name="event_discard_changes_confirm">Zavrzi</string>
+    <string name="event_recurring_update_this_title">Posodobi ponavljajoči dogodek</string>
+    <string name="event_recurring_update_this_description">Spremembe pogostosti bodo izgubljene</string>
+    <string name="event_recurring_update_all_description">Prejšnje spremembe v tej seriji bodo izgubljene</string>
+    <string name="event_recurring_update_this_cancel">Prekliči</string>
+    <string name="event_recurring_update_this_confirm">Posodobi</string>
+    <string name="event_allow_contacts_title">Dovolite Proton Calendar dostop do stikov?</string>
+    <string name="event_allow_contacts_description">Proton Calendar potrebuje dostop do vaših stikov, da vam omogoči samodejno dokončanje</string>
+    <string name="event_allow_contacts_cancel">Zavrni</string>
+    <string name="event_allow_contacts_confirm">Dovoli</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Re: Povabilo na dogodek s pričetkom v %1$s ob %2$s %3$s</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">Re: Povabilo na dogodek %1$s</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">Re: Povabilo na dogodek s pričetkom %1$s</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Povabilo na dogodek s pričetkom v %1$s ob %2$s %3$s</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">Povabilo na dogodek v %1$s</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">Povabilo na dogodek s pričetkom v %1$s</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Povabilo na dogodek s pričetkom v %1$s ob %2$s %3$s</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">Posodobitev za dogodek dne %1$s</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">Posodobitev za dogodek, ki se začne %1$s</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Preklic dogodka s pričetkom v %1$s ob %2$s %3$s</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">Preklic dogodka dne %1$s</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">Preklic dogodka, ki se začne %1$s</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">Vabljeni ste na %1$s\nKdaj: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s je bil posodobljen.\nKdaj: %2$s.</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (ves dan)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s – %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s od %2$s %3$s - %4$s do %5$s %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nKje: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nOpis: %1$s</string>
+    <string name="event_send_invite_dialog_title">Pošlji povabilo</string>
+    <string name="event_send_invite_dialog_description">Dodanim udeležencem bo poslano povabilo.</string>
+    <string name="event_send_invite_dialog_confirm">Pošlji</string>
+    <string name="event_send_invite_dialog_cancel">Prekliči</string>
+    <string name="event_add_participants_dialog_title">Dodaj udeležence</string>
+    <string name="event_add_participants_dialog_description">Dodanim udeležencem bo poslano povabilo.</string>
+    <string name="recurring_event_add_participants_dialog_description">Dodanim udeležencem bo poslano povabilo za vse dogodke v tej seriji.</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">Dodanim udeležencem bo poslano povabilo za vse dogodke v tej seriji.\nPredhodne spremembe v tej seriji bodo izgubljene.</string>
+    <string name="event_add_participants_dialog_confirm">Pošlji</string>
+    <string name="event_add_participants_dialog_cancel">Prekliči</string>
+    <string name="event_remove_participants_dialog_title">Odstrani udeležence</string>
+    <string name="event_remove_participants_dialog_description">Odstranjenim udeležencem bo poslano e-poštno sporočilo o preklicu dogodka.</string>
+    <string name="recurring_event_remove_participants_dialog_description">E-poštno sporočilo o preklicu bo poslano odstranjenim udeležencem za vse dogodke v tej seriji.</string>
+    <string name="event_add_and_remove_participants_dialog_description">Dodani in odstranjeni udeleženci bodo obveščeni.</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">Dodani in odstranjeni udeleženci bodo obveščeni o vseh dogodkih v tej seriji.</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s je bil odpovedan.</string>
+    <string name="event_save_changes">Shrani spremembe</string>
+    <string name="event_update_add_participants_dialog_description">Obstoječi in dodani udeleženci bodo obveščeni.</string>
+    <string name="recurring_event_update_add_participants_dialog_description">Posodobili boste vse dogodke v tej seriji. Obstoječi in dodani udeleženci bodo obveščeni.</string>
+    <string name="event_update_remove_participants_dialog_description">Obstoječi in odstranjeni udeleženci bodo obveščeni.</string>
+    <string name="event_update_remove_all_participants_dialog_description">Odstranjeni udeleženci bodo obveščeni.</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">Posodobili boste vse dogodke v tej seriji. Obstoječi in odstranjeni udeleženci bodo o tem obveščeni.</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">Posodobili boste vse dogodke v tej seriji. Odstranjeni udeleženci bodo o tem obveščeni.</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">Obstoječi, dodani in odstranjeni udeleženci bodo obveščeni.</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">Posodobili boste vse dogodke v tej seriji. Obstoječi, dodani in odstranjeni udeleženci bodo obveščeni.</string>
+    <string name="success_snack_email_update_recurring">Udeleženci so bili obveščeni in vsi dogodki posodobljeni</string>
+    <string name="success_snack_email_update">Udeleženci so bili obveščeni in dogodek posodobljen</string>
+    <string name="success_snack_add_attendees_recurring">Vabilo je poslano in udeleženci dodani na vse dogodke</string>
+    <string name="success_snack_add_attendees">Vabilo je poslano in udeleženci dodani</string>
+    <string name="success_snack_remove_attendees_recurring">Odpoved je poslana in udeleženci so odstranjeni iz vseh dogodkov</string>
+    <string name="success_snack_remove_attendees">Odpoved je poslana in udeleženci so odstranjeni</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">Moji koledarji</string>
+    <string name="nav_view_subscribed_calendars">Naročeni koledarji</string>
+    <string name="nav_view_other_calendars">Drugi koledarji</string>
+    <string name="nav_view_disabled_calendars">%1$s (Onemogočen)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (Ni sinhronizirano)</string>
+    <string name="nav_view_syncing_calendars">%1$s (Sinhronizacija)</string>
+    <string name="nav_view_more">Več</string>
+    <string name="nav_view_switcher">Pogled</string>
+    <string name="nav_view_switcher_day">Dan</string>
+    <string name="nav_view_switcher_three_day">3 dni</string>
+    <string name="nav_view_switcher_week">Teden</string>
+    <string name="nav_view_switcher_agenda">Dnevni red</string>
+    <string name="nav_view_switcher_month">Mesec</string>
+    <string name="nav_view_timezone">Časovni pas</string>
+    <string name="nav_view_settings">Nastavitve</string>
+    <string name="nav_view_feedback">Pošljite nam povratne informacije</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">Splošno</string>
+    <string name="nav_view_more_bug">Prijavite težavo</string>
+    <string name="nav_view_more_subscription">Naročnina</string>
+    <string name="nav_view_more_logout">Odjava</string>
+    <string name="nav_view_more_login">Prijava</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">Ta funkcija bo kmalu na voljo</string>
+    <string name="snack_event_deleted">Izbrisan dogodek</string>
+    <string name="snack_event_deleted_as_organizer">Preklic je poslan in dogodek izbrisan</string>
+    <string name="snack_event_deleted_as_attendee">Odgovor je poslan in dogodek izbrisan</string>
+    <string name="snack_event_deleted_error">Napaka pri brisanju dogodka</string>
+    <string name="snack_event_deleted_as_organizer_error">Elektronskega sporočila za preklic ni mogoče poslati, poskusite znova</string>
+    <string name="snack_event_opening_error">Napaka pri odpiranju dogodka</string>
+    <string name="snack_event_saving">Shranjevanje dogodka</string>
+    <string name="snack_event_deleting">Brisanje dogodka</string>
+    <string name="snack_event_changing_answer">Posodabljanje odgovora</string>
+    <string name="snack_event_part_stat_updated">Status udeležbe je posodobljen.</string>
+    <string name="snack_event_updated">Dogodek je posodobljen</string>
+    <string name="snack_event_updated_recurring">Vsi dogodki posodobljeni</string>
+    <string name="snack_event_updated_error_failed_mail">Povabilo ni bilo poslano</string>
+    <string name="snack_update_event_error_failed_mail">Posodobitev ni uspela</string>
+    <string name="snack_lost_zoom_access">Povežite se s Zoomom, da uredite ta dogodek.</string>
+    <string name="snack_lost_zoom_access_acion">Poveži</string>
+    <string name="snack_zoom_meeting_does_not_exist">Ta seja Zoom je bila preklicana. Odstranite povezavo, da uredite ta dogodek.</string>
+    <string name="snack_event_updated_error">Napaka pri posodabljanju dogodka</string>
+    <string name="snack_event_created">Ustvarjen je dogodek</string>
+    <string name="snack_event_created_failed_mail">Dogodek je bil ustvarjen, vendar povabila ni bilo mogoče poslati</string>
+    <string name="snack_event_created_error">Napaka pri ustvarjanju dogodka</string>
+    <string name="snack_event_opening_edit_error">Napaka pri odpiranju dogodka za urejanje</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">Ta ponavljajoči se dogodek lahko izbrišete samo v spletni aplikaciji Calendar.</string>
+    <string name="snack_event_edit_with_attendees_error">Urejanje dogodkov z udeleženci še ni podprto</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">Ni mogoče hkrati dodati udeležence in spreminjati koledar</string>
+    <string name="snack_event_init_error">Napaka pri inicializaciji novega dogodka</string>
+    <string name="snack_event_calendar_error">Napaka pri preklopu koledarja</string>
+    <string name="snack_event_maximum_alarm_reached_error">Največje število obvestil je bilo doseženo</string>
+    <string name="snack_send_bug_report_success">Poročilo poslano, hvala za povratne informacije</string>
+    <string name="snack_send_bug_report_error">Napaka pri pošiljanju poročila, poskusite znova pozneje</string>
+    <string name="snack_send_bug_report_description_empty">Navedite opis vašega poročila</string>
+    <string name="snack_create_event_no_active_personal_calendar">Za ustvarjanje dogodkov potrebujete aktiven osebni koledar</string>
+    <string name="snack_create_event_no_active_calendar">Za ustvarjanje dogodkov potrebujete aktiven koledar</string>
+    <string name="snack_add_self_as_participant">Povabilo samega sebe ni dovoljeno</string>
+    <string name="snack_maximum_participants_reached">Doseženo je bilo največje število udeležencev.</string>
+    <string name="snack_add_participant_error">Napaka pri dodajanju udeleženca</string>
+    <string name="snack_add_participant_invalid_email">Neveljaven e-poštni naslov</string>
+    <string name="snack_change_attendee_answer_error">Napaka pri pošiljanju odgovora, poskusite znova pozneje</string>
+    <string name="snack_network_error">Napaka v omrežju, poskusite znova pozneje</string>
+    <string name="snack_import_event_signed_out">Za uvoz dogodkov se morate vpisati</string>
+    <string name="snack_app_link_signed_out">Za pregled dogodka se morate vpisati</string>
+    <string name="snack_update_default_calendar">Privzeti koledar posodobljen</string>
+    <string name="snack_update_default_calendar_error">Napaka pri posodabljanju privzetega koledarja, poskusite znova pozneje</string>
+    <string name="snack_calendar_init_error">Napaka pri nalaganju podatkov koledarja</string>
+    <string name="snack_holiday_calendar_init_error">Napaka pri nalaganju podatkov o praznikih v koledar</string>
+    <string name="snack_update_calendar_error">Napaka pri posodabljanju podatkov o koledarju, poskusite znova pozneje</string>
+    <string name="snack_update_calendar_settings_error">Napaka pri posodabljanju nekaterih podatkov koledarja, poskusite znova pozneje</string>
+    <string name="snack_update_calendar_success">Koledar je posodobljen</string>
+    <string name="snack_create_calendar_success">Koledar je ustvarjen</string>
+    <string name="snack_add_calendar_success">Koledar dodan</string>
+    <string name="snack_calendar_saving">Shranjevanje koledarja</string>
+    <string name="snack_create_calendar_error">Napaka pri ustvarjanju koledarja, poskusite znova pozneje</string>
+    <string name="snack_add_calendar_error">Napaka pri dodajanju koledarja, poskusite znova pozneje</string>
+    <string name="snack_create_calendar_settings_error">Koledar je bil ustvarjen, vendar nekatere informacije niso posodobljene, poskusite znova pozneje</string>
+    <string name="snack_ics_default_error">Napaka pri odpiranju koledarja</string>
+    <string name="snack_ics_event_not_found_error">Dogodek ni bil najden</string>
+    <string name="snack_ics_file_not_found_error">Datoteke ni mogoče najti.</string>
+    <string name="snack_ics_create_error">Napaka pri ustvarjanju dogodka</string>
+    <string name="snack_ics_parsing_error">Napaka pri branju koledarja</string>
+    <string name="snack_ics_unsupported_method_error">Ta vrsta dogodka še ni podprta</string>
+    <string name="snack_ics_unsupported_add_error">Dodajanje ponavljanja k dogodku trenutno ni podprto</string>
+    <string name="snack_ics_unsupported_counter_error">Preureditev dogodka trenutno ni podprta</string>
+    <string name="snack_ics_unsupported_refresh_error">Osveževanje dogodka trenutno ni podprto</string>
+    <string name="snack_ics_unsupported_publish_error">Uvoz dogodka trenutno ni podprt</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">Trenutno podpiramo le odgovore na vse dogodke v seriji</string>
+    <string name="snack_ics_party_crasher_error">Vaše e-pošte ni na seznamu udeležencev</string>
+    <string name="snack_ics_reply_party_crasher_error">Udeležence, ki jih organizator ni povabil, ni mogoče dodati</string>
+    <string name="snack_ics_missing_uid_error">Dogodku manjka UID</string>
+    <string name="snack_ics_no_active_personal_calendar_error">S tem računom ni povezan noben aktivni osebni koledar</string>
+    <string name="snack_ics_no_active_calendar_error">S tem računom ni povezan noben aktivni koledar.</string>
+    <string name="snack_ics_unsupported_duration_error">Lastnost trajanja ni podprta</string>
+    <string name="snack_ics_too_many_events_error">Več dogodkov še ni podprtih</string>
+    <string name="snack_ics_no_events_error">Ta koledar ne vsebuje nobenega dogodka</string>
+    <string name="snack_ics_invalid_error">To povabilo ni veljavno</string>
+    <string name="snack_ics_disabled_calendar_error">Za posodobitev dogodka ponovno omogočite naslov, povezan s tem koledarjem</string>
+    <string name="snack_ics_event_deleted_error">Dogodek ne obstaja več v vašem koledarju</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s je sprejel/-a vaše povabilo</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s je pogojno sprejel/-a vaše povabilo</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s je zavrnil/-a vaše povabilo</string>
+    <string name="snack_app_link_invalid">Neveljavna povezava do dogodka</string>
+    <string name="snack_app_link_error">Napaka pri odpiranju dogodka</string>
+    <string name="snack_app_link_import_error">Preverjanje pristnosti preklicano</string>
+    <string name="snack_notification_already_added">Obvestilo je že bilo dodano</string>
+    <string name="snack_opening_ics">Odpiranje dogodka ...</string>
+    <string name="snack_invite_in_shared_calendar_error">Ustvarjanje povabil v deljenem koledarju ni dovoljeno</string>
+    <string name="snack_down_banner">Strežniki Proton ne delujejo. Za podrobnosti obiščite našo stran s stanjem.</string>
+    <string name="snack_down_banner_action">Odpri stran s stanjem</string>
+    <string name="snack_color_per_event_paid_feature">Nadgradite za prilagajanje barv dogodkov</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">Dogodek ne obstaja</string>
+    <string name="error_occurrence_does_not_exist">Ponovitev ne obstaja</string>
+    <string name="update_timezone_dialog_title">Časovni pas je spremenjen</string>
+    <string name="update_timezone_dialog_message">Vaš sistemski časovni pas se je spremenil v %1$s. Ali želite posodobiti nastavitve časovnega pasu?</string>
+    <string name="update_timezone_dialog_confirmation">Posodobi</string>
+    <string name="update_timezone_dialog_cancel">Prekliči</string>
+    <string name="contacts_permission_dialog_title">Dovolite Proton Calendar dostop do stikov?</string>
+    <string name="contacts_permission_dialog_message">Proton Calendar potrebuje dostop do vaših telefonskih stikov, da jih enostavno dodate v dogodke.</string>
+    <string name="contacts_permission_dialog_allow">Dovoli</string>
+    <string name="contacts_permission_dialog_open_settings">Odpri nastavitve</string>
+    <string name="contacts_permission_dialog_cancel">Zavrni</string>
+    <string name="dialog_title_calendar_picker">Koledar</string>
+    <string name="dialog_title_calendar_color_picker">Barva koledarja</string>
+    <string name="dialog_title_event_color_picker">Barva dogodka</string>
+    <string name="import_from_google_title">Uvoz iz Googlovega računa</string>
+    <string name="notifications_permission_dialog_title">Ali dovolite Proton Calendar, da prikaže obvestila?</string>
+    <string name="notifications_permission_dialog_message">Proton Calendar potrebuje dovoljenje za prikaz obvestil o prihajajočih dogodkih.</string>
+    <string name="notifications_permission_dialog_open_settings">Odpri nastavitve</string>
+    <string name="notifications_permission_dialog_cancel">Zavrni</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">Obvestila o dogodku</string>
+    <string name="notification_channel_sync">Sinhronizacija koledarja</string>
+    <string name="notification_channel_calendar_fetch">Pridobivanje koledarjev</string>
+    <string name="notification_sync">Sinhronizacija koledarjev …</string>
+    <string name="notification_text_today">Danes</string>
+    <string name="notification_text_today_part_time">Danes ob %1$s</string>
+    <string name="notification_text_tomorrow">Jutri</string>
+    <string name="notification_text_tomorrow_part_time">Jutri ob %1$s</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s ob %2$s</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">Zadeva</string>
+    <string name="bug_report_hint_description">Opišite težavo in vključite morebitna sporočila o napakah.</string>
+    <string name="bug_report_discard_changes_title">Neshranjene spremembe</string>
+    <string name="bug_report_discard_changes_description">V obrazcu so neshranjeni vnosi. Ste prepričani, da jih želite zavreči?</string>
+    <string name="bug_report_discard_changes_cancel">Nadaljuj s pisanjem</string>
+    <string name="bug_report_discard_changes_confirm">Zavrzi</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">Nastavitve aplikacije</string>
+    <string name="settings_theme_title">Tema</string>
+    <string name="settings_theme_info">Ta nastavitev vpliva samo na videz aplikacije Proton Calendar v tej napravi. Po spremembi teme se bo aplikacija znova zagnala.</string>
+    <string name="settings_timezone_title">Časovni pas</string>
+    <string name="settings_language_title">Jezik aplikacije</string>
+    <string name="settings_language_default">Samodejno zaznavanje</string>
+    <string name="settings_default_view_title">Privzeti pogled</string>
+    <string name="settings_default_view_default">Zadnji pogled</string>
+    <string name="settings_update_timezone_title">Vprašajte za posodobitev nastavitve časovnega pasu</string>
+    <string name="settings_update_timezone_subtitle">Če se sistemski časovni pas ne ujema s trenutno nastavitvijo časovnega pasu, boste pozvani k njegovi posodobitvi.</string>
+    <string name="settings_update_timezone_checkbox">Ne sprašuj me več</string>
+    <string name="settings_week_start_title">Začetek tedna</string>
+    <string name="settings_time_format_title">Zapis časa</string>
+    <string name="settings_week_numbers_title">Pokaži številko tedna</string>
+    <string name="settings_auto_invites_title">Dodaj povabila v koledar in jih označi kot čakajoče</string>
+    <string name="settings_search_title">Išči v koledarjih</string>
+    <string name="settings_search_subtitle">Prenese in shrani vsebino koledarja v vašo napravo za iskanje. Če to izklopite, boste odstranili preneseno vsebino.\n\nIskanje je poskusna beta funkcija. Če jo omogočite, lahko postane aplikacija nestabilna.</string>
+    <string name="settings_alternative_routing_title">Dovoli alternativno usmerjanje</string>
+    <string name="settings_alternative_routing_subtitle">Če so spletna mesta Proton blokirana, ta nastavitev aplikaciji omogoča, da poskuša z alternativnim usmerjanjem omrežja doseči Proton, kar je lahko koristno za izogibanje požarnim zidovom ali težavam z omrežjem. Priporočamo, da je za večjo zanesljivost ta nastavitev vklopljena.</string>
+    <string name="settings_value_placeholder">Tapnite, če želite izbrati</string>
+    <string name="settings_general_title">Splošno</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s itd.</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">tema</string>
+    <string name="settings_general_info_language">jezik</string>
+    <string name="settings_general_info_time_zone">časovni pas</string>
+    <string name="settings_general_info_calendar_layout">postavitev koledarja</string>
+    <string name="settings_calendars">Moji koledarji</string>
+    <string name="settings_calendars_empty">Ne najdem koledarjev</string>
+    <string name="settings_subscribed_calendars">Naročeni koledarji</string>
+    <string name="settings_other_calendars">Drugi koledarji</string>
+    <string name="settings_calendar_default" comment="Default calendar">Privzeto</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">Onemogočeno</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">Ni sinhronizirano</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">Sinhronizacija</string>
+    <string name="settings_calendar_subscribed_invalid_ics">Nepodprta oblika koledarja</string>
+    <string name="settings_calendar_subscribed_too_big">Koledar je prevelik</string>
+    <string name="settings_calendar_subscribed_not_accessible">Povezava do koledarja ni dostopna</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">Povezava do koledarja je začasno nedostopna</string>
+    <string name="settings_calendar_subscribed_last_sync_old">Od zadnje posodobitve je minilo več kot 12 ur</string>
+    <string name="settings_calendar_subscribed_not_decrypted">Koledarja ni bilo mogoče dešifrirati</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">Samo za branje</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">od %1$s</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">Ustvari koledar</string>
+    <string name="calendar_form_update_title">Urejanje koledarja</string>
+    <string name="calendar_form_save">Shrani</string>
+    <string name="calendar_form_name">Ime</string>
+    <string name="calendar_form_description">Opis</string>
+    <string name="calendar_form_color">Barva koledarja</string>
+    <string name="calendar_form_language">Jezik</string>
+    <string name="calendar_form_default_event_duration">Trajanje dogodka</string>
+    <string name="calendar_form_default_event_notifications">Obvestila o dogodkih</string>
+    <string name="calendar_form_default_all_day_event_notifications">Obvestila o celodnevnih dogodkih</string>
+    <string name="calendar_form_add_notification">Dodaj obvestilo</string>
+    <string name="calendar_form_default_email">E-poštni naslov</string>
+    <string name="calendar_form_default_email_value_error">Nalaganje privzetega e-poštnega sporočila ni uspelo</string>
+    <string name="calendar_form_name_hint">Dodajte ime koledarja</string>
+    <string name="calendar_form_name_required_error">Ime je obvezno</string>
+    <string name="calendar_form_description_hint">Dodajte opis koledarja</string>
+    <string name="add_calendar_text">Dodaj koledar</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">Dodaj</string>
+    <string name="create_calendar_limit_reached">Dosegli ste največje število koledarjev.</string>
+    <string name="create_calendar_limit_reached_title">Ni mogoče dodati več koledarjev</string>
+    <string name="create_calendar_limit_reached_paid_description">Dosegli ste največje število 25 koledarjev, ki so na voljo v vašem paketu.\n\nČe želite dodati nov koledar, odstranite obstoječega.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">Preden dosežete omejitev 25 koledarjev v vašem paketu, morate imeti vsaj en osebni koledar.</string>
+    <string name="create_calendar_limit_reached_manage">Upravljanje koledarjev</string>
+    <string name="create_calendar_limit_reached_free_description">Dosegli ste največje število treh koledarjev, ki so na voljo v vašem paketu.\n\nČe želite dodati nov koledar, odstranite obstoječega.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">Preden dosežete omejitev treh koledarjev v vašem paketu, morate imeti vsaj en osebni koledar.</string>
+    <string name="create_calendar_limit_reached_error">Napaka</string>
+    <string name="delete_calendar_dialog_title">Izbriši koledar</string>
+    <string name="delete_calendar_dialog_message">Ste prepričani, da želite izbrisati ta koledar?</string>
+    <string name="remove_calendar_dialog_title">Odstrani koledar</string>
+    <string name="remove_calendar_dialog_message">Ste prepričani, da želite odstraniti ta koledar?</string>
+    <string name="leave_calendar_dialog_title">Zapusti koledar</string>
+    <string name="leave_calendar_dialog_message">Če zapustite ta koledar, boste morali prositi lastnika, da se ponovno pridružite.</string>
+    <string name="delete_default_calendar_dialog_message">Ali ste prepričani, da želite izbrisati ta koledar? »%1$s« bo nastavljen kot privzeti koledar.</string>
+    <string name="delete_calendar_snack_deleted">Koledar je izbrisan</string>
+    <string name="remove_calendar_snack_removed">Koledar je odstranjen</string>
+    <string name="delete_calendar_snack_error">Napaka pri brisanju koledarja</string>
+    <string name="remove_calendar_snack_error">Napaka pri odstranjevanju koledarja</string>
+    <string name="leave_calendar_snack_error">Napaka pri zapuščanju koledarja</string>
+    <string name="delete_calendar_snack_error_password_confirmation">Potrditev gesla ni uspela</string>
+    <string name="recreate_calendar_dialog_title">Počisti koledar</string>
+    <string name="recreate_calendar_dialog_message">S tem dejanjem boste odstranili vse dogodke in povabljene uporabnike.\n\nAli ste prepričani, da želite počistiti ta koledar?</string>
+    <string name="recreate_calendar_snack_error">Napaka pri čiščenju koledarja</string>
+    <string name="recreate_calendar_snack_deleted">Koledar je počiščen</string>
+    <string name="recreate_calendar_snack_clearing">Čiščenje koledarja …</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">Dodaj koledar s prazniki</string>
+    <string name="holiday_calendar_title">Koledar s prazniki</string>
+    <string name="add_holiday_calendar_country_search_hint">Poišči državo</string>
+    <string name="holiday_calendar_form_picker_title">Država</string>
+    <string name="holiday_calendar_time_zone_based">Glede na vaš časovni pas</string>
+    <string name="holiday_calendar_already_exists">Ta koledar s prazniki je že dodan.</string>
+    <string name="holiday_calendar_value_placeholder">Izberite državo</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">V redu</string>
+    <string name="bootstrap_error_no_calendar_title">Ta račun nima povezanih koledarjev.</string>
+    <string name="bootstrap_error_no_calendar_message">Če ga želite nastaviti zdaj, obiščite <a href="https://calendar.proton.me">calendar.proton.me</a></string>
+    <string name="bootstrap_error_some_calendars_failed_title">Napaka pri pripravi koledarjev</string>
+    <string name="bootstrap_error_some_calendars_failed_message">Naslednjih koledarjev ni bilo mogoče nastaviti</string>
+    <string name="bootstrap_error_no_active_calendar_title">S tem računom ni povezan noben aktivni osebni koledar.</string>
+    <string name="bootstrap_error_no_active_calendar_message">Če želite izvedeti, kako aktivirati koledar, obiščite našo <a href="https://proton.me/support">bazo znanja</a></string>
+    <string name="bootstrap_error_store_quota_reached_message">Zmanjkalo je prostora za shranjevanje.</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">Več o tem</string>
+    <string name="bootstrap_error_reset_needed_title">Ponastavi tipke koledarja</string>
+    <string name="bootstrap_error_reset_needed_message">Ponastavili ste geslo, zato dogodkov, povezanih z naslednjimi koledarji, ni bilo mogoče dešifrirati. Vsi aktivni naročeni koledarji se bodo po nekaj minutah znova sinhronizirali.</string>
+    <string name="bootstrap_error_update_passphrase_title">Ponovno aktiviranje ključev koledarja</string>
+    <string name="bootstrap_error_update_passphrase_message">Ponovno ste aktivirali ključe, zato je dogodke, povezane z naslednjimi koledarji, zdaj mogoče dešifrirati.</string>
+    <string name="bootstrap_error_continue_button">Nadaljuj</string>
+    <string name="splash_after_login_init">Pripravljanje koledarjev</string>
+    <string name="splash_init">Dešifriranje dogodkov</string>
+    <string name="default_calendar_name">Moj koledar</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">Pošljite nam povratne informacije</string>
+    <string name="dialog_feedback_text">Kako bi opisali svojo izkušnjo s Proton Calendar?</string>
+    <string name="dialog_feedback_rating_worst">Grozno</string>
+    <string name="dialog_feedback_rating_best">Krasno</string>
+    <string name="dialog_feedback_hint">Povejte nam o svojih izkušnjah. (Neobvezno)</string>
+    <string name="dialog_feedback_submit">Potrdi</string>
+    <string name="dialog_feedback_submit_thank_you">Hvala! Vaše povratne informacije nam pomagajo izboljšati Proton.</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Gradnik za Proton Calendar</string>
+    <string name="calendar_widget_no_upcoming_events_today">Danes ni prihajajočih dogodkov</string>
+    <string name="calendar_widget_loading_events">Nalaganje dogodkov …</string>
+    <string name="calendar_widget_loading_events_error">Dogodkov ni bilo mogoče naložiti</string>
+    <string name="calendar_widget_no_upcoming_events">Ni prihajajočih dogodkov</string>
+    <string name="calendar_widget_please_log_in">Za ogled dogodkov se vpišite</string>
+    <string name="calendar_widget_part_day_event_starts_at">Začne se ob %1$s</string>
+    <string name="calendar_widget_part_day_event_ends_at">Konča se ob %1$s</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">Kaj je novega</string>
+    <string name="spotlight_dialog_beta_header">Calendar Beta</string>
+    <string name="spotlight_dialog_skip">Preskoči</string>
+    <string name="spotlight_dialog_confirmation_button">V redu</string>
+    <string name="spotlight_dialog_month_view_title">Mesečni pogled</string>
+    <string name="spotlight_dialog_month_view_description">Oglejte si pregled dogodkov z našim novim mesečnim pogledom. Med pogledi preklapljate v meniju.</string>
+    <string name="spotlight_dialog_easy_switch_description">Uvoz dogodkov in drugih podatkov iz Googlovega koledarja v koledar Proton Calendar je enostavnejši kot kdaj koli prej. Naš pomočnik za uvoz Easy Switch vas bo vodil na vsakem koraku.</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">Začni z uvozom</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">Ne zdaj</string>
+    <string name="spotlight_dialog_auto_invites_title">Enostavno sprejemanje vabil</string>
+    <string name="spotlight_dialog_auto_invites_description">Vabila so sedaj v koledarju prikazana kot čakajoči dogodki. Če se želite odzvati, preprosto odprite dogodek.\n\nČe želite to urediti, pojdite v nastavitve.</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">Naprej</string>
+    <string name="spotlight_v5_dialog_got_it_button">Razumem</string>
+    <string name="spotlight_v5_dialog_learn_more_button">Več o tem</string>
+    <string name="spotlight_v5_dialog_rebranding_title">Posodobljeni Proton, poenotena zaščita</string>
+    <string name="spotlight_v5_dialog_rebranding_description">Predstavljamo Protonov osveženi videz. Veliko storitev, eno poslanstvo. Dobrodošli na internetu, kjer je zasebnost privzeta. <a href="https://proton.me/news/updated-proton">Več informacij</a></string>
+    <string name="spotlight_dialog_week_view_title">Več možnosti prikaza</string>
+    <string name="spotlight_dialog_week_view_description">• Predstavljamo <b>tridnevni</b> in<b>tedenski</b> pogled koledarja. V <b>meniju</b> izberite želeni pogled.\n\n• Prilagodite višino vrstic v dnevni mreži tako, da jih z dvema prstoma približate ali oddaljite.</string>
+    <string name="spotlight_dialog_search_title">Iskanje dogodkov</string>
+    <string name="spotlight_dialog_search_description">Z našo novo funkcijo iskanja enostavno najdite dogodek, ki ga iščete. <a href="https://proton.me/support/calendar-search">Več informacij</a></string>
+    <string name="spotlight_dialog_search_positive">Omogoči</string>
+    <string name="spotlight_dialog_search_negative">Preskoči</string>
+    <string name="spotlight_dialog_import_title">Več načinov dodajanja dogodkov</string>
+    <string name="spotlight_dialog_import_description">• Uvozite dogodke v koledar iz datotek v telefonu.\n\n• Dodajanje rezervacij potovanj neposredno iz programa Proton Mail.</string>
+    <string name="spotlight_dialog_calendar_provider_title">Funkcije koledarja</string>
+    <string name="spotlight_dialog_calendar_provider_description">• Dodajanje dogodkov iz drugih aplikacij neposredno v Proton Calendar.\n\n• Ustvarjanje in upravljanje dogodkov v koledarjih, ki so vam bili dani v skupno rabo.\n\n• Nastavitev privzetega pogleda, ki ga želite imeti ob odprtju aplikacije.\n\n• Na voljo je 13 novih jezikov.</string>
+    <string name="spotlight_dialog_wipe_search_title">Iskanje je odstranjeno, da ga bomo izpopolnili.</string>
+    <string name="spotlight_dialog_wipe_search_description">Odstranjujemo preizkusno možnost iskanja iz Proton Koledar Beta, saj želimo, da postane bolj uporabna in zanesljiva za vas. To lahko traja nekaj sekund.</string>
+    <string name="spotlight_dialog_holiday_calendar_title">Prazniki so tu!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">Nič več načrtovanja sestankov na praznične dni, hkrati pa ne boste pozabili načrtovati izletov med podaljšanimi konci tedna.\n\nV svoj koledar dodajte državne praznike katere koli države.</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">Nič več načrtovanja sestankov na praznične dni, hkrati pa ne boste pozabili načrtovati izletov med podaljšanimi konci tedna.\n\nKer ste trenutno na koledarski omejitvi, morate za dodajanje koledarja praznikov najprej odstraniti obstoječi koledar.</string>
+    <string name="spotlight_dialog_color_per_event_title">Barve dogodka po meri</string>
+    <string name="spotlight_dialog_color_per_event_description">Prilagodite barvo posameznih dogodkov, da:\n\n• Označite dogodke z barvnimi oznakami\n\n• Bolje organizirate svoj dan in spremljajte svoj čas\n\n• Določite prednostne naloge in povečate učinkovitost</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">Dovoli dostop</string>
+    <string name="dialog_google_auth_description">Za uvoz podatkov se najprej prijavite v Googlov koledar in Protonu omogočite dostop do svojih podatkov.</string>
+    <string name="import_assistant_prepare_import_error">Napaka pri pripravi uvoza, poskusite znova pozneje</string>
+    <string name="import_assistant_prepare_import">Priprava uvoza</string>
+    <string name="import_assistant_gathering_data_loader_title">Zbiranje podatkov</string>
+    <string name="import_assistant_summary_title">Povzetek postopka uvoza</string>
+    <string name="import_assistant_summary_customize_import">Prilagajanje uvoza</string>
+    <string name="import_assistant_error">Napaka pri pridobivanju podatkov</string>
+    <string name="import_assistant_data_gathering_error">Pridobivanje podatkov ni uspelo</string>
+    <string name="import_assistant_update_import_error">Neuspešna posodobitev uvoza, poskusite kasneje.</string>
+    <string name="import_assistant_update_import_wrong_account_error">Napačen račun. Prijavite se z računom, ki ste ga uporabili za uvoz koledarja.</string>
+    <string name="import_assistant_start_import_error">Neuspešen pričetek uvoza, poskusite kasneje.</string>
+    <string name="import_assistant_delete_import_success">Uvoženi zapis je izbrisan</string>
+    <string name="import_assistant_delete_import_error">Neuspešno brisanje uvoza, poskusite kasneje.</string>
+    <string name="import_assistant_cancel_import_error">Neuspešen preklic uvoza, poskusite kasneje.</string>
+    <string name="import_assistant_resume_import_error">Neuspešno nadaljevanje uvoza, poskusite kasneje.</string>
+    <string name="import_assistant_create_calendar_error">Neuspešno ustvarjanje enega ali več koledarjev</string>
+    <string name="import_assistant_start_import_empty_error">Neuspešen pričetek uvoza, ni koledarjev za uvoz</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">Uvozi kot</string>
+    <string name="import_assistant_new_calendar_badge">Novo</string>
+    <string name="import_assistant_merge_calendar_badge">Združeno</string>
+    <string name="import_assistant_creating_calendars">Ustvarjanje novih koledarjev</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">Še malo …</string>
+    <string name="import_assistant_new_calendar_header">Ustvari novega</string>
+    <string name="import_assistant_merge_calendar_header">Združi z obstoječim</string>
+    <string name="import_assistant_in_progress_title">Uvoz v teku</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">Uvažanje podatkov iz %1s v %2s.</string>
+    <string name="import_assistant_in_progress_redirect">Preverjanje napredka</string>
+    <string name="import_assistant_in_progress_sub_description">Uvoz velike količine podatkov lahko traja več dni. Ko bo uvoz končan boste obveščeni. To okno lahko zaprete.</string>
+    <string name="import_assistant_guide_subtitle">Preklopite na zasebnost. Enostavno in varno.</string>
+    <string name="import_assistant_guide_description">Premaknite dogodke in druge podatke iz Googla v Proton. Pomočnik za uvoz Easy Switch vas vodi po korakih in med prenosom šifrira vaše podatke.</string>
+    <string name="import_assistant_new_import">Nov uvoz</string>
+    <string name="import_assistant_previous_import">Pretekli uvozi</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">Začeto</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">V teku</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">Zaključeno</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">Preklicano</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">Preklicujem</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">Začasno zaustavljeno</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">Neuspešno</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Povezava z Googlom je prekinjena</string>
+    <string name="import_assistant_status_paused_lost_connection_description">Za nadaljevanje uvoza pritisnite Znova poveži, vpišite se v Google in omogočite aplikaciji Proton ponoven dostop do Googlovih podatkov.</string>
+    <string name="import_assistant_status_paused_lost_connection_button">Znova poveži</string>
+    <string name="import_assistant_status_paused_storage_full_title">Vaša shramba je polna</string>
+    <string name="import_assistant_status_paused_storage_full_description">Vaš račun Proton nima dovolj prostora za dokončanje uvoza koledarja. Sprostite prostor ali dodajte več prostora za shranjevanje, nato pa se vrnite sem in nadaljujte.</string>
+    <string name="import_assistant_status_paused_storage_full_button">Nadaljuj</string>
+    <string name="import_assistant_delete_report_title">Odstrani s seznama?</string>
+    <string name="import_assistant_delete_report_message">Tega zapisa uvoza na seznamu ne boste več videli.</string>
+    <string name="import_assistant_delete_report_positive_button">Odstrani</string>
+    <string name="import_assistant_delete_report_negative_button">Obdrži</string>
+    <string name="import_assistant_cancel_import_title">Nepopoln uvoz!</string>
+    <string name="import_assistant_cancel_import_message">Če prekličete ta uvoz, ga ne boste mogli nadaljevati. Proton je shranil ves napredek v vaš račun. Želite vseeno preklicati?</string>
+    <string name="import_assistant_cancel_import_positive_button">Prekliči uvoz</string>
+    <string name="import_assistant_cancel_import_negative_button">Nadaljuj z uvozom</string>
+    <string name="import_assistant_in_progress_snack">Uvoz v teku</string>
+    <string name="import_assistant_discard_import_title">Prekliči uvoz?</string>
+    <string name="import_assistant_discard_import_message">Uvoz je nepopoln in se ne more nadaljevati, če ga prekličete.</string>
+    <string name="import_assistant_discard_import_positive">Prekliči uvoz</string>
+    <string name="import_assistant_discard_import_negative">Nadaljuj z uvozom</string>
+    <string name="import_assistant_authentication_canceled">Preverjanje pristnosti preklicano</string>
+    <string name="import_assistant_sign_in_in_progress">Postopek prijave že poteka</string>
+    <string name="import_assistant_in_progress_error_snack">Uvoz je še vedno v teku</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">Uvoz kot preprost dogodek?</string>
+    <string name="import_event_disclaimer_dialog_description">\nUvožena vabila so v Proton Calendar prikazana kot običajni dogodki brez podrobnosti o <b>organizatorju</b> ali <b>udeležencu</b>. \n\nČe želite prejemati posodobitve dogodka in si ogledati seznam udeležencev, od organizatorjev zahtevajte povabilo na vaš Proton e-poštni naslov.</string>
+    <string name="import_event_disclaimer_dialog_positive">Uvoz</string>
+    <string name="undefined_color">Nedoločeno</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">koledar</item>
+        <item quantity="two">koledarja</item>
+        <item quantity="few">koledarji</item>
+        <item quantity="other">koledarjev</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">Uvozi %1$d koledar</item>
+        <item quantity="two">Uvozi %1$d koledarja</item>
+        <item quantity="few">Uvozi %1$d koledarje</item>
+        <item quantity="other">Uvozi %1$d koledarjev</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">Poteka %1$d uvoz</item>
+        <item quantity="two">Potekata %1$d uvoza</item>
+        <item quantity="few">Potekajo %1$d uvozi</item>
+        <item quantity="other">Poteka %1$d uvozov</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">%1$d od %2$d ustvarjeni v %3$s</item>
+        <item quantity="two">%1$d od %2$d ustvarjena v %3$s</item>
+        <item quantity="few">%1$d od %2$d ustvarjeni v %3$s</item>
+        <item quantity="other">%1$d od %2$d ustvarjenih v %3$s</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">Ustvari %1$d nov koledar v Proton Calendar.</item>
+        <item quantity="two">Ustvari %1$d nova koledarja v Proton Calendar.</item>
+        <item quantity="few">Ustvari %1$d nove koledarje v Proton Calendar.</item>
+        <item quantity="other">Ustvari %1$d novih koledarjev v Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">Uvozi %1$d od %2$d koledarjev iz</item>
+        <item quantity="two">Uvozi %1$d od %2$d koledarjev iz</item>
+        <item quantity="few">Uvozi %1$d od %2$d koledarjev iz</item>
+        <item quantity="other">Uvozi %1$d od %2$d koledarjev iz</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">Združi %1$d koledar v Proton Calendar.</item>
+        <item quantity="two">Združi %1$d koledarja v Proton Calendar.</item>
+        <item quantity="few">Združi %1$d koledarje v Proton Calendar.</item>
+        <item quantity="other">Združi %1$d koledarjev v Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">Zaradi omejitve koledarja ni mogoče ustvariti novih koledarjev za vse uvožene koledarje.\n • Prekličite izbiro najmanj %1$d koledarja</item>
+        <item quantity="two">Zaradi omejitve koledarjev ni mogoče ustvariti novih koledarjev za vse uvožene koledarje.\n • Prekličite izbiro najmanj %1$d koledarjev</item>
+        <item quantity="few">Zaradi omejitve koledarjev ni mogoče ustvariti novih koledarjev za vse uvožene koledarje.\n • Prekličite izbiro najmanj %1$d koledarjev</item>
+        <item quantity="other">Zaradi omejitve koledarjev ni mogoče ustvariti novih koledarjev za vse uvožene koledarje.\n • Prekličite izbiro najmanj %1$d koledarjev</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020ali\n • združite vsaj %1$d koledar z obstoječimi Proton koledarji.</item>
+        <item quantity="two">\u0020ali\n • združite vsaj %1$d koledarja z obstoječimi Proton koledarji.</item>
+        <item quantity="few">\u0020ali\n • združite vsaj %1$d koledarje z obstoječimi Proton koledarji.</item>
+        <item quantity="other">\u0020ali\n • združite vsaj %1$d koledarjev z obstoječimi Proton koledarji.</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">sekunda</item>
+        <item quantity="two">sekundi</item>
+        <item quantity="few">sekunde</item>
+        <item quantity="other">sekund</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">minuta</item>
+        <item quantity="two">minuti</item>
+        <item quantity="few">minute</item>
+        <item quantity="other">minut</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">ura</item>
+        <item quantity="two">uri</item>
+        <item quantity="few">ure</item>
+        <item quantity="other">ur</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">dan</item>
+        <item quantity="two">dneva</item>
+        <item quantity="few">dnevi</item>
+        <item quantity="other">dni</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">teden</item>
+        <item quantity="two">tedna</item>
+        <item quantity="few">tedni</item>
+        <item quantity="other">tednov</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">mesec</item>
+        <item quantity="two">meseca</item>
+        <item quantity="few">meseci</item>
+        <item quantity="other">mesecev</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">leto</item>
+        <item quantity="two">leti</item>
+        <item quantity="few">leta</item>
+        <item quantity="other">let</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">enkrat</item>
+        <item quantity="two">krat</item>
+        <item quantity="few">krat</item>
+        <item quantity="other">krat</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">ponovitev</item>
+        <item quantity="two">ponovitvi</item>
+        <item quantity="few">ponovitve</item>
+        <item quantity="other">ponovitev</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">krat</item>
+        <item quantity="two">krat</item>
+        <item quantity="few">krat</item>
+        <item quantity="other">krat</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">udeleženec</item>
+        <item quantity="two">udeleženca</item>
+        <item quantity="few">udeleženci</item>
+        <item quantity="other">udeležencev</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">Vsak %1$d %2$s</item>
+        <item quantity="two">Vsaka %1$d %2$s</item>
+        <item quantity="few">Vsake %1$d %2$s</item>
+        <item quantity="other">Vsakih %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">Vsak %1$d %2$s</item>
+        <item quantity="two">Vsaka %1$d %2$s</item>
+        <item quantity="few">Vsake %1$d %2$s</item>
+        <item quantity="other">Vsakih %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">Vsak %1$d %2$s</item>
+        <item quantity="two">Vsaka %1$d %2$s</item>
+        <item quantity="few">Vsake %1$d %2$s</item>
+        <item quantity="other">Vsakih %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">Vsak %1$d %2$s</item>
+        <item quantity="two">Vsaka %1$d %2$s</item>
+        <item quantity="few">Vsake %1$d %2$s</item>
+        <item quantity="other">Vsakih %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s minuta</item>
+        <item quantity="two">%1$s minuti</item>
+        <item quantity="few">%1$s minute</item>
+        <item quantity="other">%1$s minut</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d/%2$d znakov</item>
+        <item quantity="two">%1$d/%2$d znakov</item>
+        <item quantity="few">%1$d/%2$d znakov</item>
+        <item quantity="other">%1$d/%2$d znakov</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d/%2$d znakov</item>
+        <item quantity="two">%1$d/%2$d znakov</item>
+        <item quantity="few">%1$d/%2$d znakov</item>
+        <item quantity="other">%1$d/%2$d znakov</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>prvi</item>
+        <item>drugi</item>
+        <item>tretji</item>
+        <item>četrti</item>
+        <item>peti</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>zadnji</item>
+        <item>predzadnji</item>
+        <item>tretji od zadaj</item>
+        <item>četrti od zadaj</item>
+        <item>peti od zadaj</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>Svetla</item>
+        <item>Temna</item>
+        <item>Sistemsko privzeto</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>Sistemsko privzeto</item>
+        <item>13:00</item>
+        <item>1:00 PM</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>Sistemsko privzeto</item>
+        <item>Ponedeljek</item>
+        <item>Sobota</item>
+        <item>Nedelja</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>Vijolična|#8080FF</item>
+        <item>Jagoda|#EC3E7C</item>
+        <item>Roza|#DB60D6</item>
+        <item>Korenček|#F78400</item>
+        <item>Sahara|#936D58</item>
+        <item>Encijan|#5252CC</item>
+        <item>Sliva|#A839A4</item>
+        <item>Češnja|#BA1E55</item>
+        <item>Bakrena|#C44800</item>
+        <item>Zemlja|#54473F</item>
+        <item>Skrilasto modra|#415DF0</item>
+        <item>Pacifik|#179FD9</item>
+        <item>Korala|#1DA583</item>
+        <item>Praprot|#3CBB3A</item>
+        <item>Olivna|#B4A40E</item>
+        <item>Kobalt|#273EB2</item>
+        <item>Ocean|#0A77A6</item>
+        <item>Bor|#0F735A</item>
+        <item>Gozd|#258723</item>
+        <item>Kumarica|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>Vijolična</item>
+        <item>Jagodno rdeča</item>
+        <item>Rožnata</item>
+        <item>Korenčkasto oranžna</item>
+        <item>Saharsko rjava</item>
+        <item>Encijan</item>
+        <item>Slivnato vijolična</item>
+        <item>Češnjevo rdeča</item>
+        <item>Bakrena</item>
+        <item>Zemeljsko rjava</item>
+        <item>Skrilasto modra</item>
+        <item>Pacifiško modra</item>
+        <item>Koralno modra</item>
+        <item>Praprotno zelena</item>
+        <item>Olivno zelena</item>
+        <item>Kobaltna</item>
+        <item>Oceansko modra</item>
+        <item>Bor</item>
+        <item>Gozdno zelena</item>
+        <item>Kumarično zelena</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

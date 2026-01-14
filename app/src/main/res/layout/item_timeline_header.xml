@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_header"
+    style="@style/Text.DefaultSmall.Weak"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/spacing_page"
+    android:layout_marginTop="@dimen/spacing_page"
+    android:layout_marginEnd="@dimen/spacing_page"
+    android:layout_marginBottom="8dp"
+    tools:text="2022"/>

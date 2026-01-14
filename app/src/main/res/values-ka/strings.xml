@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(უსათაურო)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">(ელფოსტის მისამართის გარეშე)</string>
+    <string name="default_user_display_name">(სახელის გარეშე)</string>
+    <string name="toast_copied_to_clipboard">დაკოპირდა გაცვლის ბაფერში</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">მოვლენის წაშლა</string>
+    <string name="dialog_title_delete_recurring_event">განმეორებადი მოვლენის წაშლა</string>
+    <string name="dialog_description_delete_event">გნებავთ ამ მოვლენის წაშლა?</string>
+    <string name="dialog_description_delete_recurring_event">გსურთ, წაშალოთ სერიის ყველა მოვლენა?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">ეს მოვლენა უკვე განახლებულია ორგანიზატორის მიერ. გსურთ, წაშალოთ ეს მოვლენა?</string>
+    <string name="dialog_button_delete">წაშლა</string>
+    <string name="dialog_button_cancel">გაუქმება</string>
+    <string name="dialog_button_continue">გაგრძელება</string>
+    <string name="dialog_button_close">დახურვა</string>
+    <string name="dialog_button_remove">წაშლა</string>
+    <string name="dialog_button_download">გადმოწერა</string>
+    <string name="dialog_button_update">განახლება</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">გაუქმების ელფოსტა გადაეგზავნება მოვლენის მონაწილეებს. გსურთ, წაშალოთ ეს მოვლენა?</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">თქვენი მისამართი გამორთულია. გაუქმების ელფოსტის გაგზავნა შეუძლებელია მოვლენის მონაწილეებისთვის. მაინც გსურთ, წაშალოთ ეს მოვლენა?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">გაუქმების ელ. ფოსტა გადაეგზავნება მოვლენის მონაწილეებს. გსურთ, წაშალოთ ამ სერიის ყველა მოვლენა?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">თქვენი მისამართი გამორთულია. გაუქმების ელფოსტის გაგზავნა შეუძლებელია მოვლენის მონაწილეებისთვის. მაინც გსურთ ამ სერიის ყველა მოვლენის წაშლა?</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">ამ მოვლენის ორგანიზატორს ეცნობება, რომ თქვენ უარყავით მოწვევა. გსურთ, წაშალოთ ეს მოვლენა?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">ამ მოვლენის ორგანიზატორს არ ეცნობება, რომ თქვენ უარს ამბობთ მოწვევაზე, რადგან არ შეგიძლიათ, ელფოსტის გაგზავნა მოწვეული მისამართიდან. მაინც გსურთ, წაშალოთ ეს მოვლენა?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">ორგანიზატორი ამ სერიის მოვლენების ეცნობება, რომ თქვენ უარყავით მოწვევა. გსურთ, წაშალოთ ამ სერიის ყველა მოვლენა?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">მოვლენის ამ სერიის ორგანიზატორს არ ეცნობება, რომ თქვენ უარს ამბობთ მოწვევაზე, რადგან არ შეგიძლიათ ელფოსტის გაგზავნა მოწვეული მისამართიდან. მაინც გსურთ ამ სერიის ყველა მოვლენის წაშლა?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">ეს მოვლენა განახლდა. ორგანიზატორს ეცნობება, რომ თქვენ უარს ამბობთ მოწვევაზე. გსურთ, წაშალოთ ეს მოვლენა?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">ეს მოვლენა განახლდა. ორგანიზატორს არ ეცნობება, რომ თქვენ უარს ამბობთ მოწვევაზე, რადგან ვერ გაგზავნით ელფოსტას მოწვეული მისამართიდან. გსურთ, წაშალოთ ეს მოვლენა?</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">ორგანიზატორის მიერ ადრე განახლებული მოვლენები ინახება, მაგრამ თქვენი პასუხები დაიკარგება</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">ორგანიზატორის მიერ ადრე განახლებული მოვლენები ინახება</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">ორგანიზატორს არ შეიძლება ეცნობოს, რომ თქვენ უარი თქვით მოვლენაზე:\n\n• %1$s\n\n მაინც გსურთ მოვლენის წაშლა?</string>
+    <string name="dialog_button_set">დაყენება</string>
+    <string name="dialog_button_ok">დიახ</string>
+    <string name="action_save">შენახვა</string>
+    <string name="action_done">მზადაა</string>
+    <string name="action_edit">ჩასწორება</string>
+    <string name="action_delete">წაშლა</string>
+    <string name="action_add">დამატება</string>
+    <string name="action_remove">წაშლა</string>
+    <string name="action_leave">გასვლა</string>
+    <string name="action_recreate">გასუფთავება</string>
+    <string name="action_today">დღეს</string>
+    <string name="action_create_event">მოვლენის შექმნა</string>
+    <string name="action_mark_default">ნაგულისხმებად მონიშვნა</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">მოვლენების გარეშე</string>
+    <string name="agenda_loading_events">მოვლენების ჩატვირთვა…</string>
+    <string name="agenda_loading_events_error">მოვლენების ჩატვირთვის შეცდომა</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+ კიდევ %1$d</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">მთელი დღე</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">მოვლენის დროს</string>
+    <string name="event_alarm_label_at_event_time_by_email">მოვლენისას ელფოსტით</string>
+    <string name="event_alarm_label_on_the_same_day">იმავე დღეს</string>
+    <string name="event_alarm_label_before">%1$s-ით ადრე</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s ელექტრონული ფოსტით</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s %2$s-ზე</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s %2$s-ზე, ელფოსტით</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s მოვლენამდე %2$s-ზე</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s მოვლენამდე %2$s-ში ელფოსტით</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s %2$s-ზე</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s %2$d -ე დღეს</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s %2$s-ზე</string>
+    <string name="event_recurrence_none">არ მეორდება</string>
+    <string name="event_recurrence_daily">ყოველდღიურად</string>
+    <string name="event_recurrence_weekly">კვირაში ერთხელ</string>
+    <string name="event_recurrence_monthly">თვეში ერთხელ</string>
+    <string name="event_recurrence_yearly">წლიურად</string>
+    <string name="event_recurrence_weekly_on_all_days">მთელი დღე</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">%1$s-მდე</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">%1$s-მდე (%2$s)</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">გაუქმებულია</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(გათიშულია)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(ნაგულისხმევი)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d დიახ</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">შეიძლება %1$d</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d არა</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d დარჩენილი</string>
+    <string name="event_attendee_is_organizer">თქვენ ორგანიზატორი ბრძანდებით</string>
+    <string name="event_attendee_organizer">ორგანიზატორი</string>
+    <string name="event_attendee_optional">არასავალდებულო</string>
+    <string name="event_attendee_is_current_user">თქვენ</string>
+    <string name="event_answer_attending">დაესწრებით?</string>
+    <string name="event_answer_yes">დიახ</string>
+    <string name="event_answer_no">არა</string>
+    <string name="event_answer_maybe">შეიძლება</string>
+    <string name="event_decryption_error_dialog_title">მოვლენის გაშიფვრის შეცდომა</string>
+    <string name="event_decryption_error_dialog_message">ამ მოვლენის შემცვველობის გაშიფვრის შეცდომა.</string>
+    <string name="event_decryption_error_dialog_confirmation">მოვლენის წაშლა</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">მოვლენის წაშლა</string>
+    <string name="event_decryption_error_dialog_close">დახურვა</string>
+    <string name="event_signature_verification_failure">მოვლენის ხელმოწერის შემოწმების შეცდომა. <a href="https://proton.me/support/what-is-a-digital-signature">გაიგეთ მეტი</a></string>
+    <string name="event_signature_verification_in_progress">მიმდინარეობს მოვლენის ხელმოწერის გადამოწმება.</string>
+    <string name="event_signature_verification_network_error">მოვლენის ხელმოწერის გადამოწმება შეცდომის გამო შეწყდა. <a href="">თავიდან სცადეთ</a></string>
+    <string name="event_change_answer_recurring_title">განმეორებადი მოვლენის განახლება</string>
+    <string name="event_change_answer_recurring_description">გსურთ შეცვალოთ თქვენი პასუხი ამ სერიის ყველა მოვლენაზე?</string>
+    <string name="event_change_answer_recurring_overwrite_description">გნებავთ თქვენი პასუხი ამ სერიების ყველა მოვლენისთვის შეცვალოთ?\nორგანიზატორის მიერ ადრე განახლებული თქვენი ზოგიერთი პასუხი დაიკარგება.</string>
+    <string name="event_change_answer_recurring_single_edit_description">მოვლენა განახლდა ორგანიზატორის მიერ. გნებავთ თქვენი პასუხის შეცვლა, მხოლოდ, ამ სერიებში მოხდენების შესახებ?</string>
+    <string name="event_change_answer_recurring_cancel">გაუქმება</string>
+    <string name="event_change_answer_recurring_confirm">განახლება</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s დაეთანხმა თქვენს მოსაწვევს %2$s</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s-მა უარი თქვა თქვენს მოსაწვევზე %2$s</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">%1$s ფრთხილად დაეთანხმა %2$s-ზე მოსაწვევს</string>
+    <string name="event_organizer_send_prefs_error_title">ორგანიზატორის ინფორმირება შეუძლებელია</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">ორგანიზატორის გაფრთხილება მოსაწვევის დასტურის შესახებ შეუძლებელია</string>
+    <string name="event_organizer_send_prefs_message_declined_title">ორგანიზატორის გაფრთხილება მოსაწვევის უარყოფის შესახებ შეუძლებელია</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">ორგანიზატორს არ შეიძლება, ეცნობოს, რომ თქვენ სავარაუდოდ მიიღეთ მოწვევა</string>
+    <string name="event_organizer_send_prefs_message_default_title">ორგანიზატორს არ შეიძლება, ეცნობოს, რომ თქვენ უპასუხეთ მოწვევას</string>
+    <string name="event_organizer_send_prefs_button_title">დიახ</string>
+    <string name="event_attendees_send_prefs_error_title">მონაწილეების გაფრთხილება შეუძლებელია</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">მონაწილეების გაფრთხილება თქვენი ცვლილებების შესახებ შეუძლებელია:\n\n• %1$s\n\nმაინც გნებავთ გაგრძელება?</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">შეუძლებელია შემდეგი მონაწილეების გაფრთხილება თქვენი ცვლილებების შესახებ:\n\n• %1$s\n\nმაინც გნებავთ, გააგრძელოთ?</string>
+    <string name="event_attendees_send_prefs_error_confirm">გაგრძელება</string>
+    <string name="event_attendees_send_prefs_error_cancel">გაუქმება</string>
+    <string name="event_send_prefs_error_address_disabled">ეს მისამართი არ არსებობს</string>
+    <string name="event_send_prefs_error_getting_contact">კონტაქტის მონაცემების მიღება შეუძლებელია</string>
+    <string name="event_send_prefs_error_network">ქსელის შეცდომა</string>
+    <string name="event_send_prefs_trusted_keys_invalid">სანდო გასაღებები არასწორია</string>
+    <string name="event_send_prefs_public_keys_invalid">საჯარო გასაღებები არასწორია</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">კონტაქტის ხელმოწერა არასწორია</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">Zoom-ის შეხვედრასთან მიერთება</string>
+    <string name="zoom_meeting_title">Zoom-ის შეხვედრა</string>
+    <string name="generic_meeting_id">ID: %1$s</string>
+    <string name="generic_meeting_password">Password: %1$s</string>
+    <string name="generic_meeting_more_details">More details</string>
+    <string name="generic_meeting_less_details">Less details</string>
+    <string name="generic_meeting_host">Meeting host</string>
+    <string name="generic_meeting_link">Meeting link</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Joining instructions</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">ახალი მოვლენა</string>
+    <string name="event_text_edit_event">მოვლენის ჩასწორება</string>
+    <string name="event_hint_title">სათაურის დამატება</string>
+    <string name="event_hint_location">მდებარეობის დამატება</string>
+    <string name="event_text_add_participants">მონაწილეების დამატება</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">მონაწილეები (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">თქვენ</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ კიდევ %1$d</string>
+    <string name="event_text_switch_all_day">მთელი დღე</string>
+    <string name="event_text_date_start">გაშვება</string>
+    <string name="event_text_date_end">მთავრდება</string>
+    <string name="event_text_date_repeat">გამეორება</string>
+    <string name="event_text_date_repeat_never">არ მეორდება</string>
+    <string name="event_text_attendees">დამსწრე</string>
+    <string name="event_text_attendees_none">არცერთი</string>
+    <string name="event_text_calendar">კალენდარი</string>
+    <string name="event_text_timezone_start">დროის სარტყელი</string>
+    <string name="invite_in_shared_calendar_disclaimer">მოსაწვევების გაგზავნა მხოლოდ პირადი კალენდრების შიგნითაა შესაძლებელი.</string>
+    <string name="invite_change_calendar_disclaimer">მოსაწვევებზე მიმაგრებული კალენდარის ჩასწორება შეუძლებელია.</string>
+    <string name="invite_change_attendees_disclaimer">მოსაწვევთან ასოცირებული წევრების ჩასწორება ჯერ შეუძლებელია.</string>
+    <string name="change_calendar_recurring_disclaimer">განმეორებადი მოვლენისთვის კალენდრის შეცვლა ჯერჯერობით შეუძლებელია.</string>
+    <string name="update_event">მოვლენის განახლება</string>
+    <string name="update_invite_send_email">მოწვევის განახლება გადაეგზავნებათ მოვლენის მონაწილეებს.</string>
+    <string name="update_recurring_event">განმეორებადი მოვლენის განახლება</string>
+    <string name="update_recurring_all_events">გსურთ, განაახლოთ ამ სერიის ყველა მოვლენა?</string>
+    <string name="update_recurring_invite_send_email">თქვენ განაახლებთ ამ სერიის ყველა მოვლენას. მოწვევის განახლება გადაეგზავნებათ მოვლენის მონაწილეებს.</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">რას ეძებთ?</string>
+    <string name="search_empty_results_title">შედეგების გარეშე</string>
+    <string name="search_empty_results_subtitle">სცადეთ სხვა პირობა. მაგ: მარიამი, დაბადების დღე, ვებინარი, კლუბის ქირაობა.</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">კალენდრების გადმოწერა (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">დარჩენილი დრო: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">დარჩენილი დროის გამოთვლა…</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">თითქმის დასრულდა</string>
+    <string name="search_downloading_pause">გადმოწერის შეჩერება</string>
+    <string name="search_settings_dialog_toggle_off_title">წავშალო ყველა გადმოწერილი კალენდარი?</string>
+    <string name="search_settings_dialog_toggle_off_text">ძებნისთვის კალენდრების თავიდან გადმოწერა მოგიწევთ.</string>
+    <string name="search_settings_dialog_toggle_on_title">გადმოვწერო კალენდრები ამ მოწყობილობაზე?</string>
+    <string name="search_settings_dialog_toggle_on_text">ეს ძებნისთვის აუცილებელია.</string>
+    <string name="search_onboarding_header">გნებავთ, კალენდარში მოძებნოთ?</string>
+    <string name="search_onboarding_text">ჯერ თქვენი კალენდრების დაშიფრული ასლი უნდა გადმოიწეროთ. ამას დიდი დრო არ სჭირდება და თან შეგიძლიათ, ამ დროს აპლიკაციაც გამოიყენოთ. <a href="https://proton.me/support/calendar-search">გაიგეთ მეტი</a></string>
+    <string name="search_onboarding_action_download_calendars">კალენდრების გადმოწერა</string>
+    <string name="search_onboarding_action_pause">შეჩერება</string>
+    <string name="search_onboarding_action_resume">გაგრძელება</string>
+    <string name="search_onboarding_action_retry">თავიდან</string>
+    <string name="search_onboarding_progress_header_ongoing">კალენდრების გადმოწერა…</string>
+    <string name="search_onboarding_progress_header_completed">გადმოწერა დასრულდა</string>
+    <string name="search_onboarding_progress_header_paused">კალენდრების გადმოწერა შეჩერებულია</string>
+    <string name="search_onboarding_progress_header_error">კალენდრების გადმოწერის შეცდომა</string>
+    <string name="search_spotlight_activation_snack">კალენდრის ძებნა ჩაირთო</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">შეტყობინების დამატება</string>
+    <string name="event_text_description">აღწერა</string>
+    <string name="event_hint_description">აღწერის დამატება</string>
+    <string name="event_text_custom">ხელით</string>
+    <string name="event_alert_invalid_start_end_date">მოვლენის დაწყების თარიღი დასრულების თარიღის შემდეგ ვერ იქნება</string>
+    <string name="event_alarms_title">შეტყობინებები</string>
+    <string name="event_custom_alarms_field">გაფრთხილება</string>
+    <string name="event_custom_alarms_title">ხელით მითითებული გაფრთხილებები</string>
+    <string name="event_alarm_partial_day_1">მოვლენის დროს</string>
+    <string name="event_alarm_partial_day_2">10 წუთი</string>
+    <string name="event_alarm_partial_day_3">30 წუთი</string>
+    <string name="event_alarm_partial_day_4">1 სთ</string>
+    <string name="event_alarm_partial_day_5">1 კვირა</string>
+    <string name="event_alarm_all_day_1">იგივე დღეს, %1$s-ზე</string>
+    <string name="event_alarm_all_day_2">%1$s-მდე ერთი დღით ადრე</string>
+    <string name="event_alarm_all_day_3">%1$s-მდე კვირით დღით ადრე</string>
+    <string name="event_alarm_all_day_4">3 კვირით ადრე %1$s-ზე</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">%1$s-ზე</string>
+    <string name="event_alarm_action">გაგზავნა</string>
+    <string name="event_alarm_action_notification">შეტყობინება</string>
+    <string name="event_alarm_action_email">ელფოსტა</string>
+    <string name="event_alarm_same_day">იმავე დღეს</string>
+    <string name="event_recurrence_1">არ გაიმეორო</string>
+    <string name="event_recurrence_2">ყოველდღე</string>
+    <string name="event_recurrence_3">ყოველკვირა</string>
+    <string name="event_recurrence_4">ყოველ თვე</string>
+    <string name="event_recurrence_5">ყოველ წელს</string>
+    <string name="event_recurrence_title">სიხშირე</string>
+    <string name="event_recurrence_custom_title">სიხშირის მითითება</string>
+    <string name="event_recurrence_occurs_every">გამეორების ინტერვალი</string>
+    <string name="event_recurrence_occurs_on">გამეორდება</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">%1$d რიცხვში</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">%1$s</string>
+    <string name="event_recurrence_ends_on">მთავრდება</string>
+    <string name="event_recurrence_ends_never">არასოდეს</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">დღემდე</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">%1$s - ზე</string>
+    <string name="event_recurrence_ends_after_count_prefix">შემდეგ</string>
+    <string name="event_recurring_edit_this">ეს მოვლენა</string>
+    <string name="event_recurring_edit_this_and_future">ეს და მომავალი მოვლენები</string>
+    <string name="event_recurring_edit_all_events">ყველა მოვლენა</string>
+    <string name="event_discard_changes_title">გავაუქმო ცვლილებები?</string>
+    <string name="event_discard_changes_description">დაკარგავთ ყველა შეუნახავ ცვლილებას.</string>
+    <string name="event_discard_changes_cancel">რედაქტირების გაგრძელება</string>
+    <string name="event_discard_changes_confirm">მოცილება</string>
+    <string name="event_recurring_update_this_title">განმეორებადი მოვლენის განახლება</string>
+    <string name="event_recurring_update_this_description">სიხშირის ცვლილებები დაიკარგება</string>
+    <string name="event_recurring_update_all_description">ამ სერიის წინა მოდიფიკაციები დაიკარგება</string>
+    <string name="event_recurring_update_this_cancel">გაუქმება</string>
+    <string name="event_recurring_update_this_confirm">განახლება</string>
+    <string name="event_allow_contacts_title">მისცემთ Proton Calendar-ს წვდომას თქვენს კონტაქტებზე?</string>
+    <string name="event_allow_contacts_description">Proton Calendar-ს სჭირდება თქვენს კონტაქტებზე წვდომა, რომ მოგაწოდოთ ავტომატური დასრულება</string>
+    <string name="event_allow_contacts_cancel">უარყოფა</string>
+    <string name="event_allow_contacts_confirm">ნების დართვა</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">პასუხი: მოსაწვევი მოვლენაზე, რომელიც იწყება %1$s %2$s-ზე %3$s</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">პას: მოსაწვევი მოვლენაზე, რომელიც იწყება %1$s-ზე</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">პასუხი: მოსაწვევი მოვლენაზე, რომელიც %1$s-ზე იწყება</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">მოსაწვევი მოვლენაზე, რომელიც იწყება %1$s %2$s-ზე %3$s</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">მოსაწვევი მოვლენაზე, რომელიც იწყება %1$s-ზე</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">მოსაწვევი მოვლენაზე, რომელიც %1$s-ზე იწყება</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">განახლება მოვლენისთვის, რომელიც იწყება %1$s %2$s-ზე %3$s</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">მოვლენის განახლება %1$s-ზე</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">მოვლენის განახლება, რომლის დაწყების დროა %1$s</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">მოვლენის გაუქმება, რომელიც იწყება %1$s %2$s-ზე %3$s</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">მოვლენის გაუქმება %1$s-ზე</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">იმ მოვლენის გაუქმება, %1$s-ზე რომ უნდა დაწყებულიყო</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">მიწვეული ხართ %1$s-ზე.\nროდის: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s განახლებულია.\nროდის: %2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (მთელი დღე)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s %2$s-ზე %3$s - %4$s %5$s-ზე %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nსად: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nაღწერა: %1$s</string>
+    <string name="event_send_invite_dialog_title">მოსაწვევის გაგზავნა</string>
+    <string name="event_send_invite_dialog_description">დამატებულ მონაწილეებს მოწვევა გადაეგზავნება.</string>
+    <string name="event_send_invite_dialog_confirm">გაგზავნა</string>
+    <string name="event_send_invite_dialog_cancel">გაუქმება</string>
+    <string name="event_add_participants_dialog_title">მონაწილეების დამატება</string>
+    <string name="event_add_participants_dialog_description">დამატებულ მონაწილეებს მოწვევა გადაეგზავნება.</string>
+    <string name="recurring_event_add_participants_dialog_description">მოწვევა გადაეგზავნება დამატებულ მონაწილეებს ამ სერიის ყველა მოვლენისთვის.</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">მოწვევა გადაეგზავნება დამატებულ მონაწილეებს ამ სერიის ყველა მოვლენისთვის.\nამ სერიის წინა ცვლილებები დაიკარგება.</string>
+    <string name="event_add_participants_dialog_confirm">გაგზავნა</string>
+    <string name="event_add_participants_dialog_cancel">გაუქმება</string>
+    <string name="event_remove_participants_dialog_title">მონაწილეების წაშლა</string>
+    <string name="event_remove_participants_dialog_description">გაუქმების ელფოსტა გადაეგზავნება ამოღებულ მონაწილეებს.</string>
+    <string name="recurring_event_remove_participants_dialog_description">გაუქმების ელფოსტა გადაეგზავნება ამოღებულ მონაწილეებს ამ სერიის ყველა მოვლენისთვის.</string>
+    <string name="event_add_and_remove_participants_dialog_description">დამატებული და წაშლილი მონაწილეები გაფრთხილებული იქნებიან.</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">დამატებულია და ამოღებულ მონაწილეებს ეცნობებათ ამ სერიის ყველა მოვლენის შესახებ.</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s გაუქმდა.</string>
+    <string name="event_save_changes">ცვლილებების შენახვა</string>
+    <string name="event_update_add_participants_dialog_description">არსებულ და დამატებულ მონაწილეებს გაფრთხლება გაეგზავნებათ.</string>
+    <string name="recurring_event_update_add_participants_dialog_description">თქვენ განაახლებთ ამ სერიის ყველა მოვლენას. არსებულ და დამატებულ მონაწილეებს ეცნობებათ.</string>
+    <string name="event_update_remove_participants_dialog_description">არსებულ და წაშლილ მონაწილეებს გაფრთხლება გაეგზავნებათ.</string>
+    <string name="event_update_remove_all_participants_dialog_description">წაშლილი მონაწილეები გაფრთხილებულ იქნებიან.</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">თქვენ განაახლებთ ამ სერიის ყველა მოვლენას. არსებულ და წაშლილ მონაწილეებს ეცნობებათ.</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">თქვენ განაახლებთ ამ სერიის ყველა მოვლენას. წაშლილ მონაწილეებს ეცნობებათ.</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">არსებულ, დამატებულ და წაშლილ მონაწილეებს გაფრთხლება გაეგზავნებათ.</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">თქვენ განაახლებთ ამ სერიის ყველა მოვლენას. დამატებულ, არსებულ და წაშლილ მონაწილეებს ეცნობებათ.</string>
+    <string name="success_snack_email_update_recurring">მონაწილეები გაფრთხილებულები არიან და ყველა მოვლენა განახლებულია</string>
+    <string name="success_snack_email_update">მონაწილეები გაფრთხილებულები არიან და მოვლენა განახლებულია</string>
+    <string name="success_snack_add_attendees_recurring">მოსაწვევი გაგზავნილია და მონაწილეებს დაემატა ყველა მოვლენა</string>
+    <string name="success_snack_add_attendees">მოსაწვევი გაგზავნილია, მონაწილეები კი დამატებული</string>
+    <string name="success_snack_remove_attendees_recurring">გაუქმება გაგზავნილია და დამსწრეები წაშლილია ყველა მოვლენიდან</string>
+    <string name="success_snack_remove_attendees">გაუქმება გაგზავნილია და დამსწრეები წაშლილია</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">ჩემი კალენდრები</string>
+    <string name="nav_view_subscribed_calendars">გამოწერილი კალენდრები</string>
+    <string name="nav_view_other_calendars">სხვა კალენდრები</string>
+    <string name="nav_view_disabled_calendars">%1$s (გამორთულია)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (არასინქრონიზებული)</string>
+    <string name="nav_view_syncing_calendars">%1$s (სინქრონიზაცია)</string>
+    <string name="nav_view_more">მეტი</string>
+    <string name="nav_view_switcher">ნახვა</string>
+    <string name="nav_view_switcher_day">დღე</string>
+    <string name="nav_view_switcher_three_day">3 დღე</string>
+    <string name="nav_view_switcher_week">კვირა</string>
+    <string name="nav_view_switcher_agenda">განრიგი</string>
+    <string name="nav_view_switcher_month">თვე</string>
+    <string name="nav_view_timezone">დროის სარტყელი</string>
+    <string name="nav_view_settings">მორგება</string>
+    <string name="nav_view_feedback">გამოხმაურების დატოვება</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">საერთო</string>
+    <string name="nav_view_more_bug">პრობლემის შესახებ შეტყობინება</string>
+    <string name="nav_view_more_subscription">გამოწერა</string>
+    <string name="nav_view_more_logout">გასვლა</string>
+    <string name="nav_view_more_login">შესვლა</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">ეს ფუნქცია მალე ჩაირთვება</string>
+    <string name="snack_event_deleted">მოვლენა წაიშალა</string>
+    <string name="snack_event_deleted_as_organizer">გაუქმება გაგზავნილია და მოვლენა წაშლილია</string>
+    <string name="snack_event_deleted_as_attendee">პასუხი გაგზავნია და მოვლენა წაშლილია</string>
+    <string name="snack_event_deleted_error">მოვლენის წაშლის შეცდომა</string>
+    <string name="snack_event_deleted_as_organizer_error">გაუქმების ელფოსტის გაგზავნა შეუძლებელია, გთხოვთ, კვლავ სცადოთ</string>
+    <string name="snack_event_opening_error">მოვლენის გახსნის შეცდომა</string>
+    <string name="snack_event_saving">მოვლენების შენახვა</string>
+    <string name="snack_event_deleting">მოვლენის წაშლა</string>
+    <string name="snack_event_changing_answer">პასუხის განახლება</string>
+    <string name="snack_event_part_stat_updated">დასწრების სტატუსი განახლდა.</string>
+    <string name="snack_event_updated">მოვლენა განახლდა</string>
+    <string name="snack_event_updated_recurring">ყველა მოვლენა განახლდა</string>
+    <string name="snack_event_updated_error_failed_mail">მოსაწვევის გაგზავნის შეცდომა</string>
+    <string name="snack_update_event_error_failed_mail">განახლება ვერ მოხერხდა</string>
+    <string name="snack_lost_zoom_access">დაუკავშირდით Zoom-ს ამ მოვლენის ჩასასწორებლად.</string>
+    <string name="snack_lost_zoom_access_acion">დაკავშირება</string>
+    <string name="snack_zoom_meeting_does_not_exist">ეს Zoom-ის სესია გაუქმდა. წაშალეთ ბმული მოვლენის ჩასასწორებლად.</string>
+    <string name="snack_event_updated_error">მოვლენის განახლების შეცდომა</string>
+    <string name="snack_event_created">მოვლენა შეიქმნა</string>
+    <string name="snack_event_created_failed_mail">მოვლენა შექმნილია, მაგრამ მოსაწვევის გაგზავნა შეუძლებელია</string>
+    <string name="snack_event_created_error">მოვლენის შექმნის შეცდომა</string>
+    <string name="snack_event_opening_edit_error">მოვლენის ჩასასწორებლად გახსნის შეცდომა</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">განმეორებადი მოვლენების წაშლა, მხოლოდ, კალენდრის ვებაპიდან შეგიძლიათ.</string>
+    <string name="snack_event_edit_with_attendees_error">დამსწრეებთან ღონისძიებების რედაქტირება ჯერ არ არის მხარდაჭერილი</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">არ შეიძლება მონაწილეების დამატება და კალენდრის ერთდროულად შეცვლა</string>
+    <string name="snack_event_init_error">ახალი მოვლენის ინიციალიზაციის პრობლემა</string>
+    <string name="snack_event_calendar_error">კალენდრის გადართვის შეცდომა</string>
+    <string name="snack_event_maximum_alarm_reached_error">მიღწეულია გაფრთხილებების მაქსიმალური რაოდენობა</string>
+    <string name="snack_send_bug_report_success">ანგარიში გაგზავნილია. მადლობა უკუკავშირისთვის</string>
+    <string name="snack_send_bug_report_error">ანგარიშის გაგზავნის შეცდომა. მოგვიანებით სცადეთ</string>
+    <string name="snack_send_bug_report_description_empty">შეიყვანეთ თქვენი ანგარიშის აღწერა</string>
+    <string name="snack_create_event_no_active_personal_calendar">მოვლენების შესაქმნელად თქვენ გჭირდებათ პირადი აქტიური კალენდარი</string>
+    <string name="snack_create_event_no_active_calendar">მოვლენების შესაქმნელად აქტიური კალენდარი გჭირდებათ</string>
+    <string name="snack_add_self_as_participant">თვითმოწვევა აკრძალულია</string>
+    <string name="snack_maximum_participants_reached">მიღწეულია მონაწილეთა მაქსიმალური რაოდენობა.</string>
+    <string name="snack_add_participant_error">მონაწილის დამატების შეცდომა</string>
+    <string name="snack_add_participant_invalid_email">არასწორი ელფოსტა</string>
+    <string name="snack_change_attendee_answer_error">პასუხის გაგზავნის შეცდომა. მოგვიანებით სცადეთ</string>
+    <string name="snack_network_error">ქსელის შეცდომა. მოგვიანებით სცადეთ</string>
+    <string name="snack_import_event_signed_out">მოვლენების შესატანად საჭიროა სისტემაში შეხვიდეთ</string>
+    <string name="snack_app_link_signed_out">მოვლენების სანახავად საჭიროა სისტემაში შეხვიდეთ</string>
+    <string name="snack_update_default_calendar">ნაგულისხმები კალენდარი განახლებულია</string>
+    <string name="snack_update_default_calendar_error">ნაგულისხმები კალენდრის განახლების შეცდომა. მოგვიანებით სცადეთ</string>
+    <string name="snack_calendar_init_error">კალენდრის ინფორმაციის ჩატვირთვის შეცდომა</string>
+    <string name="snack_holiday_calendar_init_error">დასვენებების კალენდრის ინფორმაციის ჩატვირთვის შეცდომა</string>
+    <string name="snack_update_calendar_error">კალენდრის ინფორმაციის განახლების შეცდომა. მოგვიანებით სცადეთ</string>
+    <string name="snack_update_calendar_settings_error">კალენდრის ინფორმაციის განახლების შეცდომა. მოგვიანებით სცადეთ</string>
+    <string name="snack_update_calendar_success">კალენდარი განახლდა</string>
+    <string name="snack_create_calendar_success">კალენდარი შექმნილია</string>
+    <string name="snack_add_calendar_success">კალენდარი დამატებულია</string>
+    <string name="snack_calendar_saving">კალენდრის შენახვა</string>
+    <string name="snack_create_calendar_error">კალენდრის შექმნის შეცდომა. მოგვიანებით სცადეთ</string>
+    <string name="snack_add_calendar_error">კალენდრის დამატების შეცდომა. მოგვიანებით სცადეთ</string>
+    <string name="snack_create_calendar_settings_error">კალენდარი შეიქმნა, მაგრამ გარკვეული ინფორმაცია არ განახლდა, გთხოვთ, სცადოთ მოგვიანებით</string>
+    <string name="snack_ics_default_error">კალენდრის გახსნის შეცდომა</string>
+    <string name="snack_ics_event_not_found_error">მოვლენა ნაპოვნი არაა</string>
+    <string name="snack_ics_file_not_found_error">ფაილი ვერ მოიძებნა</string>
+    <string name="snack_ics_create_error">მოვლენის შექმნის შეცდომა</string>
+    <string name="snack_ics_parsing_error">კალენდრის წაკითხვის შეცდომა</string>
+    <string name="snack_ics_unsupported_method_error">მოვლენის ეს ტიპი ჯერ მხარდაჭერილი არაა</string>
+    <string name="snack_ics_unsupported_add_error">მოვლენაში შემთხვევის ჩამატება ჯერ მხარდაჭერილი არაა</string>
+    <string name="snack_ics_unsupported_counter_error">მოვლენის გადადება ამჟამად მხარდაჭერილი არაა</string>
+    <string name="snack_ics_unsupported_refresh_error">მოვლენის განახლება ამჟამად მხარდაჭერილი არაა</string>
+    <string name="snack_ics_unsupported_publish_error">მოვლენის შემოტანა ამჟამად მხარდაჭერილი არაა</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">ჩვენ, მხოლოდ, მხარს ვუჭერთ პასუხს სერიის ყველა მოვლენაზე ამ მომენტისთვის</string>
+    <string name="snack_ics_party_crasher_error">ელფოსტის თქვენი მისამართი მონაწილეთა სიაში არაა</string>
+    <string name="snack_ics_reply_party_crasher_error">მონაწილეები, რომლებიც ორგანიზატორმა არ მიიწვია, არ შეიძლება დაემატოს</string>
+    <string name="snack_ics_missing_uid_error">მოვლენას UID-ი აკლია</string>
+    <string name="snack_ics_no_active_personal_calendar_error">ამ ანგარიშთან აქტიური პირადი კალენდარი არ არსებობს</string>
+    <string name="snack_ics_no_active_calendar_error">ამ ანგარიშთან დაკავშირებული აქტიური კალენდრები არ არსებობს</string>
+    <string name="snack_ics_unsupported_duration_error">ხანგრძლივობის თვისება მხარდაუჭერელია</string>
+    <string name="snack_ics_too_many_events_error">მრავალმოვლენიანობა ჯერ მხარდაჭერილი არაა</string>
+    <string name="snack_ics_no_events_error">ეს კალენდარი არც ერთ მოვლენა არ შეიცავს</string>
+    <string name="snack_ics_invalid_error">მოსაწვევი არასწორია</string>
+    <string name="snack_ics_disabled_calendar_error">ხელახლა ჩართეთ ამ კალენდართან დაკავშირებული მისამართი ამ მოვლენის განახლებისთვის</string>
+    <string name="snack_ics_event_deleted_error">მოვლენა თქვენს კალენდარში აღარ არსებობს</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s დაეთანხმა თქვენს მოსაწვევს</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s ფრთხილად დაეთანხმა მოსაწვევს</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s-მა უარი თქვა თქვენს მოსაწვევზე</string>
+    <string name="snack_app_link_invalid">არასწორი ბმული მოვლენამდე</string>
+    <string name="snack_app_link_error">მოვლენის გახსნის შეცდომა</string>
+    <string name="snack_app_link_import_error">ავთენტიკაცია გაუქმებულია</string>
+    <string name="snack_notification_already_added">გაფრთხილება უკვე დამატებულია</string>
+    <string name="snack_opening_ics">მოვლენის გახსნა…</string>
+    <string name="snack_invite_in_shared_calendar_error">გაზიარებულ კალენდარში მოსაწვევების შექმნა აკრძალულია</string>
+    <string name="snack_down_banner">Proton-ის სერვერები გამორთულია. დეტალებისთვის იხილეთ სტატუსის გვერდი.</string>
+    <string name="snack_down_banner_action">სტატუსის გვერდის გახსნა</string>
+    <string name="snack_color_per_event_paid_feature">ასწიეთ ტარიფი მოვლენის ფერების მოსარგებად</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">მოვლენა არ არსებობს</string>
+    <string name="error_occurrence_does_not_exist">შემთხვევა არ არსებობს</string>
+    <string name="update_timezone_dialog_title">დროის სარტყელი შეიცვალა</string>
+    <string name="update_timezone_dialog_message">თქვენი სისტემის დროის სარტყელი, როგორც ჩანს, %1$s-ზე შეიცვალა. გსურთ, განაახლოთ თქვენი დროის სარტყელის პარამეტრი?</string>
+    <string name="update_timezone_dialog_confirmation">განახლება</string>
+    <string name="update_timezone_dialog_cancel">გაუქმება</string>
+    <string name="contacts_permission_dialog_title">მისცემთ Proton Calendar-ს წვდომას თქვენს კონტაქტებზე?</string>
+    <string name="contacts_permission_dialog_message">Proton Calendar-ს სჭირდება თქვენი ტელეფონის კონტაქტებზე წვდომა, რათა დაგეხმაროთ, მარტივად დაამატოთ ისინი თქვენს მოვლენებში.</string>
+    <string name="contacts_permission_dialog_allow">ნების დართვა</string>
+    <string name="contacts_permission_dialog_open_settings">მორგების ფანჯრის გახსნა</string>
+    <string name="contacts_permission_dialog_cancel">უარყოფა</string>
+    <string name="dialog_title_calendar_picker">კალენდარი</string>
+    <string name="dialog_title_calendar_color_picker">კალენდრის ფერი</string>
+    <string name="dialog_title_event_color_picker">მოვლენის ფერი</string>
+    <string name="import_from_google_title">Google-დან შემოტანა</string>
+    <string name="notifications_permission_dialog_title">მისცემთ Proton Calendar-ს გაფრთხილებების ჩვენების უფლებას?</string>
+    <string name="notifications_permission_dialog_message">Proton Calendar-ს მომავალი მოვლენის გაფრთხილების საჩვენებლად უფლება სჭირდება.</string>
+    <string name="notifications_permission_dialog_open_settings">მორგების ფანჯრის გახსნა</string>
+    <string name="notifications_permission_dialog_cancel">უარყოფა</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">მოვლენის გაფრთხილებები</string>
+    <string name="notification_channel_sync">კალენდრის სინქრონიზაცია</string>
+    <string name="notification_channel_calendar_fetch">კალენდრების გამოთხოვა</string>
+    <string name="notification_sync">კალენდრების სინქრონიზაცია…</string>
+    <string name="notification_text_today">დღეს</string>
+    <string name="notification_text_today_part_time">დღეს %1$s</string>
+    <string name="notification_text_tomorrow">ხვალ</string>
+    <string name="notification_text_tomorrow_part_time">ხვალ %1$s-ზე</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s %2$s-ზე</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">საგანი</string>
+    <string name="bug_report_hint_description">აღწერეთ პრობლემა და დაურთეთ შეცდომის ნებისმიერი შეტყობინება.</string>
+    <string name="bug_report_discard_changes_title">შეუნახავი ცვლილებები</string>
+    <string name="bug_report_discard_changes_description">ფორმაში შეუნახავი ელემენტებია. გნებავთ მათი მოცილება?</string>
+    <string name="bug_report_discard_changes_cancel">წერის გაგრძელება</string>
+    <string name="bug_report_discard_changes_confirm">მოცილება</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">აპის მორგება</string>
+    <string name="settings_theme_title">თემა</string>
+    <string name="settings_theme_info">ეს პარამეტრი გავლენას ახდენს, მხოლოდ, Proton Calendar-ის აპის გამოჩენაზე ამ მოწყობილობაზე. აპლიკაცია განახლდება თემის შეცვლის შემდეგ.</string>
+    <string name="settings_timezone_title">დროის სარტყელი</string>
+    <string name="settings_language_title">აპის ენა</string>
+    <string name="settings_language_default">ავტო-ძებნა</string>
+    <string name="settings_default_view_title">ნაგულისხმები ხედი</string>
+    <string name="settings_default_view_default">ბოლო ნახვა</string>
+    <string name="settings_update_timezone_title">დროის სარტყლის განახლების მოთხოვნა</string>
+    <string name="settings_update_timezone_subtitle">თუ სისტემის დროის სარტყელი არ ემთხვევა მის მიმდინარე მნიშვნელობას, თქვენ გთხოვენ, რომ განაახლოთ ის.</string>
+    <string name="settings_update_timezone_checkbox">აღარ მკითხო</string>
+    <string name="settings_week_start_title">კვირის დასაწყისი</string>
+    <string name="settings_time_format_title">დროის ფორმატი</string>
+    <string name="settings_week_numbers_title">კვირის ნომრის ჩვენება</string>
+    <string name="settings_auto_invites_title">მოსაწვევების კალენდარში დამატება და მომლოდინედ მონიშვნა</string>
+    <string name="settings_search_title">კალენდრების ძებნა</string>
+    <string name="settings_search_subtitle">გადმოწერს და დაიმახსოვრებს კალენდრის შემცველობას თქვენს მოწყობილობაზე, რათა მასში ძებნა შეგეძლოთ. ამის გამორთვა გადმოწერილ შემცველობას წაშლის.\n\nძებნა ექსპერიმენტული, ბეტა ფუნქციაა. მისმა ჩართვამ შეიძლება, აპლიკაცია არასტაბილური გახადოს.</string>
+    <string name="settings_alternative_routing_title">ალტერნატიული რაუტინგის ჩართვა</string>
+    <string name="settings_alternative_routing_subtitle">იმ შემთხვევაში, თუ Proton-ის საიტები დაბლოკილია, ეს პარამეტრი აპს საშუალებას აძლევს, Proton-მდე მისასვლელად ქსელის ალტერნატიული რაუტინგი სცადოს, რაც შეიძლება, სასარგებლო იყოს ბრანდმაუერის ან ქსელის პრობლემების გვერდის ავლით. მეტი საიმედოობისთვის გირჩევთ, ჩართოთ ეს პარამეტრი.</string>
+    <string name="settings_value_placeholder">მოსანიშნად დაატყაპუნეთ</string>
+    <string name="settings_general_title">საერთო</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s და ა. შ.</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">თემა</string>
+    <string name="settings_general_info_language">ენა</string>
+    <string name="settings_general_info_time_zone">დროის სარტყელი</string>
+    <string name="settings_general_info_calendar_layout">კალენდრის განლაგება</string>
+    <string name="settings_calendars">ჩემი კალენდრები</string>
+    <string name="settings_calendars_empty">კალენდრები ვერ მოიძებნა</string>
+    <string name="settings_subscribed_calendars">გამოწერილი კალენდრები</string>
+    <string name="settings_other_calendars">სხვა კალენდრები</string>
+    <string name="settings_calendar_default" comment="Default calendar">ნაგულისხმები</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">გათიშულია</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">არაა სინქრონიზირებული</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">სინქრონიზაცია</string>
+    <string name="settings_calendar_subscribed_invalid_ics">კალენდრის მხარდაუჭერელი ფორმატი</string>
+    <string name="settings_calendar_subscribed_too_big">კალენდარი მეტისმეტად დიდია</string>
+    <string name="settings_calendar_subscribed_not_accessible">კალენდრის ბმული მიუწვდომელია</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">კალენდრის ბმული დროებით ხელმიუწვდომელია</string>
+    <string name="settings_calendar_subscribed_last_sync_old">ბოლო განახლების შემდეგ 12 საათზე მეტი გავიდა</string>
+    <string name="settings_calendar_subscribed_not_decrypted">კალენდრის დაშიფვრა შეუძლებელია</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">მხოლოდ დათვალიერებისათვის</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">%1$s-გან</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">კალენდრის შექმნა</string>
+    <string name="calendar_form_update_title">კალენდრის ჩასწორება</string>
+    <string name="calendar_form_save">შენახვა</string>
+    <string name="calendar_form_name">სახელი</string>
+    <string name="calendar_form_description">აღწერა</string>
+    <string name="calendar_form_color">კალენდრის ფერი</string>
+    <string name="calendar_form_language">ენა</string>
+    <string name="calendar_form_default_event_duration">მოვლენის ხანგრძლივობა</string>
+    <string name="calendar_form_default_event_notifications">მოვლენის გაფრთხილებები</string>
+    <string name="calendar_form_default_all_day_event_notifications">მთელი დღის მოვლენის შეტყობინებები</string>
+    <string name="calendar_form_add_notification">შეტყობინების დამატება</string>
+    <string name="calendar_form_default_email">ელფოსტის მისამართი</string>
+    <string name="calendar_form_default_email_value_error">ნაგულისხმები ელფოსტის ჩატვირთვის შეცდომა</string>
+    <string name="calendar_form_name_hint">კალენდრის სახელის დამატება</string>
+    <string name="calendar_form_name_required_error">სახელი აუცილებელია</string>
+    <string name="calendar_form_description_hint">კალენდარის აღწერის დამატება</string>
+    <string name="add_calendar_text">კალენდრის დამატება</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">დამატება</string>
+    <string name="create_calendar_limit_reached">თქვენ მიაღწიეთ კალენდრების მაქსიმალურ რაოდენობას.</string>
+    <string name="create_calendar_limit_reached_title">მეტი კალენდრის დამატება შეუძლებელია</string>
+    <string name="create_calendar_limit_reached_paid_description">თქვენ მიაღწიეთ თქვენს გეგმაში ხელმისაწვდომი 25 კალენდრის მაქსიმალურ რაოდენობას.\n\nახალი კალენდრის დასამატებლად წაშალეთ არსებული.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">სანამ თქვენი ტრიფის ლიმიტს (25 კალენდარი) მიაღწევთ, ერთი პირადი კალენდარი მაინც უნდა გქონდეთ.</string>
+    <string name="create_calendar_limit_reached_manage">კალენდრების მართვა</string>
+    <string name="create_calendar_limit_reached_free_description">თქვენ მიაღწიეთ თქვენს გეგმაში ხელმისაწვდომი 3 კალენდრის მაქსიმალურ რაოდენობას.\n\nახალი კალენდრის დასამატებლად წაშალეთ არსებული.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">სანამ თქვენი ტრიფის ლიმიტს (3 კალენდარი) მიაღწევთ, ერთი პირადი კალენდარი მაინც უნდა გქონდეთ.</string>
+    <string name="create_calendar_limit_reached_error">შეცდომა</string>
+    <string name="delete_calendar_dialog_title">კალენდრის წაშლა</string>
+    <string name="delete_calendar_dialog_message">დარწმუნებული ბრძანდებით, რომ გნებავთ ამ კალენდრის წაშლა?</string>
+    <string name="remove_calendar_dialog_title">კალენდრის წაშლა</string>
+    <string name="remove_calendar_dialog_message">დარწმუნებული ბრძანდებით, რომ გნებავთ ამ კალენდრის წაშლა?</string>
+    <string name="leave_calendar_dialog_title">კალენდრიდან გასვლა</string>
+    <string name="leave_calendar_dialog_message">თუ ამ კალენდარს დატოვებთ, მისი კიდევ ერთხელ სანახავად მფლობელისთვის ნებართვის თხოვნა თავიდან მოგიწევთ.</string>
+    <string name="delete_default_calendar_dialog_message">დარწმუნებული ხართ, რომ გსურთ ამ კალენდრის წაშლა? \"%1$s \" იქნება მითითებული, როგორც ნაგულისხმები კალენდარი.</string>
+    <string name="delete_calendar_snack_deleted">კალენდარი წაშლილია</string>
+    <string name="remove_calendar_snack_removed">კალენდარი წაშლილია</string>
+    <string name="delete_calendar_snack_error">კალენდრის წაშლის შეცდომა</string>
+    <string name="remove_calendar_snack_error">კალენდრის წაშლის შეცდომა</string>
+    <string name="leave_calendar_snack_error">კალენდრიდან გასვლის შეცდომა</string>
+    <string name="delete_calendar_snack_error_password_confirmation">პაროლის დადასტურების შეცდომა</string>
+    <string name="recreate_calendar_dialog_title">კალენდრის გასუფთავება</string>
+    <string name="recreate_calendar_dialog_message">ეს ქმედება წაშლის ყველა მოვლენას და მოწვეულ მომხმარებლებს.\in\დარწმუნებული ხართ, რომ გსურთ ამ კალენდრის გასუფთავება?</string>
+    <string name="recreate_calendar_snack_error">კალენდრის გასუფთავების შეცდომა</string>
+    <string name="recreate_calendar_snack_deleted">კალენდარი გასუფთავდა</string>
+    <string name="recreate_calendar_snack_clearing">კალენდრის გასუფთავება…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">დასვენებების კალენდრის დამატება</string>
+    <string name="holiday_calendar_title">დასვენებების კალენდარი</string>
+    <string name="add_holiday_calendar_country_search_hint">ქვეყნის ძებნა</string>
+    <string name="holiday_calendar_form_picker_title">ქვეყანა</string>
+    <string name="holiday_calendar_time_zone_based">თქვენი დროის სარტყელზე დაყრდნობით</string>
+    <string name="holiday_calendar_already_exists">ეს დასვენების კალენდარი უკვე დამატებულია.</string>
+    <string name="holiday_calendar_value_placeholder">აირჩიეთ ქვეყანა</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">დიახ</string>
+    <string name="bootstrap_error_no_calendar_title">ამ ანგარიშთან დაკავშირებული კალენდრები არ არსებობს.</string>
+    <string name="bootstrap_error_no_calendar_message">იმისათვის, რომ შეიქმნათ, ეწვიეთ <a href="https://calendar.proton.me">calendar.proton.me</a></string>
+    <string name="bootstrap_error_some_calendars_failed_title">კალენდრების მომზადების შეცდომა</string>
+    <string name="bootstrap_error_some_calendars_failed_message">შემდეგი კალენდრები მორგებული არაა</string>
+    <string name="bootstrap_error_no_active_calendar_title">ამ ანგარიშთან დაკავშირებული აქტური პირადი კალენდრები არ არსებობს.</string>
+    <string name="bootstrap_error_no_active_calendar_message">იმისათვის, რომ ისწავლოთ კალენდრის გააქტიურება, ეწვიეთ ჩვენს <a href="https://proton.me/support"> ცოდნის ბაზას </a></string>
+    <string name="bootstrap_error_store_quota_reached_message">მეტი საცავის სივრცე ხელმიუწვდომელია.</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">გაიგეთ მეტი</string>
+    <string name="bootstrap_error_reset_needed_title">კალენდრის გასაღებების თავიდან დაყენება</string>
+    <string name="bootstrap_error_reset_needed_message">თქვენ ახლახან გადააყენეთ პაროლი და ამიტომ მოვლენები, მიბმული შემდეგ კალენდრებთან, შეუძლებელია, გაიშიფროს. ყველა აქტიური გამოწერილი კალენდრის სინქრონიზაცია, კიდევ ერთხელ, რამდენიმე წუთში მოხდება.</string>
+    <string name="bootstrap_error_update_passphrase_title">კალენდრის გასაღებების რეაქტივაცია</string>
+    <string name="bootstrap_error_update_passphrase_message">თქვენ ხელახლა გაააქტიურეთ თქვენი გასაღებები და მოვლენები, რომლებიც დაკავშირებულია შემდეგ კალენდრებთან, ახლა შეიძლება გაშიფრული იყოს.</string>
+    <string name="bootstrap_error_continue_button">გაგრძელება</string>
+    <string name="splash_after_login_init">კალენდრების მომზადება</string>
+    <string name="splash_init">მოვლენების გაშიფვრა</string>
+    <string name="default_calendar_name">ჩემი კალენდარი</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">გამოხმაურების დატოვება</string>
+    <string name="dialog_feedback_text">როგორ მოგწონთ ახალი Proton Calender?</string>
+    <string name="dialog_feedback_rating_worst">საშინელი</string>
+    <string name="dialog_feedback_rating_best">შესანიშნავია</string>
+    <string name="dialog_feedback_hint">მოგვიყევით თქვენი გამოცილების შესახებ. (არასავალდებულო)</string>
+    <string name="dialog_feedback_submit">გადაცემა</string>
+    <string name="dialog_feedback_submit_thank_you">გმადლობთ! თქვენი გამოხმაურება გვეხმარება Proton-ის გაუმჯობესებაში.</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Proton Calendar-ის ვიჯეტი</string>
+    <string name="calendar_widget_no_upcoming_events_today">დღეს მოვლენების გარეშე</string>
+    <string name="calendar_widget_loading_events">მოვლენების ჩატვირთვა…</string>
+    <string name="calendar_widget_loading_events_error">მოვლენების ჩატვირთვის შეცდომა</string>
+    <string name="calendar_widget_no_upcoming_events">ახლო მომავალში მოვლენების გარეშე</string>
+    <string name="calendar_widget_please_log_in">თქვენი მოვლენების სანახავად საჭიროა შეხვიდეთ</string>
+    <string name="calendar_widget_part_day_event_starts_at">იწყება %1$s</string>
+    <string name="calendar_widget_part_day_event_ends_at">დამთავრების დრო %1$s</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">სიახლეები</string>
+    <string name="spotlight_dialog_beta_header">Calendar Beta</string>
+    <string name="spotlight_dialog_skip">გამოტოვება</string>
+    <string name="spotlight_dialog_confirmation_button">დიახ</string>
+    <string name="spotlight_dialog_month_view_title">თვის ხედი</string>
+    <string name="spotlight_dialog_month_view_description">მიიღეთ თქვენი მოვლენების მიმოხილვა ჩვენი ახალი თვის ხედით. ხედებს შორის მენიუს საშუალებით გადაერთეთ.</string>
+    <string name="spotlight_dialog_easy_switch_description">Google-ის კალენდრიდან Proton-ის კალენდარში მოვლენებისა და სხვა მონაცემების შემოტანა ისეთი ადვილია, როგორიც არასოდეს. ჩვენი გადართვის შემომტანი თითოეულ ნაბიჯს გაუძღვება.</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">შემოტანის დაწყება</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">არა ახლა</string>
+    <string name="spotlight_dialog_auto_invites_title">ადვილად დაეთანხმეთ მოსაწვევებს</string>
+    <string name="spotlight_dialog_auto_invites_description">ახლა მოსაწვევები თქვენს კალენდარში, როგორც დარჩენილი მოვლენები, ისე გამოჩნდება. საპასუხოდ, მოსაწვევი უბრალოდ გახსენით. \n\n მის სამართავად პარამეტრებში გადადადით.</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">შემდეგი</string>
+    <string name="spotlight_v5_dialog_got_it_button">გავიგე</string>
+    <string name="spotlight_v5_dialog_learn_more_button">გაიგეთ მეტი</string>
+    <string name="spotlight_v5_dialog_rebranding_title">განახლებული Proton-ი, გაერთიანებული დაცვა</string>
+    <string name="spotlight_v5_dialog_rebranding_description">წარმოგიდგენთ Proton-ის განახლებულ იერს. ბევრი სერვისი, ერთი მისია. მოგესალმებით ინტერნეტში, სადაც კონფიდენციალობა ნაგულისხმევია. <a href="https://proton.me/news/updated-proton">გაიგეთ მეტი</a></string>
+    <string name="spotlight_dialog_week_view_title">მეტი ნახვის პარამეტრი</string>
+    <string name="spotlight_dialog_week_view_description">• წარმოგიდგენთ კალენდრების <b>3 დღიან</b> და <b> ერთკვირიან</b> ხედებს. აირჩიეთ თქვენთვის სასურველი ხედი <b>მენიუში</b>.\n\n• დღის ბადეში მწკრივების სიმაღლის გასწორება ორი თითის გასმით შეგიძლიათ.</string>
+    <string name="spotlight_dialog_search_title">მოვლენების ძებნა</string>
+    <string name="spotlight_dialog_search_description">ჩვენი ახალი ძებნის ფუნქციებით თქვენს მოვლენებს უფრო ადვილად იპოვით. <a href="https://proton.me/support/calendar-search">გაიგეთ მეტი</a></string>
+    <string name="spotlight_dialog_search_positive">ჩართვა</string>
+    <string name="spotlight_dialog_search_negative">გამოტოვება</string>
+    <string name="spotlight_dialog_import_title">მოვლენების დამატების მეტი გზა</string>
+    <string name="spotlight_dialog_import_description">• შემოიტანეთ მოვლენები თქვენს კალენდარში თქვენი ტელეფონის ფაილებიდან.\n\n• დაამატეთ მოგზაურობის ჯავშნები პირდაპირ Proton Mail-იდან.</string>
+    <string name="spotlight_dialog_calendar_provider_title">კალენდრის ფუნქციები</string>
+    <string name="spotlight_dialog_calendar_provider_description">• დაამატეთ მოვლენები პირდაპირ Proton Calendar-ში სხვა აპებიდან.\n\n• შექმენით და მართეთ მოვლენები კალენდრებში, რომლებიც გაგიზიარეს.\n\n• დააყენეთ ხედი, რომელიც გნებავთ, აპის გახსნის დროს დაინახოთ.\n\n• ხელმისაწვდომია 13 ახალი ენა.</string>
+    <string name="spotlight_dialog_wipe_search_title">ძებნა მოვაცილეთ, რათა ის უკეთესი გავხადოთ</string>
+    <string name="spotlight_dialog_wipe_search_description">Proton Calendar Beta-დან ექსპერიმენტული ძებნის ფუნქცია წაიშლება, რადგან ჩვენ ის უფრო გამოსადეგი და სანდო გვინდა, გავხადოთ. ამას რამდენიმე წუთი შეიძლება, დასჭირდეს.</string>
+    <string name="spotlight_dialog_holiday_calendar_title">დასვენებაა!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">აიცილეთ თავიდან შეხვედრები, სადაც არავინაა და გეგმების დავიწყება გრძელი დასვენების დღეებისთვის.\n\nდაამატეთ ნებისმიერი ქვეყნის დასვენების დღე თქვენს კალენდარში.</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">აიცილეთ თავიდან შეხვედრები, სადაც არავინაა და ნუ დაივიწყებთ გრძელი დასვენებების შესახებ.\n\nრადგან თქვენი კალენდარი თითქმის სავსეა, იმისათვის, რომ დასვენების დღე დაამატოთ, ჯერ არსებული უნდა წაშალოთ.</string>
+    <string name="spotlight_dialog_color_per_event_title">მორგებული მოვლენის ფერები</string>
+    <string name="spotlight_dialog_color_per_event_description">მოირგეთ მოვლენების ფერი სათთაოდ:\n\n• გააფერადეთ თქვენი კალენდარი\n\n• უკეთესად დააორგანიზეთ თქვენი დღე და ადევნეთ თვალყური თქვენს დროს\n\n• დააყენეთ პრიორიტეტები და ასწიეთ ეფექტურობა</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">წვდომის დაშვება</string>
+    <string name="dialog_google_auth_description">შემოტანის დასაწყებად, შედით Google Calendar-ში და მიეცით Proton-ს თქვენს მონაცემებზე წვდომა.</string>
+    <string name="import_assistant_prepare_import_error">შემოტანის მომზადების შეცდომა. მოგვიანებით სცადეთ</string>
+    <string name="import_assistant_prepare_import">შემოტანის მომზადება</string>
+    <string name="import_assistant_gathering_data_loader_title">თქვენი მონაცემების შეგროვება</string>
+    <string name="import_assistant_summary_title">შემოტანის მიმოხილვა</string>
+    <string name="import_assistant_summary_customize_import">შემოტანის მორგება</string>
+    <string name="import_assistant_error">მონაცემების გამოთხოვის შეცდომა</string>
+    <string name="import_assistant_data_gathering_error">მონაცემების შეგროვების შეცდომა</string>
+    <string name="import_assistant_update_import_error">შემოტანის განახლების შეცდომა. მოგვიანებით სცადეთ.</string>
+    <string name="import_assistant_update_import_wrong_account_error">არასწორი ანგარიში. გთხოვთ, შეხვიდეთ ანგარიშზე, რომელიც კალენდრის იმპორტისთვის გამოიყენეთ.</string>
+    <string name="import_assistant_start_import_error">შემოტანის დაწყების შეცდომა. მოგვიანებით სცადეთ.</string>
+    <string name="import_assistant_delete_import_success">შემოტანის ჩანაწერი წაშლილია</string>
+    <string name="import_assistant_delete_import_error">შემოტანის წაშლის შეცდომა. მოგვიანებით სცადეთ.</string>
+    <string name="import_assistant_cancel_import_error">შემოტანის გაუქმების შეცდომა. მოგვიანებით სცადეთ.</string>
+    <string name="import_assistant_resume_import_error">შემოტანის გაგრძელების შეცდომა. მოგვიანებით სცადეთ.</string>
+    <string name="import_assistant_create_calendar_error">კალენდრს ერთი ან მეტი ფაილის შექმნის შეცდომა</string>
+    <string name="import_assistant_start_import_empty_error">შემოტანის დაწყება შეუძლებელია. შემოსატანი კალენდრები არ არსებობს</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">შემოტანა, როგორც</string>
+    <string name="import_assistant_new_calendar_badge">ახალი</string>
+    <string name="import_assistant_merge_calendar_badge">შერწყმული</string>
+    <string name="import_assistant_creating_calendars">ახალი კალენდრების შექმნა</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">თითქმის მივედით…</string>
+    <string name="import_assistant_new_calendar_header">ახლის შექმნა</string>
+    <string name="import_assistant_merge_calendar_header">არსებულთან შერწყმა</string>
+    <string name="import_assistant_in_progress_title">მიმდინარეობს შემოტანა</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">მონაცემების შეტანა %1s-დან %2s-ში.</string>
+    <string name="import_assistant_in_progress_redirect">პროგრესის შემოწმება</string>
+    <string name="import_assistant_in_progress_sub_description">დიდი ზომის შემოტანას რამდენიმე დღეც კი შეიძლება, დასჭირდეს. ჩვენ შეგატყობინებთ, როცა შემოტანა დასრულდება. ფანჯარა შეგიძლიათ, დახუროთ.</string>
+    <string name="import_assistant_guide_subtitle">გახდით უფრო კონფიდენციალური. მარტივად და უსაფრთხოდ.</string>
+    <string name="import_assistant_guide_description">გადაიტანეთ თქვენი მოვლენები და სხვა მონაცემები Google-დან Proton-მდე. ჩვენი ადვილად გადართვის პროგრამა გაგიძღვებათ შემოტანის თითოეულ ნაბიჯზე. ის ასევე შიფრავს ყველაფერს, რაზეც მუშაობს.</string>
+    <string name="import_assistant_new_import">ახალი შემოტანა</string>
+    <string name="import_assistant_previous_import">წინა შემოტანები</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">დაიწყო</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">მიმდინარეობს</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">დასრულებულია</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">გაუქმებულია</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">გაუქმება</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">შეჩერებული</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">წარუმატებელი</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Google-სთან კავშირი გაწყდა</string>
+    <string name="import_assistant_status_paused_lost_connection_description">შემოტანის გასაგრძელებლად დაატყაპუნეთ თავიდან შეერთებაზე, შედით Google-ში და Proton-ს Google-ის თქვენს მონაცემებზე წვდომა თავიდან მიეცით.</string>
+    <string name="import_assistant_status_paused_lost_connection_button">თავიდან დაკავშირება</string>
+    <string name="import_assistant_status_paused_storage_full_title">თქვენი საცავი სავსეა</string>
+    <string name="import_assistant_status_paused_storage_full_description">Proton-ის თქვენს ანგარიშს არ აქვს საკმარისი მეხსიერება ამ კალენდრის შემოტანის დასასრულებლად. გაათავისუფლეთ სივრცე ან დაამატეთ მეტი მეხსიერება, შემდეგ დაბრუნდით აქ, რომ განაახლოთ.</string>
+    <string name="import_assistant_status_paused_storage_full_button">გაგრძელება</string>
+    <string name="import_assistant_delete_report_title">სიიდან წაშლა?</string>
+    <string name="import_assistant_delete_report_message">სიაში შემოტანის ჩანაწერს აღარ დაინახავთ.</string>
+    <string name="import_assistant_delete_report_positive_button">წაშლა</string>
+    <string name="import_assistant_delete_report_negative_button">დატოვება</string>
+    <string name="import_assistant_cancel_import_title">შემოტანა არ დასრულებულა!</string>
+    <string name="import_assistant_cancel_import_message">შემოტანას თუ გააუქმებთ, მისი გაგრძელება შეუძლებელი იქნება. Proton-მა ყველაფერი, რაც უკვე გააკეთა, თქვენს ანგარიშში შეინახა. მაინც გნებავთ გაუქმება?</string>
+    <string name="import_assistant_cancel_import_positive_button">შემოტანის გაუქმება</string>
+    <string name="import_assistant_cancel_import_negative_button">შემოტანის გაგრძელება</string>
+    <string name="import_assistant_in_progress_snack">მიმდინარეობს შემოტანა</string>
+    <string name="import_assistant_discard_import_title">გავაუქმო შემოტანა?</string>
+    <string name="import_assistant_discard_import_message">შემოტანა არასრულია და ვერ განახლდება, თუ გააუქმებთ მას.</string>
+    <string name="import_assistant_discard_import_positive">შემოტანის გაუქმება</string>
+    <string name="import_assistant_discard_import_negative">შემოტანის გაგრძელება</string>
+    <string name="import_assistant_authentication_canceled">ავთენტიკაცია გაუქმებულია</string>
+    <string name="import_assistant_sign_in_in_progress">შესვლის პროცესი უკვე მიმდინარეობს</string>
+    <string name="import_assistant_in_progress_error_snack">შემოტანა ჯერ კიდევ მიმდინარეობს</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">შემოვიტანო მარტივი მოვლენის სახით?</string>
+    <string name="import_event_disclaimer_dialog_description">\nშემოტანილი მოსაწვევები გამოჩნდება Proton Calendar-ში, როგორც მარტივი ღონისძიებები <b>ორგანიზატორის</b> და <b>მონაწილის</b> დეტალების გარეშე.\n\nმოვლენის განახლებების მისაღებად და მონაწილეების სანახავად სთხოვეთ ორგანიზატორებს, მიგიწვიონ თქვენი Proton ელფოსტის მისამართის გამოყენებით.</string>
+    <string name="import_event_disclaimer_dialog_positive">შემოტანა</string>
+    <string name="undefined_color">განუსაზღვრელი</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">კალენდარი</item>
+        <item quantity="other">კალენდარი</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">%1$d კალენდრის შემოტანა</item>
+        <item quantity="other">%1$d კალენდრის შემოტანა</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">%1$d მიმდინარე შემოტანა</item>
+        <item quantity="other">%1$d მიმდინარე შემოტანა</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">შექმნილია %1$d %2$d-დან, %3$s-ში</item>
+        <item quantity="other">შექმნილია %1$d %2$d-დან, %3$s-ში</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">%1$d კალენდრის შექმნა Proton Calendar-ში.</item>
+        <item quantity="other">%1$d კალენდრის შექმნა Proton Calendar-ში.</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">%1$d-დან %2$d კალენდრის შემოტანა</item>
+        <item quantity="other">%1$d-დან %2$d კალენდრის შემოტანა</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">%1$d კალენდრის შერწყმა Proton Calendar-ში.</item>
+        <item quantity="other">%1$d კალენდრის შერწყმა Proton Calendar-ში.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">კალენდრის ლიმიტის გამო ყველა შემოტანილი კალენდრისთვის ახალი კალენდრების შექმნა შეუძლებელია.\n • გააუქმეთ %1$d კალენდარი მაინც</item>
+        <item quantity="other">კალენდრის ლიმიტის გამო ყველა შემოტანილი კალენდრისთვის ახალი კალენდრების შექმნა შეუძლებელია.\n • გააუქმეთ მინიმუმ %1$d კალენდრები</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020 ან\n • საჭირო იქნება, მინიმუმ, %1$d არსებულ კალენდართან შერწყმა.</item>
+        <item quantity="other">\u0020 ან\n • საჭირო იქნება, მინიმუმ, %1$d არსებულ კალენდართან შერწყმა.</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">მეორე</item>
+        <item quantity="other">წამი</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">წუთი</item>
+        <item quantity="other">წთ</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">სთ</item>
+        <item quantity="other">სთ</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">დღე</item>
+        <item quantity="other">დღე</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">კვირა</item>
+        <item quantity="other">კვირა</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">თვე</item>
+        <item quantity="other">თვე</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">წელი</item>
+        <item quantity="other">წელი</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">-ჯერ</item>
+        <item quantity="other">-ჯერ</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">მოვლენა</item>
+        <item quantity="other">მოვლენა</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">დრო</item>
+        <item quantity="other">-ჯერ</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">მონაწილე</item>
+        <item quantity="other">მონაწილეები</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">ყოველი %1$d%2$s</item>
+        <item quantity="other">ყოველი %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">ყოველი %1$d%2$s</item>
+        <item quantity="other">ყოველი %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">ყოველი %1$d%2$s</item>
+        <item quantity="other">ყოველი %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">ყოველი %1$d%2$s</item>
+        <item quantity="other">ყოველი %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s წუთი</item>
+        <item quantity="other">%1$s წუთი</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d/%2$d სიმბოლო</item>
+        <item quantity="other">%1$d/%2$d სიმბოლო</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d/%2$d სიმბოლო</item>
+        <item quantity="other">%1$d/%2$d სიმბოლო</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>პირველი</item>
+        <item>წამი</item>
+        <item>მესამე</item>
+        <item>მეოთხე</item>
+        <item>მეხუთე</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>ბოლო</item>
+        <item>მეორიდან ბოლომდე</item>
+        <item>მესამიდან ბოლომდე</item>
+        <item>მეოთხიდან ბოლომდე</item>
+        <item>მეხუთედან ბოლომდე</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>ღია</item>
+        <item>ბნელი</item>
+        <item>სისტემის ნაგულისხმები</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>სისტემის ნაგულისხმები</item>
+        <item>13:00</item>
+        <item>1:00 PM</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>სისტემის ნაგულისხმები</item>
+        <item>ორშაბათი</item>
+        <item>შაბათი</item>
+        <item>კვირა</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>მეწამული|#8080FF</item>
+        <item>მარწყვისფერი|#EC3E7C</item>
+        <item>ვარდისფერი|#DB60D6</item>
+        <item>სტაფილოსფერი|#F78400</item>
+        <item>უდაბნოსფერი|#936D58</item>
+        <item>მელნისფერი|#5252CC</item>
+        <item>ქლიავი|#A839A4</item>
+        <item>ღია ალუბლისფერი|#BA1E55</item>
+        <item>სპილენძისფერი|#C44800</item>
+        <item>მიწისფერი|#54473F</item>
+        <item>მოლურჯო-მოშიფრისფრო|#415DF0</item>
+        <item>წყნარი ოკეანე|#179FD9</item>
+        <item>მარჯნისფერი|#1DA583</item>
+        <item>გვიმრისფერი|#3CBB3A</item>
+        <item>ზეთისხილისფერი|#B4A40E</item>
+        <item>კობალტისფერი|#273EB2</item>
+        <item>ზღვისფერი|#0A77A6</item>
+        <item>ფიჭვისფერი|#0F735A</item>
+        <item>ტყისფერი|#258723</item>
+        <item>პიკულისფერი|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>იასამნისფერი</item>
+        <item>მარწყვისფერი</item>
+        <item>ვარდისფერი</item>
+        <item>სტაფილოსფერი</item>
+        <item>საჰარა</item>
+        <item>ენზიანი</item>
+        <item>ქლიავისფერი</item>
+        <item>ღია ალუბლისფერი</item>
+        <item>სპილენძისფერი</item>
+        <item>მიწისფერი</item>
+        <item>მოლურჯო-მონაცრისფრო</item>
+        <item>წყნარი ოკეანის</item>
+        <item>მარჯნისფერი</item>
+        <item>გვიმრისფერი</item>
+        <item>ზეთისხილისფერი</item>
+        <item>კობალტისფერი</item>
+        <item>ზღვისფერი</item>
+        <item>ფიჭვისფერი</item>
+        <item>ტყისფერი</item>
+        <item>კიტრი</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

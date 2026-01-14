@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/monthFragmentWeekNumberLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/calendar_item_header_height"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        android:weightSum="6"
+        android:visibility="visible"
+        tools:visibility="visible"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/monthFragmentWeekNumber1"
+                layout="@layout/item_month_view_week_number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/monthFragmentWeekNumber2"
+                layout="@layout/item_month_view_week_number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/monthFragmentWeekNumber3"
+                layout="@layout/item_month_view_week_number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/monthFragmentWeekNumber4"
+                layout="@layout/item_month_view_week_number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/monthFragmentWeekNumber5"
+                layout="@layout/item_month_view_week_number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/monthFragmentWeekNumber6"
+                layout="@layout/item_month_view_week_number" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/monthFragmentWeekDaysLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="3dp"
+            android:weightSum="7"
+            android:orientation="horizontal">
+
+            <include
+                android:id="@+id/monthFragmentWeekDay1"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/calendar_item_header_height"
+                layout="@layout/item_mini_calendar_header" />
+
+            <include
+                android:id="@+id/monthFragmentWeekDay2"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/calendar_item_header_height"
+                layout="@layout/item_mini_calendar_header" />
+
+            <include
+                android:id="@+id/monthFragmentWeekDay3"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/calendar_item_header_height"
+                layout="@layout/item_mini_calendar_header" />
+
+            <include
+                android:id="@+id/monthFragmentWeekDay4"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/calendar_item_header_height"
+                layout="@layout/item_mini_calendar_header" />
+
+            <include
+                android:id="@+id/monthFragmentWeekDay5"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/calendar_item_header_height"
+                layout="@layout/item_mini_calendar_header" />
+
+            <include
+                android:id="@+id/monthFragmentWeekDay6"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/calendar_item_header_height"
+                layout="@layout/item_mini_calendar_header" />
+
+            <include
+                android:id="@+id/monthFragmentWeekDay7"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/calendar_item_header_height"
+                layout="@layout/item_mini_calendar_header" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:id="@+id/month_fragment_grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_month_view_grid" />
+
+            <me.proton.android.calendar.presentation.calendar.customView.MonthView
+                android:id="@+id/month_fragment_month_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="3dp" />
+
+            <ProgressBar
+                android:id="@+id/month_fragment_loader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:focusable="false" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

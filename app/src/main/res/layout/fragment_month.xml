@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.proton.android.calendar.presentation.calendar.customView.InterceptTouchConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentMonthLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.calendar.fragment.MonthFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/miniCalendarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/calendar_elevation"
+        android:background="@color/background_norm" >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/viewPagerTopGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/calendar_slider_height" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/miniCalendarPagerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/viewPagerTopGuideline"
+            android:background="@color/background_norm" >
+
+            <LinearLayout
+                android:id="@+id/miniCalendarDaysHeaderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:weightSum="7"
+                android:background="@color/background_norm"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginStart="@dimen/mini_calendar_margin"
+                android:layout_marginEnd="@dimen/mini_calendar_margin"
+                android:layout_marginTop="@dimen/calendar_item_day_vertical_spacing"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/miniCalendarPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:focusableInTouchMode="false"
+                android:overScrollMode="never"
+                android:layout_marginTop="@dimen/calendar_item_day_vertical_spacing"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/miniCalendarDaysHeaderLayout"
+                app:layout_constraintBottom_toTopOf="@+id/viewPagerSliderGuideline" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/viewPagerSliderGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="268dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/agendaPager"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/miniCalendarLayout" />
+
+    <com.alamkanak.weekview.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/miniCalendarLayout"
+        app:adaptiveEventTextSize="true"
+        app:allDayEventTextSize="12sp"
+        app:columnGap="2dp"
+        app:eventCornerRadius="4dp"
+        app:eventMarginVertical="2dp"
+        app:eventPaddingHorizontal="4dp"
+        app:eventPaddingVertical="5dp"
+        app:eventTextSize="12sp"
+        app:expandInfoTextColor="@color/text_norm"
+        app:headerBottomShadowRadius="4dp"
+        app:headerPadding="12dp"
+        app:weakHeaderTextColor="@color/text_weak"
+        app:hintHeaderTextColor="@color/text_hint"
+        app:noEventsLabel="@string/agenda_no_events"
+        app:loadingEventsLabel="@string/agenda_loading_events"
+        app:showLoadingEvents="false"
+        app:headerTextColor="@color/text_norm"
+        app:headerTextSize="12sp"
+        app:headerLabelsInnerMargin="4dp"
+        app:headerLabelsSeparatorHeight="20dp"
+        app:headerNoEventsMarginStart="7dp"
+        app:dateHeaderTextSize="16sp"
+        app:headerTodaySquareSize="24dp"
+        app:headerTodaySquareStrokeWidth="1.5dp"
+        app:headerTodaySquareMarginTop="2dp"
+        app:headerTodaySquareRadius="5dp"
+        app:headerChevronUp="@drawable/ic_arrow_up"
+        app:headerChevronDown="@drawable/ic_arrow_down"
+        app:headerChevronColor="@color/white"
+        app:showHeaderBottomShadow="false"
+        app:showHeaderBottomLine="true"
+        app:showCustomTimeColumnHourSeparator="true"
+        app:customTimeColumnHourSeparatorWidth="10dp"
+        app:showTimeColumnHourSeparator="false"
+        app:hourHeight="@dimen/default_week_view_hour_height"
+        app:nowLineDotRadius="5dp"
+        app:nowLineStrokeWidth="2dp"
+        app:numberOfVisibleDays="3"
+        app:overlappingEventGap="1dp"
+        app:showCurrentTimeFirst="true"
+        app:showNowLine="true"
+        app:showNowLineDot="true"
+        app:showTimeColumnSeparator="true"
+        app:showWeekNumber="true"
+        app:timeColumnPadding="10dp"
+        app:timeColumnSeparatorStrokeWidth="1dp"
+        app:timeColumnTextColor="@color/text_norm"
+        app:timeColumnTextSize="12sp"
+        app:showHeaderDownArrow="false"
+        app:expandInfoBackgroundColor="@color/interaction_weak"
+        app:arrangeAllDayEventsVertically="true"
+        app:eventSideStripWidth="3dp"
+        app:unansweredStripesWidth="0.5dp"
+        app:unansweredStripesGap="4dp"
+        app:decryptionFailedRectMargin="6dp"
+        app:decryptionFailedRectHeight="6dp"
+        app:weekNumberTextSize="10sp"
+        app:weekNumberTextColor="@color/text_weak"
+        app:todayHeaderTextColor="?attr/proton_text_accent"
+        app:stickToWeekInWeekView="false"
+        app:weekNumberBackgroundColor="@color/background_secondary"
+        app:weekNumberBackgroundSize="24dp"
+        app:weekNumberBackgroundCornerRadius="3dp" />
+
+    <ProgressBar
+        android:layout_width="48dp"
+        android:id="@+id/calendar_progress"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</me.proton.android.calendar.presentation.calendar.customView.InterceptTouchConstraintLayout>

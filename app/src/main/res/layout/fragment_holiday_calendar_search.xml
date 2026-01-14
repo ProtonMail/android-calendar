@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/holiday_calendar_search_icon"
+        style="@style/Icon.Form"
+        app:srcCompat="@drawable/ic_proton_magnifier"
+        app:layout_constraintTop_toTopOf="@id/holiday_calendar_search_input"
+        app:layout_constraintBottom_toBottomOf="@id/holiday_calendar_search_input"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/holiday_calendar_search_input"
+        style="@style/Text.Default"
+        android:textColorHint="@color/text_hint"
+        android:paddingStart="@dimen/default_margin_text_start"
+        android:paddingTop="@dimen/spacing_page"
+        android:paddingBottom="@dimen/spacing_page"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/add_holiday_calendar_country_search_hint"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:scrollHorizontally="false"
+        android:maxLength="255"
+        android:singleLine="false"
+        android:maxLines="1"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/holiday_calendar_search_clear"/>
+
+    <include
+        android:id="@+id/holiday_calendar_search_clear"
+        layout="@layout/toolbar_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintTop_toTopOf="@id/holiday_calendar_search_input"
+        app:layout_constraintBottom_toBottomOf="@id/holiday_calendar_search_input"
+        app:layout_constraintEnd_toStartOf="@id/holiday_calendar_search_close" />
+
+    <include
+        android:id="@+id/holiday_calendar_search_close"
+        layout="@layout/toolbar_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:selectableItemBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/holiday_calendar_search_separator"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/holiday_calendar_search_separator"
+        style="@style/Separator"
+        app:layout_constraintTop_toBottomOf="@+id/holiday_calendar_search_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/holiday_calendar_country_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginTop="8dp"
+        tools:listitem="@layout/item_holiday_calendar"
+        tools:itemCount="3"
+        android:overScrollMode="never"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holiday_calendar_search_separator"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/holiday_calendar_search_no_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:visibility="visible"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/holiday_calendar_search_separator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search_no_results_illustration"
+            android:paddingBottom="8dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/search_empty_results_title"
+            style="@style/Text.Headline"
+            android:paddingBottom="8dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

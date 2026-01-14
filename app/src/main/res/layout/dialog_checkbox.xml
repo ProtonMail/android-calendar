@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/spacing_page">
+
+    <TextView
+        android:id="@+id/dialog_checkbox_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Text.Default"
+        tools:text="@string/update_timezone_dialog_message"
+        android:layout_marginStart="@dimen/material_dialog_inset_start"
+        android:layout_marginEnd="@dimen/material_dialog_inset_end"
+        android:layout_marginTop="@dimen/spacing_page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include
+        android:id="@+id/dialog_checkbox_press"
+        layout="@layout/view_press_overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@+id/dialog_checkbox"
+        app:layout_constraintEnd_toEndOf="@+id/dialog_checkbox_title"
+        app:layout_constraintTop_toTopOf="@+id/dialog_checkbox_title"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_checkbox_title"/>
+
+    <CheckBox
+        android:id="@+id/dialog_checkbox"
+        android:layout_width="37dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dialog_checkbox_title"
+        app:layout_constraintBottom_toBottomOf="@+id/dialog_checkbox_title"/>
+
+    <TextView
+        android:id="@+id/dialog_checkbox_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_update_timezone_checkbox"
+        style="@style/Text.DefaultSmall"
+        android:layout_marginTop="@dimen/spacing_page"
+        android:layout_marginEnd="@dimen/spacing_element"
+        android:paddingTop="@dimen/spacing_element_small"
+        android:paddingBottom="@dimen/spacing_element_small"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_checkbox_header"
+        app:layout_constraintStart_toEndOf="@+id/dialog_checkbox"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

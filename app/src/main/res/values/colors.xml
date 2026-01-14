@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- global color mapping -->
+
+    <color name="interaction_weak_norm">@color/interaction_weak</color>
+    <color name="interaction_weak_disabled_pressed">@color/interaction_weak_pressed</color>
+    <color name="splash_screen_color">@color/background_norm</color>
+
+    <!-- colors to use in the app -->
+
+    <color name="textColorValidationError">@color/notification_error</color>
+
+    <!-- constant colors, do not change in dark mode -->
+    <color name="text_on_calendar_color">#FFFFFF</color>
+
+    <color name="purple_base">#8080FF</color>
+    <color name="strawberry_base">#EC3E7C</color>
+    <color name="pink_base">#DB60D6</color>
+    <color name="carrot_base">#F78400</color>
+    <color name="sahara_base">#936D58</color>
+    <color name="enzian_base">#5252CC</color>
+    <color name="plum_base">#A839A4</color>
+    <color name="cerise_base">#BA1E55</color>
+    <color name="copper_base">#C44800</color>
+    <color name="soil_base">#54473F</color>
+    <color name="slateblue_base">#415DF0</color>
+    <color name="pacific_base">#179FD9</color>
+    <color name="reef_base">#1DA583</color>
+    <color name="fern_base">#3CBB3A</color>
+    <color name="olive_base">#B4A40E</color>
+    <color name="cobalt_base">#273EB2</color>
+    <color name="ocean_base">#0A77A6</color>
+    <color name="pine_base">#0F735A</color>
+    <color name="forest_base">#258723</color>
+    <color name="pickle_base">#807304</color>
+</resources>

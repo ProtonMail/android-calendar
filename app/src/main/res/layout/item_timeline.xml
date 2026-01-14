@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_event"
+    style="@style/Widget.ProtonCalendar.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="@drawable/ripple_mini_calendar_day"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_event_day_container"
+        android:layout_width="56dp"
+        android:layout_height="@dimen/widget_calendar_item_height_with_interaction_margin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:padding="@dimen/widget_calendar_item_interaction_margin">
+
+        <TextView
+            android:id="@+id/tv_event_date_header"
+            style="@style/Text.Caption.Strong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/text_weak"
+            tools:text="Friday" />
+
+        <TextView
+            android:id="@+id/tv_event_date_text"
+            style="@style/Text.Subheadline"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingTop="14sp"
+            tools:text="13" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/iv_calendar_bar"
+        android:layout_width="6dp"
+        android:layout_height="0dp"
+        android:layout_alignTop="@id/rl_event_day_container"
+        android:layout_alignBottom="@id/rl_event_day_container"
+        android:layout_marginTop="@dimen/widget_calendar_item_interaction_margin"
+        android:layout_marginBottom="@dimen/widget_calendar_item_interaction_margin"
+        android:layout_toEndOf="@id/rl_event_day_container"
+        android:background="@drawable/shape_calendar_bar"
+        android:backgroundTint="@color/purple_base"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_event_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/rl_event_day_container"
+        android:layout_alignBottom="@id/rl_event_day_container"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/iv_calendar_bar"
+        android:padding="@dimen/widget_calendar_item_interaction_margin">
+
+        <TextView
+            android:id="@+id/tv_event_header"
+            style="@style/Text.DefaultSmall.Strong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/tv_event_header_day_indicator"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Android planning" />
+
+        <TextView
+            android:id="@+id/tv_event_header_day_indicator"
+            style="@style/Text.DefaultSmall.Strong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            tools:text="(1/2)" />
+
+        <TextView
+            android:id="@+id/tv_event_subheader"
+            style="@style/Text.DefaultSmall.Weak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_event_header"
+            android:layout_alignParentStart="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="11:00 - 13:00" />
+
+        <TextView
+            android:id="@+id/tv_event_subheader_side_text"
+            style="@style/Text.DefaultSmall.Weak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_event_header"
+            android:layout_toEndOf="@id/tv_event_subheader"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text=" * Location" />
+
+        <ImageView
+            android:id="@+id/decryption_error_icon"
+            style="@style/Icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_lock_exclamation_filled_android_six_compat" />
+
+        <FrameLayout
+            android:id="@+id/decryption_error_view"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toStartOf="@id/tv_event_header_day_indicator"
+            android:layout_toEndOf="@id/decryption_error_icon"
+            android:alpha="0.1"
+            android:background="@drawable/shape_background_decryption_error"
+            android:backgroundTint="@color/text_norm" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/v_event_spacing"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_below="@id/rl_event_day_container"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>

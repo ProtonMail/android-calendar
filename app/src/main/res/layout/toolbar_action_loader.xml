@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/action_clickable_size"
+    android:layout_height="@dimen/action_clickable_size">
+
+    <ProgressBar
+        android:layout_width="@dimen/attendee_avatar_size"
+        android:layout_height="@dimen/attendee_avatar_size"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:indeterminateOnly="true"
+        android:indeterminateTint="?attr/proton_icon_accent"
+        android:indeterminateTintMode="src_in"
+        android:clickable="false"
+        android:focusable="false" />
+
+</FrameLayout>

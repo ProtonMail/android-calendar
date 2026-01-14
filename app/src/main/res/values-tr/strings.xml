@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(başlıksız)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">(e-posta adresi yok)</string>
+    <string name="default_user_display_name">(ad yok)</string>
+    <string name="toast_copied_to_clipboard">Panoya kopyalandı</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">Etkinliği sil</string>
+    <string name="dialog_title_delete_recurring_event">Yinelenen etkinliği sil</string>
+    <string name="dialog_description_delete_event">Bu etkinliği silmek istiyor musunuz?</string>
+    <string name="dialog_description_delete_recurring_event">Bu dizideki tüm etkinlikleri silmek ister misiniz?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">Bu etkinlik düzenleyen tarafından güncellendi. Bu etkinliği silmek istiyor musunuz?</string>
+    <string name="dialog_button_delete">Sil</string>
+    <string name="dialog_button_cancel">İptal</string>
+    <string name="dialog_button_continue">İlerle</string>
+    <string name="dialog_button_close">Kapat</string>
+    <string name="dialog_button_remove">Kaldır</string>
+    <string name="dialog_button_download">İndir</string>
+    <string name="dialog_button_update">Güncelle</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">Etkinlik katılımcılarına bir iptal e-postası gönderilecek. Bu etkinliği silmek ister misiniz?</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">Adresiniz kullanımdan kaldırılmış. Etkinlik katılımcılarına bir iptal e-postası gönderilemeyecek. Yine de bu etkinliği silmek ister misiniz?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">Etkinlik katılımcılarına bir iptal e-postası gönderilecek. Bu dizideki tüm etkinlikleri silmek ister misiniz?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">Adresiniz kullanımdan kaldırılmış. Etkinlik katılımcılarına bir iptal e-postası gönderilemeyecek. Yine de bu dizideki tüm etkinlikleri silmek ister misiniz?</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">Bu etkinliğin düzenleyicisine daveti reddettiğiniz bildirilecek. Bu etkinliği silmek ister misiniz?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">Davet edilen adresten e-posta gönderemeyeceğiniz için bu etkinliğin düzenleyicisine daveti reddettiğiniz bildirilemeyecek. Yine de bu etkinliği silmek ister misiniz?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">Bu etkinlik dizisinin düzenleyicisine, daveti reddettiğiniz bildirilecek. Dizideki tüm etkinlikleri silmek ister misiniz?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">Davet edilen adresten e-posta gönderemeyeceğiniz için bu etkinlik dizisinin düzenleyicisine daveti reddettiğiniz bildirilemeyecek. Yine de dizideki tüm etkinlikleri silmek ister misiniz?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">Bu etkinlik güncellendi. Düzenleyiciye, daveti reddettiğiniz bildirilecek. Bu etkinliği silmek ister misiniz?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">Bu etkinlik güncellendi. Davet edilen adresten e-posta gönderemeyeceğiniz için bu etkinliğin düzenleyicisine daveti reddettiğiniz bildirilemeyecek. Yine de bu etkinliği silmek ister misiniz?</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">Düzenleyici tarafından daha önce güncellenen etkinlikler tutulacak, ancak yanıtlarınız kaybolacak</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">Düzenleyici tarafından daha önce güncellenen etkinlikler tutulacak</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">Daveti reddettiğiniz düzenleyiciye bildirilemeyecek:\n\n• %1$s\n\nYine de etkinliği silmek ister misiniz?</string>
+    <string name="dialog_button_set">Uygula</string>
+    <string name="dialog_button_ok">Tamam</string>
+    <string name="action_save">Kaydet</string>
+    <string name="action_done">Tamam</string>
+    <string name="action_edit">Düzenle</string>
+    <string name="action_delete">Sil</string>
+    <string name="action_add">Ekle</string>
+    <string name="action_remove">Kaldır</string>
+    <string name="action_leave">Ayrıl</string>
+    <string name="action_recreate">Temizle</string>
+    <string name="action_today">Bugün</string>
+    <string name="action_create_event">Etkinlik ekle</string>
+    <string name="action_mark_default">Varsayılan olarak işaretle</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">Etkinlik yok</string>
+    <string name="agenda_loading_events">Etkinlikler yükleniyor…</string>
+    <string name="agenda_loading_events_error">Etkinlikler yüklenirken bir sorun çıktı</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+ %1$d diğer</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">Tüm gün</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">Etkinlik saatinde</string>
+    <string name="event_alarm_label_at_event_time_by_email">Etkinlik saatinde e-posta ile</string>
+    <string name="event_alarm_label_on_the_same_day">Aynı gün</string>
+    <string name="event_alarm_label_before">%1$s önce</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s önce e-posta ile</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s %2$s saatinde</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s %2$s saatinde e-posta ile</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s önce %2$s saatinde</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s önce %2$s saatinde e-posta ile</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s her %2$s günü</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s her %2$d günü</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s her %2$s günü</string>
+    <string name="event_recurrence_none">Yinelenmiyor</string>
+    <string name="event_recurrence_daily">Günlük</string>
+    <string name="event_recurrence_weekly">Haftalık</string>
+    <string name="event_recurrence_monthly">Aylık</string>
+    <string name="event_recurrence_yearly">Yıllık</string>
+    <string name="event_recurrence_weekly_on_all_days">tüm günler</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">%1$s tarihine kadar</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">%1$s (%2$s) zamanına kadar</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">İptal edildi</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(kullanımdan kaldırılmış)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(Varsayılan)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d evet</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d belki</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d hayır</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d bekleyen</string>
+    <string name="event_attendee_is_organizer">Düzenleyici sizsiniz</string>
+    <string name="event_attendee_organizer">Düzenleyici</string>
+    <string name="event_attendee_optional">İsteğe bağlı</string>
+    <string name="event_attendee_is_current_user">Siz</string>
+    <string name="event_answer_attending">Katılıyor musunuz?</string>
+    <string name="event_answer_yes">Evet</string>
+    <string name="event_answer_no">Hayır</string>
+    <string name="event_answer_maybe">Belki</string>
+    <string name="event_decryption_error_dialog_title">Etkinliğin şifresi çözülemedi</string>
+    <string name="event_decryption_error_dialog_message">Bu etkinliğin içeriğinin şifresi çözülemedi.</string>
+    <string name="event_decryption_error_dialog_confirmation">Etkinliği sil</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">Etkinlikleri sil</string>
+    <string name="event_decryption_error_dialog_close">Kapat</string>
+    <string name="event_signature_verification_failure">Etkinlik imzası doğrulanamadı. <a href="https://proton.me/support/what-is-a-digital-signature">Ayrıntılı bilgi alın</a></string>
+    <string name="event_signature_verification_in_progress">Etkinlik imzası doğrulanıyor.</string>
+    <string name="event_signature_verification_network_error">Etkinlik imzası doğrulanması bir sorun nedeniyle doğrulanamadı. <a href="">Yeniden deneyin</a></string>
+    <string name="event_change_answer_recurring_title">Yinelenen etkinliği güncelle</string>
+    <string name="event_change_answer_recurring_description">Bu dizideki tüm etkinlikler için yanıtınızı değiştirmek ister misiniz?</string>
+    <string name="event_change_answer_recurring_overwrite_description">Bu dizideki tüm etkinlikler için yanıtınızı değiştirmek ister misiniz?\nDüzenleyici tarafından daha önce güncellenen etkinliklere verdiğiniz yanıtlardan bazıları kaybolacak.</string>
+    <string name="event_change_answer_recurring_single_edit_description">Bu etkinlik düzenleyici tarafından güncellendi. Yanıtınızı yalnızca dizideki bu etkinlik için değiştirmek ister misiniz?</string>
+    <string name="event_change_answer_recurring_cancel">İptal</string>
+    <string name="event_change_answer_recurring_confirm">Güncelle</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s, %2$s davetinizi kabul etti</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s, %2$s davetinizi reddetti</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">%1$s, %2$s davetinizi kesin olmamakla birlikte kabul etti</string>
+    <string name="event_organizer_send_prefs_error_title">Düzenleyiciye bildirim gönderilemedi</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">Düzenleyiciye daveti kabul ettiğiniz bildirilemedi</string>
+    <string name="event_organizer_send_prefs_message_declined_title">Düzenleyiciye daveti reddettiğiniz bildirilemedi</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">Düzenleyiciye daveti kesin olmamakla birlikte kabul ettiğiniz bildirilemedi</string>
+    <string name="event_organizer_send_prefs_message_default_title">Düzenleyiciye daveti yanıtladığınız bildirilemedi</string>
+    <string name="event_organizer_send_prefs_button_title">Tamam</string>
+    <string name="event_attendees_send_prefs_error_title">Katılımcılara bildirim gönderilemedi</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">Hiç bir katılımcıya değişiklikleriniz bildirilemedi:\n\n• %1$s\n\nYine de ilerlemek ister misiniz?</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">Şu katılımcılara değişiklikleriniz bildirilemedi:\n\n• %1$s\n\nYine de ilerlemek ister misiniz?</string>
+    <string name="event_attendees_send_prefs_error_confirm">İlerle</string>
+    <string name="event_attendees_send_prefs_error_cancel">İptal</string>
+    <string name="event_send_prefs_error_address_disabled">bu adres bulunamadı</string>
+    <string name="event_send_prefs_error_getting_contact">kişi bilgileri alınamadı</string>
+    <string name="event_send_prefs_error_network">ağ sorunu</string>
+    <string name="event_send_prefs_trusted_keys_invalid">güvenilen anahtarlar geçersiz</string>
+    <string name="event_send_prefs_public_keys_invalid">herkese açık anahtarlar geçersiz</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">kişi imzası geçersiz</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">Zoom görüşmesine katıl</string>
+    <string name="zoom_meeting_title">Zoom görüşmesi</string>
+    <string name="generic_meeting_id">Kimlik: %1$s</string>
+    <string name="generic_meeting_password">Parola: %1$s</string>
+    <string name="generic_meeting_more_details">Ayrıntıları görüntüle</string>
+    <string name="generic_meeting_less_details">Ayrıntıları gizle</string>
+    <string name="generic_meeting_host">Görüşme sahibi</string>
+    <string name="generic_meeting_link">Görüşme bağlantısı</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Katılma yönergesi</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">Yeni etkinlik</string>
+    <string name="event_text_edit_event">Etkinliği düzenle</string>
+    <string name="event_hint_title">Başlık ekleyin</string>
+    <string name="event_hint_location">Konum ekle</string>
+    <string name="event_text_add_participants">Katılımcı ekle</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">Katılımcılar (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">Siz</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ %1$d diğer</string>
+    <string name="event_text_switch_all_day">Tüm gün</string>
+    <string name="event_text_date_start">Başlangıç</string>
+    <string name="event_text_date_end">Bitiş</string>
+    <string name="event_text_date_repeat">Yinelenme</string>
+    <string name="event_text_date_repeat_never">Yinelenmiyor</string>
+    <string name="event_text_attendees">Katılımcılar</string>
+    <string name="event_text_attendees_none">Yok</string>
+    <string name="event_text_calendar">Takvim</string>
+    <string name="event_text_timezone_start">Saat dilimi</string>
+    <string name="invite_in_shared_calendar_disclaimer">Yalnızca kişisel takvimlerden davet gönderilebilir.</string>
+    <string name="invite_change_calendar_disclaimer">Davetler ile ilişkilendirilmiş takvim değiştirilemez.</string>
+    <string name="invite_change_attendees_disclaimer">Henüz davetler ile ilişkilendirilmiş katılımcılar değiştirilemez.</string>
+    <string name="change_calendar_recurring_disclaimer">Yinelenen etkinlikler ile ilişkilendirilmiş takvim henüz değiştirilemez.</string>
+    <string name="update_event">Etkinliği güncelle</string>
+    <string name="update_invite_send_email">Etkinlik katılımcılarına bir davet güncellemesi gönderilecek.</string>
+    <string name="update_recurring_event">Yinelenen etkinliği güncelle</string>
+    <string name="update_recurring_all_events">Bu dizideki tüm etkinlikleri güncellemek ister misiniz?</string>
+    <string name="update_recurring_invite_send_email">Bu dizideki tüm etkinlikleri güncelleyeceksiniz. Etkinlik katılımcılarına bir davet güncellemesi gönderilecek.</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">Ne aramıştınız?</string>
+    <string name="search_empty_results_title">Herhangi bir sonuç bulunamadı</string>
+    <string name="search_empty_results_subtitle">Başka bir ifade aramayı deneyin. Örnekler: Ali, doğum günü, toplantı, kitap kulübü.</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">Takvimler indiriliyor (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">Kalan süre: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">Kalan süre hesaplanıyor…</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">neredeyse hazır</string>
+    <string name="search_downloading_pause">İndirmeyi duraklat</string>
+    <string name="search_settings_dialog_toggle_off_title">İndirilmiş tüm takvimler kaldırılsın mı?</string>
+    <string name="search_settings_dialog_toggle_off_text">Arama yapmak isterseniz tüm takvimlerinizi yeniden indirmeniz gerekecek.</string>
+    <string name="search_settings_dialog_toggle_on_title">Takvimler bu aygıta indirilsin mi?</string>
+    <string name="search_settings_dialog_toggle_on_text">Arama yapabilmek için bu işlem gereklidir.</string>
+    <string name="search_onboarding_header">Takviminizde arama yapmak ister misiniz?</string>
+    <string name="search_onboarding_text">Öncelikle takvimlerinizin şifrelenmiş bir kopyasını indirmeniz gerekir. Bu yalnızca bir dakikanızı alır ve uygulamayı kullanmayı sürdürebilirsiniz. <a href="https://proton.me/support/calendar-search">Ayrıntılı bilgi alın</a></string>
+    <string name="search_onboarding_action_download_calendars">Takvimleri indir</string>
+    <string name="search_onboarding_action_pause">Duraklat</string>
+    <string name="search_onboarding_action_resume">Sürdür</string>
+    <string name="search_onboarding_action_retry">Yeniden dene</string>
+    <string name="search_onboarding_progress_header_ongoing">Takvimler indiriliyor…</string>
+    <string name="search_onboarding_progress_header_completed">İndirme tamamlandı</string>
+    <string name="search_onboarding_progress_header_paused">Takvimlerin indirilmesi duraklatıldı</string>
+    <string name="search_onboarding_progress_header_error">Takvimler indirilirken sorun çıktı</string>
+    <string name="search_spotlight_activation_snack">Takvimde arama özelliği açıldı</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">Bildirim ekle</string>
+    <string name="event_text_description">Açıklama</string>
+    <string name="event_hint_description">Açıklama ekle</string>
+    <string name="event_text_custom">özel</string>
+    <string name="event_alert_invalid_start_end_date">Etkinlik başlangıç tarihi, bitiş tarihinden sonra olamaz</string>
+    <string name="event_alarms_title">Bildirimler</string>
+    <string name="event_custom_alarms_field">Bildir</string>
+    <string name="event_custom_alarms_title">Özel bildirimler</string>
+    <string name="event_alarm_partial_day_1">etkinlik saatinde</string>
+    <string name="event_alarm_partial_day_2">10 dakika</string>
+    <string name="event_alarm_partial_day_3">30 dakika</string>
+    <string name="event_alarm_partial_day_4">1 saat</string>
+    <string name="event_alarm_partial_day_5">1 hafta</string>
+    <string name="event_alarm_all_day_1">aynı gün %1$s saatinde</string>
+    <string name="event_alarm_all_day_2">1 gün önce %1$s saatinde</string>
+    <string name="event_alarm_all_day_3">1 hafta önce %1$s saatinde</string>
+    <string name="event_alarm_all_day_4">3 hafta önce %1$s saatinde</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">%1$s saatinde</string>
+    <string name="event_alarm_action">Gönderim şekli</string>
+    <string name="event_alarm_action_notification">Bildirim</string>
+    <string name="event_alarm_action_email">E-posta</string>
+    <string name="event_alarm_same_day">şu günde</string>
+    <string name="event_recurrence_1">yinelenmesin</string>
+    <string name="event_recurrence_2">her gün</string>
+    <string name="event_recurrence_3">her hafta</string>
+    <string name="event_recurrence_4">her ay</string>
+    <string name="event_recurrence_5">her yıl</string>
+    <string name="event_recurrence_title">Yinelenme</string>
+    <string name="event_recurrence_custom_title">Özel yinelenme</string>
+    <string name="event_recurrence_occurs_every">Yinelenme sıklığı</string>
+    <string name="event_recurrence_occurs_on">Yinelenme tarihi</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">%1$d. günde</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">%1$s gününde</string>
+    <string name="event_recurrence_ends_on">Bitiş</string>
+    <string name="event_recurrence_ends_never">yok</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">şu günde</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">%1$s günlerinde</string>
+    <string name="event_recurrence_ends_after_count_prefix">şundan sonra</string>
+    <string name="event_recurring_edit_this">Bu etkinlik</string>
+    <string name="event_recurring_edit_this_and_future">Bu ve gelecekteki etkinlikler</string>
+    <string name="event_recurring_edit_all_events">Tüm etkinlikler</string>
+    <string name="event_discard_changes_title">Değişiklikler yok sayılsın mı?</string>
+    <string name="event_discard_changes_description">Kaydedilmemiş tüm değişiklikleri kaybedeceksiniz.</string>
+    <string name="event_discard_changes_cancel">Düzenlemeyi sürdür</string>
+    <string name="event_discard_changes_confirm">Yok say</string>
+    <string name="event_recurring_update_this_title">Yinelenen etkinliği güncelle</string>
+    <string name="event_recurring_update_this_description">Yinelenme değişiklikleri kaybolacak</string>
+    <string name="event_recurring_update_all_description">Bu dizide yapılmış önceki değişiklikler kaybolacak</string>
+    <string name="event_recurring_update_this_cancel">İptal</string>
+    <string name="event_recurring_update_this_confirm">Güncelle</string>
+    <string name="event_allow_contacts_title">Proton Calendar kişilerinize erişebilsin mi?</string>
+    <string name="event_allow_contacts_description">Proton Calendar otomatik tamamlama özelliğini kullanabilmek için kişilerinize erişmeli</string>
+    <string name="event_allow_contacts_cancel">Reddet</string>
+    <string name="event_allow_contacts_confirm">İzin ver</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Ynt: %2$s%3$s tarihinde %1$s saatinde başlayan bir etkinlik daveti</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">Ynt: %1$s zamanındaki etkinlik daveti</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">Ynt: %1$s zamanında başlayan etkinlik daveti</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">%2$s%3$s tarihinde %1$s saatinde başlayan bir etkinlik daveti</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">%1$s zamanındaki etkinlik daveti</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">%1$s zamanında başlayan etkinlik daveti</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">%2$s%3$s tarihinde %1$s saatinde başlayan bir etkinlik için güncelleme</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">%1$s zamanındaki etkinlik için güncelleme</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">%1$s zamanında başlayan etkinlik için güncelleme</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">%2$s%3$s tarihinde %1$s saatinde başlayan bir etkinliğin iptal bildirimi</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">%1$s zamanındaki bir etkinliğin iptal bildirimi</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">%1$s zamanında başlayan bir etkinliğin iptal bildirimi</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s etkinliğine davetlisiniz\nZamanı: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s güncellendi\nZamanı: %2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (tüm gün)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s %2$s %3$s saatinde - %4$s %5$s %6$s saatinde</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nYeri: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nAçıklama: %1$s</string>
+    <string name="event_send_invite_dialog_title">Davet gönder</string>
+    <string name="event_send_invite_dialog_description">Eklenen katılımcılara bir davet gönderilecek.</string>
+    <string name="event_send_invite_dialog_confirm">Gönder</string>
+    <string name="event_send_invite_dialog_cancel">İptal</string>
+    <string name="event_add_participants_dialog_title">Katılımcı ekle</string>
+    <string name="event_add_participants_dialog_description">Eklenen katılımcılara bir davet gönderilecek.</string>
+    <string name="recurring_event_add_participants_dialog_description">Eklenen katılımcılara bu dizideki tüm etkinlikler için bir davet gönderilecek.</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">Eklenen tüm katılımcılara bu dizideki tüm etkinlikler için bir davet gönderilecek.\nBu dizide daha önce yapılmış değişiklikler kaybolacak.</string>
+    <string name="event_add_participants_dialog_confirm">Gönder</string>
+    <string name="event_add_participants_dialog_cancel">İptal</string>
+    <string name="event_remove_participants_dialog_title">Katılımcıları kaldır</string>
+    <string name="event_remove_participants_dialog_description">Kaldırılan katılımcılara bir iptal bildirimi e-postası gönderilecek.</string>
+    <string name="recurring_event_remove_participants_dialog_description">Kaldırılan katılımcılara bu dizideki tüm etkinlikler için bir iptal bildirimi gönderilecek.</string>
+    <string name="event_add_and_remove_participants_dialog_description">Eklenen ve kaldırılan katılımcılara bildirim gönderilecek.</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">Bu dizideki tüm etkinlikler eklenen ve kaldırılan katılımcılara bildirilecek.</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s iptal edildi.</string>
+    <string name="event_save_changes">Değişiklikleri kaydet</string>
+    <string name="event_update_add_participants_dialog_description">Var olan ve eklenen katılımcılara bildirim gönderilecek.</string>
+    <string name="recurring_event_update_add_participants_dialog_description">Bu dizideki tüm etkinlikleri güncelleyeceksiniz. Değişiklikler var olan ve eklenen katılımcılara bildirilecek.</string>
+    <string name="event_update_remove_participants_dialog_description">Var olan ve kaldırılan katılımcılara bildirim gönderilecek.</string>
+    <string name="event_update_remove_all_participants_dialog_description">Kaldırılan katılımcılara bildirim gönderilecek.</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">Bu dizideki tüm etkinlikleri güncelleyeceksiniz. Değişiklikler var olan ve kaldırılan katılımcılara bildirilecek.</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">Bu dizideki tüm etkinlikleri güncelleyeceksiniz. Değişiklikler kaldırılan katılımcılara bildirilecek.</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">Var olan, eklenen ve kaldırılan katılımcılara bildirim gönderilecek.</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">Bu dizideki tüm etkinlikleri güncelleyeceksiniz. Değişiklikler var olan, eklenen ve kaldırılan katılımcılara bildirilecek.</string>
+    <string name="success_snack_email_update_recurring">Katılımcılara bildirim gönderildi ve değişiklikler kaydedildi</string>
+    <string name="success_snack_email_update">Katılımcılara bildirim gönderildi ve değişiklikler kaydedildi</string>
+    <string name="success_snack_add_attendees_recurring">Davet gönderildi ve katılımcılar tüm etkinliklere eklendi</string>
+    <string name="success_snack_add_attendees">Davet gönderildi ve katılımcılar eklendi</string>
+    <string name="success_snack_remove_attendees_recurring">İptal bildirimi gönderildi ve katılımcılar tüm etkinlliklerden kaldırıldı</string>
+    <string name="success_snack_remove_attendees">İptal bildirimi gönderildi ve katılımcılar kaldırıldı</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">Takvimlerim</string>
+    <string name="nav_view_subscribed_calendars">Abone olunmuş takvimler</string>
+    <string name="nav_view_other_calendars">Diğer takvimler</string>
+    <string name="nav_view_disabled_calendars">%1$s (kullanımdan kaldırılmış)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (eşitlenmemiş)</string>
+    <string name="nav_view_syncing_calendars">%1$s (eşitleniyor)</string>
+    <string name="nav_view_more">Diğer</string>
+    <string name="nav_view_switcher">Görüntüle</string>
+    <string name="nav_view_switcher_day">Günlük</string>
+    <string name="nav_view_switcher_three_day">3 günlük</string>
+    <string name="nav_view_switcher_week">Haftalık</string>
+    <string name="nav_view_switcher_agenda">Gün akışı</string>
+    <string name="nav_view_switcher_month">Aylık</string>
+    <string name="nav_view_timezone">Saat dilimi</string>
+    <string name="nav_view_settings">Ayarlar</string>
+    <string name="nav_view_feedback">Geri bildirimde bulunun</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">Genel</string>
+    <string name="nav_view_more_bug">Sorun bildirin</string>
+    <string name="nav_view_more_subscription">Abonelik</string>
+    <string name="nav_view_more_logout">Oturumu kapat</string>
+    <string name="nav_view_more_login">Oturum aç</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">Bu özellik yakında kullanılabilecek</string>
+    <string name="snack_event_deleted">Etkinlik silindi</string>
+    <string name="snack_event_deleted_as_organizer">İptal gönderildi ve etkinlik silindi</string>
+    <string name="snack_event_deleted_as_attendee">Yanıt gönderildi ve etkinlik silindi</string>
+    <string name="snack_event_deleted_error">Etkinlik silinirken sorun çıktı</string>
+    <string name="snack_event_deleted_as_organizer_error">İptak e-postası gönderilemedi. Lütfen yeniden deneyin</string>
+    <string name="snack_event_opening_error">Etkinlik açılırken sorun çıktı</string>
+    <string name="snack_event_saving">Etkinlik kaydediliyor</string>
+    <string name="snack_event_deleting">Etkinlik siliniyor</string>
+    <string name="snack_event_changing_answer">Yanıt güncelleniyor</string>
+    <string name="snack_event_part_stat_updated">Katılım durumu güncellendi.</string>
+    <string name="snack_event_updated">Etkinlik güncellendi</string>
+    <string name="snack_event_updated_recurring">Tüm etkinlikler güncellendi</string>
+    <string name="snack_event_updated_error_failed_mail">Davet gönderilemedi</string>
+    <string name="snack_update_event_error_failed_mail">Güncellenemedi</string>
+    <string name="snack_lost_zoom_access">Bu etkinliği düzenlemek için Zoom ile bağlantı kurun.</string>
+    <string name="snack_lost_zoom_access_acion">Bağlan</string>
+    <string name="snack_zoom_meeting_does_not_exist">Bu Zoom görüşmesi iptal edilmiş. Bu etkinliği düzenlemek için bağlantıyı kaldırın.</string>
+    <string name="snack_event_updated_error">Etkinlik güncellenirken sorun çıktı</string>
+    <string name="snack_event_created">Etkinlik eklendi</string>
+    <string name="snack_event_created_failed_mail">Etkinlik eklendi ancak davet gönderilemedi</string>
+    <string name="snack_event_created_error">Etkinlik eklenirken sorun çıktı</string>
+    <string name="snack_event_opening_edit_error">Etkinlik düzenlenmek için açılırken sorun çıktı</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">Bu yinelenen etkinlik yalnızca Calendar internet uygulamasından silinebilir.</string>
+    <string name="snack_event_edit_with_attendees_error">Şimdilik katılımcıları olan etkinliklerin düzenlenmesi desteklenmiyor</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">Aynı anda hem katılımcı ekleyip hem takvimi değiştiremezsiniz</string>
+    <string name="snack_event_init_error">Yeni etkinlik hazırlanırken sorun çıktı</string>
+    <string name="snack_event_calendar_error">Takvim değiştirilirken sorun çıktı</string>
+    <string name="snack_event_maximum_alarm_reached_error">Gönderilebilecek en fazla bildirim sayısına ulaşıldı</string>
+    <string name="snack_send_bug_report_success">Bildirim gönderildi. Geri bildiriminiz için teşekkür ederiz</string>
+    <string name="snack_send_bug_report_error">Bildirim gönderilirken sorun çıktı. Lütfen bir süre sonra yeniden deneyin</string>
+    <string name="snack_send_bug_report_description_empty">Lütfen bildiriminiz için bir açıklama yazın</string>
+    <string name="snack_create_event_no_active_personal_calendar">Etkinlik eklemek için etkin bir kişisel takviminiz olmalı</string>
+    <string name="snack_create_event_no_active_calendar">Etkinlik oluşturmak için etkin bir takviminiz olmalı</string>
+    <string name="snack_add_self_as_participant">Kendinizi davet edemezsiniz</string>
+    <string name="snack_maximum_participants_reached">Olabilecek en fazla katılımcı sayısına ulaşıldı.</string>
+    <string name="snack_add_participant_error">Katılımcı eklenirken sorun çıktı</string>
+    <string name="snack_add_participant_invalid_email">E-posta geçersiz</string>
+    <string name="snack_change_attendee_answer_error">Yanıt gönderilirken sorun çıktı. Lütfen bir süre sonra yeniden deneyin</string>
+    <string name="snack_network_error">Ağ sorunu. Lütfen bir süre sonra yeniden deneyin</string>
+    <string name="snack_import_event_signed_out">Etkinlikleri içe aktarmak için oturum açmalısınız</string>
+    <string name="snack_app_link_signed_out">Etkinliğinizi görmek için oturum açmalısınız</string>
+    <string name="snack_update_default_calendar">Varsayılan takvim güncellendi</string>
+    <string name="snack_update_default_calendar_error">Varsayılan takvim güncellenirken sorun çıktı. Lütfen bir süre sonra yeniden deneyin</string>
+    <string name="snack_calendar_init_error">Takvim bilgileri yüklenirken sorun çıktı</string>
+    <string name="snack_holiday_calendar_init_error">Tatil takvimi bilgileri yüklenirken sorun çıktı</string>
+    <string name="snack_update_calendar_error">Takvim bilgileri güncellenirken sorun çıktı. Lütfen bir süre sonra yeniden deneyin</string>
+    <string name="snack_update_calendar_settings_error">Bazı takvim bilgileri güncellenirken sorun çıktı. Lütfen bir süre sonra yeniden deneyin</string>
+    <string name="snack_update_calendar_success">Takvim güncellendi</string>
+    <string name="snack_create_calendar_success">Takvim eklendi</string>
+    <string name="snack_add_calendar_success">Takvim eklendi</string>
+    <string name="snack_calendar_saving">Takvim kaydediliyor</string>
+    <string name="snack_create_calendar_error">Takvim eklenirken sorun çıktı. Lütfen bir süre sonra yeniden deneyin</string>
+    <string name="snack_add_calendar_error">Takvim eklenirken sorun çıktı. Lütfen bir süre sonra yeniden deneyin</string>
+    <string name="snack_create_calendar_settings_error">Takvim eklendi fakat bazı bilgiler güncellenmedi. Lütfen bir süre sonra yeniden deneyin</string>
+    <string name="snack_ics_default_error">Takvim açılırken sorun çıktı</string>
+    <string name="snack_ics_event_not_found_error">Etkinlik bulunamadı</string>
+    <string name="snack_ics_file_not_found_error">Dosya bulunamadı</string>
+    <string name="snack_ics_create_error">Etkinlik eklenirken sorun çıktı</string>
+    <string name="snack_ics_parsing_error">Takvim okunurken sorun çıktı</string>
+    <string name="snack_ics_unsupported_method_error">Bu etkinlik türü henüz desteklenmiyor</string>
+    <string name="snack_ics_unsupported_add_error">Şimdilik bir etkinliğe, yinelenen bir etkinlik eklenmesi desteklenmiyor</string>
+    <string name="snack_ics_unsupported_counter_error">Şimdilik etkinlik zamanının değiştirilmesi desteklenmiyor</string>
+    <string name="snack_ics_unsupported_refresh_error">Şimdilik etkinlik yenilenmesi desteklenmiyor</string>
+    <string name="snack_ics_unsupported_publish_error">Şimdilik etkinliklerin içe aktarılması desteklenmiyor</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">Şimdilik yalnızca bir dizideki tüm etkinliklere yanıt verilmesini destekliyoruz</string>
+    <string name="snack_ics_party_crasher_error">E-posta adresiniz katılımcı listesinde yok</string>
+    <string name="snack_ics_reply_party_crasher_error">Düzenleyici tarafından davet edilmemiş katılımcılar eklenemez</string>
+    <string name="snack_ics_missing_uid_error">Etkinliğin UID değeri eksik</string>
+    <string name="snack_ics_no_active_personal_calendar_error">Bu hesap ile ilişkilendirilmiş etkin bir kişisel takvim bulunamadı</string>
+    <string name="snack_ics_no_active_calendar_error">Bu hesap ile ilişkilendirilmiş etkin bir takvim bulunamadı</string>
+    <string name="snack_ics_unsupported_duration_error">Süre özelliği desteklenmiyor</string>
+    <string name="snack_ics_too_many_events_error">Henüz birden çok etkinlik desteklenmiyor</string>
+    <string name="snack_ics_no_events_error">Bu takvimde herhangi bir etkinlik yok</string>
+    <string name="snack_ics_invalid_error">Bu davet geçersiz</string>
+    <string name="snack_ics_disabled_calendar_error">Bu etkinliği güncellemek için bu takvimle bağlantılı adresi yeniden kullanıma alın</string>
+    <string name="snack_ics_event_deleted_error">Etkinlik artık takviminizde değil</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s davetinizi kabul etti</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s davetinizi kesin olmamakla birlikte kabul etti</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s davetinizi reddetti</string>
+    <string name="snack_app_link_invalid">Etkinlik bağlantısı geçersiz</string>
+    <string name="snack_app_link_error">Etkinlik açılırken sorun çıktı</string>
+    <string name="snack_app_link_import_error">Kimlik doğrulaması iptal edildi</string>
+    <string name="snack_notification_already_added">Bildirim zaten eklenmiş</string>
+    <string name="snack_opening_ics">Etkinlik açılıyor…</string>
+    <string name="snack_invite_in_shared_calendar_error">Paylaşılmış bir takvim için davet oluşturulmasına izin verilmiyor</string>
+    <string name="snack_down_banner">Proton sunucuları çalışmıyor. Ayrıntılı bilgi almak için durum sayfamıza bakın.</string>
+    <string name="snack_down_banner_action">Durum sayfasını aç</string>
+    <string name="snack_color_per_event_paid_feature">Özel etkinlik renklerini kullanabilmek için tarifenizi yükseltin</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">Etkinlik bulunamadı</string>
+    <string name="error_occurrence_does_not_exist">Yinelenme bulunamadı</string>
+    <string name="update_timezone_dialog_title">Saat dilimi değişti</string>
+    <string name="update_timezone_dialog_message">Sistem saat diliminiz %1$s olarak değiştirilmiş gibi görünüyor. Saat diliminizi güncellemek ister misiniz?</string>
+    <string name="update_timezone_dialog_confirmation">Güncelle</string>
+    <string name="update_timezone_dialog_cancel">İptal</string>
+    <string name="contacts_permission_dialog_title">Proton Calendar kişilerinize erişebilsin mi?</string>
+    <string name="contacts_permission_dialog_message">Proton Calendar, kişileri etkinliklerinize kolayca ekleyebilmeniz için telefon rehberinize erişebilmelidir.</string>
+    <string name="contacts_permission_dialog_allow">İzin ver</string>
+    <string name="contacts_permission_dialog_open_settings">Ayarları aç</string>
+    <string name="contacts_permission_dialog_cancel">Reddet</string>
+    <string name="dialog_title_calendar_picker">Takvim</string>
+    <string name="dialog_title_calendar_color_picker">Takvim rengi</string>
+    <string name="dialog_title_event_color_picker">Etkinlik rengi</string>
+    <string name="import_from_google_title">Google üzerinden içe aktar</string>
+    <string name="notifications_permission_dialog_title">Proton Calendar bildirimleri görüntülensin mi?</string>
+    <string name="notifications_permission_dialog_message">Proton Calendar yaklaşan etkinlik bildirimlerini görüntüleyebilmek için izninizi istiyor.</string>
+    <string name="notifications_permission_dialog_open_settings">Ayarları aç</string>
+    <string name="notifications_permission_dialog_cancel">Reddet</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">Etkinlik bildirimleri</string>
+    <string name="notification_channel_sync">Takvim eşitleme</string>
+    <string name="notification_channel_calendar_fetch">Takvimler alınıyor</string>
+    <string name="notification_sync">Takvimler eşitleniyor…</string>
+    <string name="notification_text_today">Bugün</string>
+    <string name="notification_text_today_part_time">Bugün %1$s saatinde</string>
+    <string name="notification_text_tomorrow">Yarın</string>
+    <string name="notification_text_tomorrow_part_time">Yarın %1$s saatinde</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s %2$s saatinde</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">Konu</string>
+    <string name="bug_report_hint_description">Lütfen sorunu açıklayın ve varsa hata iletilerini ekleyin.</string>
+    <string name="bug_report_discard_changes_title">Kaydedilmemiş değişiklikler</string>
+    <string name="bug_report_discard_changes_description">Formda kaydedilmemiş bilgiler var. Bunları yok saymak istediğinize emin misiniz?</string>
+    <string name="bug_report_discard_changes_cancel">Yazmayı sürdürün</string>
+    <string name="bug_report_discard_changes_confirm">Yok say</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">Uygulama ayarları</string>
+    <string name="settings_theme_title">Tema</string>
+    <string name="settings_theme_info">Bu ayar, yalnızca bu aygıttaki Proton Calendar uygulamasının görünümünü etkiler. Tema değiştirildikten sonra uygulama yeniden başlatılır.</string>
+    <string name="settings_timezone_title">Saat dilimi</string>
+    <string name="settings_language_title">Uygulama dili</string>
+    <string name="settings_language_default">Otomatik algılansın</string>
+    <string name="settings_default_view_title">Varsayılan görünüm</string>
+    <string name="settings_default_view_default">Son görünüm</string>
+    <string name="settings_update_timezone_title">Saat dilimi ayarının güncellenmesi istensin</string>
+    <string name="settings_update_timezone_subtitle">Sistemin saat dilimi geçerli saat dilimi ayarından farklıysa, güncellemeniz istenir.</string>
+    <string name="settings_update_timezone_checkbox">Bana bir daha sorma</string>
+    <string name="settings_week_start_title">Haftanın ilk günü</string>
+    <string name="settings_time_format_title">Saat biçimi</string>
+    <string name="settings_week_numbers_title">Hafta numaraları görüntülensin</string>
+    <string name="settings_auto_invites_title">Davetler takvime eklensin ve bekliyor olarak işaretlensin</string>
+    <string name="settings_search_title">Takvimlerde arama</string>
+    <string name="settings_search_subtitle">Arama yapmak için takvim içeriğini aygıtınıza indirir ve depolar. Bu özelliği kapatmak, indirilen içeriği kaldırır.\n\nArama, deneysel bir özelliktir. Açılması, uygulamayı kararsız hale getirebilir.</string>
+    <string name="settings_alternative_routing_title">Alternatif yöneltme kullanılabilsin</string>
+    <string name="settings_alternative_routing_subtitle">Proton sitelerine erişimin engellenmiş olması durumunda, uygulama Proton ağına ulaşmak için alternatif ağ yöneltmesi kullanmayı dener. Güvenlik duvarlarını veya ağ sorunlarını aşmakta yararlı olabilir. Bağlantı güvenilirliğini artırmak için bu seçeneği açık tutmanız önerilir.</string>
+    <string name="settings_value_placeholder">Seçmek için dokunun</string>
+    <string name="settings_general_title">Genel</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s vb.</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">tema</string>
+    <string name="settings_general_info_language">dil</string>
+    <string name="settings_general_info_time_zone">saat dilimi</string>
+    <string name="settings_general_info_calendar_layout">takvim görünümü</string>
+    <string name="settings_calendars">Takvimlerim</string>
+    <string name="settings_calendars_empty">Herhangi bir takvim bulunamadı!</string>
+    <string name="settings_subscribed_calendars">Abone olunmuş takvimler</string>
+    <string name="settings_other_calendars">Diğer takvimler</string>
+    <string name="settings_calendar_default" comment="Default calendar">Varsayılan</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">Kullanım dışı</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">Eşitlenmemiş</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">Eşitleniyor</string>
+    <string name="settings_calendar_subscribed_invalid_ics">Takvim biçimi desteklenmiyor</string>
+    <string name="settings_calendar_subscribed_too_big">Takvim çok büyük</string>
+    <string name="settings_calendar_subscribed_not_accessible">Takvim bağlantısına erişilemiyor</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">Takvim bağlantısına geçici olarak erişilemiyor</string>
+    <string name="settings_calendar_subscribed_last_sync_old">Son güncellemeden bu yana 12 saatten fazla zaman geçti</string>
+    <string name="settings_calendar_subscribed_not_decrypted">Takvimin şifresi çözülemedi</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">Yalnızca görüntüleme</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">kimden: %1$s</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">Takvim ekle</string>
+    <string name="calendar_form_update_title">Takvimi düzenle</string>
+    <string name="calendar_form_save">Kaydet</string>
+    <string name="calendar_form_name">Ad</string>
+    <string name="calendar_form_description">Açıklama</string>
+    <string name="calendar_form_color">Takvim rengi</string>
+    <string name="calendar_form_language">Dil</string>
+    <string name="calendar_form_default_event_duration">Etkinlik süresi</string>
+    <string name="calendar_form_default_event_notifications">Etkinlik bildirimleri</string>
+    <string name="calendar_form_default_all_day_event_notifications">Tüm günlük etkinlik bildirimleri</string>
+    <string name="calendar_form_add_notification">Bildirim ekle</string>
+    <string name="calendar_form_default_email">E-posta adresi</string>
+    <string name="calendar_form_default_email_value_error">Varsayılan e-posta yüklenemedi</string>
+    <string name="calendar_form_name_hint">Bir takvim adı yazın</string>
+    <string name="calendar_form_name_required_error">Ad zorunludur</string>
+    <string name="calendar_form_description_hint">Bir takvim açıklaması ekleyin</string>
+    <string name="add_calendar_text">Takvim ekle</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">Ekle</string>
+    <string name="create_calendar_limit_reached">Eklenebilecek en fazla takvim sayısı sınırına ulaştınız.</string>
+    <string name="create_calendar_limit_reached_title">Başka takvim eklenemez</string>
+    <string name="create_calendar_limit_reached_paid_description">Tarifenizle kullanılabilecek olan en fazla 25 takvim sayısına ulaştınız.\n\nYeni bir takvim eklemek için var olan bir takvimi kaldırın.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">25 takvimlik tarife sınırınıza ulaşmadan önce en az bir kişisel takviminiz olmalıdır.</string>
+    <string name="create_calendar_limit_reached_manage">Takvim yönetimi</string>
+    <string name="create_calendar_limit_reached_free_description">Tarifenizle kullanılabilecek olan en fazla 3 takvim sayısına ulaştınız.\n\nYeni bir takvim eklemek için var olan bir takvimi kaldırın.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">3 takvimlik tarife sınırınıza ulaşmadan önce en az bir kişisel takviminiz olmalıdır.</string>
+    <string name="create_calendar_limit_reached_error">Hata</string>
+    <string name="delete_calendar_dialog_title">Takvimi sil</string>
+    <string name="delete_calendar_dialog_message">Bu takvimi silmek istediğinize emin misiniz?</string>
+    <string name="remove_calendar_dialog_title">Takvimi kaldır</string>
+    <string name="remove_calendar_dialog_message">Bu takvimi kaldırmak istediğinize emin misiniz?</string>
+    <string name="leave_calendar_dialog_title">Takvimden ayrıl</string>
+    <string name="leave_calendar_dialog_message">Bu takvimden ayrılırsanız, yeniden katılmak için sahibi ile görüşmelisiniz.</string>
+    <string name="delete_default_calendar_dialog_message">Bu takvimi silmek istediğinize emin misiniz? \"%1$s\" varsayılan takvim olarak ayarlanacak.</string>
+    <string name="delete_calendar_snack_deleted">Takvim silindi</string>
+    <string name="remove_calendar_snack_removed">Takvim kaldırıldı</string>
+    <string name="delete_calendar_snack_error">Takvim silinirken sorun çıktı</string>
+    <string name="remove_calendar_snack_error">Takvim kaldırılırken sorun çıktı</string>
+    <string name="leave_calendar_snack_error">Takvimden ayrılırken sorun çıktı</string>
+    <string name="delete_calendar_snack_error_password_confirmation">Parola doğrulanamadı</string>
+    <string name="recreate_calendar_dialog_title">Takvimi temizle</string>
+    <string name="recreate_calendar_dialog_message">Bu işlem, tüm etkinlikleri ve davet edilen kullanıcıları kaldıracak.\n\nBu takvimi temizlemek istediğinize emin misiniz?</string>
+    <string name="recreate_calendar_snack_error">Takvim temizlenirken sorun çıktı</string>
+    <string name="recreate_calendar_snack_deleted">Takvim temizlendi</string>
+    <string name="recreate_calendar_snack_clearing">Takvim temizleniyor…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">Tatil takvimi ekle</string>
+    <string name="holiday_calendar_title">Tatil takvimi</string>
+    <string name="add_holiday_calendar_country_search_hint">Ülke ara</string>
+    <string name="holiday_calendar_form_picker_title">Ülke</string>
+    <string name="holiday_calendar_time_zone_based">Saat diliminize göre</string>
+    <string name="holiday_calendar_already_exists">Bu tatil takvimi zaten eklenmiş.</string>
+    <string name="holiday_calendar_value_placeholder">Ülke seçin</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">Tamam</string>
+    <string name="bootstrap_error_no_calendar_title">Bu hesap ile ilişkilendirilmiş herhangi bir takvim bulunamadı.</string>
+    <string name="bootstrap_error_no_calendar_message">Bir tane kurmak için <a href="https://calendar.proton.me">calendar.proton.me</a> adresine gidebilirsiniz</string>
+    <string name="bootstrap_error_some_calendars_failed_title">Takvimler hazırlanırken sorun çıktı</string>
+    <string name="bootstrap_error_some_calendars_failed_message">Şu takvimler kurulamadı</string>
+    <string name="bootstrap_error_no_active_calendar_title">Bu hesap ile ilişkilendirilmiş etkin bir kişisel takvim bulunamadı.</string>
+    <string name="bootstrap_error_no_active_calendar_message">Bir takvimin nasıl etkinleştirileceğini öğrenmek için <a href="https://proton.me/support">bilgi bankasına</a> bakabilirsiniz</string>
+    <string name="bootstrap_error_store_quota_reached_message">Kullanılabilecek depolama alanı kalmadı.</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">Ayrıntılı bilgi alın</string>
+    <string name="bootstrap_error_reset_needed_title">Takvim anahtarlarını sıfırla</string>
+    <string name="bootstrap_error_reset_needed_message">Parolanızı sıfırladınız ve şu takvimlere bağlı etkinliklerin şifresi çözülemedi. Abone olunmuş takvimler birkaç dakika sonra yeniden eşitlenecek.</string>
+    <string name="bootstrap_error_update_passphrase_title">Takvim anahtarlarını yeniden etkinleştir</string>
+    <string name="bootstrap_error_update_passphrase_message">Anahtarlarınızı yeniden etkinleştirdiniz ve artık şu takvimlere bağlı etkinliklerin şifreleri çözülebilir.</string>
+    <string name="bootstrap_error_continue_button">İlerle</string>
+    <string name="splash_after_login_init">Takvimler hazırlanıyor</string>
+    <string name="splash_init">Etkinliklerin şifresi çözülüyor</string>
+    <string name="default_calendar_name">Takvimim</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">Geri bildirimde bulunun</string>
+    <string name="dialog_feedback_text">Proton Calendar ile yaşadığınız deneyimi nasıl değerlendirirsiniz?</string>
+    <string name="dialog_feedback_rating_worst">Kötü</string>
+    <string name="dialog_feedback_rating_best">Harika</string>
+    <string name="dialog_feedback_hint">Bize deneyimlerinizi anlatın. (İsteğe bağlı)</string>
+    <string name="dialog_feedback_submit">Gönder</string>
+    <string name="dialog_feedback_submit_thank_you">Teşekkürler! Geri bildiriminiz Proton uygulamalarını daha iyi yapmamızı sağlayacak.</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Proton Calendar araç takımı</string>
+    <string name="calendar_widget_no_upcoming_events_today">Bugün gerçekleşecek bir etkinlik yok</string>
+    <string name="calendar_widget_loading_events">Etkinlikler yükleniyor…</string>
+    <string name="calendar_widget_loading_events_error">Etkinlikler yüklenemedi</string>
+    <string name="calendar_widget_no_upcoming_events">Yaklaşan bir etkinlik yok</string>
+    <string name="calendar_widget_please_log_in">Etkinliklerinizi görmek için oturum açın</string>
+    <string name="calendar_widget_part_day_event_starts_at">%1$s saatinde başlıyor</string>
+    <string name="calendar_widget_part_day_event_ends_at">%1$s saatinde bitiyor</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">Yenilikler</string>
+    <string name="spotlight_dialog_beta_header">Calendar Beta</string>
+    <string name="spotlight_dialog_skip">Atla</string>
+    <string name="spotlight_dialog_confirmation_button">Tamam</string>
+    <string name="spotlight_dialog_month_view_title">Aylık görünüm</string>
+    <string name="spotlight_dialog_month_view_description">Yeni aylık görünümümüzle etkinliklerinizin genel görünümüne bakın. Görünümler arasında geçiş yapmak için menüyü kullanın.</string>
+    <string name="spotlight_dialog_easy_switch_description">Etkinlikleri ve diğer verileri Google Takvim üzerinden Proton Calendar üzerine aktarmak her zamankinden daha kolay. Easy Switch içe aktarma yardımcımız her adımda size yol gösterecek.</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">İçe aktarmayı başlat</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">Şimdi değil</string>
+    <string name="spotlight_dialog_auto_invites_title">Davetleri kolayca onaylayın</string>
+    <string name="spotlight_dialog_auto_invites_description">Artık davetler takviminizde bekleyen etkinlikler olarak görüntülenecek. Yanıtlamak istediğiniz etkinliği açmanız yeterli.\n\nBu özelliği ayarlar bölümünden yönetebilirsiniz.</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">Sonraki</string>
+    <string name="spotlight_v5_dialog_got_it_button">Anladım</string>
+    <string name="spotlight_v5_dialog_learn_more_button">Ayrıntılı bilgi alın</string>
+    <string name="spotlight_v5_dialog_rebranding_title">Güncellenmiş Proton, birleşik koruma</string>
+    <string name="spotlight_v5_dialog_rebranding_description">Yenilenmiş Proton böyle görünüyor. Bir çok hizmet, tek amaç. Gizliliğe odaklanmış bir internet fikrine hoş geldiniz. <a href="https://proton.me/news/updated-proton">Ayrıntılı bilgi alın</a></string>
+    <string name="spotlight_dialog_week_view_title">Diğer görüntüleme seçenekleri</string>
+    <string name="spotlight_dialog_week_view_description">• <b>3 günlük</b> ve <b>Haftalık</b> takvim görünümleriyle tanışın. <b>Menüden</b> kullanmak istediğiniz görünümü seçin.\n\n• Yakınlaştırmak ya da uzaklaştırmak için iki parmağınızı sıkıştırarak gün tablosundaki satırların yüksekliğini ayarlayın.</string>
+    <string name="spotlight_dialog_search_title">Etkinlikleri arayın</string>
+    <string name="spotlight_dialog_search_description">Yeni arama özelliği ile aradığınız etkinliği kolayca bulun. <a href="https://proton.me/support/calendar-search">Ayrıntılı bilgi alın</a></string>
+    <string name="spotlight_dialog_search_positive">Kullanıma al</string>
+    <string name="spotlight_dialog_search_negative">Atla</string>
+    <string name="spotlight_dialog_import_title">Etkinlik eklemenin diğer yolları</string>
+    <string name="spotlight_dialog_import_description">• Etkinlikleri telefonunuzdaki dosyalardan takviminizin içine aktarın.\n\n• Yolculuk rezervasyonlarını doğrudan Proton Mail üzerinden ekleyin.</string>
+    <string name="spotlight_dialog_calendar_provider_title">Takvim özellikleri</string>
+    <string name="spotlight_dialog_calendar_provider_description">• Diğer uygulamalardaki etkinlikleri doğrudan Proton Calendar içine ekleyin.\n\n• Sizinle paylaşılan takvimlerde etkinlikler oluşturun ve yönetin.\n\n• Uygulamayı açılışında görmek istediğiniz varsayılan görünümü ayarlayın.\n\n• 13 yeni dilde daha kullanılabilir.</string>
+    <string name="spotlight_dialog_wipe_search_title">İyileştirmek için aramayı kaldırdık</string>
+    <string name="spotlight_dialog_wipe_search_description">Deneysel arama özelliğini daha kullanışlı ve güvenilir yapmak istediğimiz için Proton Calendar Beta sürümünden kaldırıyoruz. Bu işlem birkaç saniye sürebilir.</string>
+    <string name="spotlight_dialog_holiday_calendar_title">Resmi tatiller burada!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">Artık herkes tatildeyken ya da uzun bir hafta sonu kaçamağını kaydetmeyi unuttuğunuzda zamanlanmış toplantılarla karşılaşmayın.\n\nİstediğiniz ülkenin resmi tatillerini takviminize ekleyin.</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">Artık herkes tatildeyken ya da uzun bir hafta sonu kaçamağını kaydetmeyi unuttuğunuzda zamanlanmış toplantılarla karşılaşmayın.\n\nTakvim sayısı sınırına ulaşmış olduğunuzdan yeni bir tatil takvimi eklemek için önce var olan bir takvimi kaldırmanız gerekir.</string>
+    <string name="spotlight_dialog_color_per_event_title">Özel etkinlik renkleri</string>
+    <string name="spotlight_dialog_color_per_event_description">Her bir etkinlik için özel renk kullanın:\n\n- Takviminizi renklerle kodlayın\n\n- Gününüzü daha iyi düzenleyin ve zamanınızı izleyin\n\n- Önceliklerinizi belirleyin ve verimliliğinizi artırın</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">Erişime izin ver</string>
+    <string name="dialog_google_auth_description">İçe aktarmayı başlatmak için, Google Takvim oturumu açın ve verilerinize Proton tarafından erişilmesine izin verin.</string>
+    <string name="import_assistant_prepare_import_error">İçe aktarma işlemine hazırlanılırken sorun çıktı. Lütfen bir süre sonra yeniden deneyin</string>
+    <string name="import_assistant_prepare_import">İçe aktarma işlemine hazırlanılıyor</string>
+    <string name="import_assistant_gathering_data_loader_title">Verileriniz toplanıyor</string>
+    <string name="import_assistant_summary_title">İçe aktarma özeti</string>
+    <string name="import_assistant_summary_customize_import">İçe aktarmayı özelleştir</string>
+    <string name="import_assistant_error">Veriler alınırken sorun çıktı</string>
+    <string name="import_assistant_data_gathering_error">Veriler toplanamadı</string>
+    <string name="import_assistant_update_import_error">İçe aktarma güncellenemedi. Lütfen bir süre sonra yeniden deneyin.</string>
+    <string name="import_assistant_update_import_wrong_account_error">Hesap yanlış. Lütfen takvim içe aktarması için kullandığınız hesap ile oturum açın.</string>
+    <string name="import_assistant_start_import_error">İçe aktarma başlatılamadı. Lütfen bir süre sonra yeniden deneyin.</string>
+    <string name="import_assistant_delete_import_success">İçe aktarma kaydı silindi</string>
+    <string name="import_assistant_delete_import_error">İçe aktarma silinemedi. Lütfen bir süre sonra yeniden deneyin.</string>
+    <string name="import_assistant_cancel_import_error">İçe aktarma iptal edilemedi. Lütfen bir süre sonra yeniden deneyin.</string>
+    <string name="import_assistant_resume_import_error">İçe aktarma sürdürülemedi. Lütfen bir süre sonra yeniden deneyin.</string>
+    <string name="import_assistant_create_calendar_error">Bir ya da daha çok takvim eklenemedi</string>
+    <string name="import_assistant_start_import_empty_error">İçe aktarma başlatılamadı. İçe aktarılacak bir takvim yok</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">İçe şu şekilde aktar</string>
+    <string name="import_assistant_new_calendar_badge">Yeni</string>
+    <string name="import_assistant_merge_calendar_badge">Birleştirilmiş</string>
+    <string name="import_assistant_creating_calendars">Yeni takvimler oluşturuluyor</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">Neredeyse tamam…</string>
+    <string name="import_assistant_new_calendar_header">Yeni ekle</string>
+    <string name="import_assistant_merge_calendar_header">Var olan ile birleştir</string>
+    <string name="import_assistant_in_progress_title">İçe aktarılıyor</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">Veriler %1s üzerinden %2s içine aktarılıyor.</string>
+    <string name="import_assistant_in_progress_redirect">İlerlemeyi görüntüle</string>
+    <string name="import_assistant_in_progress_sub_description">Büyük boyutlu içe aktarımların tamamlanması bir kaç gün sürebilir. İşlem tamamlandığında size bilgi vereceğiz. Bu sayfayı kapatabilirsiniz.</string>
+    <string name="import_assistant_guide_subtitle">Gizliliğe geçin. Kolay ve güvenli bir şekilde.</string>
+    <string name="import_assistant_guide_description">Etkinliklerinizi ve diğer verilerinizi Google üzerinden Proton üzerine aktarın. Easy Switch içe aktarma yardımcısı, her adımda size yol gösterir ve aktarma sırasında verilerinizi şifreler.</string>
+    <string name="import_assistant_new_import">Yeni içe aktarma</string>
+    <string name="import_assistant_previous_import">Önceki içe aktarmalar</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">Başlatıldı</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">Sürüyor</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">Tamamlandı</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">İptal edildi</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">İptal ediliyor</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">Duraklatıldı</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">Başarısız oldu</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Google ile bağlantı kesildi</string>
+    <string name="import_assistant_status_paused_lost_connection_description">İçe aktarma işlemini sürdürmek için, Yeniden bağlan üzerine tıklayın. Google oturumu açın ve Google verilerinize Proton tarafından erişilmesine izin verin.</string>
+    <string name="import_assistant_status_paused_lost_connection_button">Yeniden bağlan</string>
+    <string name="import_assistant_status_paused_storage_full_title">Depolama alanınız dolu</string>
+    <string name="import_assistant_status_paused_storage_full_description">Proton hesabınızın bu takvim içe aktarma işlemini tamamlamak için yeterli depolama alanı yok. yer boşaltın ya da daha fazla depolama alanı ekleyin. Ardından işlemi sürdürmek için buraya geri dönün.</string>
+    <string name="import_assistant_status_paused_storage_full_button">Sürdür</string>
+    <string name="import_assistant_delete_report_title">Listeden kaldırılsın mı?</string>
+    <string name="import_assistant_delete_report_message">Bu içe aktarma kaydını artık listede görmeyeceksiniz.</string>
+    <string name="import_assistant_delete_report_positive_button">Kaldır</string>
+    <string name="import_assistant_delete_report_negative_button">Tut</string>
+    <string name="import_assistant_cancel_import_title">İçe aktarma tamamlanmadı!</string>
+    <string name="import_assistant_cancel_import_message">Bu içe aktarma işlemini iptal ederseniz, daha sonra sürdüremezsiniz. Proton, tüm ilerlemeyi hesabınıza kaydetti. Yine de işlemi iptal etmek istiyor musunuz?</string>
+    <string name="import_assistant_cancel_import_positive_button">İçe aktarmayı iptal et</string>
+    <string name="import_assistant_cancel_import_negative_button">İçe aktarmayı sürdür</string>
+    <string name="import_assistant_in_progress_snack">İçe aktarılıyor</string>
+    <string name="import_assistant_discard_import_title">İçe aktarma iptal edilsin mi?</string>
+    <string name="import_assistant_discard_import_message">İçe aktarma tamamlanmadı ve iptal ederseniz sürdürülemeyecek.</string>
+    <string name="import_assistant_discard_import_positive">İçe aktarmayı iptal et</string>
+    <string name="import_assistant_discard_import_negative">İçe aktarmayı sürdür</string>
+    <string name="import_assistant_authentication_canceled">Kimlik doğrulaması iptal edildi</string>
+    <string name="import_assistant_sign_in_in_progress">Zaten sürmekte olan bir oturum açma işlemi var</string>
+    <string name="import_assistant_in_progress_error_snack">Hala sürmekte olan bir içe aktarma işlemi var</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">İçe basit etkinlik olarak aktarılsın mı?</string>
+    <string name="import_event_disclaimer_dialog_description">\nİçe aktarılan davetler Proton Takvim içinde <b>düzenleyici</b> ve <b>katılımcı</b> bilgileri olmadan basit etkinlikler olarak görüntülenir.\n\nEtkinlik güncellemelerini almak ve katılımcıları görmek için, etkinlik düzenleyicilerinden sizi Proton e-posta adresinizi kullanarak davet etmelerini isteyin.</string>
+    <string name="import_event_disclaimer_dialog_positive">İçe aktar</string>
+    <string name="undefined_color">Tanımlanmamış</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">takvim</item>
+        <item quantity="other">takvim</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">%1$d takvimi içe aktar</item>
+        <item quantity="other">%1$d takvimi içe aktar</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">%1$d içe aktarma sürüyor</item>
+        <item quantity="other">%1$d içe aktarma sürüyor</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">%1$d / %2$d, %3$s içine eklendi</item>
+        <item quantity="other">%1$d / %2$d, %3$s içine eklendi</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">Proton Calendar içine %1$d yeni takvim ekle.</item>
+        <item quantity="other">Proton Calendar içine %1$d yeni takvim ekle.</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">Şuradaki %1$d / %2$d takvimi içe aktar</item>
+        <item quantity="other">Şuradaki %1$d / %2$d takvimi içe aktar</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">Proton Calendar içindeki %1$d takvimi birleştir.</item>
+        <item quantity="other">Proton Calendar içindeki %1$d takvimi birleştir.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">Takvim sayısı sınırı nedeniyle içe aktarılan tüm takvimler için yeni takvimler eklenemiyor.\n • En az %1$d takvimin seçimini kaldırın</item>
+        <item quantity="other">Takvim sayısı sınırı nedeniyle içe aktarılan tüm takvimler için yeni takvimler eklenemiyor.\n • En az %1$d takvimin seçimini kaldırın</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020ya da\n • En az %1$d takvimi var olan Proton takvimleriyle birleştirin.</item>
+        <item quantity="other">\u0020ya da\n • En az %1$d takvimi var olan Proton takvimleriyle birleştirin.</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">saniye</item>
+        <item quantity="other">saniye</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">dakika</item>
+        <item quantity="other">dakika</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">saat</item>
+        <item quantity="other">saat</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">gün</item>
+        <item quantity="other">gün</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">hafta</item>
+        <item quantity="other">hafta</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">ay</item>
+        <item quantity="other">ay</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">yıl</item>
+        <item quantity="other">yıl</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">bir kez</item>
+        <item quantity="other">kez</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">yinelenme</item>
+        <item quantity="other">yinelenme</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">kez</item>
+        <item quantity="other">kez</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">katılımcı</item>
+        <item quantity="other">katılımcı</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">%1$d %2$s bir</item>
+        <item quantity="other">%1$d %2$s bir</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">%1$d %2$s bir</item>
+        <item quantity="other">%1$d %2$s bir</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">%1$d %2$s bir</item>
+        <item quantity="other">%1$d %2$s bir</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">%1$d %2$s bir</item>
+        <item quantity="other">%1$d %2$s bir</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s dakika</item>
+        <item quantity="other">%1$s dakika</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d/%2$d karakter</item>
+        <item quantity="other">%1$d/%2$d karakter</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d/%2$d karakter</item>
+        <item quantity="other">%1$d/%2$d karakter</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>ilk</item>
+        <item>ikinci</item>
+        <item>üçüncü</item>
+        <item>dördüncü</item>
+        <item>beşinci</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>sonuncu</item>
+        <item>ikinci son</item>
+        <item>üçüncü son</item>
+        <item>dördüncü son</item>
+        <item>beşinci son</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>Açık</item>
+        <item>Koyu</item>
+        <item>Sistem varsayılanı</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>Sistem varsayılanı</item>
+        <item>13:00</item>
+        <item>1:00ös</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>Sistem varsayılanı</item>
+        <item>Pazartesi</item>
+        <item>Cumartesi</item>
+        <item>Pazar</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>Mor|#8080FF</item>
+        <item>Çilek|#EC3E7C</item>
+        <item>Pembe|#DB60D6</item>
+        <item>Havuç|#F78400</item>
+        <item>Çöl|#936D58</item>
+        <item>Kantaron|#5252CC</item>
+        <item>Erik|#A839A4</item>
+        <item>Kiraz|#BA1E55</item>
+        <item>Bakır|#C44800</item>
+        <item>Toprak|#54473F</item>
+        <item>Arduvaz Mavisi|#415DF0</item>
+        <item>Pasifik|#179FD9</item>
+        <item>Resif|#1DA583</item>
+        <item>Eğrelti Otu|#3CBB3A</item>
+        <item>Zeytin|#B4A40E</item>
+        <item>Kobalt|#273EB2</item>
+        <item>Okyanus|#0A77A6</item>
+        <item>Çam|#0F735A</item>
+        <item>Orman|#258723</item>
+        <item>Salatalık|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>Mor</item>
+        <item>Çilek</item>
+        <item>Pembe</item>
+        <item>Havuç</item>
+        <item>Çöl</item>
+        <item>Kantaron</item>
+        <item>Erik</item>
+        <item>Kiraz</item>
+        <item>Bakır</item>
+        <item>Toprak</item>
+        <item>Arduvaz Mavisi</item>
+        <item>Pasifik</item>
+        <item>Resif</item>
+        <item>Eğrelti otu</item>
+        <item>Zeytin</item>
+        <item>Kobalt</item>
+        <item>Okyanus</item>
+        <item>Çam</item>
+        <item>Orman</item>
+        <item>Salatalık</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

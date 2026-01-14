@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_simple_text_button_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/event_form_alarm_icon"
+        style="@style/Icon.Form"
+        app:srcCompat="@drawable/ic_proton_bell"
+        app:layout_constraintBottom_toBottomOf="@+id/item_simple_text_button_title"
+        app:layout_constraintTop_toTopOf="@+id/item_simple_text_button_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/item_simple_text_button_title"
+        style="@style/Text.Default.Form"
+        tools:text="1 day before at 9:00 AM"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/item_simple_text_button_delete"
+        style="@style/Icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="@color/icon_weak"
+        android:background="?android:selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="@+id/item_simple_text_button_title"
+        app:layout_constraintTop_toTopOf="@+id/item_simple_text_button_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_proton_cross" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

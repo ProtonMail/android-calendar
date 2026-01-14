@@ -1,0 +1,17 @@
+{
+    "Code": 1000,
+    "RecipientType": 1,
+    "MIMEType": "text/html",
+    "Keys": [
+        {
+            "Flags": 3,
+            "PublicKey": "-----BEGIN PGP PUBLIC KEY BLOCK-----\nVersion: ProtonMail\n\nxsBNBF1BfxUBCADUpiiG3AhQK08E2nBmQ50XeztOWArmknINQV41pqGFW5VQ\nkfbQ3FYsANhLGqbDBQ0XxmocjKL7W7W8Y4xmHCGgkCUy6gAqGbi+sXY9Sl8x\nqQNHuZDhWVdqT8+Rtv+DRxp/XrGkzC1U8CBYUmmKS92ldy0/zZIvgQXT6t5Q\n+v+BeUSv4jCsnY3BE0UBOljtrTXlOcXRZHQxORWG+kon0qgcJERdwwzhxY6e\nT8jEfAfJY0hzQaYg+6bj6ZR0zkMtY2Psq2M05kzEw4On/dezZETAu1e9fSqf\nk1mp+H6BeLJ9RUyrFK/PqIO48+pU8CmAvTdx5eIihyOM16CFg/3GgV85ABEB\nAAHNMWFkYW10c3RAcHJvdG9ubWFpbC5ibHVlIDxhZGFtdHN0QHByb3Rvbm1h\naWwuYmx1ZT7CwHIEEwEIABwFAl1BfxUJEBHDHo5eB/TQAhsDAhkBAgsJAhUI\nAAoJEBHDHo5eB/TQx6IIAAg2A2ZMkzGV+vZPbqAMoAEO+dpG+dq9C93Ui4Hv\noVHpcSTolVM522r81Yc48xdhbnFz9HLDkicoBzXo40utgQ7bF4iKD4lQztfh\n6+9l+IBNu+1XmdW+laMybygtPh+H4YPxLZA9O6FYRyUcTjlZYFFxipz9pc9q\nI58tDHIILzfjZPCC6reiJpbxJOgp07PV3ZnJqLDIkFPlPkxyqymfuWHnPOJM\n5RxvHnu04ptsp/Z/xbgUra2JEyVLA7gC/yznxfQ58087pCupKqQwepA3zHmE\nCS6vk7uuNp++D9JajjtFsu4piP4cTNVvMqnDXWn0uzwrhhw/fZnnHSllXmBw\ngmPOwE0EXUF/FQEIAMgCI+srSwdQlIpz+n+mlSpS0jPXvRYoL9QgMOdzR3kA\nW5sM1OW2Z7ROlBEZ7ycurpe4Sa/SaKfjtf4wOs2hmpxecL9JxL0x3KGEaSeE\nIiYIkMb4TnSLR9vfowVdReOMTs5RpxMxQL+xmz3nChwLEIF/amAo/ucnXLbU\nNvYFkOpzdtxtN0dy2ykUvR9rsNUiGBoIn/BYCqSXpsCY7kom8lYl039yQvGV\nLWG6vryF6gExRbW61B3yjACpR6NLi2Bqta0SDRkeg5obumxoWaJ7ltJ2uPuV\nofOpIPXP2CO40iCLKUUZB/r+/kVx+dYfEW3Nk4r+uKsu3CCSB9AZNJRQGiEA\nEQEAAcLAaQQYAQgAEwUCXUF/FQkQEcMejl4H9NACGwwACgkQEcMejl4H9NCC\n8AgAbItodhOOJcb85EggCB1CEoFg6jOs5LgRw4810xI8HBPo/4Gk1L8YPfen\nMA1Uoz0x+3z42d49QU5HZ/hAmtDVW9KP2Sjw/axfsgB7v6sbrXgtB/OMblHX\noqVJU4wVbQrYvxnG6YN1iX83QGGC1mYHWWDXFjZM8egN63Ocyccbywvq7q/K\nEaXlrqpxbaDW6uUXRUX8ISqDWXAAqEUcgWI1H5fqMKODQolr0yMBbqggI7Gh\nfSOnX3mZaLHqy5ElJZUrXi6J5Pq4vnJgLm1kzP632uztjEKQfEVFPUflksdQ\nP+v3eWKpb6nNTH5tV3Pmo0xvRmicdlEt7f8XNvX3HxQw9w==\n=E6ZL\n-----END PGP PUBLIC KEY BLOCK-----\n"
+        }
+    ],
+    "SignedKeyList": {
+        "MinEpochID": 1,
+        "Data": "[{\"Fingerprint\": \"20cf363b58ec99e722e53ec411c31e8e5e07f4d0\", \"Primary\": 1, \"Flags\": 3}]",
+        "Signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAEBCAAQBQJdQX8vCRARwx6OXgf00AAA86MIANF40c8q5EBRSlUFgwwfI4hH\nvAj1biyC7SqJkEh5OZV4JN++dsP+oH6WPr81ggELSa7btqPrc184/edw9kVkB4Nz\nC/6TeOWhi4lZQUGvQdHR76bBkQo4tgtIDFCxNo4sxWDQGTaFzzFo0Gj4OMQRoEeP\nghndkkLiImTc5B5t9avK4as7Xok5W0zJkiqYqSb8EhmyT7yawwlVlLzwekJiPZeu\nngT6nkXsvbdWT3xgsqGPaMemS2cWVn8mqlLLjvAsWTTBC4M1yby6mDCJu1N1vawH\nAy88HplUSby9K08sCG5wuw4TDspANdBOQQAed7QentAmCKHvY3s5kvugD95jB9k=\n=hQH8\n-----END PGP SIGNATURE-----"
+    },
+    "Warnings": []
+}

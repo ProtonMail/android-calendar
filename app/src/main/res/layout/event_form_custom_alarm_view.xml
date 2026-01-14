@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_alarm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/custom_alarm_field_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Text.Caption.Strong"
+        android:text="@string/event_custom_alarms_field"
+        android:layout_marginStart="@dimen/spacing_page"
+        android:layout_marginEnd="@dimen/spacing_page"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/custom_alarm_field_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/InputText"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/spacing_page"
+        android:layout_marginEnd="@dimen/spacing_page"
+        app:layout_constraintTop_toBottomOf="@+id/custom_alarm_field_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/custom_alarm_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text.Default"
+            tools:text="15"
+            android:inputType="number"
+            android:paddingTop="@dimen/default_margin_text_vertical"
+            android:paddingBottom="@dimen/default_margin_text_vertical"
+            android:paddingStart="@dimen/default_inner_padding_start"
+            android:paddingEnd="@dimen/default_inner_padding_end"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/custom_alarm_radio_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="@dimen/radio_group_inner_padding"
+        android:paddingEnd="@dimen/radio_group_inner_padding"
+        android:paddingBottom="@dimen/spacing_page"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_alarm_field_layout">
+
+        <RadioButton
+            android:id="@+id/custom_alarm_1"
+            style="@style/Text.Default.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="minutes before" />
+
+        <RadioButton
+            android:id="@+id/custom_alarm_2"
+            style="@style/Text.Default.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="hours" />
+
+        <RadioButton
+            android:id="@+id/custom_alarm_3"
+            style="@style/Text.Default.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="days" />
+
+        <RadioButton
+            android:id="@+id/custom_alarm_4"
+            style="@style/Text.Default.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="weeks" />
+
+    </RadioGroup>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/custom_alarm_same_day_layout"
+        tools:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/custom_alarm_radio_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:id="@+id/custom_alarm_same_day_separator"
+            style="@style/Separator"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <RadioButton
+            android:id="@+id/custom_alarm_same_day"
+            style="@style/Text.Default.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_element_small"
+            android:layout_marginBottom="@dimen/spacing_element_small"
+            android:layout_marginStart="@dimen/radio_group_inner_padding"
+            android:layout_marginEnd="@dimen/radio_group_inner_padding"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/event_alarm_same_day" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/custom_alarm_time_layout"
+        tools:visibility="visible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/custom_alarm_same_day_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <include
+            android:id="@+id/custom_alarm_time_press"
+            layout="@layout/view_press_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custom_alarm_time_separator"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <View
+            android:id="@+id/custom_alarm_time_separator"
+            style="@style/Separator"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/custom_alarm_time_icon"
+            style="@style/Icon.Form"
+            app:srcCompat="@drawable/ic_proton_clock"
+            app:layout_constraintBottom_toBottomOf="@+id/custom_alarm_time"
+            app:layout_constraintTop_toTopOf="@+id/custom_alarm_time"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/custom_alarm_time"
+            style="@style/Text.Default.Form"
+            android:text="at 09:00"
+            android:layout_marginBottom="@dimen/default_margin_text_vertical_large"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

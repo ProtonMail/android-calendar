@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/custom_recurrence_count_title"
+        style="@style/Text.Caption.Strong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_page"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:text="@string/event_recurrence_occurs_every"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/custom_recurrence_count_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/InputText"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/spacing_page"
+        android:layout_marginEnd="@dimen/spacing_page"
+        app:layout_constraintTop_toBottomOf="@+id/custom_recurrence_count_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/custom_recurrence_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text.Default"
+            tools:text="15"
+            android:inputType="number"
+            android:paddingTop="@dimen/default_margin_text_vertical"
+            android:paddingBottom="@dimen/default_margin_text_vertical"
+            android:paddingStart="@dimen/default_inner_padding_start"
+            android:paddingEnd="@dimen/default_inner_padding_end"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/custom_recurrence_period_radio_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingStart="@dimen/radio_group_inner_padding"
+        android:paddingEnd="@dimen/radio_group_inner_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_recurrence_count_layout">
+
+        <RadioButton
+            android:id="@+id/custom_recurrence_period_1"
+            style="@style/Text.Default.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="days" />
+
+        <RadioButton
+            android:id="@+id/custom_recurrence_period_2"
+            style="@style/Text.Default.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="weeks" />
+
+        <RadioButton
+            android:id="@+id/custom_recurrence_period_3"
+            style="@style/Text.Default.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="months" />
+
+        <RadioButton
+            android:id="@+id/custom_recurrence_period_4"
+            style="@style/Text.Default.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="years" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/custom_recurrence_period_separator"
+        style="@style/Separator"
+        android:layout_marginTop="@dimen/spacing_page"
+        app:layout_constraintTop_toBottomOf="@+id/custom_recurrence_period_radio_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/custom_recurrence_occurrence_time_radio_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingStart="@dimen/radio_group_inner_padding"
+        android:paddingEnd="@dimen/radio_group_inner_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_recurrence_period_separator">
+
+        <RadioButton
+            android:id="@+id/custom_recurrence_occurrence_time_1"
+            style="@style/Text.Default.RadioButton"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="on day 28"
+            tools:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/custom_recurrence_occurrence_time_2"
+            style="@style/Text.Default.RadioButton"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="on the fourth wednesday"
+            tools:visibility="visible"/>
+
+        <RadioButton
+            android:id="@+id/custom_recurrence_occurrence_time_3"
+            style="@style/Text.Default.RadioButton"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="on the last wednesday" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/custom_recurrence_occurrence_time_separator"
+        style="@style/Separator"
+        android:layout_marginTop="@dimen/spacing_page"
+        app:layout_constraintTop_toBottomOf="@+id/custom_recurrence_occurrence_time_radio_group"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/custom_recurrence_occurrence_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="custom_recurrence_occurrence_time_radio_group,custom_recurrence_occurrence_time_separator"
+        tools:layout_editor_absoluteX="10dp"
+        tools:visibility="visible" />
+
+    <include
+        android:id="@+id/custom_recurrence_chips_layout"
+        layout="@layout/chip_group_day_of_week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_recurrence_occurrence_time_radio_group"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/custom_recurrence_end_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="custom_recurrence_chips_layout,custom_recurrence_occurrence_time_radio_group,custom_recurrence_occurrence_time_separator" />
+
+    <TextView
+        android:id="@+id/custom_recurrence_end_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Text.DefaultSmall.Weak"
+        android:text="@string/event_recurrence_ends_on"
+        android:layout_marginStart="@dimen/spacing_page"
+        android:layout_marginEnd="@dimen/spacing_page"
+        android:layout_marginTop="@dimen/spacing_large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_recurrence_end_barrier"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RadioButton
+        android:id="@+id/custom_recurrence_end_1"
+        style="@style/Text.Default.RadioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/radio_group_inner_padding"
+        android:layout_marginEnd="@dimen/radio_group_inner_padding"
+        android:layout_marginTop="@dimen/spacing_element_small"
+        android:text="@string/event_recurrence_ends_never"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_recurrence_end_title" />
+
+    <RadioButton
+        android:id="@+id/custom_recurrence_end_2"
+        style="@style/Text.Default.RadioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/radio_group_inner_padding"
+        android:layout_marginEnd="@dimen/radio_group_inner_padding"
+        android:text="@string/event_recurrence_ends_on_date_empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_recurrence_end_1" />
+
+    <RadioButton
+        android:id="@+id/custom_recurrence_end_3"
+        style="@style/Text.Default.RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/radio_group_inner_padding"
+        android:layout_marginEnd="@dimen/radio_group_inner_padding"
+        android:text="@string/event_recurrence_ends_after_count_prefix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_recurrence_end_2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/custom_recurrence_end_count_layout"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        style="@style/InputText"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/spacing_page"
+        android:layout_marginEnd="@dimen/spacing_page"
+        app:endIconDrawable="@null"
+        app:endIconMode="none"
+        app:layout_constraintBaseline_toBaselineOf="@id/custom_recurrence_end_3"
+        app:layout_constraintStart_toEndOf="@id/custom_recurrence_end_3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/custom_recurrence_end_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Text.Default"
+            tools:text="666"
+            android:inputType="number"
+            android:paddingTop="@dimen/default_margin_text_vertical"
+            android:paddingBottom="@dimen/default_margin_text_vertical"
+            android:paddingStart="@dimen/default_inner_padding_start"
+            android:paddingEnd="@dimen/default_inner_padding_end"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/custom_recurrence_end_count_suffix"
+        style="@style/Text.Default"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/custom_recurrence_end_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/custom_recurrence_end_count_layout"
+        app:layout_constraintTop_toTopOf="@+id/custom_recurrence_end_3"
+        tools:text="occurrences" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

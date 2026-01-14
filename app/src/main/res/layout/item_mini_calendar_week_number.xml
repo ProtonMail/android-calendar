@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    style="@style/Text.Overline.Strong"
+    android:textColor="@color/text_weak"
+    android:layout_width="@dimen/calendar_week_number_width"
+    android:layout_height="@dimen/calendar_week_number_height"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/calendar_week_number_spacing_top"
+    android:layout_marginBottom="@dimen/calendar_week_number_spacing_bottom"
+    android:background="@drawable/shape_background_rounded_week_number"
+    android:backgroundTint="@color/background_secondary"
+    tools:text="15" />

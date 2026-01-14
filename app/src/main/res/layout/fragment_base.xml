@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/fragment_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stateListAnimator="@animator/design_appbar_state_list_animator"
+        app:liftOnScroll="true"
+        android:backgroundTint="@color/background_norm"
+        app:elevation="0dp"
+        >
+        <!-- TODO elevation = 0 is set so we get rid of liftOnScroll effect on toolbar, because nothing else worked
+              this will break lift on scroll for other fragments with this layout, but at least it fixes month view -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/fragment_progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                tools:visibility="visible"
+                android:indeterminateOnly="true"
+                android:indeterminateTint="?attr/proton_icon_accent"
+                android:indeterminateTintMode="src_in"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="-4dp"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/fragment_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStartWithNavigation="0dp"
+                app:layout_scrollFlags="noScroll"
+                android:background="@null">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null">
+
+                    <LinearLayout
+                        android:id="@+id/fragment_toolbar_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?attr/actionBarSize"
+                        android:divider="@drawable/divider_toolbar"
+                        android:gravity="center_vertical|end"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        android:showDividers="middle"
+                        android:background="@null"/>
+
+                    <LinearLayout
+                        android:id="@+id/fragment_toolbar_title_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/fragment_toolbar_content"
+                        android:orientation="horizontal"
+                        android:background="?attr/selectableItemBackground">
+
+                        <TextView
+                            android:id="@+id/fragment_toolbar_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            style="@style/Text.Headline.Small"
+                            android:background="@null"/>
+
+                        <ImageView
+                            android:id="@+id/mini_calendar_chevron"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginStart="6dp"
+                            app:srcCompat="@drawable/ic_proton_chevron_down_filled"
+                            app:tint="@color/icon_norm"
+                            android:background="@null"
+                            android:visibility="gone"
+                            tools:visibility="visible"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

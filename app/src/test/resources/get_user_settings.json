@@ -1,0 +1,36 @@
+{
+  "Code": 1000,
+  "UserSettings": {
+    "Email": {
+      "Value": null,
+      "Status": 0,
+      "Notify": 0,
+      "Reset": 1
+    },
+    "Phone": {
+      "Value": null,
+      "Status": 0,
+      "Notify": 0,
+      "Reset": 0
+    },
+    "Password": {
+      "Mode": 1,
+      "ExpirationTime": null
+    },
+    "PasswordMode": 1,
+    "2FA": {
+      "Enabled": 0,
+      "Allowed": 3,
+      "ExpirationTime": null,
+      "U2FKeys": []
+    },
+    "TOTP": 0,
+    "News": 255,
+    "Locale": "en_US",
+    "LogAuth": 1,
+    "InvoiceText": "",
+    "Density": 0,
+    "U2FKeys": [],
+    "TwoFactor": 0
+  }
+}

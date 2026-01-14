@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/miniCalendarHeaderText"
+    style="@style/Text.Caption.Strong"
+    android:textColor="@color/text_weak"
+    android:gravity="center_horizontal"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="@dimen/calendar_item_header_height"
+    tools:text="M"/>

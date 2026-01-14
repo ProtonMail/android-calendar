@@ -1,0 +1,23 @@
+{
+    "Code": 1000,
+    "Alarms": [
+        {
+            "Occurrence": 1582272000,
+            "Trigger": "-PT15H",
+            "Action": 2,
+            "ID": "jUjNWfdzq7X-CMrR3LyX2y7o_D6y4FIGmsuTkfdNOI4QtPyaed-kVyFcOw9XLiRpwRDKnyKtHxhrIBW7nPVZdQ==",
+            "EventID": "ktqlKw3s-JEjT2s6BDWeuHqOtqmrUPsDcztLoG6l5Ik3CPQzFgpLcRAs0u2qmtEFO3tKZMWtoAUbRsWTKNV5vw==",
+            "MemberID": "m-dPNuHcP8N4xfv6iapVg2wHifktAD1A1pFDU95qo5f14Vaw8I9gEHq-3GACk6ef3O12C3piRviy_D43Wh7xxQ==",
+            "CalendarID": "m-dPNuHcP8N4xfv6iapVg2wHifktAD1A1pFDU95qo5f14Vaw8I9gEHq-3GACk6ef3O12C3piRviy_D43Wh7xxQ=="
+        },
+        {
+            "Occurrence": 1582358400,
+            "Trigger": "-PT15H",
+            "Action": 2,
+            "ID": "WErNQRoJ-NaSvs5N1NnpRHvobabt5btZXBsmPuqLd5MvTJnefHSZgOigRXjdmfklxa5TSA20uJesCu9TetKupw==",
+            "EventID": "I1vS9wAKew6h5oqAR3Vbo7p6WosmP-AtnHcZcOpDw22pdyqG3efbMJdSRtzOBrSEBgyaoOK9Ogr3wUaB9ccjxQ==",
+            "MemberID": "m-dPNuHcP8N4xfv6iapVg2wHifktAD1A1pFDU95qo5f14Vaw8I9gEHq-3GACk6ef3O12C3piRviy_D43Wh7xxQ==",
+            "CalendarID": "m-dPNuHcP8N4xfv6iapVg2wHifktAD1A1pFDU95qo5f14Vaw8I9gEHq-3GACk6ef3O12C3piRviy_D43Wh7xxQ=="
+        }
+    ]
+}

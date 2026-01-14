@@ -1,0 +1,55 @@
+{
+    "Code": 1000,
+    "Keys": [
+        {
+            "ID": "6S2ifWgtqWHpde6WPUcRoVCscUR_T-Qs5m3ewOTKc_YU7LaofWeFbq2uFZ7weT9QBHHO2mCvHUOAmPfHD07Bsw==",
+            "PrivateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----\nVersion: ProtonMail\n\nxYYEXkZ8zhYJKwYBBAHaRw8BAQdA2WYzsgWaxWBdTrHfbRWiYW47mYzHysCC\nwqLbz6VlFWj+CQMI8LSE8Hrx/2JgGDsVya2hCtaH7T4EzR/11+QCiGlJrq3a\nhMWQLVmJ013vqEjQOiO2Xxve2D+MWzBzM0RgmQ3vP8ozU+8p8z8Va9797JdS\nTc0MQ2FsZW5kYXIga2V5wngEEBYKACAFAl5GfM4GCwkHCAMCBBUICgIEFgIB\nAAIZAQIbAwIeAQAKCRDbgJHYxPVSo9/LAP9ZeU9Q0boRIMK6Rx17PEjqDoC0\npgpPxYY/eStZxICkDwEAsSJdwUvYC39Tqp424Aoll0gKH8XYTjx2gAFeToDh\n/Q3HiwReRnzOEgorBgEEAZdVAQUBAQdAtqy9+vxehURCi7CtZKAc5tMp9lZ/\nCJ5ZI/rRzKK2kwwDAQgH/gkDCPcPy5N7YGB8YPf+uFQXwgZHK3abc+7xs6jH\n+H87u2mJ4RDJXcFnTargLbdIrbZKpLV2l1bLWfC5cAERwIu4g0QaodBwpkxF\nbIHgaIlkHYDCYQQYFggACQUCXkZ8zgIbDAAKCRDbgJHYxPVSoysxAQDuVx3t\nYyoTIkuemwRl7IApVpJwV6M74c6caaKaZvwk9wEAgqE6qPRDv9vjASdZC4P7\n3BPyP/5gHrROVYCgAP4H3AY=\n=oimP\n-----END PGP PRIVATE KEY BLOCK-----\n",
+            "PassphraseID": "6S2ifWgtqWHpde6WPUcRoVCscUR_T-Qs5m3ewOTKc_YU7LaofWeFbq2uFZ7weT9QBHHO2mCvHUOAmPfHD07Bsw==",
+            "Flags": 3,
+            "CalendarID": "xZh4TFg7wJdXdZ-X5-XP-nrJC3TtEEfk2MPXeYTHxxw37wwXaQp3CZe-hnLlVz5BD7HC-YsTXqemTqt6UVylbg=="
+        }
+    ],
+    "Passphrase": {
+        "Flags": 1,
+        "ID": "6S2ifWgtqWHpde6WPUcRoVCscUR_T-Qs5m3ewOTKc_YU7LaofWeFbq2uFZ7weT9QBHHO2mCvHUOAmPfHD07Bsw==",
+        "MemberPassphrases": [
+            {
+                "MemberID": "xZh4TFg7wJdXdZ-X5-XP-nrJC3TtEEfk2MPXeYTHxxw37wwXaQp3CZe-hnLlVz5BD7HC-YsTXqemTqt6UVylbg==",
+                "Passphrase": "-----BEGIN PGP MESSAGE-----\nVersion: ProtonMail\n\nwcBMA5kajsUECZmgAQf+IdQQK5Q+RVfeMvD4KaGL1aGZqotoTWeUyV+9V70a\nnvH4ByXJI617wi1i6xJ79XfJNC7GtOO5LXvl8j4r74/NbZQLJ3X838+r2Cff\nYwzsuCXwIsViEIPUAxRz1OCFQ0wVVglkYS2uHLMpIOYaxxTd/jgiCiCTYs9/\n+8kwT2FGGLty34wDpWNm6SqLfZ0kae401InZ+/3skAVPFLfwAwdEAY1+q+Eu\nAbZmaNkh2hvmSUKuftxxaPqmbop1F5JWqfCzw4hnVX5vHXCMrilaGJ8+Y3O2\neLPgig+fR2aBNrTws71e9tB5MceD8Ci785WBsCcteZ5LvgU2iSA+UBt5uVGN\n7NJkAepWrZzlB4k144tX6G3gd2UsP3ltVYpzb4Y5wp2+VOqCx/kjMdDCvkGg\nnmZ/59FZ9MHnPL9nG9PxGScMCQyVewngpcMgeeZcmp3d8wbqKjBz7wQ5CPgP\nlhVNCaET1MHlIu8oYw==\n=CkD6\n-----END PGP MESSAGE-----\n",
+                "Signature": "-----BEGIN PGP SIGNATURE-----\nVersion: ProtonMail\n\nwsBcBAEBCAAGBQJeRnzOAAoJEBHDHo5eB/TQTyMIALNvB9/fyBkZwslE1Z2a\nvFuWCkTRK4lGSB/IIt1bVOkfRkmWCV00CVUKAICZr2w6palIqhuBA4OdPY3T\nqbKqOgDoAjQahH5cCeeXNHHq3IR3MrkzQrQQSrB8+Q7RBsjN4tZ3Brnlz5nl\nX87GYMXFeAoe7gpKucX9FXu9DsaJYyoXdKEiFS8L+UDHQucaYWBezUD2bqSo\nAwVSrrARkP4LCBp+YitxopB21oy9GeqodHc95GJxbG4j0U76AyyKPIJ4zZBc\neYimgZM+YiqRJO8NI+fD6eWJcfDiH1EPrUtmvjkORYIFrJDe63AX8P72fLix\nTDRgmpY386Sf8draiop+fH4=\n=rS6F\n-----END PGP SIGNATURE-----\n"
+            }
+        ]
+    },
+    "Members": [
+        {
+            "ID": "xZh4TFg7wJdXdZ-X5-XP-nrJC3TtEEfk2MPXeYTHxxw37wwXaQp3CZe-hnLlVz5BD7HC-YsTXqemTqt6UVylbg==",
+            "Permissions": 127,
+            "Email": "adamtst@protonmail.blue"
+        }
+    ],
+    "CalendarSettings": {
+        "ID": "xZh4TFg7wJdXdZ-X5-XP-nrJC3TtEEfk2MPXeYTHxxw37wwXaQp3CZe-hnLlVz5BD7HC-YsTXqemTqt6UVylbg==",
+        "CalendarID": "xZh4TFg7wJdXdZ-X5-XP-nrJC3TtEEfk2MPXeYTHxxw37wwXaQp3CZe-hnLlVz5BD7HC-YsTXqemTqt6UVylbg==",
+        "DefaultEventDuration": 30,
+        "DefaultPartDayNotifications": [
+            {
+                "Type": 0,
+                "Trigger": "-PT15M"
+            },
+            {
+                "Type": 1,
+                "Trigger": "-PT15M"
+            }
+        ],
+        "DefaultFullDayNotifications": [
+            {
+                "Type": 0,
+                "Trigger": "-PT15H"
+            },
+            {
+                "Type": 1,
+                "Trigger": "-PT15H"
+            }
+        ]
+    }
+}

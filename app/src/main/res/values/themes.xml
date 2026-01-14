@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ProtonTheme.Calendar.V5" parent="ProtonTheme.Calendar">
+        <item name="android:datePickerDialogTheme">@style/PickerDialog</item>
+        <item name="android:timePickerDialogTheme">@style/PickerDialog</item>
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
+    </style>
+
+    <style name="ProtonTheme.Splash.Calendar.V5" parent="ProtonTheme.Splash.Calendar">
+        <item name="postSplashScreenTheme">@style/ProtonTheme.Calendar.V5</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorAccent">?attr/proton_icon_accent</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+        <item name="android:windowBackground">@drawable/shape_dialogs_rounded</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/MaterialAlertDialog.App.Body.Text</item>
+        <item name="buttonBarPositiveButtonStyle">@style/MaterialDialogButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/MaterialDialogButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">@style/MaterialDialogButtonStyle</item>
+        <item name="colorControlHighlight">@color/ripple_norm_workaround</item>
+    </style>
+
+    <style name="PickerDialog" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="colorAccent">?attr/proton_icon_accent</item>
+        <item name="colorControlActivated">?attr/proton_icon_accent</item>
+        <item name="colorControlHighlight">?attr/proton_icon_accent</item>
+        <item name="android:windowBackground">@drawable/shape_dialogs_rounded</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/PickerDialogButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/PickerDialogButtonStyle</item>
+    </style>
+
+    <style name="AppWidgetContainer">
+        <!-- use @android:dimen/system_app_widget_background_radius in dimens-31 when we switch to targetSdk 31 -->
+        <item name="appWidgetRadius">@dimen/widget_background_corner_radius</item>
+        <item name="appWidgetPadding">@dimen/widget_padding</item>
+        <item name="appWidgetInnerRadius">8dp</item>
+        <item name="android:colorBackground">@color/background_norm</item>
+        <item name="colorSurface">@color/background_norm</item>
+    </style>
+
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+        <item name="backgroundColor">@color/background_norm</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">8dp</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/item_add_attendee_press"
+        layout="@layout/view_press_overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/item_add_attendee_icon_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_page"
+        app:layout_constraintTop_toTopOf="@id/item_add_attendee_text_layout"
+        app:layout_constraintBottom_toBottomOf="@id/item_add_attendee_text_layout"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/item_add_attendee_check_icon"
+            style="@style/Icon"
+            app:tint="@color/icon_hint"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:srcCompat="@drawable/ic_proton_checkmark"/>
+
+        <ProgressBar
+            android:id="@+id/item_add_attendee_loading_icon"
+            style="@style/Icon"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:indeterminate="true"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/item_add_attendee_delete_icon"
+            style="@style/Icon"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:srcCompat="@drawable/ic_proton_cross"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:selectableItemBackgroundBorderless"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_add_attendee_photo"
+        android:layout_width="@dimen/nav_view_user_initials_box_size"
+        android:layout_height="@dimen/nav_view_user_initials_box_size"
+        android:layout_marginStart="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_add_attendee_text_layout"
+        app:layout_constraintBottom_toBottomOf="@+id/item_add_attendee_text_layout"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/item_add_attendee_initials"
+        style="@style/Text.Default"
+        android:layout_width="@dimen/nav_view_user_initials_box_size"
+        android:layout_height="@dimen/nav_view_user_initials_box_size"
+        app:layout_constraintStart_toStartOf="@+id/item_add_attendee_photo"
+        app:layout_constraintTop_toTopOf="@+id/item_add_attendee_photo"
+        app:layout_constraintBottom_toBottomOf="@+id/item_add_attendee_photo"
+        app:layout_constraintEnd_toEndOf="@+id/item_add_attendee_photo"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@drawable/shape_background_square_rounded_avatar"
+        tools:text="JD" />
+
+    <LinearLayout
+        android:id="@+id/item_add_attendee_text_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/attendee_item_vertical_margin"
+        android:layout_marginBottom="@dimen/attendee_item_vertical_margin"
+        android:layout_marginStart="@dimen/default_margin_text_start"
+        android:layout_marginEnd="@dimen/spacing_element_small"
+        app:layout_constraintEnd_toStartOf="@+id/item_add_attendee_icon_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/item_add_attendee_title"
+            style="@style/Text.Default"
+            android:breakStrategy="simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="John Doe" />
+
+        <TextView
+            android:id="@+id/item_add_attendee_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:breakStrategy="simple"
+            android:visibility="gone"
+            tools:visibility="visible"
+            style="@style/Text.DefaultSmall.Weak"
+            tools:text="johndoe@pm.me" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

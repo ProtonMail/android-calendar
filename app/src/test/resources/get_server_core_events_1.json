@@ -1,0 +1,49 @@
+{
+  "Code": 1000,
+  "EventID": "tuSVNffjJ-X7oNoI3o56uToDlTKy6AIvF0XVh9AIz0CN9j60PoE9mZJMSJzqCPpaPBphecjDWUbOrx4-HpuzdQ==",
+  "Refresh": 0,
+  "More": 1,
+  "Calendars": [
+    {
+      "ID": "iy-qX4FUDKVvivBrwQI_AEfVEkCu5maUqxoFNzmyak9YkG5Ijsvtv25l3V2BNCDMtdYaMFQuAbQb956KoPDIDA==",
+      "Action": 1,
+      "Calendar": {
+        "ID": "iy-qX4FUDKVvivBrwQI_AEfVEkCu5maUqxoFNzmyak9YkG5Ijsvtv25l3V2BNCDMtdYaMFQuAbQb956KoPDIDA==",
+        "Name": "Calendar for test",
+        "Description": "",
+        "Flags": 1,
+        "Color": "#C793CA",
+        "Display": 1,
+        "CalendarID": "iy-qX4FUDKVvivBrwQI_AEfVEkCu5maUqxoFNzmyak9YkG5Ijsvtv25l3V2BNCDMtdYaMFQuAbQb956KoPDIDA=="
+      }
+    },
+    {
+      "ID": "Rran1B4Q1bzUSTuPfzoMqUafIX84R8ANlfGywZNH_wZRpyUNwV6aevy8c1iw9Fgn1gg7ZSpEPY-S3PMXsVX0Sw==",
+      "Action": 2,
+      "Calendar": {
+        "ID": "Rran1B4Q1bzUSTuPfzoMqUafIX84R8ANlfGywZNH_wZRpyUNwV6aevy8c1iw9Fgn1gg7ZSpEPY-S3PMXsVX0Sw==",
+        "Name": "calendar f",
+        "Description": "",
+        "Flags": 1,
+        "Color": "#E6C04C",
+        "Display": 1,
+        "CalendarID": "Rran1B4Q1bzUSTuPfzoMqUafIX84R8ANlfGywZNH_wZRpyUNwV6aevy8c1iw9Fgn1gg7ZSpEPY-S3PMXsVX0Sw=="
+      }
+    }
+  ],
+  "CalendarMembers": [
+    {
+      "ID": "eN2-lXjSdKp-fXsJ3uTdvT-AYGULMPcdNyN7nZ4YtZ3dQQXFMA2AFjVMnvEHS7y5NGVhweLz0cUuWkfC8pvo1g==",
+      "Action": 1,
+      "Member": {
+        "ID": "eN2-lXjSdKp-fXsJ3uTdvT-AYGULMPcdNyN7nZ4YtZ3dQQXFMA2AFjVMnvEHS7y5NGVhweLz0cUuWkfC8pvo1g==",
+        "Permissions": 127,
+        "Email": "adamtst@protonmail.com",
+        "CalendarID": "iy-qX4FUDKVvivBrwQI_AEfVEkCu5maUqxoFNzmyak9YkG5Ijsvtv25l3V2BNCDMtdYaMFQuAbQb956KoPDIDA==",
+        "Color": "#C793CA",
+        "Display": 1
+      }
+    }
+  ],
+  "Notices": []
+}

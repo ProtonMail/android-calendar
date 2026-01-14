@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.ProtonCalendar.AppWidget.Container"
+    android:theme="@style/AppWidgetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_header_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/widget_padding"
+        android:layout_marginTop="@dimen/widget_padding"
+        android:layout_marginBottom="@dimen/widget_padding"
+        android:background="@drawable/ripple_mini_calendar_day"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="2dp"
+        android:layout_toStartOf="@+id/ib_refresh"
+        android:layout_alignParentStart="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_header_text"
+            style="@style/Text.Caption.Strong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="bottom"
+            android:textColor="@color/text_weak"
+            tools:text="Monday" />
+
+        <TextView
+            android:id="@+id/tv_main_text"
+            style="@style/Text.Subheadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_header_text"
+            tools:text="November 1" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/ib_plus"
+        android:layout_width="@dimen/action_background_size"
+        android:layout_height="@dimen/action_background_size"
+        android:layout_alignTop="@id/rl_header_container"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/widget_padding"
+        android:background="@drawable/ripple_action_button_oval"
+        android:src="@drawable/ic_proton_plus"
+        android:tint="@color/icon_norm"
+        android:visibility="invisible"
+        tools:ignore="UseAppTint"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/ib_refresh"
+        android:layout_width="@dimen/action_background_size"
+        android:layout_height="@dimen/action_background_size"
+        android:layout_alignTop="@id/rl_header_container"
+        android:layout_alignEnd="@id/ib_plus"
+        android:layout_marginEnd="40dp"
+        android:layout_toStartOf="@+id/ib_plus"
+        android:background="@drawable/ripple_action_button_oval"
+        android:src="@drawable/ic_proton_arrows_rotate"
+        android:tint="@color/icon_norm"
+        android:visibility="invisible"
+        tools:ignore="UseAppTint"
+        tools:visibility="visible" />
+
+    <ListView
+        android:id="@+id/lv_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_header_container"
+        android:divider="@null"
+        android:paddingBottom="@dimen/widget_padding"
+        android:scrollbars="none"
+        />
+
+    <TextView
+        android:id="@+id/tv_widget_main_info_text"
+        style="@style/Text.DefaultSmall.Weak"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@id/lv_widget"
+        android:layout_alignTop="@id/lv_widget"
+        android:layout_alignEnd="@id/lv_widget"
+        android:layout_alignBottom="@id/lv_widget"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/widget_padding"
+        android:background="@drawable/ripple_mini_calendar_day"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:gravity="center|start"
+        android:maxLines="1"
+        android:text="@string/calendar_widget_please_log_in"
+        android:textAlignment="center"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>

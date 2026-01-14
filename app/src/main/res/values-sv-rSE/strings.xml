@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(ingen rubrik)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">(ingen e-postadress)</string>
+    <string name="default_user_display_name">(inget namn)</string>
+    <string name="toast_copied_to_clipboard">Kopierad till urklipp</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">Ta bort händelse</string>
+    <string name="dialog_title_delete_recurring_event">Ta bort återkommande händelse</string>
+    <string name="dialog_description_delete_event">Vill du ta bort denna händelse?</string>
+    <string name="dialog_description_delete_recurring_event">Vill du ta bort alla händelser i serien?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">Denna händelse har uppdaterats av arrangören. Vill du ta bort denna händelse?</string>
+    <string name="dialog_button_delete">Ta bort</string>
+    <string name="dialog_button_cancel">Avbryt</string>
+    <string name="dialog_button_continue">Fortsätt</string>
+    <string name="dialog_button_close">Stäng</string>
+    <string name="dialog_button_remove">Ta bort</string>
+    <string name="dialog_button_download">Ladda ner</string>
+    <string name="dialog_button_update">Uppdatera</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">Ett e-postmeddelande att händelsen avbokats kommer skickas till evenemangsdeltagarna. Vill du ta bort denna händelse?</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">Din adress är inaktiverad. Ett e-postmeddelande för avbokning av händelsen kan inte skickas till evenemangsdeltagarna. Vill du ändå ta bort denna händelse?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">Ett e-postmeddelande att händelsen ställts in kommer skickas till evenemangsdeltagarna. Vill du ta bort alla händelser i denna serie?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">Din adress är inaktiverad. Ett e-postmeddelande för avbokning av händelsen kan inte skickas till evenemangsdeltagarna. Vill du ändå ta bort alla händelser i denna serie?</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">Organisatören av denna händelse kommer att aviseras om att du avböjer inbjudan. Vill du ta bort denna händelse?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">Organisatören av denna händelse kommer inte att aviseras om att du avböjer inbjudan eftersom du inte kan skicka e-post från den inbjudna adressen. Vill du ta bort denna händelse ändå?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">Organisatören av denna serie av händelser kommer att aviseras om att du avböjer inbjudan. Vill du ta bort alla händelser i denna serie?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">Organisatören av denna serie av händelser kommer inte att aviseras om att du avböjer inbjudan eftersom du inte kan skicka e-post från den inbjudna adressen. Vill du ta bort alla händelser i denna serie ändå?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">Denna händelse har uppdaterats. Organisatören kommer att aviseras att du avböjer inbjudan. Vill du ta bort denna händelse?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">Denna händelse har uppdaterats. Organisatören kommer inte att aviseras att du avböjer inbjudan eftersom du inte kan skicka e-post från den inbjudna adressen. Vill du ta bort denna händelse?</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">Förekomster som tidigare uppdaterats av arrangören kommer att behållas, men dina svar kommer att förloras</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">Förekomster som tidigare uppdaterats av arrangören kommer att behållas</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">Organisatören kan inte aviseras om att du avböjer inbjudan:\n\n• %1$s\n\nVill du ta bort händelsen ändå?</string>
+    <string name="dialog_button_set">Ställ in</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="action_save">Spara</string>
+    <string name="action_done">Klar</string>
+    <string name="action_edit">Redigera</string>
+    <string name="action_delete">Ta bort</string>
+    <string name="action_add">Lägg till</string>
+    <string name="action_remove">Ta bort</string>
+    <string name="action_leave">Lämna</string>
+    <string name="action_recreate">Rensa</string>
+    <string name="action_today">Idag</string>
+    <string name="action_create_event">Skapa händelse</string>
+    <string name="action_mark_default">Markera som standard</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">Inga händelser</string>
+    <string name="agenda_loading_events">Laddar händelser…</string>
+    <string name="agenda_loading_events_error">Fel vid laddning av händelser</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+ %1$d till</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">Heldag</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">Vid tidpunkten för händelsen</string>
+    <string name="event_alarm_label_at_event_time_by_email">Vid tidpunkten för händelsen via e-post</string>
+    <string name="event_alarm_label_on_the_same_day">På samma dag</string>
+    <string name="event_alarm_label_before">%1$s innan</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s innan via e-post</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s kl. %2$s</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s kl. %2$s via e-post</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s innan kl. %2$s</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s innan kl. %2$s via e-post</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s på %2$s</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s på dag %2$d</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s på %2$s</string>
+    <string name="event_recurrence_none">Upprepas inte</string>
+    <string name="event_recurrence_daily">Dagligen</string>
+    <string name="event_recurrence_weekly">Varje vecka</string>
+    <string name="event_recurrence_monthly">Månadsvis</string>
+    <string name="event_recurrence_yearly">Årligen</string>
+    <string name="event_recurrence_weekly_on_all_days">hela dagen</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">fram till %1$s</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">fram till %1$s (%2$s)</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">Avbruten</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(Inaktiverad)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(Standard)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d ja</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d kanske</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d nej</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d väntande</string>
+    <string name="event_attendee_is_organizer">Du är organisatör</string>
+    <string name="event_attendee_organizer">Arrangör</string>
+    <string name="event_attendee_optional">Valfritt</string>
+    <string name="event_attendee_is_current_user">Du</string>
+    <string name="event_answer_attending">Delta?</string>
+    <string name="event_answer_yes">Ja</string>
+    <string name="event_answer_no">Nej</string>
+    <string name="event_answer_maybe">Kanske</string>
+    <string name="event_decryption_error_dialog_title">Händelsen kunde inte dekrypteras</string>
+    <string name="event_decryption_error_dialog_message">Dekryptering av denna händelses innehåll misslyckades.</string>
+    <string name="event_decryption_error_dialog_confirmation">Ta bort händelse</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">Ta bort händelser</string>
+    <string name="event_decryption_error_dialog_close">Stäng</string>
+    <string name="event_signature_verification_failure">Verifieringen av händelsesignaturen misslyckades. <a href="https://proton.me/support/what-is-a-digital-signature">Lär dig mer</a></string>
+    <string name="event_signature_verification_in_progress">Verifiering av händelsesignaturen pågår.</string>
+    <string name="event_signature_verification_network_error">Bekräftelse av händelsesignaturen förhindrades av ett fel. <a href="">Försök igen</a></string>
+    <string name="event_change_answer_recurring_title">Uppdatera återkommande händelse</string>
+    <string name="event_change_answer_recurring_description">Vill du ändra ditt svar för alla händelser i denna serie?</string>
+    <string name="event_change_answer_recurring_overwrite_description">Vill du ändra ditt svar för alla händelser i denna serie?\nNågra av dina svar på händelser som tidigare uppdaterats av arrangören kommer att gå förlorade.</string>
+    <string name="event_change_answer_recurring_single_edit_description">Denna händelse har uppdaterats av organisatören. Vill du ändra ditt svar endast för denna förekomst i denna serie?</string>
+    <string name="event_change_answer_recurring_cancel">Avbryt</string>
+    <string name="event_change_answer_recurring_confirm">Uppdatera</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s har accepterat din inbjudan till %2$s</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s har tackat nej till din inbjudan till %2$s</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">%1$s har preliminärt accepterat din inbjudan till %2$s</string>
+    <string name="event_organizer_send_prefs_error_title">Organisatör kan inte bli aviserad</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">Arrangören kan inte aviseras om att du accepterat inbjudan</string>
+    <string name="event_organizer_send_prefs_message_declined_title">Arrangören kan inte aviseras om att du tackat nej till inbjudan</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">Arrangören kan inte aviseras om att du preliminärt accepterat inbjudan</string>
+    <string name="event_organizer_send_prefs_message_default_title">Arrangören kan inte aviseras om att du svarat på inbjudan</string>
+    <string name="event_organizer_send_prefs_button_title">OK</string>
+    <string name="event_attendees_send_prefs_error_title">Deltagare kan inte bli aviserade</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">Ingen av deltagarna kan aviseras om dina ändringar:\n\n• %1$s\n\nVill du fortsätta ändå?</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">Följande deltagare kan inte aviseras om dina ändringar:\n\n• %1$s\n\nVill du fortsätta ändå?</string>
+    <string name="event_attendees_send_prefs_error_confirm">Fortsätt</string>
+    <string name="event_attendees_send_prefs_error_cancel">Avbryt</string>
+    <string name="event_send_prefs_error_address_disabled">denna adress finns inte</string>
+    <string name="event_send_prefs_error_getting_contact">kunde inte hämta kontaktdata</string>
+    <string name="event_send_prefs_error_network">nätverksfel</string>
+    <string name="event_send_prefs_trusted_keys_invalid">betrodda nycklar är ogiltiga</string>
+    <string name="event_send_prefs_public_keys_invalid">offentliga nycklar är ogiltiga</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">kontaktsignatur ogiltig</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">Gå med i Zoom-möte</string>
+    <string name="zoom_meeting_title">Zoom-möte</string>
+    <string name="generic_meeting_id">ID: %1$s</string>
+    <string name="generic_meeting_password">Lösenord: %1$s</string>
+    <string name="generic_meeting_more_details">Mer detaljer</string>
+    <string name="generic_meeting_less_details">Mindre detaljer</string>
+    <string name="generic_meeting_host">Mötesvärd</string>
+    <string name="generic_meeting_link">Möteslänk</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Instruktioner för att gå med</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">Ny händelse</string>
+    <string name="event_text_edit_event">Redigera händelse</string>
+    <string name="event_hint_title">Lägg till rubrik</string>
+    <string name="event_hint_location">Lägg till plats</string>
+    <string name="event_text_add_participants">Lägg till deltagare</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">Deltagare (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">Du</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ %1$d till</string>
+    <string name="event_text_switch_all_day">Heldag</string>
+    <string name="event_text_date_start">Start</string>
+    <string name="event_text_date_end">Slut</string>
+    <string name="event_text_date_repeat">Upprepa</string>
+    <string name="event_text_date_repeat_never">Upprepas inte</string>
+    <string name="event_text_attendees">Deltagare</string>
+    <string name="event_text_attendees_none">Ingen</string>
+    <string name="event_text_calendar">Kalender</string>
+    <string name="event_text_timezone_start">Tidszon</string>
+    <string name="invite_in_shared_calendar_disclaimer">Att skicka inbjudningar är endast tillgängligt inom personliga kalendrar.</string>
+    <string name="invite_change_calendar_disclaimer">Det är inte möjligt att ändra kalendern associerad med inbjudningar.</string>
+    <string name="invite_change_attendees_disclaimer">Det är inte än möjligt att ändra deltagare associerade med inbjudningar.</string>
+    <string name="change_calendar_recurring_disclaimer">Ändra kalender för återkommande händelse är ännu inte möjligt.</string>
+    <string name="update_event">Uppdatera händelse</string>
+    <string name="update_invite_send_email">En inbjudningsuppdatering kommer att skickas till händelsens deltagare.</string>
+    <string name="update_recurring_event">Uppdatera återkommande händelse</string>
+    <string name="update_recurring_all_events">Vill du uppdatera alla händelser i denna serie?</string>
+    <string name="update_recurring_invite_send_email">Du kommer uppdatera alla händelser i denna serie. En inbjudningsuppdatering kommer att skickas till händelsens deltagare.</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">Vad letar du efter?</string>
+    <string name="search_empty_results_title">Inga resultat hittades</string>
+    <string name="search_empty_results_subtitle">Prova en annan term, t.ex. Erik, födelsedag, webbseminarium, bokklubb.</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">Laddar ned kalendrar (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">Återstående tid: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">Beräknar återstående tid…</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">nästan klar</string>
+    <string name="search_downloading_pause">Pausa nedladdning</string>
+    <string name="search_settings_dialog_toggle_off_title">Ta bort alla nedladdade kalendrar?</string>
+    <string name="search_settings_dialog_toggle_off_text">Du måste ladda ner dina kalendrar igen om du vill söka.</string>
+    <string name="search_settings_dialog_toggle_on_title">Ladda ner kalendrar till denna enhet?</string>
+    <string name="search_settings_dialog_toggle_on_text">Detta är obligatoriskt så att du kan söka.</string>
+    <string name="search_onboarding_header">Vill du söka i din kalender?</string>
+    <string name="search_onboarding_text">Först måste du ladda ner en krypterad kopia av dina kalendrar. Detta tar bara ett ögonblick och du kan fortsätta använda appen. <a href="https://proton.me/support/calendar-search">Lär dig mer</a></string>
+    <string name="search_onboarding_action_download_calendars">Ladda ner kalendrar</string>
+    <string name="search_onboarding_action_pause">Pausa</string>
+    <string name="search_onboarding_action_resume">Återuppta</string>
+    <string name="search_onboarding_action_retry">Försök igen</string>
+    <string name="search_onboarding_progress_header_ongoing">Laddar ner kalendrar…</string>
+    <string name="search_onboarding_progress_header_completed">Nedladdning slutförd</string>
+    <string name="search_onboarding_progress_header_paused">Nedladdning av kalendrar pausad</string>
+    <string name="search_onboarding_progress_header_error">Fel vid nedladdning av kalendrar</string>
+    <string name="search_spotlight_activation_snack">Kalendersökning aktiverad</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">Lägg till avisering</string>
+    <string name="event_text_description">Beskrivning</string>
+    <string name="event_hint_description">Lägg till beskrivning</string>
+    <string name="event_text_custom">anpassad</string>
+    <string name="event_alert_invalid_start_end_date">Händelsens startdatum kan inte vara efter slutdatum</string>
+    <string name="event_alarms_title">Aviseringar</string>
+    <string name="event_custom_alarms_field">Avisera</string>
+    <string name="event_custom_alarms_title">Anpassade aviseringar</string>
+    <string name="event_alarm_partial_day_1">vid tidpunkten för händelsen</string>
+    <string name="event_alarm_partial_day_2">10 minuter</string>
+    <string name="event_alarm_partial_day_3">30 minuter</string>
+    <string name="event_alarm_partial_day_4">1 timme</string>
+    <string name="event_alarm_partial_day_5">1 vecka</string>
+    <string name="event_alarm_all_day_1">samma dag kl. %1$s</string>
+    <string name="event_alarm_all_day_2">1 dag innan kl. %1$s</string>
+    <string name="event_alarm_all_day_3">1 vecka innan kl. %1$s</string>
+    <string name="event_alarm_all_day_4">3 veckor innan kl. %1$s</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">kl. %1$s</string>
+    <string name="event_alarm_action">Skicka via</string>
+    <string name="event_alarm_action_notification">avisering</string>
+    <string name="event_alarm_action_email">e-post</string>
+    <string name="event_alarm_same_day">på samma dag</string>
+    <string name="event_recurrence_1">upprepa inte</string>
+    <string name="event_recurrence_2">varje dag</string>
+    <string name="event_recurrence_3">varje vecka</string>
+    <string name="event_recurrence_4">varje månad</string>
+    <string name="event_recurrence_5">varje år</string>
+    <string name="event_recurrence_title">Frekvens</string>
+    <string name="event_recurrence_custom_title">Anpassad frekvens</string>
+    <string name="event_recurrence_occurs_every">Upprepa varje</string>
+    <string name="event_recurrence_occurs_on">Upprepas på</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">på dag %1$d</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">på %1$s</string>
+    <string name="event_recurrence_ends_on">Slutar</string>
+    <string name="event_recurrence_ends_never">aldrig</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">på dag</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">på %1$s</string>
+    <string name="event_recurrence_ends_after_count_prefix">efter</string>
+    <string name="event_recurring_edit_this">Denna händelse</string>
+    <string name="event_recurring_edit_this_and_future">Denna och kommande händelser</string>
+    <string name="event_recurring_edit_all_events">Alla händelser</string>
+    <string name="event_discard_changes_title">Ignorera ändringar?</string>
+    <string name="event_discard_changes_description">Du kommer att förlora alla osparade ändringar.</string>
+    <string name="event_discard_changes_cancel">Fortsätt redigera</string>
+    <string name="event_discard_changes_confirm">Ignorera</string>
+    <string name="event_recurring_update_this_title">Uppdatera återkommande händelse</string>
+    <string name="event_recurring_update_this_description">Frekvensändringar kommer att gå förlorade</string>
+    <string name="event_recurring_update_all_description">Tidigare ändringar av denna serie kommer att gå förlorade</string>
+    <string name="event_recurring_update_this_cancel">Avbryt</string>
+    <string name="event_recurring_update_this_confirm">Uppdatera</string>
+    <string name="event_allow_contacts_title">Tillåt Proton Calendar att komma åt dina kontakter?</string>
+    <string name="event_allow_contacts_description">Proton Calendar behöver åtkomst till dina kontakter för att ge dig autokomplettering</string>
+    <string name="event_allow_contacts_cancel">Neka</string>
+    <string name="event_allow_contacts_confirm">Tillåt</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Sv: Inbjudan för en händelse som börjar den %1$s kl. %2$s %3$s</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">Sv: Inbjudan till en händelse den %1$s</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">Sv: Inbjudan till en händelse som börjar den %1$s</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Inbjudan för en händelse som börjar den %1$s kl. %2$s %3$s</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">Inbjudan till en händelse den %1$s</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">Inbjudan för en händelse som börjar den %1$s</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Uppdatering för en händelse som börjar den %1$s kl. %2$s %3$s</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">Uppdatering av en händelse den %1$s</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">Uppdatering av en händelse som börjar den %1$s</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Avbokning av en händelse som börjar %1$s kl. %2$s %3$s</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">Avbokning av en händelse den %1$s</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">Avbokning av en händelse som börjar den %1$s</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">Du är inbjuden till %1$s\nNär: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s har uppdaterats\nNär: %2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (hela dagen)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s kl. %2$s %3$s - %4$s kl. %5$s %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nVar: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nBeskrivning: %1$s</string>
+    <string name="event_send_invite_dialog_title">Skicka inbjudan</string>
+    <string name="event_send_invite_dialog_description">En inbjudan kommer att skickas till tillagda deltagare.</string>
+    <string name="event_send_invite_dialog_confirm">Skicka</string>
+    <string name="event_send_invite_dialog_cancel">Avbryt</string>
+    <string name="event_add_participants_dialog_title">Lägg till deltagare</string>
+    <string name="event_add_participants_dialog_description">En inbjudan kommer att skickas till tillagda deltagare.</string>
+    <string name="recurring_event_add_participants_dialog_description">En inbjudan kommer att skickas till tillagda deltagare för alla händelser i denna serie.</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">En inbjudan kommer att skickas till tillagda deltagare för alla händelser i denna serie.\nTidigare ändringar av denna serie kommer att gå förlorade.</string>
+    <string name="event_add_participants_dialog_confirm">Skicka</string>
+    <string name="event_add_participants_dialog_cancel">Avbryt</string>
+    <string name="event_remove_participants_dialog_title">Ta bort deltagare</string>
+    <string name="event_remove_participants_dialog_description">Ett avbokningsmeddelande kommer att skickas till borttagna deltagare.</string>
+    <string name="recurring_event_remove_participants_dialog_description">Ett e-postmeddelande kommer skickas till alla borttagna deltagare i denna serie.</string>
+    <string name="event_add_and_remove_participants_dialog_description">Tillagda och borttagna deltagare kommer att aviseras.</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">Tillagda och borttagna deltagare kommer att aviseras om alla händelser i denna serie.</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s har avbrutits.</string>
+    <string name="event_save_changes">Spara ändringar</string>
+    <string name="event_update_add_participants_dialog_description">Befintliga och tillagda deltagare kommer att aviseras.</string>
+    <string name="recurring_event_update_add_participants_dialog_description">Du kommer att uppdatera alla händelser i denna serie. Befintliga och tillagda deltagare kommer att aviseras.</string>
+    <string name="event_update_remove_participants_dialog_description">Befintliga och borttagna deltagare kommer att aviseras.</string>
+    <string name="event_update_remove_all_participants_dialog_description">Borttagna deltagare kommer att aviseras.</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">Du kommer att uppdatera alla händelser i denna serie. Befintliga och borttagna deltagare kommer att aviseras.</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">Du kommer att uppdatera alla händelser i denna serie. Borttagna deltagare kommer att aviseras.</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">Befintliga, tillagda och borttagna deltagare kommer att aviseras.</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">Du kommer att uppdatera alla händelser i denna serie. Befintliga, tillagda och borttagna deltagare kommer att aviseras.</string>
+    <string name="success_snack_email_update_recurring">Deltagare aviserade och alla händelser uppdaterade</string>
+    <string name="success_snack_email_update">Deltagarna aviserade och händelse uppdaterad</string>
+    <string name="success_snack_add_attendees_recurring">Inbjudan skickad och deltagare tillagda till alla händelser</string>
+    <string name="success_snack_add_attendees">Inbjudan skickad och deltagare tillagda</string>
+    <string name="success_snack_remove_attendees_recurring">Avbokning skickad och deltagare borttagna från alla händelser</string>
+    <string name="success_snack_remove_attendees">Avbokning skickad och deltagare borttagna</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">Mina kalendrar</string>
+    <string name="nav_view_subscribed_calendars">Prenumererade kalendrar</string>
+    <string name="nav_view_other_calendars">Andra kalendrar</string>
+    <string name="nav_view_disabled_calendars">%1$s (inaktiverad)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (inte synkroniserad)</string>
+    <string name="nav_view_syncing_calendars">%1$s (synkroniserar)</string>
+    <string name="nav_view_more">Mer</string>
+    <string name="nav_view_switcher">Visa</string>
+    <string name="nav_view_switcher_day">Dag</string>
+    <string name="nav_view_switcher_three_day">3 dagar</string>
+    <string name="nav_view_switcher_week">Vecka</string>
+    <string name="nav_view_switcher_agenda">Agenda</string>
+    <string name="nav_view_switcher_month">Månad</string>
+    <string name="nav_view_timezone">Tidszon</string>
+    <string name="nav_view_settings">Inställningar</string>
+    <string name="nav_view_feedback">Ge oss feedback</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">Allmänt</string>
+    <string name="nav_view_more_bug">Rapportera ett problem</string>
+    <string name="nav_view_more_subscription">Prenumeration</string>
+    <string name="nav_view_more_logout">Logga ut</string>
+    <string name="nav_view_more_login">Logga in</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">Denna funktion kommer snart</string>
+    <string name="snack_event_deleted">Händelse borttagen</string>
+    <string name="snack_event_deleted_as_organizer">Inställning skickad och händelse borttagen</string>
+    <string name="snack_event_deleted_as_attendee">Svar skickat och händelse borttagen</string>
+    <string name="snack_event_deleted_error">Fel vid borttagning av händelse</string>
+    <string name="snack_event_deleted_as_organizer_error">Meddelande om inställt möte kan inte skickas, försök igen</string>
+    <string name="snack_event_opening_error">Det gick inte att öppna händelse</string>
+    <string name="snack_event_saving">Sparar händelse</string>
+    <string name="snack_event_deleting">Tar bort händelse</string>
+    <string name="snack_event_changing_answer">Uppdaterar svar</string>
+    <string name="snack_event_part_stat_updated">Deltagandestatus uppdaterad.</string>
+    <string name="snack_event_updated">Händelse uppdaterad</string>
+    <string name="snack_event_updated_recurring">Alla händelser uppdaterade</string>
+    <string name="snack_event_updated_error_failed_mail">Inbjudan kunde inte skickas</string>
+    <string name="snack_update_event_error_failed_mail">Uppdatering misslyckades</string>
+    <string name="snack_lost_zoom_access">Anslut till Zoom för att redigera denna händelse.</string>
+    <string name="snack_lost_zoom_access_acion">Anslut</string>
+    <string name="snack_zoom_meeting_does_not_exist">Den här Zoom-sessionen har ställts in. Ta bort länken för att redigera detta evenemang.</string>
+    <string name="snack_event_updated_error">Fel vid uppdatering av händelse</string>
+    <string name="snack_event_created">Händelse skapad</string>
+    <string name="snack_event_created_failed_mail">Händelse skapad men inbjudan misslyckades att skickas</string>
+    <string name="snack_event_created_error">Det gick inte att skapa händelse</string>
+    <string name="snack_event_opening_edit_error">Det gick inte att öppna händelse för redigering</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">Denna återkommande händelse kan endast tas bort i webbappen Kalender.</string>
+    <string name="snack_event_edit_with_attendees_error">Redigering av händelser med deltagare stöds inte ännu</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">Kan inte lägga till deltagare och byta kalender samtidigt</string>
+    <string name="snack_event_init_error">Fel vid initialisering av ny händelse</string>
+    <string name="snack_event_calendar_error">Det gick inte att byta kalender</string>
+    <string name="snack_event_maximum_alarm_reached_error">Det maximala antalet aviseringar har uppnåtts</string>
+    <string name="snack_send_bug_report_success">Rapport skickad, tack för din feedback</string>
+    <string name="snack_send_bug_report_error">Fel när rapporten skickades, försök igen senare</string>
+    <string name="snack_send_bug_report_description_empty">Ge en beskrivning av din rapport</string>
+    <string name="snack_create_event_no_active_personal_calendar">Du behöver en personlig aktiv kalender för att skapa händelser</string>
+    <string name="snack_create_event_no_active_calendar">Du behöver en aktiv kalender för att skapa händelser</string>
+    <string name="snack_add_self_as_participant">Självinbjudan är inte tillåten</string>
+    <string name="snack_maximum_participants_reached">Det maximala antalet deltagare har uppnåtts.</string>
+    <string name="snack_add_participant_error">Det gick inte att lägga till deltagaren</string>
+    <string name="snack_add_participant_invalid_email">Ogiltig e-post</string>
+    <string name="snack_change_attendee_answer_error">Fel när svar skickades, försök igen senare</string>
+    <string name="snack_network_error">Nätverksfel, försök igen senare</string>
+    <string name="snack_import_event_signed_out">Du måste logga in för att importera händelser</string>
+    <string name="snack_app_link_signed_out">Du måste logga in för att se din händelse</string>
+    <string name="snack_update_default_calendar">Standardkalender uppdaterad</string>
+    <string name="snack_update_default_calendar_error">Fel vid uppdatering av standardkalender, försök igen senare</string>
+    <string name="snack_calendar_init_error">Fel vid laddning av kalenderinformation</string>
+    <string name="snack_holiday_calendar_init_error">Det gick inte ladda information från helgdagskalender</string>
+    <string name="snack_update_calendar_error">Fel vid uppdatering av kalenderinformation, försök igen senare</string>
+    <string name="snack_update_calendar_settings_error">Fel vid uppdatering av viss kalenderinformation, försök igen senare</string>
+    <string name="snack_update_calendar_success">Kalender uppdaterad</string>
+    <string name="snack_create_calendar_success">Kalender skapad</string>
+    <string name="snack_add_calendar_success">Kalender tillagd</string>
+    <string name="snack_calendar_saving">Sparar kalender</string>
+    <string name="snack_create_calendar_error">Det gick inte att skapa kalender, försök igen senare</string>
+    <string name="snack_add_calendar_error">Det gick inte att lägga till kalender, försök igen senare</string>
+    <string name="snack_create_calendar_settings_error">Kalendern skapades men viss information uppdaterades inte, försök igen senare</string>
+    <string name="snack_ics_default_error">Fel att öppna kalender</string>
+    <string name="snack_ics_event_not_found_error">Händelse hittades inte</string>
+    <string name="snack_ics_file_not_found_error">Fil hittades inte</string>
+    <string name="snack_ics_create_error">Det gick inte att skapa händelse</string>
+    <string name="snack_ics_parsing_error">Fel vid läsning av kalender</string>
+    <string name="snack_ics_unsupported_method_error">Denna händelsetypen stöds inte än</string>
+    <string name="snack_ics_unsupported_add_error">Lägga till förekomster till en händelse stöds inte för tillfället</string>
+    <string name="snack_ics_unsupported_counter_error">Ombokning av händelser stöds inte för närvarande</string>
+    <string name="snack_ics_unsupported_refresh_error">Händelseuppdatering stöds inte för tillfället</string>
+    <string name="snack_ics_unsupported_publish_error">Händelseimport stöds inte för tillfället</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">Vi stöder endast svar på alla händelser i en serie för tillfället</string>
+    <string name="snack_ics_party_crasher_error">Din e-postadress finns inte på deltagarlistan</string>
+    <string name="snack_ics_reply_party_crasher_error">Deltagare som inte bjudits in av organisatören kan inte läggas till</string>
+    <string name="snack_ics_missing_uid_error">Händelse saknar UID</string>
+    <string name="snack_ics_no_active_personal_calendar_error">Det finns ingen aktiv personlig kalender associerad med detta konto</string>
+    <string name="snack_ics_no_active_calendar_error">Det finns ingen aktiv kalender associerad med detta konto</string>
+    <string name="snack_ics_unsupported_duration_error">Längdegenskap stöds inte</string>
+    <string name="snack_ics_too_many_events_error">Flera händelser stöds ännu inte</string>
+    <string name="snack_ics_no_events_error">Denna kalender innehåller ingen händelse</string>
+    <string name="snack_ics_invalid_error">Denna inbjudan är ogiltig</string>
+    <string name="snack_ics_disabled_calendar_error">Återaktivera adressen som är länkad till denna kalender för att uppdatera denna händelse</string>
+    <string name="snack_ics_event_deleted_error">Händelsen finns inte längre i din kalender</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s accepterade din inbjudan</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s accepterade preliminärt din inbjudan</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s avböjde din inbjudan</string>
+    <string name="snack_app_link_invalid">Ogiltig länk till händelsen</string>
+    <string name="snack_app_link_error">Det gick inte att öppna händelse</string>
+    <string name="snack_app_link_import_error">Autentisering avbröts</string>
+    <string name="snack_notification_already_added">Aviseringen har redan lagts till</string>
+    <string name="snack_opening_ics">Öppnar händelse…</string>
+    <string name="snack_invite_in_shared_calendar_error">Det är inte tillåtet att skapa inbjudningar i en delad kalender</string>
+    <string name="snack_down_banner">Proton-servrarna är nere. Besök vår statussida för mer information.</string>
+    <string name="snack_down_banner_action">Öppna statussida</string>
+    <string name="snack_color_per_event_paid_feature">Uppgradera för att anpassa händelsefärger</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">Händelsen finns inte</string>
+    <string name="error_occurrence_does_not_exist">Förekomsten finns inte</string>
+    <string name="update_timezone_dialog_title">Tidszon ändrad</string>
+    <string name="update_timezone_dialog_message">Din systemtidszon verkar ha ändrats till %1$s. Vill du uppdatera dina inställningar för tidszon?</string>
+    <string name="update_timezone_dialog_confirmation">Uppdatera</string>
+    <string name="update_timezone_dialog_cancel">Avbryt</string>
+    <string name="contacts_permission_dialog_title">Tillåt Proton Calendar att komma åt dina kontakter?</string>
+    <string name="contacts_permission_dialog_message">Proton Calendar behöver åtkomst till dina telefonkontakter för att hjälpa dig att enkelt lägga till dem i dina händelser.</string>
+    <string name="contacts_permission_dialog_allow">Tillåt</string>
+    <string name="contacts_permission_dialog_open_settings">Öppna inställningar</string>
+    <string name="contacts_permission_dialog_cancel">Neka</string>
+    <string name="dialog_title_calendar_picker">Kalender</string>
+    <string name="dialog_title_calendar_color_picker">Kalenderfärg</string>
+    <string name="dialog_title_event_color_picker">Händelsefärg</string>
+    <string name="import_from_google_title">Importera från Google</string>
+    <string name="notifications_permission_dialog_title">Tillåt Proton Calendar att visa aviseringar?</string>
+    <string name="notifications_permission_dialog_message">Proton Calendar behöver tillåtelse för att visa dig aviseringar om kommande händelser.</string>
+    <string name="notifications_permission_dialog_open_settings">Öppna inställningar</string>
+    <string name="notifications_permission_dialog_cancel">Neka</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">Händelseaviseringar</string>
+    <string name="notification_channel_sync">Kalendersynkronisering</string>
+    <string name="notification_channel_calendar_fetch">Hämtar kalendrar</string>
+    <string name="notification_sync">Synkroniserar kalendrar…</string>
+    <string name="notification_text_today">Idag</string>
+    <string name="notification_text_today_part_time">Idag kl. %1$s</string>
+    <string name="notification_text_tomorrow">Imorgon</string>
+    <string name="notification_text_tomorrow_part_time">Imorgon kl. %1$s</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s kl. %2$s</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">Ämne</string>
+    <string name="bug_report_hint_description">Beskriv problemet och inkludera eventuella felmeddelanden.</string>
+    <string name="bug_report_discard_changes_title">Osparade ändringar</string>
+    <string name="bug_report_discard_changes_description">Det finns osparade ändringar i formuläret. Är du säker på att du vill kasta bort dem?</string>
+    <string name="bug_report_discard_changes_cancel">Fortsätt skriva</string>
+    <string name="bug_report_discard_changes_confirm">Förkasta</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">Appinställningar</string>
+    <string name="settings_theme_title">Tema</string>
+    <string name="settings_theme_info">Denna inställning påverkar endast utseendet på Proton Calendar-appen på denna enhet. Appen kommer starta om efter att ha ändrat temat.</string>
+    <string name="settings_timezone_title">Tidszon</string>
+    <string name="settings_language_title">Appspråk</string>
+    <string name="settings_language_default">Automatisk upptäckt</string>
+    <string name="settings_default_view_title">Standardvy</string>
+    <string name="settings_default_view_default">Senaste vy</string>
+    <string name="settings_update_timezone_title">Be att uppdatera tidszonsinställning</string>
+    <string name="settings_update_timezone_subtitle">Om systemets tidszon inte matchar den nuvarande tidszonsinställningen kommer du att bli ombedd att uppdatera den.</string>
+    <string name="settings_update_timezone_checkbox">Fråga mig inte igen</string>
+    <string name="settings_week_start_title">Veckostart</string>
+    <string name="settings_time_format_title">Tidsformat</string>
+    <string name="settings_week_numbers_title">Visa veckonummer</string>
+    <string name="settings_auto_invites_title">Lägg till inbjudningar i kalendern och markera som väntande</string>
+    <string name="settings_search_title">Sök kalendrar</string>
+    <string name="settings_search_subtitle">Laddar ner och lagrar kalenderinnehåll på din enhet för sökning. Om du stänger av detta tas nedladdat innehåll bort.\n\nSökning är en experimentell betafunktion. Att aktivera det kan göra appen instabil.</string>
+    <string name="settings_alternative_routing_title">Tillåt alternativ routing</string>
+    <string name="settings_alternative_routing_subtitle">Om Proton-webbplatser blockeras tillåter denna inställning appen att prova alternativ nätverksrouting för att nå Proton, vilket kan vara användbart för att kringgå brandväggar eller nätverksproblem. Vi rekommenderar att du behåller denna inställning på för större tillförlitlighet.</string>
+    <string name="settings_value_placeholder">Tryck för att välja</string>
+    <string name="settings_general_title">Allmänt</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s etc.</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">tema</string>
+    <string name="settings_general_info_language">språk</string>
+    <string name="settings_general_info_time_zone">tidszon</string>
+    <string name="settings_general_info_calendar_layout">kalenderlayout</string>
+    <string name="settings_calendars">Mina kalendrar</string>
+    <string name="settings_calendars_empty">Inga kalendrar hittades</string>
+    <string name="settings_subscribed_calendars">Prenumererade kalendrar</string>
+    <string name="settings_other_calendars">Andra kalendrar</string>
+    <string name="settings_calendar_default" comment="Default calendar">Standard</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">Inaktiverad</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">Inte synkroniserad</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">Synkroniserar</string>
+    <string name="settings_calendar_subscribed_invalid_ics">Kalenderformat stöds inte</string>
+    <string name="settings_calendar_subscribed_too_big">Kalender är för stor</string>
+    <string name="settings_calendar_subscribed_not_accessible">Kalenderlänk är inte åtkomlig</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">Kalenderlänk är tillfälligt otillgänglig</string>
+    <string name="settings_calendar_subscribed_last_sync_old">Mer än 12 timmar har gått sedan senaste uppdatering</string>
+    <string name="settings_calendar_subscribed_not_decrypted">Kalender kunde inte dekrypteras</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">Endast visa</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">från %1$s</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">Skapa kalender</string>
+    <string name="calendar_form_update_title">Redigera kalender</string>
+    <string name="calendar_form_save">Spara</string>
+    <string name="calendar_form_name">Namn</string>
+    <string name="calendar_form_description">Beskrivning</string>
+    <string name="calendar_form_color">Kalenderfärg</string>
+    <string name="calendar_form_language">Språk</string>
+    <string name="calendar_form_default_event_duration">Händelsens varaktighet</string>
+    <string name="calendar_form_default_event_notifications">Händelseaviseringar</string>
+    <string name="calendar_form_default_all_day_event_notifications">Aviseringar för heldagshändelse</string>
+    <string name="calendar_form_add_notification">Lägg till avisering</string>
+    <string name="calendar_form_default_email">E-postadress</string>
+    <string name="calendar_form_default_email_value_error">Misslyckades att hämta standard e-post</string>
+    <string name="calendar_form_name_hint">Lägg till ett kalendernamn</string>
+    <string name="calendar_form_name_required_error">Namn obligatoriskt</string>
+    <string name="calendar_form_description_hint">Lägg till en kalenderbeskrivning</string>
+    <string name="add_calendar_text">Lägg till kalender</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">Lägg till</string>
+    <string name="create_calendar_limit_reached">Du har nått det maximala antalet kalendrar.</string>
+    <string name="create_calendar_limit_reached_title">Kan inte lägga till fler kalendrar</string>
+    <string name="create_calendar_limit_reached_paid_description">Du har nått det maximala antalet av 25 kalendrar som är tillgängliga i ditt paket.\n\nFör att lägga till en ny kalender, ta bort en befintlig.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">Du måste ha minst en personlig kalender innan du når din paketgräns på 25 kalendrar.</string>
+    <string name="create_calendar_limit_reached_manage">Hantera kalendrar</string>
+    <string name="create_calendar_limit_reached_free_description">Du har nått det maximala antalet av 3 kalendrar som är tillgängliga i ditt paket.\n\nFör att lägga till en ny kalender, ta bort en befintlig.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">Du måste ha minst en personlig kalender innan du når din paketgräns på 3 kalendrar.</string>
+    <string name="create_calendar_limit_reached_error">Fel</string>
+    <string name="delete_calendar_dialog_title">Ta bort kalender</string>
+    <string name="delete_calendar_dialog_message">Är du säker på att du vill ta bort denna kalender?</string>
+    <string name="remove_calendar_dialog_title">Ta bort kalender</string>
+    <string name="remove_calendar_dialog_message">Är du säker på att du vill ta bort denna kalender?</string>
+    <string name="leave_calendar_dialog_title">Lämna kalender</string>
+    <string name="leave_calendar_dialog_message">Om du lämnar denna kalender så behöver du fråga ägaren för att gå med igen</string>
+    <string name="delete_default_calendar_dialog_message">Är du säker på att du vill ta bort denna kalender? “%1$s“ kommer att ställas in som standardkalender.</string>
+    <string name="delete_calendar_snack_deleted">Kalender borttagen</string>
+    <string name="remove_calendar_snack_removed">Kalender borttagen</string>
+    <string name="delete_calendar_snack_error">Fel vid borttagning av kalender</string>
+    <string name="remove_calendar_snack_error">Det gick inte att ta bort kalender</string>
+    <string name="leave_calendar_snack_error">Det gick inte att lämna kalender</string>
+    <string name="delete_calendar_snack_error_password_confirmation">Lösenordsbekräftelse misslyckades</string>
+    <string name="recreate_calendar_dialog_title">Rensa kalender</string>
+    <string name="recreate_calendar_dialog_message">Denna åtgärd kommer ta bort alla händelser och inbjudna användare.\n\nÄr du säker på att du vill rensa denna kalender?</string>
+    <string name="recreate_calendar_snack_error">Det gick inte att rensa kalender</string>
+    <string name="recreate_calendar_snack_deleted">Kalender rensad</string>
+    <string name="recreate_calendar_snack_clearing">Rensar kalender…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">Lägg till helgdagskalender</string>
+    <string name="holiday_calendar_title">Helgdagskalender</string>
+    <string name="add_holiday_calendar_country_search_hint">Sök efter ett land</string>
+    <string name="holiday_calendar_form_picker_title">Land</string>
+    <string name="holiday_calendar_time_zone_based">Baserat på din tidszon</string>
+    <string name="holiday_calendar_already_exists">Denna helgdagskalender är redan tillagd.</string>
+    <string name="holiday_calendar_value_placeholder">Välj land</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">OK</string>
+    <string name="bootstrap_error_no_calendar_title">Det finns inga kalendrar associerade med detta konto.</string>
+    <string name="bootstrap_error_no_calendar_message">För att ställa in en nu, besök <a href="https://calendar.proton.me">calendar.proton.me</a></string>
+    <string name="bootstrap_error_some_calendars_failed_title">Det gick inte att förbereda kalendrar</string>
+    <string name="bootstrap_error_some_calendars_failed_message">Följande kalendrar kunde inte ställas in</string>
+    <string name="bootstrap_error_no_active_calendar_title">Det finns ingen aktiv personlig kalender associerat till detta konto.</string>
+    <string name="bootstrap_error_no_active_calendar_message">För att lära dig hur man aktiverar en kalender, besök vår <a href="https://proton.me/support">kundskapsbas</a></string>
+    <string name="bootstrap_error_store_quota_reached_message">Inget mer lagringsutrymme tillgängligt.</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">Lär dig mer</string>
+    <string name="bootstrap_error_reset_needed_title">Återställ kalendernycklar</string>
+    <string name="bootstrap_error_reset_needed_message">Du har återställt ditt lösenord och händelser länkade till följande kalendrar kunde inte dekrypteras. Alla aktiva prenumererade kalendrar kommer synkroniseras igen efter några minuter.</string>
+    <string name="bootstrap_error_update_passphrase_title">Återaktivera kalendernycklar</string>
+    <string name="bootstrap_error_update_passphrase_message">Du har återaktiverat dina nycklar och händelser länkade till följande kalendrar nu kan dekrypteras.</string>
+    <string name="bootstrap_error_continue_button">Fortsätt</string>
+    <string name="splash_after_login_init">Förbereder kalendrar</string>
+    <string name="splash_init">Dekrypterar händelser</string>
+    <string name="default_calendar_name">Min kalender</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">Ge oss feedback</string>
+    <string name="dialog_feedback_text">Hur skulle du beskriva din upplevelse med Proton Calendar?</string>
+    <string name="dialog_feedback_rating_worst">Förfärlig</string>
+    <string name="dialog_feedback_rating_best">Underbar</string>
+    <string name="dialog_feedback_hint">Berätta om dina upplevelse. (valfritt)</string>
+    <string name="dialog_feedback_submit">Skicka</string>
+    <string name="dialog_feedback_submit_thank_you">Tack! Din feedback hjälper oss att förbättra Proton.</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Proton Calendar-widget</string>
+    <string name="calendar_widget_no_upcoming_events_today">Inga kommande händelser idag</string>
+    <string name="calendar_widget_loading_events">Laddar in händelser…</string>
+    <string name="calendar_widget_loading_events_error">Kunde inte ladda händelser</string>
+    <string name="calendar_widget_no_upcoming_events">Inga kommande händelser</string>
+    <string name="calendar_widget_please_log_in">Logga in för att se dina händelser</string>
+    <string name="calendar_widget_part_day_event_starts_at">Startar kl. %1$s</string>
+    <string name="calendar_widget_part_day_event_ends_at">Slutar kl. %1$s</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">Vad som är nytt</string>
+    <string name="spotlight_dialog_beta_header">Calendar Beta</string>
+    <string name="spotlight_dialog_skip">Hoppa över</string>
+    <string name="spotlight_dialog_confirmation_button">OK</string>
+    <string name="spotlight_dialog_month_view_title">Månadsvy</string>
+    <string name="spotlight_dialog_month_view_description">Få en överblick över dina händelser med vår nya månadsvy. Växla mellan vyer med hjälp av menyn.</string>
+    <string name="spotlight_dialog_easy_switch_description">Att importera händelser och annan data från Google Kalender till Proton Calendar är enklare än någonsin. Vår Easy Switch-importör guidar dig varje steg på vägen.</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">Starta import</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">Inte nu</string>
+    <string name="spotlight_dialog_auto_invites_title">Acceptera inbjudningar enkelt</string>
+    <string name="spotlight_dialog_auto_invites_description">Nu visas inbjudningar i din kalender som väntande händelser. Öppna bara en händelse för att svara.\n\nFör att hantera detta, gå till inställningar.</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">Nästa</string>
+    <string name="spotlight_v5_dialog_got_it_button">Förstått</string>
+    <string name="spotlight_v5_dialog_learn_more_button">Lär dig mer</string>
+    <string name="spotlight_v5_dialog_rebranding_title">Uppdaterat Proton, enhetligt skydd</string>
+    <string name="spotlight_v5_dialog_rebranding_description">Vi introducerar Protons uppdaterade utseende. Många tjänster, ett uppdrag. Välkommen till ett Internet där integritet är standard. <a href="https://proton.me/news/updated-proton">Lär dig mer</a></string>
+    <string name="spotlight_dialog_week_view_title">Fler visningsalternativ</string>
+    <string name="spotlight_dialog_week_view_description">• Nu finns <b>3-dagars</b>- och <b>vecko</b>vyer i kalendern. Välj din favoritvy i <b>menyn</b>.\n\n• Justera radhöjden i daglayouten genom att använda två fingrar för att zooma in eller ut.</string>
+    <string name="spotlight_dialog_search_title">Sök efter händelser</string>
+    <string name="spotlight_dialog_search_description">Hitta enkelt händelsen du letar efter med vår nya sökfunktion. <a href="https://proton.me/support/calendar-search">Lär dig mer</a></string>
+    <string name="spotlight_dialog_search_positive">Aktivera</string>
+    <string name="spotlight_dialog_search_negative">Hoppa över</string>
+    <string name="spotlight_dialog_import_title">Fler sätt att lägga till händelser</string>
+    <string name="spotlight_dialog_import_description">• Importera händelser till din kalender från filer på din telefon.\n\n• Lägg till resebokningar direkt från Proton Mail.</string>
+    <string name="spotlight_dialog_calendar_provider_title">Kalenderfunktioner</string>
+    <string name="spotlight_dialog_calendar_provider_description">• Lägg till händelser direkt i Proton Calendar från andra appar.\n\n• Skapa och hantera händelser i kalendrar som har delats med dig.\n\n• Välj standardvyn du vill se när du öppnar appen.\n\n• 13 nya språk tillgängliga.</string>
+    <string name="spotlight_dialog_wipe_search_title">Sök borttaget för att göra det bättre</string>
+    <string name="spotlight_dialog_wipe_search_description">Vi tar bort den experimentella sökmöjligheten från Proton Calendar Beta eftersom vi vill göra den mer användbar och tillförlitlig för dig. Detta kan ta några sekunder.</string>
+    <string name="spotlight_dialog_holiday_calendar_title">Allmänna helgdagar är här!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">Ingen mer schemaläggning av möten när alla är borta eller oplanerade utflykter under långhelger.\n\nLägg till allmänna helgdagar för vilket land som helst i din kalender.</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">Ingen mer schemaläggning av möten när alla är borta eller oplanerade utflykter under långhelger.\n\nDå du har nått kalendergränsen så behöver du ta bort en kalender innan du kan lägga till en helgdagskalender.</string>
+    <string name="spotlight_dialog_color_per_event_title">Anpassa händelsefärger</string>
+    <string name="spotlight_dialog_color_per_event_description">Anpassa färgen på enskilda händelser för att:\n\n• Färgkoda din kalender\n\n• Bättre organisera din dag och spåra din tid\n\n• Prioriteringar och öka effektiviteten</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">Tillåt åtkomst</string>
+    <string name="dialog_google_auth_description">För att starta importen, logga in på Google Kalender och tillåt Proton att komma åt dina data.</string>
+    <string name="import_assistant_prepare_import_error">Det gick inte att förbereda import, försök igen senare</string>
+    <string name="import_assistant_prepare_import">Förbereder import</string>
+    <string name="import_assistant_gathering_data_loader_title">Samlar in din data</string>
+    <string name="import_assistant_summary_title">Importsammanfattning</string>
+    <string name="import_assistant_summary_customize_import">Anpassa import</string>
+    <string name="import_assistant_error">Fel vid hämtning av data</string>
+    <string name="import_assistant_data_gathering_error">Datainsamling misslyckades</string>
+    <string name="import_assistant_update_import_error">Misslyckades att uppdatera import, försök igen senare.</string>
+    <string name="import_assistant_update_import_wrong_account_error">Fel konto. Logga in med kontot du använde för kalenderimporten.</string>
+    <string name="import_assistant_start_import_error">Misslyckades att starta import, försök igen senare.</string>
+    <string name="import_assistant_delete_import_success">Importpost borttagen</string>
+    <string name="import_assistant_delete_import_error">Misslyckades att ta bort import, försök igen senare.</string>
+    <string name="import_assistant_cancel_import_error">Misslyckades att avbryta import, försök igen senare.</string>
+    <string name="import_assistant_resume_import_error">Misslyckades att återuppta import, försök igen senare.</string>
+    <string name="import_assistant_create_calendar_error">En eller flera kalendrar misslyckades att skapas</string>
+    <string name="import_assistant_start_import_empty_error">Misslyckades att starta import, det finns inga kalendrar att importera</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">Importera som</string>
+    <string name="import_assistant_new_calendar_badge">Ny</string>
+    <string name="import_assistant_merge_calendar_badge">Sammanslagna</string>
+    <string name="import_assistant_creating_calendars">Skapar nya kalendrar</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">Nästan där…</string>
+    <string name="import_assistant_new_calendar_header">Skapa nytt</string>
+    <string name="import_assistant_merge_calendar_header">Slå samman med befintliga</string>
+    <string name="import_assistant_in_progress_title">Import pågår</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">Importerar data från %1s till %2s.</string>
+    <string name="import_assistant_in_progress_redirect">Kontroll pågår</string>
+    <string name="import_assistant_in_progress_sub_description">Stora importer kan ta flera dagar. Vi meddelar dig när importen är klar. Du kan stänga denna skärm.</string>
+    <string name="import_assistant_guide_subtitle">Ta steget till integritet. Enkelt och säkert.</string>
+    <string name="import_assistant_guide_description">Flytta dina händelser och annan data från Google till Proton. Easy Switch-importören guidar dig varje steg på vägen och krypterar din data när den flyttas.</string>
+    <string name="import_assistant_new_import">Ny import</string>
+    <string name="import_assistant_previous_import">Föregående import</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">Startad</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">Pågår</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">Slutförd</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">Avbruten</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">Avbryter</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">Pausad</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">Misslyckades</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Anslutning till Google förlorades</string>
+    <string name="import_assistant_status_paused_lost_connection_description">För att fortsätta importen, tryck på Återanslut, logga in på Google och bevilja Proton åtkomst till din Google-data igen.</string>
+    <string name="import_assistant_status_paused_lost_connection_button">Anslut igen</string>
+    <string name="import_assistant_status_paused_storage_full_title">Ditt lagringsutrymme är fullt</string>
+    <string name="import_assistant_status_paused_storage_full_description">Ditt Proton-konto har inte tillräckligt med lagringsutrymme för att slutföra denna kalenderimport. Frigör utrymme eller lägg till mer lagringsutrymme och kom sedan tillbaka hit för att återuppta.</string>
+    <string name="import_assistant_status_paused_storage_full_button">Återuppta</string>
+    <string name="import_assistant_delete_report_title">Ta bort från listan?</string>
+    <string name="import_assistant_delete_report_message">Du kommer inte att se denna importpost i listan längre.</string>
+    <string name="import_assistant_delete_report_positive_button">Ta bort</string>
+    <string name="import_assistant_delete_report_negative_button">Behåll</string>
+    <string name="import_assistant_cancel_import_title">Import är ofullständig!</string>
+    <string name="import_assistant_cancel_import_message">Om du avbryter denna import kommer du inte att kunna återuppta den. Proton sparade alla förlopp på ditt konto. Avbryt ändå?</string>
+    <string name="import_assistant_cancel_import_positive_button">Avbryt import</string>
+    <string name="import_assistant_cancel_import_negative_button">Återuppta import</string>
+    <string name="import_assistant_in_progress_snack">Import pågår</string>
+    <string name="import_assistant_discard_import_title">Avbryt import?</string>
+    <string name="import_assistant_discard_import_message">Import är ofullständig och kan inte återstarta om du avbryter den.</string>
+    <string name="import_assistant_discard_import_positive">Avbryt import</string>
+    <string name="import_assistant_discard_import_negative">Återuppta import</string>
+    <string name="import_assistant_authentication_canceled">Autentisering avbröts</string>
+    <string name="import_assistant_sign_in_in_progress">En inloggningsprocess pågår redan</string>
+    <string name="import_assistant_in_progress_error_snack">Det pågår fortfarande en import</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">Importera som en enkel händelse?</string>
+    <string name="import_event_disclaimer_dialog_description">\nImporterade inbjudningar visas i Proton Calendar som enkla händelser utan information om <b>organisatör</b> och <b>deltagare</b>.\n\nFör att få händelseuppdateringar och se deltagare, be organisatören att bjuda in dig med din e-postadress från Proton.</string>
+    <string name="import_event_disclaimer_dialog_positive">Importera</string>
+    <string name="undefined_color">Odefinierad</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">kalender</item>
+        <item quantity="other">kalendrar</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">Importera %1$d kalender</item>
+        <item quantity="other">Importera %1$d kalendrar</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">%1$d pågående import</item>
+        <item quantity="other">%1$d pågående importer</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">%1$d av %2$d skapades i %3$s</item>
+        <item quantity="other">%1$d av %2$d skapades i %3$s</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">Skapa %1$d ny kalender i Proton Calendar.</item>
+        <item quantity="other">Skapa %1$d nya kalendrar i Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">Importera %1$d av %2$d kalender från</item>
+        <item quantity="other">Importera %1$d av %2$d kalendrar från</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">Slå samman %1$d kalender i Proton Calendar.</item>
+        <item quantity="other">Slå samman %1$d kalendrar i Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">Kan inte skapa nya kalendrar för alla importerade kalendrar på grund av kalendergränsen.\n • Avmarkera minst %1$d kalender</item>
+        <item quantity="other">Kan inte skapa nya kalendrar för alla importerade kalendrar på grund av kalendergränsen.\n • Avmarkera minst %1$d kalendrar</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020eller\n • Slå samman minst %1$d kalender med befintliga Proton-kalendrar.</item>
+        <item quantity="other">\u0020eller\n • Slå samman minst %1$d kalendrar med befintliga Proton-kalendrar.</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">sekund</item>
+        <item quantity="other">sekunder</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">minut</item>
+        <item quantity="other">minuter</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">timme</item>
+        <item quantity="other">timmar</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">dag</item>
+        <item quantity="other">dagar</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">vecka</item>
+        <item quantity="other">veckor</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">månad</item>
+        <item quantity="other">månader</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">år</item>
+        <item quantity="other">år</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">en gång</item>
+        <item quantity="other">gånger</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">förekomst</item>
+        <item quantity="other">förekomster</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">gång</item>
+        <item quantity="other">gånger</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">deltagare</item>
+        <item quantity="other">deltagare</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">Var %1$d %2$s</item>
+        <item quantity="other">Varje %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">Var %1$d %2$s</item>
+        <item quantity="other">Varje %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">Var %1$d %2$s</item>
+        <item quantity="other">Varje %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">Var %1$d %2$s</item>
+        <item quantity="other">Varje %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s minut</item>
+        <item quantity="other">%1$s minuter</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d/%2$d tecken</item>
+        <item quantity="other">%1$d/%2$d tecken</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d/%2$d tecken</item>
+        <item quantity="other">%1$d/%2$d tecken</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>första</item>
+        <item>andra</item>
+        <item>tredje</item>
+        <item>fjärde</item>
+        <item>femte</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>sista</item>
+        <item>näst sist</item>
+        <item>tredje till sist</item>
+        <item>fjärde sist</item>
+        <item>femte sist</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>Ljus</item>
+        <item>Mörk</item>
+        <item>Systemstandard</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>Systemstandard</item>
+        <item>13:00</item>
+        <item>1:00 PM</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>Systemstandard</item>
+        <item>Måndag</item>
+        <item>Lördag</item>
+        <item>Söndag</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>Lila|#8080FF</item>
+        <item>Jordgubb|#EC3E7C</item>
+        <item>Rosa|#DB60D6</item>
+        <item>Morot|#F78400</item>
+        <item>Sahara|#936D58</item>
+        <item>Enzian|#5252CC</item>
+        <item>Plommon|#A839A4</item>
+        <item>Cerise|#BA1E55</item>
+        <item>Koppar|#C44800</item>
+        <item>Jord|#54473F</item>
+        <item>Skifferblå|#415DF0</item>
+        <item>Stilla havet|#179FD9</item>
+        <item>Rev|#1DA583</item>
+        <item>Ormbunke|#3CBB3A</item>
+        <item>Oliv|#B4A40E</item>
+        <item>Kobolt|#273EB2</item>
+        <item>Hav|#0A77A6</item>
+        <item>Tall|#0F735A</item>
+        <item>Skog|#258723</item>
+        <item>Saltgurka|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>Lila</item>
+        <item>Jordgubb</item>
+        <item>Rosa</item>
+        <item>Morot</item>
+        <item>Sahara</item>
+        <item>Enzian</item>
+        <item>Plommon</item>
+        <item>Körsbär</item>
+        <item>Koppar</item>
+        <item>Jord</item>
+        <item>Skifferblå</item>
+        <item>Stilla havet</item>
+        <item>Rev</item>
+        <item>Ormbunke</item>
+        <item>Oliv</item>
+        <item>Kobolt</item>
+        <item>Hav</item>
+        <item>Tall</item>
+        <item>Skog</item>
+        <item>Saltgurka</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

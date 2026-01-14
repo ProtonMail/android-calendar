@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/action_clickable_size"
+    android:layout_height="@dimen/action_clickable_size">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/action_background_size"
+        android:layout_height="@dimen/action_background_size"
+        android:background="@drawable/ripple_action_button_oval"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_proton_plus"
+        android:clickable="false"
+        android:focusable="false"
+        app:tint="@color/icon_norm" />
+
+    <TextView
+        android:id="@+id/toolbarActionSecondaryText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        style="@style/Text.Caption.Strong"
+        android:layout_gravity="center"
+        tools:visibility="visible"
+        tools:text="12"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

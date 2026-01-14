@@ -1,0 +1,23 @@
+fullTest:
+  device:
+    - model: MediumPhone.arm
+      version: 28
+    - model: MediumPhone.arm
+      version: 27
+    - model: MediumPhone.arm
+      version: 29
+    - model: MediumPhone.arm
+      version: 32
+quickTest:
+  timeout: 30m
+  device:
+    - model: MediumPhone.arm
+      version: 32
+    - model: MediumPhone.arm
+      version: 26
+quickPhysicalTest:
+  timeout: 30m
+  device:
+    - model: bluejay
+      version: 32
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/item_drawer_calendar_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/sidebar_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/item_drawer_calendar_press"
+        android:background="@drawable/ripple_nav_items"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/item_drawer_calendar_divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/item_drawer_calendar_checkbox"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:gravity="center_vertical"
+        android:checked="true"
+        android:button="@drawable/custom_checkbox"
+        android:background="@drawable/shape_checkbox_nav_drawer"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_drawer_calendar_title"
+        app:layout_constraintBottom_toBottomOf="@+id/item_drawer_calendar_title"/>
+
+    <TextView
+        android:id="@+id/item_drawer_calendar_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Reminders"
+        style="@style/Text.DefaultSmall"
+        android:textColor="@color/sidebar_text_norm"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="@dimen/spacing_element"
+        android:layout_marginStart="@dimen/spacing_element"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_drawer_calendar_checkbox"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/item_drawer_calendar_divider"
+        style="@style/Separator"
+        android:background="@color/sidebar_separator"
+        android:visibility="invisible"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/item_drawer_calendar_title"
+        app:layout_constraintStart_toStartOf="@+id/item_drawer_calendar_title"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,280 @@
+<resources>
+
+    <style name="Text" parent="TextAppearance.AppCompat" />
+
+    <style name="Text.Headline">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_norm</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="Text.Headline.Hint">
+        <item name="android:textColor">@color/text_hint</item>
+    </style>
+
+    <style name="Text.Headline.Small">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Subheadline">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_norm</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="Text.Default">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_norm</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="Text.Default.RadioButton">
+        <item name="android:paddingStart">@dimen/radio_button_inner_padding</item>
+        <item name="android:paddingEnd">@dimen/radio_button_inner_padding</item>
+    </style>
+
+    <style name="Text.Default.Strong">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.Default.Weak">
+        <item name="android:textColor">@color/text_weak</item>
+    </style>
+
+    <style name="Text.Default.Form">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/default_margin_text_start</item>
+        <item name="android:layout_marginEnd">@dimen/default_margin_text_end</item>
+        <item name="android:layout_marginTop">@dimen/default_margin_text_vertical_large</item>
+        <item name="android:layout_marginBottom">@dimen/default_margin_text_vertical</item>
+    </style>
+
+    <style name="Text.DefaultSmall">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_norm</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="Text.DefaultSmall.Weak">
+        <item name="android:textColor">@color/text_weak</item>
+    </style>
+
+    <style name="Text.DefaultSmall.Strong">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.DefaultSmall.Weak.Italic">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Text.DefaultSmall.Strong.Inverted">
+        <item name="android:textColor">@color/text_inverted</item>
+    </style>
+
+    <style name="Text.DefaultSmall.Strong.Brand">
+        <item name="android:textColor">?attr/proton_text_accent</item>
+    </style>
+
+    <style name="Text.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_norm</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="Text.Caption.Strong">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.Caption.Weak">
+        <item name="android:textColor">@color/text_weak</item>
+    </style>
+
+    <style name="Text.Overline">
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_weak</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="Text.Overline.Strong">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Separator">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/separator_norm</item>
+    </style>
+
+    <style name="Icon">
+        <item name="tint">@color/icon_norm</item>
+        <item name="android:layout_width">@dimen/default_icon_size</item>
+        <item name="android:layout_height">@dimen/default_icon_size</item>
+    </style>
+
+    <style name="Icon.Form">
+        <item name="android:layout_marginStart">@dimen/default_inner_padding_start</item>
+    </style>
+
+    <style name="Icon.Small">
+        <item name="android:layout_width">@dimen/small_icon_size</item>
+        <item name="android:layout_height">@dimen/small_icon_size</item>
+    </style>
+
+    <style name="ColoredDot">
+        <item name="android:layout_width">@dimen/dot_icon_size</item>
+        <item name="android:layout_height">@dimen/dot_icon_size</item>
+    </style>
+
+    <style name="InputText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">?attr/proton_icon_accent</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxBackgroundColor">@color/background_secondary</item>
+    </style>
+
+    <style name="DayOfWeekChip" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_state_list</item>
+        <item name="rippleColor">@color/chip_ripple_state_list</item>
+        <item name="android:textColor">@color/chip_text_state_list</item>
+        <item name="android:textAppearance">@style/Text.Default</item>
+        <item name="android:textAlignment">center</item>
+        <item name="chipMinTouchTargetSize">1dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="chipEndPadding">0dp</item>
+        <item name="chipStartPadding">0dp</item>
+        <item name="textStartPadding">0dp</item>
+        <item name="textEndPadding">0dp</item>
+    </style>
+
+    <style name="AttendeeChip" parent="@style/Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/interaction_weak_norm</item>
+        <item name="android:textColor">@color/text_norm</item>
+        <item name="android:textAppearance">@style/Text.Default</item>
+        <item name="android:textAlignment">center</item>
+        <item name="chipMinTouchTargetSize">1dp</item>
+        <item name="chipEndPadding">0dp</item>
+        <item name="chipStartPadding">0dp</item>
+        <item name="textStartPadding">12dp</item>
+        <item name="textEndPadding">12dp</item>
+    </style>
+
+    <!-- PICKER DIALOG -->
+
+    <style name="PickerDialogButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textAppearance">@style/Text.Default.Strong</item>
+        <item name="android:textColor">?attr/proton_text_accent</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- MATERIAL ALERT DIALOG -->
+
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.MaterialComponents">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textAppearance">@style/Text.Headline</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App.Body.Text" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_norm</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="MaterialDialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textAppearance">@style/Text.Default.Strong</item>
+        <item name="android:textColor">?attr/proton_text_accent</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="TextviewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#86AD33</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">100dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#F1511B</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="AppFullscreenDialogTheme" parent="ProtonTheme.Calendar.V5">
+        <item name="android:windowEnterAnimation">@anim/custom_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/custom_fade_out</item>
+    </style>
+
+    <style name="AppFormTextHeader" parent="@android:style/TextAppearance"></style>
+
+    <style name="AppFormTextContent" parent="@android:style/TextAppearance">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="AppImageViewIcon" parent="">
+        <item name="tint">@color/icon_norm</item>
+    </style>
+
+    <style name="AppFormEditText">
+        <item name="colorControlNormal">#eaecf1</item>
+    </style>
+
+    <style name="Widget.ProtonCalendar.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="TextViewWarning" parent="Text.DefaultSmall">
+        <item name="android:textColor">@color/text_inverted</item>
+        <item name="android:textColorLink">@color/text_inverted</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@drawable/shape_background_warning</item>
+    </style>
+    
+</resources>

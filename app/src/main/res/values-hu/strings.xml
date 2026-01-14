@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(névtelen)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s   %2$s</string>
+    <string name="default_user_email">(nincs e-mail cím)</string>
+    <string name="default_user_display_name">(nincs név)</string>
+    <string name="toast_copied_to_clipboard">Vágólapra másolva</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">Esemény törlése</string>
+    <string name="dialog_title_delete_recurring_event">Ismétlődő esemény törlése</string>
+    <string name="dialog_description_delete_event">Valóban törli ezt az eseményt?</string>
+    <string name="dialog_description_delete_recurring_event">Valóban törli a sorozat összes eseményét?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">Az eseményt a szervező frissítette. Szeretné törölni az eseményt?</string>
+    <string name="dialog_button_delete">Törlés</string>
+    <string name="dialog_button_cancel">Mégsem</string>
+    <string name="dialog_button_continue">Tovább</string>
+    <string name="dialog_button_close">Bezár</string>
+    <string name="dialog_button_remove">Eltávolítás</string>
+    <string name="dialog_button_download">Letöltés</string>
+    <string name="dialog_button_update">Frissítés</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">A részvevők egy lemondási értesítőt fognak kapni. Szeretné törölni az eseményt?</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">Az ön címe le van tiltva. A részvevők így nem kapnak lemondási értesítőt. Ebben az esetben is szeretné törölni az eseményt?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">A részvevők egy lemondási értesítőt fognak kapni. Szeretné törölni a sorozat összes eseményét?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">Az ön címe le van tiltva. A részvevők így nem kapnak lemondási értesítőt. Ebben az esetben is törli a sorozat összes eseményét?</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">Az esemény szervezője értesítést kap, hogy elutasítja a meghívást. Szeretné törölni az eseményt?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">Az esemény szervezője nem kap értesítést, hogy elutasítja a meghívást, mivel az ön címe le van tiltva. Ebben az esetben is törli az eseményt?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">Az eseménysorozat szervezője értesítést kap, hogy elutasítja a meghívást. Szeretné törölni a sorozat összes eseményét?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">Az eseménysorozat szervezője nem kap értesítést, hogy elutasítja a meghívást, mivel a meghívóban szereplő címről nem tud levelet küldeni. Ebben az esetben is törli a sorozat összes eseményét?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">Az esemény frissítésre került. Az esemény szervezője értesítést kap, hogy elutasítja a meghívást. Szeretné törölni az eseményt?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">Az esemény frissítésre került. Az esemény szervezője nem kap értesítést, hogy elutasítja a meghívást, mivel a meghívóban szereplő címről nem tud levelet küldeni. Ebben az esetben is törli az eseményt?</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s \n %2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">A szervező által korábban módosított alkalmak megmaradnak, de az ön válaszai elvesznek</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">A szervező által korábban módosított alkalmak megmaradnak</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">Az esemény szervezője nem tud értesíteseket fogadni az esemény elutasításával kapcsolatban:\n\n• %1$s\n\nSzeretné minennek ellenére törölni az eseményt?</string>
+    <string name="dialog_button_set">Beállítás</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="action_save">Mentés</string>
+    <string name="action_done">Kész</string>
+    <string name="action_edit">Szerkesztés</string>
+    <string name="action_delete">Törlés</string>
+    <string name="action_add">Hozzáadás</string>
+    <string name="action_remove">Eltávolítás</string>
+    <string name="action_leave">Elhagyás</string>
+    <string name="action_recreate">Ürítés</string>
+    <string name="action_today">Ma</string>
+    <string name="action_create_event">Esemény létrehozása</string>
+    <string name="action_mark_default">Megjelölés alapértelmezettként</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">Nincsenek események</string>
+    <string name="agenda_loading_events">Események betöltése…</string>
+    <string name="agenda_loading_events_error">Hiba az események betöltése során</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s   %2$d</string>
+    <string name="day_view_all_day_more">+ %1$d több</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">Egész nap</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013 \n %2$s</string>
+    <string name="event_alarm_label_at_event_time">Az esemény időpontjában</string>
+    <string name="event_alarm_label_at_event_time_by_email">Az esemény időpontjában email által</string>
+    <string name="event_alarm_label_on_the_same_day">Ugyanazon a napon</string>
+    <string name="event_alarm_label_before">%1$s előtte</string>
+    <string name="event_alarm_label">%1$s  </string>
+    <string name="event_alarm_label_before_by_email">%1$s előtt email által</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s %2$s</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s, %2$s e-mailben</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s korábban, %2$s</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s korábban, %2$s e-mailben</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s, %2$s</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s, %2$d -én</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s, %2$s</string>
+    <string name="event_recurrence_none">Nem ismétlődik</string>
+    <string name="event_recurrence_daily">Minden nap</string>
+    <string name="event_recurrence_weekly">Minden héten</string>
+    <string name="event_recurrence_monthly">Minden hónapban</string>
+    <string name="event_recurrence_yearly">Minden évben</string>
+    <string name="event_recurrence_weekly_on_all_days">minden nap</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">eddig: %1$s</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">eddig: %1$s (%2$s)</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d   %2$s</string>
+    <string name="event_status_canceled">Törölve</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(Letiltva)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(Alapértelmezett)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d igen</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d talán</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d nem</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d várakozik</string>
+    <string name="event_attendee_is_organizer">Ön a szervező</string>
+    <string name="event_attendee_organizer">Szervező</string>
+    <string name="event_attendee_optional">Választható</string>
+    <string name="event_attendee_is_current_user">Ön</string>
+    <string name="event_answer_attending">Részt vesz?</string>
+    <string name="event_answer_yes">Igen</string>
+    <string name="event_answer_no">Nem</string>
+    <string name="event_answer_maybe">Talán</string>
+    <string name="event_decryption_error_dialog_title">Esemény visszafejtése nem sikerült</string>
+    <string name="event_decryption_error_dialog_message">Az esemény tartalmának visszafejtése sikertelen.</string>
+    <string name="event_decryption_error_dialog_confirmation">Esemény törlése</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">Események törlése</string>
+    <string name="event_decryption_error_dialog_close">Bezárás</string>
+    <string name="event_signature_verification_failure">Az esemény aláírásnak ellenőrzése sikertelen. <a href="https://proton.me/support/what-is-a-digital-signature">További információk</a></string>
+    <string name="event_signature_verification_in_progress">Az esemény aláírásának ellenőrzése folyamatban.</string>
+    <string name="event_signature_verification_network_error">Az esemény aláírásának ellenőrzése egy hiba miatt megszakadt. <a href="">Újra</a></string>
+    <string name="event_change_answer_recurring_title">Ismétlődő esemény frissítése</string>
+    <string name="event_change_answer_recurring_description">Szeretné a válaszát a sorozat valamennyi eseményénél frissíteni?</string>
+    <string name="event_change_answer_recurring_overwrite_description">Szeretné a válaszát a sorozat valamennyi eseményénél frissíteni?\nEbben az esetben, a rendező által néhány alkalomnál megváltoztatott, korábbi válasza elveszik.</string>
+    <string name="event_change_answer_recurring_single_edit_description">Az eseményt a szervező frissítette. Szeretné a válaszát csak ennél az alkalomnál módosítani?egz esemény</string>
+    <string name="event_change_answer_recurring_cancel">Mégsem</string>
+    <string name="event_change_answer_recurring_confirm">Frissítés</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s elfogadta a meghívását: %2$s</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s elutasította a meghívását: %2$s</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">%1$s feltételesen elfogadta a meghívást: %2$s</string>
+    <string name="event_organizer_send_prefs_error_title">A szervező nem értesíthető</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">A szervező nem értesíthető, hogy elfogadta a meghívót</string>
+    <string name="event_organizer_send_prefs_message_declined_title">A szervező nem értesíthető, hogy elutasította a meghívót</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">A szervező nem értesíthető, hogy Ön feltételesen elfogadta a meghívást</string>
+    <string name="event_organizer_send_prefs_message_default_title">A szervező nem értesíthető, hogy reagált a meghívásra</string>
+    <string name="event_organizer_send_prefs_button_title">OK</string>
+    <string name="event_attendees_send_prefs_error_title">A résztvevők nem értesíthetők</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">Egy résztvevő sem értesíthető az Ön változtatásairól:\n\n• %1$s\n\nEnnek ellére tovább szeretne haladni?</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">A következő résztvevők nem értesíthetőek az Ön változatásairól:\n\n• %1$s\n\nEnnek ellenére tovább szeretne haladni?</string>
+    <string name="event_attendees_send_prefs_error_confirm">Tovább</string>
+    <string name="event_attendees_send_prefs_error_cancel">Mégsem</string>
+    <string name="event_send_prefs_error_address_disabled">ez a cím nem létezik</string>
+    <string name="event_send_prefs_error_getting_contact">a névjegyadatok nem elérhetők</string>
+    <string name="event_send_prefs_error_network">hálózati hiba</string>
+    <string name="event_send_prefs_trusted_keys_invalid">érvénytelen megbízható kulcsok</string>
+    <string name="event_send_prefs_public_keys_invalid">érvénytelen nyilvános kulcsok</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">névjegy aláírása érvénytelen</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">Csatlakozás Zoom találkozóhoz</string>
+    <string name="zoom_meeting_title">Zoom találkozó</string>
+    <string name="generic_meeting_id">Azonosító: %1$s</string>
+    <string name="generic_meeting_password">Jelszó: %1$s</string>
+    <string name="generic_meeting_more_details">További részletek</string>
+    <string name="generic_meeting_less_details">Kevesebb részlet</string>
+    <string name="generic_meeting_host">Találkozó házigazdája</string>
+    <string name="generic_meeting_link">Találkozó hivatkozása</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Csatlakozási útmutató</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">Új esemény</string>
+    <string name="event_text_edit_event">Esemény szerkesztése</string>
+    <string name="event_hint_title">Cím megadása</string>
+    <string name="event_hint_location">Hely megadása</string>
+    <string name="event_text_add_participants">Résztvevők hozzáadása</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">Résztvevők (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">Te</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ %1$d több</string>
+    <string name="event_text_switch_all_day">Egész nap</string>
+    <string name="event_text_date_start">Kezdet</string>
+    <string name="event_text_date_end">Befejezés</string>
+    <string name="event_text_date_repeat">Ismétlődés</string>
+    <string name="event_text_date_repeat_never">Nem ismétlődik</string>
+    <string name="event_text_attendees">Résztvevők</string>
+    <string name="event_text_attendees_none">Egyik sem</string>
+    <string name="event_text_calendar">Naptár</string>
+    <string name="event_text_timezone_start">Időzóna</string>
+    <string name="invite_in_shared_calendar_disclaimer">Meghívók küldése csak személyes naptárakban lehetséges.</string>
+    <string name="invite_change_calendar_disclaimer">A meghívókhoz kapcsolódó naptárat nem lehet módosítani.</string>
+    <string name="invite_change_attendees_disclaimer">A meghívókhoz kapcsolódó résztvevőket még nem lehet megváltoztatni.</string>
+    <string name="change_calendar_recurring_disclaimer">Az ismétlődő esemény naptárának módosítása még nem lehetséges.</string>
+    <string name="update_event">Esemény frissítése</string>
+    <string name="update_invite_send_email">Egy meghívó frissítés kerül elküldésre az esemény résztvevőinek.</string>
+    <string name="update_recurring_event">Ismétlődő esemény frissítése</string>
+    <string name="update_recurring_all_events">Valóban szeretné a sorozat valamennyi eseményét frissíteni?</string>
+    <string name="update_recurring_invite_send_email">A sorozat összes eseményét frissíteni fogja. Egy frissített meghívó kerül kiküldésre minden résztvevőnek.</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">Mit szeretne keresni?</string>
+    <string name="search_empty_results_title">Nincs találat</string>
+    <string name="search_empty_results_subtitle">Próbáljon másik kifejezést, pl. Feri, szülinap, találkozó, könyvklub.</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">Naptárak letöltése (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">Hátralévő idő: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">Hátralévő idő kiszámítása…</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">majdnem kész</string>
+    <string name="search_downloading_pause">Letöltés szüneteltetése</string>
+    <string name="search_settings_dialog_toggle_off_title">Eltávolítja az összes letöltött naptárat?</string>
+    <string name="search_settings_dialog_toggle_off_text">Ismételten le kell majd töltenie a naptárakat, ha keresni szeretne.</string>
+    <string name="search_settings_dialog_toggle_on_title">Naptárak letöltése erre az eszközre?</string>
+    <string name="search_settings_dialog_toggle_on_text">Ez szükséges a kereséshez.</string>
+    <string name="search_onboarding_header">Szeretne keresni a naptárban?</string>
+    <string name="search_onboarding_text">Ehhez le kell töltenie a naptárak egy titkosított másolatát. Ez csak pár másodpercig tart, és közben használhatja az alkalmazást. <a href="https://proton.me/support/calendar-search">További információk</a></string>
+    <string name="search_onboarding_action_download_calendars">Naptárak letöltése</string>
+    <string name="search_onboarding_action_pause">Szünet</string>
+    <string name="search_onboarding_action_resume">Folytatás</string>
+    <string name="search_onboarding_action_retry">Újra</string>
+    <string name="search_onboarding_progress_header_ongoing">Naptárak letöltése…</string>
+    <string name="search_onboarding_progress_header_completed">A letöltés befejeződött</string>
+    <string name="search_onboarding_progress_header_paused">A naptárak letöltése szünetel</string>
+    <string name="search_onboarding_progress_header_error">Hiba történt a naptárak letöltése közben</string>
+    <string name="search_spotlight_activation_snack">Naptár keresés aktiválva</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">Új emlékeztető</string>
+    <string name="event_text_description">Leírás</string>
+    <string name="event_hint_description">Leírás megadása</string>
+    <string name="event_text_custom">egyedi</string>
+    <string name="event_alert_invalid_start_end_date">Az esemény kezdődátuma nem lehet a befejezési dátum után</string>
+    <string name="event_alarms_title">Emlékeztetők</string>
+    <string name="event_custom_alarms_field">Értesítés</string>
+    <string name="event_custom_alarms_title">Egyedi értesítések</string>
+    <string name="event_alarm_partial_day_1">az esemény időpontjában</string>
+    <string name="event_alarm_partial_day_2">10 perc</string>
+    <string name="event_alarm_partial_day_3">30 perc</string>
+    <string name="event_alarm_partial_day_4">1 óra</string>
+    <string name="event_alarm_partial_day_5">1 hét</string>
+    <string name="event_alarm_all_day_1">aznap, ekkor: %1$s</string>
+    <string name="event_alarm_all_day_2">Egy nappal korábban ekkor: %1$s</string>
+    <string name="event_alarm_all_day_3">Egy héttel korábban ekkor: %1$s</string>
+    <string name="event_alarm_all_day_4">Három héttel korábban ekkor: %1$s</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">időpont: %1$s</string>
+    <string name="event_alarm_action">Küldés így:</string>
+    <string name="event_alarm_action_notification">emlékeztető</string>
+    <string name="event_alarm_action_email">e-mail</string>
+    <string name="event_alarm_same_day">ugyan azon a napon</string>
+    <string name="event_recurrence_1">ne ismétlődjön</string>
+    <string name="event_recurrence_2">minden nap</string>
+    <string name="event_recurrence_3">minden héten</string>
+    <string name="event_recurrence_4">minden hónapban</string>
+    <string name="event_recurrence_5">minden évben</string>
+    <string name="event_recurrence_title">Gyakoriság</string>
+    <string name="event_recurrence_custom_title">Egyedi gyakoriság</string>
+    <string name="event_recurrence_occurs_every">Ismétlődik minden</string>
+    <string name="event_recurrence_occurs_on">Ismétlődés ekkor:</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">ezen a napon: %1$d</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">a hét ezen napján: %1$s</string>
+    <string name="event_recurrence_ends_on">Befejező dátum</string>
+    <string name="event_recurrence_ends_never">soha</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">dátumon</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">ekkor: %1$s</string>
+    <string name="event_recurrence_ends_after_count_prefix">utána</string>
+    <string name="event_recurring_edit_this">Ez az esemény</string>
+    <string name="event_recurring_edit_this_and_future">Ez és a jövőbeni események</string>
+    <string name="event_recurring_edit_all_events">Minden esemény</string>
+    <string name="event_discard_changes_title">Módosítások elvetése?</string>
+    <string name="event_discard_changes_description">A nem mentett módosítások el fognak veszni.</string>
+    <string name="event_discard_changes_cancel">Szerkesztés folytatása</string>
+    <string name="event_discard_changes_confirm">Elvetés</string>
+    <string name="event_recurring_update_this_title">Ismétlődő esemény frissítése</string>
+    <string name="event_recurring_update_this_description">Az ismétlődés változtatásai el fognak veszni</string>
+    <string name="event_recurring_update_all_description">A sorozat korábbi módosításai elvesznek</string>
+    <string name="event_recurring_update_this_cancel">Mégsem</string>
+    <string name="event_recurring_update_this_confirm">Frissítés</string>
+    <string name="event_allow_contacts_title">Engedélyezi a Proton Calendar-nak, hogy hozzáférhessen a névjegyeihez?</string>
+    <string name="event_allow_contacts_description">A Proton Calendar-nak szüksége van a névjegyeihez való hozzáférésre, hogy biztosítani tudja önnek az automatikus kiegészítést</string>
+    <string name="event_allow_contacts_cancel">Megtagadás</string>
+    <string name="event_allow_contacts_confirm">Engedélyezés</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Re: Meghívás egy ekkor kezdődő eseményre: %1$s %2$s %3$s</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">Re: Meghívás egy eseményre ekkorra: %1$s</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">Re: Meghívás egy ekkor kezdődő eseményre: %1$s</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Meghívás egy ekkor kezdődő eseményre: %1$s %2$s %3$s</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">Meghívás egy eseményre ekkorra: %1$s</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">Meghívás egy ekkor kezdődő eseményre: %1$s</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Frissítés egy ekkor kezdődő eseményre: %1$s %2$s %3$s</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">Frissítés egy eseményhez ekkor: %1$s</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">Frissítés egy ekkor kezdődő eseményre: %1$s</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Egy ekkor kezdődő esemény törlése: %1$s %2$s %3$s</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">Egy esemény törlése ekkor: %1$s</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">Egy ekkor kezdődő esemény törlése: %1$s</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">Meghívást kapott: %1$s\nEkkor: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s frissítve.\nEkkor: %2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (egész nap)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s, %2$s %3$s - %4$s, %5$s %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nHely: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nLeírás: %1$s</string>
+    <string name="event_send_invite_dialog_title">Meghívó elküldése</string>
+    <string name="event_send_invite_dialog_description">Egy meghívó kerül elküldésre az összes résztvevőnek.</string>
+    <string name="event_send_invite_dialog_confirm">Küldés</string>
+    <string name="event_send_invite_dialog_cancel">Mégsem</string>
+    <string name="event_add_participants_dialog_title">Résztvevők hozzáadása</string>
+    <string name="event_add_participants_dialog_description">Egy meghívó kerül elküldésre az összes résztvevőnek.</string>
+    <string name="recurring_event_add_participants_dialog_description">A sorozatban szereplő összes esemény hozzáadott résztvevőinek meghívó kerül elküldésre.</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">Meghívó kerül elküldésre a résztvevőknek, a sorozat összes eseményére.\nA sorozaton végzett korábbi módosítások elvesznek.</string>
+    <string name="event_add_participants_dialog_confirm">Küldés</string>
+    <string name="event_add_participants_dialog_cancel">Mégsem</string>
+    <string name="event_remove_participants_dialog_title">Résztvevők eltávolítása</string>
+    <string name="event_remove_participants_dialog_description">Egy lemondó értesítés kerül elküldésre az eltávolított résztvevőknek.</string>
+    <string name="recurring_event_remove_participants_dialog_description">A sorozatban szereplő összes esemény eltávolított résztvevőinek lemondási értesítő kerül elküldésre.</string>
+    <string name="event_add_and_remove_participants_dialog_description">A felvett és az eltávolított résztvevők is értesítést kapnak.</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">A felvett és eltávolított résztvevők értesítést kapnak a sorozat összes eseményéről.</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s törlésre került.</string>
+    <string name="event_save_changes">Módosítások mentése</string>
+    <string name="event_update_add_participants_dialog_description">A meglévő és a felvett résztvevők is értesítést kapnak.</string>
+    <string name="recurring_event_update_add_participants_dialog_description">A sorozat összes eseményét frissíteni fogja. A meglévő és a felvett résztvevők is értesítést kapnak.</string>
+    <string name="event_update_remove_participants_dialog_description">A meglévő és az eltávolított résztvevők is értesítést kapnak.</string>
+    <string name="event_update_remove_all_participants_dialog_description">Az eltávolított résztvevők értesítést kapnak.</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">A sorozat összes eseményét frissíteni fogja. A meglévő és az eltávolított résztvevők is értesítést kapnak.</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">A sorozat összes eseményét frissíteni fogja. Az eltávolított résztvevők értesítést kapnak.</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">A meglévő, felvett és az eltávolított résztvevők is értesítést kapnak.</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">A sorozat összes eseményét frissíteni fogja. A meglévő, felvett és eltávolított résztvevők is értesítést kapnak.</string>
+    <string name="success_snack_email_update_recurring">Résztvevők értesítve és az összes esemény frissítve</string>
+    <string name="success_snack_email_update">Résztvevők értesítve és esemény frissítve</string>
+    <string name="success_snack_add_attendees_recurring">Meghívó elküldve és résztvevők hozzáadva az összes eseményhez</string>
+    <string name="success_snack_add_attendees">Meghívó elküldve és résztvevők hozzáadva</string>
+    <string name="success_snack_remove_attendees_recurring">Lemondás elküldve és résztvevők eltávolítva az összes eseményről</string>
+    <string name="success_snack_remove_attendees">Lemondás elküldve és résztvevők eltávolítva</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">Saját naptárak</string>
+    <string name="nav_view_subscribed_calendars">Feliratkozott naptárak</string>
+    <string name="nav_view_other_calendars">Más naptárak</string>
+    <string name="nav_view_disabled_calendars">%1$s (Kikapcsolva)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (Nincs szinkronizálva)</string>
+    <string name="nav_view_syncing_calendars">%1$s (Szinkronizálás)</string>
+    <string name="nav_view_more">Továbbiak</string>
+    <string name="nav_view_switcher">Megtekintés</string>
+    <string name="nav_view_switcher_day">Nap</string>
+    <string name="nav_view_switcher_three_day">3 nap</string>
+    <string name="nav_view_switcher_week">Hét</string>
+    <string name="nav_view_switcher_agenda">Tennivalók</string>
+    <string name="nav_view_switcher_month">Hónap</string>
+    <string name="nav_view_timezone">Időzóna</string>
+    <string name="nav_view_settings">Beállítások</string>
+    <string name="nav_view_feedback">Küldjön visszajelzést</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">Általános</string>
+    <string name="nav_view_more_bug">Probléma jelentése</string>
+    <string name="nav_view_more_subscription">Előfizetés</string>
+    <string name="nav_view_more_logout">Kijelentkezés</string>
+    <string name="nav_view_more_login">Bejelentkezés</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">Ez a funkció hamarosan elérhető lesz</string>
+    <string name="snack_event_deleted">Esemény törölve</string>
+    <string name="snack_event_deleted_as_organizer">Lemondás elküldve és esemény törölve</string>
+    <string name="snack_event_deleted_as_attendee">Válasz elküldve és az esemény törölve</string>
+    <string name="snack_event_deleted_error">Hiba az esemény törlése során</string>
+    <string name="snack_event_deleted_as_organizer_error">A lemondó e-mail kiküldése sikertelen volt, kérjük próbálja újra</string>
+    <string name="snack_event_opening_error">Hiba az események betöltése során</string>
+    <string name="snack_event_saving">Esemény mentése</string>
+    <string name="snack_event_deleting">Esemény törlése</string>
+    <string name="snack_event_changing_answer">Válasz frissítése</string>
+    <string name="snack_event_part_stat_updated">Részvételi állapot frissítve.</string>
+    <string name="snack_event_updated">Esemény frissítve</string>
+    <string name="snack_event_updated_recurring">Valamennyi esemény frissítve</string>
+    <string name="snack_event_updated_error_failed_mail">A meghívó elküldése nem sikerült</string>
+    <string name="snack_update_event_error_failed_mail">Sikertelen frissítés</string>
+    <string name="snack_lost_zoom_access">Csatlakozz a Zoom-hoz, hogy szerkeszd ezt az eseményt.</string>
+    <string name="snack_lost_zoom_access_acion">Csatlakozás</string>
+    <string name="snack_zoom_meeting_does_not_exist">Ez a Zoom ülés elmarad. Távolítsd el a linket az esemény szerkesztéséhez.</string>
+    <string name="snack_event_updated_error">Hiba az esemény frissítése során</string>
+    <string name="snack_event_created">Esemény létrehozva</string>
+    <string name="snack_event_created_failed_mail">Esemény létrehozva, de a meghívó kiküldése során hiba lépett fel</string>
+    <string name="snack_event_created_error">Hiba az esemény létrehozása során</string>
+    <string name="snack_event_opening_edit_error">Hiba az esemény szerkesztésre való megnyitása során</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">Ez az ismétlődő esemény csak a Calendar webes alkalmazásban törölhető.</string>
+    <string name="snack_event_edit_with_attendees_error">A résztvevőkkel létrehozott események szerkesztése még nem elérhető</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">Nem lehet egyszerre résztvevőket hozzáadni és az eseményt megváltoztatni</string>
+    <string name="snack_event_init_error">Hiba az új esemény inicializálása közben</string>
+    <string name="snack_event_calendar_error">Hiba történt a naptárak váltásakor</string>
+    <string name="snack_event_maximum_alarm_reached_error">Elérte a maximális számú emlékeztetőt</string>
+    <string name="snack_send_bug_report_success">A jelentés elküldve, köszönjük a visszajelzést</string>
+    <string name="snack_send_bug_report_error">Hiba történt a bejelentés küldése közben, kérjük, próbálja újra később</string>
+    <string name="snack_send_bug_report_description_empty">Kérjük, adjon részletes ismertetést a bejelentésről</string>
+    <string name="snack_create_event_no_active_personal_calendar">Személyes naptárra van szükség események létrehozásához</string>
+    <string name="snack_create_event_no_active_calendar">Események létrehozásához szükséges, hogy legyen egy aktív személyes naptára</string>
+    <string name="snack_add_self_as_participant">Önmaga meghívása nem lehetséges</string>
+    <string name="snack_maximum_participants_reached">Elérte a résztvevők maximális számát.</string>
+    <string name="snack_add_participant_error">Hiba történt a résztvevő hozzáadása közben</string>
+    <string name="snack_add_participant_invalid_email">Érvénytelen e-mail</string>
+    <string name="snack_change_attendee_answer_error">Hiba történt a válasz küldése közben, kérjük, próbálja újra később</string>
+    <string name="snack_network_error">Hálózati hiba, kérjük próbálja meg újra</string>
+    <string name="snack_import_event_signed_out">Az esemény importálásához be kell jelentkeznie</string>
+    <string name="snack_app_link_signed_out">Az esemény megtekintéséhez be kell jelentkeznie</string>
+    <string name="snack_update_default_calendar">Alapértelmezett naptár frissítve</string>
+    <string name="snack_update_default_calendar_error">Hiba az alapértelmezett naptár frissítése közben, kérjük, próbálja újra később</string>
+    <string name="snack_calendar_init_error">Hiba történt a naptár információjának betöltése közben</string>
+    <string name="snack_holiday_calendar_init_error">Hiba történt a munkaszüneti naptár információjának betöltése közben</string>
+    <string name="snack_update_calendar_error">Hiba a naptárinformációk frissítésekor. Próbálja újra később</string>
+    <string name="snack_update_calendar_settings_error">Hiba történt néhány naptárinformáció frissítésekor. Próbálja újra később</string>
+    <string name="snack_update_calendar_success">Naptár frissítve</string>
+    <string name="snack_create_calendar_success">Naptár létrehozva</string>
+    <string name="snack_add_calendar_success">Naptár hozzáadva</string>
+    <string name="snack_calendar_saving">Naptár mentése</string>
+    <string name="snack_create_calendar_error">Hiba a naptár létrehozásakor, próbálja újra később</string>
+    <string name="snack_add_calendar_error">Hiba a naptár hozzáadásakor, próbálja újra később</string>
+    <string name="snack_create_calendar_settings_error">A naptár elkészült, de néhány információ frissítése nem sikerült. Próbálja meg később</string>
+    <string name="snack_ics_default_error">Hiba a naptár megnyitásakor</string>
+    <string name="snack_ics_event_not_found_error">Az esemény nem található</string>
+    <string name="snack_ics_file_not_found_error">A fájl nem található</string>
+    <string name="snack_ics_create_error">Hiba az esemény létrehozása során</string>
+    <string name="snack_ics_parsing_error">Hiba a naptár olvasásakor</string>
+    <string name="snack_ics_unsupported_method_error">Ez az eseménytípus még nem támogatott</string>
+    <string name="snack_ics_unsupported_add_error">További alkalmak hozzáadása egy eseményhez jelenleg nem támogatott</string>
+    <string name="snack_ics_unsupported_counter_error">Az esemény újraidőzítés jelenleg nem támogatott</string>
+    <string name="snack_ics_unsupported_refresh_error">Esemény frissítés jelenleg nem támogatott</string>
+    <string name="snack_ics_unsupported_publish_error">Az esemény importálás jelen pillanatban nem támogatott</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">Jelenleg csak a sorozat összes eseményére adott válasz lehetősége támogatott</string>
+    <string name="snack_ics_party_crasher_error">Az ön e-mail címe nem szerepel a résztvevők listáján</string>
+    <string name="snack_ics_reply_party_crasher_error">Olyan résztvevők nem adhatók hozzá, akiket a szervező nem hívott meg</string>
+    <string name="snack_ics_missing_uid_error">Az esemény UID értéke hiányzik</string>
+    <string name="snack_ics_no_active_personal_calendar_error">Ehhez a fiókhoz nincs aktív személyes naptár</string>
+    <string name="snack_ics_no_active_calendar_error">Ehhez a fiókhoz nincs aktív naptár</string>
+    <string name="snack_ics_unsupported_duration_error">Az időtartam tulajdonság nem támogatott</string>
+    <string name="snack_ics_too_many_events_error">Egynél több esemény még nem támogatott</string>
+    <string name="snack_ics_no_events_error">Ez a naptár nem tartalmaz eseményeket</string>
+    <string name="snack_ics_invalid_error">Ez a meghívó érvénytelen</string>
+    <string name="snack_ics_disabled_calendar_error">Az esemény frissítéséhez, engedélyezze újra a naptárhoz tartozó címét</string>
+    <string name="snack_ics_event_deleted_error">Az esemény már nem létezik már az ön naptárában</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s elfogadta a meghívást</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s feltételesen elfogadta a meghívását</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s elutasította a meghívást</string>
+    <string name="snack_app_link_invalid">Érvénytelen hivatkozás az eseményhez</string>
+    <string name="snack_app_link_error">Hiba az események betöltése során</string>
+    <string name="snack_app_link_import_error">Hitelesítés megszakítva</string>
+    <string name="snack_notification_already_added">Az emlékeztető már hozzá van adva</string>
+    <string name="snack_opening_ics">Esemény megnyitása…</string>
+    <string name="snack_invite_in_shared_calendar_error">Megosztott naptárakban nem engedélyezett a meghívók létrehozása</string>
+    <string name="snack_down_banner">A Proton szerverek leálltak. A részletekért látogasson el a státusz oldalunkra.</string>
+    <string name="snack_down_banner_action">Státusz oldal megtekintése</string>
+    <string name="snack_color_per_event_paid_feature">Váltson nagyobb csomagra az esemény színeinek testreszabásához</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">Az esemény nem létezik</string>
+    <string name="error_occurrence_does_not_exist">Az esemény alkalom nem létezik</string>
+    <string name="update_timezone_dialog_title">Időzóna frissítve</string>
+    <string name="update_timezone_dialog_message">Úgy tűnik, hogy a rendszer időzónája erre változott: %1$s. Szeretné a beállításokat erre az időzónára frissíteni?</string>
+    <string name="update_timezone_dialog_confirmation">Frissítés</string>
+    <string name="update_timezone_dialog_cancel">Mégsem</string>
+    <string name="contacts_permission_dialog_title">Engedélyezi a Proton Calendar-nak, hogy hozzáférhessen a névjegyeihez?</string>
+    <string name="contacts_permission_dialog_message">A Proton Calendarnak az eszköz névjegyeihez való hozzáférésre van szüksége, hogy hozzáadhassa ismerőseit az eseményekhez.</string>
+    <string name="contacts_permission_dialog_allow">Engedélyezés</string>
+    <string name="contacts_permission_dialog_open_settings">Beállítások megnyitása</string>
+    <string name="contacts_permission_dialog_cancel">Megtagadás</string>
+    <string name="dialog_title_calendar_picker">Naptár</string>
+    <string name="dialog_title_calendar_color_picker">Naptár színe</string>
+    <string name="dialog_title_event_color_picker">Esemény színe</string>
+    <string name="import_from_google_title">Importálás Google fájlból</string>
+    <string name="notifications_permission_dialog_title">Engedélyezi, hogy a Proton Calendar értesítéseket jelenítsen meg?</string>
+    <string name="notifications_permission_dialog_message">A Proton Calendarnak engedélyre van szüksége, hogy az eseményekkel kapcsolatos emlékeztetőket megjelenítse.</string>
+    <string name="notifications_permission_dialog_open_settings">Beállítások megnyitása</string>
+    <string name="notifications_permission_dialog_cancel">Megtagadás</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">Esemény emlékeztetők</string>
+    <string name="notification_channel_sync">Naptár szinkronizálás</string>
+    <string name="notification_channel_calendar_fetch">Naptárak betöltése</string>
+    <string name="notification_sync">Naptárak szinkronizálása…</string>
+    <string name="notification_text_today">Ma</string>
+    <string name="notification_text_today_part_time">Ma %1$s</string>
+    <string name="notification_text_tomorrow">Holnap</string>
+    <string name="notification_text_tomorrow_part_time">Holnap %1$s</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s %2$s</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">Tárgy</string>
+    <string name="bug_report_hint_description">Kérjük, írja le a problémát és másolja be az esetleges hibaüzeneteket.</string>
+    <string name="bug_report_discard_changes_title">Nem mentett módosítások</string>
+    <string name="bug_report_discard_changes_description">Az űrlapon nem mentett módosítások vannak. Biztos, hogy elveti?</string>
+    <string name="bug_report_discard_changes_cancel">Szerkesztés folytatása</string>
+    <string name="bug_report_discard_changes_confirm">Elvetés</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">Alkalmazás beállításai</string>
+    <string name="settings_theme_title">Téma</string>
+    <string name="settings_theme_info">Ez a beállítás csak ezen az eszközön változtatja meg a Proton Calendar megjelenését. A változtatás után az alkalmazás újraindul.</string>
+    <string name="settings_timezone_title">Időzóna</string>
+    <string name="settings_language_title">Alkalmazás nyelve</string>
+    <string name="settings_language_default">Automatikus-észlelés</string>
+    <string name="settings_default_view_title">Alapértelmezett nézet</string>
+    <string name="settings_default_view_default">Legutóbbi nézet</string>
+    <string name="settings_update_timezone_title">Kérdezzen rá az időzóna frissítésére</string>
+    <string name="settings_update_timezone_subtitle">Amikor a rendszer időzónája eltér az aktuális időzóna beállításától, rákérdez, hogy frissítse-e a beállítást.</string>
+    <string name="settings_update_timezone_checkbox">Nem kérem ezt a kérdést többé</string>
+    <string name="settings_week_start_title">Hét kezdőnapja</string>
+    <string name="settings_time_format_title">Időformátum</string>
+    <string name="settings_week_numbers_title">Hetek sorszámának megjelenítése</string>
+    <string name="settings_auto_invites_title">Adja a meghívókat a naptárhoz és állítsa be őket függőnek</string>
+    <string name="settings_search_title">Keresés a naptárakban</string>
+    <string name="settings_search_subtitle">Letölti és az eszközön tárolja a naptár tartalmát, hogy kereshető legyen. Kikapcsolása törli a letöltött tartalmat.\n\nA keresés egy kísérleti fázisban lévő lehetőség. A bekapcsolása instabillá teheti az alkalmazást.</string>
+    <string name="settings_alternative_routing_title">Alternatív útválasztás engedélyezése</string>
+    <string name="settings_alternative_routing_subtitle">Ha a Proton szolgáltatásai le vannak tiltva, ezzel a beállítással az alkalmazás alternatív hálózati útvonalakat próbál meg használni, ami hasznos lehet tűzfalak megkerüléséhez vagy hálózati problémák megoldásához. Javasolt ezt a beállítást bekapcsolva a tartani nagyobb megbízhatóság érdekében.</string>
+    <string name="settings_value_placeholder">Koppintson a kiválasztáshoz</string>
+    <string name="settings_general_title">Általános</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s stb.</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">téma</string>
+    <string name="settings_general_info_language">nyelv</string>
+    <string name="settings_general_info_time_zone">időzóna</string>
+    <string name="settings_general_info_calendar_layout">naptár elrendezés</string>
+    <string name="settings_calendars">Saját naptárak</string>
+    <string name="settings_calendars_empty">Nincs naptár</string>
+    <string name="settings_subscribed_calendars">Feliratkozott naptárak</string>
+    <string name="settings_other_calendars">Más naptárak</string>
+    <string name="settings_calendar_default" comment="Default calendar">Alapért.</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">Letiltva</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">Nincs szinkronizálva</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">Szinkronizálás folyamatban</string>
+    <string name="settings_calendar_subscribed_invalid_ics">Nem támogatott naptár formátum</string>
+    <string name="settings_calendar_subscribed_too_big">A naptár túl nagy</string>
+    <string name="settings_calendar_subscribed_not_accessible">A naptár hivatkozás nem érhető el</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">A naptár hivatkozás átmenetileg nem érhető el</string>
+    <string name="settings_calendar_subscribed_last_sync_old">Több mint 12 óra telt el a legutóbbi frissítés óta</string>
+    <string name="settings_calendar_subscribed_not_decrypted">A naptár visszafejtése nem sikerült</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">Csak megtekintés</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">feladó %1$s</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">Naptár létrehozása</string>
+    <string name="calendar_form_update_title">Naptár szerkesztése</string>
+    <string name="calendar_form_save">Mentés</string>
+    <string name="calendar_form_name">Név</string>
+    <string name="calendar_form_description">Leírás</string>
+    <string name="calendar_form_color">Naptár színe</string>
+    <string name="calendar_form_language">Nyelv</string>
+    <string name="calendar_form_default_event_duration">Esemény időtartama</string>
+    <string name="calendar_form_default_event_notifications">Esemény értesítései</string>
+    <string name="calendar_form_default_all_day_event_notifications">Egész napos esemény értesítések</string>
+    <string name="calendar_form_add_notification">Emlékeztető hozzáadása</string>
+    <string name="calendar_form_default_email">E-mail cím</string>
+    <string name="calendar_form_default_email_value_error">Az alapértelmezett e-mail betöltse nem sikerült</string>
+    <string name="calendar_form_name_hint">Adja meg a naptár nevét</string>
+    <string name="calendar_form_name_required_error">Név megadása kötelező</string>
+    <string name="calendar_form_description_hint">Adja meg a naptár leírását</string>
+    <string name="add_calendar_text">Naptár hozzáadása</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">Hozzáadás</string>
+    <string name="create_calendar_limit_reached">Elérte a naptárak maximális számát.</string>
+    <string name="create_calendar_limit_reached_title">Nem adhat hozzá több naptárat</string>
+    <string name="create_calendar_limit_reached_paid_description">Elérte a csomagjában maximálisan elérhető 25 naptárat. \n\nÚj naptár hozzáadásához töröljön egyet a már meglévők közül.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">Legalább egy személyes naptárának is kell lennie, mielőtt eléri a csomagjában elérhető 25 naptárat.</string>
+    <string name="create_calendar_limit_reached_manage">Naptárak kezelése</string>
+    <string name="create_calendar_limit_reached_free_description">Elérte a csomagjában maximálisan elérhető 3 naptárat. \n\nÚj naptár hozzáadásához töröljön egyet a már meglévők közül.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">Legalább egy személyes naptárának is kell lennie, mielőtt eléri a csomagjában elérhető 3 naptárat.</string>
+    <string name="create_calendar_limit_reached_error">Hiba</string>
+    <string name="delete_calendar_dialog_title">Naptár törlése</string>
+    <string name="delete_calendar_dialog_message">Biztos, hogy törölni szeretné ezt a naptárat?</string>
+    <string name="remove_calendar_dialog_title">Naptár eltávolítása</string>
+    <string name="remove_calendar_dialog_message">Biztos, hogy el szeretné távolítani ezt a naptárat?</string>
+    <string name="leave_calendar_dialog_title">Naptár elhagyása</string>
+    <string name="leave_calendar_dialog_message">Ha elhagyja ezt a naptárat, akkor a tulajdonosát kell majd megkérnie, hogy újra csatlakozhasson.</string>
+    <string name="delete_default_calendar_dialog_message">Biztos, hogy törli ezt a naptárat? \"%1$s\" kerül beállításra alapértelmezett naptárként.</string>
+    <string name="delete_calendar_snack_deleted">Naptár eltávolítva</string>
+    <string name="remove_calendar_snack_removed">Naptár eltávolítva</string>
+    <string name="delete_calendar_snack_error">Hiba a naptár törlése közben</string>
+    <string name="remove_calendar_snack_error">Hiba a naptár eltávolításakor</string>
+    <string name="leave_calendar_snack_error">Hiba a naptár elhagyásakor</string>
+    <string name="delete_calendar_snack_error_password_confirmation">A jelszó megerősítése sikertelen</string>
+    <string name="recreate_calendar_dialog_title">Naptár megtisztítása</string>
+    <string name="recreate_calendar_dialog_message">Ez a művelet az összes eseményt és meghívottat törli.\n\nBiztos, hogy üríti ezt a naptárat?</string>
+    <string name="recreate_calendar_snack_error">Hiba a naptár megtisztításakor</string>
+    <string name="recreate_calendar_snack_deleted">Naptár megtisztítva</string>
+    <string name="recreate_calendar_snack_clearing">Naptár megtisztítása…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">Munkaszüneti naptár hozzáadása</string>
+    <string name="holiday_calendar_title">Munkaszüneti naptár</string>
+    <string name="add_holiday_calendar_country_search_hint">Ország keresése</string>
+    <string name="holiday_calendar_form_picker_title">Ország</string>
+    <string name="holiday_calendar_time_zone_based">A jelenlegi időzóna alapján</string>
+    <string name="holiday_calendar_already_exists">Ez a munkaszüneti naptár már hozzáadásra került.</string>
+    <string name="holiday_calendar_value_placeholder">Válasszon országot</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">OK</string>
+    <string name="bootstrap_error_no_calendar_title">Ehhez a fiókhoz nincs naptár.</string>
+    <string name="bootstrap_error_no_calendar_message">A beállításhoz nyissa meg a <a href="https://calendar.proton.me">calendar.proton.me</a> oldalt</string>
+    <string name="bootstrap_error_some_calendars_failed_title">Hiba a naptárak előkészítése közben</string>
+    <string name="bootstrap_error_some_calendars_failed_message">A következő naptárak beállítása nem sikerült</string>
+    <string name="bootstrap_error_no_active_calendar_title">Ehhez a fiókhoz nincs aktív személyes naptár.</string>
+    <string name="bootstrap_error_no_active_calendar_message">A naptár aktiválásáról szóló további tudnivalókhoz, nyissa meg a <a href="https://proton.me/support">tudásbázisunkat</a></string>
+    <string name="bootstrap_error_store_quota_reached_message">Nincs több tárhely.</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">Tudjon meg többet</string>
+    <string name="bootstrap_error_reset_needed_title">Naptár kulcsok visszaállítása</string>
+    <string name="bootstrap_error_reset_needed_message">Visszaállította a jelszavát és a következő naptárakhoz tartozó események visszafejtése nem sikerült. Minden feliratkozott naptár újra szinkronizálásra kerül, pár percen belül.</string>
+    <string name="bootstrap_error_update_passphrase_title">Naptár kulcsok újraaktiválása</string>
+    <string name="bootstrap_error_update_passphrase_message">Újraaktiválta a titkosítási kulcsait, így a következő naptárakban lévő események ismét visszafejthetőek.</string>
+    <string name="bootstrap_error_continue_button">Tovább</string>
+    <string name="splash_after_login_init">Naptárak előkészítése</string>
+    <string name="splash_init">Események visszafejtése</string>
+    <string name="default_calendar_name">Saját naptár</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">Adjon visszajelzést</string>
+    <string name="dialog_feedback_text">Hogyan értékelné a tapasztalatait az új Proton Calendarral kapcsolatban?</string>
+    <string name="dialog_feedback_rating_worst">Szörnyű</string>
+    <string name="dialog_feedback_rating_best">Csodás</string>
+    <string name="dialog_feedback_hint">Küldjön visszajelzést a tapasztalatairól. (Opcionális)</string>
+    <string name="dialog_feedback_submit">Küldés</string>
+    <string name="dialog_feedback_submit_thank_you">Köszönjük! Visszajelzése segít a Proton fejlesztésében.</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Proton Calendar modul</string>
+    <string name="calendar_widget_no_upcoming_events_today">Ma nincsenek közelgő események</string>
+    <string name="calendar_widget_loading_events">Események betöltése…</string>
+    <string name="calendar_widget_loading_events_error">Nem sikerült betölteni az eseményeket</string>
+    <string name="calendar_widget_no_upcoming_events">Nincsenek közelgő események</string>
+    <string name="calendar_widget_please_log_in">Jelentkezzen be az események megtekintéséhez</string>
+    <string name="calendar_widget_part_day_event_starts_at">Kezdés: %1$s</string>
+    <string name="calendar_widget_part_day_event_ends_at">Befejezés: %1$s</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">Újdonságok</string>
+    <string name="spotlight_dialog_beta_header">Calendar béta</string>
+    <string name="spotlight_dialog_skip">Kihagyás</string>
+    <string name="spotlight_dialog_confirmation_button">OK</string>
+    <string name="spotlight_dialog_month_view_title">Havi nézet</string>
+    <string name="spotlight_dialog_month_view_description">Tekintse át az eseményeit, az új havi nézettel. A menüvel válthat a nézetek közt.</string>
+    <string name="spotlight_dialog_easy_switch_description">Események és adatok importálása a Google Naptárból a Proton Calendarba egyszerűbb mint valaha. Az Easy Switch importáló végigvezeti a lépéseken.</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">Importálás indítása</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">Most nem</string>
+    <string name="spotlight_dialog_auto_invites_title">Meghívók egyszerű elfogadása</string>
+    <string name="spotlight_dialog_auto_invites_description">A meghívók mostantól mint várakozó események jelennek meg a naptárában. Egyszerűen nyissa meg a válaszoláshoz.\n\nEnnek kezelését a beállításoknál találja.</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">Következő</string>
+    <string name="spotlight_v5_dialog_got_it_button">Rendben</string>
+    <string name="spotlight_v5_dialog_learn_more_button">Tudjon meg többet</string>
+    <string name="spotlight_v5_dialog_rebranding_title">Frissített Proton, egységesített védelem</string>
+    <string name="spotlight_v5_dialog_rebranding_description">A Proton új megjelenésének bemutatása. Sok szolgáltatás, egy küldetés. Üdvözli az az internet, amelyen az adatvédelem alapértelmezett. <a href="https://proton.me/news/updated-proton">További információk</a></string>
+    <string name="spotlight_dialog_week_view_title">További megtekintési lehetőségek</string>
+    <string name="spotlight_dialog_week_view_description">Bemutatjuk a <b>3 napos</b> és <b>Heti</b> naptár nézetet. Válassza ki az önnek tetsző nézetet a <b>menüben</b>.\n\n• Állítsa be az oszlopok magasságát a napi rácson úgy, hogy két ujjával rácsíp a be- vagy kinagyításhoz.</string>
+    <string name="spotlight_dialog_search_title">Események keresése</string>
+    <string name="spotlight_dialog_search_description">Találja meg könnyen a keresett eseményt az új keresési lehetőséggel. <a href="https://proton.me/support/calendar-search">További információk</a></string>
+    <string name="spotlight_dialog_search_positive">Engedélyezés</string>
+    <string name="spotlight_dialog_search_negative">Kihagyás</string>
+    <string name="spotlight_dialog_import_title">Több lehetőség események felvételére</string>
+    <string name="spotlight_dialog_import_description">• Importálhat eseményeket az eszközén lévő fájlokból.\n\n• Utazási foglalásokat vehet fel, közvetlenül a Proton Mailből.</string>
+    <string name="spotlight_dialog_calendar_provider_title">Naptár funkciók</string>
+    <string name="spotlight_dialog_calendar_provider_description">• Események felvétele a Proton Calendarba más alkalmazásokból.\n\n• Események létrehozása és kezelése az önnel megosztott naptárakban.\n\n• Az alapértelmezett nézet kiválasztása.\n\n• 13 új elérhető nyelv.</string>
+    <string name="spotlight_dialog_wipe_search_title">Keresés eltávolítva, hogy jobbá tegyük</string>
+    <string name="spotlight_dialog_wipe_search_description">Eltávolítjuk a kísérleti keresési lehetőséget a Proton Calendar Béta változatából, mivel szeretnénk, ha az még hasznosabb és megbízhatóbb legyen. Ez néhány másodpercet vehet igénybe.</string>
+    <string name="spotlight_dialog_holiday_calendar_title">Már elérhetők a munkaszüneti napok!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">Nem lesz többé megbeszélés betervezve, amikor mindenki szabadnapos, vagy elfelejtve a hosszú hétvégei kiruccanás.\n\nBármely ország munkaszüneti napjait hozzáadhatja a naptárhoz.</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">Nem lesz többé megbeszélés betervezve, amikor mindenki szabadnapos, vagy elfelejtve a hosszú hétvégei kiruccanás.\n\nMivel jelenleg az elérhető összes naptára használatban van, a munkaszüneti naptár hozzáadásához először el kell távolítania egy meglévő naptárat.</string>
+    <string name="spotlight_dialog_color_per_event_title">Egyéni eseményszínek</string>
+    <string name="spotlight_dialog_color_per_event_description">Testreszabhatja az egyes események színét, hogy:\n\n• Színkódolja a naptárát\n\n• Jobban megszervezze a napját és nyomon kövesse az idejét\n\n• Állítsa be a prioritásokat és növelje a hatékonyságot</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">Hozzáférés engedélyezése</string>
+    <string name="dialog_google_auth_description">Az importálás megkezdéséhez, lépjen be a Google Naptárba, és adjon engedélyt a Protonnak az adatok elérésére.</string>
+    <string name="import_assistant_prepare_import_error">Hiba az importálás előkészítésekor, kérjük próbálja újra később</string>
+    <string name="import_assistant_prepare_import">Importálás előkészítése</string>
+    <string name="import_assistant_gathering_data_loader_title">Adatok összegyűjtése</string>
+    <string name="import_assistant_summary_title">Importálás összefoglaló</string>
+    <string name="import_assistant_summary_customize_import">Importálás beállításai</string>
+    <string name="import_assistant_error">Hiba az adatok beolvasása során</string>
+    <string name="import_assistant_data_gathering_error">Hiba az adatok összegyűjtésekor</string>
+    <string name="import_assistant_update_import_error">Az importálás frissítése nem sikerült, próbálja újra később.</string>
+    <string name="import_assistant_update_import_wrong_account_error">Helytelen fiók. Lépjen be azzal a fiókkal, amelyet a naptár importálására használt.</string>
+    <string name="import_assistant_start_import_error">Az importálás indítása nem sikerült, próbálja újra később.</string>
+    <string name="import_assistant_delete_import_success">Importálási elem törölve</string>
+    <string name="import_assistant_delete_import_error">Az importálás törlése nem sikerült, próbálja újra később.</string>
+    <string name="import_assistant_cancel_import_error">Az importálás megszakítása nem sikerült, próbálja újra később.</string>
+    <string name="import_assistant_resume_import_error">Az importálás folytatása nem sikerült, próbálja újra később.</string>
+    <string name="import_assistant_create_calendar_error">Egy vagy több naptár létrehozása nem sikerült</string>
+    <string name="import_assistant_start_import_empty_error">Hiba az importálás indításakor: nincs importálandó naptár</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">Importálás mint:</string>
+    <string name="import_assistant_new_calendar_badge">Új</string>
+    <string name="import_assistant_merge_calendar_badge">Egyesítve</string>
+    <string name="import_assistant_creating_calendars">Új naptárak lérehozása</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">Majdnem kész…</string>
+    <string name="import_assistant_new_calendar_header">Új létrehozása</string>
+    <string name="import_assistant_merge_calendar_header">Összefűzés meglévővel</string>
+    <string name="import_assistant_in_progress_title">Importálás folyamatban</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">Importálás innen: %1s, ide: %2s.</string>
+    <string name="import_assistant_in_progress_redirect">Folyamat ellenőrzése</string>
+    <string name="import_assistant_in_progress_sub_description">Nagyobb importálás akár napokig is eltarthat. Értesítjük az importálás befejezésekor. Bezárhatja ezt a képernyőt.</string>
+    <string name="import_assistant_guide_subtitle">Tegye bizalmassá a magánszféráját. Könnyedén és biztonságosan.</string>
+    <string name="import_assistant_guide_description">Költöztesse át eseményeit és más adatait a Google-tól a Protonhoz. Az Easy Switch importáló végigvezeti a szükséges lépéseken, és a költöztetés során titkosítja az adatait.</string>
+    <string name="import_assistant_new_import">Új importálás</string>
+    <string name="import_assistant_previous_import">Korábbi importálások</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s   %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">Elindult</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">Folyamatban</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">Kész</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">Megszakítva</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">Megszakítás alatt</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">Felfüggesztve</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">Sikertelen</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Megszakadt a kapcsolat a Google-val</string>
+    <string name="import_assistant_status_paused_lost_connection_description">Az importálás folytatásához koppintson az Újrakapcsolódásra, jelentkezzen be a Google-ba, és engedélyezze ismét, hogy a Proton hozzáférhessen az adataihoz.</string>
+    <string name="import_assistant_status_paused_lost_connection_button">Újrakapcsolódás</string>
+    <string name="import_assistant_status_paused_storage_full_title">A tárhelye megtelt</string>
+    <string name="import_assistant_status_paused_storage_full_description">A Proton fiókjában nincs elegendő hely a naptár importálásának befejezéséhez. Szabadítson fel helyet, vagy fizessen elő több tárhelyre, majd térjen vissza ide a folytatáshoz.</string>
+    <string name="import_assistant_status_paused_storage_full_button">Folytatás</string>
+    <string name="import_assistant_delete_report_title">Eltávolítás a listából?</string>
+    <string name="import_assistant_delete_report_message">Az importálási elem a továbbiakban nem fog szerepelni a listán.</string>
+    <string name="import_assistant_delete_report_positive_button">Eltávolítás</string>
+    <string name="import_assistant_delete_report_negative_button">Megtartás</string>
+    <string name="import_assistant_cancel_import_title">Az importálás elkészült.</string>
+    <string name="import_assistant_cancel_import_message">Ha megszakítja az importálást, nem lehet folytatni. A Proton már mentette az eddig feldolgozott adatokat a fiókjába. Megszakítja?</string>
+    <string name="import_assistant_cancel_import_positive_button">Importálás megszakítása</string>
+    <string name="import_assistant_cancel_import_negative_button">Importálás folytatása</string>
+    <string name="import_assistant_in_progress_snack">Importálás folyamatban</string>
+    <string name="import_assistant_discard_import_title">Importálás megszakítása?</string>
+    <string name="import_assistant_discard_import_message">Az importálás nem teljes, és nem lesz folytatható, ha megszakítja.</string>
+    <string name="import_assistant_discard_import_positive">Importálás megszakítása</string>
+    <string name="import_assistant_discard_import_negative">Importálás folytatása</string>
+    <string name="import_assistant_authentication_canceled">Hitelesítés megszakítva</string>
+    <string name="import_assistant_sign_in_in_progress">A bejelentkezés már folyamatban van</string>
+    <string name="import_assistant_in_progress_error_snack">Még folyamatban van egy importálás</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">Importálás egyszerű eseményként?</string>
+    <string name="import_event_disclaimer_dialog_description">\nAz importált meghívások a Proton Calendarban egyszerű eseményekként jelennek meg, <b>a szervező</b> és <b>a résztvevők nélkül</b>.\n\nHogy továbbra is kapjon értesítéseket a frissítésekről és a résztvevőkről, kérje meg a szervezőt, hogy a Proton e-mail címével hívja meg önt.</string>
+    <string name="import_event_disclaimer_dialog_positive">Importálás</string>
+    <string name="undefined_color">Nem meghatározott</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">naptár</item>
+        <item quantity="other">naptárak</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">%1$d naptár importálása</item>
+        <item quantity="other">%1$d naptár importálása</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">%1$d folyamatban lévő importálás</item>
+        <item quantity="other">%1$d folyamatban lévő importálás</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">%1$d / %2$d létrehozva, itt: %3$s</item>
+        <item quantity="other">%1$d / %2$d létrehozva, itt: %3$s</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">%1$d új naptár létrehozása a Proton Calendarban.</item>
+        <item quantity="other">%1$d új naptár létrehozása a Proton Calendarban.</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">%1$d / %2$d naptár importálása innen:</item>
+        <item quantity="other">%1$d / %2$d naptár importálása innen:</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">%1$d új naptár összefűzése a Proton Calendarban.</item>
+        <item quantity="other">%1$d új naptár összefűzése a Proton Calendarban.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">A naptárak számának korlátja miatt, nem hozható létre egy új naptár minden importált naptárnak.\n • Szüntesse meg a kijelölést legalább %1$d naptáron</item>
+        <item quantity="other">A naptárak számának korlátja miatt, nem hozható létre egy új naptár minden importált naptárnak.\n • Szüntesse meg a kijelölést legalább %1$d naptáron</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020vagy\n • Fűzzön össze legalább %1$d naptárat, meglévő Proton naptárral.</item>
+        <item quantity="other">\u0020vagy\n • Fűzzön össze legalább %1$d naptárat, meglévő Proton naptárral.</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">másodperc</item>
+        <item quantity="other">másodperc</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">perc</item>
+        <item quantity="other">perc</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">óra</item>
+        <item quantity="other">órák</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">nap</item>
+        <item quantity="other">napok</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">hét</item>
+        <item quantity="other">hét</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">hó</item>
+        <item quantity="other">hónap</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">év</item>
+        <item quantity="other">év</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">egyszer</item>
+        <item quantity="other">alkalommal</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">esemény</item>
+        <item quantity="other">események</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">időpont</item>
+        <item quantity="other">alkalommal</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">résztvevő</item>
+        <item quantity="other">résztvevő</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">Minden %1$d %2$s</item>
+        <item quantity="other">Minden %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">Minden %1$d %2$s</item>
+        <item quantity="other">Minden %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">Minden %1$d %2$s</item>
+        <item quantity="other">Minden %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">Minden %1$d %2$s</item>
+        <item quantity="other">Minden %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s perc</item>
+        <item quantity="other">%1$s perc</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d/%2$d karakter</item>
+        <item quantity="other">%1$d/%2$d karakter</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d/%2$d karakter</item>
+        <item quantity="other">%1$d/%2$d karakter</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>első</item>
+        <item>második</item>
+        <item>harmadik</item>
+        <item>negyedik</item>
+        <item>ötödik</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>utolsó</item>
+        <item>utolsó előtti</item>
+        <item>az utolsó előtt kettővel</item>
+        <item>az utolsó előtt hárommal</item>
+        <item>az utolsó előtt néggyel</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>Világos</item>
+        <item>Sötét</item>
+        <item>Rendszer alapértelmezett</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>Rendszer alapértelmezett</item>
+        <item>13:00</item>
+        <item>1:00 d.u.</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>Rendszer alapértelmezett</item>
+        <item>Hétfő</item>
+        <item>Szombat</item>
+        <item>Vasárnap</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>Lila|#8080FF</item>
+        <item>Eper|#EC3E7C</item>
+        <item>Rózsaszín|#DB60D6</item>
+        <item>Sárgarépa|#F78400</item>
+        <item>Szahara|#936D58</item>
+        <item>Encián|#5252CC</item>
+        <item>Szilva|#A839A4</item>
+        <item>Cseresznye|#BA1E55</item>
+        <item>Réz|#C44800</item>
+        <item>Földbarna|#54473F</item>
+        <item>Palakék|#415DF0</item>
+        <item>Csendes-óceán|#179FD9</item>
+        <item>Zátony|#1DA583</item>
+        <item>Páfrány|#3CBB3A</item>
+        <item>Olíva|#B4A40E</item>
+        <item>Kobalt|#273EB2</item>
+        <item>Óceán|#0A77A6</item>
+        <item>Fenyő|#0F735A</item>
+        <item>Erdőzöld|#258723</item>
+        <item>Uborka|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>Lila</item>
+        <item>Eper</item>
+        <item>Rózsaszín</item>
+        <item>Sárgarépa</item>
+        <item>Szahara</item>
+        <item>Encián</item>
+        <item>Szilva</item>
+        <item>Cseresznye</item>
+        <item>Réz</item>
+        <item>Földbarna</item>
+        <item>Palakék</item>
+        <item>Csendes-óceán</item>
+        <item>Zátony</item>
+        <item>Páfrány</item>
+        <item>Olíva</item>
+        <item>Kobalt</item>
+        <item>Óceán</item>
+        <item>Fenyő</item>
+        <item>Erdőzöld</item>
+        <item>Uborka</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+{
+    "Code": 1000,
+    "EventID": "deZCqTHUuob80ZGgsyTwXxhJka4LD0soPisUvyeTcXKej5UnbTqI_0Qp3bUZfNjcI1gVZs2tZqqcnHCj5zXVYQ==",
+    "Refresh": 0,
+    "More": 1,
+    "CalendarEvents": [
+        {"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","Action":1,"Event":{"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","CalendarID":"VX8u-IWOgMWQkLGkmYQUwHo-ef8iOiMwF5QEgiQq9lvSRhsFam4J1vRpUQR3qyWianfyPk-JkUo85EtyQgPC3w==","SharedEventID":"086ENk2jUDwGC1eHdDqvG2kRdjggn1UXQ6J6wGFkb9_VQ_XjUuq7rITHPBze37Pz509qh4gwbJPUGrEdyapYIxPFw9g67hf4-fr0HR8fs7c=","StartTime":1604052000,"StartTimezone":"Europe/Zurich","EndTime":1604053800,"EndTimezone":"Europe/Zurich","FullDay":0,"UID":"f2dO_CLd0ySzf_JhqvDoppe2TQQ_@proton.me","RecurrenceID":null,"Exdates":[],"RRule":null,"CreateTime":1604051860,"ModifyTime":1604051860,"IsOrganizer":1}},
+        {"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","Action":1,"Event":{"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","CalendarID":"VX8u-IWOgMWQkLGkmYQUwHo-ef8iOiMwF5QEgiQq9lvSRhsFam4J1vRpUQR3qyWianfyPk-JkUo85EtyQgPC3w==","SharedEventID":"086ENk2jUDwGC1eHdDqvG2kRdjggn1UXQ6J6wGFkb9_VQ_XjUuq7rITHPBze37Pz509qh4gwbJPUGrEdyapYIxPFw9g67hf4-fr0HR8fs7c=","StartTime":1604052000,"StartTimezone":"Europe/Zurich","EndTime":1604053800,"EndTimezone":"Europe/Zurich","FullDay":0,"UID":"f2dO_CLd0ySzf_JhqvDoppe2TQQ_@proton.me","RecurrenceID":null,"Exdates":[],"RRule":null,"CreateTime":1604051860,"ModifyTime":1604051860,"IsOrganizer":1}},
+        {"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","Action":1,"Event":{"ID":"4vuhi_o4lSeWPr55A6qU2HldcnjEZJYj4V6x_xWf2M_bvbMPGyXyinuyS7rkyIufSG7qSUN2LnmFdHxmWvPxmQ==","CalendarID":"VX8u-IWOgMWQkLGkmYQUwHo-ef8iOiMwF5QEgiQq9lvSRhsFam4J1vRpUQR3qyWianfyPk-JkUo85EtyQgPC3w==","SharedEventID":"086ENk2jUDwGC1eHdDqvG2kRdjggn1UXQ6J6wGFkb9_VQ_XjUuq7rITHPBze37Pz509qh4gwbJPUGrEdyapYIxPFw9g67hf4-fr0HR8fs7c=","StartTime":1604052000,"StartTimezone":"Europe/Zurich","EndTime":1604053800,"EndTimezone":"Europe/Zurich","FullDay":0,"UID":"f2dO_CLd0ySzf_JhqvDoppe2TQQ_@proton.me","RecurrenceID":null,"Exdates":[],"RRule":null,"CreateTime":1604051860,"ModifyTime":1604051860,"IsOrganizer":1}}
+    ],
+    "UsedSpace": 3342167,
+    "Notices": []
+}

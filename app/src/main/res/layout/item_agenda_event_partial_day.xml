@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/spacing_element_small"
+    android:paddingLeft="@dimen/spacing_page"
+    android:paddingRight="@dimen/spacing_page"
+    android:background="?selectableItemBackground"
+    >
+
+    <View
+        android:id="@+id/image_icon"
+        android:layout_width="4dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_base"
+        android:background="@drawable/shape_calendar_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_header"
+        style="@style/Text.DefaultSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_element"
+        android:layout_marginEnd="@dimen/spacing_page"
+        android:layout_marginTop="@dimen/spacing_element_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="Klosterstraße 44, 10179 Berlin, Germany" />
+
+    <TextView
+        android:id="@+id/text_subheader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/Text.Default"
+        app:layout_constraintEnd_toStartOf="@+id/text_subheader_side"
+        app:layout_constraintStart_toStartOf="@+id/text_header"
+        app:layout_constraintTop_toBottomOf="@+id/text_header"
+        tools:text="Subheader text, 123, sdkfh sdkhf sdkj fksd jfsdfsdfsdfdsf" />
+
+    <TextView
+        android:id="@+id/text_subheader_side"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Text.Default"
+        android:gravity="end"
+        app:layout_constraintEnd_toEndOf="@+id/text_header"
+        app:layout_constraintTop_toBottomOf="@+id/text_header"
+        tools:text="(1/2)" />
+
+    <ImageView
+        android:id="@+id/decryption_error_icon"
+        style="@style/Icon"
+        android:visibility="gone"
+        android:layout_width="@dimen/default_icon_size"
+        android:layout_height="@dimen/default_icon_size"
+        app:srcCompat="@drawable/ic_proton_lock_exclamation_filled"
+        app:layout_constraintStart_toStartOf="@+id/text_header"
+        app:layout_constraintTop_toBottomOf="@+id/text_header"/>
+
+    <View
+        android:id="@+id/decryption_error_view"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_background_decryption_error"
+        android:backgroundTint="@color/text_norm"
+        android:alpha="0.1"
+        app:layout_constraintEnd_toStartOf="@+id/text_subheader_side"
+        app:layout_constraintStart_toEndOf="@+id/decryption_error_icon"
+        app:layout_constraintTop_toTopOf="@+id/decryption_error_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/decryption_error_icon"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

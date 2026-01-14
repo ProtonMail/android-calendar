@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_event_summary" comment="Event has no title">(Kein Titel)</string>
+    <string name="multiple_days_event_summary" comment="We display the start time of the event as prefix, example: 16:00 Summary">%1$s %2$s</string>
+    <string name="default_user_email">(keine E-Mail-Adresse)</string>
+    <string name="default_user_display_name">(kein Name)</string>
+    <string name="toast_copied_to_clipboard">In die Zwischenablage kopiert</string>
+    <!-- DELETE EVENT DIALOG -->
+    <string name="dialog_title_delete_event">Termin löschen</string>
+    <string name="dialog_title_delete_recurring_event">Wiederkehrenden Termin löschen</string>
+    <string name="dialog_description_delete_event">Möchtest du diesen Termin löschen?</string>
+    <string name="dialog_description_delete_recurring_event">Möchtest du alle Termine dieser Serie löschen?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event">Dieser Termin wurde vom Organisator aktualisiert. Möchtest du den Termin aus deinem Kalender entfernen?</string>
+    <string name="dialog_button_delete">Löschen</string>
+    <string name="dialog_button_cancel">Abbrechen</string>
+    <string name="dialog_button_continue">Fortfahren</string>
+    <string name="dialog_button_close">Schließen</string>
+    <string name="dialog_button_remove">Entfernen</string>
+    <string name="dialog_button_download">Herunterladen</string>
+    <string name="dialog_button_update">Aktualisieren</string>
+    <!-- Delete as an organizer -->
+    <string name="dialog_description_delete_event_as_organizer">Alle Teilnehmer werden eine E-Mail zur Absage des Termins erhalten. Möchtest du diesen Termin löschen?</string>
+    <string name="dialog_description_delete_event_as_organizer_disabled">Deine E-Mail-Adresse ist deaktiviert. Eine E-Mail zur Absage des Termins kann daher nicht an die Teilnehmer gesendet werden. Möchtest du diesen Termin trotzdem löschen?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer">Alle Teilnehmer erhalten eine E-Mail zur Absage des Termins. Möchtest du alle Termine in dieser Serie löschen?</string>
+    <string name="dialog_description_delete_recurring_event_as_organizer_disabled">Deine E-Mail-Adresse ist deaktiviert. Eine E-Mail zur Absage kann nicht an die Teilnehmer des Termins gesendet werden. Möchtest du trotzdem alle Termine dieser Serie löschen?</string>
+    <!-- Delete as an attendee -->
+    <string name="dialog_description_delete_single_event_as_attendee">Der Organisator dieses Termins wird benachrichtigt, dass du die Teilnahme ablehnst. Möchtest du diesen Termin aus deinem Kalender löschen?</string>
+    <string name="dialog_description_delete_single_event_as_attendee_disabled">Der Organisator dieses Termins kann nicht über deine Ablehnung benachrichtigt werden, da du von der eingeladenen E-Mail-Adresse keine E-Mails senden kannst. Möchtest du diesen Termin trotzdem löschen?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee">Der Organisator dieser Terminserie wird benachrichtigt, dass du die Einladung ablehnst. Möchtest du alle Termine dieser Serie löschen?</string>
+    <string name="dialog_description_delete_recurring_event_as_attendee_disabled">Der Organisator dieser Terminserie kann nicht über deine Ablehnung benachrichtigt werden, da du von der eingeladenen E-Mail-Adresse keine E-Mails senden kannst. Möchtest du trotzdem alle Termine dieser Serie löschen?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee">Dieser Termin wurde aktualisiert. Der Organisator wird benachrichtigt, dass du die Einladung ablehnst. Möchtest du den Termin aus deinem Kalender entfernen?</string>
+    <string name="dialog_description_delete_non_standalone_single_edit_event_as_attendee_disabled">Dieser Termin wurde aktualisiert. Der Organisator dieser Veranstaltung kann nicht über deine Ablehnung benachrichtigt werden, da du von der eingeladenen E-Mail-Adresse keine E-Mails senden kannst. Möchtest du diesen Termin trotzdem löschen?</string>
+    <string name="dialog_description_warning_delete_recurring_with_single_edit_as_attendee" comment="Order of those two arguments will always be the same. It is a message followed by a warning on a new line.">%1$s\n%2$s</string>
+    <string name="dialog_description_warning_delete_recurring_with_answered_single_edit_as_attendee">Termine, die zuvor vom Organisator aktualisiert wurden, bleiben erhalten, jedoch werden deine Antworten gelöscht</string>
+    <string name="dialog_description_warning_delete_recurring_with_unanswered_single_edit_as_attendee">Zuvor vom Veranstalter aktualisierte Termine werden beibehalten</string>
+    <string name="event_delete_as_attendee_send_prefs_error_message" comment="string placeholder is a list of failed emails">Der Organisator kann nicht darüber informiert werden, dass du die Einladung ablehnst:\n\n• %1$s\n\nMöchtest du den Termin trotzdem löschen?</string>
+    <string name="dialog_button_set">Festlegen</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="action_save">Speichern</string>
+    <string name="action_done">Fertig</string>
+    <string name="action_edit">Bearbeiten</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_add">Hinzufügen</string>
+    <string name="action_remove">Entfernen</string>
+    <string name="action_leave">Verlassen</string>
+    <string name="action_recreate">Leeren</string>
+    <string name="action_today">Heute</string>
+    <string name="action_create_event">Termin erstellen</string>
+    <string name="action_mark_default">Als Standard festlegen</string>
+    <!-- MONTH VIEW -->
+    <string name="agenda_no_events">Keine Termine</string>
+    <string name="agenda_loading_events">Termine werden geladen…</string>
+    <string name="agenda_loading_events_error">Fehler beim Laden der Termine</string>
+    <string name="agenda_header_date" comment="Tuesday 28">%1$s %2$d</string>
+    <string name="day_view_all_day_more">+ %1$d weitere</string>
+    <!-- EVENT DETAILS   -->
+    <string name="event_all_day">Ganztägig</string>
+    <string name="event_time_period_spanning_single_day" comment="Example: 13:00 - 15:00">%1$s \u2013 %2$s</string>
+    <string name="event_time_period_spanning_many_days" comment="Example: Monday 12 January - Tuesday 13 January">%1$s \u2013\n%2$s</string>
+    <string name="event_alarm_label_at_event_time">Zu Beginn des Termins</string>
+    <string name="event_alarm_label_at_event_time_by_email">Zum Zeitpunkt des Termins per E-Mail</string>
+    <string name="event_alarm_label_on_the_same_day">Am selben Tag</string>
+    <string name="event_alarm_label_before">%1$s vorher</string>
+    <string name="event_alarm_label">%1$s</string>
+    <string name="event_alarm_label_before_by_email">%1$s vorher per E-Mail</string>
+    <string name="event_alarm_label_not_before_with_time" comment="Example: On the same day at 15:00">%1$s um %2$s</string>
+    <string name="event_alarm_label_not_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s um %2$s per E-Mail</string>
+    <string name="event_alarm_label_before_with_time" comment="Example: 1 day before at 9:00">%1$s vorher um %2$s</string>
+    <string name="event_alarm_label_before_with_time_by_email" comment="Example: 1 day before at 9:00 by email">%1$s vorher um %2$s per E-Mail</string>
+    <string name="event_recurrence_occurs_on_day_of_week" comment="Example: weekly on Friday">%1$s am %2$s</string>
+    <string name="event_recurrence_occurs_on_day_of_month" comment="Example: monthly on day 15">%1$s am %2$d. Tag</string>
+    <string name="event_recurrence_occurs_on_day_of_week_full_words" comment="Example: monthly on first Friday">%1$s am %2$s</string>
+    <string name="event_recurrence_none">Keine Wiederholungen</string>
+    <string name="event_recurrence_daily">Täglich</string>
+    <string name="event_recurrence_weekly">Wöchentlich</string>
+    <string name="event_recurrence_monthly">Monatlich</string>
+    <string name="event_recurrence_yearly">Jährlich</string>
+    <string name="event_recurrence_weekly_on_all_days">jeden Tag</string>
+    <string name="event_recurrence_until" comment="Event happens regularly until a date">bis %1$s</string>
+    <string name="event_recurrence_until_with_timezone" comment="Event happens regularly until a date with (timezone)">bis %1$s (%2$s)</string>
+    <string name="event_attendee_count" comment="Example: 5 participants">%1$d %2$s</string>
+    <string name="event_status_canceled">Abgesagt</string>
+    <string name="event_calendar_disabled" comment="Example: My Calendar (Disabled)"><![CDATA[%1$s <i>(Deaktiviert)</i>]]></string>
+    <string name="event_default_color" comment="Label for the default color. Example: Blue (Default)">(Standard)</string>
+    <string name="event_attendee_status_separator">%1$s, %2$s</string>
+    <string name="event_attendee_yes" comment="How many attendees answered yes">%1$d Ja</string>
+    <string name="event_attendee_maybe" comment="How many attendees answered maybe">%1$d Vielleicht</string>
+    <string name="event_attendee_no" comment="How many attendees answered no">%1$d Nein</string>
+    <string name="event_attendee_unanswered" comment="How many attendees didn't answer yet">%1$d ausstehend</string>
+    <string name="event_attendee_is_organizer">Du bist der Organisator</string>
+    <string name="event_attendee_organizer">Organisator</string>
+    <string name="event_attendee_optional">Optional</string>
+    <string name="event_attendee_is_current_user">Du</string>
+    <string name="event_answer_attending">Teilnehmen?</string>
+    <string name="event_answer_yes">Ja</string>
+    <string name="event_answer_no">Nein</string>
+    <string name="event_answer_maybe">Vielleicht</string>
+    <string name="event_decryption_error_dialog_title">Termin konnte nicht entschlüsselt werden</string>
+    <string name="event_decryption_error_dialog_message">Das Entschlüsseln des Inhalts dieses Termins ist fehlgeschlagen.</string>
+    <string name="event_decryption_error_dialog_confirmation">Termin löschen</string>
+    <string name="event_decryption_error_dialog_confirmation_recurring">Termine löschen</string>
+    <string name="event_decryption_error_dialog_close">Schließen</string>
+    <string name="event_signature_verification_failure">Die Überprüfung der Terminsignatur ist fehlgeschlagen. <a href="https://proton.me/support/what-is-a-digital-signature">Mehr erfahren</a></string>
+    <string name="event_signature_verification_in_progress">Überprüfung der Terminsignatur läuft gerade.</string>
+    <string name="event_signature_verification_network_error">Die Überprüfung der Terminsignatur wurde durch einen Fehler unterbrochen. <a href="">Erneut versuchen</a></string>
+    <string name="event_change_answer_recurring_title">Terminserie aktualisieren</string>
+    <string name="event_change_answer_recurring_description">Möchtest du die Antwort für alle Termine in dieser Serie ändern?</string>
+    <string name="event_change_answer_recurring_overwrite_description">Möchtest du deine Antwort für alle Termine in dieser Serie ändern?\nEinige deiner Antworten auf Wiederholungen, die zuvor vom Organisator aktualisiert wurden, gehen dabei verloren.</string>
+    <string name="event_change_answer_recurring_single_edit_description">Dieser Termin wurde vom Organisator aktualisiert. Möchtest du deine Antwort nur für diesen Termin in dieser Serie ändern?</string>
+    <string name="event_change_answer_recurring_cancel">Abbrechen</string>
+    <string name="event_change_answer_recurring_confirm">Aktualisieren</string>
+    <string name="event_change_answer_mail_body_accepted" comment="Example: Mary Jane has accepted your invitation to Super Cool Event">%1$s hat deine Einladung zu „%2$s“ angenommen</string>
+    <string name="event_change_answer_mail_body_declined" comment="Example: Mary Jane has declined your invitation to Super Cool Event">%1$s hat deine Einladung zu „%2$s“ abgelehnt</string>
+    <string name="event_change_answer_mail_body_tentative" comment="Example: Mary Jane has tentatively accepted your invitation to Super Cool Event">%1$s hat deine Einladung zu „%2$s“ unter Vorbehalt angenommen</string>
+    <string name="event_organizer_send_prefs_error_title">Organisator konnte nicht benachrichtigt werden</string>
+    <string name="event_organizer_send_prefs_message_accepted_title">Der Organisator konnte nicht darüber informiert werden, dass du die Einladung bestätigt hast</string>
+    <string name="event_organizer_send_prefs_message_declined_title">Der Organisator konnte nicht darüber informiert werden, dass du die Einladung abgelehnt hast</string>
+    <string name="event_organizer_send_prefs_message_tentative_title">Der Organisator konnte nicht darüber informiert werden, dass du die Einladung unter Vorbehalt bestätigt hast</string>
+    <string name="event_organizer_send_prefs_message_default_title">Der Organisator konnte nicht benachrichtigt werden, dass du auf die Einladung geantwortet hast</string>
+    <string name="event_organizer_send_prefs_button_title">OK</string>
+    <string name="event_attendees_send_prefs_error_title">Teilnehmer konnten nicht benachrichtigt werden</string>
+    <string name="event_attendees_send_prefs_error_none_message" comment="string placeholder is a list of failed emails">Keiner der Teilnehmer kann über deine Änderungen informiert werden:\n\n• %1$s\n\nMöchtest du trotzdem fortfahren?</string>
+    <string name="event_attendees_send_prefs_error_some_message" comment="string placeholder is a list of failed emails">Die folgenden Teilnehmer konnten nicht über deine Änderungen benachrichtigt werden:\n\n• %1$s\n\nMöchtest du trotzdem fortfahren?</string>
+    <string name="event_attendees_send_prefs_error_confirm">Weiter</string>
+    <string name="event_attendees_send_prefs_error_cancel">Abbrechen</string>
+    <string name="event_send_prefs_error_address_disabled">diese E-Mail-Adresse existiert nicht</string>
+    <string name="event_send_prefs_error_getting_contact">Kontaktdaten konnten nicht ermittelt werden</string>
+    <string name="event_send_prefs_error_network">Netzwerkfehler</string>
+    <string name="event_send_prefs_trusted_keys_invalid">vertrauter Schlüssel ungültig</string>
+    <string name="event_send_prefs_public_keys_invalid">öffentliche Schlüssel ungültig</string>
+    <string name="event_send_prefs_trusted_keys_signature_invalid">ungültige Nachrichtensignatur</string>
+    <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
+    <string name="join_zoom_meeting_action">Zoom-Meeting beitreten</string>
+    <string name="zoom_meeting_title">Zoom-Meeting</string>
+    <string name="generic_meeting_id">ID: %1$s</string>
+    <string name="generic_meeting_password">Passwort: %1$s</string>
+    <string name="generic_meeting_more_details">Mehr Details</string>
+    <string name="generic_meeting_less_details">Weniger Details</string>
+    <string name="generic_meeting_host">Gastgeber</string>
+    <string name="generic_meeting_link">Meeting-Link</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Teilnahmebedingungen</a></string>
+    <!-- CREATE / EDIT EVENT   -->
+    <string name="title_create_event">Neuer Termin</string>
+    <string name="event_text_edit_event">Termin bearbeiten</string>
+    <string name="event_hint_title">Titel hinzufügen</string>
+    <string name="event_hint_location">Ort hinzufügen</string>
+    <string name="event_text_add_participants">Teilnehmer hinzufügen</string>
+    <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">Teilnehmer (%1$d/%2$d)</string>
+    <string name="event_current_user_organizer">Du</string>
+    <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ %1$d weitere</string>
+    <string name="event_text_switch_all_day">Ganztägig</string>
+    <string name="event_text_date_start">Beginn</string>
+    <string name="event_text_date_end">Ende</string>
+    <string name="event_text_date_repeat">Wiederholen</string>
+    <string name="event_text_date_repeat_never">Keine Wiederholungen</string>
+    <string name="event_text_attendees">Teilnehmer</string>
+    <string name="event_text_attendees_none">Keine</string>
+    <string name="event_text_calendar">Kalender</string>
+    <string name="event_text_timezone_start">Zeitzone</string>
+    <string name="invite_in_shared_calendar_disclaimer">Das Senden von Einladungen ist nur innerhalb von persönlichen Kalendern verfügbar.</string>
+    <string name="invite_change_calendar_disclaimer">Es ist nicht möglich, den mit den Einladungen verbundenen Kalender zu ändern.</string>
+    <string name="invite_change_attendees_disclaimer">Es ist noch nicht möglich, die mit Einladungen verbundenen Teilnehmer zu ändern.</string>
+    <string name="change_calendar_recurring_disclaimer">Das Ändern des Kalenders für wiederkehrende Termine ist noch nicht möglich.</string>
+    <string name="update_event">Termin aktualisieren</string>
+    <string name="update_invite_send_email">Ein aktualisiertes Einladungsschreiben wird an die Teilnehmer des Termins gesendet.</string>
+    <string name="update_recurring_event">Terminserie aktualisieren</string>
+    <string name="update_recurring_all_events">Möchtest du alle Termine dieser Serie aktualisieren?</string>
+    <string name="update_recurring_invite_send_email">Du bist dabei, alle Termine in dieser Serie zu aktualisieren. Vorhandene und entfernte Teilnehmer werden darüber informiert.</string>
+    <!-- SEARCH -->
+    <string name="search_hint_input_field">Wonach suchst du?</string>
+    <string name="search_empty_results_title">Keine Ergebnisse gefunden</string>
+    <string name="search_empty_results_subtitle">Versuche es mit einem anderen Begriff, z. B. Eric, Geburtstag, Webinar, Buchclub.</string>
+    <string name="search_downloading_calendars" comment="Downloading calendars (1h 20m remaining...)">Kalender werden heruntergeladen (%1$s)</string>
+    <string name="search_downloading_time_remaining" comment="Example: Time remaining: 3min / Downloading calendars (Time remaining: 3min)">Verbleibende Zeit: %1$s</string>
+    <string name="search_downloading_time_remaining_unknown" comment="Example: Calculating time remaining… / Downloading calendars (Calculating time remaining…)">Verbleibende Zeit wird berechnet…</string>
+    <string name="search_downloading_time_remaining_almost_done" comment="Example: Time remaining: almost done">Fast fertig</string>
+    <string name="search_downloading_pause">Download anhalten</string>
+    <string name="search_settings_dialog_toggle_off_title">Alle heruntergeladenen Kalender entfernen?</string>
+    <string name="search_settings_dialog_toggle_off_text">Du musst deine Kalender erneut herunterladen, wenn du eine Suche durchführen möchtest.</string>
+    <string name="search_settings_dialog_toggle_on_title">Kalender auf dieses Gerät herunterladen?</string>
+    <string name="search_settings_dialog_toggle_on_text">Dies ist erforderlich, damit du die Suche durchführen kannst.</string>
+    <string name="search_onboarding_header">Möchtest du deinen Kalender durchsuchen?</string>
+    <string name="search_onboarding_text">Zuerst musst du eine verschlüsselte Kopie deiner Kalender herunterladen. Das dauert nur einen Moment, und du kannst die App weiter verwenden. <a href="https://proton.me/support/calendar-search">Mehr erfahren</a></string>
+    <string name="search_onboarding_action_download_calendars">Kalender herunterladen</string>
+    <string name="search_onboarding_action_pause">Pausieren</string>
+    <string name="search_onboarding_action_resume">Fortsetzen</string>
+    <string name="search_onboarding_action_retry">Wiederholen</string>
+    <string name="search_onboarding_progress_header_ongoing">Kalender werden heruntergeladen…</string>
+    <string name="search_onboarding_progress_header_completed">Herunterladen abgeschlossen</string>
+    <string name="search_onboarding_progress_header_paused">Herunterladen der Kalender pausiert</string>
+    <string name="search_onboarding_progress_header_error">Fehler beim Herunterladen der Kalender</string>
+    <string name="search_spotlight_activation_snack">Kalendersuche aktiviert</string>
+    <!-- TODO Start Timezone / End Timezone? -->
+    <string name="event_text_add_alarm">Benachrichtigung hinzufügen</string>
+    <string name="event_text_description">Beschreibung</string>
+    <string name="event_hint_description">Beschreibung hinzufügen</string>
+    <string name="event_text_custom">Benutzerdefiniert</string>
+    <string name="event_alert_invalid_start_end_date">Startdatum des Termins darf nicht später als das Enddatum sein</string>
+    <string name="event_alarms_title">Benachrichtigungen</string>
+    <string name="event_custom_alarms_field">Benachrichtigen</string>
+    <string name="event_custom_alarms_title">Eigene Benachrichtigungen</string>
+    <string name="event_alarm_partial_day_1">zum Zeitpunkt des Termins</string>
+    <string name="event_alarm_partial_day_2">10 Minuten</string>
+    <string name="event_alarm_partial_day_3">30 Minuten</string>
+    <string name="event_alarm_partial_day_4">1 Stunde</string>
+    <string name="event_alarm_partial_day_5">1 Woche</string>
+    <string name="event_alarm_all_day_1">am selben Tag um %1$s</string>
+    <string name="event_alarm_all_day_2">1 Tag vorher um %1$s</string>
+    <string name="event_alarm_all_day_3">1 Woche vorher um %1$s</string>
+    <string name="event_alarm_all_day_4">3 Wochen vorher um %1$s</string>
+    <string name="event_alarm_at_time" comment="Example: at 15:00">um %1$s</string>
+    <string name="event_alarm_action">Senden via</string>
+    <string name="event_alarm_action_notification">Benachrichtigung</string>
+    <string name="event_alarm_action_email">E‐Mail</string>
+    <string name="event_alarm_same_day">An diesem Tag</string>
+    <string name="event_recurrence_1">Keine Wiederholungen</string>
+    <string name="event_recurrence_2">Täglich</string>
+    <string name="event_recurrence_3">Wöchentlich</string>
+    <string name="event_recurrence_4">Monatlich</string>
+    <string name="event_recurrence_5">Jährlich</string>
+    <string name="event_recurrence_title">Häufigkeit</string>
+    <string name="event_recurrence_custom_title">Benutzerdefinierte Häufigkeit</string>
+    <string name="event_recurrence_occurs_every">Wiederholt sich</string>
+    <string name="event_recurrence_occurs_on">Wiederholen am</string>
+    <string name="event_recurrence_occurs_monthly_on_day" comment="when repeating monthly always on day number X, Example: on day 15">am %1$d. Tag</string>
+    <string name="event_recurrence_occurs_on_monthly_on_x_day_of_week" comment="when repeating weekly on specific day of week in a month, Example: on the last Friday">am %1$s.</string>
+    <string name="event_recurrence_ends_on">Endet</string>
+    <string name="event_recurrence_ends_never">Niemals</string>
+    <string name="event_recurrence_ends_on_date_empty" comment="Used when the end date has not been set yet. Once set it would display something along Event ends on Jul 14, 2022">am Tag</string>
+    <string name="event_recurrence_ends_on_date" comment="repeats but ends on given date, Example: on January 21, 2020">am %1$s</string>
+    <string name="event_recurrence_ends_after_count_prefix">nach</string>
+    <string name="event_recurring_edit_this">Diesen Termin</string>
+    <string name="event_recurring_edit_this_and_future">Diesen und zukünftige Termine</string>
+    <string name="event_recurring_edit_all_events">Alle Termine</string>
+    <string name="event_discard_changes_title">Änderungen verwerfen?</string>
+    <string name="event_discard_changes_description">Alle nicht gespeicherten Änderungen gehen verloren.</string>
+    <string name="event_discard_changes_cancel">Bearbeitung fortsetzen</string>
+    <string name="event_discard_changes_confirm">Verwerfen</string>
+    <string name="event_recurring_update_this_title">Terminserie aktualisieren</string>
+    <string name="event_recurring_update_this_description">Änderungen der Häufigkeit gehen verloren</string>
+    <string name="event_recurring_update_all_description">Frühere Änderungen an dieser Terminserie gehen verloren</string>
+    <string name="event_recurring_update_this_cancel">Abbrechen</string>
+    <string name="event_recurring_update_this_confirm">Aktualisieren</string>
+    <string name="event_allow_contacts_title">Darf Proton Calendar auf deine Kontakte zugreifen?</string>
+    <string name="event_allow_contacts_description">Proton Calendar benötigt Zugriff auf deine Kontakte, um dir das automatische Vervollständigen zu ermöglichen</string>
+    <string name="event_allow_contacts_cancel">Ablehnen</string>
+    <string name="event_allow_contacts_confirm">Erlauben</string>
+    <string name="event_change_answer_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Re: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">AW: Einladung zu einem Termin, der am %1$s um %2$s %3$s beginnt</string>
+    <string name="event_change_answer_mail_subject_all_day" comment="%1$s is starting date. Example: Re: Invitation for an event on Monday">AW: Einladung zu einem Termin am %1$s</string>
+    <string name="event_change_answer_mail_subject_multiple_day" comment="%1$s is starting date. Example: Re: Invitation for an event starting on Monday">AW: Einladung zu einem Termin, der am %1$s beginnt</string>
+    <string name="event_send_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Invitation for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Einladung zu einem Termin, der am %1$s um %2$s %3$s beginnt</string>
+    <string name="event_send_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Invitation for an event on Monday">Einladung zu einem Termin am %1$s</string>
+    <string name="event_send_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Invitation for an event starting on Monday">Einladung zu einem Termin, der am %1$s beginnt</string>
+    <string name="event_send_update_invite_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Update for an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Aktualisierung eines Termins, der am %1$s um %2$s %3$s beginnt</string>
+    <string name="event_send_update_invite_mail_subject_all_day" comment="%1$s is starting date. Example: Update for an event on Monday">Aktualisierung eines Termins am %1$s</string>
+    <string name="event_send_update_invite_mail_subject_multiple_day" comment="%1$s is starting date. Example: Update for an event starting on Monday">Aktualisierung eines Termins, der am %1$s beginnt</string>
+    <string name="event_send_cancel_mail_subject_part_day" comment="%1$s is starting date. %2$s is starting time. %3$s is timezone. Example: Cancellation of an event on Monday, June 7, 2021 at 18:00 (GMT+2)">Absage eines Termins, der am %1$s um %2$s %3$s beginnen sollte</string>
+    <string name="event_send_cancel_mail_subject_all_day" comment="%1$s is starting date. Example: Cancellation of an event on Monday">Absage eines Termins am %1$s</string>
+    <string name="event_send_cancel_mail_subject_multiple_day" comment="%1$s is starting date. Example: Cancellation of an event starting on Monday">Absage eines Termins, der am %1$s beginnen sollte</string>
+    <string name="event_send_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: You are invited to Dinner at John's. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">Du wurdest zu %1$s eingeladen \nWann: %2$s</string>
+    <string name="event_send_update_invite_mail_body" comment="%1$s is the event summary. %2$s is the event date. Example: Dinner at John's has been updated. When: Monday, August 21, 2023 - Tuesday, August 22, 2023">%1$s wurde aktualisiert.\n Wann: %2$s</string>
+    <string name="event_send_invite_mail_body_all_day_single" comment="Example: Super Cool Event (all day)">%1$s (ganztägig)</string>
+    <string name="event_send_invite_mail_body_all_day_multiple" comment="for full-day event, date of event start - date of event end">%1$s - %2$s</string>
+    <string name="event_send_invite_mail_body_part_day" comment="Example: Monday, June 7, 2021 at 19:00 (GMT+2) - Monday, June 7, 2021 at 19:30 (GMT+2)">%1$s um %2$s %3$s ➜ %4$s um %5$s %6$s</string>
+    <string name="event_send_invite_mail_body_where" comment="if there is location provided in the event, this will be put inside body of email with invitation">\nWo: %1$s</string>
+    <string name="event_send_invite_mail_body_description" comment="if there is description provided in the event, this will be put inside body of email with invitation">\nBeschreibung: %1$s</string>
+    <string name="event_send_invite_dialog_title">Einladung senden</string>
+    <string name="event_send_invite_dialog_description">Eine Einladung wird an die hinzugefügten Teilnehmer gesendet.</string>
+    <string name="event_send_invite_dialog_confirm">Senden</string>
+    <string name="event_send_invite_dialog_cancel">Abbrechen</string>
+    <string name="event_add_participants_dialog_title">Teilnehmer hinzufügen</string>
+    <string name="event_add_participants_dialog_description">Eine Einladung wird an die hinzugefügten Teilnehmer gesendet.</string>
+    <string name="recurring_event_add_participants_dialog_description">Für alle Termine dieser Serie wird eine Einladung an neu hinzugefügte Teilnehmer gesendet.</string>
+    <string name="recurring_event_add_participants_overwrite_dialog_description">Für alle Termine in dieser Serie wird eine Einladung an hinzugefügte Teilnehmer gesendet.\nVorherige Änderungen an dieser Terminserie gehen dabei verloren.</string>
+    <string name="event_add_participants_dialog_confirm">Senden</string>
+    <string name="event_add_participants_dialog_cancel">Abbrechen</string>
+    <string name="event_remove_participants_dialog_title">Teilnehmer entfernen</string>
+    <string name="event_remove_participants_dialog_description">Eine Absage-E-Mail wird an die entfernten Teilnehmer gesendet.</string>
+    <string name="recurring_event_remove_participants_dialog_description">Für alle Termine dieser Serie wird eine Absage-E-Mail an die entfernten Teilnehmer gesendet.</string>
+    <string name="event_add_and_remove_participants_dialog_description">Hinzugefügte und entfernte Teilnehmer werden darüber informiert.</string>
+    <string name="recurring_event_add_and_remove_participants_dialog_description">Hinzugefügte und entfernte Teilnehmer werden über alle Termine in dieser Serie benachrichtigt.</string>
+    <string name="event_send_cancel_mail_body" comment="Example: Event X has been canceled">%1$s wurde abgesagt.</string>
+    <string name="event_save_changes">Änderungen speichern</string>
+    <string name="event_update_add_participants_dialog_description">Vorhandene und hinzugefügte Teilnehmer werden benachrichtigt.</string>
+    <string name="recurring_event_update_add_participants_dialog_description">Du bist dabei, alle Termine in dieser Serie zu aktualisieren. Vorhandene und hinzugefügte Teilnehmer werden darüber informiert.</string>
+    <string name="event_update_remove_participants_dialog_description">Vorhandene und entfernte Teilnehmer werden benachrichtigt.</string>
+    <string name="event_update_remove_all_participants_dialog_description">Entfernte Teilnehmer werden benachrichtigt.</string>
+    <string name="recurring_event_update_remove_participants_dialog_description">Du bist dabei, alle Termine in dieser Serie zu aktualisieren. Vorhandene und entfernte Teilnehmer werden darüber informiert.</string>
+    <string name="recurring_event_update_remove_all_participants_dialog_description">Du bist dabei, alle Termine in dieser Serie zu aktualisieren. Entfernte Teilnehmer werden darüber informiert.</string>
+    <string name="event_update_add_and_remove_participants_dialog_description">Vorhandene, hinzugefügte und entfernte Teilnehmer werden benachrichtigt.</string>
+    <string name="recurring_event_update_add_and_remove_participants_dialog_description">Du bist dabei, alle Termine in dieser Serie zu aktualisieren. Vorhandene, hinzugefügte und entfernte Teilnehmer werden darüber informiert.</string>
+    <string name="success_snack_email_update_recurring">Teilnehmer benachrichtigt und alle Termine aktualisiert.</string>
+    <string name="success_snack_email_update">Teilnehmer benachrichtigt und Termin aktualisiert.</string>
+    <string name="success_snack_add_attendees_recurring">Einladung gesendet und Teilnehmer zu allen Terminen hinzugefügt.</string>
+    <string name="success_snack_add_attendees">Einladung gesendet und Teilnehmer hinzugefügt.</string>
+    <string name="success_snack_remove_attendees_recurring">Absage gesendet und Teilnehmer aus allen Terminen entfernt.</string>
+    <string name="success_snack_remove_attendees">Absage gesendet und Teilnehmer entfernt.</string>
+    <!-- NAVIGATION VIEW   -->
+    <string name="nav_view_calendars">Meine Kalender</string>
+    <string name="nav_view_subscribed_calendars">Abonnierte Kalender</string>
+    <string name="nav_view_other_calendars">Weitere Kalender</string>
+    <string name="nav_view_disabled_calendars">%1$s (Deaktiviert)</string>
+    <string name="nav_view_not_synced_calendars">%1$s (Nicht synchronisiert)</string>
+    <string name="nav_view_syncing_calendars">%1$s (Wird synchronisiert)</string>
+    <string name="nav_view_more">Mehr</string>
+    <string name="nav_view_switcher">Anzeigen</string>
+    <string name="nav_view_switcher_day">Tag</string>
+    <string name="nav_view_switcher_three_day">3 Tage</string>
+    <string name="nav_view_switcher_week">Woche</string>
+    <string name="nav_view_switcher_agenda">Terminübersicht</string>
+    <string name="nav_view_switcher_month">Monat</string>
+    <string name="nav_view_timezone">Zeitzone</string>
+    <string name="nav_view_settings">Einstellungen</string>
+    <string name="nav_view_feedback">Gib uns Feedback</string>
+    <string name="nav_view_more_general_settings" comment="General Settings">Allgemein</string>
+    <string name="nav_view_more_bug">Ein Problem melden</string>
+    <string name="nav_view_more_subscription">Abonnement</string>
+    <string name="nav_view_more_logout">Abmelden</string>
+    <string name="nav_view_more_login">Anmelden</string>
+    <!-- SnackBar messages -->
+    <string name="snack_feature_coming_soon">Diese Funktion ist demnächst verfügbar</string>
+    <string name="snack_event_deleted">Termin gelöscht</string>
+    <string name="snack_event_deleted_as_organizer">Absage gesendet und Termin gelöscht</string>
+    <string name="snack_event_deleted_as_attendee">Antwort gesendet und Termin gelöscht</string>
+    <string name="snack_event_deleted_error">Fehler beim Löschen des Termins</string>
+    <string name="snack_event_deleted_as_organizer_error">Die E-Mail zur Absage konnte nicht gesendet werden. Bitte versuche es erneut</string>
+    <string name="snack_event_opening_error">Fehler beim Öffnen des Termins</string>
+    <string name="snack_event_saving">Termin wird gespeichert</string>
+    <string name="snack_event_deleting">Termin wird gelöscht</string>
+    <string name="snack_event_changing_answer">Antwort wird aktualisiert</string>
+    <string name="snack_event_part_stat_updated">Teilnahmestatus aktualisiert.</string>
+    <string name="snack_event_updated">Termin aktualisiert</string>
+    <string name="snack_event_updated_recurring">Alle Termine aktualisiert</string>
+    <string name="snack_event_updated_error_failed_mail">Einladung konnte nicht gesendet werden</string>
+    <string name="snack_update_event_error_failed_mail">Aktualisierung fehlgeschlagen</string>
+    <string name="snack_lost_zoom_access">Verbinde dich mit Zoom, um diesen Termin zu bearbeiten.</string>
+    <string name="snack_lost_zoom_access_acion">Verbinden</string>
+    <string name="snack_zoom_meeting_does_not_exist">Diese Zoom-Sitzung wurde abgesagt. Entferne den Link, um diesen Termin zu bearbeiten.</string>
+    <string name="snack_event_updated_error">Fehler beim Aktualisieren des Termins</string>
+    <string name="snack_event_created">Termin erstellt</string>
+    <string name="snack_event_created_failed_mail">Termin erstellt, aber Einladung konnte nicht gesendet werden</string>
+    <string name="snack_event_created_error">Fehler beim Erstellen des Termins</string>
+    <string name="snack_event_opening_edit_error">Fehler beim Öffnen des Termins zur Bearbeitung</string>
+    <string name="snack_event_recurring_invitation_only_supported_on_web_message">Dieser wiederkehrende Termin kann nur in der Kalender-Web-App gelöscht werden.</string>
+    <string name="snack_event_edit_with_attendees_error">Das Bearbeiten von Terminen mit Teilnehmern wird derzeit noch nicht unterstützt</string>
+    <string name="snack_event_edit_calendar_with_attendees_error">Teilnehmer hinzufügen und gleichzeitig den Kalender wechseln ist nicht möglich</string>
+    <string name="snack_event_init_error">Fehler beim Initialisieren eines neuen Termins</string>
+    <string name="snack_event_calendar_error">Fehler beim Wechseln des Kalenders</string>
+    <string name="snack_event_maximum_alarm_reached_error">Die maximale Anzahl von Benachrichtigungen wurde erreicht</string>
+    <string name="snack_send_bug_report_success">Bericht gesendet. Vielen Dank für deine Rückmeldung.</string>
+    <string name="snack_send_bug_report_error">Fehler beim Senden des Berichts. Bitte versuche es später erneut.</string>
+    <string name="snack_send_bug_report_description_empty">Bitte gib eine Beschreibung deines Berichts an</string>
+    <string name="snack_create_event_no_active_personal_calendar">Du benötigst einen persönlichen aktiven Kalender, um Termine erstellen zu können</string>
+    <string name="snack_create_event_no_active_calendar">Du benötigst einen aktiven Kalender, um Termine erstellen zu können.</string>
+    <string name="snack_add_self_as_participant">Selbsteinladung nicht erlaubt</string>
+    <string name="snack_maximum_participants_reached">Die maximale Anzahl an Teilnehmern wurde erreicht.</string>
+    <string name="snack_add_participant_error">Fehler beim Hinzufügen des Teilnehmers</string>
+    <string name="snack_add_participant_invalid_email">Ungültige E-Mail-Adresse</string>
+    <string name="snack_change_attendee_answer_error">Fehler beim Senden der Antwort. Bitte versuche es später erneut</string>
+    <string name="snack_network_error">Netzwerkfehler. Bitte versuche es später erneut</string>
+    <string name="snack_import_event_signed_out">Du musst dich anmelden, um Termine zu importieren</string>
+    <string name="snack_app_link_signed_out">Du musst dich anmelden, um deinen Termin anzuzeigen</string>
+    <string name="snack_update_default_calendar">Standardkalender aktualisiert</string>
+    <string name="snack_update_default_calendar_error">Fehler beim Aktualisieren des Standardkalenders. Bitte versuche es später erneut.</string>
+    <string name="snack_calendar_init_error">Fehler beim Laden von Kalenderinformationen</string>
+    <string name="snack_holiday_calendar_init_error">Fehler beim Laden von Feiertagskalenderinformationen</string>
+    <string name="snack_update_calendar_error">Fehler beim Aktualisieren der Kalenderinformationen. Bitte versuche es später noch einmal.</string>
+    <string name="snack_update_calendar_settings_error">Fehler beim Aktualisieren einiger Kalenderinformationen. Bitte versuche es später erneut.</string>
+    <string name="snack_update_calendar_success">Kalender aktualisiert</string>
+    <string name="snack_create_calendar_success">Kalender erstellt</string>
+    <string name="snack_add_calendar_success">Kalender hinzugefügt</string>
+    <string name="snack_calendar_saving">Kalender wird gespeichert</string>
+    <string name="snack_create_calendar_error">Fehler beim Erstellen des Kalenders. Bitte versuche es später noch einmal.</string>
+    <string name="snack_add_calendar_error">Fehler beim Hinzufügen des Kalenders. Bitte versuche es später noch einmal.</string>
+    <string name="snack_create_calendar_settings_error">Der Kalender wurde erstellt, aber einige Informationen wurden nicht aktualisiert. Bitte versuche es später noch einmal.</string>
+    <string name="snack_ics_default_error">Fehler beim Öffnen des Kalenders</string>
+    <string name="snack_ics_event_not_found_error">Termin nicht gefunden</string>
+    <string name="snack_ics_file_not_found_error">Datei nicht gefunden</string>
+    <string name="snack_ics_create_error">Fehler beim Erstellen des Termins</string>
+    <string name="snack_ics_parsing_error">Fehler beim Einlesen des Kalenders</string>
+    <string name="snack_ics_unsupported_method_error">Dieser Termintyp wird noch nicht unterstützt</string>
+    <string name="snack_ics_unsupported_add_error">Das Hinzufügen von Serienelementen zu einem Termin wird derzeit nicht unterstützt</string>
+    <string name="snack_ics_unsupported_counter_error">Das Umplanen von Terminen wird derzeit nicht unterstützt</string>
+    <string name="snack_ics_unsupported_refresh_error">Das Aktualisieren von Terminen wird derzeit nicht unterstützt</string>
+    <string name="snack_ics_unsupported_publish_error">Terminimport wird derzeit nicht unterstützt</string>
+    <string name="snack_ics_unsupported_single_edit_reply_error">Derzeit wird nur das Antworten auf alle Termine einer Serie unterstützt</string>
+    <string name="snack_ics_party_crasher_error">Deine E-Mail ist nicht auf der Teilnehmerliste.</string>
+    <string name="snack_ics_reply_party_crasher_error">Teilnehmer, die nicht vom Organisator eingeladen wurden, können nicht hinzugefügt werden</string>
+    <string name="snack_ics_missing_uid_error">Dem Termin fehlt die UID</string>
+    <string name="snack_ics_no_active_personal_calendar_error">Diesem Konto ist kein aktiver persönlicher Kalender zugeordnet.</string>
+    <string name="snack_ics_no_active_calendar_error">Diesem Konto ist kein aktiver Kalender zugeordnet.</string>
+    <string name="snack_ics_unsupported_duration_error">Die Eigenschaft „Dauer“ wird nicht unterstützt</string>
+    <string name="snack_ics_too_many_events_error">Mehrfachtermine werden noch nicht unterstützt</string>
+    <string name="snack_ics_no_events_error">Dieser Kalender enthält keine Termine</string>
+    <string name="snack_ics_invalid_error">Diese Einladung ist ungültig</string>
+    <string name="snack_ics_disabled_calendar_error">Aktiviere die mit diesem Kalender verknüpfte Adresse erneut, um diesen Termin zu aktualisieren.</string>
+    <string name="snack_ics_event_deleted_error">Termin existiert nicht mehr in deinem Kalender</string>
+    <string name="snack_event_attendee_accepted_answer" comment="attendee who accepted">%1$s hat deine Einladung bestätigt</string>
+    <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s hat deine Einladung unter Vorbehalt bestätigt</string>
+    <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s hat deine Einladung abgelehnt</string>
+    <string name="snack_app_link_invalid">Link zum Termin ungültig</string>
+    <string name="snack_app_link_error">Fehler beim Öffnen des Termins</string>
+    <string name="snack_app_link_import_error">Authentifizierung abgebrochen</string>
+    <string name="snack_notification_already_added">Die Benachrichtigung wurde bereits hinzugefügt</string>
+    <string name="snack_opening_ics">Termin wird geöffnet…</string>
+    <string name="snack_invite_in_shared_calendar_error">Das Erstellen von Einladungen in einem geteilten Kalender ist nicht erlaubt.</string>
+    <string name="snack_down_banner">Die Proton-Server sind ausgefallen. Besuche unsere Statusseite für Details.</string>
+    <string name="snack_down_banner_action">Statusseite öffnen</string>
+    <string name="snack_color_per_event_paid_feature">Upgrade zum Anpassen der Terminfarben</string>
+    <!-- Dialogs -->
+    <string name="error_event_does_not_exist">Termin existiert nicht</string>
+    <string name="error_occurrence_does_not_exist">Wiederholung existiert nicht</string>
+    <string name="update_timezone_dialog_title">Zeitzone geändert</string>
+    <string name="update_timezone_dialog_message">Deine Systemzeitzone scheint sich auf %1$s geändert zu haben. Möchtest du deine Zeitzoneneinstellung aktualisieren?</string>
+    <string name="update_timezone_dialog_confirmation">Aktualisieren</string>
+    <string name="update_timezone_dialog_cancel">Abbrechen</string>
+    <string name="contacts_permission_dialog_title">Proton Calendar Zugriff auf deine Kontakte erlauben?</string>
+    <string name="contacts_permission_dialog_message">Proton Calendar benötigt Zugriff auf deine Telefonkontakte, um diese einfach zu deinen Terminen einladen zu können.</string>
+    <string name="contacts_permission_dialog_allow">Erlauben</string>
+    <string name="contacts_permission_dialog_open_settings">Einstellungen öffnen</string>
+    <string name="contacts_permission_dialog_cancel">Ablehnen</string>
+    <string name="dialog_title_calendar_picker">Kalender</string>
+    <string name="dialog_title_calendar_color_picker">Kalenderfarbe</string>
+    <string name="dialog_title_event_color_picker">Terminfarbe</string>
+    <string name="import_from_google_title">Von Google importieren</string>
+    <string name="notifications_permission_dialog_title">Proton Calendar erlauben, Benachrichtigungen anzuzeigen?</string>
+    <string name="notifications_permission_dialog_message">Proton Calendar benötigt die Erlaubnis, um Benachrichtigungen über bevorstehende Termine anzuzeigen.</string>
+    <string name="notifications_permission_dialog_open_settings">Einstellungen öffnen</string>
+    <string name="notifications_permission_dialog_cancel">Ablehnen</string>
+    <!-- NOTIFICATIONS -->
+    <string name="notification_channel_alarms">Terminbenachrichtigungen</string>
+    <string name="notification_channel_sync">Kalendersynchronisierung</string>
+    <string name="notification_channel_calendar_fetch">Kalender werden abgerufen</string>
+    <string name="notification_sync">Kalender werden synchronisiert …</string>
+    <string name="notification_text_today">Heute</string>
+    <string name="notification_text_today_part_time">Heute um %1$s</string>
+    <string name="notification_text_tomorrow">Morgen</string>
+    <string name="notification_text_tomorrow_part_time">Morgen um %1$s</string>
+    <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s um %2$s</string>
+    <!-- Bug report -->
+    <string name="bug_report_hint_title">Betreff</string>
+    <string name="bug_report_hint_description">Bitte beschreibe das Problem und füge alle Fehlermeldungen hinzu.</string>
+    <string name="bug_report_discard_changes_title">Ungespeicherte Änderungen</string>
+    <string name="bug_report_discard_changes_description">Ungespeicherte Elemente im Formular vorhanden. Möchtest du diese wirklich verwerfen?</string>
+    <string name="bug_report_discard_changes_cancel">Bearbeitung fortsetzen</string>
+    <string name="bug_report_discard_changes_confirm">Verwerfen</string>
+    <!-- Settings -->
+    <string name="settings_app_settings_title">App-Einstellungen</string>
+    <string name="settings_theme_title">Farbschema</string>
+    <string name="settings_theme_info">Diese Einstellung wirkt sich ausschließlich auf das Aussehen der Proton Calendar App auf diesem Gerät aus. Die App wird nach dem Ändern des Farbschemas neu gestartet.</string>
+    <string name="settings_timezone_title">Zeitzone</string>
+    <string name="settings_language_title">App-Sprache</string>
+    <string name="settings_language_default">Automatisch erkennen</string>
+    <string name="settings_default_view_title">Standardansicht</string>
+    <string name="settings_default_view_default">Letzte Ansicht</string>
+    <string name="settings_update_timezone_title">Nachfragen zur Aktualisierung der Zeitzoneneinstellung</string>
+    <string name="settings_update_timezone_subtitle">Wenn die Systemzeitzone nicht mit der aktuellen Zeitzoneneinstellung übereinstimmt, wirst du aufgefordert, diese zu aktualisieren.</string>
+    <string name="settings_update_timezone_checkbox">Nicht erneut nachfragen</string>
+    <string name="settings_week_start_title">Wochenanfang</string>
+    <string name="settings_time_format_title">Zeitformat</string>
+    <string name="settings_week_numbers_title">Kalenderwoche anzeigen</string>
+    <string name="settings_auto_invites_title">Einladungen zum Kalender hinzufügen und als ausstehend markieren</string>
+    <string name="settings_search_title">Kalender durchsuchen</string>
+    <string name="settings_search_subtitle">Lädt Kalenderinhalte herunter und speichert sie für die Suche auf deinem Gerät. Beim Deaktivieren werden heruntergeladene Inhalte entfernt.\n\nDie Suche ist eine experimentelle Beta-Funktion. Durch das Aktivieren kann die App instabil werden.</string>
+    <string name="settings_alternative_routing_title">Alternatives Routing erlauben</string>
+    <string name="settings_alternative_routing_subtitle">Für den Fall, dass Proton-Websites gesperrt sind, ermöglicht diese Einstellung der App, ein alternative Netzwerkweiterleitung auszuprobieren, um Proton zu erreichen, was zur Umgehung von Firewalls oder Netzwerkproblemen nützlich sein kann. Wir empfehlen, diese Einstellung für eine größere Zuverlässigkeit an zu lassen.</string>
+    <string name="settings_value_placeholder">Zum Auswählen antippen</string>
+    <string name="settings_general_title">Allgemein</string>
+    <string name="settings_general_info" comment="ex: Theme, language, time zone, calendar layout, etc.">%1$s etc.</string>
+    <string name="settings_general_info_separator" comment="Theme, language">%1$s, %2$s</string>
+    <string name="settings_general_info_theme">Farbschema</string>
+    <string name="settings_general_info_language">Sprache</string>
+    <string name="settings_general_info_time_zone">Zeitzone</string>
+    <string name="settings_general_info_calendar_layout">Kalenderlayout</string>
+    <string name="settings_calendars">Meine Kalender</string>
+    <string name="settings_calendars_empty">Keine Kalender gefunden</string>
+    <string name="settings_subscribed_calendars">Abonnierte Kalender</string>
+    <string name="settings_other_calendars">Weitere Kalender</string>
+    <string name="settings_calendar_default" comment="Default calendar">Standard</string>
+    <string name="settings_calendar_disabled" comment="Disabled calendar">Deaktiviert</string>
+    <string name="settings_calendar_not_synced" comment="Calendar not synced">Nicht synchronisiert</string>
+    <string name="settings_calendar_syncing" comment="Calendar syncing">Wird synchronisiert</string>
+    <string name="settings_calendar_subscribed_invalid_ics">Nicht unterstütztes Kalender-Format</string>
+    <string name="settings_calendar_subscribed_too_big">Dateigröße des Kalenders überschreitet Maximum</string>
+    <string name="settings_calendar_subscribed_not_accessible">Kalender über diesen Link nicht erreichbar</string>
+    <string name="settings_calendar_subscribed_tmp_not_accessible">Der Link zum Kalender ist vorübergehend nicht erreichbar</string>
+    <string name="settings_calendar_subscribed_last_sync_old">Seit der letzten Aktualisierung sind mehr als 12 Stunden vergangen</string>
+    <string name="settings_calendar_subscribed_not_decrypted">Kalender konnte nicht entschlüsselt werden</string>
+    <string name="settings_other_calendars_subtitle" comment="Ex: View-only • owner@proton.me">%1$s • %2$s</string>
+    <string name="settings_other_calendars_read_only" comment="Calendar is read only. Ex: View-only • owner@proton.me">Nur anzeigen</string>
+    <string name="settings_shared_calendars_owner" comment="Ex: from owner@proton.me">von %1$s</string>
+    <!-- Calendar form -->
+    <string name="calendar_form_create_title">Kalender erstellen</string>
+    <string name="calendar_form_update_title">Kalender bearbeiten</string>
+    <string name="calendar_form_save">Speichern</string>
+    <string name="calendar_form_name">Name</string>
+    <string name="calendar_form_description">Beschreibung</string>
+    <string name="calendar_form_color">Kalenderfarbe</string>
+    <string name="calendar_form_language">Sprache</string>
+    <string name="calendar_form_default_event_duration">Standard-Termindauer</string>
+    <string name="calendar_form_default_event_notifications">Terminbenachrichtigungen</string>
+    <string name="calendar_form_default_all_day_event_notifications">Benachrichtigungen zu Ganztagsterminen</string>
+    <string name="calendar_form_add_notification">Benachrichtigung hinzufügen</string>
+    <string name="calendar_form_default_email">E-Mail-Adresse</string>
+    <string name="calendar_form_default_email_value_error">Laden der Standard-E-Mail-Adresse fehlgeschlagen</string>
+    <string name="calendar_form_name_hint">Kalendername hinzufügen</string>
+    <string name="calendar_form_name_required_error">Bitte Namen angeben</string>
+    <string name="calendar_form_description_hint">Füge eine Beschreibung des Kalenders hinzu</string>
+    <string name="add_calendar_text">Kalender hinzufügen</string>
+    <string name="add_calendar_button" comment="Text for the button to add a new calendar">Hinzufügen</string>
+    <string name="create_calendar_limit_reached">Du hast die maximale Anzahl an Kalendern erreicht.</string>
+    <string name="create_calendar_limit_reached_title">Es können keine weiteren Kalender hinzugefügt werden</string>
+    <string name="create_calendar_limit_reached_paid_description">Du hast die maximale Anzahl von 25 Kalendern, die in deinem Abonnement verfügbar sind, erreicht.\n\nUm einen neuen Kalender hinzuzufügen, entferne einen bestehenden.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_paid_description">Bitte stelle sicher, dass du mindestens einen persönlichen Kalender hast, bevor du das Limit von 25 Kalendern in deinem Abonnement erreichst.</string>
+    <string name="create_calendar_limit_reached_manage">Kalender verwalten</string>
+    <string name="create_calendar_limit_reached_free_description">Du hast die maximale Anzahl von 3 Kalendern, die in deinem Abonnement verfügbar sind, erreicht.\n\nUm einen neuen Kalender hinzuzufügen, entferne einen bestehenden.</string>
+    <string name="create_mandatory_personal_calendar_limit_reached_free_description">Du musst mindestens einen persönlichen Kalender haben, bevor du das Limit von 3 Kalendern in deinem Abonnement erreichst.</string>
+    <string name="create_calendar_limit_reached_error">Fehler</string>
+    <string name="delete_calendar_dialog_title">Kalender löschen</string>
+    <string name="delete_calendar_dialog_message">Möchtest du diesen Kalender wirklich löschen?</string>
+    <string name="remove_calendar_dialog_title">Kalender entfernen</string>
+    <string name="remove_calendar_dialog_message">Möchtest du diesen Kalender wirklich entfernen?</string>
+    <string name="leave_calendar_dialog_title">Kalender verlassen</string>
+    <string name="leave_calendar_dialog_message">Wenn du diesen Kalender verlässt, musst du den Eigentümer um erneuten Beitritt bitten.</string>
+    <string name="delete_default_calendar_dialog_message">Möchtest du diesen Kalender wirklich löschen? \"%1$s\" wird dann zum Standardkalender.</string>
+    <string name="delete_calendar_snack_deleted">Kalender gelöscht</string>
+    <string name="remove_calendar_snack_removed">Kalender entfernt</string>
+    <string name="delete_calendar_snack_error">Fehler beim Löschen des Kalenders</string>
+    <string name="remove_calendar_snack_error">Fehler beim Entfernen des Kalenders</string>
+    <string name="leave_calendar_snack_error">Fehler beim Verlassen des Kalenders</string>
+    <string name="delete_calendar_snack_error_password_confirmation">Passwort-Bestätigung fehlgeschlagen</string>
+    <string name="recreate_calendar_dialog_title">Kalender leeren</string>
+    <string name="recreate_calendar_dialog_message">Mit dieser Aktion werden alle Termine und eingeladenen Benutzer entfernt.\n\nBist du sicher, dass du diesen Kalender löschen möchtest?</string>
+    <string name="recreate_calendar_snack_error">Fehler beim Leeren des Kalenders</string>
+    <string name="recreate_calendar_snack_deleted">Kalender geleert</string>
+    <string name="recreate_calendar_snack_clearing">Kalender wird geleert…</string>
+    <!-- Holiday calendar form -->
+    <string name="add_holiday_calendar_title">Feiertagskalender hinzufügen</string>
+    <string name="holiday_calendar_title">Feiertagskalender</string>
+    <string name="add_holiday_calendar_country_search_hint">Nach einem Land suchen</string>
+    <string name="holiday_calendar_form_picker_title">Land</string>
+    <string name="holiday_calendar_time_zone_based">Basierend auf deiner Zeitzone</string>
+    <string name="holiday_calendar_already_exists">Dieser Feiertagskalender wurde bereits hinzugefügt.</string>
+    <string name="holiday_calendar_value_placeholder">Land wählen</string>
+    <!-- Bootstrap errors -->
+    <string name="bootstrap_error_default_confirm">OK</string>
+    <string name="bootstrap_error_no_calendar_title">Mit diesem Konto sind keine Kalender verknüpft.</string>
+    <string name="bootstrap_error_no_calendar_message">Um jetzt einen einzurichten, besuche <a href="https://calendar.proton.me">calendar.proton.me</a></string>
+    <string name="bootstrap_error_some_calendars_failed_title">Fehler beim Einrichten der Kalender</string>
+    <string name="bootstrap_error_some_calendars_failed_message">Die folgenden Kalender konnten nicht eingerichtet werden</string>
+    <string name="bootstrap_error_no_active_calendar_title">Diesem Konto ist kein aktiver persönlicher Kalender zugeordnet.</string>
+    <string name="bootstrap_error_no_active_calendar_message">Um zu erfahren, wie du einen Kalender aktivieren kannst, besuche unsere <a href="https://proton.me/support">Wissensdatenbank</a></string>
+    <string name="bootstrap_error_store_quota_reached_message">Kein Speicherplatz mehr verfügbar.</string>
+    <string name="bootstrap_error_store_quota_reached_learn_more">Mehr erfahren</string>
+    <string name="bootstrap_error_reset_needed_title">Kalenderschlüssel zurücksetzen</string>
+    <string name="bootstrap_error_reset_needed_message">Du hast dein Passwort zurückgesetzt und die mit den folgenden Kalendern verknüpften Termine konnten nicht entschlüsselt werden. Alle aktiven abonnierten Kalender werden nach ein paar Minuten erneut synchronisiert.</string>
+    <string name="bootstrap_error_update_passphrase_title">Kalenderschlüssel reaktivieren</string>
+    <string name="bootstrap_error_update_passphrase_message">Du hast deinen Schlüssel reaktiviert und Termine, die mit den folgenden Kalendern verknüpft sind, können nun entschlüsselt werden.</string>
+    <string name="bootstrap_error_continue_button">Weiter</string>
+    <string name="splash_after_login_init">Kalender werden vorbereitet</string>
+    <string name="splash_init">Termine werden entschlüsselt</string>
+    <string name="default_calendar_name">Meine Kalender</string>
+    <!-- FEEDBACK DIALOG -->
+    <string name="dialog_feedback_header">Gib uns Feedback</string>
+    <string name="dialog_feedback_text">Wie würdest du deine Erfahrungen mit Proton Calendar beschreiben?</string>
+    <string name="dialog_feedback_rating_worst">Furchtbar</string>
+    <string name="dialog_feedback_rating_best">Wunderbar</string>
+    <string name="dialog_feedback_hint">Erzähle uns von deinen Erfahrungen. (Optional)</string>
+    <string name="dialog_feedback_submit">Absenden</string>
+    <string name="dialog_feedback_submit_thank_you">Vielen Dank! Dein Feedback hilft uns, Proton zu verbessern.</string>
+    <!-- Calendar Widget -->
+    <string name="calendar_widget_description">Proton Calendar Widget</string>
+    <string name="calendar_widget_no_upcoming_events_today">Heute keine anstehenden Termine</string>
+    <string name="calendar_widget_loading_events">Termine werden geladen…</string>
+    <string name="calendar_widget_loading_events_error">Termine konnten nicht geladen werden</string>
+    <string name="calendar_widget_no_upcoming_events">Keine anstehenden Termine</string>
+    <string name="calendar_widget_please_log_in">Anmelden, um deine Termine anzuzeigen</string>
+    <string name="calendar_widget_part_day_event_starts_at">Beginnt um %1$s</string>
+    <string name="calendar_widget_part_day_event_ends_at">Endet um %1$s</string>
+    <!-- Spotlight Dialogs -->
+    <string name="spotlight_dialog_header">Neuigkeiten</string>
+    <string name="spotlight_dialog_beta_header">Calendar Beta</string>
+    <string name="spotlight_dialog_skip">Überspringen</string>
+    <string name="spotlight_dialog_confirmation_button">OK</string>
+    <string name="spotlight_dialog_month_view_title">Monatsansicht</string>
+    <string name="spotlight_dialog_month_view_description">Verschaffe dir einen Überblick über deine Termine mit unserer neuen Monatsansicht. Wechsle über das Menü zwischen den Ansichten.</string>
+    <string name="spotlight_dialog_easy_switch_description">Der Import von Terminen und anderen Daten aus Google Calendar in Proton Calendar ist einfacher denn je. Unser Easy Switch Importer begleitet dich bei jedem Schritt.</string>
+    <string name="spotlight_dialog_easy_switch_positive_button">Import beginnen</string>
+    <string name="spotlight_dialog_easy_switch_negative_button">Nicht jetzt</string>
+    <string name="spotlight_dialog_auto_invites_title">Einladungen ganz einfach annehmen</string>
+    <string name="spotlight_dialog_auto_invites_description">Jetzt werden Einladungen in deinem Kalender als ausstehende Termine angezeigt. Öffne einfach einen Termin, um zu antworten.\n\nBegib dich zu den Einstellungen, um dies zu verwalten.</string>
+    <string name="spotlight_dialog_auto_invites_positive_button">Weiter</string>
+    <string name="spotlight_v5_dialog_got_it_button">Verstanden</string>
+    <string name="spotlight_v5_dialog_learn_more_button">Mehr erfahren</string>
+    <string name="spotlight_v5_dialog_rebranding_title">Aktualisiertes Proton, einheitlicher Schutz</string>
+    <string name="spotlight_v5_dialog_rebranding_description">Proton präsentiert sich in neuem Gewand. Viele Dienste, eine Aufgabe. Willkommen in einem Internet, in dem der Datenschutz Standard ist. <a href="https://proton.me/news/updated-proton">Mehr erfahren</a></string>
+    <string name="spotlight_dialog_week_view_title">Weitere Anzeigeoptionen</string>
+    <string name="spotlight_dialog_week_view_description">• Einführung der <b>3-Tage</b>- und <b>Wochen</b>-Kalenderansichten. Wähle deine bevorzugte Ansicht im <b>Menü</b>.\n\n• Passe die Höhe der Zeilen im Tagesraster an, indem du mit zwei Fingern hinein- oder herauszoomst.</string>
+    <string name="spotlight_dialog_search_title">Termine suchen</string>
+    <string name="spotlight_dialog_search_description">Dank unserer neuen Suchfunktion kannst du den gewünschten Termin jetzt ganz einfach finden. <a href="https://proton.me/support/calendar-search">Mehr erfahren</a></string>
+    <string name="spotlight_dialog_search_positive">Aktivieren</string>
+    <string name="spotlight_dialog_search_negative">Überspringen</string>
+    <string name="spotlight_dialog_import_title">Weitere Möglichkeiten um Termine hinzuzufügen</string>
+    <string name="spotlight_dialog_import_description">• Importiere Termine aus Dateien auf deinem Handy in deinen Kalender.\n\n• Füge Reisebuchungen direkt aus Proton Mail hinzu.</string>
+    <string name="spotlight_dialog_calendar_provider_title">Kalenderfunktionen</string>
+    <string name="spotlight_dialog_calendar_provider_description">• Füge Ereignisse aus anderen Apps direkt in Proton Calendar ein.\n\n• Erstelle und verwalte Ereignisse in Kalendern, die für dich freigegeben wurden.\n\n• Lege die Standardansicht fest, die du beim Öffnen der App sehen möchtest.\n\n• 13 neue Sprachen sind verfügbar.</string>
+    <string name="spotlight_dialog_wipe_search_title">Die Suche wurde entfernt, um sie besser zu machen.</string>
+    <string name="spotlight_dialog_wipe_search_description">Wir entfernen die experimentelle Suchfunktion aus der Betaversion von Proton Calendar, um sie für dich noch nützlicher und zuverlässiger zu machen. Dies kann einige Sekunden dauern.</string>
+    <string name="spotlight_dialog_holiday_calendar_title">Die Feiertage sind da!</string>
+    <string name="spotlight_dialog_holiday_calendar_add_description">Du musst keine Meetings mehr planen, wenn alle anderen frei haben, oder vergessen, einen langen Wochenendausflug zu planen.\n\nFüge die Feiertage eines beliebigen Landes deinem Kalender hinzu.</string>
+    <string name="spotlight_dialog_holiday_calendar_limit_reached_description">Du musst keine Meetings mehr planen, wenn alle anderen frei haben oder vergessen, einen langen Wochenendausflug zu planen.\n\nDa du derzeit das Kalenderlimit erreicht hast, musst du zunächst einen bestehenden Kalender entfernen, um einen neuen Ferienkalender hinzuzufügen.</string>
+    <string name="spotlight_dialog_color_per_event_title">Benutzerdefinierte Terminfarben</string>
+    <string name="spotlight_dialog_color_per_event_description">Passe die Farbe einzelner Termine an, um:\n\n• Deine Kalender farblich zu markieren\n\n• Deinen Tag besser zu organisieren und deine Zeit zu erfassen\n\n• Prioritäten zu setzen und die Effizienz zu steigern</string>
+    <!-- Import -->
+    <string name="dialog_google_auth_title">Zugriff erlauben</string>
+    <string name="dialog_google_auth_description">Um den Import zu starten, melde dich bei Google Calendar an und erlaube Proton den Zugriff auf deine Daten.</string>
+    <string name="import_assistant_prepare_import_error">Fehler beim Vorbereiten des Imports. Bitte versuche es später erneut</string>
+    <string name="import_assistant_prepare_import">Import wird vorbereitet</string>
+    <string name="import_assistant_gathering_data_loader_title">Deine Daten werden zusammengestellt</string>
+    <string name="import_assistant_summary_title">Zusammenfassung des Imports</string>
+    <string name="import_assistant_summary_customize_import">Import anpassen</string>
+    <string name="import_assistant_error">Fehler beim Abrufen der Daten</string>
+    <string name="import_assistant_data_gathering_error">Datenerfassung fehlgeschlagen</string>
+    <string name="import_assistant_update_import_error">Der Import konnte nicht aktualisiert werden, bitte versuche es später noch einmal.</string>
+    <string name="import_assistant_update_import_wrong_account_error">Falsches Konto. Bitte melde dich mit dem Konto an, das du für den Kalenderimport verwendet hast.</string>
+    <string name="import_assistant_start_import_error">Der Import konnte nicht gestartet werden, bitte versuche es später noch einmal.</string>
+    <string name="import_assistant_delete_import_success">Import-Eintrag gelöscht</string>
+    <string name="import_assistant_delete_import_error">Der Import konnte nicht gelöscht werden, bitte versuche es später noch einmal.</string>
+    <string name="import_assistant_cancel_import_error">Der Import konnte nicht abgebrochen werden, bitte versuche es später noch einmal.</string>
+    <string name="import_assistant_resume_import_error">Der Import konnte nicht fortgesetzt werden, bitte versuche es später noch einmal.</string>
+    <string name="import_assistant_create_calendar_error">Einer oder mehrere Kalender konnten nicht erstellt werden</string>
+    <string name="import_assistant_start_import_empty_error">Import konnte nicht gestartet werden, es sind keine Kalender zum Importieren vorhanden</string>
+    <string name="import_assistant_import_as" comment="Use as a header for the calendar to import as. Import as the calendar called Holiday">Importieren als</string>
+    <string name="import_assistant_new_calendar_badge">Neu</string>
+    <string name="import_assistant_merge_calendar_badge">Zusammengeführt</string>
+    <string name="import_assistant_creating_calendars">Neue Kalender werden erstellt</string>
+    <string name="import_assistant_creating_calendars_finish" comment="Finishing calendar creation required for import">Fast geschafft…</string>
+    <string name="import_assistant_new_calendar_header">Neuen erstellen</string>
+    <string name="import_assistant_merge_calendar_header">Mit vorhandenem zusammenführen</string>
+    <string name="import_assistant_in_progress_title">Datenimport läuft gerade</string>
+    <string name="import_assistant_in_progress_description" comment="Importing data from test@gmail.com to test@proton.me">Daten werden von %1s nach %2s importiert.</string>
+    <string name="import_assistant_in_progress_redirect">Fortschritt überprüfen</string>
+    <string name="import_assistant_in_progress_sub_description">Umfangreiche Importe können mehrere Tage dauern. Wir benachrichtigen dich, wenn der Import abgeschlossen ist. Du kannst diesen Bildschirm schließen.</string>
+    <string name="import_assistant_guide_subtitle">Mache den Wechsel zum Datenschutz. Einfach und sicher.</string>
+    <string name="import_assistant_guide_description">Verschiebe deine Termine und andere Daten von Google zu Proton. Der Easy Switch Importer führt dich durch jeden Schritt und verschlüsselt deine Daten beim Verschieben.</string>
+    <string name="import_assistant_new_import">Neuer Import</string>
+    <string name="import_assistant_previous_import">Frühere Importe</string>
+    <string name="import_assistant_report_details" comment="Ex: 1010.73 KB • May 28, 2022 6:36 PM">%1$s • %2$s</string>
+    <string name="import_assistant_report_details_date_time" comment="Ex: May 28, 2022 6:36 PM">%1$s %2$s</string>
+    <string name="import_assistant_status_queued" comment="Context: The import has been started">Gestartet</string>
+    <string name="import_assistant_status_in_progress" comment="Context: The import is in progress">In Bearbeitung</string>
+    <string name="import_assistant_status_completed" comment="Context: The import has been completed">Abgeschlossen</string>
+    <string name="import_assistant_status_canceled" comment="Context: The import has been canceled">Abgebrochen</string>
+    <string name="import_assistant_status_canceling" comment="Context: The import is being canceled">Wird abgebrochen</string>
+    <string name="import_assistant_status_paused" comment="Context: The import has been paused">Pausiert</string>
+    <string name="import_assistant_status_failed" comment="Context: The import has failed">Fehlgeschlagen</string>
+    <string name="import_assistant_status_paused_lost_connection_title">Verbindung zu Google unterbrochen</string>
+    <string name="import_assistant_status_paused_lost_connection_description">Um den Import fortzusetzen, tippe auf \"Erneut verbinden\", melde dich bei Google an und gewähre Proton erneut Zugriff auf deine Google-Daten.</string>
+    <string name="import_assistant_status_paused_lost_connection_button">Erneut verbinden</string>
+    <string name="import_assistant_status_paused_storage_full_title">Dein Speicher ist voll</string>
+    <string name="import_assistant_status_paused_storage_full_description">Dein Proton-Konto verfügt nicht über genügend Speicherplatz, um diesen Kalenderimport abzuschließen. Gib Speicherplatz frei oder füge mehr Speicher hinzu und komme anschließend hierher zurück, um fortzufahren.</string>
+    <string name="import_assistant_status_paused_storage_full_button">Fortsetzen</string>
+    <string name="import_assistant_delete_report_title">Aus der Liste entfernen?</string>
+    <string name="import_assistant_delete_report_message">Du wirst diesen Import-Eintrag in der Liste nicht mehr sehen.</string>
+    <string name="import_assistant_delete_report_positive_button">Entfernen</string>
+    <string name="import_assistant_delete_report_negative_button">Behalten</string>
+    <string name="import_assistant_cancel_import_title">Import ist unvollständig!</string>
+    <string name="import_assistant_cancel_import_message">Wenn du diesen Import abbrichst, kannst du ihn nicht wieder aufnehmen. Proton hat alle Fortschritte in deinem Konto gespeichert. Trotzdem abbrechen?</string>
+    <string name="import_assistant_cancel_import_positive_button">Import abbrechen</string>
+    <string name="import_assistant_cancel_import_negative_button">Import fortsetzen</string>
+    <string name="import_assistant_in_progress_snack">Import im Gange</string>
+    <string name="import_assistant_discard_import_title">Import abbrechen?</string>
+    <string name="import_assistant_discard_import_message">Der Import ist unvollständig und kann nicht fortgesetzt werden, wenn du ihn abbrichst.</string>
+    <string name="import_assistant_discard_import_positive">Import abbrechen</string>
+    <string name="import_assistant_discard_import_negative">Import fortsetzen</string>
+    <string name="import_assistant_authentication_canceled">Authentifizierung abgebrochen</string>
+    <string name="import_assistant_sign_in_in_progress">Ein Anmeldevorgang läuft bereits</string>
+    <string name="import_assistant_in_progress_error_snack">Ein Importvorgang wird derzeit noch ausgeführt</string>
+    <!-- Import events -->
+    <string name="import_event_disclaimer_dialog_title">Als einzelnen Termin importieren?</string>
+    <string name="import_event_disclaimer_dialog_description">\nImportierte Einladungen werden in Proton Calendar als einzelne Termine <b>ohne Organisator-</b> und <b>Teilnehmerdetails</b> angezeigt.\n\n Um Aktualisierungen der Termine zu erhalten und die Teilnehmer anzuzeigen, bitte den Organisator, dich über deine Proton-E-Mail-Adresse einzuladen.</string>
+    <string name="import_event_disclaimer_dialog_positive">Importieren</string>
+    <string name="undefined_color">Nicht definiert</string>
+    <!--  STRING PLURALS  -->
+    <plurals name="calendar">
+        <item quantity="one">kalender</item>
+        <item quantity="other">Kalender</item>
+    </plurals>
+    <plurals name="import_assistant_import_button">
+        <item quantity="one">%1$d Kalender importieren</item>
+        <item quantity="other">%1$d Kalender importieren</item>
+    </plurals>
+    <plurals name="import_assistant_ongoing_import" comment="Used as a caption to let the user know how many imports are currently ongoing">
+        <item quantity="one">%1$d laufender Import</item>
+        <item quantity="other">%1$d laufende Importe</item>
+    </plurals>
+    <plurals name="import_assistant_creating_calendars_count" comment="Number of calendar(s) created. ex: 1 of 3 created in test@proton.me">
+        <item quantity="one">%1$d von %2$d erstellt in %3$s</item>
+        <item quantity="other">%1$d von %2$d erstellt in %3$s</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_create_details" comment="ex: Create 2 new calendars in Proton Calendar. / Create 1 new calendar in Proton Calendar.">
+        <item quantity="one">Erstelle %1$d neuen Kalender in Proton Calendar.</item>
+        <item quantity="other">Erstelle %1$d neue Kalender in Proton Calendar.</item>
+    </plurals>
+    <plurals name="import_assistant_summary_count" comment="ex: Import 1 of 1 calendar from / Import 1 of 2 calendars from">
+        <item quantity="one">Importiere %1$d von %2$d Kalender von</item>
+        <item quantity="other">Importiere %1$d von %2$d Kalendern von</item>
+    </plurals>
+    <plurals name="fragment_import_assistant_summary_merge_details" comment="ex: Merge 2 calendars in Proton Calendar. / Merge 1 calendar in Proton Calendar.">
+        <item quantity="one">Führe %1$d Kalender in Proton Calendar zusammen.</item>
+        <item quantity="other">Führe %1$d Kalender in Proton Calendar zusammen.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error" comment="%1$d is replaced by number of calendars">
+        <item quantity="one">Aufgrund des Limits für Kalender können nicht für alle importierten Kalender neue Kalender erstellt werden.\n • Wähle mindestens %1$d Kalender ab.</item>
+        <item quantity="other">Aufgrund des Limits für Kalender können nicht für alle importierten Kalender neue Kalender erstellt werden.\n • Wähle mindestens %1$d Kalender ab.</item>
+    </plurals>
+    <plurals name="import_assistant_import_summary_error_merge" comment="This is appended at the end of the string import_assistant_import_summary_error in some cases. Make sure to translate the or that is between the \u0020 and the \n. %1$d is replaced by number of calendars. \u0020 is a unicode char to add a space at the start of the sentence.">
+        <item quantity="one">\u0020oder\n • Mindestens %1$d Kalender mit bestehenden Proton-Kalendern zusammenführen.</item>
+        <item quantity="other">\u0020oder\n • Mindestens %1$d Kalender mit bestehenden Proton-Kalendern zusammenführen.</item>
+    </plurals>
+    <plurals name="plural_seconds">
+        <item quantity="one">Sekunde</item>
+        <item quantity="other">Sekunden</item>
+    </plurals>
+    <plurals name="plural_minute">
+        <item quantity="one">Minute</item>
+        <item quantity="other">Minuten</item>
+    </plurals>
+    <plurals name="plural_hour">
+        <item quantity="one">Stunde</item>
+        <item quantity="other">Stunden</item>
+    </plurals>
+    <plurals name="plural_day">
+        <item quantity="one">Tag</item>
+        <item quantity="other">Tage</item>
+    </plurals>
+    <plurals name="plural_week">
+        <item quantity="one">Woche</item>
+        <item quantity="other">Wochen</item>
+    </plurals>
+    <plurals name="plural_month">
+        <item quantity="one">Monat</item>
+        <item quantity="other">Monate</item>
+    </plurals>
+    <plurals name="plural_year">
+        <item quantity="one">Jahr</item>
+        <item quantity="other">Jahre</item>
+    </plurals>
+    <plurals name="plural_recurrence_count">
+        <item quantity="one">einmal</item>
+        <item quantity="other">mal</item>
+    </plurals>
+    <plurals name="plural_occurrence">
+        <item quantity="one">Wiederholung</item>
+        <item quantity="other">Wiederholungen</item>
+    </plurals>
+    <plurals name="plural_time" comment="Ex: Ends after 1 time. Ends after 2 times.">
+        <item quantity="one">mal</item>
+        <item quantity="other">mal</item>
+    </plurals>
+    <plurals name="plural_participant_uppercase">
+        <item quantity="one">Teilnehmer</item>
+        <item quantity="other">teilnehmer</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_day" comment="Example: Every 1 day / Every 2 days">
+        <item quantity="one">Alle %1$d %2$s</item>
+        <item quantity="other">Alle %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_week" comment="Example: Every 1 week / Every 2 weeks">
+        <item quantity="one">Alle %1$d %2$s</item>
+        <item quantity="other">Alle %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_month" comment="Example: Every 1 month / Every 2 months">
+        <item quantity="one">Alle %1$d %2$s</item>
+        <item quantity="other">Alle %1$d %2$s</item>
+    </plurals>
+    <plurals name="event_recurrence_every_some_year" comment="Example: Every 1 year / Every 2 years">
+        <item quantity="one">Alle %1$d %2$s</item>
+        <item quantity="other">Alle %1$d %2$s</item>
+    </plurals>
+    <plurals name="calendar_form_default_event_duration_value" comment="Should always be greater than 1 as options are 30, 60, 90, 120">
+        <item quantity="one">%1$s Minute</item>
+        <item quantity="other">%1$s Minuten</item>
+    </plurals>
+    <plurals name="calendar_form_name_character_limit" comment="Should always be greater than 1. Currently set to 100 chars">
+        <item quantity="one">%1$d/%2$d Zeichen</item>
+        <item quantity="other">%1$d/%2$d Zeichen</item>
+    </plurals>
+    <plurals name="calendar_form_description_character_limit" comment="Can range from 0 to 255 chars.">
+        <item quantity="one">%1$d/%2$d Zeichen</item>
+        <item quantity="other">%1$d/%2$d Zeichen</item>
+    </plurals>
+    <!--  STRING ARRAYS  -->
+    <string-array name="ordinals_as_words">
+        <item translatable="false"/>
+        <item>ersten</item>
+        <item>Zweiter</item>
+        <item>Dritter</item>
+        <item>Vierter</item>
+        <item>Fünfter</item>
+    </string-array>
+    <string-array name="ordinals_as_words_backwards">
+        <item translatable="false"/>
+        <item>Letzter</item>
+        <item>Vorletzter</item>
+        <item>Drittletzter</item>
+        <item>Viertletzter</item>
+        <item>Fünftletzter</item>
+    </string-array>
+    <string-array name="app_themes">
+        <item>Hell</item>
+        <item>Dunkel</item>
+        <item>Systemstandard</item>
+    </string-array>
+    <string-array name="time_formats">
+        <item>Systemstandard</item>
+        <item>13:00</item>
+        <item>1:00 PM</item>
+    </string-array>
+    <string-array name="week_start">
+        <item>Systemstandard</item>
+        <item>Montag</item>
+        <item>Samstag</item>
+        <item>Sonntag</item>
+    </string-array>
+    <string-array name="colors_with_names" comment="DEPRECATED: Remove when new arrays are translated.">
+        <item>Violett|#8080FF</item>
+        <item>Rosa|#EC3E7C</item>
+        <item>Magenta|#DB60D6</item>
+        <item>Rostrot|#F78400</item>
+        <item>Terrakotta|#936D58</item>
+        <item>Blauviolett|#5252CC</item>
+        <item>Purpurrot|#A839A4</item>
+        <item>Fuchsiarot|#BA1E55</item>
+        <item>Kupfer|#C44800</item>
+        <item>Rostbraun|#54473F</item>
+        <item>Königsblau|#415DF0</item>
+        <item>Himmelblau|#179FD9</item>
+        <item>Khaki|#1DA583</item>
+        <item>Smaragdgrün|#3CBB3A</item>
+        <item>Olivgrün|#B4A40E</item>
+        <item>Türkis|#273EB2</item>
+        <item>Dunkelblau|#0A77A6</item>
+        <item>Moosgrün#0F735A</item>
+        <item>Waldgrün|#258723</item>
+        <item>Jägergrün|#807304</item>
+    </string-array>
+    <string-array name="colors_names" comment="Keep the same items order">
+        <item>Violett</item>
+        <item>Erdbeere</item>
+        <item>Rosa</item>
+        <item>Karotte</item>
+        <item>Sahara</item>
+        <item>Enzian</item>
+        <item>Pflaume</item>
+        <item>Kirschrot</item>
+        <item>Kupfer</item>
+        <item>Erde</item>
+        <item>Schieferblau</item>
+        <item>Pazifikblau</item>
+        <item>Riff</item>
+        <item>Farn</item>
+        <item>Olivgrün</item>
+        <item>Kobaltblau</item>
+        <item>Ozeanblau</item>
+        <item>Kiefer</item>
+        <item>Waldgrün</item>
+        <item>Moosgrün</item>
+    </string-array>
+    <string-array name="colors_values" comment="No translation needed">
+        <item>#8080FF</item>
+        <item>#EC3E7C</item>
+        <item>#DB60D6</item>
+        <item>#F78400</item>
+        <item>#936D58</item>
+        <item>#5252CC</item>
+        <item>#A839A4</item>
+        <item>#BA1E55</item>
+        <item>#C44800</item>
+        <item>#54473F</item>
+        <item>#415DF0</item>
+        <item>#179FD9</item>
+        <item>#1DA583</item>
+        <item>#3CBB3A</item>
+        <item>#B4A40E</item>
+        <item>#273EB2</item>
+        <item>#0A77A6</item>
+        <item>#0F735A</item>
+        <item>#258723</item>
+        <item>#807304</item>
+    </string-array>
+</resources>

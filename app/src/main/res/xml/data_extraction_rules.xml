@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules xmlns:android="http://schemas.android.com/apk/res/android">
+    <cloud-backup disable-if-no-backup-rules="true">
+        <!-- No rules, so backup is disabled -->
+    </cloud-backup>
+    <device-transfer disable-if-no-backup-rules="true">
+        <!-- No rules, so device transfer is disabled -->
+    </device-transfer>
+</data-extraction-rules>

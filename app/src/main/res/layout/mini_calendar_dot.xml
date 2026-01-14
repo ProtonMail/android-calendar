@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mini_calendar_dot"
+    android:layout_gravity="center"
+    android:layout_width="5dp"
+    android:layout_height="5dp"
+    android:background="@drawable/shape_calendar_circle_small"
+    android:backgroundTint="#CF5858"
+    />
