@@ -70,6 +70,7 @@ class CalendarWidgetRefresher @Inject constructor(@ApplicationContext private va
 
     override fun broadcastRefresh() {
         CalendarWidget.sendRefreshBroadcast(context)
+        CalendarMonthWidget.sendRefreshBroadcast(context)
     }
 
     override fun refreshEventList() {
@@ -78,6 +79,9 @@ class CalendarWidgetRefresher @Inject constructor(@ApplicationContext private va
         val widgetIds = widgetManager.getAppWidgetIds(widgetComponent)
 
         widgetManager.notifyAppWidgetViewDataChanged(widgetIds, R.id.lv_widget)
+
+        // Month widget uses static layout, trigger a full refresh
+        CalendarMonthWidget.sendRefreshBroadcast(context)
     }
 }
 
