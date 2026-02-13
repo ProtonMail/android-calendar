@@ -580,6 +580,11 @@
     <string name="calendar_widget_please_log_in">Sign in to see your events</string>
     <string name="calendar_widget_part_day_event_starts_at">Starts at %1$s</string>
     <string name="calendar_widget_part_day_event_ends_at">Ends at %1$s</string>
+    <!-- Month Widget -->
+    <string name="month_widget_description">Proton Calendar month overview</string>
+    <string name="month_widget_previous">Previous month</string>
+    <string name="month_widget_next">Next month</string>
+    <string name="month_widget_loading">Loading\u2026</string>
     <!-- Spotlight Dialogs -->
     <string name="spotlight_dialog_header">What\'s new</string>
     <string name="spotlight_dialog_beta_header">Calendar Beta</string>
