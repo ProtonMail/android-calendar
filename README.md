@@ -8,12 +8,6 @@ This is the Proton Calendar client for Android for managing events and calendars
 
 [Git LFS](https://git-lfs.github.com/) must be installed before cloning or building, as some test assets (e.g. snapshot images) are tracked with LFS. Without it, Gradle will fail with a `FilterFailedException` when jgit attempts to smudge LFS-tracked files.
 
-```bash
-# macOS
-brew install git-lfs
-git lfs install
-```
-
 ### Building
 
 Open the project in the latest Android Studio.
