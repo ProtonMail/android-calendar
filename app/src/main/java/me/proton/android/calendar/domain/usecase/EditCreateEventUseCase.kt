@@ -34,7 +34,7 @@ import me.proton.android.calendar.domain.ValueSet
 import me.proton.android.calendar.domain.ValueStoreProvider
 import me.proton.android.calendar.domain.api.CalendarsApi
 import me.proton.android.calendar.domain.model.Event
-import me.proton.android.calendar.domain.model.key
+import me.proton.android.calendar.domain.model.EventKey
 import me.proton.android.calendar.domain.model.PackageType
 import me.proton.android.calendar.domain.model.SendPreferences
 import me.proton.core.crypto.common.context.CryptoContext
@@ -82,7 +82,7 @@ class EditCreateEventUseCase @Inject constructor(
         sanitizedNewEvent.iCalEvent.sanitiseForExternal()
 
         val oldEventEntity = if (sanitizedNewEvent.isSyncedWithApi()) {
-            (upgradeEventUseCase.execute(userId, sanitizedNewEvent.key) as? UseCase.Result.Success<*>)?.returnValue.tryCastOrNull<EventEntity>() ?: return UseCase.Result.Error("EditCreateEventUseCase could not upgrade Event. Failed to cast upgrade result to EventEntity")
+            (upgradeEventUseCase.execute(userId, EventKey(sanitizedNewEvent.id, oldCalendarId)) as? UseCase.Result.Success<*>)?.returnValue.tryCastOrNull<EventEntity>() ?: return UseCase.Result.Error("EditCreateEventUseCase could not upgrade Event. Failed to cast upgrade result to EventEntity")
         } else null
 
         val userAddresses = userAddressManager.getAddressesOrNull(userId)?.takeIfNotEmpty() ?: return UseCase.Result.InvalidParams("EditCreateEventUseCase: User Addresses is empty")

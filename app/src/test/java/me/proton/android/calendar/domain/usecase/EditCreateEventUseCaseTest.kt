@@ -17,6 +17,11 @@ import biweekly.property.Status
 import biweekly.property.Transparency
 import biweekly.property.Trigger
 import biweekly.util.Duration
+import io.mockk.coEvery
+import io.mockk.coVerify
+import io.mockk.mockk
+import kotlinx.coroutines.runBlocking
+import kotlinx.serialization.json.Json
 import me.proton.android.calendar.common.CustomICalPropertyParameter.PARAMETER_CONFERENCE_CREATOR
 import me.proton.android.calendar.common.CustomICalPropertyParameter.PARAMETER_CONFERENCE_CREATOR_READONLY
 import me.proton.android.calendar.common.CustomICalPropertyParameter.PARAMETER_CONFERENCE_HOST
@@ -42,6 +47,13 @@ import me.proton.android.calendar.common.utils.ICalUtilsImpl.setEndTimeZone
 import me.proton.android.calendar.common.utils.ICalUtilsImpl.setStart
 import me.proton.android.calendar.common.utils.ICalUtilsImpl.setStartTimeZone
 import me.proton.android.calendar.common.utils.ICalUtilsImpl.wrapInICalendar
+import me.proton.android.calendar.domain.model.Event
+import me.proton.android.calendar.domain.model.EventKey
+import me.proton.android.calendar.test.shared.mocks.CalendarMocks.provideCalendar
+import me.proton.android.calendar.test.shared.mocks.EventMocks.provideEvent
+import me.proton.android.calendar.test.shared.mocks.calendarId
+import me.proton.android.calendar.test.shared.mocks.eventId
+import me.proton.android.calendar.test.shared.mocks.userId
 import org.junit.jupiter.api.Test
 
 internal class EditCreateEventUseCaseTest {
@@ -269,6 +281,34 @@ internal class EditCreateEventUseCaseTest {
 
     fun `encrypt and sign split iCalendar`() {
         fail("TODO")
+    }
+
+    private val upgradeEventUseCaseMock: UpgradeEventUseCase = mockk()
+
+    private fun getEditCreateEventUseCase() = EditCreateEventUseCase(
+        TestsLogger,
+        Json,
+        mockk(),
+        mockk(),
+        mockk(),
+        mockk(),
+        mockk(),
+        mockk(),
+        mockk(),
+        mockk(),
+        upgradeEventUseCaseMock
+    )
+
+    @Test
+    fun `upgrade moved event in its old calendar`() {
+        runBlocking {
+            coEvery { upgradeEventUseCaseMock.execute(userId, any()) } returns UseCase.Result.Error("not upgraded")
+            val movedEvent = Event.from(provideEvent(), calendar = provideCalendar(id = "otherCalendarId"))
+
+            getEditCreateEventUseCase().execute(userId, movedEvent, oldCalendarId = calendarId)
+
+            coVerify(exactly = 1) { upgradeEventUseCaseMock.execute(userId, EventKey(eventId, calendarId)) }
+        }
     }
 
 
