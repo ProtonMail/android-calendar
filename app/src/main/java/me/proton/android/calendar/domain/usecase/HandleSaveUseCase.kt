@@ -81,7 +81,9 @@ class HandleSaveUseCase @Inject constructor(
             event.iCalEvent.recurrenceRule?.adjustToWeekStart(userSettings.weekStartDayOfWeek())
         }
 
-        val eventEntity = calendarsRepository.selectEventEntity(event.key)
+        // event.calendar may already be the new calendar, the row still lives under the original one
+        val existingCalendarId = originalDbEvent?.calendar?.id ?: event.calendar.id
+        val eventEntity = calendarsRepository.selectEventEntity(EventKey(event.id, existingCalendarId))
         val dbEvent = eventEntity?.let { if (CalendarFeatureFlag.UseEventDecryptor.fallbackValue) {
             eventDecryptor.decrypt(it)
         } else {
@@ -406,7 +408,7 @@ class HandleSaveUseCase @Inject constructor(
         }
 
         // delete single edits starting with just edited occurrence / single edit
-        val eventKey = if (dbEvent.isSingleEdit()) immutableOriginalDbEvent!!.key else event.key
+        val eventKey = if (dbEvent.isSingleEdit()) immutableOriginalDbEvent!!.key else dbEvent.key
         val deleteStartDate =
             if (dbEvent.isSingleEdit()) dbEventStartDate!!.minusNanos(1) else dbEventWithOccurrenceStartDate!!.minusNanos(
                 1
@@ -560,7 +562,7 @@ class HandleSaveUseCase @Inject constructor(
         // delete all single edits
         val originalEventKey =
             if (dbEvent?.isSingleEdit() == true) immutableOriginalDbEvent?.key
-            else event.key
+            else dbEvent?.key ?: event.key
         val originalEventStartDate =
             if (dbEvent?.isSingleEdit() == true) originalDbEventStartDate
             else dbEventStartDate
@@ -964,11 +966,10 @@ class HandleSaveUseCase @Inject constructor(
                 userErrorMessage = createEventResult.userErrorMessage
             )
             is UseCase.Result.Success<*> -> {
-                val isCalendarBeingChanged = oldCalendarId != null && oldCalendarId != newEvent.calendar.id
-                if (isCalendarBeingChanged) {
+                if (oldCalendarId != null && oldCalendarId != newEvent.calendar.id) {
                     // Use ALL_EVENTS for recurring events since THIS_EVENT requires an occurrence number
                     val deleteOption = if (newEvent.isPartOfChain()) EventEditDeleteOption.ALL_EVENTS else EventEditDeleteOption.THIS_EVENT
-                    val deleteOldEventResult = handleDeleteUseCase.handleDelete(userId, newEvent.id, newEvent.calendar.id, deleteOption, occurrenceNumber = null, deletionReason = EventDeletionReason.CalendarChange)
+                    val deleteOldEventResult = handleDeleteUseCase.handleDelete(userId, newEvent.id, oldCalendarId, deleteOption, occurrenceNumber = null, deletionReason = EventDeletionReason.CalendarChange)
                     if (deleteOldEventResult is UseCase.Result.Success<*>) createEventResult else deleteOldEventResult
                 } else {
                     createEventResult

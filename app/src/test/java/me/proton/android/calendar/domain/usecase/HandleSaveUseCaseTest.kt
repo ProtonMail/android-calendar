@@ -7,7 +7,10 @@ import me.proton.android.calendar.common.logger.TestsLogger
 import me.proton.android.calendar.common.utils.CalendarFeatureFlag
 import me.proton.android.calendar.domain.CalendarsRepository
 import me.proton.android.calendar.domain.EventDecryptor
+import me.proton.android.calendar.domain.model.Event
+import me.proton.android.calendar.domain.model.EventKey
 import me.proton.android.calendar.test.shared.mocks.*
+import me.proton.android.calendar.test.shared.mocks.CalendarMocks.provideCalendar
 import me.proton.android.calendar.test.shared.mocks.EventMocks.provideEvent
 import me.proton.android.calendar.test.shared.mocks.EventMocks.provideEventEntity
 import me.proton.android.calendar.test.shared.mocks.EventMocks.provideEventResponse
@@ -198,6 +201,51 @@ internal class HandleSaveUseCaseTest {
 
             coVerify(exactly = 1) {
                 sendEmailUseCaseMock.sendInviteToAttendees(any(), any(), any(), any(), any(), any(), any())
+            }
+        }
+    }
+
+    @Test
+    fun `handleSave move single event to another calendar test`() {
+        runBlocking {
+
+            val dbEvent = provideEvent(isRecurring = false)
+            val movedEvent = Event.from(dbEvent, calendar = provideCalendar(id = "otherCalendarId"))
+            coEvery { calendarsRepositoryMock.selectEventEntity(any()) } answers {
+                if (firstArg<EventKey>().calendarId == calendarId) provideEventEntity() else null
+            }
+            coEvery { if (CalendarFeatureFlag.UseEventDecryptor.fallbackValue) {
+                eventDecryptorMock.decrypt(any())
+            } else {
+                transformEventUseCaseMock.execute(any())
+            } } returns dbEvent
+            coEvery {
+                handleDeleteUseCaseMock.handleDelete(userId, eventId, any(), any(), any(), any(), any(), any())
+            } returns UseCase.Result.Success<Unit>()
+
+            assert(
+                getHandleSaveUseCase().handleSave(
+                    editOption = null,
+                    occurrenceNumber = 1,
+                    timeFormatIs24Hours = true,
+                    sendPreferences = mapOf(),
+                    event = movedEvent,
+                    originalDbEvent = dbEvent,
+                    userSettings = provideUserSettingsEntity(),
+                    eventTimeZoneId = defaultTimezone,
+                    userId = userId,
+                    rruleManuallyEdited = false,
+                    isCreate = false,
+                    sendEmailUpdate = null
+                ) is UseCase.Result.Success<*>
+            )
+
+            coVerify(exactly = 1) {
+                editCreateEventUseCaseMock.execute(userId, any(), calendarId, any())
+            }
+
+            coVerify(exactly = 1) {
+                handleDeleteUseCaseMock.handleDelete(userId, eventId, calendarId, any(), any(), any(), any(), any())
             }
         }
     }
