@@ -446,7 +446,7 @@
     <string name="notification_text_tomorrow_part_time">Demà, a les %1$s</string>
     <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s a les %2$s</string>
     <!-- Bug report -->
-    <string name="bug_report_refresh_disclaimer">Si l\'aplicació del calendari apareix buida, potser tornar-la a obrir resoldrà el problema.</string>
+    <string name="bug_report_refresh_disclaimer">Si el calendari us apareix buit, actualitzar la pàgina pot resoldre el problema.</string>
     <string name="bug_report_hint_title">Assumpte</string>
     <string name="bug_report_hint_description">Descriviu el problema i incloeu-hi qualsevol missatge d\'error.</string>
     <string name="bug_report_discard_changes_title">Canvis no desats</string>

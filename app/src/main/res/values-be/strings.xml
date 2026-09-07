@@ -446,7 +446,7 @@
     <string name="notification_text_tomorrow_part_time">Заўтра ў %1$s</string>
     <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s у %2$s</string>
     <!-- Bug report -->
-    <string name="bug_report_refresh_disclaimer">If your calendar app appears empty, refreshing may resolve the issue.</string>
+    <string name="bug_report_refresh_disclaimer">Абнаўленне можа дапамагчы вырашыць праблему, калі ваша праграма календара пустая.</string>
     <string name="bug_report_hint_title">Тэма</string>
     <string name="bug_report_hint_description">Апішыце праблему і далучыце ўсе паведамленні з памылкамі.</string>
     <string name="bug_report_discard_changes_title">Незахаваныя змены</string>

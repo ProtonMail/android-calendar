@@ -446,7 +446,7 @@
     <string name="notification_text_tomorrow_part_time">I morgen kl. %1$s</string>
     <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s kl. %2$s</string>
     <!-- Bug report -->
-    <string name="bug_report_refresh_disclaimer">If your calendar app appears empty, refreshing may resolve the issue.</string>
+    <string name="bug_report_refresh_disclaimer">Hvis kalenderappen din ser tom ut, kan det hende at det løser problemet å oppdatere.</string>
     <string name="bug_report_hint_title">Emne</string>
     <string name="bug_report_hint_description">Beskriv problemet og inkluder eventuelle feilmeldinger.</string>
     <string name="bug_report_discard_changes_title">Endringer som ikke er lagret</string>

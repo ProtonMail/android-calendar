@@ -446,7 +446,7 @@
     <string name="notification_text_tomorrow_part_time">Morgen om %1$s</string>
     <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s om %2$s</string>
     <!-- Bug report -->
-    <string name="bug_report_refresh_disclaimer">If your calendar app appears empty, refreshing may resolve the issue.</string>
+    <string name="bug_report_refresh_disclaimer">Als uw agenda-app leeg lijkt, kan vernieuwen het probleem oplossen.</string>
     <string name="bug_report_hint_title">Onderwerp</string>
     <string name="bug_report_hint_description">Beschrijf het probleem en voeg alle foutmeldingen toe.</string>
     <string name="bug_report_discard_changes_title">Niet-opgeslagen wijzigingen</string>
