@@ -446,7 +446,7 @@
     <string name="notification_text_tomorrow_part_time">ხვალ %1$s-ზე</string>
     <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s %2$s-ზე</string>
     <!-- Bug report -->
-    <string name="bug_report_refresh_disclaimer">If your calendar app appears empty, refreshing may resolve the issue.</string>
+    <string name="bug_report_refresh_disclaimer">თუ თქვენი კალენდრის აპი ცარიელია, პრობლემა, შეიძლება, განახლებამ გადაჭრას.</string>
     <string name="bug_report_hint_title">საგანი</string>
     <string name="bug_report_hint_description">აღწერეთ პრობლემა და დაურთეთ შეცდომის ნებისმიერი შეტყობინება.</string>
     <string name="bug_report_discard_changes_title">შეუნახავი ცვლილებები</string>

@@ -693,7 +693,7 @@
     <!--  STRING PLURALS  -->
     <plurals name="calendar">
         <item quantity="one">ημερολόγιο</item>
-        <item quantity="other">{count, plural, one {ημερολόγιο} other {ημερολόγια}}</item>
+        <item quantity="other">ημερολόγια</item>
     </plurals>
     <plurals name="import_assistant_import_button">
         <item quantity="one">Εισαγωγή %1$d ημερολογίου</item>
@@ -741,7 +741,7 @@
     </plurals>
     <plurals name="plural_day">
         <item quantity="one">ημέρα</item>
-        <item quantity="other">{count, plural, one {ημέρα} other {ημέρες}}</item>
+        <item quantity="other">ημέρες</item>
     </plurals>
     <plurals name="plural_week">
         <item quantity="one">εβδομάδα</item>

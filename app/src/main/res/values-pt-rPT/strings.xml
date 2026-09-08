@@ -131,25 +131,25 @@
     <string name="event_send_prefs_trusted_keys_signature_invalid">a assinatura de contacto é inválida</string>
     <string name="event_send_prefs_error_template" comment="email address and (reason why we failed to send email)">%1$s (%2$s)</string>
     <string name="join_zoom_meeting_action">Participar na reunião Zoom</string>
-    <string name="join_proton_meet_action">Join with Proton Meet</string>
+    <string name="join_proton_meet_action">Junte-se ao Proton Meet</string>
     <string name="zoom_meeting_title">Reunião Zoom</string>
     <string name="proton_meet_title">Proton Meet</string>
     <string name="generic_meeting_id">ID: %1$s</string>
-    <string name="generic_meeting_passcode">Passcode: %1$s</string>
-    <string name="generic_meeting_more_details">More details</string>
-    <string name="generic_meeting_less_details">Less details</string>
-    <string name="generic_meeting_host">Meeting host</string>
-    <string name="generic_meeting_link">Meeting link</string>
-    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Joining instructions</a></string>
+    <string name="generic_meeting_passcode">Código de acesso: %1$s</string>
+    <string name="generic_meeting_more_details">Mais detalhes</string>
+    <string name="generic_meeting_less_details">Menos detalhes</string>
+    <string name="generic_meeting_host">Organizador da reunião</string>
+    <string name="generic_meeting_link">Ligação da reunião</string>
+    <string name="generic_meeting_joining_instructions"><a href="https://proton.me/support">Instruções de adesão</a></string>
     <!-- CREATE / EDIT EVENT   -->
     <string name="title_create_event">Novo evento</string>
     <string name="event_text_edit_event">Editar evento</string>
     <string name="event_hint_title">Adicionar título</string>
     <string name="event_hint_location">Adicionar localização</string>
     <string name="event_text_add_participants">Adicionar participantes</string>
-    <string name="event_add_proton_meet">Add Proton Meet conferencing</string>
-    <string name="event_creating_proton_meet">Creating Proton Meet…</string>
-    <string name="event_creating_proton_meet_error">Failed to create a Proton Meet conference. Please try again.</string>
+    <string name="event_add_proton_meet">Adicionar conferência do Proton Meet</string>
+    <string name="event_creating_proton_meet">A criar Proton Meet…</string>
+    <string name="event_creating_proton_meet_error">Não foi possível criar uma conferência no Proton Meet. Por favor, tente novamente.</string>
     <string name="event_text_participants" comment="Max participant counter, Example: Participants (1/1000)">Participantes (%1$d/%2$d)</string>
     <string name="event_current_user_organizer">Você</string>
     <string name="event_max_attendee_chip" comment="How many more participants didn't fit into view and we've hidden their names">+ %1$d mais</string>
@@ -316,7 +316,7 @@
     <string name="nav_view_switcher_month">Mês</string>
     <string name="nav_view_timezone">Fuso horário</string>
     <string name="nav_view_settings">Definições</string>
-    <string name="nav_view_refresh">Refresh</string>
+    <string name="nav_view_refresh">Atualizar</string>
     <string name="nav_view_feedback">Enviar comentários</string>
     <string name="nav_view_more_general_settings" comment="General Settings">Geral</string>
     <string name="nav_view_more_bug">Relatar um problema</string>
@@ -406,7 +406,7 @@
     <string name="snack_event_attendee_tentative_answer" comment="attendee who tentatively accepted">%1$s aceitou provisoriamente o seu convite</string>
     <string name="snack_event_attendee_declined_answer" comment="attendee who declined">%1$s recusou seu convite</string>
     <string name="snack_app_link_invalid">A ligação ao evento não é válida.</string>
-    <string name="error_deeplink_user_mismatch">This link is for a different account</string>
+    <string name="error_deeplink_user_mismatch">Este link é para uma conta diferente</string>
     <string name="snack_app_link_error">Erro ao abrir o evento</string>
     <string name="snack_app_link_import_error">Autenticação cancelada</string>
     <string name="snack_notification_already_added">A notificação já foi adicionada</string>
@@ -446,7 +446,7 @@
     <string name="notification_text_tomorrow_part_time">Amanhã ás %1$s</string>
     <string name="notification_text_part_time" comment="Example: January 12 2020 at 15:00">%1$s às %2$s</string>
     <!-- Bug report -->
-    <string name="bug_report_refresh_disclaimer">If your calendar app appears empty, refreshing may resolve the issue.</string>
+    <string name="bug_report_refresh_disclaimer">Se a sua aplicação de calendário aparecer vazia, atualizá-la poderá resolver o problema.</string>
     <string name="bug_report_hint_title">Assunto</string>
     <string name="bug_report_hint_description">Descreva o problema e inclua quaisquer mensagens de erro.</string>
     <string name="bug_report_discard_changes_title">Alterações por guardar</string>
