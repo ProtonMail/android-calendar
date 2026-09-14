@@ -321,7 +321,7 @@ class MonthFragment : BaseFragment<FragmentMonthBinding>() {
             )
         }
 
-        if (!isResumed) return // TODO ViewBinding NPE
+        if (view == null) return // TODO ViewBinding NPE
             binding.viewPagerTopGuideline.animateGuidelineHeightChange(
                 desiredHeight,
                 calendarViewModel.currentPosDesiredMonthHeight
@@ -1365,7 +1365,8 @@ class MonthFragment : BaseFragment<FragmentMonthBinding>() {
 
     private fun simulateExpandWithScroll(startWeekOn: DayOfWeek) {
 
-        if (!isResumed) return // TODO ViewBinding NPE
+        // not isResumed: the week start dispatches at STARTED after activity recreation
+        if (view == null) return // TODO ViewBinding NPE
 
         val desiredHeight = calendarViewModel.currentPosDesiredMonthHeight
 
@@ -1383,7 +1384,7 @@ class MonthFragment : BaseFragment<FragmentMonthBinding>() {
             desiredHeight,
             object : AndroidUtils.AnimateGuidelineListener {
                 override fun onHeightChange(animatedValue: Int) {
-                    if (!isResumed) return // TODO ViewBinding NPE
+                    if (view == null) return // TODO ViewBinding NPE
                     val viewPagerSliderGuidelineLayoutParams =
                         (binding.viewPagerSliderGuideline.layoutParams as? ConstraintLayout.LayoutParams)
                     if (viewPagerSliderGuidelineLayoutParams?.guideBegin == 0) {
