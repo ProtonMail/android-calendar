@@ -23,6 +23,9 @@ class InsertEventOccurrencesUseCase @Inject constructor(
             eventEntityMetadata.modifyTime,
             // rows without a startTimeZone predate the column and never refresh via modifyTime alone
             requireStartTimeZone = eventEntityMetadata.startTimeZone.isNotBlank(),
+            // rows written while a zero-duration end was bumped to the next day never refresh via modifyTime alone
+            requireZeroDuration = eventEntityMetadata.fullDay == 0 &&
+                eventEntityMetadata.endTime == eventEntityMetadata.startTime,
         )
     }
 

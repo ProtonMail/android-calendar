@@ -62,9 +62,9 @@ class UpdateEventOccurrencesUseCase @Inject constructor(
                 .toLocalDateTime()
             val endLocalRaw =
                 Instant.ofEpochSecond(eventEntityMetadata.endTime).atZone(zoneId).toLocalDateTime()
-            // handle overnight ranges (end <= start -> next day)
+            // handle overnight ranges (end < start -> next day)
             val endLocal =
-                if (eventEntityMetadata.fullDay == 0 && !endLocalRaw.isAfter(startLocal)) {
+                if (eventEntityMetadata.fullDay == 0 && endLocalRaw.isBefore(startLocal)) {
                     endLocalRaw.plusDays(1)
                 } else endLocalRaw
 

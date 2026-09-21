@@ -26,8 +26,9 @@ abstract class EventOccurrencesDao : BaseDao<EventOccurrenceEntity> {
     abstract fun selectSingleEdits(userId: String, calendarIds: List<String>): Flow<List<EventOccurrenceEntity>>
 
     // requireStartTimeZone: rows without one predate the column and shouldn't count as fresh
-    @Query("SELECT EXISTS(SELECT * FROM events_occurrences WHERE userId = :userId AND eventId = :eventId AND calendarId = :calendarId AND modifyTime >= :modifyTime AND (:requireStartTimeZone = 0 OR startTimeZone != ''))")
-    abstract fun hasOccurrenceWithEqualOrHigherModifyTime(userId: String, calendarId: String, eventId: String, modifyTime: Long, requireStartTimeZone: Boolean): Boolean
+    // requireZeroDuration: rows of a zero-duration event that carry an end after start were inflated and shouldn't count as fresh
+    @Query("SELECT EXISTS(SELECT * FROM events_occurrences WHERE userId = :userId AND eventId = :eventId AND calendarId = :calendarId AND modifyTime >= :modifyTime AND (:requireStartTimeZone = 0 OR startTimeZone != '') AND (:requireZeroDuration = 0 OR (startTime IS NOT NULL AND endTime = startTime)))")
+    abstract fun hasOccurrenceWithEqualOrHigherModifyTime(userId: String, calendarId: String, eventId: String, modifyTime: Long, requireStartTimeZone: Boolean, requireZeroDuration: Boolean): Boolean
 
     // cheap count for widget to respond to post-login insertions
     @Query("SELECT COUNT(*) FROM events_occurrences WHERE userId = :userId")
