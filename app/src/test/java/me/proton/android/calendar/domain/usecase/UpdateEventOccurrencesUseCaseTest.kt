@@ -87,6 +87,17 @@ class UpdateEventOccurrencesUseCaseTest {
     }
 
     @Test
+    fun `zero duration end is kept`() = runBlocking {
+        val zone = ZoneId.of("Europe/London")
+        val start = ZonedDateTime.of(2025, 5, 1, 17, 0, 0, 0, zone)
+
+        execute(metadata = createMetadata(start, start, rrule = "FREQ=WEEKLY;BYDAY=WE,TH,FR,SA"))
+
+        val occ = capturedEntities.captured.first { it.startTime != null && it.endTime != null }
+        assertEquals(occ.startTime, occ.endTime)
+    }
+
+    @Test
     fun `weekly MO,WE in Buenos Aires generates first occurrence and hits window`() = runBlocking {
         val zone = ZoneId.of("America/Argentina/Buenos_Aires")
         // Monday 2025-11-03 09:00 (-03)

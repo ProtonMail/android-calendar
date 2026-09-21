@@ -393,7 +393,7 @@ class MetadataIndicatorsCalculator @Inject constructor(
         // build a throwaway event and let biweekly expand it. the caller trims the result to the window.
         val startLocal = dtStartInstant.atZone(expansionZone).toLocalDateTime()
         val endLocalRaw = dtEndInstant.atZone(expansionZone).toLocalDateTime()
-        val endLocal = if (!fullDay && !endLocalRaw.isAfter(startLocal)) {
+        val endLocal = if (!fullDay && endLocalRaw.isBefore(startLocal)) {
             endLocalRaw.plusDays(1)
         } else endLocalRaw
 

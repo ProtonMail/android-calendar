@@ -55,24 +55,51 @@ class InsertEventOccurrencesUseCaseTest {
         assertFalse(useCase.needsRefresh("u1", metadata(startTimeZone = "Europe/Zurich")))
     }
 
+    @Test
+    fun `needsRefresh lets inflated rows of a zero-duration recurring event regenerate`() = runTest {
+        // rows written while zero duration was bumped to a day never refresh via modifyTime alone
+        coEvery {
+            occurrencesDao.hasOccurrenceWithEqualOrHigherModifyTime(
+                "u1", "cal1", "e1", 1L, requireStartTimeZone = true, requireZeroDuration = true,
+            )
+        } returns false
+
+        assertFalse(useCase.needsRefresh("u1", metadata(startTimeZone = "Europe/Zurich", durationSeconds = 0)))
+    }
+
+    @Test
+    fun `needsRefresh keeps fresh rows of a zero-duration recurring event`() = runTest {
+        coEvery {
+            occurrencesDao.hasOccurrenceWithEqualOrHigherModifyTime(
+                "u1", "cal1", "e1", 1L, requireStartTimeZone = true, requireZeroDuration = true,
+            )
+        } returns true
+
+        assertTrue(useCase.needsRefresh("u1", metadata(startTimeZone = "Europe/Zurich", durationSeconds = 0)))
+    }
+
     // fresh = modifyTime >= the metadata's, complete = has a startTimeZone
     private fun stubFreshRows(exist: Boolean, complete: Boolean) {
         coEvery {
-            occurrencesDao.hasOccurrenceWithEqualOrHigherModifyTime("u1", "cal1", "e1", 1L, requireStartTimeZone = true)
+            occurrencesDao.hasOccurrenceWithEqualOrHigherModifyTime(
+                "u1", "cal1", "e1", 1L, requireStartTimeZone = true, requireZeroDuration = false,
+            )
         } returns (exist && complete)
         coEvery {
-            occurrencesDao.hasOccurrenceWithEqualOrHigherModifyTime("u1", "cal1", "e1", 1L, requireStartTimeZone = false)
+            occurrencesDao.hasOccurrenceWithEqualOrHigherModifyTime(
+                "u1", "cal1", "e1", 1L, requireStartTimeZone = false, requireZeroDuration = false,
+            )
         } returns exist
     }
 
-    private fun metadata(startTimeZone: String) = EventEntityMetadata(
+    private fun metadata(startTimeZone: String, durationSeconds: Long = 3_600L) = EventEntityMetadata(
         id = "e1",
         calendarId = "cal1",
         sharedEventId = "s1",
         addressId = null,
         startTime = 1_750_000_000L,
         startTimeZone = startTimeZone,
-        endTime = 1_750_003_600L,
+        endTime = 1_750_000_000L + durationSeconds,
         endTimeZone = startTimeZone,
         fullDay = 0,
         uid = "UID-1",

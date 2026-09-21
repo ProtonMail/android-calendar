@@ -498,6 +498,25 @@ class MetadataIndicatorsCalculatorTest {
     }
 
     @Test
+    fun `compute dots a zero-duration recurring event only on its own day`() = runTest {
+        val dtStart = LocalDate.of(2025, 5, 1).atStartOfDay(zone).plusHours(17)
+        val row = recurring("eZ", "uZ", "c1", dtStart, "FREQ=WEEKLY;BYDAY=WE,TH,FR,SA", tz, durationHours = 0)
+        stubBaseHappyPath(infiniteRecurring = listOf(row))
+
+        val result = calculator.compute(userId.id, from, to, tz).first()
+
+        assertEquals(
+            setOf(
+                LocalDate.of(2025, 6, 4),
+                LocalDate.of(2025, 6, 5),
+                LocalDate.of(2025, 6, 6),
+                LocalDate.of(2025, 6, 7),
+            ),
+            result.keys,
+        )
+    }
+
+    @Test
     fun `biweekly weekday names map onto java-time DayOfWeek`() {
         // expandRecurring converts each BYDAY via DayOfWeek.valueOf(biweeklyDay.name)
         BiweeklyDayOfWeek.values().forEach { day ->
