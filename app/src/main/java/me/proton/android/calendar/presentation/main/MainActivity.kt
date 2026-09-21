@@ -18,6 +18,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.annotation.IdRes
@@ -342,6 +343,7 @@ class MainActivity : AppCompatActivity(), KoinComponent {
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_container_view) as NavHostFragment
         navController = navHostFragment.navController
         navView.setupWithNavController(navController)
+        onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
 
         appBarConfiguration = AppBarConfiguration(
             setOf(
@@ -1968,32 +1970,36 @@ class MainActivity : AppCompatActivity(), KoinComponent {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    override fun onBackPressed() {
-        if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            binding.drawerLayout.closeDrawer(GravityCompat.START)
-        } else if (returnToView == ViewMode.MONTH && CalendarFeatureFlag.MonthView.fallbackValue) {
-            // Navigate back to month view
-            calendarViewModel.monthViewDate?.let {
-                calendarViewModel.handleDaySelected(it)
-            }
-            calendarViewModel.viewMode.postValue(ViewMode.MONTH)
-            mainViewModel.setLastViewMode(ViewMode.MONTH)
-        } else if (returnToView == ViewMode.WEEK && CalendarFeatureFlag.WeekView.fallbackValue) {
-            // Navigate back to week view
-            calendarViewModel.viewMode.postValue(ViewMode.WEEK)
-            mainViewModel.setLastViewMode(ViewMode.WEEK)
-        } else if (returnToView == ViewMode.THREE_DAY && CalendarFeatureFlag.ThreeDaysView.fallbackValue) {
-            // Navigate back to 3 days view
-            calendarViewModel.viewMode.postValue(ViewMode.THREE_DAY)
-            mainViewModel.setLastViewMode(ViewMode.THREE_DAY)
-        } else if (navController.currentDestination?.id == R.id.nav_calendar) {
-            if (mainViewModel.isLaunchedFromExternalCalendarIntent) {
-                finish()
+    private val onBackPressedCallback = object : OnBackPressedCallback(true) {
+        override fun handleOnBackPressed() {
+            if (binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                binding.drawerLayout.closeDrawer(GravityCompat.START)
+            } else if (returnToView == ViewMode.MONTH && CalendarFeatureFlag.MonthView.fallbackValue) {
+                // Navigate back to month view
+                calendarViewModel.monthViewDate?.let {
+                    calendarViewModel.handleDaySelected(it)
+                }
+                calendarViewModel.viewMode.postValue(ViewMode.MONTH)
+                mainViewModel.setLastViewMode(ViewMode.MONTH)
+            } else if (returnToView == ViewMode.WEEK && CalendarFeatureFlag.WeekView.fallbackValue) {
+                // Navigate back to week view
+                calendarViewModel.viewMode.postValue(ViewMode.WEEK)
+                mainViewModel.setLastViewMode(ViewMode.WEEK)
+            } else if (returnToView == ViewMode.THREE_DAY && CalendarFeatureFlag.ThreeDaysView.fallbackValue) {
+                // Navigate back to 3 days view
+                calendarViewModel.viewMode.postValue(ViewMode.THREE_DAY)
+                mainViewModel.setLastViewMode(ViewMode.THREE_DAY)
+            } else if (navController.currentDestination?.id == R.id.nav_calendar) {
+                if (mainViewModel.isLaunchedFromExternalCalendarIntent) {
+                    finish()
+                } else {
+                    moveTaskToBack(true)
+                }
             } else {
-                moveTaskToBack(true)
+                isEnabled = false
+                onBackPressedDispatcher.onBackPressed()
+                isEnabled = true
             }
-        } else {
-            super.onBackPressed()
         }
     }
 
