@@ -2,6 +2,7 @@ package me.proton.android.calendar.data.db
 
 import androidx.room.*
 import androidx.sqlite.db.SupportSQLiteQuery
+import me.proton.android.calendar.data.entity.EventAddressKeyRow
 import me.proton.android.calendar.data.entity.EventColorRow
 import me.proton.android.calendar.data.entity.EventEntity
 import kotlinx.coroutines.flow.Flow
@@ -36,6 +37,9 @@ abstract class EventsDao : BaseDao<EventEntity> {
     // no calendar filter: callers key rows by (id, calendarId), and extra binds cost against SQLite's 999 limit
     @Query("SELECT ID, CalendarID, Color FROM events WHERE id IN (:ids)")
     abstract fun selectEventColors(ids: List<String>): List<EventColorRow>
+
+    @Query("SELECT ID, CalendarID, AddressID, AddressKeyPacket IS NOT NULL AS hasAddressKeyPacket FROM events WHERE id IN (:ids)")
+    abstract fun selectEventAddressKeys(ids: List<String>): List<EventAddressKeyRow>
 
     @Query("SELECT ID, CalendarID, SharedEvents, ModifyTime, AddressID, Color FROM events WHERE calendarId = :calendarId")
     abstract fun getSkeletonEventsInCalendarFlow(calendarId: String): Flow<List<SkeletonEventEntity>>
