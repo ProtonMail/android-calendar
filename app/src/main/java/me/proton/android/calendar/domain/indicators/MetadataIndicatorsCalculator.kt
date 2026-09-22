@@ -161,6 +161,7 @@ class MetadataIndicatorsCalculator @Inject constructor(
                                 infiniteRecurringRaw = infiniteRecurringRaw,
                                 allSingleEdits = allSingleEdits,
                                 isFreeUser = !userInfo.hasSubscriptionForMail,
+                                ownAddressIds = userInfo.addresses.map { it.addressId.id }.toSet(),
                                 fromDate = fromDate,
                                 toDate = toDate,
                                 timeZoneId = timeZoneId,
@@ -186,6 +187,7 @@ class MetadataIndicatorsCalculator @Inject constructor(
         infiniteRecurringRaw: List<EventOccurrenceEntity>,
         allSingleEdits: List<EventOccurrenceEntity>,
         isFreeUser: Boolean,
+        ownAddressIds: Set<String>,
         fromDate: LocalDate,
         toDate: LocalDate,
         timeZoneId: String,
@@ -228,6 +230,13 @@ class MetadataIndicatorsCalculator @Inject constructor(
                 .associate { EventKey(it.id, it.calendarId) to it.color }
         }
 
+        // an event locked to an address key we don't hold never decrypts, so it must not get a dot either
+        val unreadableKeys: Set<EventKey> = allRows.map { it.eventId }.distinct()
+            .let { if (it.isEmpty()) emptyList() else database.eventsDao().selectEventAddressKeys(it) }
+            .filter { it.isUnreadableBy(ownAddressIds) }
+            .map { EventKey(it.id, it.calendarId) }
+            .toSet()
+
         fun resolveColor(eventId: String, calendarId: String): String? {
             val calColor = colorByCalendarId[calendarId] ?: return null
             if (isFreeUser) return calColor
@@ -248,6 +257,7 @@ class MetadataIndicatorsCalculator @Inject constructor(
             val parentByEvent = parents.groupBy { it.eventId to it.calendarId }
             for ((_, rows) in parentByEvent) {
                 val rep = rows.firstOrNull() ?: continue
+                if (EventKey(rep.eventId, rep.calendarId) in unreadableKeys) continue
                 val color = resolveColor(rep.eventId, rep.calendarId) ?: continue
 
                 if (rep.rRule == null) {
@@ -321,6 +331,7 @@ class MetadataIndicatorsCalculator @Inject constructor(
 
             // override rows (single edits)
             for (override in overrides) {
+                if (EventKey(override.eventId, override.calendarId) in unreadableKeys) continue
                 val color = resolveColor(override.eventId, override.calendarId) ?: continue
                 val startSec = override.startTime ?: continue
                 val endSec = override.endTime ?: continue

@@ -169,12 +169,14 @@ class TransformEventUseCase @Inject constructor(
         }
 
         if (calendarParts.isEmpty()) {
+            logger.w("TransformEventUseCase, no decryptable part for event ${eventEntity.id} in calendar ${eventEntity.calendarId}, statuses: $decryptionStatuses")
             return null
         }
 
         val iCalendar = iCal.mergeCalendarPartsIntoICalendar(calendarParts)
 
         if (iCalendar == null || iCalendar.events.isEmpty() || iCalendar.events.first().sanitise() == false) {
+            logger.w("TransformEventUseCase, decrypted parts of event ${eventEntity.id} in calendar ${eventEntity.calendarId} are not a usable iCal")
             return null
         }
 

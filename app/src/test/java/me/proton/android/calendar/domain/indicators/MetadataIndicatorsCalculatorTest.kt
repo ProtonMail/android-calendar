@@ -14,6 +14,7 @@ import me.proton.android.calendar.data.db.AppDatabase
 import me.proton.android.calendar.data.db.EventOccurrencesDao
 import me.proton.android.calendar.data.db.EventsDao
 import me.proton.android.calendar.data.entity.EventOccurrenceEntity
+import me.proton.android.calendar.data.entity.EventAddressKeyRow
 import me.proton.android.calendar.data.entity.EventColorRow
 import me.proton.android.calendar.domain.CalendarsRepository
 import me.proton.android.calendar.domain.Logger
@@ -21,6 +22,8 @@ import me.proton.android.calendar.domain.model.Calendar
 import me.proton.android.calendar.domain.model.UserInfo
 import me.proton.android.calendar.domain.usecase.GetUserInfoUseCase
 import me.proton.core.domain.entity.UserId
+import me.proton.core.user.domain.entity.AddressId
+import me.proton.core.user.domain.entity.UserAddress
 import org.junit.jupiter.api.Test
 import java.time.DayOfWeek
 import java.time.LocalDate
@@ -61,11 +64,17 @@ class MetadataIndicatorsCalculatorTest {
         calendars: List<Calendar> = listOf(cal1, cal2),
         hasSubscriptionForMail: Boolean = false,
         eventColorOverrides: Map<String, String?> = emptyMap(),
+        addressKeys: List<EventAddressKeyRow> = emptyList(),
+        ownAddressIds: List<String> = emptyList(),
     ) {
         coEvery { calendarsRepo.selectAllCalendars(userId.id) } returns calendars
         every { calendarsRepo.flowAllCalendars(userId.id) } returns flowOf(calendars)
         every { getUserInfo() } returns flowOf(
-            UserInfo(userId = userId, addresses = emptyList(), hasSubscriptionForMail = hasSubscriptionForMail)
+            UserInfo(
+                userId = userId,
+                addresses = ownAddressIds.map { id -> mockk<UserAddress> { every { addressId } returns AddressId(id) } },
+                hasSubscriptionForMail = hasSubscriptionForMail,
+            )
         )
         every { occurrencesDao.selectNonRecurringBetweenInclusive(any(), any(), any(), any()) } returns
                 flowOf(nonRecurring)
@@ -78,6 +87,7 @@ class MetadataIndicatorsCalculatorTest {
         every { eventsDao.selectEventColors(any()) } returns eventColorOverrides.map { (id, color) ->
             EventColorRow(id = id, calendarId = "c1", color = color)
         }
+        every { eventsDao.selectEventAddressKeys(any()) } returns addressKeys
     }
 
     @Test
@@ -114,6 +124,7 @@ class MetadataIndicatorsCalculatorTest {
         every { occurrencesDao.selectSingleEdits(any(), any()) } returns
                 flowOf(emptyList<EventOccurrenceEntity>())
         every { eventsDao.selectEventColors(any()) } returns emptyList()
+        every { eventsDao.selectEventAddressKeys(any()) } returns emptyList()
 
         calculator.compute(userId.id, from, to, tz).test {
             assertEquals(setOf(from), awaitItem().keys)
@@ -309,6 +320,53 @@ class MetadataIndicatorsCalculatorTest {
         val result = calculator.compute(userId.id, from, to, tzId).first()
 
         assertTrue(result.isEmpty())
+    }
+
+    @Test
+    fun `compute drops an event locked to an address key we do not have`() = runTest {
+        val start = LocalDate.of(2025, 6, 3).atStartOfDay(zone).plusHours(9)
+        stubBaseHappyPath(
+            nonRecurring = listOf(nonRecurring("e1", "u1", "c1", start, start.plusHours(1))),
+            addressKeys = listOf(
+                EventAddressKeyRow(id = "e1", calendarId = "c1", addressId = "theirs", hasAddressKeyPacket = true),
+            ),
+            ownAddressIds = listOf("ours"),
+        )
+
+        val result = calculator.compute(userId.id, from, to, tz).first()
+
+        assertEquals(emptyMap(), result)
+    }
+
+    @Test
+    fun `compute keeps an event locked to one of our own addresses`() = runTest {
+        val start = LocalDate.of(2025, 6, 3).atStartOfDay(zone).plusHours(9)
+        stubBaseHappyPath(
+            nonRecurring = listOf(nonRecurring("e1", "u1", "c1", start, start.plusHours(1))),
+            addressKeys = listOf(
+                EventAddressKeyRow(id = "e1", calendarId = "c1", addressId = "ours", hasAddressKeyPacket = true),
+            ),
+            ownAddressIds = listOf("ours"),
+        )
+
+        val result = calculator.compute(userId.id, from, to, tz).first()
+
+        assertEquals(setOf(LocalDate.of(2025, 6, 3)), result.keys)
+    }
+
+    @Test
+    fun `compute keeps an event that has no address key packet`() = runTest {
+        val start = LocalDate.of(2025, 6, 3).atStartOfDay(zone).plusHours(9)
+        stubBaseHappyPath(
+            nonRecurring = listOf(nonRecurring("e1", "u1", "c1", start, start.plusHours(1))),
+            addressKeys = listOf(
+                EventAddressKeyRow(id = "e1", calendarId = "c1", addressId = "theirs", hasAddressKeyPacket = false),
+            ),
+        )
+
+        val result = calculator.compute(userId.id, from, to, tz).first()
+
+        assertEquals(setOf(LocalDate.of(2025, 6, 3)), result.keys)
     }
 
     @Test
