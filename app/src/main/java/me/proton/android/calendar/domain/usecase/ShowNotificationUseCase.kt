@@ -15,10 +15,12 @@ import me.proton.android.calendar.common.getTimeFormat
 import me.proton.android.calendar.common.utils.CalendarFeatureFlag
 import me.proton.android.calendar.common.utils.EventUtilsImpl.formatStartForNotification
 import me.proton.android.calendar.common.utils.EventUtilsImpl.generateFirstOccurrenceSince
+import me.proton.android.calendar.common.utils.EventUtilsImpl.generateFirstRealOccurrenceSince
 import me.proton.android.calendar.common.utils.ICalUtilsImpl
 import me.proton.android.calendar.common.utils.ICalUtilsImpl.onlyDisplayType
 import me.proton.android.calendar.data.db.AppDatabase
 import me.proton.android.calendar.data.entity.EventAlarmEntity
+import me.proton.android.calendar.data.entity.EventEntity
 import me.proton.android.calendar.domain.EventDecryptor
 import me.proton.android.calendar.domain.Logger
 import me.proton.android.calendar.domain.model.Event
@@ -61,6 +63,7 @@ class ShowNotificationUseCase @Inject constructor(
         if (displayTimeZoneId == null) {
             logger.w("empty displayTimeZoneId in ShowNotificationUseCase")
         }
+        val displayZoneId = ZoneId.of(displayTimeZoneId ?: systemDefaultZoneId.id)
 
         val is24Hour = when (userSettingsRepository.getTimeFormat(UserId(userId), database)) {
             0 -> null
@@ -75,11 +78,7 @@ class ShowNotificationUseCase @Inject constructor(
             if (eventEntity == null) {
                 logger.w("could not find EventEntity to show notification")
             } else {
-                val dbEvent = if (CalendarFeatureFlag.UseEventDecryptor.fallbackValue) {
-                    eventDecryptor.decrypt(eventEntity)
-                } else {
-                    transformEventUseCase.execute(eventEntity)
-                }
+                val dbEvent = eventEntity.decrypt()
                 if (dbEvent == null) {
                     logger.w("could not transform EventEntity to show notification")
                 } else {
@@ -96,7 +95,7 @@ class ShowNotificationUseCase @Inject constructor(
                         val alarmOccurrence = dbEvent.generateFirstOccurrenceSince(
                             ZonedDateTime.ofInstant(
                                 occurrenceStartEpoch,
-                                systemDefaultZoneId
+                                displayZoneId
                             ))
 
                         logger.v("occurrence for alarm: $alarmOccurrence")
@@ -155,7 +154,7 @@ class ShowNotificationUseCase @Inject constructor(
                                 dbEvent,
                                 currentEvent,
                                 it,
-                                ZoneId.of(displayTimeZoneId ?: ZoneId.systemDefault().id)
+                                displayZoneId
                             )
                         }
                     }
@@ -164,6 +163,13 @@ class ShowNotificationUseCase @Inject constructor(
         }
 
     }
+
+    private suspend fun EventEntity.decrypt(): Event? =
+        if (CalendarFeatureFlag.UseEventDecryptor.fallbackValue) {
+            eventDecryptor.decrypt(this)
+        } else {
+            transformEventUseCase.execute(this)
+        }
 
     /**
      * Generates Notification TAG using CalendarID, EventID, OccurrenceNumber
@@ -192,8 +198,14 @@ class ShowNotificationUseCase @Inject constructor(
 
         if (lastAlarmForCurrentEvent != null && now.isAfter(Instant.ofEpochSecond(lastAlarmForCurrentEvent.occurrence).atZone(zoneId))) {
 
-            val nextOccurrenceNumber = currentOccurrence.occurrenceNumber + 1
-            val nextEvent = Event.withOccurrence(originalEvent, nextOccurrenceNumber, zoneId.id)
+            val eventChain = database.eventsDao()
+                .selectByUidInCalendar(ICalUtilsImpl.formatUidForICal(originalEvent.uid), originalEvent.calendar.id)
+                .mapNotNull { it.decrypt() }
+            val nextOccurrence = originalEvent.generateFirstRealOccurrenceSince(
+                eventChain,
+                currentOccurrence.startDateTime.plusSeconds(1)
+            )
+            val nextEvent = nextOccurrence?.let { Event.withOccurrence(originalEvent, it) }
 
             if (nextEvent != null) { // maybe [currentOccurrence] was the last valid occurrence of this event
                 val alarmsForNextOccurrence = ICalUtilsImpl.calculateAlarmEntities(nextEvent, zoneId.id, "TODO").onlyDisplayType()
