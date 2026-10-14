@@ -58,7 +58,6 @@ import me.proton.android.calendar.common.utils.ICalUtilsImpl.extractEmail
 import me.proton.android.calendar.common.utils.ICalUtilsImpl.filterOutOccurrencesByExdates
 import me.proton.android.calendar.common.utils.ICalUtilsImpl.isCalendarChangeAllowed
 import me.proton.android.calendar.common.utils.ICalUtilsImpl.isTheSameAs
-import me.proton.android.calendar.common.utils.ICalUtilsImpl.parseICalString
 import me.proton.android.calendar.common.utils.ICalUtilsImpl.printToString
 import me.proton.android.calendar.common.utils.ICalUtilsImpl.setDefaultTimeZone
 import me.proton.android.calendar.common.utils.ICalUtilsImpl.setEnd
@@ -563,21 +562,13 @@ class EventViewModel @Inject constructor(
 
         eventTimeZoneId = timeZoneId ?: displayTimeZoneId
 
-        val newICalendar =
-            if (!rRule.isNullOrEmpty()) {
-                val newEventToPrefill = ICalUtilsImpl.createNewVEvent().wrapInICalendar()
-                // Create a temporary RRULE to replace
-                newEventToPrefill.events.first().setRecurrenceRule(Recurrence.Builder(Frequency.DAILY).build())
-                val newEventIcs = newEventToPrefill.printToString()
-                // Replace temporary RRULE with the one provided in args
-                val rRuleRegex = Regex("RRULE:.*\\r?\\n")
-                val prefilledNewEventIcs = newEventIcs.replace(rRuleRegex, "RRULE:$rRule\r\n")
-                // Parse prefilled event ics
-                parseICalString(prefilledNewEventIcs) ?: return InitResult.Error.Default("could not parse Event using parseICalString method")
-            } else {
-                ICalUtilsImpl.createNewVEvent().wrapInICalendar()
-            }
+        val newICalendar = ICalUtilsImpl.createNewVEvent().wrapInICalendar()
         val newVEvent = newICalendar.events.first()
+        if (!rRule.isNullOrEmpty()) {
+            val recurrence = ICalUtilsImpl.parseRecurrence(rRule)
+                ?: return InitResult.Error.Default("invalid RRULE in prefilled event")
+            newVEvent.setRecurrenceRule(recurrence)
+        }
 
         // If there is no requested start date, we take today
         val startDate =
