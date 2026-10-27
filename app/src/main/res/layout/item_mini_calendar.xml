@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/item_mini_calendar_layout"
     android:layout_width="0dp"
@@ -20,6 +21,10 @@
         android:layout_height="28dp"
         android:background="@drawable/ripple_mini_calendar_day_selected"
         android:gravity="center"
+        android:maxLines="1"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="9sp"
+        app:autoSizeMaxTextSize="16sp"
         tools:text="13" />
 
     <LinearLayout
