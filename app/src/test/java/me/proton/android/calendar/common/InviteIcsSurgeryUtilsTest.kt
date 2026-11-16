@@ -368,6 +368,40 @@ internal class InviteIcsSurgeryUtilsTest {
     }
 
     @Test
+    fun `cleanTimezones convert canadian windows timezone names test`() {
+        mapOf(
+            "Alberta Standard Time" to "America/Edmonton",
+            "Mountain Time (Alberta)" to "America/Edmonton",
+            "Manitoba Standard Time" to "America/Winnipeg",
+            "British Columbia Standard Time" to "America/Vancouver",
+            "Pacific Time (British Columbia)" to "America/Vancouver",
+        ).forEach { (windowsName, expectedZoneId) ->
+            val iCalString = """
+    BEGIN:VCALENDAR
+    PRODID:Microsoft Exchange Server 2010
+    VERSION:2.0
+    METHOD:REQUEST
+    BEGIN:VEVENT
+    SUMMARY:Canada
+    DTSTART;TZID=$windowsName:20261202T130000
+    DTEND;TZID=$windowsName:20261202T133000
+    UID:canada-tz@proton.me
+    SEQUENCE:0
+    DTSTAMP:20261116T115550Z
+    END:VEVENT
+    END:VCALENDAR
+    """.trimIndent()
+
+            val cleanIcsResult = cleanIcs(iCalString, isOpeningFromProtonMail = true)
+
+            assertThat(cleanIcsResult).isInstanceOf(IcsSurgeryUtils.HandleIcsResult.ParsingSuccessful::class)
+            val printed = (cleanIcsResult as IcsSurgeryUtils.HandleIcsResult.ParsingSuccessful).iCalendar?.printToString()
+            assertThat(printed.orEmpty().contains("DTSTART;TZID=$expectedZoneId:20261202T130000")).isTrue()
+            assertThat(printed.orEmpty().contains("DTEND;TZID=$expectedZoneId:20261202T133000")).isTrue()
+        }
+    }
+
+    @Test
     fun `cleanVersion missing VERSION test`() {
 
         val iCalString = """
